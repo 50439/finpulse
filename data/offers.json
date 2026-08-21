@@ -533,12 +533,54 @@
     "Крупнейшая биржа США",
     "Публичная компания (NASDAQ)",
     "Проста для новичков"
+   ],
+   "es": [
+    "Mayor exchange de EE.UU.",
+    "Empresa pública (NASDAQ)",
+    "Ideal para principiantes"
+   ],
+   "pt": [
+    "Maior exchange dos EUA",
+    "Empresa listada (NASDAQ)",
+    "Fácil para iniciantes"
+   ],
+   "de": [
+    "Größte US-Börse",
+    "Börsennotiert (NASDAQ)",
+    "Einsteigerfreundlich"
+   ],
+   "fr": [
+    "Plus grande plateforme US",
+    "Cotée en bourse (NASDAQ)",
+    "Idéale pour débuter"
+   ],
+   "ar": [
+    "أكبر منصة أمريكية",
+    "شركة مدرجة (ناسداك)",
+    "مناسبة للمبتدئين"
+   ],
+   "zh": [
+    "美国最大交易所",
+    "纳斯达克上市公司",
+    "新手友好"
+   ],
+   "hi": [
+    "अमेरिका का सबसे बड़ा एक्सचेंज",
+    "NASDAQ लिस्टेड कंपनी",
+    "शुरुआती के लिए आसान"
    ]
   },
   "bonus": {
    "en": "Get crypto rewards for learning",
    "uk": "Крипто-бонуси за навчання",
-   "ru": "Крипто-бонусы за обучение"
+   "ru": "Крипто-бонусы за обучение",
+   "es": "Gana cripto aprendiendo",
+   "pt": "Ganhe cripto aprendendo",
+   "de": "Krypto fürs Lernen verdienen",
+   "fr": "Gagnez des cryptos en apprenant",
+   "ar": "اكسب عملات مقابل التعلم",
+   "zh": "边学边赚加密货币",
+   "hi": "सीखकर क्रिप्टो कमाएं"
   }
  },
  {
@@ -564,12 +606,54 @@
     "Лучшая репутация безопасности",
     "200+ монет",
     "Про-терминал"
+   ],
+   "es": [
+    "Máxima seguridad",
+    "200+ monedas",
+    "Terminal profesional"
+   ],
+   "pt": [
+    "Segurança de referência",
+    "200+ moedas",
+    "Terminal profissional"
+   ],
+   "de": [
+    "Top-Sicherheitsbilanz",
+    "200+ Coins",
+    "Profi-Terminal"
+   ],
+   "fr": [
+    "Sécurité de référence",
+    "200+ cryptos",
+    "Terminal pro"
+   ],
+   "ar": [
+    "سجل أمان ممتاز",
+    "أكثر من 200 عملة",
+    "منصة تداول احترافية"
+   ],
+   "zh": [
+    "顶级安全记录",
+    "200+币种",
+    "专业交易终端"
+   ],
+   "hi": [
+    "शीर्ष सुरक्षा रिकॉर्ड",
+    "200+ कॉइन",
+    "प्रो ट्रेडिंग टर्मिनल"
    ]
   },
   "bonus": {
    "en": "Low fees on Kraken Pro",
    "uk": "Низькі комісії на Kraken Pro",
-   "ru": "Низкие комиссии на Kraken Pro"
+   "ru": "Низкие комиссии на Kraken Pro",
+   "es": "Bajas comisiones en Kraken Pro",
+   "pt": "Taxas baixas no Kraken Pro",
+   "de": "Niedrige Gebühren bei Kraken Pro",
+   "fr": "Frais réduits sur Kraken Pro",
+   "ar": "رسوم منخفضة على Kraken Pro",
+   "zh": "Kraken Pro低手续费",
+   "hi": "Kraken Pro पर कम फीस"
   }
  },
  {
@@ -595,12 +679,54 @@
     "1700+ монет — самый большой выбор",
     "Ранние листинги",
     "Launchpad стартапов"
+   ],
+   "es": [
+    "1700+ monedas — mayor selección",
+    "Listados tempranos",
+    "Launchpad de startups"
+   ],
+   "pt": [
+    "1700+ moedas — maior escolha",
+    "Listagens antecipadas",
+    "Launchpad de startups"
+   ],
+   "de": [
+    "1700+ Coins — größte Auswahl",
+    "Frühe Listings",
+    "Startup-Launchpad"
+   ],
+   "fr": [
+    "1700+ cryptos — plus grand choix",
+    "Listings précoces",
+    "Launchpad de startups"
+   ],
+   "ar": [
+    "أكثر من 1700 عملة",
+    "إدراجات مبكرة",
+    "منصة إطلاق المشاريع"
+   ],
+   "zh": [
+    "1700+币种,选择最多",
+    "早期上币",
+    "创业项目启动板"
+   ],
+   "hi": [
+    "1700+ कॉइन — सबसे बड़ा चयन",
+    "शुरुआती लिस्टिंग",
+    "स्टार्टअप लॉन्चपैड"
    ]
   },
   "bonus": {
    "en": "Up to $6,666 for newcomers",
    "uk": "До $6 666 новачкам",
-   "ru": "До $6 666 новичкам"
+   "ru": "До $6 666 новичкам",
+   "es": "Hasta $6,666 para nuevos",
+   "pt": "Até $6.666 para novos",
+   "de": "Bis zu $6.666 für Neue",
+   "fr": "Jusqu'à 6 666$ offerts",
+   "ar": "حتى 6,666$ للجدد",
+   "zh": "新人最高$6,666",
+   "hi": "नए यूज़र्स को $6,666 तक"
   }
  },
  {
@@ -626,12 +752,54 @@
     "До 14% годовых на крипту",
     "Мгновенные криптозаймы",
     "Карта Nexo"
+   ],
+   "es": [
+    "Hasta 14% anual en cripto",
+    "Préstamos cripto instantáneos",
+    "Tarjeta Nexo"
+   ],
+   "pt": [
+    "Até 14% ao ano em cripto",
+    "Empréstimos cripto instantâneos",
+    "Cartão Nexo"
+   ],
+   "de": [
+    "Bis zu 14% Zinsen auf Krypto",
+    "Sofortige Krypto-Kredite",
+    "Nexo-Karte"
+   ],
+   "fr": [
+    "Jusqu'à 14% par an en crypto",
+    "Prêts crypto instantanés",
+    "Carte Nexo"
+   ],
+   "ar": [
+    "حتى 14% سنوياً على الكريبتو",
+    "قروض فورية",
+    "بطاقة Nexo"
+   ],
+   "zh": [
+    "加密资产最高14%年化",
+    "即时加密贷款",
+    "Nexo卡"
+   ],
+   "hi": [
+    "क्रिप्टो पर 14% तक ब्याज",
+    "तुरंत क्रिप्टो लोन",
+    "Nexo कार्ड"
    ]
   },
   "bonus": {
    "en": "Earn interest daily",
    "uk": "Щоденні нарахування відсотків",
-   "ru": "Ежедневное начисление процентов"
+   "ru": "Ежедневное начисление процентов",
+   "es": "Intereses diarios",
+   "pt": "Juros diários",
+   "de": "Tägliche Zinszahlungen",
+   "fr": "Intérêts quotidiens",
+   "ar": "فوائد يومية",
+   "zh": "每日派息",
+   "hi": "रोज़ाना ब्याज"
   }
  },
  {
@@ -657,12 +825,54 @@
     "Покупка крипты с карты за минуты",
     "Быстрый старт без аккаунта",
     "80+ валют"
+   ],
+   "es": [
+    "Compra cripto con tarjeta en minutos",
+    "Inicio rápido sin cuenta",
+    "80+ divisas"
+   ],
+   "pt": [
+    "Compre cripto com cartão em minutos",
+    "Início rápido sem conta",
+    "80+ moedas"
+   ],
+   "de": [
+    "Krypto per Karte in Minuten",
+    "Schnellstart ohne Konto",
+    "80+ Währungen"
+   ],
+   "fr": [
+    "Crypto par carte en quelques minutes",
+    "Démarrage rapide sans compte",
+    "80+ devises"
+   ],
+   "ar": [
+    "شراء الكريبتو بالبطاقة في دقائق",
+    "بداية سريعة",
+    "أكثر من 80 عملة"
+   ],
+   "zh": [
+    "银行卡分钟级购币",
+    "免注册快速开始",
+    "80+法币"
+   ],
+   "hi": [
+    "कार्ड से मिनटों में क्रिप्टो",
+    "बिना अकाउंट तेज़ शुरुआत",
+    "80+ मुद्राएं"
    ]
   },
   "bonus": {
    "en": "First transaction — 0% Paybis fee",
    "uk": "Перша транзакція — 0% комісії",
-   "ru": "Первая транзакция — 0% комиссии"
+   "ru": "Первая транзакция — 0% комиссии",
+   "es": "Primera transacción — 0% comisión",
+   "pt": "Primeira transação — 0% de taxa",
+   "de": "Erste Transaktion — 0% Gebühr",
+   "fr": "Première transaction — 0% de frais",
+   "ar": "أول معاملة — 0% رسوم",
+   "zh": "首笔交易0%手续费",
+   "hi": "पहला लेनदेन — 0% फीस"
   }
  },
  {
@@ -688,12 +898,54 @@
     "Мгновенные обмены крипты",
     "500+ монет",
     "Без лишней регистрации"
+   ],
+   "es": [
+    "Intercambios instantáneos",
+    "500+ monedas",
+    "Sin registro complicado"
+   ],
+   "pt": [
+    "Trocas instantâneas",
+    "500+ moedas",
+    "Sem registro complicado"
+   ],
+   "de": [
+    "Sofortige Krypto-Swaps",
+    "500+ Coins",
+    "Ohne lästige Registrierung"
+   ],
+   "fr": [
+    "Échanges crypto instantanés",
+    "500+ cryptos",
+    "Sans inscription fastidieuse"
+   ],
+   "ar": [
+    "تبادل فوري للعملات",
+    "أكثر من 500 عملة",
+    "دون تسجيل معقد"
+   ],
+   "zh": [
+    "即时币币兑换",
+    "500+币种",
+    "无繁琐注册"
+   ],
+   "hi": [
+    "तुरंत क्रिप्टो स्वैप",
+    "500+ कॉइन",
+    "झंझट-मुक्त"
    ]
   },
   "bonus": {
    "en": "Best rate aggregator",
    "uk": "Агрегатор найкращих курсів",
-   "ru": "Агрегатор лучших курсов"
+   "ru": "Агрегатор лучших курсов",
+   "es": "Agregador de mejores tasas",
+   "pt": "Agregador das melhores taxas",
+   "de": "Beste-Kurse-Aggregator",
+   "fr": "Agrégateur des meilleurs taux",
+   "ar": "مجمّع أفضل الأسعار",
+   "zh": "最优汇率聚合器",
+   "hi": "बेस्ट रेट एग्रीगेटर"
   }
  },
  {
@@ -719,12 +971,54 @@
     "Аппаратный кошелёк — ключи офлайн",
     "Открытый код",
     "9000+ монет"
+   ],
+   "es": [
+    "Wallet física — claves offline",
+    "Código abierto",
+    "9000+ monedas"
+   ],
+   "pt": [
+    "Carteira física — chaves offline",
+    "Código aberto",
+    "9000+ moedas"
+   ],
+   "de": [
+    "Hardware-Wallet — Keys offline",
+    "Open Source",
+    "9000+ Coins"
+   ],
+   "fr": [
+    "Wallet physique — clés hors ligne",
+    "Open source",
+    "9000+ cryptos"
+   ],
+   "ar": [
+    "محفظة مادية — مفاتيح دون اتصال",
+    "مفتوحة المصدر",
+    "أكثر من 9000 عملة"
+   ],
+   "zh": [
+    "硬件钱包,私钥离线",
+    "开源安全",
+    "支持9000+币种"
+   ],
+   "hi": [
+    "हार्डवेयर वॉलेट — कीज़ ऑफलाइन",
+    "ओपन-सोर्स",
+    "9000+ कॉइन"
    ]
   },
   "bonus": {
    "en": "Protect your crypto for life",
    "uk": "Захистіть крипту назавжди",
-   "ru": "Защитите крипту навсегда"
+   "ru": "Защитите крипту навсегда",
+   "es": "Protege tu cripto para siempre",
+   "pt": "Proteja sua cripto para sempre",
+   "de": "Schützen Sie Ihre Krypto dauerhaft",
+   "fr": "Protégez vos cryptos à vie",
+   "ar": "احمِ عملاتك للأبد",
+   "zh": "终身守护你的资产",
+   "hi": "अपनी क्रिप्टो हमेशा सुरक्षित रखें"
   }
  },
  {
@@ -750,12 +1044,54 @@
     "CFD на крипту, акции, форекс",
     "25+ лет на рынке",
     "MetaTrader 4/5"
+   ],
+   "es": [
+    "CFD de cripto, acciones, forex",
+    "25+ años en el mercado",
+    "MetaTrader 4/5"
+   ],
+   "pt": [
+    "CFD de cripto, ações, forex",
+    "25+ anos de mercado",
+    "MetaTrader 4/5"
+   ],
+   "de": [
+    "CFDs auf Krypto, Aktien, Forex",
+    "25+ Jahre am Markt",
+    "MetaTrader 4/5"
+   ],
+   "fr": [
+    "CFD crypto, actions, forex",
+    "25+ ans d'expérience",
+    "MetaTrader 4/5"
+   ],
+   "ar": [
+    "عقود فروقات كريبتو وأسهم وفوركس",
+    "أكثر من 25 عاماً",
+    "MetaTrader 4/5"
+   ],
+   "zh": [
+    "加密/股票/外汇CFD",
+    "25年以上历史",
+    "MetaTrader 4/5"
+   ],
+   "hi": [
+    "क्रिप्टो, शेयर, फॉरेक्स CFD",
+    "25+ साल का अनुभव",
+    "MetaTrader 4/5"
    ]
   },
   "bonus": {
    "en": "Zero spread accounts",
    "uk": "Рахунки з нульовим спредом",
-   "ru": "Счета с нулевым спредом"
+   "ru": "Счета с нулевым спредом",
+   "es": "Cuentas con spread cero",
+   "pt": "Contas com spread zero",
+   "de": "Null-Spread-Konten",
+   "fr": "Comptes à spread zéro",
+   "ar": "حسابات بدون فروق أسعار",
+   "zh": "零点差账户",
+   "hi": "ज़ीरो स्प्रेड अकाउंट"
   }
  },
  {
@@ -781,12 +1117,54 @@
     "Регуляция FCA/CySEC",
     "2100+ инструментов",
     "Без дилинга"
+   ],
+   "es": [
+    "Regulado FCA/CySEC",
+    "2100+ instrumentos",
+    "Sin mesa de operaciones"
+   ],
+   "pt": [
+    "Regulado FCA/CySEC",
+    "2100+ instrumentos",
+    "Sem dealing desk"
+   ],
+   "de": [
+    "FCA/CySEC-reguliert",
+    "2100+ Instrumente",
+    "Kein Dealing Desk"
+   ],
+   "fr": [
+    "Régulé FCA/CySEC",
+    "2100+ instruments",
+    "Sans dealing desk"
+   ],
+   "ar": [
+    "مرخّص FCA/CySEC",
+    "أكثر من 2100 أداة",
+    "دون مكتب تداول"
+   ],
+   "zh": [
+    "FCA/CySEC监管",
+    "2100+品种",
+    "无交易员平台"
+   ],
+   "hi": [
+    "FCA/CySEC विनियमित",
+    "2100+ इंस्ट्रूमेंट्स",
+    "नो डीलिंग डेस्क"
    ]
   },
   "bonus": {
    "en": "Award-winning broker",
    "uk": "Багаторазовий лауреат нагород",
-   "ru": "Многократный лауреат наград"
+   "ru": "Многократный лауреат наград",
+   "es": "Broker premiado",
+   "pt": "Corretora premiada",
+   "de": "Vielfach ausgezeichneter Broker",
+   "fr": "Broker primé",
+   "ar": "وسيط حائز على جوائز",
+   "zh": "屡获殊荣的经纪商",
+   "hi": "पुरस्कृत ब्रोकर"
   }
  },
  {
@@ -812,12 +1190,54 @@
     "Форекс, металлы, индексы, крипта",
     "Депозит от $20",
     "Копи-трейдинг"
+   ],
+   "es": [
+    "Forex, metales, índices, cripto",
+    "Depósito desde $20",
+    "App de copy trading"
+   ],
+   "pt": [
+    "Forex, metais, índices, cripto",
+    "Depósito desde $20",
+    "App de copy trading"
+   ],
+   "de": [
+    "Forex, Metalle, Indizes, Krypto",
+    "Ab $20 Einzahlung",
+    "Copy-Trading-App"
+   ],
+   "fr": [
+    "Forex, métaux, indices, crypto",
+    "Dépôt dès 20$",
+    "App de copy trading"
+   ],
+   "ar": [
+    "فوركس ومعادن ومؤشرات وكريبتو",
+    "إيداع من 20$",
+    "تطبيق نسخ التداول"
+   ],
+   "zh": [
+    "外汇/金属/指数/加密",
+    "$20起入金",
+    "跟单交易App"
+   ],
+   "hi": [
+    "फॉरेक्स, मेटल्स, इंडेक्स, क्रिप्टो",
+    "$20 से डिपॉज़िट",
+    "कॉपी ट्रेडिंग ऐप"
    ]
   },
   "bonus": {
    "en": "Deposit bonuses up to 50%",
    "uk": "Бонуси на депозит до 50%",
-   "ru": "Бонусы на депозит до 50%"
+   "ru": "Бонусы на депозит до 50%",
+   "es": "Bonos de depósito hasta 50%",
+   "pt": "Bônus de depósito até 50%",
+   "de": "Einzahlungsboni bis 50%",
+   "fr": "Bonus de dépôt jusqu'à 50%",
+   "ar": "مكافآت إيداع حتى 50%",
+   "zh": "入金奖励最高50%",
+   "hi": "50% तक डिपॉज़िट बोनस"
   }
  },
  {
@@ -843,12 +1263,54 @@
     "Торговля от $1",
     "100+ активов",
     "Бесплатное демо"
+   ],
+   "es": [
+    "Trading desde $1",
+    "100+ activos",
+    "Cuenta demo gratis"
+   ],
+   "pt": [
+    "Trading a partir de $1",
+    "100+ ativos",
+    "Conta demo grátis"
+   ],
+   "de": [
+    "Trading ab $1",
+    "100+ Assets",
+    "Kostenloses Demokonto"
+   ],
+   "fr": [
+    "Trading dès 1$",
+    "100+ actifs",
+    "Compte démo gratuit"
+   ],
+   "ar": [
+    "تداول من 1$",
+    "أكثر من 100 أصل",
+    "حساب تجريبي مجاني"
+   ],
+   "zh": [
+    "$1起交易",
+    "100+资产",
+    "免费模拟账户"
+   ],
+   "hi": [
+    "$1 से ट्रेडिंग",
+    "100+ एसेट्स",
+    "मुफ्त डेमो अकाउंट"
    ]
   },
   "bonus": {
    "en": "+50% on first deposit",
    "uk": "+50% на перший депозит",
-   "ru": "+50% на первый депозит"
+   "ru": "+50% на первый депозит",
+   "es": "+50% en el primer depósito",
+   "pt": "+50% no primeiro depósito",
+   "de": "+50% auf die erste Einzahlung",
+   "fr": "+50% sur le premier dépôt",
+   "ar": "+50% على أول إيداع",
+   "zh": "首充+50%",
+   "hi": "पहले डिपॉज़िट पर +50%"
   }
  },
  {
@@ -874,12 +1336,54 @@
     "Криптокарта для Европы",
     "Тратьте крипту где угодно",
     "Мгновенные пополнения"
+   ],
+   "es": [
+    "Tarjeta cripto para Europa",
+    "Gasta cripto en cualquier lugar",
+    "Recargas instantáneas"
+   ],
+   "pt": [
+    "Cartão cripto para a Europa",
+    "Gaste cripto em qualquer lugar",
+    "Recargas instantâneas"
+   ],
+   "de": [
+    "Krypto-Karte für Europa",
+    "Krypto überall ausgeben",
+    "Sofortige Aufladungen"
+   ],
+   "fr": [
+    "Carte crypto pour l'Europe",
+    "Dépensez vos cryptos partout",
+    "Recharges instantanées"
+   ],
+   "ar": [
+    "بطاقة كريبتو لأوروبا",
+    "أنفق عملاتك في أي مكان",
+    "شحن فوري"
+   ],
+   "zh": [
+    "面向欧洲的加密卡",
+    "随处消费加密货币",
+    "即时充值"
+   ],
+   "hi": [
+    "यूरोप के लिए क्रिप्टो कार्ड",
+    "कहीं भी क्रिप्टो खर्च करें",
+    "तुरंत टॉप-अप"
    ]
   },
   "bonus": {
    "en": "Free card issue",
    "uk": "Безкоштовний випуск картки",
-   "ru": "Бесплатный выпуск карты"
+   "ru": "Бесплатный выпуск карты",
+   "es": "Emisión de tarjeta gratis",
+   "pt": "Emissão de cartão grátis",
+   "de": "Kostenlose Kartenausgabe",
+   "fr": "Émission de carte gratuite",
+   "ar": "إصدار مجاني للبطاقة",
+   "zh": "免费发卡",
+   "hi": "मुफ्त कार्ड जारी"
   }
  },
  {
@@ -905,12 +1409,54 @@
     "Некастодиальный кошелёк + обмен",
     "Покупка/обмен в приложении",
     "Фокус на США"
+   ],
+   "es": [
+    "Wallet sin custodia + exchange",
+    "Compra y cambia en la app",
+    "Enfocada en EE.UU."
+   ],
+   "pt": [
+    "Carteira sem custódia + exchange",
+    "Compre e troque no app",
+    "Foco nos EUA"
+   ],
+   "de": [
+    "Non-Custodial-Wallet + Börse",
+    "Kaufen/Tauschen in der App",
+    "US-fokussiert"
+   ],
+   "fr": [
+    "Wallet non-custodial + exchange",
+    "Achat/échange dans l'app",
+    "Axé sur les USA"
+   ],
+   "ar": [
+    "محفظة ذاتية + منصة تبادل",
+    "شراء وتبديل في التطبيق",
+    "موجهة للولايات المتحدة"
+   ],
+   "zh": [
+    "自托管钱包+交易",
+    "应用内购买兑换",
+    "面向美国用户"
+   ],
+   "hi": [
+    "सेल्फ-कस्टडी वॉलेट + एक्सचेंज",
+    "ऐप में खरीदें/स्वैप करें",
+    "US-केंद्रित"
    ]
   },
   "bonus": {
    "en": "Simple and secure start",
    "uk": "Простий та безпечний старт",
-   "ru": "Простой и безопасный старт"
+   "ru": "Простой и безопасный старт",
+   "es": "Comienzo simple y seguro",
+   "pt": "Começo simples e seguro",
+   "de": "Einfacher, sicherer Start",
+   "fr": "Départ simple et sûr",
+   "ar": "بداية بسيطة وآمنة",
+   "zh": "简单安全上手",
+   "hi": "सरल और सुरक्षित शुरुआत"
   }
  }
 ]
