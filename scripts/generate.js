@@ -67,12 +67,34 @@ async function callClaude(headlines) {
     body: JSON.stringify({
       model: process.env.CLAUDE_MODEL || 'claude-sonnet-4-5',
       max_tokens: 32000,
+      stream: true,
       messages: [{ role: 'user', content: prompt }]
     })
   });
   if (!r.ok) throw new Error('Anthropic API ' + r.status + ': ' + await r.text());
-  const data = await r.json();
-  let text = data.content.map(c => c.text || '').join('');
+  // Parse SSE stream (avoids headers timeout on long generations)
+  let text = '';
+  const reader = r.body.getReader();
+  const dec = new TextDecoder();
+  let buf = '';
+  for (;;) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    buf += dec.decode(value, { stream: true });
+    const lines = buf.split('\n');
+    buf = lines.pop();
+    for (const line of lines) {
+      if (!line.startsWith('data: ')) continue;
+      const payload = line.slice(6).trim();
+      if (payload === '[DONE]') continue;
+      try {
+        const ev = JSON.parse(payload);
+        if (ev.type === 'content_block_delta' && ev.delta && ev.delta.text) text += ev.delta.text;
+        if (ev.type === 'error') throw new Error('Stream error: ' + JSON.stringify(ev.error));
+      } catch (e) { if (String(e).includes('Stream error')) throw e; }
+    }
+  }
+  console.log('Received ' + text.length + ' chars from Claude');
   text = text.replace(/^```json?\s*/i, '').replace(/```\s*$/, '').trim();
   return JSON.parse(text);
 }
