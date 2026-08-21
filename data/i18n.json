@@ -1,0 +1,34 @@
+{
+  "languages": {
+    "en": { "name": "English", "flag": "🇬🇧", "dir": "ltr", "locale": "en-US" },
+    "uk": { "name": "Українська", "flag": "🇺🇦", "dir": "ltr", "locale": "uk-UA" },
+    "ru": { "name": "Русский", "flag": "🌍", "dir": "ltr", "locale": "ru-RU" },
+    "es": { "name": "Español", "flag": "🇪🇸", "dir": "ltr", "locale": "es-ES" },
+    "pt": { "name": "Português", "flag": "🇧🇷", "dir": "ltr", "locale": "pt-BR" },
+    "de": { "name": "Deutsch", "flag": "🇩🇪", "dir": "ltr", "locale": "de-DE" },
+    "fr": { "name": "Français", "flag": "🇫🇷", "dir": "ltr", "locale": "fr-FR" },
+    "ar": { "name": "العربية", "flag": "🇸🇦", "dir": "rtl", "locale": "ar-SA" },
+    "zh": { "name": "中文", "flag": "🇨🇳", "dir": "ltr", "locale": "zh-CN" },
+    "hi": { "name": "हिन्दी", "flag": "🇮🇳", "dir": "ltr", "locale": "hi-IN" }
+  },
+  "strings": {
+    "siteName": { "en": "FinPulse", "uk": "FinPulse", "ru": "FinPulse", "es": "FinPulse", "pt": "FinPulse", "de": "FinPulse", "fr": "FinPulse", "ar": "FinPulse", "zh": "FinPulse", "hi": "FinPulse" },
+    "tagline": { "en": "Crypto & finance news, every 6 hours", "uk": "Новини крипти та фінансів кожні 6 годин", "ru": "Новости крипты и финансов каждые 6 часов", "es": "Noticias de cripto y finanzas cada 6 horas", "pt": "Notícias de cripto e finanças a cada 6 horas", "de": "Krypto- & Finanznachrichten alle 6 Stunden", "fr": "Actus crypto et finance toutes les 6 heures", "ar": "أخبار الكريبتو والمال كل 6 ساعات", "zh": "每6小时更新的加密与财经新闻", "hi": "हर 6 घंटे क्रिप्टो और वित्त समाचार" },
+    "latestNews": { "en": "Latest news", "uk": "Останні новини", "ru": "Последние новости", "es": "Últimas noticias", "pt": "Últimas notícias", "de": "Aktuelle Nachrichten", "fr": "Dernières actualités", "ar": "آخر الأخبار", "zh": "最新新闻", "hi": "ताज़ा खबरें" },
+    "topPlatforms": { "en": "Best trading platforms", "uk": "Найкращі платформи для трейдингу", "ru": "Лучшие платформы для трейдинга", "es": "Mejores plataformas de trading", "pt": "Melhores plataformas de trading", "de": "Beste Trading-Plattformen", "fr": "Meilleures plateformes de trading", "ar": "أفضل منصات التداول", "zh": "最佳交易平台", "hi": "सर्वश्रेष्ठ ट्रेडिंग प्लेटफॉर्म" },
+    "startTrading": { "en": "Start trading", "uk": "Почати торгувати", "ru": "Начать торговать", "es": "Empezar a operar", "pt": "Começar a operar", "de": "Jetzt handeln", "fr": "Commencer à trader", "ar": "ابدأ التداول", "zh": "开始交易", "hi": "ट्रेडिंग शुरू करें" },
+    "readMore": { "en": "Read more", "uk": "Читати далі", "ru": "Читать далее", "es": "Leer más", "pt": "Ler mais", "de": "Weiterlesen", "fr": "Lire la suite", "ar": "اقرأ المزيد", "zh": "阅读更多", "hi": "और पढ़ें" },
+    "allNews": { "en": "All news", "uk": "Усі новини", "ru": "Все новости", "es": "Todas las noticias", "pt": "Todas as notícias", "de": "Alle Nachrichten", "fr": "Toutes les actualités", "ar": "كل الأخبار", "zh": "全部新闻", "hi": "सभी समाचार" },
+    "categories": {
+      "crypto": { "en": "Crypto", "uk": "Крипта", "ru": "Крипта", "es": "Cripto", "pt": "Cripto", "de": "Krypto", "fr": "Crypto", "ar": "كريبتو", "zh": "加密货币", "hi": "क्रिप्टो" },
+      "stocks": { "en": "Stocks", "uk": "Акції", "ru": "Акции", "es": "Acciones", "pt": "Ações", "de": "Aktien", "fr": "Actions", "ar": "أسهم", "zh": "股票", "hi": "शेयर" },
+      "forex": { "en": "Forex", "uk": "Форекс", "ru": "Форекс", "es": "Forex", "pt": "Forex", "de": "Forex", "fr": "Forex", "ar": "فوركس", "zh": "外汇", "hi": "फॉरेक्स" },
+      "world": { "en": "World economy", "uk": "Світова економіка", "ru": "Мировая экономика", "es": "Economía mundial", "pt": "Economia mundial", "de": "Weltwirtschaft", "fr": "Économie mondiale", "ar": "الاقتصاد العالمي", "zh": "世界经济", "hi": "विश्व अर्थव्यवस्था" },
+      "ukraine": { "en": "Ukraine", "uk": "Україна", "ru": "Украина", "es": "Ucrania", "pt": "Ucrânia", "de": "Ukraine", "fr": "Ukraine", "ar": "أوكرانيا", "zh": "乌克兰", "hi": "यूक्रेन" }
+    },
+    "riskDisclaimer": { "en": "Trading involves risk. This site contains affiliate links — we may earn a commission. Not financial advice.", "uk": "Торгівля пов'язана з ризиком. Сайт містить партнерські посилання — ми можемо отримувати комісію. Не є фінансовою порадою.", "ru": "Торговля связана с риском. Сайт содержит партнёрские ссылки — мы можем получать комиссию. Не является финансовым советом.", "es": "El trading conlleva riesgo. Este sitio contiene enlaces de afiliados. No es asesoramiento financiero.", "pt": "Trading envolve risco. Este site contém links de afiliados. Não é aconselhamento financeiro.", "de": "Trading birgt Risiken. Diese Seite enthält Affiliate-Links. Keine Finanzberatung.", "fr": "Le trading comporte des risques. Ce site contient des liens affiliés. Ceci n'est pas un conseil financier.", "ar": "التداول ينطوي على مخاطر. يحتوي الموقع على روابط تابعة. ليست نصيحة مالية.", "zh": "交易有风险。本站包含联盟链接,我们可能获得佣金。非投资建议。", "hi": "ट्रेडिंग में जोखिम है। इस साइट में एफिलिएट लिंक हैं। यह वित्तीय सलाह नहीं है।" },
+    "bonusLabel": { "en": "Bonus", "uk": "Бонус", "ru": "Бонус", "es": "Bono", "pt": "Bônus", "de": "Bonus", "fr": "Bonus", "ar": "مكافأة", "zh": "奖励", "hi": "बोनस" },
+    "updatedEvery": { "en": "Updated every 6 hours", "uk": "Оновлюється кожні 6 годин", "ru": "Обновляется каждые 6 часов", "es": "Actualizado cada 6 horas", "pt": "Atualizado a cada 6 horas", "de": "Alle 6 Stunden aktualisiert", "fr": "Mis à jour toutes les 6 heures", "ar": "يُحدَّث كل 6 ساعات", "zh": "每6小时更新", "hi": "हर 6 घंटे अपडेट" },
+    "marketsNow": { "en": "Markets now", "uk": "Ринки зараз", "ru": "Рынки сейчас", "es": "Mercados ahora", "pt": "Mercados agora", "de": "Märkte jetzt", "fr": "Marchés en direct", "ar": "الأسواق الآن", "zh": "实时行情", "hi": "बाज़ार अभी" }
+  }
+}
