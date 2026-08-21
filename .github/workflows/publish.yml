@@ -39,8 +39,8 @@ jobs:
           git commit -m "auto: fresh articles $(date -u +'%Y-%m-%d %H:%M')" && git push || echo "nothing to commit"
       - name: Build site
         env:
-          SITE_URL: ${{ vars.SITE_URL || 'https://50439.github.io' }}
-          BASE_PATH: ${{ vars.BASE_PATH || '/finpulse' }}
+                    SITE_URL: ${{ vars.SITE_URL || 'https://finpulse24.com' }}
+                    BASE_PATH: ${{ vars.BASE_PATH || '' }}
         run: node build.js && node build.test.js
       - uses: actions/upload-pages-artifact@v3
         with: { path: dist }
