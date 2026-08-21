@@ -244,3 +244,6 @@ fs.writeFileSync(path.join(DIST, 'sitemap.xml'),
 fs.writeFileSync(path.join(DIST, 'robots.txt'), 'User-agent: *\nAllow: /\nSitemap: ' + SITE_URL + '/sitemap.xml\n');
 
 console.log('Built ' + urls.length + ' pages for ' + LANGS.length + ' languages -> dist/');
+
+// Google Search Console verification
+fs.writeFileSync(path.join(DIST, 'google56e389dfbc1262f1.html'), 'google-site-verification: google56e389dfbc1262f1.html');
