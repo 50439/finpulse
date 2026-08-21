@@ -1,0 +1,48 @@
+name: Build & publish (auto-news every 6 hours)
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch: {}
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - name: Generate fresh articles (RSS -> Claude -> 10 languages)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ -z "$ANTHROPIC_API_KEY" ]; then
+            echo "::warning::ANTHROPIC_API_KEY secret not set - skipping article generation, publishing existing content"
+          else
+            node scripts/generate.js
+          fi
+      - name: Commit fresh articles
+        run: |
+          git config user.name "finpulse-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add content/articles.json
+          git commit -m "auto: fresh articles $(date -u +'%Y-%m-%d %H:%M')" && git push || echo "nothing to commit"
+      - name: Build site
+        env:
+          SITE_URL: ${{ vars.SITE_URL || 'https://50439.github.io' }}
+          BASE_PATH: ${{ vars.BASE_PATH || '/finpulse' }}
+        run: node build.js && node build.test.js
+      - uses: actions/upload-pages-artifact@v3
+        with: { path: dist }
+      - uses: actions/deploy-pages@v4
+        id: deployment
