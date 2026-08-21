@@ -1,79 +1,916 @@
 [
-  {
-    "id": "binance",
-    "name": "Binance",
-    "type": "crypto",
-    "logo": "B",
-    "color": "#F3BA2F",
-    "rating": 4.9,
-    "url": "#REPLACE_WITH_SALESDOUBLER_LINK",
-    "features": { "en": ["Largest exchange by volume", "600+ coins", "Low 0.1% fees"], "uk": ["Найбільша біржа за обсягом", "600+ монет", "Комісія від 0.1%"], "ru": ["Крупнейшая биржа по объёму", "600+ монет", "Комиссия от 0.1%"], "es": ["Mayor exchange por volumen", "600+ monedas", "Comisiones desde 0.1%"], "pt": ["Maior exchange em volume", "600+ moedas", "Taxas desde 0.1%"], "de": ["Größte Börse nach Volumen", "600+ Coins", "Gebühren ab 0.1%"], "fr": ["Plus grande plateforme", "600+ cryptos", "Frais dès 0.1%"], "ar": ["أكبر منصة تداول", "أكثر من 600 عملة", "رسوم من 0.1%"], "zh": ["交易量最大的交易所", "600+币种", "费率低至0.1%"], "hi": ["वॉल्यूम में सबसे बड़ा एक्सचेंज", "600+ कॉइन", "0.1% से फीस"] },
-    "bonus": { "en": "Up to $600 welcome bonus", "uk": "Бонус до $600 новим користувачам", "ru": "Бонус до $600 новым пользователям", "es": "Bono de bienvenida hasta $600", "pt": "Bônus de boas-vindas até $600", "de": "Bis zu $600 Willkommensbonus", "fr": "Jusqu'à 600$ de bonus", "ar": "مكافأة ترحيبية حتى 600$", "zh": "最高$600欢迎奖励", "hi": "$600 तक स्वागत बोनस" }
+ {
+  "id": "binance",
+  "name": "Binance",
+  "type": "crypto",
+  "logo": "B",
+  "color": "#F3BA2F",
+  "rating": 4.9,
+  "url": "https://www.binance.com/register?ref=25582738",
+  "features": {
+   "en": [
+    "Largest exchange by volume",
+    "600+ coins",
+    "Low 0.1% fees"
+   ],
+   "uk": [
+    "Найбільша біржа за обсягом",
+    "600+ монет",
+    "Комісія від 0.1%"
+   ],
+   "ru": [
+    "Крупнейшая биржа по объёму",
+    "600+ монет",
+    "Комиссия от 0.1%"
+   ],
+   "es": [
+    "Mayor exchange por volumen",
+    "600+ monedas",
+    "Comisiones desde 0.1%"
+   ],
+   "pt": [
+    "Maior exchange em volume",
+    "600+ moedas",
+    "Taxas desde 0.1%"
+   ],
+   "de": [
+    "Größte Börse nach Volumen",
+    "600+ Coins",
+    "Gebühren ab 0.1%"
+   ],
+   "fr": [
+    "Plus grande plateforme",
+    "600+ cryptos",
+    "Frais dès 0.1%"
+   ],
+   "ar": [
+    "أكبر منصة تداول",
+    "أكثر من 600 عملة",
+    "رسوم من 0.1%"
+   ],
+   "zh": [
+    "交易量最大的交易所",
+    "600+币种",
+    "费率低至0.1%"
+   ],
+   "hi": [
+    "वॉल्यूम में सबसे बड़ा एक्सचेंज",
+    "600+ कॉइन",
+    "0.1% से फीस"
+   ]
   },
-  {
-    "id": "bybit",
-    "name": "Bybit",
-    "type": "crypto",
-    "logo": "Ƀ",
-    "color": "#F7A600",
-    "rating": 4.8,
-    "url": "#REPLACE_WITH_SALESDOUBLER_LINK",
-    "features": { "en": ["Top derivatives platform", "Copy trading", "No KYC for basics"], "uk": ["Топ платформа деривативів", "Копі-трейдинг", "Швидка реєстрація"], "ru": ["Топ платформа деривативов", "Копи-трейдинг", "Быстрая регистрация"], "es": ["Líder en derivados", "Copy trading", "Registro rápido"], "pt": ["Líder em derivativos", "Copy trading", "Registro rápido"], "de": ["Top Derivate-Plattform", "Copy Trading", "Schnelle Anmeldung"], "fr": ["Leader des dérivés", "Copy trading", "Inscription rapide"], "ar": ["منصة المشتقات الأولى", "التداول بالنسخ", "تسجيل سريع"], "zh": ["顶级衍生品平台", "跟单交易", "快速注册"], "hi": ["शीर्ष डेरिवेटिव प्लेटफॉर्म", "कॉपी ट्रेडिंग", "तेज़ पंजीकरण"] },
-    "bonus": { "en": "Up to $30,000 in rewards", "uk": "До $30 000 у винагородах", "ru": "До $30 000 в наградах", "es": "Hasta $30,000 en recompensas", "pt": "Até $30.000 em recompensas", "de": "Bis zu $30.000 Prämien", "fr": "Jusqu'à 30 000$ de récompenses", "ar": "مكافآت حتى 30,000$", "zh": "最高$30,000奖励", "hi": "$30,000 तक रिवॉर्ड" }
-  },
-  {
-    "id": "okx",
-    "name": "OKX",
-    "type": "crypto",
-    "logo": "O",
-    "color": "#FFFFFF",
-    "rating": 4.7,
-    "url": "#REPLACE_WITH_SALESDOUBLER_LINK",
-    "features": { "en": ["Web3 wallet built-in", "300+ coins", "Advanced trading tools"], "uk": ["Вбудований Web3 гаманець", "300+ монет", "Просунуті інструменти"], "ru": ["Встроенный Web3 кошелёк", "300+ монет", "Продвинутые инструменты"], "es": ["Wallet Web3 integrada", "300+ monedas", "Herramientas avanzadas"], "pt": ["Carteira Web3 integrada", "300+ moedas", "Ferramentas avançadas"], "de": ["Integrierte Web3-Wallet", "300+ Coins", "Profi-Tools"], "fr": ["Wallet Web3 intégré", "300+ cryptos", "Outils avancés"], "ar": ["محفظة Web3 مدمجة", "أكثر من 300 عملة", "أدوات متقدمة"], "zh": ["内置Web3钱包", "300+币种", "高级交易工具"], "hi": ["बिल्ट-इन Web3 वॉलेट", "300+ कॉइन", "उन्नत टूल्स"] },
-    "bonus": { "en": "Mystery box up to $10,000", "uk": "Містері-бокс до $10 000", "ru": "Мистери-бокс до $10 000", "es": "Caja misteriosa hasta $10,000", "pt": "Caixa misteriosa até $10.000", "de": "Mystery Box bis $10.000", "fr": "Mystery box jusqu'à 10 000$", "ar": "صندوق غامض حتى 10,000$", "zh": "最高$10,000盲盒", "hi": "$10,000 तक मिस्ट्री बॉक्स" }
-  },
-  {
-    "id": "bitget",
-    "name": "Bitget",
-    "type": "crypto",
-    "logo": "G",
-    "color": "#00F0FF",
-    "rating": 4.6,
-    "url": "#REPLACE_WITH_SALESDOUBLER_LINK",
-    "features": { "en": ["#1 copy trading", "800+ coins", "Protection fund"], "uk": ["№1 у копі-трейдингу", "800+ монет", "Фонд захисту"], "ru": ["№1 в копи-трейдинге", "800+ монет", "Фонд защиты"], "es": ["#1 en copy trading", "800+ monedas", "Fondo de protección"], "pt": ["#1 em copy trading", "800+ moedas", "Fundo de proteção"], "de": ["Nr. 1 Copy Trading", "800+ Coins", "Schutzfonds"], "fr": ["N°1 du copy trading", "800+ cryptos", "Fonds de protection"], "ar": ["الأول في التداول بالنسخ", "أكثر من 800 عملة", "صندوق حماية"], "zh": ["跟单交易第一", "800+币种", "保护基金"], "hi": ["कॉपी ट्रेडिंग में #1", "800+ कॉइन", "सुरक्षा फंड"] },
-    "bonus": { "en": "Up to $1,000 for newcomers", "uk": "До $1 000 новачкам", "ru": "До $1 000 новичкам", "es": "Hasta $1,000 para nuevos", "pt": "Até $1.000 para novos", "de": "Bis zu $1.000 für Neue", "fr": "Jusqu'à 1 000$ offerts", "ar": "حتى 1,000$ للجدد", "zh": "新人最高$1,000", "hi": "नए यूज़र्स को $1,000 तक" }
-  },
-  {
-    "id": "kucoin",
-    "name": "KuCoin",
-    "type": "crypto",
-    "logo": "K",
-    "color": "#24AE8F",
-    "rating": 4.5,
-    "url": "#REPLACE_WITH_SALESDOUBLER_LINK",
-    "features": { "en": ["700+ altcoins", "Trading bots", "Staking & earn"], "uk": ["700+ альткоїнів", "Торгові боти", "Стейкінг"], "ru": ["700+ альткоинов", "Торговые боты", "Стейкинг"], "es": ["700+ altcoins", "Bots de trading", "Staking"], "pt": ["700+ altcoins", "Bots de trading", "Staking"], "de": ["700+ Altcoins", "Trading-Bots", "Staking"], "fr": ["700+ altcoins", "Bots de trading", "Staking"], "ar": ["أكثر من 700 عملة بديلة", "روبوتات تداول", "ستيكينغ"], "zh": ["700+山寨币", "交易机器人", "质押赚币"], "hi": ["700+ ऑल्टकॉइन", "ट्रेडिंग बॉट्स", "स्टेकिंग"] },
-    "bonus": { "en": "Up to $500 welcome gift", "uk": "Вітальний подарунок до $500", "ru": "Приветственный подарок до $500", "es": "Regalo de bienvenida hasta $500", "pt": "Presente de boas-vindas até $500", "de": "Bis zu $500 Willkommensgeschenk", "fr": "Cadeau jusqu'à 500$", "ar": "هدية ترحيبية حتى 500$", "zh": "最高$500见面礼", "hi": "$500 तक स्वागत उपहार" }
-  },
-  {
-    "id": "exness",
-    "name": "Exness",
-    "type": "forex",
-    "logo": "E",
-    "color": "#FFD100",
-    "rating": 4.7,
-    "url": "#REPLACE_WITH_SALESDOUBLER_LINK",
-    "features": { "en": ["Instant withdrawals", "Forex, metals, crypto CFD", "From $10 deposit"], "uk": ["Миттєві виведення", "Форекс, метали, крипто CFD", "Депозит від $10"], "ru": ["Мгновенный вывод", "Форекс, металлы, крипто CFD", "Депозит от $10"], "es": ["Retiros instantáneos", "Forex, metales, CFD", "Depósito desde $10"], "pt": ["Saques instantâneos", "Forex, metais, CFD", "Depósito desde $10"], "de": ["Sofortige Auszahlungen", "Forex, Metalle, CFDs", "Ab $10 Einzahlung"], "fr": ["Retraits instantanés", "Forex, métaux, CFD", "Dépôt dès 10$"], "ar": ["سحوبات فورية", "فوركس ومعادن وعملات", "إيداع من 10$"], "zh": ["即时提款", "外汇/金属/加密CFD", "$10起入金"], "hi": ["तुरंत निकासी", "फॉरेक्स, मेटल्स, CFD", "$10 से डिपॉज़िट"] },
-    "bonus": { "en": "Tight spreads from 0.0 pips", "uk": "Спреди від 0.0 пунктів", "ru": "Спреды от 0.0 пунктов", "es": "Spreads desde 0.0 pips", "pt": "Spreads desde 0.0 pips", "de": "Spreads ab 0.0 Pips", "fr": "Spreads dès 0.0 pip", "ar": "فروقات من 0.0 نقطة", "zh": "点差低至0.0", "hi": "0.0 पिप्स से स्प्रेड" }
-  },
-  {
-    "id": "xm",
-    "name": "XM",
-    "type": "forex",
-    "logo": "X",
-    "color": "#E23B3B",
-    "rating": 4.4,
-    "url": "#REPLACE_WITH_SALESDOUBLER_LINK",
-    "features": { "en": ["1000+ instruments", "Regulated broker", "Free education"], "uk": ["1000+ інструментів", "Регульований брокер", "Безкоштовне навчання"], "ru": ["1000+ инструментов", "Регулируемый брокер", "Бесплатное обучение"], "es": ["1000+ instrumentos", "Broker regulado", "Educación gratis"], "pt": ["1000+ instrumentos", "Corretora regulada", "Educação grátis"], "de": ["1000+ Instrumente", "Regulierter Broker", "Kostenlose Schulung"], "fr": ["1000+ instruments", "Broker régulé", "Formation gratuite"], "ar": ["أكثر من 1000 أداة", "وسيط مرخّص", "تعليم مجاني"], "zh": ["1000+交易品种", "受监管经纪商", "免费教育"], "hi": ["1000+ इंस्ट्रूमेंट्स", "विनियमित ब्रोकर", "मुफ्त शिक्षा"] },
-    "bonus": { "en": "$30 no-deposit bonus", "uk": "Бонус $30 без депозиту", "ru": "Бонус $30 без депозита", "es": "Bono de $30 sin depósito", "pt": "Bônus de $30 sem depósito", "de": "$30 Bonus ohne Einzahlung", "fr": "Bonus de 30$ sans dépôt", "ar": "مكافأة 30$ بدون إيداع", "zh": "$30无需入金奖励", "hi": "$30 नो-डिपॉज़िट बोनस" }
+  "bonus": {
+   "en": "Up to $600 welcome bonus",
+   "uk": "Бонус до $600 новим користувачам",
+   "ru": "Бонус до $600 новым пользователям",
+   "es": "Bono de bienvenida hasta $600",
+   "pt": "Bônus de boas-vindas até $600",
+   "de": "Bis zu $600 Willkommensbonus",
+   "fr": "Jusqu'à 600$ de bonus",
+   "ar": "مكافأة ترحيبية حتى 600$",
+   "zh": "最高$600欢迎奖励",
+   "hi": "$600 तक स्वागत बोनस"
   }
+ },
+ {
+  "id": "bybit",
+  "name": "Bybit",
+  "type": "crypto",
+  "logo": "Ƀ",
+  "color": "#F7A600",
+  "rating": 4.8,
+  "url": "#REPLACE_WITH_SALESDOUBLER_LINK",
+  "features": {
+   "en": [
+    "Top derivatives platform",
+    "Copy trading",
+    "No KYC for basics"
+   ],
+   "uk": [
+    "Топ платформа деривативів",
+    "Копі-трейдинг",
+    "Швидка реєстрація"
+   ],
+   "ru": [
+    "Топ платформа деривативов",
+    "Копи-трейдинг",
+    "Быстрая регистрация"
+   ],
+   "es": [
+    "Líder en derivados",
+    "Copy trading",
+    "Registro rápido"
+   ],
+   "pt": [
+    "Líder em derivativos",
+    "Copy trading",
+    "Registro rápido"
+   ],
+   "de": [
+    "Top Derivate-Plattform",
+    "Copy Trading",
+    "Schnelle Anmeldung"
+   ],
+   "fr": [
+    "Leader des dérivés",
+    "Copy trading",
+    "Inscription rapide"
+   ],
+   "ar": [
+    "منصة المشتقات الأولى",
+    "التداول بالنسخ",
+    "تسجيل سريع"
+   ],
+   "zh": [
+    "顶级衍生品平台",
+    "跟单交易",
+    "快速注册"
+   ],
+   "hi": [
+    "शीर्ष डेरिवेटिव प्लेटफॉर्म",
+    "कॉपी ट्रेडिंग",
+    "तेज़ पंजीकरण"
+   ]
+  },
+  "bonus": {
+   "en": "Up to $30,000 in rewards",
+   "uk": "До $30 000 у винагородах",
+   "ru": "До $30 000 в наградах",
+   "es": "Hasta $30,000 en recompensas",
+   "pt": "Até $30.000 em recompensas",
+   "de": "Bis zu $30.000 Prämien",
+   "fr": "Jusqu'à 30 000$ de récompenses",
+   "ar": "مكافآت حتى 30,000$",
+   "zh": "最高$30,000奖励",
+   "hi": "$30,000 तक रिवॉर्ड"
+  }
+ },
+ {
+  "id": "okx",
+  "name": "OKX",
+  "type": "crypto",
+  "logo": "O",
+  "color": "#FFFFFF",
+  "rating": 4.7,
+  "url": "#REPLACE_WITH_SALESDOUBLER_LINK",
+  "features": {
+   "en": [
+    "Web3 wallet built-in",
+    "300+ coins",
+    "Advanced trading tools"
+   ],
+   "uk": [
+    "Вбудований Web3 гаманець",
+    "300+ монет",
+    "Просунуті інструменти"
+   ],
+   "ru": [
+    "Встроенный Web3 кошелёк",
+    "300+ монет",
+    "Продвинутые инструменты"
+   ],
+   "es": [
+    "Wallet Web3 integrada",
+    "300+ monedas",
+    "Herramientas avanzadas"
+   ],
+   "pt": [
+    "Carteira Web3 integrada",
+    "300+ moedas",
+    "Ferramentas avançadas"
+   ],
+   "de": [
+    "Integrierte Web3-Wallet",
+    "300+ Coins",
+    "Profi-Tools"
+   ],
+   "fr": [
+    "Wallet Web3 intégré",
+    "300+ cryptos",
+    "Outils avancés"
+   ],
+   "ar": [
+    "محفظة Web3 مدمجة",
+    "أكثر من 300 عملة",
+    "أدوات متقدمة"
+   ],
+   "zh": [
+    "内置Web3钱包",
+    "300+币种",
+    "高级交易工具"
+   ],
+   "hi": [
+    "बिल्ट-इन Web3 वॉलेट",
+    "300+ कॉइन",
+    "उन्नत टूल्स"
+   ]
+  },
+  "bonus": {
+   "en": "Mystery box up to $10,000",
+   "uk": "Містері-бокс до $10 000",
+   "ru": "Мистери-бокс до $10 000",
+   "es": "Caja misteriosa hasta $10,000",
+   "pt": "Caixa misteriosa até $10.000",
+   "de": "Mystery Box bis $10.000",
+   "fr": "Mystery box jusqu'à 10 000$",
+   "ar": "صندوق غامض حتى 10,000$",
+   "zh": "最高$10,000盲盒",
+   "hi": "$10,000 तक मिस्ट्री बॉक्स"
+  }
+ },
+ {
+  "id": "bitget",
+  "name": "Bitget",
+  "type": "crypto",
+  "logo": "G",
+  "color": "#00F0FF",
+  "rating": 4.6,
+  "url": "#REPLACE_WITH_SALESDOUBLER_LINK",
+  "features": {
+   "en": [
+    "#1 copy trading",
+    "800+ coins",
+    "Protection fund"
+   ],
+   "uk": [
+    "№1 у копі-трейдингу",
+    "800+ монет",
+    "Фонд захисту"
+   ],
+   "ru": [
+    "№1 в копи-трейдинге",
+    "800+ монет",
+    "Фонд защиты"
+   ],
+   "es": [
+    "#1 en copy trading",
+    "800+ monedas",
+    "Fondo de protección"
+   ],
+   "pt": [
+    "#1 em copy trading",
+    "800+ moedas",
+    "Fundo de proteção"
+   ],
+   "de": [
+    "Nr. 1 Copy Trading",
+    "800+ Coins",
+    "Schutzfonds"
+   ],
+   "fr": [
+    "N°1 du copy trading",
+    "800+ cryptos",
+    "Fonds de protection"
+   ],
+   "ar": [
+    "الأول في التداول بالنسخ",
+    "أكثر من 800 عملة",
+    "صندوق حماية"
+   ],
+   "zh": [
+    "跟单交易第一",
+    "800+币种",
+    "保护基金"
+   ],
+   "hi": [
+    "कॉपी ट्रेडिंग में #1",
+    "800+ कॉइन",
+    "सुरक्षा फंड"
+   ]
+  },
+  "bonus": {
+   "en": "Up to $1,000 for newcomers",
+   "uk": "До $1 000 новачкам",
+   "ru": "До $1 000 новичкам",
+   "es": "Hasta $1,000 para nuevos",
+   "pt": "Até $1.000 para novos",
+   "de": "Bis zu $1.000 für Neue",
+   "fr": "Jusqu'à 1 000$ offerts",
+   "ar": "حتى 1,000$ للجدد",
+   "zh": "新人最高$1,000",
+   "hi": "नए यूज़र्स को $1,000 तक"
+  }
+ },
+ {
+  "id": "kucoin",
+  "name": "KuCoin",
+  "type": "crypto",
+  "logo": "K",
+  "color": "#24AE8F",
+  "rating": 4.5,
+  "url": "#REPLACE_WITH_SALESDOUBLER_LINK",
+  "features": {
+   "en": [
+    "700+ altcoins",
+    "Trading bots",
+    "Staking & earn"
+   ],
+   "uk": [
+    "700+ альткоїнів",
+    "Торгові боти",
+    "Стейкінг"
+   ],
+   "ru": [
+    "700+ альткоинов",
+    "Торговые боты",
+    "Стейкинг"
+   ],
+   "es": [
+    "700+ altcoins",
+    "Bots de trading",
+    "Staking"
+   ],
+   "pt": [
+    "700+ altcoins",
+    "Bots de trading",
+    "Staking"
+   ],
+   "de": [
+    "700+ Altcoins",
+    "Trading-Bots",
+    "Staking"
+   ],
+   "fr": [
+    "700+ altcoins",
+    "Bots de trading",
+    "Staking"
+   ],
+   "ar": [
+    "أكثر من 700 عملة بديلة",
+    "روبوتات تداول",
+    "ستيكينغ"
+   ],
+   "zh": [
+    "700+山寨币",
+    "交易机器人",
+    "质押赚币"
+   ],
+   "hi": [
+    "700+ ऑल्टकॉइन",
+    "ट्रेडिंग बॉट्स",
+    "स्टेकिंग"
+   ]
+  },
+  "bonus": {
+   "en": "Up to $500 welcome gift",
+   "uk": "Вітальний подарунок до $500",
+   "ru": "Приветственный подарок до $500",
+   "es": "Regalo de bienvenida hasta $500",
+   "pt": "Presente de boas-vindas até $500",
+   "de": "Bis zu $500 Willkommensgeschenk",
+   "fr": "Cadeau jusqu'à 500$",
+   "ar": "هدية ترحيبية حتى 500$",
+   "zh": "最高$500见面礼",
+   "hi": "$500 तक स्वागत उपहार"
+  }
+ },
+ {
+  "id": "exness",
+  "name": "Exness",
+  "type": "forex",
+  "logo": "E",
+  "color": "#FFD100",
+  "rating": 4.7,
+  "url": "#REPLACE_WITH_SALESDOUBLER_LINK",
+  "features": {
+   "en": [
+    "Instant withdrawals",
+    "Forex, metals, crypto CFD",
+    "From $10 deposit"
+   ],
+   "uk": [
+    "Миттєві виведення",
+    "Форекс, метали, крипто CFD",
+    "Депозит від $10"
+   ],
+   "ru": [
+    "Мгновенный вывод",
+    "Форекс, металлы, крипто CFD",
+    "Депозит от $10"
+   ],
+   "es": [
+    "Retiros instantáneos",
+    "Forex, metales, CFD",
+    "Depósito desde $10"
+   ],
+   "pt": [
+    "Saques instantâneos",
+    "Forex, metais, CFD",
+    "Depósito desde $10"
+   ],
+   "de": [
+    "Sofortige Auszahlungen",
+    "Forex, Metalle, CFDs",
+    "Ab $10 Einzahlung"
+   ],
+   "fr": [
+    "Retraits instantanés",
+    "Forex, métaux, CFD",
+    "Dépôt dès 10$"
+   ],
+   "ar": [
+    "سحوبات فورية",
+    "فوركس ومعادن وعملات",
+    "إيداع من 10$"
+   ],
+   "zh": [
+    "即时提款",
+    "外汇/金属/加密CFD",
+    "$10起入金"
+   ],
+   "hi": [
+    "तुरंत निकासी",
+    "फॉरेक्स, मेटल्स, CFD",
+    "$10 से डिपॉज़िट"
+   ]
+  },
+  "bonus": {
+   "en": "Tight spreads from 0.0 pips",
+   "uk": "Спреди від 0.0 пунктів",
+   "ru": "Спреды от 0.0 пунктов",
+   "es": "Spreads desde 0.0 pips",
+   "pt": "Spreads desde 0.0 pips",
+   "de": "Spreads ab 0.0 Pips",
+   "fr": "Spreads dès 0.0 pip",
+   "ar": "فروقات من 0.0 نقطة",
+   "zh": "点差低至0.0",
+   "hi": "0.0 पिप्स से स्प्रेड"
+  }
+ },
+ {
+  "id": "xm",
+  "name": "XM",
+  "type": "forex",
+  "logo": "X",
+  "color": "#E23B3B",
+  "rating": 4.4,
+  "url": "#REPLACE_WITH_SALESDOUBLER_LINK",
+  "features": {
+   "en": [
+    "1000+ instruments",
+    "Regulated broker",
+    "Free education"
+   ],
+   "uk": [
+    "1000+ інструментів",
+    "Регульований брокер",
+    "Безкоштовне навчання"
+   ],
+   "ru": [
+    "1000+ инструментов",
+    "Регулируемый брокер",
+    "Бесплатное обучение"
+   ],
+   "es": [
+    "1000+ instrumentos",
+    "Broker regulado",
+    "Educación gratis"
+   ],
+   "pt": [
+    "1000+ instrumentos",
+    "Corretora regulada",
+    "Educação grátis"
+   ],
+   "de": [
+    "1000+ Instrumente",
+    "Regulierter Broker",
+    "Kostenlose Schulung"
+   ],
+   "fr": [
+    "1000+ instruments",
+    "Broker régulé",
+    "Formation gratuite"
+   ],
+   "ar": [
+    "أكثر من 1000 أداة",
+    "وسيط مرخّص",
+    "تعليم مجاني"
+   ],
+   "zh": [
+    "1000+交易品种",
+    "受监管经纪商",
+    "免费教育"
+   ],
+   "hi": [
+    "1000+ इंस्ट्रूमेंट्स",
+    "विनियमित ब्रोकर",
+    "मुफ्त शिक्षा"
+   ]
+  },
+  "bonus": {
+   "en": "$30 no-deposit bonus",
+   "uk": "Бонус $30 без депозиту",
+   "ru": "Бонус $30 без депозита",
+   "es": "Bono de $30 sin depósito",
+   "pt": "Bônus de $30 sem depósito",
+   "de": "$30 Bonus ohne Einzahlung",
+   "fr": "Bonus de 30$ sans dépôt",
+   "ar": "مكافأة 30$ بدون إيداع",
+   "zh": "$30无需入金奖励",
+   "hi": "$30 नो-डिपॉज़िट बोनस"
+  }
+ },
+ {
+  "id": "coinbase",
+  "name": "Coinbase",
+  "type": "crypto",
+  "logo": "C",
+  "color": "#0052FF",
+  "rating": 4.7,
+  "url": "#REPLACE_WITH_SALESDOUBLER_LINK",
+  "features": {
+   "en": [
+    "Largest US exchange",
+    "Publicly listed (NASDAQ)",
+    "Beginner friendly"
+   ],
+   "uk": [
+    "Найбільша біржа США",
+    "Публічна компанія (NASDAQ)",
+    "Проста для новачків"
+   ],
+   "ru": [
+    "Крупнейшая биржа США",
+    "Публичная компания (NASDAQ)",
+    "Проста для новичков"
+   ]
+  },
+  "bonus": {
+   "en": "Get crypto rewards for learning",
+   "uk": "Крипто-бонуси за навчання",
+   "ru": "Крипто-бонусы за обучение"
+  }
+ },
+ {
+  "id": "kraken",
+  "name": "Kraken",
+  "type": "crypto",
+  "logo": "🐙",
+  "color": "#7B3FF2",
+  "rating": 4.7,
+  "url": "#REPLACE_WITH_SALESDOUBLER_LINK",
+  "features": {
+   "en": [
+    "Top security record",
+    "200+ coins",
+    "Pro trading terminal"
+   ],
+   "uk": [
+    "Найкраща репутація безпеки",
+    "200+ монет",
+    "Про-термінал"
+   ],
+   "ru": [
+    "Лучшая репутация безопасности",
+    "200+ монет",
+    "Про-терминал"
+   ]
+  },
+  "bonus": {
+   "en": "Low fees on Kraken Pro",
+   "uk": "Низькі комісії на Kraken Pro",
+   "ru": "Низкие комиссии на Kraken Pro"
+  }
+ },
+ {
+  "id": "gateio",
+  "name": "Gate.io",
+  "type": "crypto",
+  "logo": "G",
+  "color": "#2354E6",
+  "rating": 4.5,
+  "url": "#REPLACE_WITH_SALESDOUBLER_LINK",
+  "features": {
+   "en": [
+    "1700+ coins — largest choice",
+    "Early gem listings",
+    "Startup launchpad"
+   ],
+   "uk": [
+    "1700+ монет — найбільший вибір",
+    "Ранні лістинги",
+    "Launchpad стартапів"
+   ],
+   "ru": [
+    "1700+ монет — самый большой выбор",
+    "Ранние листинги",
+    "Launchpad стартапов"
+   ]
+  },
+  "bonus": {
+   "en": "Up to $6,666 for newcomers",
+   "uk": "До $6 666 новачкам",
+   "ru": "До $6 666 новичкам"
+  }
+ },
+ {
+  "id": "nexo",
+  "name": "Nexo",
+  "type": "crypto",
+  "logo": "N",
+  "color": "#1E4DD8",
+  "rating": 4.5,
+  "url": "#REPLACE_WITH_SALESDOUBLER_LINK",
+  "features": {
+   "en": [
+    "Earn up to 14% on crypto",
+    "Instant crypto loans",
+    "Nexo card"
+   ],
+   "uk": [
+    "До 14% річних на крипту",
+    "Миттєві криптопозики",
+    "Картка Nexo"
+   ],
+   "ru": [
+    "До 14% годовых на крипту",
+    "Мгновенные криптозаймы",
+    "Карта Nexo"
+   ]
+  },
+  "bonus": {
+   "en": "Earn interest daily",
+   "uk": "Щоденні нарахування відсотків",
+   "ru": "Ежедневное начисление процентов"
+  }
+ },
+ {
+  "id": "paybis",
+  "name": "Paybis",
+  "type": "crypto",
+  "logo": "P",
+  "color": "#2E9BF0",
+  "rating": 4.4,
+  "url": "#REPLACE_WITH_SALESDOUBLER_LINK",
+  "features": {
+   "en": [
+    "Buy crypto with card in minutes",
+    "No account needed for start",
+    "80+ currencies"
+   ],
+   "uk": [
+    "Купівля крипти з картки за хвилини",
+    "Швидкий старт без акаунта",
+    "80+ валют"
+   ],
+   "ru": [
+    "Покупка крипты с карты за минуты",
+    "Быстрый старт без аккаунта",
+    "80+ валют"
+   ]
+  },
+  "bonus": {
+   "en": "First transaction — 0% Paybis fee",
+   "uk": "Перша транзакція — 0% комісії",
+   "ru": "Первая транзакция — 0% комиссии"
+  }
+ },
+ {
+  "id": "changelly",
+  "name": "Changelly",
+  "type": "crypto",
+  "logo": "⇄",
+  "color": "#10D078",
+  "rating": 4.4,
+  "url": "#REPLACE_WITH_SALESDOUBLER_LINK",
+  "features": {
+   "en": [
+    "Instant crypto swaps",
+    "500+ coins",
+    "No registration hassle"
+   ],
+   "uk": [
+    "Миттєві обміни крипти",
+    "500+ монет",
+    "Без зайвої реєстрації"
+   ],
+   "ru": [
+    "Мгновенные обмены крипты",
+    "500+ монет",
+    "Без лишней регистрации"
+   ]
+  },
+  "bonus": {
+   "en": "Best rate aggregator",
+   "uk": "Агрегатор найкращих курсів",
+   "ru": "Агрегатор лучших курсов"
+  }
+ },
+ {
+  "id": "trezor",
+  "name": "Trezor",
+  "type": "crypto",
+  "logo": "T",
+  "color": "#00854D",
+  "rating": 4.8,
+  "url": "#REPLACE_WITH_SALESDOUBLER_LINK",
+  "features": {
+   "en": [
+    "Hardware wallet — keys offline",
+    "Open-source security",
+    "9000+ coins supported"
+   ],
+   "uk": [
+    "Апаратний гаманець — ключі офлайн",
+    "Відкритий код",
+    "9000+ монет"
+   ],
+   "ru": [
+    "Аппаратный кошелёк — ключи офлайн",
+    "Открытый код",
+    "9000+ монет"
+   ]
+  },
+  "bonus": {
+   "en": "Protect your crypto for life",
+   "uk": "Захистіть крипту назавжди",
+   "ru": "Защитите крипту навсегда"
+  }
+ },
+ {
+  "id": "libertex",
+  "name": "Libertex",
+  "type": "forex",
+  "logo": "L",
+  "color": "#F5A800",
+  "rating": 4.3,
+  "url": "#REPLACE_WITH_SALESDOUBLER_LINK",
+  "features": {
+   "en": [
+    "CFD on crypto, stocks, forex",
+    "25+ years on market",
+    "MetaTrader 4/5"
+   ],
+   "uk": [
+    "CFD на крипту, акції, форекс",
+    "25+ років на ринку",
+    "MetaTrader 4/5"
+   ],
+   "ru": [
+    "CFD на крипту, акции, форекс",
+    "25+ лет на рынке",
+    "MetaTrader 4/5"
+   ]
+  },
+  "bonus": {
+   "en": "Zero spread accounts",
+   "uk": "Рахунки з нульовим спредом",
+   "ru": "Счета с нулевым спредом"
+  }
+ },
+ {
+  "id": "fxpro",
+  "name": "FxPro",
+  "type": "forex",
+  "logo": "F",
+  "color": "#D2AC47",
+  "rating": 4.4,
+  "url": "#REPLACE_WITH_SALESDOUBLER_LINK",
+  "features": {
+   "en": [
+    "FCA/CySEC regulated",
+    "2100+ instruments",
+    "No dealing desk"
+   ],
+   "uk": [
+    "Регуляція FCA/CySEC",
+    "2100+ інструментів",
+    "Без дилінгу"
+   ],
+   "ru": [
+    "Регуляция FCA/CySEC",
+    "2100+ инструментов",
+    "Без дилинга"
+   ]
+  },
+  "bonus": {
+   "en": "Award-winning broker",
+   "uk": "Багаторазовий лауреат нагород",
+   "ru": "Многократный лауреат наград"
+  }
+ },
+ {
+  "id": "puprime",
+  "name": "PU Prime",
+  "type": "forex",
+  "logo": "Π",
+  "color": "#4C6FFF",
+  "rating": 4.2,
+  "url": "#REPLACE_WITH_SALESDOUBLER_LINK",
+  "features": {
+   "en": [
+    "Forex, metals, indices, crypto",
+    "From $20 deposit",
+    "Copy trading app"
+   ],
+   "uk": [
+    "Форекс, метали, індекси, крипта",
+    "Депозит від $20",
+    "Копі-трейдинг"
+   ],
+   "ru": [
+    "Форекс, металлы, индексы, крипта",
+    "Депозит от $20",
+    "Копи-трейдинг"
+   ]
+  },
+  "bonus": {
+   "en": "Deposit bonuses up to 50%",
+   "uk": "Бонуси на депозит до 50%",
+   "ru": "Бонусы на депозит до 50%"
+  }
+ },
+ {
+  "id": "pocketoption",
+  "name": "PocketOption",
+  "type": "forex",
+  "logo": "◉",
+  "color": "#33B4FF",
+  "rating": 4.1,
+  "url": "#REPLACE_WITH_SALESDOUBLER_LINK",
+  "features": {
+   "en": [
+    "Trading from $1",
+    "100+ assets",
+    "Demo account free"
+   ],
+   "uk": [
+    "Торгівля від $1",
+    "100+ активів",
+    "Безкоштовне демо"
+   ],
+   "ru": [
+    "Торговля от $1",
+    "100+ активов",
+    "Бесплатное демо"
+   ]
+  },
+  "bonus": {
+   "en": "+50% on first deposit",
+   "uk": "+50% на перший депозит",
+   "ru": "+50% на первый депозит"
+  }
+ },
+ {
+  "id": "in1",
+  "name": "IN1",
+  "type": "crypto",
+  "logo": "1",
+  "color": "#B8FF3C",
+  "rating": 4.2,
+  "url": "#REPLACE_WITH_SALESDOUBLER_LINK",
+  "features": {
+   "en": [
+    "Crypto card for Europe",
+    "Spend crypto anywhere",
+    "Instant top-ups"
+   ],
+   "uk": [
+    "Криптокартка для Європи",
+    "Витрачайте крипту будь-де",
+    "Миттєві поповнення"
+   ],
+   "ru": [
+    "Криптокарта для Европы",
+    "Тратьте крипту где угодно",
+    "Мгновенные пополнения"
+   ]
+  },
+  "bonus": {
+   "en": "Free card issue",
+   "uk": "Безкоштовний випуск картки",
+   "ru": "Бесплатный выпуск карты"
+  }
+ },
+ {
+  "id": "rockwallet",
+  "name": "RockWallet",
+  "type": "crypto",
+  "logo": "R",
+  "color": "#FF7847",
+  "rating": 4.0,
+  "url": "#REPLACE_WITH_SALESDOUBLER_LINK",
+  "features": {
+   "en": [
+    "Self-custody wallet + exchange",
+    "Buy/swap in app",
+    "US-focused"
+   ],
+   "uk": [
+    "Некастодіальний гаманець + обмін",
+    "Купівля/обмін у додатку",
+    "Фокус на США"
+   ],
+   "ru": [
+    "Некастодиальный кошелёк + обмен",
+    "Покупка/обмен в приложении",
+    "Фокус на США"
+   ]
+  },
+  "bonus": {
+   "en": "Simple and secure start",
+   "uk": "Простий та безпечний старт",
+   "ru": "Простой и безопасный старт"
+  }
+ }
 ]
