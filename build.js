@@ -195,16 +195,35 @@ for (const lang of LANGS) {
     body: '<main class="wrap">' +
       '<section class="hero"><div class="badge"><span class="pulse"></span>' + esc(S('updatedEvery', lang)) + '</div>' +
       '<h1>' + esc(S('tagline', lang)) + '</h1></section>' +
-      '<h2 class="sec">\uD83D\uDCF0 ' + esc(S('latestNews', lang)) + '</h2>' +
-      '<div class="grid">' + articles.map(a => newsCard(a, lang)).join('') + '</div>' +
       '<h2 class="sec" id="offers">\uD83C\uDFC6 ' + esc(S('topPlatforms', lang)) + '</h2>' +
       '<div class="offers">' + offers.map((o, i) => offerCard(o, lang, i === 0)).join('') + '</div>' +
+      '<h2 class="sec">\uD83D\uDCF0 ' + esc(S('latestNews', lang)) + '</h2>' +
+      '<div class="grid">' + articles.slice(0, 6).map(a => newsCard(a, lang)).join('') + '</div>' +
+      '<p style="margin:18px 0"><a class="cta" style="max-width:340px;margin:0 auto" href="' + BASE + '/' + lang + '/news/">' + esc(S('allNews', lang)) + ' \u2192</a></p>' +
       '</main>' +
       '<div class="mcta"><div class="t">\uD83C\uDFC6 ' + esc(S('topPlatforms', lang)) + '</div><a class="cta" href="#offers">' + esc(S('startTrading', lang)) + '</a></div>'
   });
   fs.mkdirSync(path.join(DIST, lang), { recursive: true });
   fs.writeFileSync(path.join(DIST, lang, 'index.html'), home);
   urls.push(pathHome(lang));
+
+  // News archive page
+  {
+    const pfn = l => BASE + '/' + l + '/news/';
+    const newsHtml = page({
+      lang,
+      title: S('allNews', lang) + ' \u2014 FinPulse',
+      desc: S('tagline', lang),
+      pathFn: pfn,
+      body: '<main class="wrap">' +
+        '<section class="hero"><h1>\uD83D\uDCF0 ' + esc(S('allNews', lang)) + '</h1></section>' +
+        '<div class="grid">' + articles.map(a => newsCard(a, lang)).join('') + '</div>' +
+        '</main>'
+    });
+    fs.mkdirSync(path.join(DIST, lang, 'news'), { recursive: true });
+    fs.writeFileSync(path.join(DIST, lang, 'news', 'index.html'), newsHtml);
+    urls.push(pfn(lang));
+  }
 
   for (const a of articles) {
     const t = a.i18n[lang] || a.i18n.en;
@@ -244,6 +263,3 @@ fs.writeFileSync(path.join(DIST, 'sitemap.xml'),
 fs.writeFileSync(path.join(DIST, 'robots.txt'), 'User-agent: *\nAllow: /\nSitemap: ' + SITE_URL + '/sitemap.xml\n');
 
 console.log('Built ' + urls.length + ' pages for ' + LANGS.length + ' languages -> dist/');
-
-// Google Search Console verification
-fs.writeFileSync(path.join(DIST, 'google56e389dfbc1262f1.html'), 'google-site-verification: google56e389dfbc1262f1.html');
