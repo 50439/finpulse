@@ -31,16 +31,22 @@ jobs:
           else
             node scripts/generate.js || echo "::warning::article generation failed - publishing existing content"
           fi
+      - name: Post fresh articles to Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          SITE_URL: ${{ vars.SITE_URL || 'https://finpulse24.com' }}
+        run: node scripts/telegram.js || echo "::warning::telegram posting failed"
       - name: Commit fresh articles
         run: |
           git config user.name "finpulse-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add content/articles.json
+          git add content/articles.json content/tg-posted.json 2>/dev/null || git add content/articles.json
           git commit -m "auto: fresh articles $(date -u +'%Y-%m-%d %H:%M')" && git push || echo "nothing to commit"
       - name: Build site
         env:
-                    SITE_URL: ${{ vars.SITE_URL || 'https://finpulse24.com' }}
-                    BASE_PATH: ${{ vars.BASE_PATH || '' }}
+          SITE_URL: ${{ vars.SITE_URL || 'https://50439.github.io' }}
+          BASE_PATH: ${{ vars.BASE_PATH || '/finpulse' }}
         run: node build.js && node build.test.js
       - uses: actions/upload-pages-artifact@v3
         with: { path: dist }
