@@ -59,6 +59,48 @@
       "flag": "🇮🇳",
       "dir": "ltr",
       "locale": "hi-IN"
+    },
+    "id": {
+      "name": "Bahasa Indonesia",
+      "flag": "🇮🇩",
+      "dir": "ltr",
+      "locale": "id-ID"
+    },
+    "vi": {
+      "name": "Tiếng Việt",
+      "flag": "🇻🇳",
+      "dir": "ltr",
+      "locale": "vi-VN"
+    },
+    "tr": {
+      "name": "Türkçe",
+      "flag": "🇹🇷",
+      "dir": "ltr",
+      "locale": "tr-TR"
+    },
+    "ja": {
+      "name": "日本語",
+      "flag": "🇯🇵",
+      "dir": "ltr",
+      "locale": "ja-JP"
+    },
+    "ko": {
+      "name": "한국어",
+      "flag": "🇰🇷",
+      "dir": "ltr",
+      "locale": "ko-KR"
+    },
+    "pl": {
+      "name": "Polski",
+      "flag": "🇵🇱",
+      "dir": "ltr",
+      "locale": "pl-PL"
+    },
+    "th": {
+      "name": "ไทย",
+      "flag": "🇹🇭",
+      "dir": "ltr",
+      "locale": "th-TH"
     }
   },
   "strings": {
@@ -72,7 +114,14 @@
       "fr": "FinPulse",
       "ar": "FinPulse",
       "zh": "FinPulse",
-      "hi": "FinPulse"
+      "hi": "FinPulse",
+      "id": "FinPulse",
+      "vi": "FinPulse",
+      "tr": "FinPulse",
+      "ja": "FinPulse",
+      "ko": "FinPulse",
+      "pl": "FinPulse",
+      "th": "FinPulse"
     },
     "tagline": {
       "en": "Crypto & finance news",
@@ -84,7 +133,14 @@
       "fr": "Actualités crypto et finance",
       "ar": "أخبار الكريبتو والمال",
       "zh": "加密与财经新闻",
-      "hi": "क्रिप्टो और वित्त समाचार"
+      "hi": "क्रिप्टो और वित्त समाचार",
+      "id": "Berita kripto & keuangan",
+      "vi": "Tin tức crypto & tài chính",
+      "tr": "Kripto ve finans haberleri",
+      "ja": "暗号資産と金融ニュース",
+      "ko": "암호화폐 & 금융 뉴스",
+      "pl": "Wiadomości kryptowalutowe i finansowe",
+      "th": "ข่าวคริปโตและการเงิน"
     },
     "latestNews": {
       "en": "Latest news",
@@ -96,7 +152,14 @@
       "fr": "Dernières actualités",
       "ar": "آخر الأخبار",
       "zh": "最新新闻",
-      "hi": "ताज़ा खबरें"
+      "hi": "ताज़ा खबरें",
+      "id": "Berita terbaru",
+      "vi": "Tin mới nhất",
+      "tr": "Son haberler",
+      "ja": "最新ニュース",
+      "ko": "최신 뉴스",
+      "pl": "Najnowsze wiadomości",
+      "th": "ข่าวล่าสุด"
     },
     "topPlatforms": {
       "en": "Best trading platforms",
@@ -108,7 +171,14 @@
       "fr": "Meilleures plateformes de trading",
       "ar": "أفضل منصات التداول",
       "zh": "最佳交易平台",
-      "hi": "सर्वश्रेष्ठ ट्रेडिंग प्लेटफॉर्म"
+      "hi": "सर्वश्रेष्ठ ट्रेडिंग प्लेटफॉर्म",
+      "id": "Platform trading terbaik",
+      "vi": "Nền tảng giao dịch tốt nhất",
+      "tr": "En iyi trading platformları",
+      "ja": "おすすめ取引プラットフォーム",
+      "ko": "최고의 트레이딩 플랫폼",
+      "pl": "Najlepsze platformy tradingowe",
+      "th": "แพลตฟอร์มเทรดที่ดีที่สุด"
     },
     "startTrading": {
       "en": "Start trading",
@@ -120,7 +190,14 @@
       "fr": "Commencer à trader",
       "ar": "ابدأ التداول",
       "zh": "开始交易",
-      "hi": "ट्रेडिंग शुरू करें"
+      "hi": "ट्रेडिंग शुरू करें",
+      "id": "Mulai trading",
+      "vi": "Bắt đầu giao dịch",
+      "tr": "İşleme başla",
+      "ja": "取引を始める",
+      "ko": "거래 시작하기",
+      "pl": "Zacznij handlować",
+      "th": "เริ่มเทรด"
     },
     "readMore": {
       "en": "Read more",
@@ -132,7 +209,14 @@
       "fr": "Lire la suite",
       "ar": "اقرأ المزيد",
       "zh": "阅读更多",
-      "hi": "और पढ़ें"
+      "hi": "और पढ़ें",
+      "id": "Baca selengkapnya",
+      "vi": "Đọc thêm",
+      "tr": "Devamını oku",
+      "ja": "続きを読む",
+      "ko": "더 보기",
+      "pl": "Czytaj dalej",
+      "th": "อ่านต่อ"
     },
     "allNews": {
       "en": "All news",
@@ -144,7 +228,14 @@
       "fr": "Toutes les actualités",
       "ar": "كل الأخبار",
       "zh": "全部新闻",
-      "hi": "सभी समाचार"
+      "hi": "सभी समाचार",
+      "id": "Semua berita",
+      "vi": "Tất cả tin tức",
+      "tr": "Tüm haberler",
+      "ja": "すべてのニュース",
+      "ko": "전체 뉴스",
+      "pl": "Wszystkie wiadomości",
+      "th": "ข่าวทั้งหมด"
     },
     "categories": {
       "crypto": {
@@ -157,7 +248,14 @@
         "fr": "Crypto",
         "ar": "كريبتو",
         "zh": "加密货币",
-        "hi": "क्रिप्टो"
+        "hi": "क्रिप्टो",
+        "id": "Kripto",
+        "vi": "Crypto",
+        "tr": "Kripto",
+        "ja": "暗号資産",
+        "ko": "암호화폐",
+        "pl": "Krypto",
+        "th": "คริปโต"
       },
       "stocks": {
         "en": "Stocks",
@@ -169,7 +267,14 @@
         "fr": "Actions",
         "ar": "أسهم",
         "zh": "股票",
-        "hi": "शेयर"
+        "hi": "शेयर",
+        "id": "Saham",
+        "vi": "Cổ phiếu",
+        "tr": "Hisseler",
+        "ja": "株式",
+        "ko": "주식",
+        "pl": "Akcje",
+        "th": "หุ้น"
       },
       "forex": {
         "en": "Forex",
@@ -181,7 +286,14 @@
         "fr": "Forex",
         "ar": "فوركس",
         "zh": "外汇",
-        "hi": "फॉरेक्स"
+        "hi": "फॉरेक्स",
+        "id": "Forex",
+        "vi": "Forex",
+        "tr": "Forex",
+        "ja": "FX",
+        "ko": "외환",
+        "pl": "Forex",
+        "th": "ฟอเร็กซ์"
       },
       "world": {
         "en": "World economy",
@@ -193,7 +305,14 @@
         "fr": "Économie mondiale",
         "ar": "الاقتصاد العالمي",
         "zh": "世界经济",
-        "hi": "विश्व अर्थव्यवस्था"
+        "hi": "विश्व अर्थव्यवस्था",
+        "id": "Ekonomi dunia",
+        "vi": "Kinh tế thế giới",
+        "tr": "Dünya ekonomisi",
+        "ja": "世界経済",
+        "ko": "세계 경제",
+        "pl": "Gospodarka światowa",
+        "th": "เศรษฐกิจโลก"
       },
       "ukraine": {
         "en": "Ukraine",
@@ -205,7 +324,14 @@
         "fr": "Ukraine",
         "ar": "أوكرانيا",
         "zh": "乌克兰",
-        "hi": "यूक्रेन"
+        "hi": "यूक्रेन",
+        "id": "Ukraina",
+        "vi": "Ukraine",
+        "tr": "Ukrayna",
+        "ja": "ウクライナ",
+        "ko": "우크라이나",
+        "pl": "Ukraina",
+        "th": "ยูเครน"
       }
     },
     "riskDisclaimer": {
@@ -218,7 +344,14 @@
       "fr": "Le trading comporte des risques. Ce site contient des liens affiliés. Ceci n'est pas un conseil financier.",
       "ar": "التداول ينطوي على مخاطر. يحتوي الموقع على روابط تابعة. ليست نصيحة مالية.",
       "zh": "交易有风险。本站包含联盟链接,我们可能获得佣金。非投资建议。",
-      "hi": "ट्रेडिंग में जोखिम है। इस साइट में एफिलिएट लिंक हैं। यह वित्तीय सलाह नहीं है।"
+      "hi": "ट्रेडिंग में जोखिम है। इस साइट में एफिलिएट लिंक हैं। यह वित्तीय सलाह नहीं है।",
+      "id": "Trading mengandung risiko. Situs ini berisi tautan afiliasi. Bukan nasihat keuangan.",
+      "vi": "Giao dịch có rủi ro. Trang này chứa liên kết tiếp thị liên kết. Không phải lời khuyên tài chính.",
+      "tr": "Trading risk içerir. Bu site ortaklık bağlantıları içerir. Yatırım tavsiyesi değildir.",
+      "ja": "取引にはリスクが伴います。当サイトはアフィリエイトリンクを含みます。投資助言ではありません。",
+      "ko": "거래에는 위험이 따릅니다. 이 사이트는 제휴 링크를 포함합니다. 투자 조언이 아닙니다.",
+      "pl": "Trading wiąże się z ryzykiem. Ta strona zawiera linki afiliacyjne. To nie jest porada finansowa.",
+      "th": "การเทรดมีความเสี่ยง เว็บไซต์นี้มีลิงก์พันธมิตร ไม่ใช่คำแนะนำทางการเงิน"
     },
     "bonusLabel": {
       "en": "Bonus",
@@ -230,7 +363,14 @@
       "fr": "Bonus",
       "ar": "مكافأة",
       "zh": "奖励",
-      "hi": "बोनस"
+      "hi": "बोनस",
+      "id": "Bonus",
+      "vi": "Thưởng",
+      "tr": "Bonus",
+      "ja": "ボーナス",
+      "ko": "보너스",
+      "pl": "Bonus",
+      "th": "โบนัส"
     },
     "updatedEvery": {
       "en": "Live updates",
@@ -242,7 +382,14 @@
       "fr": "Mises à jour en direct",
       "ar": "تحديثات مباشرة",
       "zh": "实时更新",
-      "hi": "लाइव अपडेट"
+      "hi": "लाइव अपडेट",
+      "id": "Pembaruan langsung",
+      "vi": "Cập nhật trực tiếp",
+      "tr": "Canlı güncellemeler",
+      "ja": "ライブ更新",
+      "ko": "실시간 업데이트",
+      "pl": "Aktualizacje na żywo",
+      "th": "อัปเดตสด"
     },
     "marketsNow": {
       "en": "Markets now",
@@ -254,7 +401,14 @@
       "fr": "Marchés en direct",
       "ar": "الأسواق الآن",
       "zh": "实时行情",
-      "hi": "बाज़ार अभी"
+      "hi": "बाज़ार अभी",
+      "id": "Pasar sekarang",
+      "vi": "Thị trường hiện tại",
+      "tr": "Piyasalar şimdi",
+      "ja": "マーケット速報",
+      "ko": "실시간 시세",
+      "pl": "Rynki teraz",
+      "th": "ตลาดตอนนี้"
     }
   }
 }
