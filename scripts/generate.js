@@ -54,10 +54,10 @@ async function callClaude(headlines) {
   const existing = JSON.parse(fs.readFileSync(path.join(ROOT, 'content/articles.json'), 'utf8'));
   const recentTitles = existing.slice(0, 15).map(a => a.i18n.en.title);
   const prompt = 'You are the editor of FinPulse, a multilingual crypto & finance news site.\n\n' +
-'Below are fresh headlines from RSS feeds. Pick the 3 MOST important and DISTINCT stories (prefer variety: crypto, stocks/world economy, and if present something about Ukraine economy). Skip stories too similar to these recently published titles: ' + JSON.stringify(recentTitles) + '\n\n' +
-'For each story write an ORIGINAL article (do not copy source text): a catchy title, a 1-2 sentence excerpt, and a body of 3-4 paragraphs. Then translate title, excerpt and body into ALL of: en, uk, ru, es, pt, de, fr, ar, zh, hi. Native-quality natural translations.\n\n' +
+'Below are fresh headlines from RSS feeds. Pick the 2 MOST important and DISTINCT stories (prefer variety: crypto, stocks/world economy, and if present something about Ukraine economy). Skip stories too similar to these recently published titles: ' + JSON.stringify(recentTitles) + '\n\n' +
+'For each story write an ORIGINAL article (do not copy source text): a catchy title, a 1-2 sentence excerpt, and a body of 3-4 paragraphs. Then translate title, excerpt and body into ALL of: en, uk, ru, es, pt, de, fr, ar, zh, hi, id, vi, tr, ja, ko, pl, th. Native-quality natural translations.\n\n' +
 'Category must be one of: crypto, stocks, forex, world, ukraine. Pick a fitting emoji for each article.\n\n' +
-'Respond with ONLY valid JSON (no markdown fences), an array of 3 objects:\n' +
+'Respond with ONLY valid JSON (no markdown fences), an array of 2 objects:\n' +
 '[{"slug":"kebab-case-slug","category":"crypto","emoji":"X","i18n":{"en":{"title":"...","excerpt":"...","body":["p1","p2","p3"]}, ...all 17 langs}}]\n\n' +
 'HEADLINES:\n' + JSON.stringify(headlines.slice(0, 40), null, 1);
 
@@ -66,7 +66,7 @@ async function callClaude(headlines) {
     headers: { 'x-api-key': API_KEY, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' },
     body: JSON.stringify({
       model: process.env.CLAUDE_MODEL || 'claude-sonnet-4-5',
-      max_tokens: 32000,
+      max_tokens: 64000,
       stream: true,
       messages: [{ role: 'user', content: prompt }]
     })
