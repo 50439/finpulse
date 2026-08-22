@@ -2,7 +2,7 @@
 /**
  * FinPulse content engine.
  * 1. Pulls fresh headlines from RSS feeds (crypto, stocks, world, forex, Ukraine)
- * 2. Asks Anthropic API to pick top stories, write unique articles and translate to 10 languages
+ * 2. Asks Anthropic API to pick top stories, write unique articles and translate to 17 languages
  * 3. Appends to content/articles.json (keeps last 60 articles)
  * Requires: ANTHROPIC_API_KEY env var. Run: node scripts/generate.js
  */
@@ -13,7 +13,7 @@ const ROOT = path.join(__dirname, '..');
 const API_KEY = process.env.ANTHROPIC_API_KEY;
 if (!API_KEY) { console.error('ANTHROPIC_API_KEY is not set'); process.exit(1); }
 
-const LANGS = ['en','uk','ru','es','pt','de','fr','ar','zh','hi'];
+const LANGS = ['en','uk','ru','es','pt','de','fr','ar','zh','hi','id','vi','tr','ja','ko','pl','th'];
 const FEEDS = [
   { url: 'https://www.coindesk.com/arc/outboundfeeds/rss/', category: 'crypto' },
   { url: 'https://cointelegraph.com/rss', category: 'crypto' },
@@ -58,7 +58,7 @@ async function callClaude(headlines) {
 'For each story write an ORIGINAL article (do not copy source text): a catchy title, a 1-2 sentence excerpt, and a body of 3-4 paragraphs. Then translate title, excerpt and body into ALL of: en, uk, ru, es, pt, de, fr, ar, zh, hi. Native-quality natural translations.\n\n' +
 'Category must be one of: crypto, stocks, forex, world, ukraine. Pick a fitting emoji for each article.\n\n' +
 'Respond with ONLY valid JSON (no markdown fences), an array of 3 objects:\n' +
-'[{"slug":"kebab-case-slug","category":"crypto","emoji":"X","i18n":{"en":{"title":"...","excerpt":"...","body":["p1","p2","p3"]}, ...all 10 langs}}]\n\n' +
+'[{"slug":"kebab-case-slug","category":"crypto","emoji":"X","i18n":{"en":{"title":"...","excerpt":"...","body":["p1","p2","p3"]}, ...all 17 langs}}]\n\n' +
 'HEADLINES:\n' + JSON.stringify(headlines.slice(0, 40), null, 1);
 
   const r = await fetch('https://api.anthropic.com/v1/messages', {
