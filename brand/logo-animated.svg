@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="bg" cx="35%" cy="28%" r="85%">
+      <stop offset="0%" stop-color="#16294A"/><stop offset="60%" stop-color="#0E1B30"/><stop offset="100%" stop-color="#070E1A"/>
+    </radialGradient>
+    <linearGradient id="pulse" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#19C79A"/><stop offset="55%" stop-color="#3BE8B0"/><stop offset="100%" stop-color="#F7C948"/>
+    </linearGradient>
+    <linearGradient id="txt" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#E8F6F0"/><stop offset="70%" stop-color="#9BE8CE"/><stop offset="100%" stop-color="#F7C948"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .line{stroke-dasharray:760;stroke-dashoffset:760;animation:draw 3.2s ease-in-out infinite}
+      @keyframes draw{0%{stroke-dashoffset:760}45%{stroke-dashoffset:0}80%{stroke-dashoffset:0}100%{stroke-dashoffset:-760}}
+      .arr{opacity:0;animation:pop 3.2s ease-in-out infinite}
+      @keyframes pop{0%,38%{opacity:0;transform:scale(.6)}48%{opacity:1;transform:scale(1.15)}55%{transform:scale(1)}80%{opacity:1}100%{opacity:0}}
+      .bar{transform-origin:bottom;animation:rise 3.2s ease-in-out infinite}
+      @keyframes rise{0%{transform:scaleY(.2);opacity:0}35%{transform:scaleY(1);opacity:.3}80%{opacity:.3}100%{opacity:0}}
+      .ring{animation:spin 14s linear infinite;transform-origin:256px 256px}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      .brand{animation:fade 3.2s ease-in-out infinite}
+      @keyframes fade{0%,25%{opacity:0}55%{opacity:1}85%{opacity:1}100%{opacity:0}}
+    </style>
+  </defs>
+
+  <rect width="512" height="512" fill="url(#bg)"/>
+  <g class="ring">
+    <circle cx="256" cy="256" r="216" fill="none" stroke="#24406B" stroke-width="5" opacity="0.5" stroke-dasharray="40 22"/>
+  </g>
+  <circle cx="256" cy="256" r="188" fill="none" stroke="#24406B" stroke-width="2.5" opacity="0.3"/>
+
+  <g transform="translate(256,218) scale(0.74) translate(-256,-260)">
+    <g fill="#3BE8B0">
+      <rect class="bar" style="animation-delay:.05s" x="118" y="316" width="30" height="72" rx="10"/>
+      <rect class="bar" style="animation-delay:.15s" x="170" y="288" width="30" height="100" rx="10"/>
+      <rect class="bar" style="animation-delay:.25s" x="222" y="252" width="30" height="136" rx="10"/>
+      <rect class="bar" style="animation-delay:.35s" x="274" y="214" width="30" height="174" rx="10"/>
+      <rect class="bar" style="animation-delay:.45s" x="326" y="176" width="30" height="212" rx="10"/>
+    </g>
+    <path class="line" d="M78 288 H150 L178 288 L204 196 L236 344 L266 244 L294 288 H346 L406 200"
+          fill="none" stroke="url(#pulse)" stroke-width="26" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+    <polygon class="arr" points="440,168 440,246 362,168" fill="#F7C948" style="transform-origin:401px 207px"/>
+  </g>
+
+  <text class="brand" x="256" y="392" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"
+        font-size="76" font-weight="bold" letter-spacing="1" fill="url(#txt)">FinPulse</text>
+  <text class="brand" x="256" y="438" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"
+        font-size="25" letter-spacing="7" fill="#7FA6C9">FINPULSE24.COM</text>
+</svg>
