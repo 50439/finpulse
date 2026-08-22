@@ -128,6 +128,9 @@ function page(opt) {
     '<link rel="canonical" href="' + SITE_URL + pathFn(lang) + '">\n  ' + langLinks(pathFn) + '\n' +
     '<meta property="og:title" content="' + esc(title) + '">\n<meta property="og:description" content="' + esc(desc) + '">\n' +
     '<meta property="og:type" content="website">\n<meta name="theme-color" content="#0b0e14">\n' +
+    '<meta property="og:image" content="' + SITE_URL + '/og.png">\n<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">\n' +
+    '<meta name="twitter:card" content="summary_large_image">\n<meta name="twitter:image" content="' + SITE_URL + '/og.png">\n' +
+    '<link rel="icon" type="image/png" sizes="32x32" href="' + BASE + '/favicon-32.png">\n<link rel="icon" type="image/png" sizes="192x192" href="' + BASE + '/favicon-192.png">\n<link rel="apple-touch-icon" href="' + BASE + '/apple-touch-icon.png">\n' +
     '<link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>\\uD83D\\uDCC8</text></svg>">\n' +
     (jsonld ? '<script type="application/ld+json">' + JSON.stringify(jsonld) + '</script>\n' : '') +
     '<style>' + CSS + '</style>\n</head>\n<body>\n' +
@@ -266,3 +269,9 @@ console.log('Built ' + urls.length + ' pages for ' + LANGS.length + ' languages 
 
 // IndexNow key file
 fs.writeFileSync(path.join(DIST, 'ee221c0a3d35f01be5577688fa06a50a.txt'), 'ee221c0a3d35f01be5577688fa06a50a');
+
+// Brand assets -> dist
+for (const f of ['og.png','favicon-32.png','favicon-192.png','apple-touch-icon.png','logo-512.png','logo-text-512.png','logo-animated.svg']) {
+  const src = path.join(__dirname, 'brand', f);
+  if (fs.existsSync(src)) fs.copyFileSync(src, path.join(DIST, f));
+}
