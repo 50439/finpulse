@@ -263,3 +263,6 @@ fs.writeFileSync(path.join(DIST, 'sitemap.xml'),
 fs.writeFileSync(path.join(DIST, 'robots.txt'), 'User-agent: *\nAllow: /\nSitemap: ' + SITE_URL + '/sitemap.xml\n');
 
 console.log('Built ' + urls.length + ' pages for ' + LANGS.length + ' languages -> dist/');
+
+// IndexNow key file
+fs.writeFileSync(path.join(DIST, 'ee221c0a3d35f01be5577688fa06a50a.txt'), 'ee221c0a3d35f01be5577688fa06a50a');
