@@ -22,7 +22,13 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with: { node-version: 22 }
-      - name: Generate fresh articles (RSS -> Claude -> 10 languages)
+      - name: Test duplicate detection
+        run: node scripts/dedup.test.js
+      # Статьи генерируем ТОЛЬКО по расписанию или вручную.
+      # Раньше шаг запускался и на push: каждый коммит с правкой кода порождал
+      # ещё 2 статьи. 22.08 получилось 7 прогонов вместо 4 за сутки.
+      - name: Generate fresh articles (RSS -> Claude -> 17 languages)
+        if: github.event_name != 'push'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
@@ -32,6 +38,7 @@ jobs:
             node scripts/generate.js || echo "::warning::article generation failed - publishing existing content"
           fi
       - name: Post fresh articles to Telegram
+        if: github.event_name != 'push'
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
