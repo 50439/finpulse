@@ -270,5 +270,149 @@
     ]
    }
   }
+ },
+ {
+  "slug": "how-to-buy-crypto-thailand",
+  "category": "guide",
+  "emoji": "🇹🇭",
+  "langs": [
+   "th",
+   "en"
+  ],
+  "updated": "2026-08-23T17:06:25.110Z",
+  "i18n": {
+   "th": {
+    "title": "วิธีซื้อคริปโทเคอร์เรนซีในประเทศไทย: ตัวเลือกที่ได้รับใบอนุญาต ก.ล.ต. การฝากเงินบาท และกฎระเบียบ",
+    "excerpt": "ประเทศไทยกำกับดูแลคริปโทผ่านสำนักงานคณะกรรมการกำกับหลักทรัพย์และตลาดหลักทรัพย์ โดยกำหนดให้แพลตฟอร์มต้องมีใบอนุญาตและห้ามใช้คริปโทชำระค่าสินค้า คู่มือนี้ครอบคลุมช่องทางซื้อที่ถูกกฎหมาย วิธีฝากเงินบาท กฎ KYC และความแตกต่างระหว่างแพลตฟอร์มไทยกับต่างประเทศ",
+    "sections": [
+     {
+      "h": "กรอบการกำกับดูแลคริปโทของประเทศไทย",
+      "p": [
+       "สำนักงานคณะกรรมการกำกับหลักทรัพย์และตลาดหลักทรัพย์ (ก.ล.ต.) ออกใบอนุญาตและกำกับดูแลแพลตฟอร์มซื้อขายคริปโทเคอร์เรนซี นายหน้า และผู้ค้าทั้งหมดที่ให้บริการในประเทศไทยภายใต้พระราชกำหนดการประกอบธุรกิจสินทรัพย์ดิจิทัล พ.ศ. 2561 เฉพาะแพลตฟอร์มที่มีใบอนุญาตจาก ก.ล.ต. เท่านั้นที่สามารถให้บริการซื้อขายแก่ผู้ที่พำนักในไทยได้อย่างถูกกฎหมาย ทาง ก.ล.ต. เผยแพร่รายชื่อผู้ประกอบการที่ได้รับใบอนุญาตต่อสาธารณะ ซึ่งคุณควรตรวจสอบก่อนเปิดบัญชี",
+       "การใช้คริปโทเคอร์เรนซีเพื่อชำระค่าสินค้าและบริการถูกห้ามอย่างชัดเจน ธนาคารแห่งประเทศไทยได้ห้ามร้านค้ารับชำระด้วยคริปโทตั้งแต่ปี 2564 แม้การถือครองและการซื้อขายสินทรัพย์ดิจิทัลจะยังถูกกฎหมาย การฝ่าฝืนอาจส่งผลให้ทั้งร้านค้าและลูกค้าถูกลงโทษ ข้อจำกัดนี้ไม่ส่งผลกระทบต่อการซื้อขายบนแพลตฟอร์มที่ได้รับใบอนุญาตหรือการโอนคริปโทระหว่างกระเป๋าเงินเพื่อวัตถุประสงค์การลงทุน"
+      ]
+     },
+     {
+      "h": "แพลตฟอร์มที่ได้รับใบอนุญาต ก.ล.ต. เทียบกับแพลตฟอร์มต่างประเทศ",
+      "p": [
+       "แพลตฟอร์มไทยที่ได้รับใบอนุญาต เช่น Bitkub, Zipmex Thailand และ Satang Pro อยู่ภายใต้การกำกับดูแลของ ก.ล.ต. โดยตรง รองรับการฝากและถอนเงินบาทผ่านธนาคารไทย มีฝ่ายบริการลูกค้าภาษาไทย และต้องปฏิบัติตามมาตรฐานเงินสำรองและการคุ้มครองผู้บริโภคที่เข้มงวด แพลตฟอร์มเหล่านี้มักรองรับพร้อมเพย์ โอนเงินผ่านธนาคารไทย (กสิกรไทย ไทยพาณิชย์ กรุงเทพ ฯลฯ) และบางครั้งรับซื้อด้วยบัตรเครดิต โดยมีคู่เทรดเงินบาทสำหรับคริปโทหลักๆ",
+       "แพลตฟอร์มต่างประเทศ เช่น Binance, Kraken หรือ Coinbase อาจรับลูกค้าไทย แต่ดำเนินการนอกเขตอำนาจศาลไทย ซึ่งหมายถึงไม่มีการคุ้มครองผู้บริโภคโดยตรงจาก ก.ล.ต. ไม่มีคู่เทรดเงินบาท (ต้องแปลงผ่าน stablecoin หรือสกุลเงินอื่น) มีช่องทางแก้ไขข้อพิพาทจำกัด และอาจมีปัญหากับการโอนเงินจากธนาคารไทย เนื่องจากบางธนาคารไทยบางครั้งจำกัดการโอนไปยังแพลตฟอร์มคริปโทต่างประเทศ นักเทรดบางคนใช้ทั้งสองแบบ: แพลตฟอร์มไทยสำหรับแปลงเงินบาท และแพลตฟอร์มต่างประเทศเพื่อเข้าถึงเหรียญที่หลากหลายและฟีเจอร์การเทรดขั้นสูง",
+       "ธนาคารไทยมีนโยบายที่แตกต่างกันเกี่ยวกับธุรกรรมที่เกี่ยวข้องกับคริปโท แม้การโอนเงินไปยังแพลตฟอร์มที่ได้รับใบอนุญาตจาก ก.ล.ต. มักจะดำเนินการได้อย่างราบรื่น แต่การโอนไปยังแพลตฟอร์มต่างประเทศอาจถูกปฏิเสธหรือถูกตั้งค่าสถานะ บางธนาคารกำหนดให้ลูกค้ายืนยันวัตถุประสงค์ของการโอนไปยังแพลตฟอร์มคริปโทต่างประเทศ และนโยบายอาจเปลี่ยนแปลงได้โดยไม่แจ้งให้ทราบล่วงหน้า"
+      ]
+     },
+     {
+      "h": "วิธีฝากเงินบาท",
+      "p": [
+       "แพลตฟอร์มที่ได้รับใบอนุญาตจาก ก.ล.ต. รับเงินบาทผ่านหลายวิธี การโอนผ่านธนาคาร (โอนตรงหรือผ่านอินเทอร์เน็ต/โมบายแบงก์กิ้ง) มักจะดำเนินการภายในไม่กี่นาทีในช่วงเวลาทำการธนาคาร โดยไม่มีค่าธรรมเนียมหรือมีค่าธรรมเนียมเพียง 10-20 บาท การเชื่อมต่อพร้อมเพย์ช่วยให้โอนเงินทันทีโดยใช้เบอร์โทรศัพท์หรือเลขบัตรประชาชน มักจะฟรีหรือเสียค่าธรรมเนียมเพียงไม่เกิน 10 บาท บางแพลตฟอร์มรับฝากด้วยบัตรเครดิตหรือเดบิต แต่มักมีค่าธรรมเนียม 2-4 เปอร์เซ็นต์และมีวงเงินจำกัดต่ำกว่า",
+       "วงเงินฝากและถอนแตกต่างกันไปตามแพลตฟอร์มและระดับการยืนยันตัวตน KYC พื้นฐานมักอนุญาตให้ฝากได้วันละ 100,000-500,000 บาท ขณะที่การยืนยันแบบขั้นสูงจะเพิ่มวงเงินเป็น 1-5 ล้านบาทหรือมากกว่า การถอนเงินไปยังบัญชีธนาคารไทยมักจะดำเนินการภายใน 1-24 ชั่วโมง โดยแพลตฟอร์มส่วนใหญ่เก็บค่าธรรมเนียมคงที่ 10-25 บาทต่อครั้ง ตรวจสอบให้แน่ใจว่าชื่อบัญชีธนาคารของคุณตรงกับชื่อบัญชีแพลตฟอร์มทุกประการ เพราะความไม่ตรงกันจะทำให้ถูกปฏิเสธ"
+      ]
+     },
+     {
+      "h": "ข้อกำหนด KYC และการยืนยันตัวตน",
+      "p": [
+       "แพลตฟอร์มที่ได้รับใบอนุญาตจาก ก.ล.ต. ทั้งหมดกำหนดให้ต้องยืนยันตัวตนก่อนอนุญาตให้เทรดหรือถอนเงิน การยืนยันพื้นฐาน (Tier 1) มักต้องใช้บัตรประชาชนหรือหนังสือเดินทาง รูปเซลฟี่หรือการยืนยันภาพสดที่ชัดเจน เบอร์โทรศัพท์ที่ลงทะเบียน และบางครั้งหลักฐานที่อยู่ เช่น ใบเสร็จค่าสาธารณูปโภคหรือ statement ธนาคารที่ออกภายใน 3 เดือน ระดับนี้มักจะดำเนินการแล้วเสร็จภายในไม่กี่ชั่วโมงถึง 1 วันทำการ",
+       "การยืนยันแบบขั้นสูง (Tier 2) สำหรับวงเงินสูงขึ้นต้องใช้เอกสารเพิ่มเติม: การยืนยันบัญชีธนาคาร (รูปถ่ายสมุดบัญชีหรือ statement) บางครั้งต้องมีหลักฐานรายได้หรือการจ้างงาน และบางครั้งอาจต้องสัมภาษณ์ทางวิดีโอคอลสำหรับวงเงินที่สูงมาก ชาวต่างชาติที่พำนักในไทยต้องใช้หนังสือเดินทาง วีซ่าและตราประทับเข้าประเทศไทย และหลักฐานที่อยู่ในไทย (สัญญาเช่า ใบเสร็จค่าสาธารณูปโภค หรือหนังสือรับรองที่อยู่จากตรวจคนเข้าเมือง) ผู้ถือใบอนุญาตทำงานอาจต้องแสดงเอกสารนั้นด้วย การดำเนินการยืนยันแบบขั้นสูงอาจใช้เวลา 1-5 วันทำการขึ้นอยู่กับแพลตฟอร์มและคุณภาพเอกสาร",
+       "แพลตฟอร์มไทยต้องรายงานธุรกรรมบางประเภทให้สำนักงานป้องกันและปราบปรามการฟอกเงิน (ปปง.) โดยเฉพาะธุรกรรมที่เกิน 500,000 บาทต่อครั้งหรือสะสมเกิน 2 ล้านบาทต่อเดือน แม้เกณฑ์เหล่านี้อาจเปลี่ยนแปลงได้ นี่เป็นการปฏิบัติตามกฎหมายทั่วไปและไม่ได้หมายความว่ามีการกระทำผิด แต่เตรียมพร้อมที่จะแสดงหลักฐานแหล่งที่มาของเงินหากถูกร้องขอ"
+      ]
+     },
+     {
+      "h": "การยกเว้น VAT และข้อควรพิจารณาด้านภาษี",
+      "p": [
+       "ประเทศไทยได้ยกเว้นภาษีมูลค่าเพิ่ม (VAT) 7 เปอร์เซ็นต์สำหรับการซื้อขายคริปโทเคอร์เรนซีในปี 2565 ซึ่งหมายความว่าคุณไม่ต้องจ่าย VAT จากค่าธรรมเนียมแพลตฟอร์มหรือค่า spread ในการซื้อขาย คุณยังคงจ่ายค่าธรรมเนียมตามที่แพลตฟอร์มกำหนด ซึ่งมักอยู่ที่ 0.1-0.25 เปอร์เซ็นต์ต่อการเทรดในโมเดล maker-taker แต่ไม่มี VAT เพิ่มเติมจากจำนวนเหล่านี้",
+       "กำไรจากการซื้อขายคริปโทเคอร์เรนซีต้องเสียภาษีภายใต้กฎหมายรายได้ของไทย กำไรอาจถูกจัดประเภทเป็นรายได้จากธุรกิจ (ถ้าเทรดบ่อย) หรือเป็นกำไรจากการขายทุน โดยมีอัตราสูงสุดถึง 15 เปอร์เซ็นต์สำหรับกำไรจากการขายทุนและอัตราแบบก้าวหน้าสูงสุดถึง 35 เปอร์เซ็นต์สำหรับรายได้ธุรกิจ ขึ้นอยู่กับรายได้ทั้งหมดต่อปีและการจัดประเภท แพลตฟอร์มไม่หักภาษี ณ ที่จ่ายโดยอัตโนมัติ คุณมีหน้าที่รายงานกำไรเมื่อยื่นแบบแสดงรายการภาษีประจำปี การหักขาดทุนและวิธีคำนวณอาจซับซ้อน และกฎระเบียบได้พัฒนาในช่วงไม่กี่ปีที่ผ่านมา ดังนั้นควรปรึกษาที่ปรึกษาภาษีไทยที่คุ้นเคยกับสินทรัพย์ดิจิทัลก่อนยื่นภาษีครั้งแรก นี่ไม่ใช่คำแนะนำด้านภาษี และกฎหมายภาษีเกี่ยวกับคริปโทของไทยยังคงพัฒนาอยู่"
+      ]
+     },
+     {
+      "h": "วงเงินการซื้อขายและกฎการถอน",
+      "p": [
+       "แพลตฟอร์มที่ได้รับใบอนุญาตจาก ก.ล.ต. กำหนดวงเงินซื้อขายรายวันและรายเดือนตามระดับการยืนยันตัวตน ตั้งแต่ 100,000 บาทต่อวันสำหรับบัญชีพื้นฐานไปจนถึงไม่จำกัดสำหรับบัญชีสถาบันที่ยืนยันเต็มรูปแบบ วงเงินถอนเงินบาทมักจะเท่ากับวงเงินฝาก การถอนคริปโทไปยังกระเป๋าเงินภายนอกมักได้รับอนุญาตหลังจากระยะเวลาพักเงินฝาก 1-7 วันสำหรับเงินที่ฝากใหม่ (มาตรการป้องกันการฉ้อโกง) และอาจต้องใช้รหัสยืนยันทางอีเมลหรือ SMS",
+       "บางแพลตฟอร์มเก็บค่าธรรมเนียมการถอนแบบคงที่ (เช่น 0.0005 BTC สำหรับ Bitcoin หรือ 10 USDT สำหรับ Tether) ขณะที่บางแพลตฟอร์มใช้โมเดลตามเปอร์เซ็นต์ ตรวจสอบตารางค่าธรรมเนียมก่อนถอนเสมอ เพราะความแออัดของเครือข่ายอาจทำให้การถอนจำนวนน้อยไม่คุ้มค่า มีจำนวนถอนขั้นต่ำ มักอยู่ที่ประมาณ 0.0001 BTC หรือ 50-100 บาทสำหรับเหรียญอื่นๆ"
+      ]
+     },
+     {
+      "h": "การเลือกระหว่างแพลตฟอร์มไทยและต่างประเทศ",
+      "p": [
+       "ใช้แพลตฟอร์มที่ได้รับใบอนุญาตจาก ก.ล.ต. ของไทยหากคุณให้ความสำคัญกับการคุ้มครองตามกฎหมาย ต้องการเคลื่อนย้ายเงินเข้าออกเป็นเงินบาทเป็นประจำ ต้องการการรายงานภาษีที่ตรงไปตรงมา (แพลตฟอร์มที่ได้รับใบอนุญาตให้ใบแสดงรายการซื้อขายประจำปี) หรือเทรดเหรียญหลักๆ เช่น Bitcoin, Ethereum และ altcoin ที่มีชื่อเสียง ข้อแลกเปลี่ยนคือมักมีคริปโทที่พร้อมซื้อขายน้อยกว่าและบางครั้งมีสภาพคล่องต่ำกว่าสำหรับคู่เทรดที่ไม่ค่อยมีคนนิยม",
+       "พิจารณาแพลตฟอร์มต่างประเทศหากคุณต้องการเข้าถึง altcoin หรือ token หลายร้อยตัวที่ไม่มีในแพลตฟอร์มไทย ต้องการเครื่องมือเทรดขั้นสูง เช่น ฟิวเจอร์ส margin หรือ derivatives (ซึ่งกฎระเบียบไทยจำกัดอย่างมาก) หรือเข้าร่วม staking, lending หรือการเชื่อมต่อ DeFi ที่ไม่มีในประเทศ ข้อเสียคือต้องใช้ stablecoin หรือสกุลเงินอื่นเป็นตัวกลางสำหรับการแปลงเงินบาท พึ่งพาช่องทาง peer-to-peer สำหรับเงินบาทหากการโอนผ่านธนาคารโดยตรงล้มเหลว และต้องติดต่อฝ่ายบริการลูกค้าต่างประเทศหากเกิดปัญหา",
+       "นักเทรดไทยที่มีประสบการณ์หลายคนใช้วิธีผสมผสาน: มีบัญชีแพลตฟอร์มไทยที่ได้รับใบอนุญาตสำหรับการแปลงเงินเข้าออกเป็นบาท และบัญชีแพลตฟอร์มต่างประเทศสำหรับเข้าถึงตลาดที่กว้างขึ้น วิธีนี้ต้องโอนคริปโทระหว่างแพลตฟอร์ม ซึ่งมีค่าธรรมเนียมเครือข่ายและต้องใส่ใจกับที่อยู่ฝากและประเภทเครือข่าย (BEP-20, ERC-20, TRC-20 ฯลฯ) เพื่อหลีกเลี่ยงการสูญเสียเงิน"
+      ]
+     },
+     {
+      "h": "ขั้นตอนการเริ่มต้นใช้งานจริง",
+      "p": [
+       "ขั้นแรก ตรวจสอบใบอนุญาต ก.ล.ต. ของแพลตฟอร์มบนเว็บไซต์ ก.ล.ต. ในรายชื่อผู้ประกอบธุรกิจสินทรัพย์ดิจิทัล ดาวน์โหลดแอปหรือเข้าเว็บไซต์แพลตฟอร์มและลงทะเบียนด้วยเบอร์โทรศัพท์และอีเมล เตรียมบัตรประชาชนหรือหนังสือเดินทาง รูปเซลฟี่ที่ชัดเจนในแสงสว่างที่ดี และ statement ธนาคารหรือใบเสร็จค่าสาธารณูปโภคล่าสุดหากจำเป็น อัปโหลดเอกสารผ่านแอปและรอการอนุมัติการยืนยันตัวตน ซึ่งมักจะได้รับภายใน 1 วันทำการสำหรับ KYC พื้นฐาน",
+       "เชื่อมโยงบัญชีธนาคารไทยของคุณโดยกรอกรายละเอียดบัญชีให้ตรงกับที่ปรากฏในสมุดบัญชีทุกประการ—การสะกดชื่อไม่ตรงจะทำให้ถูกปฏิเสธ ทำการฝากเงินทดสอบจำนวนเล็กน้อย 100-500 บาทผ่านการโอนธนาคารหรือพร้อมเพย์เพื่อยืนยันว่ากระบวนการทำงาน เมื่อเงินเข้าแล้ว คุณสามารถสั่งซื้อ Bitcoin, Ethereum หรือเหรียญอื่นที่รองรับได้โดยใช้ limit order (คุณกำหนดราคา) หรือ market order (ซื้อทันทีที่ราคาตลาดปัจจุบัน)",
+       "เปิดใช้งานการยืนยันตัวตนสองขั้นตอน (2FA) โดยใช้แอป authenticator เช่น Google Authenticator หรือ Authy—2FA แบบ SMS มีความปลอดภัยน้อยกว่า จดบันทึกรหัสสำรองและเก็บไว้อย่างปลอดภัย ห้ามแชร์ข้อมูลเข้าสู่ระบบหรือรหัส 2FA กับใครก็ตาม รวมถึงคนที่อ้างว่าเป็นฝ่ายบริการลูกค้า แพลตฟอร์มที่ถูกกฎหมายจะไม่มีวันถามรหัสผ่านหรือรหัส 2FA ผ่านอีเมลหรือโซเชียลมีเดีย"
+      ]
+     }
+    ]
+   },
+   "en": {
+    "title": "How to Buy Cryptocurrency in Thailand: SEC-Licensed Options, THB Deposits, and Rules",
+    "excerpt": "Thailand regulates crypto through the Securities and Exchange Commission, requiring licenses for exchanges and banning crypto payments for goods. This guide covers legal buying channels, Thai baht deposit methods, KYC rules, and the difference between local and global platforms.",
+    "sections": [
+     {
+      "h": "Thailand's Crypto Regulatory Framework",
+      "p": [
+       "The Thai Securities and Exchange Commission (SEC) licenses and supervises all cryptocurrency exchanges, brokers, and dealers operating in Thailand under the Emergency Decree on Digital Asset Businesses B.E. 2561 (2018). Only platforms holding a valid SEC license can legally offer trading services to Thai residents. The regulator maintains a public list of licensed operators, which you should verify before opening an account.",
+       "Using cryptocurrency to pay for goods and services is explicitly prohibited. The Bank of Thailand has banned merchants from accepting crypto as payment since 2021, though holding and trading digital assets remains legal. Violations can result in penalties for both merchants and customers. This restriction does not affect trading on licensed exchanges or transferring crypto between wallets for investment purposes."
+      ]
+     },
+     {
+      "h": "SEC-Licensed Platforms vs Global Exchanges",
+      "p": [
+       "Licensed Thai platforms such as Bitkub, Zipmex Thailand, and Satang Pro operate under direct SEC oversight, offer Thai baht deposit and withdrawal through local banks, provide Thai-language customer support, and must comply with strict capital reserve and consumer protection standards. These platforms typically support PromptPay, bank transfers from Thai banks (Kasikornbank, Siam Commercial Bank, Bangkok Bank, etc.), and sometimes credit card purchases, with THB pairs for major cryptocurrencies.",
+       "Global exchanges like Binance, Kraken, or Coinbase may accept Thai users but operate outside Thai jurisdiction, meaning no direct SEC consumer protection, no THB trading pairs (requiring conversion through stablecoins or other currencies), limited recourse if disputes arise, and potential complications with Thai bank transfers as some Thai banks periodically restrict transfers to offshore crypto platforms. Some traders use both: local platforms for THB conversion and global exchanges for access to wider coin selections and advanced trading features.",
+       "Thai banks have varying policies toward crypto-related transactions. While transfers to SEC-licensed platforms are generally processed smoothly, transfers to foreign exchanges may be declined or flagged. Some banks require customers to confirm the purpose of transfers to overseas crypto platforms, and policies can change without notice."
+      ]
+     },
+     {
+      "h": "How to Deposit Thai Baht",
+      "p": [
+       "SEC-licensed platforms accept THB through several methods. Bank transfer (direct or via internet/mobile banking) typically processes within minutes during banking hours with no fee or minimal fees of 10-20 baht. PromptPay integration allows instant transfers using your phone number or national ID, usually free or charging nominal fees under 10 baht. Some platforms accept credit or debit card deposits, though these often carry fees of 2-4 percent and may have lower limits.",
+       "Deposit and withdrawal limits vary by platform and verification level. Basic KYC typically allows 100,000-500,000 baht daily deposits, while enhanced verification raises limits to 1-5 million baht or more. Withdrawals to Thai bank accounts usually process within 1-24 hours, with most platforms charging flat fees of 10-25 baht per withdrawal. Always verify your bank account name matches your exchange account name exactly, as mismatches will cause rejections."
+      ]
+     },
+     {
+      "h": "KYC and Account Verification Requirements",
+      "p": [
+       "All SEC-licensed exchanges require identity verification before allowing trades or withdrawals. Basic verification (Tier 1) typically needs your Thai national ID card or passport, a clear selfie or live photo verification, your registered phone number, and sometimes proof of address such as a utility bill or bank statement dated within three months. This level usually processes within hours to one business day.",
+       "Enhanced verification (Tier 2) for higher limits requires additional documentation: bank account verification (bank book photo or statement), sometimes proof of income or employment, and occasionally a video call interview for very high limits. Foreign residents need a passport, Thai visa and entry stamp, and proof of Thai address (rental agreement, utility bill, or certificate of residence from immigration). Work permit holders may need to provide that document as well. Processing for enhanced verification can take one to five business days depending on the platform and document quality.",
+       "Thai exchanges must report certain transactions to the Anti-Money Laundering Office (AMLO), particularly those exceeding 500,000 baht in a single transaction or 2 million baht cumulative per month, though these thresholds can change. This is standard compliance and does not imply wrongdoing, but be prepared to provide source of funds documentation if requested."
+      ]
+     },
+     {
+      "h": "VAT Exemption and Tax Considerations",
+      "p": [
+       "Thailand exempted cryptocurrency trading from the 7 percent value-added tax (VAT) in 2022, meaning you do not pay VAT on exchange fees or trading spreads. You still pay the exchange's stated fees, typically 0.1-0.25 percent per trade on maker-taker models, but no additional VAT is added to these amounts.",
+       "Capital gains from cryptocurrency trading are taxable under Thai revenue law. Profits may be classified as income from business (if trading frequently) or as capital gains, with rates up to 15 percent for capital gains and progressive rates up to 35 percent for business income, depending on your total annual income and classification. Exchanges do not withhold tax automatically; you are responsible for reporting gains when filing annual tax returns. Loss offsets and calculation methods can be complex, and rules have evolved in recent years, so consult a Thai tax advisor familiar with digital assets before your first tax filing. This is not tax advice, and Thai tax law on crypto continues to develop."
+      ]
+     },
+     {
+      "h": "Trading Limits and Withdrawal Rules",
+      "p": [
+       "SEC-licensed platforms impose daily and monthly trading limits based on your verification tier, ranging from 100,000 baht daily for basic accounts to unlimited for fully verified institutional accounts. Withdrawal limits for THB typically mirror deposit limits. Cryptocurrency withdrawals to external wallets are usually permitted after a holding period of 1-7 days for newly deposited funds (anti-fraud measure) and may require email or SMS confirmation codes.",
+       "Some platforms charge flat withdrawal fees (e.g., 0.0005 BTC for Bitcoin, 10 USDT for Tether) while others use percentage-based models. Always check the fee schedule before withdrawing, as network congestion can make small withdrawals uneconomical. Minimum withdrawal amounts apply, often around 0.0001 BTC or 50-100 baht equivalent for other coins."
+      ]
+     },
+     {
+      "h": "Choosing Between Local and Global Platforms",
+      "p": [
+       "Use a Thai SEC-licensed platform if you prioritize regulatory protection, need to move money in and out in Thai baht regularly, want straightforward tax reporting (licensed platforms provide annual trading statements), or trade primarily major coins like Bitcoin, Ethereum, and established altcoins. The trade-off is typically fewer available cryptocurrencies and sometimes lower liquidity for less common pairs.",
+       "Consider global exchanges if you need access to hundreds of altcoins or tokens not listed on Thai platforms, want advanced trading tools like futures, margin, or derivatives (which Thai regulations restrict heavily), or participate in staking, lending, or DeFi integrations unavailable locally. The downsides include the need to use stablecoins or other currencies as intermediaries for Thai baht conversion, reliance on peer-to-peer THB on-ramps if direct bank transfers fail, and navigating foreign customer support if issues arise.",
+       "Many experienced Thai traders use a hybrid approach: maintaining a licensed Thai platform account for cashing in and out to baht, and a global exchange account for broader market access. This requires transferring crypto between platforms, which incurs network fees and requires attention to deposit addresses and network types (BEP-20, ERC-20, TRC-20, etc.) to avoid loss of funds."
+      ]
+     },
+     {
+      "h": "Practical Steps to Get Started",
+      "p": [
+       "First, verify the platform's SEC license on the Thai SEC website's digital asset operator list. Download the exchange app or visit the website and complete registration with your phone number and email. Prepare your Thai ID card or passport, a clear selfie in good lighting, and a recent bank statement or utility bill if required. Upload documents through the app and wait for verification approval, usually within one business day for basic KYC.",
+       "Link your Thai bank account by entering account details exactly as they appear on your bank book—name spelling mismatches cause rejections. Make a small test deposit of 100-500 baht via bank transfer or PromptPay to confirm the process works. Once credited, you can place buy orders for Bitcoin, Ethereum, or other supported coins using limit orders (you set the price) or market orders (instant purchase at current market rate).",
+       "Enable two-factor authentication (2FA) using an authenticator app like Google Authenticator or Authy—SMS-based 2FA is less secure. Write down backup codes and store them safely. Never share your login credentials or 2FA codes with anyone, including people claiming to be customer support. Legitimate exchanges never ask for your password or 2FA codes via email or social media."
+      ]
+     }
+    ]
+   }
+  }
  }
 ]
