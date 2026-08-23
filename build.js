@@ -9,7 +9,43 @@ const SITE_URL = process.env.SITE_URL || 'https://finpulse.example.com';
 const BASE = process.env.BASE_PATH || '';
 
 const i18n = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/i18n.json'), 'utf8'));
-const offers = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/offers.json'), 'utf8'));
+const allOffers = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/offers.json'), 'utf8'));
+// Показываем только офферы с рабочей партнёрской ссылкой.
+// Битая CTA (#REPLACE_WITH_...) хуже, чем её отсутствие: пользователь кликает — ничего не происходит.
+// Как только ссылка появится в data/offers.json, оффер вернётся на сайт автоматически.
+const isLive = (o) => typeof o.url === 'string' && /^https?:\/\//.test(o.url) && !/REPLACE_WITH/i.test(o.url);
+const offers = allOffers.filter(isLive);
+
+// Часть офферов рекламодатель разрешает только для витрин / сервисов сравнения
+// предложений, но НЕ для редакционного контента (статей). Такие помечены
+// "placement": "home" — они попадают в блок-витрину на главной, но не внутрь статей.
+// Нарушение типа трафика грозит отменой всех конверсий и баном по офферу.
+const isArticleSafe = (o) => o.placement !== 'home';
+const articleOffers = offers.filter(isArticleSafe);
+const forbiddenInArticles = offers.filter(o => !isArticleSafe(o)).map(o => o.url);
+
+// Гео-таргетинг через языковые версии.
+// Часть офферов работает только в одной стране (RockWallet — США, Libertex и ByBit —
+// Украина, IN1 — Европа). Показывать их на всех 17 языках бессмысленно: посетитель
+// из Таиланда по офферу для США всё равно не сконвертится, а карточка занимает место.
+// Поле "langs" ограничивает оффер списком языковых версий. Нет поля — показываем везде.
+const forLang = (list, lang) => list.filter(o => !Array.isArray(o.langs) || o.langs.includes(lang));
+const targeted = offers.filter(o => Array.isArray(o.langs));
+if (targeted.length) {
+  console.warn('offers: с языковым таргетингом — ' + targeted.map(o => o.id + ' [' + o.langs.join(',') + ']').join(', '));
+}
+const homeOnlyIds = offers.filter(o => !isArticleSafe(o)).map(o => o.id);
+if (homeOnlyIds.length) {
+  console.warn('offers: только на главной (статейный трафик запрещён рекламодателем): ' + homeOnlyIds.join(', '));
+}
+if (!articleOffers.length) {
+  console.warn('offers: ВНИМАНИЕ — для статейных страниц не осталось ни одного оффера');
+}
+
+const skippedOffers = allOffers.length - offers.length;
+if (skippedOffers > 0) {
+  console.warn('offers: ' + offers.length + '/' + allOffers.length + ' с рабочей ссылкой, ' + skippedOffers + ' скрыто (нет партнёрской ссылки): ' + allOffers.filter(o => !isLive(o)).map(o => o.id).join(', '));
+}
 const articles = JSON.parse(fs.readFileSync(path.join(ROOT, 'content/articles.json'), 'utf8'))
   .sort((a, b) => new Date(b.date) - new Date(a.date));
 
@@ -199,7 +235,7 @@ for (const lang of LANGS) {
       '<section class="hero"><div class="badge"><span class="pulse"></span>' + esc(S('updatedEvery', lang)) + '</div>' +
       '<h1>' + esc(S('tagline', lang)) + '</h1></section>' +
       '<h2 class="sec" id="offers">\uD83C\uDFC6 ' + esc(S('topPlatforms', lang)) + '</h2>' +
-      '<div class="offers">' + offers.map((o, i) => offerCard(o, lang, i === 0)).join('') + '</div>' +
+      '<div class="offers">' + forLang(offers, lang).map((o, i) => offerCard(o, lang, i === 0)).join('') + '</div>' +
       '<h2 class="sec">\uD83D\uDCF0 ' + esc(S('latestNews', lang)) + '</h2>' +
       '<div class="grid">' + articles.slice(0, 6).map(a => newsCard(a, lang)).join('') + '</div>' +
       '<p style="margin:18px 0"><a class="cta" style="max-width:340px;margin:0 auto" href="' + BASE + '/' + lang + '/news/">' + esc(S('allNews', lang)) + ' \u2192</a></p>' +
@@ -231,7 +267,7 @@ for (const lang of LANGS) {
   for (const a of articles) {
     const t = a.i18n[lang] || a.i18n.en;
     const pf = l => BASE + '/' + l + '/news/' + a.slug + '/';
-    const topOffers = offers.slice(0, 2);
+    const topOffers = forLang(articleOffers, lang).slice(0, 2);
     const artHtml = page({
       lang,
       title: t.title + ' \u2014 FinPulse',
@@ -246,8 +282,20 @@ for (const lang of LANGS) {
         t.body.map(p => '<p>' + esc(p) + '</p>').join('') +
         '<div class="strip">' + topOffers.map(o => offerCard(o, lang)).join('') + '</div>' +
         '</main>' +
-        '<div class="mcta"><div class="t">\uD83C\uDF81 ' + esc(topOffers[0].bonus[lang] || topOffers[0].bonus.en) + '</div><a class="cta" href="' + topOffers[0].url + '" rel="nofollow sponsored noopener" target="_blank">' + esc(S('startTrading', lang)) + '</a></div>'
+        (topOffers.length
+          ? '<div class="mcta"><div class="t">\uD83C\uDF81 ' + esc(topOffers[0].bonus[lang] || topOffers[0].bonus.en) + '</div><a class="cta" href="' + topOffers[0].url + '" rel="nofollow sponsored noopener" target="_blank">' + esc(S('startTrading', lang)) + '</a></div>'
+          : '')
     });
+    // Страховка: оффер, запрещённый рекламодателем для редакционного контента,
+    // не должен попасть в статью ни при каких изменениях кода выше.
+    for (const badUrl of forbiddenInArticles) {
+      if (artHtml.includes(badUrl)) {
+        throw new Error('НАРУШЕНИЕ ТИПА ТРАФИКА: оффер со ссылкой ' + badUrl +
+          ' разрешён только для витрин, но попал в статью ' + lang + '/' + a.slug +
+          '. Сборка остановлена — публикация этого нарушает правила оффера.');
+      }
+    }
+
     const dir = path.join(DIST, lang, 'news', a.slug);
     fs.mkdirSync(dir, { recursive: true });
     fs.writeFileSync(path.join(dir, 'index.html'), artHtml);
