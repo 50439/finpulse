@@ -60,6 +60,31 @@ const GUIDES_LABEL = { en: 'Guides', uk: '\u041f\u043e\u0441\u0456\u0431\u043d\u
   pl: 'Poradniki', th: '\u0e04\u0e39\u0e48\u0e21\u0e37\u0e2d' };
 const gLabel = l => GUIDES_LABEL[l] || GUIDES_LABEL.en;
 const guidesFor = lang => guides.filter(g => Array.isArray(g.langs) && g.langs.includes(lang));
+
+// \u041f\u043e\u0434\u043f\u0438\u0441\u044c \u0431\u043b\u043e\u043a\u0430 \u043f\u0435\u0440\u0435\u043b\u0438\u043d\u043a\u043e\u0432\u043a\u0438.
+const RELATED_LABEL = { en: 'Worth reading', uk: '\u0412\u0430\u0440\u0442\u043e \u043f\u0440\u043e\u0447\u0438\u0442\u0430\u0442\u0438', ru: '\u041f\u043e\u043b\u0435\u0437\u043d\u043e \u043f\u0440\u043e\u0447\u0438\u0442\u0430\u0442\u044c',
+  es: 'Vale la pena leer', pt: 'Vale a pena ler', de: 'Lesenswert', fr: '\u00c0 lire aussi',
+  ar: '\u064a\u0633\u062a\u062d\u0642 \u0627\u0644\u0642\u0631\u0627\u0621\u0629', zh: '\u503c\u5f97\u4e00\u8bfb', hi: '\u092f\u0939 \u092d\u0940 \u092a\u0922\u093c\u0947\u0902',
+  id: 'Layak dibaca', vi: '\u0110\u00e1ng \u0111\u1ecdc', tr: 'Okumaya de\u011fer', ja: '\u5408\u308f\u305b\u3066\u8aad\u307f\u305f\u3044',
+  ko: '\ud568\uaed8 \uc77d\uae30', pl: 'Warto przeczyta\u0107', th: '\u0e19\u0e48\u0e32\u0e2d\u0e48\u0e32\u0e19' };
+const rLabel = l => RELATED_LABEL[l] || RELATED_LABEL.en;
+
+// \u0412\u044b\u0431\u043e\u0440 \u0441\u0432\u044f\u0437\u0430\u043d\u043d\u044b\u0445 \u043c\u0430\u0442\u0435\u0440\u0438\u0430\u043b\u043e\u0432 \u0434\u0435\u0442\u0435\u0440\u043c\u0438\u043d\u0438\u0440\u043e\u0432\u0430\u043d: \u0431\u0435\u0437 \u044d\u0442\u043e\u0433\u043e \u0432\u0441\u0435 \u0441\u0442\u0430\u0442\u044c\u0438
+// \u0432\u0435\u043b\u0438 \u0431\u044b \u043d\u0430 \u043e\u0434\u0438\u043d \u0438 \u0442\u043e\u0442 \u0436\u0435 \u043f\u0435\u0440\u0432\u044b\u0439 \u0433\u0430\u0439\u0434, \u0430 \u0441\u043b\u0443\u0447\u0430\u0439\u043d\u044b\u0439 \u0432\u044b\u0431\u043e\u0440 \u043c\u0435\u043d\u044f\u043b \u0431\u044b \u0441\u0441\u044b\u043b\u043a\u0438 \u043d\u0430 \u043a\u0430\u0436\u0434\u043e\u0439
+// \u0441\u0431\u043e\u0440\u043a\u0435 \u2014 \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430 \u044d\u0442\u043e \u0448\u0443\u043c. \u0421\u043c\u0435\u0449\u0435\u043d\u0438\u0435 \u0441\u0447\u0438\u0442\u0430\u0435\u0442\u0441\u044f \u043e\u0442 \u0441\u043b\u0430\u0433\u0430.
+function seedFrom(str) {
+  let h = 0;
+  for (let i = 0; i < str.length; i++) h = (h * 31 + str.charCodeAt(i)) >>> 0;
+  return h;
+}
+function pickRelated(list, seedStr, n, excludeSlug) {
+  const pool = list.filter(x => x.slug !== excludeSlug);
+  if (!pool.length) return [];
+  const start = seedFrom(seedStr) % pool.length;
+  const out = [];
+  for (let i = 0; i < Math.min(n, pool.length); i++) out.push(pool[(start + i) % pool.length]);
+  return out;
+}
 if (guides.length) console.log('guides: ' + guides.length + ' \u0433\u0430\u0439\u0434\u043e\u0432');
 
 const LANGS = Object.keys(i18n.languages);
@@ -131,6 +156,11 @@ h2.sec::after{content:"";flex:1;height:1px;background:#ffffff14}
 .art .lede{font-size:1.1rem;color:var(--text);font-weight:500}
 .art h2{font-size:clamp(1.1rem,3vw,1.35rem);font-weight:700;letter-spacing:-.01em;margin:26px 0 10px}
 .art .upd{color:var(--muted);font-size:.85rem;margin-bottom:18px}
+.related{margin:26px 0 4px;padding:14px 16px;border:1px solid #ffffff14;border-radius:14px;background:#ffffff08}
+.related .rt{font-size:.82rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.related ul{margin:0;padding:0;list-style:none}
+.related li{margin:6px 0}
+.related a{color:var(--accent);font-weight:600;font-size:.98rem;line-height:1.4}
 .backlink{color:var(--accent);font-size:.9rem;font-weight:600}
 .strip{background:linear-gradient(145deg,#1e2438,#161b28);border:1px solid #22d3ee2e;border-radius:var(--radius);padding:16px;margin:24px 0;display:flex;flex-direction:column;gap:10px}
 .mcta{position:fixed;bottom:0;left:0;right:0;z-index:60;background:rgba(17,21,31,.92);backdrop-filter:blur(12px);border-top:1px solid #ffffff1a;padding:10px 14px calc(10px + env(safe-area-inset-bottom));display:flex;align-items:center;gap:12px}
@@ -252,6 +282,15 @@ function guideCard(g, lang) {
     '</a>';
 }
 
+function relatedBlock(items, lang) {
+  if (!items.length) return '';
+  return '<aside class="related"><div class="rt">\uD83D\uDCD8 ' + esc(rLabel(lang)) + '</div><ul>' +
+    items.map(g => {
+      const t = g.i18n[lang] || g.i18n.en;
+      return '<li><a href="' + BASE + '/' + lang + '/guide/' + g.slug + '/">' + esc(t.title) + '</a></li>';
+    }).join('') + '</ul></aside>';
+}
+
 fs.rmSync(DIST, { recursive: true, force: true });
 fs.mkdirSync(DIST, { recursive: true });
 const urls = [];        // новости и витрины — changefreq hourly
@@ -321,6 +360,7 @@ for (const lang of LANGS) {
         '<h1>' + esc(t.title) + '</h1>' +
         '<p class="lede">' + esc(t.excerpt) + '</p>' +
         t.body.map(p => '<p>' + esc(p) + '</p>').join('') +
+        relatedBlock(pickRelated(guidesFor(lang), a.slug, 2), lang) +
         '<div class="strip">' + topOffers.map(o => offerCard(o, lang)).join('') + '</div>' +
         '</main>' +
         (topOffers.length
@@ -389,6 +429,8 @@ for (const lang of LANGS) {
           (t.sections || []).map(sec =>
             '<h2>' + esc(sec.h) + '</h2>' + (sec.p || []).map(x => '<p>' + esc(x) + '</p>').join('')
           ).join('') +
+          relatedBlock(pickRelated(langGuides, g.slug, 2, g.slug), lang) +
+          '<p style="margin-top:18px"><a class="backlink" href="' + BASE + '/' + lang + '/news/">' + esc(S('allNews', lang)) + ' \u2192</a></p>' +
           '<div class="strip">' + topOffers.map(o => offerCard(o, lang)).join('') + '</div>' +
           '</main>' +
           (topOffers.length
