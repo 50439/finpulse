@@ -11,7 +11,6 @@ const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
 const API_KEY = process.env.ANTHROPIC_API_KEY;
-if (!API_KEY) { console.error('ANTHROPIC_API_KEY is not set'); process.exit(1); }
 
 const LANGS = ['en','uk','ru','es','pt','de','fr','ar','zh','hi','id','vi','tr','ja','ko','pl','th'];
 const FEEDS = [
@@ -22,6 +21,42 @@ const FEEDS = [
   { url: 'https://feeds.bbci.co.uk/news/business/rss.xml', category: 'world' },
   { url: 'https://www.epravda.com.ua/rss/', category: 'ukraine' }
 ];
+
+// --- Дедупликация -------------------------------------------------------
+// Проблема, которую это чинит: раньше единственной защитой от повторов была
+// просьба к модели «пропусти похожее». Модель обязана была вернуть ровно 2 статьи,
+// поэтому при отсутствии свежих новостей она переписывала уже опубликованное
+// другими словами. Слаг получал уникальный суффикс от Date.now(), так что даже
+// дословный повтор считался новой статьёй. Итог: ~40% ленты — дубли.
+const STOP = new Set(('the a an and or of to in on for as at by with from after over into amid ahead ' +
+  'its his her their new says say said is are was were be been has have had this that these those ' +
+  'up down out off more most than then when while about against between during without within ' +
+  'first last major key top big news report reports').split(' '));
+
+function keywords(title) {
+  const out = new Set();
+  for (let w of String(title).toLowerCase().replace(/[^a-z0-9$%. ]/g, ' ').split(/\s+/)) {
+    w = w.replace(/^\.+|\.+$/g, '');
+    if (!w || STOP.has(w)) continue;
+    if (w.length >= 4 || /\d/.test(w)) out.add(w);
+  }
+  return out;
+}
+
+// Мера Жаккара по значимым словам заголовка.
+// Порог подобран на реальных данных прода (31 статья, 465 пар):
+// настоящие дубли дали 0.45-0.70, разные новости — не выше 0.25. Берём 0.40 с запасом.
+function titleSimilarity(a, b) {
+  const A = keywords(a), B = keywords(b);
+  if (!A.size || !B.size) return 0;
+  let inter = 0;
+  for (const w of A) if (B.has(w)) inter++;
+  return inter / (A.size + B.size - inter);
+}
+
+const DUP_THRESHOLD = Number(process.env.DUP_THRESHOLD || 0.40);
+// Слаг у нас всегда получает суффикс -xxxx, поэтому сравниваем базовую часть.
+const slugBase = s => String(s).toLowerCase().replace(/-[a-z0-9]{4}$/, '');
 
 function parseRss(xml, category) {
   const items = [];
@@ -52,12 +87,15 @@ async function fetchFeeds() {
 
 async function callClaude(headlines) {
   const existing = JSON.parse(fs.readFileSync(path.join(ROOT, 'content/articles.json'), 'utf8'));
-  const recentTitles = existing.slice(0, 15).map(a => a.i18n.en.title);
+  const recentTitles = existing.slice(0, 30).map(a => a.i18n.en.title);
   const prompt = 'You are the editor of FinPulse, a multilingual crypto & finance news site.\n\n' +
-'Below are fresh headlines from RSS feeds. Pick the 2 MOST important and DISTINCT stories (prefer variety: crypto, stocks/world economy, and if present something about Ukraine economy). Skip stories too similar to these recently published titles: ' + JSON.stringify(recentTitles) + '\n\n' +
+'Below are fresh headlines from RSS feeds. Pick UP TO 2 genuinely NEW and DISTINCT stories (prefer variety: crypto, stocks/world economy, and if present something about Ukraine economy).\n\n' +
+'WE ALREADY PUBLISHED THESE STORIES: ' + JSON.stringify(recentTitles) + '\n\n' +
+'A story counts as ALREADY COVERED if it is the same event, the same company/country, or the same figures as anything above — even if the wording, angle or framing differs. Only a genuinely NEW development (new decision, new number, new consequence) counts as a new story.\n\n' +
+'IMPORTANT: you are NOT required to return 2 articles. Return 1, or an empty array [], if there is nothing genuinely new. Publishing nothing is BETTER than republishing a story we already covered — repeats destroy reader trust. Do not stretch to fill a quota.\n\n' +
 'For each story write an ORIGINAL article (do not copy source text): a catchy title, a 1-2 sentence excerpt, and a body of 3-4 paragraphs. Then translate title, excerpt and body into ALL of: en, uk, ru, es, pt, de, fr, ar, zh, hi, id, vi, tr, ja, ko, pl, th. Native-quality natural translations.\n\n' +
 'Category must be one of: crypto, stocks, forex, world, ukraine. Pick a fitting emoji for each article.\n\n' +
-'Respond with ONLY valid JSON (no markdown fences), an array of 2 objects:\n' +
+'Respond with ONLY valid JSON (no markdown fences), an array of 0 to 2 objects (empty array [] is a valid and welcome answer):\n' +
 '[{"slug":"kebab-case-slug","category":"crypto","emoji":"X","i18n":{"en":{"title":"...","excerpt":"...","body":["p1","p2","p3"]}, ...all 17 langs}}]\n\n' +
 'HEADLINES:\n' + JSON.stringify(headlines.slice(0, 40), null, 1);
 
@@ -99,7 +137,8 @@ async function callClaude(headlines) {
   return JSON.parse(text);
 }
 
-(async function main() {
+async function main() {
+  if (!API_KEY) { console.error('ANTHROPIC_API_KEY is not set'); process.exit(1); }
   const headlines = await fetchFeeds();
   if (!headlines.length) { console.error('No headlines fetched'); process.exit(1); }
   console.log('Fetched', headlines.length, 'headlines. Generating articles...');
@@ -115,13 +154,65 @@ async function callClaude(headlines) {
     world: 'linear-gradient(135deg,#3b82f633,#0b0e1400)',
     ukraine: 'linear-gradient(135deg,#facc1533,#0b0e1400)'
   };
+  // --- Жёсткая отбраковка дублей -----------------------------------------
+  // Модель может ошибиться или переписать старую новость другими словами —
+  // здесь это ловится механически, до записи в ленту.
+  const existingTitles = existing.map(a => (a.i18n && a.i18n.en && a.i18n.en.title) || '').filter(Boolean);
+  const existingSlugs = new Set(existing.map(a => slugBase(a.slug)));
+  const accepted = [];
+  let rejected = 0;
+
   for (const a of fresh) {
+    const title = a.i18n && a.i18n.en && a.i18n.en.title;
+    if (!title) { console.warn('SKIP: статья без английского заголовка'); rejected++; continue; }
+
+    const rawSlug = String(a.slug || '').toLowerCase().replace(/[^a-z0-9-]/g, '-').slice(0, 60);
+    if (existingSlugs.has(slugBase(rawSlug))) {
+      console.warn('ДУБЛЬ (слаг): ' + title);
+      rejected++; continue;
+    }
+
+    let dupTitle = null, dupScore = 0;
+    for (const t of existingTitles.concat(accepted.map(x => x.i18n.en.title))) {
+      const sim = titleSimilarity(title, t);
+      if (sim >= DUP_THRESHOLD && sim > dupScore) { dupScore = sim; dupTitle = t; }
+    }
+    if (dupTitle) {
+      console.warn('ДУБЛЬ (' + dupScore.toFixed(2) + '): "' + title + '"  ~  "' + dupTitle + '"');
+      rejected++; continue;
+    }
+
+    a._rawSlug = rawSlug;
+    accepted.push(a);
+  }
+
+  if (rejected) console.log('Отброшено дублей: ' + rejected + ' из ' + fresh.length);
+
+  if (!accepted.length) {
+    console.log('Свежих новостей нет — ничего не публикуем. Это нормально: повтор хуже паузы.');
+    return;
+  }
+
+  accepted.forEach((a, i) => {
     for (const l of LANGS) if (!a.i18n[l]) a.i18n[l] = a.i18n.en;
     a.date = now;
     a.gradient = gradients[a.category] || gradients.world;
-    a.slug = a.slug.toLowerCase().replace(/[^a-z0-9-]/g, '-').slice(0, 60) + '-' + Date.now().toString(36).slice(-4);
-  }
-  const merged = [...fresh, ...existing].slice(0, 60);
+    a.slug = a._rawSlug + '-' + (Date.now() + i).toString(36).slice(-4);
+    delete a._rawSlug;
+  });
+
+  // Лимит ленты. Раньше было 60: при 8 статьях в сутки страницы старше недели
+  // выпадали из articles.json, их URL начинали отдавать 404, хотя уже были
+  // в sitemap и в индексе Google. 200 — это несколько недель истории;
+  // сборка 3400 страниц занимает считаные секунды.
+  const KEEP = Number(process.env.KEEP_ARTICLES || 200);
+  const merged = [...accepted, ...existing].slice(0, KEEP);
   fs.writeFileSync(file, JSON.stringify(merged, null, 1));
-  console.log('Added', fresh.length, 'articles. Total:', merged.length);
-})().catch(e => { console.error(e); process.exit(1); });
+  console.log('Добавлено статей: ' + accepted.length + '. Всего в ленте: ' + merged.length);
+}
+
+if (require.main === module) {
+  main().catch(e => { console.error(e); process.exit(1); });
+}
+
+module.exports = { keywords, titleSimilarity, slugBase, DUP_THRESHOLD };

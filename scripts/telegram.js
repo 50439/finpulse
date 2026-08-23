@@ -16,7 +16,10 @@ if (!TOKEN || !CHAT) { console.log('Telegram secrets not set - skipping'); proce
 const articles = JSON.parse(fs.readFileSync(path.join(ROOT, 'content/articles.json'), 'utf8'));
 const postedFile = path.join(ROOT, 'content/tg-posted.json');
 const posted = fs.existsSync(postedFile) ? JSON.parse(fs.readFileSync(postedFile, 'utf8')) : [];
-const fresh = articles.filter(a => !posted.includes(a.slug)).slice(0, 3).reverse();
+// Не больше 2 постов за прогон (4 прогона в сутки по крону = максимум 8 постов).
+// Если генератор отбраковал дубли и свежего нет — постов не будет вовсе, это норма.
+const MAX_POSTS = Number(process.env.TG_MAX_POSTS || 2);
+const fresh = articles.filter(a => !posted.includes(a.slug)).slice(0, MAX_POSTS).reverse();
 
 (async () => {
   for (const a of fresh) {
