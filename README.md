@@ -114,10 +114,45 @@ IN1 `de fr es pt pl` (ЕС), PocketOption `es pt tr ar uk ru hi id th`, Trezor �
 ## Локально
 ```bash
 node build.js && node build.test.js     # собрать + проверить
+node scripts/dedup.test.js              # проверить фильтр дублей
+node scripts/telegram.test.js           # проверить маршрутизацию по каналам (без сети)
 npx serve dist                          # посмотреть сайт
-ANTHROPIC_API_KEY=sk-... node scripts/generate.js   # сгенерировать свежие статьи
+ANTHROPIC_API_KEY=sk-... node scripts/generate.js   # свежие новости
+ANTHROPIC_API_KEY=sk-... node scripts/guides.js     # следующий вечнозелёный гайд
+TELEGRAM_BOT_TOKEN=... node scripts/telegram.js --check   # статус каналов, без публикации
 ```
 `build.js` печатает, сколько офферов скрыто из-за отсутствия ссылки.
+
+## Вечнозелёные гайды
+Темы курируются вручную в `data/guides.json`; у каждой свой список языков —
+гайд про Таиланд не переводится на японский. `scripts/guides.js` пишет один гайд
+за прогон в `content/guides.json`, `build.js` отдаёт их на `/{lang}/guide/{slug}/`
+с hreflang только по собственным языкам и `changefreq=monthly` (у новостей `hourly`).
+
+## Telegram: каналы по языкам
+Карта `data/telegram-channels.json` — `язык -> @канал`. Постятся и новости, и новые
+гайды, каждый на своём языке и со ссылкой на свою языковую версию. Добавить язык =
+дописать строку в файл; кода менять не нужно. Бот должен быть админом канала
+с правом публикации — проверяется командой `--check` выше и на каждом прогоне CI.
+Падение одного канала не останавливает остальные.
+
+## Выкладка без git push
+Push из сессии Claude блокирует git-прокси. Вместо коммита через веб-форму на каждую
+папку — одна загрузка на всю выкладку, сколько бы файлов в ней ни было:
+
+```bash
+tar czf - build.js scripts/telegram.js data/offers.json | base64 -w0 > bundle.b64
+```
+Загрузить `bundle.b64` в папку `deploy/` через веб-форму GitHub. Дальше workflow
+**Deploy files (bundle)** сам распакует файлы по их путям, прогонит сборку и все тесты,
+закоммитит и удалит `bundle.b64`. Если сборка или тест падают — ничего не коммитится.
+
+Почему файлом, а не полем `workflow_dispatch`: поле портит длинный base64 при urlencode
+(`+` приезжает пробелом, gzip падает с crc error). Поле оставлено как запасной путь
+для мелких выкладок, и workflow терпит оба алфавита base64.
+
+Файлы `.github/workflows/` так залить нельзя — у `GITHUB_TOKEN` нет права `workflows`.
+Для них по-прежнему веб-форма; workflow говорит об этом сразу, а не отказом push в конце.
 
 ## SEO из коробки
 hreflang на все 17 языков, canonical, sitemap.xml (hourly), robots.txt, JSON-LD (NewsArticle/WebSite),
