@@ -20,6 +20,11 @@
  * Запуск: ANTHROPIC_API_KEY=sk-... node scripts/guides.js
  *         SLUG=crypto-glossary node scripts/guides.js   — конкретный гайд
  *         REGENERATE=1 ...                              — перезаписать существующий
+ *         GUIDES_PER_RUN=9 ...                          — написать несколько за прогон
+ *
+ * Почему по умолчанию 1: чтобы гайды не вываливались одной пачкой на молодой сайт.
+ * Файл сохраняется после КАЖДОГО гайда, а не в конце: если прогон упадёт на седьмом
+ * из девяти, шесть уже написанных не пропадут.
  */
 const fs = require('fs');
 const path = require('path');
@@ -96,24 +101,7 @@ async function callClaude(prompt) {
   return JSON.parse(text.replace(/^```json?\s*/i, '').replace(/```\s*$/, '').trim());
 }
 
-async function main() {
-  if (!API_KEY) { console.error('ANTHROPIC_API_KEY is not set'); process.exit(1); }
-  const topics = JSON.parse(fs.readFileSync(TOPICS_FILE, 'utf8'));
-  const out = loadOut();
-  const done = new Set(out.map(g => g.slug));
-
-  let topic;
-  if (process.env.SLUG) {
-    topic = topics.find(t => t.slug === process.env.SLUG);
-    if (!topic) { console.error('Нет темы со slug=' + process.env.SLUG); process.exit(1); }
-    if (done.has(topic.slug) && !process.env.REGENERATE) {
-      console.log('Гайд ' + topic.slug + ' уже есть. REGENERATE=1 чтобы перезаписать.'); return;
-    }
-  } else {
-    topic = topics.find(t => !done.has(t.slug));
-    if (!topic) { console.log('Все ' + topics.length + ' гайдов уже написаны. Добавьте тему в data/guides.json.'); return; }
-  }
-
+async function writeOne(topic, out, topics) {
   console.log('Пишу гайд: ' + topic.slug + ' (' + topic.langs.join(', ') + ')');
   const res = await callClaude(buildPrompt(topic));
   const i18n = res.i18n || res;
@@ -136,8 +124,42 @@ async function main() {
 
   const idx = out.findIndex(g => g.slug === entry.slug);
   if (idx >= 0) out[idx] = entry; else out.push(entry);
+  // Пишем сразу: прогон на несколько гайдов не должен терять уже готовые из-за сбоя на последнем.
   fs.writeFileSync(OUT_FILE, JSON.stringify(out, null, 1) + '\n');
   console.log('Готово. Гайдов в content/guides.json: ' + out.length + ' из ' + topics.length);
+}
+
+async function main() {
+  if (!API_KEY) { console.error('ANTHROPIC_API_KEY is not set'); process.exit(1); }
+  const topics = JSON.parse(fs.readFileSync(TOPICS_FILE, 'utf8'));
+  const out = loadOut();
+  const done = new Set(out.map(g => g.slug));
+
+  if (process.env.SLUG) {
+    const topic = topics.find(t => t.slug === process.env.SLUG);
+    if (!topic) { console.error('Нет темы со slug=' + process.env.SLUG); process.exit(1); }
+    if (done.has(topic.slug) && !process.env.REGENERATE) {
+      console.log('Гайд ' + topic.slug + ' уже есть. REGENERATE=1 чтобы перезаписать.'); return;
+    }
+    return writeOne(topic, out, topics);
+  }
+
+  const perRun = Math.max(1, Number(process.env.GUIDES_PER_RUN || 1));
+  const queue = topics.filter(t => !done.has(t.slug)).slice(0, perRun);
+  if (!queue.length) {
+    console.log('Все ' + topics.length + ' гайдов уже написаны. Добавьте тему в data/guides.json.'); return;
+  }
+  console.log('В очереди на этот прогон: ' + queue.length + ' (осталось всего: ' + topics.filter(t => !done.has(t.slug)).length + ')');
+
+  let ok = 0;
+  for (const topic of queue) {
+    try { await writeOne(topic, out, topics); ok++; }
+    catch (e) {
+      // Один неудачный гайд не должен ронять остальные: следующий прогон подберёт его снова.
+      console.error('Гайд ' + topic.slug + ' не получился: ' + (e && e.message ? e.message : e));
+    }
+  }
+  console.log('Прогон завершён: написано ' + ok + ' из ' + queue.length);
 }
 
 if (require.main === module) main().catch(e => { console.error(e); process.exit(1); });
