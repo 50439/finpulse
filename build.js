@@ -49,6 +49,19 @@ if (skippedOffers > 0) {
 const articles = JSON.parse(fs.readFileSync(path.join(ROOT, 'content/articles.json'), 'utf8'))
   .sort((a, b) => new Date(b.date) - new Date(a.date));
 
+// Вечнозелёные гайды. Файл может отсутствовать (первая сборка до генерации) — это не ошибка.
+const GUIDES_FILE = path.join(ROOT, 'content/guides.json');
+const guides = fs.existsSync(GUIDES_FILE)
+  ? JSON.parse(fs.readFileSync(GUIDES_FILE, 'utf8'))
+  : [];
+const GUIDES_LABEL = { en: 'Guides', uk: '\u041f\u043e\u0441\u0456\u0431\u043d\u0438\u043a\u0438', ru: '\u0413\u0430\u0439\u0434\u044b', es: 'Gu\u00edas', pt: 'Guias',
+  de: 'Ratgeber', fr: 'Guides', ar: '\u0623\u062f\u0644\u0629', zh: '\u6307\u5357', hi: '\u0917\u093e\u0907\u0921',
+  id: 'Panduan', vi: 'H\u01b0\u1edbng d\u1eabn', tr: 'Rehberler', ja: '\u30ac\u30a4\u30c9', ko: '\uac00\uc774\ub4dc',
+  pl: 'Poradniki', th: '\u0e04\u0e39\u0e48\u0e21\u0e37\u0e2d' };
+const gLabel = l => GUIDES_LABEL[l] || GUIDES_LABEL.en;
+const guidesFor = lang => guides.filter(g => Array.isArray(g.langs) && g.langs.includes(lang));
+if (guides.length) console.log('guides: ' + guides.length + ' \u0433\u0430\u0439\u0434\u043e\u0432');
+
 const LANGS = Object.keys(i18n.languages);
 const S = (key, lang) => {
   let node = i18n.strings;
@@ -116,6 +129,8 @@ h2.sec::after{content:"";flex:1;height:1px;background:#ffffff14}
 .art h1{font-size:clamp(1.4rem,4.5vw,2rem);font-weight:800;letter-spacing:-.02em;line-height:1.25;margin:10px 0 16px}
 .art p{margin:0 0 16px;color:#cbd2e0;font-size:1.02rem}
 .art .lede{font-size:1.1rem;color:var(--text);font-weight:500}
+.art h2{font-size:clamp(1.1rem,3vw,1.35rem);font-weight:700;letter-spacing:-.01em;margin:26px 0 10px}
+.art .upd{color:var(--muted);font-size:.85rem;margin-bottom:18px}
 .backlink{color:var(--accent);font-size:.9rem;font-weight:600}
 .strip{background:linear-gradient(145deg,#1e2438,#161b28);border:1px solid #22d3ee2e;border-radius:var(--radius);padding:16px;margin:24px 0;display:flex;flex-direction:column;gap:10px}
 .mcta{position:fixed;bottom:0;left:0;right:0;z-index:60;background:rgba(17,21,31,.92);backdrop-filter:blur(12px);border-top:1px solid #ffffff1a;padding:10px 14px calc(10px + env(safe-area-inset-bottom));display:flex;align-items:center;gap:12px}
@@ -150,18 +165,23 @@ document.addEventListener('click',function(e){
 });
 `;
 
-function langLinks(pathFn) {
-  return LANGS.map(l => '<link rel="alternate" hreflang="' + l + '" href="' + SITE_URL + pathFn(l) + '">').join('\n  ')
-    + '\n  <link rel="alternate" hreflang="x-default" href="' + SITE_URL + pathFn('en') + '">';
+function langLinks(pathFn, only) {
+  // only — список языков, на которых страница РЕАЛЬНО существует.
+  // Для новостей это все языки, для гайда — только его собственные.
+  // hreflang на несуществующую страницу Google считает ошибкой.
+  const list = (Array.isArray(only) && only.length) ? LANGS.filter(l => only.includes(l)) : LANGS;
+  const def = list.includes('en') ? 'en' : list[0];
+  return list.map(l => '<link rel="alternate" hreflang="' + l + '" href="' + SITE_URL + pathFn(l) + '">').join('\n  ')
+    + '\n  <link rel="alternate" hreflang="x-default" href="' + SITE_URL + pathFn(def) + '">';
 }
 
 function page(opt) {
-  const { lang, title, desc, pathFn, body, jsonld } = opt;
+  const { lang, title, desc, pathFn, body, jsonld, hreflangs } = opt;
   const L = i18n.languages[lang];
   return '<!DOCTYPE html>\n<html lang="' + lang + '" dir="' + L.dir + '">\n<head>\n' +
     '<meta charset="UTF-8">\n<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n' +
     '<title>' + esc(title) + '</title>\n<meta name="description" content="' + esc(desc) + '">\n' +
-    '<link rel="canonical" href="' + SITE_URL + pathFn(lang) + '">\n  ' + langLinks(pathFn) + '\n' +
+    '<link rel="canonical" href="' + SITE_URL + pathFn(lang) + '">\n  ' + langLinks(pathFn, hreflangs) + '\n' +
     '<meta property="og:title" content="' + esc(title) + '">\n<meta property="og:description" content="' + esc(desc) + '">\n' +
     '<meta property="og:type" content="website">\n<meta name="theme-color" content="#0b0e14">\n' +
     '<meta property="og:image" content="' + SITE_URL + '/og.png">\n<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">\n' +
@@ -170,14 +190,17 @@ function page(opt) {
     '<link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>\\uD83D\\uDCC8</text></svg>">\n' +
     (jsonld ? '<script type="application/ld+json">' + JSON.stringify(jsonld) + '</script>\n' : '') +
     '<style>' + CSS + '</style>\n</head>\n<body>\n' +
-    header(lang, pathFn) + '\n' + body + '\n' + footer(lang) +
+    header(lang, pathFn, hreflangs) + '\n' + body + '\n' + footer(lang) +
     '\n<script>' + TICKER_JS + '</script>\n</body>\n</html>';
 }
 
-function header(lang, pathFn) {
+function header(lang, pathFn, only) {
   const L = i18n.languages[lang];
+  // \u0415\u0441\u043b\u0438 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0430 \u0435\u0441\u0442\u044c \u043d\u0435 \u043d\u0430 \u0432\u0441\u0435\u0445 \u044f\u0437\u044b\u043a\u0430\u0445 (\u0433\u0430\u0439\u0434\u044b), \u043f\u0435\u0440\u0435\u043a\u043b\u044e\u0447\u0430\u0442\u0435\u043b\u044c \u0432\u0435\u0434\u0451\u0442
+  // \u043d\u0430 \u0433\u043b\u0430\u0432\u043d\u0443\u044e \u044d\u0442\u043e\u0433\u043e \u044f\u0437\u044b\u043a\u0430, \u0430 \u043d\u0435 \u0432 404.
+  const has = l => !Array.isArray(only) || !only.length || only.includes(l);
   const menu = LANGS.map(l =>
-    '<a href="' + pathFn(l) + '" class="' + (l === lang ? 'cur' : '') + '" hreflang="' + l + '">' + i18n.languages[l].flag + ' ' + i18n.languages[l].name + '</a>').join('');
+    '<a href="' + (has(l) ? pathFn(l) : BASE + '/' + l + '/') + '" class="' + (l === lang ? 'cur' : '') + '" hreflang="' + l + '">' + i18n.languages[l].flag + ' ' + i18n.languages[l].name + '</a>').join('');
   return '<header><div class="wrap nav">' +
     '<a class="logo" href="' + BASE + '/' + lang + '/"><span class="dot"></span>FinPulse</a>' +
     '<div class="spacer"></div>' +
@@ -219,9 +242,20 @@ function newsCard(a, lang) {
     '</a>';
 }
 
+function guideCard(g, lang) {
+  const t = g.i18n[lang] || g.i18n.en;
+  return '<a class="card" href="' + BASE + '/' + lang + '/guide/' + g.slug + '/" style="background:linear-gradient(135deg,#22d3ee18,#818cf818),var(--card)">' +
+    '<div class="em">' + g.emoji + '</div>' +
+    '<div class="meta"><span class="chip">' + esc(gLabel(lang)) + '</span></div>' +
+    '<h3>' + esc(t.title) + '</h3><p>' + esc(t.excerpt) + '</p>' +
+    '<span class="more">' + esc(S('readMore', lang)) + ' \u2192</span>' +
+    '</a>';
+}
+
 fs.rmSync(DIST, { recursive: true, force: true });
 fs.mkdirSync(DIST, { recursive: true });
-const urls = [];
+const urls = [];        // новости и витрины — changefreq hourly
+const slowUrls = [];    // вечнозелёные гайды — changefreq monthly
 
 for (const lang of LANGS) {
   const pathHome = l => BASE + '/' + l + '/';
@@ -236,6 +270,13 @@ for (const lang of LANGS) {
       '<h1>' + esc(S('tagline', lang)) + '</h1></section>' +
       '<h2 class="sec" id="offers">\uD83C\uDFC6 ' + esc(S('topPlatforms', lang)) + '</h2>' +
       '<div class="offers">' + forLang(offers, lang).map((o, i) => offerCard(o, lang, i === 0)).join('') + '</div>' +
+      (guidesFor(lang).length
+        ? '<h2 class="sec">\uD83D\uDCD8 ' + esc(gLabel(lang)) + '</h2>' +
+          '<div class="grid">' + guidesFor(lang).slice(0, 6).map(g => guideCard(g, lang)).join('') + '</div>' +
+          (guidesFor(lang).length > 6
+            ? '<p style="margin:14px 0"><a class="cta" style="max-width:340px;margin:0 auto" href="' + BASE + '/' + lang + '/guides/">' + esc(gLabel(lang)) + ' \u2192</a></p>'
+            : '')
+        : '') +
       '<h2 class="sec">\uD83D\uDCF0 ' + esc(S('latestNews', lang)) + '</h2>' +
       '<div class="grid">' + articles.slice(0, 6).map(a => newsCard(a, lang)).join('') + '</div>' +
       '<p style="margin:18px 0"><a class="cta" style="max-width:340px;margin:0 auto" href="' + BASE + '/' + lang + '/news/">' + esc(S('allNews', lang)) + ' \u2192</a></p>' +
@@ -301,6 +342,73 @@ for (const lang of LANGS) {
     fs.writeFileSync(path.join(dir, 'index.html'), artHtml);
     urls.push(pf(lang));
   }
+
+  // ---- \u0412\u0435\u0447\u043d\u043e\u0437\u0435\u043b\u0451\u043d\u044b\u0435 \u0433\u0430\u0439\u0434\u044b ----
+  const langGuides = guidesFor(lang);
+  if (langGuides.length) {
+    const gIdxPath = l => BASE + '/' + l + '/guides/';
+    const guidesIdxLangs = LANGS.filter(l => guidesFor(l).length);
+    const gIdxHtml = page({
+      lang,
+      hreflangs: guidesIdxLangs,
+      title: gLabel(lang) + ' \u2014 FinPulse',
+      desc: gLabel(lang) + ' \u2014 FinPulse',
+      pathFn: gIdxPath,
+      body: '<main class="wrap">' +
+        '<section class="hero"><h1>\uD83D\uDCD8 ' + esc(gLabel(lang)) + '</h1></section>' +
+        '<div class="grid">' + langGuides.map(g => guideCard(g, lang)).join('') + '</div>' +
+        '</main>'
+    });
+    fs.mkdirSync(path.join(DIST, lang, 'guides'), { recursive: true });
+    fs.writeFileSync(path.join(DIST, lang, 'guides', 'index.html'), gIdxHtml);
+    slowUrls.push(gIdxPath(lang));
+
+    for (const g of langGuides) {
+      const t = g.i18n[lang] || g.i18n.en;
+      const gf = l => BASE + '/' + l + '/guide/' + g.slug + '/';
+      const topOffers = forLang(articleOffers, lang).slice(0, 2);
+      const upd = g.updated ? new Date(g.updated).toLocaleDateString(i18n.languages[lang].locale, { day: 'numeric', month: 'long', year: 'numeric' }) : '';
+      const gHtml = page({
+        lang,
+        hreflangs: g.langs,
+        title: t.title + ' \u2014 FinPulse',
+        desc: t.excerpt,
+        pathFn: gf,
+        jsonld: {
+          '@context': 'https://schema.org', '@type': 'Article', headline: t.title,
+          description: t.excerpt, inLanguage: lang,
+          dateModified: g.updated || undefined,
+          publisher: { '@type': 'Organization', name: 'FinPulse' }
+        },
+        body: '<main class="art">' +
+          '<a class="backlink" href="' + BASE + '/' + lang + '/guides/">\u2190 ' + esc(gLabel(lang)) + '</a>' +
+          '<div class="meta" style="margin-top:14px"><span class="chip">' + esc(gLabel(lang)) + '</span></div>' +
+          '<h1>' + g.emoji + ' ' + esc(t.title) + '</h1>' +
+          '<p class="lede">' + esc(t.excerpt) + '</p>' +
+          (upd ? '<div class="upd">' + esc(upd) + '</div>' : '') +
+          (t.sections || []).map(sec =>
+            '<h2>' + esc(sec.h) + '</h2>' + (sec.p || []).map(x => '<p>' + esc(x) + '</p>').join('')
+          ).join('') +
+          '<div class="strip">' + topOffers.map(o => offerCard(o, lang)).join('') + '</div>' +
+          '</main>' +
+          (topOffers.length
+            ? '<div class="mcta"><div class="t">\uD83C\uDF81 ' + esc(topOffers[0].bonus[lang] || topOffers[0].bonus.en) + '</div><a class="cta" href="' + topOffers[0].url + '" rel="nofollow sponsored noopener" target="_blank">' + esc(S('startTrading', lang)) + '</a></div>'
+            : '')
+      });
+      // \u0422\u0430 \u0436\u0435 \u0441\u0442\u0440\u0430\u0445\u043e\u0432\u043a\u0430, \u0447\u0442\u043e \u0438 \u0434\u043b\u044f \u0441\u0442\u0430\u0442\u0435\u0439: \u0433\u0430\u0439\u0434 \u2014 \u044d\u0442\u043e \u043a\u043e\u043d\u0442\u0435\u043d\u0442, \u0430 \u043d\u0435 \u0432\u0438\u0442\u0440\u0438\u043d\u0430.
+      for (const badUrl of forbiddenInArticles) {
+        if (gHtml.includes(badUrl)) {
+          throw new Error('\u041d\u0410\u0420\u0423\u0428\u0415\u041d\u0418\u0415 \u0422\u0418\u041f\u0410 \u0422\u0420\u0410\u0424\u0418\u041a\u0410: \u043e\u0444\u0444\u0435\u0440 \u0441\u043e \u0441\u0441\u044b\u043b\u043a\u043e\u0439 ' + badUrl +
+            ' \u0440\u0430\u0437\u0440\u0435\u0448\u0451\u043d \u0442\u043e\u043b\u044c\u043a\u043e \u0434\u043b\u044f \u0432\u0438\u0442\u0440\u0438\u043d, \u043d\u043e \u043f\u043e\u043f\u0430\u043b \u0432 \u0433\u0430\u0439\u0434 ' + lang + '/' + g.slug + '.');
+        }
+      }
+
+      const gdir = path.join(DIST, lang, 'guide', g.slug);
+      fs.mkdirSync(gdir, { recursive: true });
+      fs.writeFileSync(path.join(gdir, 'index.html'), gHtml);
+      slowUrls.push(gf(lang));
+    }
+  }
 }
 
 fs.writeFileSync(path.join(DIST, 'index.html'),
@@ -310,10 +418,12 @@ fs.writeFileSync(path.join(DIST, 'index.html'),
 
 fs.writeFileSync(path.join(DIST, 'sitemap.xml'),
   '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
-  urls.map(u => '<url><loc>' + SITE_URL + u + '</loc><changefreq>hourly</changefreq></url>').join('\n') + '\n</urlset>');
+  urls.map(u => '<url><loc>' + SITE_URL + u + '</loc><changefreq>hourly</changefreq></url>')
+    .concat(slowUrls.map(u => '<url><loc>' + SITE_URL + u + '</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>'))
+    .join('\n') + '\n</urlset>');
 fs.writeFileSync(path.join(DIST, 'robots.txt'), 'User-agent: *\nAllow: /\nSitemap: ' + SITE_URL + '/sitemap.xml\n');
 
-console.log('Built ' + urls.length + ' pages for ' + LANGS.length + ' languages -> dist/');
+console.log('Built ' + (urls.length + slowUrls.length) + ' pages for ' + LANGS.length + ' languages -> dist/ (\u0438\u0437 \u043d\u0438\u0445 \u0433\u0430\u0439\u0434\u043e\u0432\u044b\u0445: ' + slowUrls.length + ')');
 
 // IndexNow key file
 fs.writeFileSync(path.join(DIST, 'ee221c0a3d35f01be5577688fa06a50a.txt'), 'ee221c0a3d35f01be5577688fa06a50a');

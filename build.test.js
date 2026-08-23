@@ -101,4 +101,79 @@ for (const l of langs) {
   check(n > 0, 'на языке '+l+' не осталось ни одного оффера');
 }
 
+// --- \u0412\u0435\u0447\u043d\u043e\u0437\u0435\u043b\u0451\u043d\u044b\u0435 \u0433\u0430\u0439\u0434\u044b -------------------------------------------------
+// \u0413\u0430\u0439\u0434 \u0432\u044b\u0445\u043e\u0434\u0438\u0442 \u0422\u041e\u041b\u042c\u041a\u041e \u043d\u0430 \u044f\u0437\u044b\u043a\u0430\u0445 \u0438\u0437 \u0441\u0432\u043e\u0435\u0433\u043e langs. \u0415\u0441\u043b\u0438 \u0435\u0433\u043e \u0440\u0430\u0437\u043c\u043d\u043e\u0436\u0438\u0442\u044c \u043d\u0430 \u0432\u0441\u0435 17,
+// \u043c\u044b \u043f\u043e\u0432\u0442\u043e\u0440\u0438\u043c \u0440\u043e\u0432\u043d\u043e \u0442\u0443 \u0436\u0435 \u043e\u0448\u0438\u0431\u043a\u0443 \u0441 \u0434\u0443\u0431\u043b\u044f\u043c\u0438, \u0438\u0437-\u0437\u0430 \u043a\u043e\u0442\u043e\u0440\u043e\u0439 \u043f\u0440\u0438\u0448\u043b\u043e\u0441\u044c \u0440\u0435\u0437\u0430\u0442\u044c \u043d\u043e\u0432\u043e\u0441\u0442\u0438.
+const guidesFile = path.join(__dirname,'content/guides.json');
+const guides = fs.existsSync(guidesFile) ? JSON.parse(fs.readFileSync(guidesFile,'utf8')) : [];
+const topics = JSON.parse(fs.readFileSync(path.join(__dirname,'data/guides.json'),'utf8'));
+const topicById = Object.fromEntries(topics.map(t => [t.slug, t]));
+
+for (const g of guides) {
+  check(!!topicById[g.slug], '\u0433\u0430\u0439\u0434 '+g.slug+' \u043d\u0435\u0442 \u0432 data/guides.json \u2014 \u0442\u0435\u043c\u044b \u043a\u0443\u0440\u0438\u0440\u0443\u044e\u0442\u0441\u044f \u0432\u0440\u0443\u0447\u043d\u0443\u044e');
+  if (topicById[g.slug]) {
+    check(g.langs.slice().sort().join(',') === topicById[g.slug].langs.slice().sort().join(','),
+      '\u0433\u0430\u0439\u0434 '+g.slug+': langs \u0440\u0430\u0437\u043e\u0448\u043b\u0438\u0441\u044c \u0441 data/guides.json');
+  }
+  for (const l of langs) {
+    const gp = path.join(DIST,l,'guide',g.slug,'index.html');
+    const should = g.langs.includes(l);
+    check(fs.existsSync(gp) === should,
+      should ? '\u043d\u0435\u0442 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u044b \u0433\u0430\u0439\u0434\u0430 '+g.slug+' /'+l
+             : '\u0433\u0430\u0439\u0434 '+g.slug+' \u0441\u043e\u0431\u0440\u0430\u043b\u0441\u044f \u043d\u0430 /'+l+', \u0445\u043e\u0442\u044f \u0440\u0430\u0437\u0440\u0435\u0448\u0451\u043d \u0442\u043e\u043b\u044c\u043a\u043e \u0434\u043b\u044f: '+g.langs.join(','));
+    if (!should) continue;
+    const h = fs.readFileSync(gp,'utf8');
+    check(!h.includes('REPLACE_WITH'), '\u0431\u0438\u0442\u0430\u044f CTA \u0432 \u0433\u0430\u0439\u0434\u0435 '+g.slug+' /'+l);
+    // hreflang \u0442\u043e\u043b\u044c\u043a\u043e \u043d\u0430 \u0440\u0435\u0430\u043b\u044c\u043d\u043e \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u044e\u0449\u0438\u0435 \u044f\u0437\u044b\u043a\u0438
+    for (const l2 of langs) {
+      const has = h.includes('<link rel="alternate" hreflang="'+l2+'"');
+      check(has === g.langs.includes(l2),
+        '\u0433\u0430\u0439\u0434 '+g.slug+' /'+l+': hreflang="'+l2+'" '+(has?'\u043b\u0438\u0448\u043d\u0438\u0439 \u2014 \u0442\u0430\u043a\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u044b \u043d\u0435\u0442':'\u043e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442'));
+    }
+    // \u0442\u0435 \u0436\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u0430 \u043f\u043e \u043e\u0444\u0444\u0435\u0440\u0430\u043c, \u0447\u0442\u043e \u0438 \u0432 \u0441\u0442\u0430\u0442\u044c\u044f\u0445
+    for (const o of liveOffers) {
+      if (homeOnly(o)) {
+        check(!h.includes(o.url),
+          '\u0417\u0410\u041f\u0420\u0415\u0429\u0415\u041d\u041e: \u043e\u0444\u0444\u0435\u0440 '+o.id+' (\u0442\u043e\u043b\u044c\u043a\u043e \u0432\u0438\u0442\u0440\u0438\u043d\u0430) \u043f\u043e\u043f\u0430\u043b \u0432 \u0433\u0430\u0439\u0434 '+g.slug+' /'+l);
+      } else if (!allowedLangs(o).includes(l)) {
+        check(!h.includes(o.url),
+          '\u043e\u0444\u0444\u0435\u0440 '+o.id+' \u043f\u043e\u043f\u0430\u043b \u0432 \u0433\u0430\u0439\u0434 /'+l+', \u0445\u043e\u0442\u044f \u0440\u0430\u0431\u043e\u0442\u0430\u0435\u0442 \u0442\u043e\u043b\u044c\u043a\u043e \u0432: '+allowedLangs(o).join(','));
+      }
+    }
+  }
+}
+// \u0433\u0430\u0439\u0434\u044b \u0432 sitemap \u043e\u0431\u044f\u0437\u0430\u043d\u044b \u0431\u044b\u0442\u044c monthly, \u0430 \u043d\u0435 hourly \u2014 \u0438\u043d\u0430\u0447\u0435 \u043a\u0440\u0430\u0443\u043b\u0435\u0440 \u0436\u0436\u0451\u0442 \u0431\u044e\u0434\u0436\u0435\u0442 \u0432\u043f\u0443\u0441\u0442\u0443\u044e
+if (guides.length) {
+  const sm = fs.readFileSync(path.join(DIST,'sitemap.xml'),'utf8');
+  for (const line of sm.split('\n')) {
+    if (/\/guides?\//.test(line)) check(line.includes('monthly'), '\u0432 sitemap \u0433\u0430\u0439\u0434 \u0441 changefreq \u043d\u0435 monthly: '+line.slice(0,80));
+  }
+}
+
+// --- \u0412\u0441\u0435 \u0432\u043d\u0443\u0442\u0440\u0435\u043d\u043d\u0438\u0435 \u0441\u0441\u044b\u043b\u043a\u0438 \u0434\u043e\u043b\u0436\u043d\u044b \u0432\u0435\u0441\u0442\u0438 \u043d\u0430 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u044e\u0449\u0438\u0435 \u0444\u0430\u0439\u043b\u044b -------------
+// \u041f\u043e\u0439\u043c\u0430\u043b\u043e \u0440\u0435\u0430\u043b\u044c\u043d\u044b\u0439 \u0431\u0430\u0433: \u043f\u0435\u0440\u0435\u043a\u043b\u044e\u0447\u0430\u0442\u0435\u043b\u044c \u044f\u0437\u044b\u043a\u043e\u0432 \u043d\u0430 \u0433\u0430\u0439\u0434\u0435 \u0432\u0451\u043b \u043d\u0430 /ja/guide/... \u2014 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u044b \u043d\u0435\u0442.
+function walk(dir, acc) {
+  for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+    const f = path.join(dir, e.name);
+    if (e.isDirectory()) walk(f, acc);
+    else if (e.name.endsWith('.html')) acc.push(f);
+  }
+  return acc;
+}
+{
+  const pages = walk(DIST, []);
+  const broken = new Set();
+  for (const f of pages) {
+    const h = fs.readFileSync(f, 'utf8');
+    for (const m of h.matchAll(/href="(\/[^"#]*)"/g)) {
+      const u = m[1];
+      if (/\.(png|txt|xml|ico|svg|webmanifest)$/.test(u)) continue;
+      const target = path.join(DIST, u.replace(/^\//, ''), u.endsWith('/') ? 'index.html' : '');
+      if (!fs.existsSync(target)) broken.add(u + '  \u2190 ' + path.relative(DIST, f));
+    }
+  }
+  for (const b of broken) check(false, '\u0431\u0438\u0442\u0430\u044f \u0432\u043d\u0443\u0442\u0440\u0435\u043d\u043d\u044f\u044f \u0441\u0441\u044b\u043b\u043a\u0430: ' + b);
+  console.log('\u043f\u0440\u043e\u0432\u0435\u0440\u0435\u043d\u043e \u0441\u0442\u0440\u0430\u043d\u0438\u0446: ' + pages.length + ', \u0431\u0438\u0442\u044b\u0445 \u0441\u0441\u044b\u043b\u043e\u043a: ' + broken.size);
+}
+
 if (fails){console.error(fails+' failures');process.exit(1);} console.log('OK - all checks passed');
