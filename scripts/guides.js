@@ -67,6 +67,20 @@ function buildPrompt(t) {
 '{"i18n":{"en":{"title":"...","excerpt":"1-2 sentences","sections":[{"h":"Section heading","p":["paragraph","paragraph"]}]}, ...one entry per requested language}}\n';
 }
 
+// Перевод уже написанного английского гайда на партию языков.
+// Зачем отдельно: один запрос на 14 языков упирается в потолок ответа модели
+// и приходит обрезанный JSON (реальный сбой на crypto-scams-how-to-avoid, 23.08).
+function buildTranslatePrompt(t, en, langs) {
+  const list = langs.map(l => l + ' (' + (LANG_NAMES[l] || l) + ')').join(', ');
+  return 'Translate this evergreen guide into: ' + list + '.\n\n' +
+'These are native-quality translations, not literal ones: adapt examples, currency, payment methods ' +
+'and regulators to what a reader in that language actually uses. A native reader must not be able to ' +
+'tell it was translated. Keep the same section structure and the same number of paragraphs.\n\n' +
+'SOURCE (English):\n' + JSON.stringify({ title: en.title, excerpt: en.excerpt, sections: en.sections }) + '\n\n' +
+'Respond with ONLY valid JSON (no markdown fences):\n' +
+'{"i18n":{"<lang>":{"title":"...","excerpt":"...","sections":[{"h":"...","p":["...","..."]}]}, ...one entry per requested language}}\n';
+}
+
 async function callClaude(prompt) {
   const r = await fetch('https://api.anthropic.com/v1/messages', {
     method: 'POST',
@@ -101,10 +115,29 @@ async function callClaude(prompt) {
   return JSON.parse(text.replace(/^```json?\s*/i, '').replace(/```\s*$/, '').trim());
 }
 
+// Сколько языков просить за один запрос. Больше — и ответ не влезает в лимит модели.
+const LANG_BATCH = Math.max(1, Number(process.env.GUIDE_LANG_BATCH || 4));
+
 async function writeOne(topic, out, topics) {
   console.log('Пишу гайд: ' + topic.slug + ' (' + topic.langs.join(', ') + ')');
-  const res = await callClaude(buildPrompt(topic));
-  const i18n = res.i18n || res;
+
+  // Первый запрос: пишем сам гайд сразу на английском и первых нескольких языках.
+  const head = topic.langs.slice(0, LANG_BATCH);
+  if (!head.includes('en')) head.unshift('en');
+  const first = await callClaude(buildPrompt({ ...topic, langs: head }));
+  const i18n = first.i18n || first;
+  if (!i18n.en || !i18n.en.sections || !i18n.en.sections.length) {
+    throw new Error('Модель не вернула английскую версию — переводить нечего');
+  }
+
+  // Остальные языки догоняем партиями, переводя уже написанный английский текст.
+  const rest = topic.langs.filter(l => !i18n[l] || !i18n[l].sections || !i18n[l].sections.length);
+  for (let i = 0; i < rest.length; i += LANG_BATCH) {
+    const batch = rest.slice(i, i + LANG_BATCH);
+    console.log('  перевод: ' + batch.join(', '));
+    const part = await callClaude(buildTranslatePrompt(topic, i18n.en, batch));
+    Object.assign(i18n, part.i18n || part);
+  }
 
   const missing = topic.langs.filter(l => !i18n[l] || !i18n[l].sections || !i18n[l].sections.length);
   if (missing.length) throw new Error('Модель не вернула языки: ' + missing.join(', '));
