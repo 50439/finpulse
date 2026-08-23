@@ -3,7 +3,9 @@ on:
   push:
     branches: [main]
   schedule:
-    - cron: '0 */6 * * *'
+    # Раз в 8 часов (было 6). Вместе с ARTICLES_PER_RUN=1 это до 3 статей
+    # в сутки вместо 8 — на месяц, пока сайт молодой. Вернуть: '0 */6 * * *'.
+    - cron: '0 */8 * * *'
   workflow_dispatch: {}
 permissions:
   contents: write
