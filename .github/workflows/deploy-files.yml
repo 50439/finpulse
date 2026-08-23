@@ -90,7 +90,7 @@ jobs:
         run: |
           git config user.name "finpulse-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add -A ':!dist'
+          git add -A          # dist уже в .gitignore, отдельный pathspec только мешал
           if git diff --cached --quiet; then
             echo "Нечего коммитить — файлы совпадают с тем, что уже в репозитории"; exit 0
           fi
