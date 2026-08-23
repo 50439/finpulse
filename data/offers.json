@@ -57,6 +57,41 @@
     "वॉल्यूम में सबसे बड़ा एक्सचेंज",
     "600+ कॉइन",
     "0.1% से फीस"
+   ],
+   "id": [
+    "Bursa terbesar berdasarkan volume",
+    "600+ koin",
+    "Biaya rendah 0.1%"
+   ],
+   "vi": [
+    "Sàn lớn nhất theo khối lượng",
+    "600+ coin",
+    "Phí thấp 0.1%"
+   ],
+   "tr": [
+    "Hacimde en büyük borsa",
+    "600+ coin",
+    "Düşük %0.1 komisyon"
+   ],
+   "ja": [
+    "取引量世界最大の取引所",
+    "600種類以上の通貨",
+    "手数料0.1%と低水準"
+   ],
+   "ko": [
+    "거래량 기준 최대 거래소",
+    "600개 이상 코인",
+    "낮은 0.1% 수수료"
+   ],
+   "pl": [
+    "Największa giełda pod względem wolumenu",
+    "600+ monet",
+    "Niskie opłaty 0.1%"
+   ],
+   "th": [
+    "เอ็กซ์เชนจ์ใหญ่ที่สุดตามปริมาณเทรด",
+    "เหรียญ 600+ สกุล",
+    "ค่าธรรมเนียมต่ำ 0.1%"
    ]
   },
   "bonus": {
@@ -69,7 +104,14 @@
    "fr": "Jusqu'à 600$ de bonus",
    "ar": "مكافأة ترحيبية حتى 600$",
    "zh": "最高$600欢迎奖励",
-   "hi": "$600 तक स्वागत बोनस"
+   "hi": "$600 तक स्वागत बोनस",
+   "id": "Bonus sambutan hingga $600",
+   "vi": "Thưởng chào mừng tới $600",
+   "tr": "$600'a varan hoş geldin bonusu",
+   "ja": "最大$600のウェルカムボーナス",
+   "ko": "최대 $600 웰컴 보너스",
+   "pl": "Bonus powitalny do $600",
+   "th": "โบนัสต้อนรับสูงสุด $600"
   }
  },
  {
@@ -130,6 +172,41 @@
     "शीर्ष डेरिवेटिव प्लेटफॉर्म",
     "कॉपी ट्रेडिंग",
     "तेज़ पंजीकरण"
+   ],
+   "id": [
+    "Platform derivatif terdepan",
+    "Copy trading",
+    "Tanpa KYC untuk fitur dasar"
+   ],
+   "vi": [
+    "Nền tảng phái sinh hàng đầu",
+    "Copy trading",
+    "Không cần KYC cho giao dịch cơ bản"
+   ],
+   "tr": [
+    "Önde gelen türev platformu",
+    "Copy trading",
+    "Temel işlemler için KYC yok"
+   ],
+   "ja": [
+    "デリバティブ取引の最上位プラットフォーム",
+    "コピートレード",
+    "基本機能はKYC不要"
+   ],
+   "ko": [
+    "선도적인 파생상품 플랫폼",
+    "카피 트레이딩",
+    "기본 기능 KYC 불필요"
+   ],
+   "pl": [
+    "Czołowa platforma derywatów",
+    "Copy trading",
+    "Bez KYC dla podstaw"
+   ],
+   "th": [
+    "แพลตฟอร์มอนุพันธ์ชั้นนำ",
+    "คอปปี้เทรด",
+    "ไม่ต้อง KYC สำหรับใช้งานพื้นฐาน"
    ]
   },
   "bonus": {
@@ -142,8 +219,18 @@
    "fr": "Jusqu'à 30 000$ de récompenses",
    "ar": "مكافآت حتى 30,000$",
    "zh": "最高$30,000奖励",
-   "hi": "$30,000 तक रिवॉर्ड"
-  }
+   "hi": "$30,000 तक रिवॉर्ड",
+   "id": "Hadiah hingga $30.000",
+   "vi": "Phần thưởng tới $30.000",
+   "tr": "$30.000'a varan ödüller",
+   "ja": "最大$30,000の報酬",
+   "ko": "최대 $30,000 리워드",
+   "pl": "Nagrody do $30 000",
+   "th": "รางวัลรวมสูงสุด $30,000"
+  },
+  "langs": [
+   "uk"
+  ]
  },
  {
   "id": "okx",
@@ -203,6 +290,41 @@
     "बिल्ट-इन Web3 वॉलेट",
     "300+ कॉइन",
     "उन्नत टूल्स"
+   ],
+   "id": [
+    "Dompet Web3 bawaan",
+    "300+ koin",
+    "Alat trading canggih"
+   ],
+   "vi": [
+    "Tích hợp ví Web3",
+    "300+ coin",
+    "Công cụ giao dịch nâng cao"
+   ],
+   "tr": [
+    "Yerleşik Web3 cüzdan",
+    "300+ coin",
+    "Gelişmiş işlem araçları"
+   ],
+   "ja": [
+    "Web3ウォレット内蔵",
+    "300種類以上の通貨",
+    "高度な取引ツール"
+   ],
+   "ko": [
+    "Web3 지갑 내장",
+    "300개 이상 코인",
+    "고급 트레이딩 도구"
+   ],
+   "pl": [
+    "Wbudowany portfel Web3",
+    "300+ monet",
+    "Zaawansowane narzędzia"
+   ],
+   "th": [
+    "มีวอลเล็ต Web3 ในตัว",
+    "เหรียญ 300+ สกุล",
+    "เครื่องมือเทรดขั้นสูง"
    ]
   },
   "bonus": {
@@ -215,7 +337,14 @@
    "fr": "Mystery box jusqu'à 10 000$",
    "ar": "صندوق غامض حتى 10,000$",
    "zh": "最高$10,000盲盒",
-   "hi": "$10,000 तक मिस्ट्री बॉक्स"
+   "hi": "$10,000 तक मिस्ट्री बॉक्स",
+   "id": "Mystery box hingga $10.000",
+   "vi": "Hộp bí ẩn tới $10.000",
+   "tr": "$10.000'a varan sürpriz kutu",
+   "ja": "最大$10,000のミステリーボックス",
+   "ko": "최대 $10,000 미스터리 박스",
+   "pl": "Mystery box do $10 000",
+   "th": "กล่องสุ่มมูลค่าสูงสุด $10,000"
   }
  },
  {
@@ -276,6 +405,41 @@
     "कॉपी ट्रेडिंग में #1",
     "800+ कॉइन",
     "सुरक्षा फंड"
+   ],
+   "id": [
+    "Copy trading No.1",
+    "800+ koin",
+    "Dana perlindungan"
+   ],
+   "vi": [
+    "Copy trading số 1",
+    "800+ coin",
+    "Quỹ bảo vệ"
+   ],
+   "tr": [
+    "1 numaralı copy trading",
+    "800+ coin",
+    "Koruma fonu"
+   ],
+   "ja": [
+    "コピートレード No.1",
+    "800種類以上の通貨",
+    "保護基金"
+   ],
+   "ko": [
+    "카피 트레이딩 1위",
+    "800개 이상 코인",
+    "보호 기금"
+   ],
+   "pl": [
+    "Copy trading nr 1",
+    "800+ monet",
+    "Fundusz ochrony"
+   ],
+   "th": [
+    "คอปปี้เทรดอันดับ 1",
+    "เหรียญ 800+ สกุล",
+    "กองทุนคุ้มครอง"
    ]
   },
   "bonus": {
@@ -288,7 +452,14 @@
    "fr": "Jusqu'à 1 000$ offerts",
    "ar": "حتى 1,000$ للجدد",
    "zh": "新人最高$1,000",
-   "hi": "नए यूज़र्स को $1,000 तक"
+   "hi": "नए यूज़र्स को $1,000 तक",
+   "id": "Hingga $1.000 untuk pengguna baru",
+   "vi": "Tới $1.000 cho người mới",
+   "tr": "Yeni kullanıcılara $1.000'a kadar",
+   "ja": "新規ユーザーに最大$1,000",
+   "ko": "신규 가입자 최대 $1,000",
+   "pl": "Do $1 000 dla nowych",
+   "th": "สูงสุด $1,000 สำหรับสมาชิกใหม่"
   }
  },
  {
@@ -349,6 +520,41 @@
     "700+ ऑल्टकॉइन",
     "ट्रेडिंग बॉट्स",
     "स्टेकिंग"
+   ],
+   "id": [
+    "700+ altcoin",
+    "Bot trading",
+    "Staking & earn"
+   ],
+   "vi": [
+    "700+ altcoin",
+    "Bot giao dịch",
+    "Staking & earn"
+   ],
+   "tr": [
+    "700+ altcoin",
+    "İşlem botları",
+    "Staking ve kazanç"
+   ],
+   "ja": [
+    "700種類以上のアルトコイン",
+    "取引ボット",
+    "ステーキングと報酬"
+   ],
+   "ko": [
+    "700개 이상 알트코인",
+    "트레이딩 봇",
+    "스테이킹 & 이자 수익"
+   ],
+   "pl": [
+    "700+ altcoinów",
+    "Boty tradingowe",
+    "Staking i zarabianie"
+   ],
+   "th": [
+    "อัลต์คอยน์ 700+ สกุล",
+    "บอทเทรด",
+    "สเตกกิ้งและรับดอกเบี้ย"
    ]
   },
   "bonus": {
@@ -361,7 +567,14 @@
    "fr": "Cadeau jusqu'à 500$",
    "ar": "هدية ترحيبية حتى 500$",
    "zh": "最高$500见面礼",
-   "hi": "$500 तक स्वागत उपहार"
+   "hi": "$500 तक स्वागत उपहार",
+   "id": "Hadiah sambutan hingga $500",
+   "vi": "Quà chào mừng tới $500",
+   "tr": "$500'a varan hoş geldin hediyesi",
+   "ja": "最大$500のウェルカムギフト",
+   "ko": "최대 $500 웰컴 선물",
+   "pl": "Prezent powitalny do $500",
+   "th": "ของขวัญต้อนรับสูงสุด $500"
   }
  },
  {
@@ -422,6 +635,41 @@
     "तुरंत निकासी",
     "फॉरेक्स, मेटल्स, CFD",
     "$10 से डिपॉज़िट"
+   ],
+   "id": [
+    "Penarikan instan",
+    "CFD forex, logam, kripto",
+    "Deposit mulai $10"
+   ],
+   "vi": [
+    "Rút tiền tức thì",
+    "CFD forex, kim loại, crypto",
+    "Nạp từ $10"
+   ],
+   "tr": [
+    "Anında para çekme",
+    "Forex, metal, kripto CFD",
+    "$10'dan başlayan yatırım"
+   ],
+   "ja": [
+    "即時出金",
+    "FX・貴金属・暗号資産CFD",
+    "入金は$10から"
+   ],
+   "ko": [
+    "즉시 출금",
+    "외환·금속·코인 CFD",
+    "$10부터 입금"
+   ],
+   "pl": [
+    "Natychmiastowe wypłaty",
+    "CFD forex, metale, krypto",
+    "Wpłata od $10"
+   ],
+   "th": [
+    "ถอนเงินทันที",
+    "CFD ฟอเร็กซ์ โลหะ คริปโต",
+    "ฝากขั้นต่ำ $10"
    ]
   },
   "bonus": {
@@ -434,7 +682,14 @@
    "fr": "Spreads dès 0.0 pip",
    "ar": "فروقات من 0.0 نقطة",
    "zh": "点差低至0.0",
-   "hi": "0.0 पिप्स से स्प्रेड"
+   "hi": "0.0 पिप्स से स्प्रेड",
+   "id": "Spread ketat mulai 0.0 pip",
+   "vi": "Spread thấp từ 0.0 pip",
+   "tr": "0.0 pipten dar spreadler",
+   "ja": "0.0pipsからの狭いスプレッド",
+   "ko": "0.0핍부터 좁은 스프레드",
+   "pl": "Wąskie spready od 0.0 pipsa",
+   "th": "สเปรดแคบเริ่ม 0.0 pip"
   }
  },
  {
@@ -495,6 +750,41 @@
     "1000+ इंस्ट्रूमेंट्स",
     "विनियमित ब्रोकर",
     "मुफ्त शिक्षा"
+   ],
+   "id": [
+    "1000+ instrumen",
+    "Broker teregulasi",
+    "Edukasi gratis"
+   ],
+   "vi": [
+    "1000+ công cụ",
+    "Sàn được cấp phép",
+    "Đào tạo miễn phí"
+   ],
+   "tr": [
+    "1000+ enstrüman",
+    "Lisanslı aracı kurum",
+    "Ücretsiz eğitim"
+   ],
+   "ja": [
+    "1000種類以上の銘柄",
+    "規制対象のブローカー",
+    "無料の学習コンテンツ"
+   ],
+   "ko": [
+    "1000개 이상 상품",
+    "규제 준수 브로커",
+    "무료 교육 제공"
+   ],
+   "pl": [
+    "1000+ instrumentów",
+    "Regulowany broker",
+    "Darmowa edukacja"
+   ],
+   "th": [
+    "ตราสาร 1000+ รายการ",
+    "โบรกเกอร์ที่มีใบอนุญาต",
+    "คอร์สเรียนฟรี"
    ]
   },
   "bonus": {
@@ -507,7 +797,14 @@
    "fr": "Bonus de 30$ sans dépôt",
    "ar": "مكافأة 30$ بدون إيداع",
    "zh": "$30无需入金奖励",
-   "hi": "$30 नो-डिपॉज़िट बोनस"
+   "hi": "$30 नो-डिपॉज़िट बोनस",
+   "id": "Bonus $30 tanpa deposit",
+   "vi": "Thưởng $30 không cần nạp",
+   "tr": "$30 depozitosuz bonus",
+   "ja": "入金不要の$30ボーナス",
+   "ko": "입금 없이 $30 보너스",
+   "pl": "Bonus $30 bez depozytu",
+   "th": "โบนัส $30 ไม่ต้องฝาก"
   }
  },
  {
@@ -517,7 +814,7 @@
   "logo": "C",
   "color": "#0052FF",
   "rating": 4.7,
-  "url": "#REPLACE_WITH_SALESDOUBLER_LINK",
+  "url": "https://rdr.myintsd.com/in/offer/3075?aid=107709",
   "features": {
    "en": [
     "Largest US exchange",
@@ -568,6 +865,41 @@
     "अमेरिका का सबसे बड़ा एक्सचेंज",
     "NASDAQ लिस्टेड कंपनी",
     "शुरुआती के लिए आसान"
+   ],
+   "id": [
+    "Bursa terbesar di AS",
+    "Terdaftar publik (NASDAQ)",
+    "Ramah pemula"
+   ],
+   "vi": [
+    "Sàn lớn nhất tại Mỹ",
+    "Niêm yết công khai (NASDAQ)",
+    "Thân thiện với người mới"
+   ],
+   "tr": [
+    "ABD'nin en büyük borsası",
+    "Halka açık (NASDAQ)",
+    "Yeni başlayanlar için ideal"
+   ],
+   "ja": [
+    "米国最大の取引所",
+    "NASDAQ上場企業",
+    "初心者にやさしい"
+   ],
+   "ko": [
+    "미국 최대 거래소",
+    "나스닥 상장 기업",
+    "초보자 친화적"
+   ],
+   "pl": [
+    "Największa giełda w USA",
+    "Spółka giełdowa (NASDAQ)",
+    "Przyjazny początkującym"
+   ],
+   "th": [
+    "เอ็กซ์เชนจ์ใหญ่ที่สุดในสหรัฐฯ",
+    "จดทะเบียนใน NASDAQ",
+    "เหมาะกับมือใหม่"
    ]
   },
   "bonus": {
@@ -580,8 +912,23 @@
    "fr": "Gagnez des cryptos en apprenant",
    "ar": "اكسب عملات مقابل التعلم",
    "zh": "边学边赚加密货币",
-   "hi": "सीखकर क्रिप्टो कमाएं"
-  }
+   "hi": "सीखकर क्रिप्टो कमाएं",
+   "id": "Dapat hadiah kripto sambil belajar",
+   "vi": "Học nhận thưởng crypto",
+   "tr": "Öğrenirken kripto kazan",
+   "ja": "学んで暗号資産を獲得",
+   "ko": "학습하고 코인 리워드 받기",
+   "pl": "Ucz się i zdobywaj krypto",
+   "th": "เรียนรู้แล้วรับคริปโตฟรี"
+  },
+  "langs": [
+   "en",
+   "de",
+   "fr",
+   "pt",
+   "pl",
+   "ja"
+  ]
  },
  {
   "id": "kraken",
@@ -641,6 +988,41 @@
     "शीर्ष सुरक्षा रिकॉर्ड",
     "200+ कॉइन",
     "प्रो ट्रेडिंग टर्मिनल"
+   ],
+   "id": [
+    "Rekam jejak keamanan terbaik",
+    "200+ koin",
+    "Terminal trading pro"
+   ],
+   "vi": [
+    "Lịch sử bảo mật hàng đầu",
+    "200+ coin",
+    "Terminal giao dịch chuyên nghiệp"
+   ],
+   "tr": [
+    "Üstün güvenlik geçmişi",
+    "200+ coin",
+    "Profesyonel işlem terminali"
+   ],
+   "ja": [
+    "高いセキュリティ実績",
+    "200種類以上の通貨",
+    "プロ向け取引ターミナル"
+   ],
+   "ko": [
+    "최고 수준의 보안 실적",
+    "200개 이상 코인",
+    "프로 트레이딩 터미널"
+   ],
+   "pl": [
+    "Najlepsza historia bezpieczeństwa",
+    "200+ monet",
+    "Profesjonalny terminal"
+   ],
+   "th": [
+    "ประวัติความปลอดภัยดีเยี่ยม",
+    "เหรียญ 200+ สกุล",
+    "เทอร์มินัลเทรดระดับโปร"
    ]
   },
   "bonus": {
@@ -653,7 +1035,14 @@
    "fr": "Frais réduits sur Kraken Pro",
    "ar": "رسوم منخفضة على Kraken Pro",
    "zh": "Kraken Pro低手续费",
-   "hi": "Kraken Pro पर कम फीस"
+   "hi": "Kraken Pro पर कम फीस",
+   "id": "Biaya rendah di Kraken Pro",
+   "vi": "Phí thấp trên Kraken Pro",
+   "tr": "Kraken Pro'da düşük komisyon",
+   "ja": "Kraken Proで低手数料",
+   "ko": "Kraken Pro 저렴한 수수료",
+   "pl": "Niskie opłaty na Kraken Pro",
+   "th": "ค่าธรรมเนียมต่ำบน Kraken Pro"
   }
  },
  {
@@ -714,6 +1103,41 @@
     "1700+ कॉइन — सबसे बड़ा चयन",
     "शुरुआती लिस्टिंग",
     "स्टार्टअप लॉन्चपैड"
+   ],
+   "id": [
+    "1700+ koin — pilihan terbanyak",
+    "Listing gem lebih awal",
+    "Launchpad startup"
+   ],
+   "vi": [
+    "1700+ coin — lựa chọn lớn nhất",
+    "Niêm yết gem sớm",
+    "Launchpad dự án mới"
+   ],
+   "tr": [
+    "1700+ coin — en geniş seçim",
+    "Erken gem listelemeleri",
+    "Startup launchpad"
+   ],
+   "ja": [
+    "1700種類以上 — 最大級の品揃え",
+    "有望銘柄の早期上場",
+    "新規プロジェクトのローンチパッド"
+   ],
+   "ko": [
+    "1700개 이상 코인 — 최대 규모",
+    "유망 코인 조기 상장",
+    "신규 프로젝트 런치패드"
+   ],
+   "pl": [
+    "1700+ monet — największy wybór",
+    "Wczesne listingi gemów",
+    "Launchpad startupów"
+   ],
+   "th": [
+    "เหรียญ 1700+ สกุล — ตัวเลือกมากที่สุด",
+    "ลิสต์เหรียญใหม่ก่อนใคร",
+    "ลอนช์แพดโปรเจกต์ใหม่"
    ]
   },
   "bonus": {
@@ -726,7 +1150,14 @@
    "fr": "Jusqu'à 6 666$ offerts",
    "ar": "حتى 6,666$ للجدد",
    "zh": "新人最高$6,666",
-   "hi": "नए यूज़र्स को $6,666 तक"
+   "hi": "नए यूज़र्स को $6,666 तक",
+   "id": "Hingga $6.666 untuk pengguna baru",
+   "vi": "Tới $6.666 cho người mới",
+   "tr": "Yeni kullanıcılara $6.666'ya kadar",
+   "ja": "新規ユーザーに最大$6,666",
+   "ko": "신규 가입자 최대 $6,666",
+   "pl": "Do $6 666 dla nowych",
+   "th": "สูงสุด $6,666 สำหรับสมาชิกใหม่"
   }
  },
  {
@@ -787,6 +1218,41 @@
     "क्रिप्टो पर 14% तक ब्याज",
     "तुरंत क्रिप्टो लोन",
     "Nexo कार्ड"
+   ],
+   "id": [
+    "Dapatkan hingga 14% dari kripto",
+    "Pinjaman kripto instan",
+    "Kartu Nexo"
+   ],
+   "vi": [
+    "Kiếm tới 14% từ crypto",
+    "Vay crypto tức thì",
+    "Thẻ Nexo"
+   ],
+   "tr": [
+    "Kriptoda %14'e varan getiri",
+    "Anında kripto kredisi",
+    "Nexo kart"
+   ],
+   "ja": [
+    "暗号資産で最大14%の利回り",
+    "即時の暗号資産ローン",
+    "Nexoカード"
+   ],
+   "ko": [
+    "코인으로 연 최대 14% 수익",
+    "즉시 코인 대출",
+    "Nexo 카드"
+   ],
+   "pl": [
+    "Zarabiaj do 14% na krypto",
+    "Natychmiastowe pożyczki krypto",
+    "Karta Nexo"
+   ],
+   "th": [
+    "รับผลตอบแทนคริปโตสูงถึง 14%",
+    "สินเชื่อคริปโตทันที",
+    "บัตร Nexo"
    ]
   },
   "bonus": {
@@ -799,7 +1265,14 @@
    "fr": "Intérêts quotidiens",
    "ar": "فوائد يومية",
    "zh": "每日派息",
-   "hi": "रोज़ाना ब्याज"
+   "hi": "रोज़ाना ब्याज",
+   "id": "Dapat bunga harian",
+   "vi": "Nhận lãi mỗi ngày",
+   "tr": "Her gün faiz kazan",
+   "ja": "毎日利息を獲得",
+   "ko": "매일 이자 지급",
+   "pl": "Odsetki naliczane codziennie",
+   "th": "รับดอกเบี้ยทุกวัน"
   }
  },
  {
@@ -809,7 +1282,7 @@
   "logo": "P",
   "color": "#2E9BF0",
   "rating": 4.4,
-  "url": "#REPLACE_WITH_SALESDOUBLER_LINK",
+  "url": "https://go.salesdoubler.net/in/offer/3024?aid=107709",
   "features": {
    "en": [
     "Buy crypto with card in minutes",
@@ -860,6 +1333,41 @@
     "कार्ड से मिनटों में क्रिप्टो",
     "बिना अकाउंट तेज़ शुरुआत",
     "80+ मुद्राएं"
+   ],
+   "id": [
+    "Beli kripto pakai kartu dalam menit",
+    "Tanpa akun untuk memulai",
+    "80+ mata uang"
+   ],
+   "vi": [
+    "Mua crypto bằng thẻ trong vài phút",
+    "Không cần tài khoản để bắt đầu",
+    "80+ loại tiền tệ"
+   ],
+   "tr": [
+    "Kartla dakikalar içinde kripto al",
+    "Başlamak için hesap gerekmez",
+    "80+ para birimi"
+   ],
+   "ja": [
+    "カードで数分で暗号資産購入",
+    "口座開設なしで開始可能",
+    "80種類以上の通貨"
+   ],
+   "ko": [
+    "카드로 몇 분 만에 코인 구매",
+    "계정 없이 바로 시작",
+    "80개 이상 통화"
+   ],
+   "pl": [
+    "Kup krypto kartą w kilka minut",
+    "Start bez zakładania konta",
+    "80+ walut"
+   ],
+   "th": [
+    "ซื้อคริปโตด้วยบัตรในไม่กี่นาที",
+    "เริ่มได้โดยไม่ต้องสมัคร",
+    "สกุลเงิน 80+ สกุล"
    ]
   },
   "bonus": {
@@ -872,8 +1380,24 @@
    "fr": "Première transaction — 0% de frais",
    "ar": "أول معاملة — 0% رسوم",
    "zh": "首笔交易0%手续费",
-   "hi": "पहला लेनदेन — 0% फीस"
-  }
+   "hi": "पहला लेनदेन — 0% फीस",
+   "id": "Transaksi pertama — biaya Paybis 0%",
+   "vi": "Giao dịch đầu — phí Paybis 0%",
+   "tr": "İlk işlem — %0 Paybis komisyonu",
+   "ja": "初回取引はPaybis手数料0%",
+   "ko": "첫 거래 Paybis 수수료 0%",
+   "pl": "Pierwsza transakcja — 0% prowizji Paybis",
+   "th": "ธุรกรรมแรก ค่าธรรมเนียม Paybis 0%"
+  },
+  "placement": "home",
+  "langs": [
+   "en",
+   "de",
+   "fr",
+   "pt",
+   "pl",
+   "ar"
+  ]
  },
  {
   "id": "changelly",
@@ -882,7 +1406,7 @@
   "logo": "⇄",
   "color": "#10D078",
   "rating": 4.4,
-  "url": "#REPLACE_WITH_SALESDOUBLER_LINK",
+  "url": "https://rdr.myintsd.com/in/offer/3306?aid=107709",
   "features": {
    "en": [
     "Instant crypto swaps",
@@ -933,6 +1457,41 @@
     "तुरंत क्रिप्टो स्वैप",
     "500+ कॉइन",
     "झंझट-मुक्त"
+   ],
+   "id": [
+    "Tukar kripto instan",
+    "500+ koin",
+    "Tanpa ribet registrasi"
+   ],
+   "vi": [
+    "Hoán đổi crypto tức thì",
+    "500+ coin",
+    "Không rườm rà đăng ký"
+   ],
+   "tr": [
+    "Anında kripto takası",
+    "500+ coin",
+    "Kayıt derdi yok"
+   ],
+   "ja": [
+    "即時の暗号資産スワップ",
+    "500種類以上の通貨",
+    "面倒な登録は不要"
+   ],
+   "ko": [
+    "즉시 코인 스왑",
+    "500개 이상 코인",
+    "복잡한 가입 절차 없음"
+   ],
+   "pl": [
+    "Natychmiastowa wymiana krypto",
+    "500+ monet",
+    "Bez zbędnej rejestracji"
+   ],
+   "th": [
+    "สวอปคริปโตทันที",
+    "เหรียญ 500+ สกุล",
+    "ไม่ยุ่งยากเรื่องสมัคร"
    ]
   },
   "bonus": {
@@ -945,8 +1504,31 @@
    "fr": "Agrégateur des meilleurs taux",
    "ar": "مجمّع أفضل الأسعار",
    "zh": "最优汇率聚合器",
-   "hi": "बेस्ट रेट एग्रीगेटर"
-  }
+   "hi": "बेस्ट रेट एग्रीगेटर",
+   "id": "Agregator kurs terbaik",
+   "vi": "Tổng hợp tỷ giá tốt nhất",
+   "tr": "En iyi kur toplayıcı",
+   "ja": "最良レートを比較",
+   "ko": "최적 환율 비교 제공",
+   "pl": "Agregator najlepszych kursów",
+   "th": "รวมเรตดีที่สุดให้เลือก"
+  },
+  "placement": "home",
+  "langs": [
+   "en",
+   "uk",
+   "es",
+   "pt",
+   "de",
+   "fr",
+   "ar",
+   "hi",
+   "id",
+   "vi",
+   "tr",
+   "pl",
+   "th"
+  ]
  },
  {
   "id": "trezor",
@@ -1006,6 +1588,41 @@
     "हार्डवेयर वॉलेट — कीज़ ऑफलाइन",
     "ओपन-सोर्स",
     "9000+ कॉइन"
+   ],
+   "id": [
+    "Dompet hardware — kunci offline",
+    "Keamanan open-source",
+    "9000+ koin didukung"
+   ],
+   "vi": [
+    "Ví cứng — khóa ngoại tuyến",
+    "Bảo mật mã nguồn mở",
+    "Hỗ trợ 9000+ coin"
+   ],
+   "tr": [
+    "Donanım cüzdanı — anahtarlar çevrimdışı",
+    "Açık kaynak güvenlik",
+    "9000+ coin destekleniyor"
+   ],
+   "ja": [
+    "ハードウェアウォレット — 鍵はオフライン",
+    "オープンソースのセキュリティ",
+    "9000種類以上に対応"
+   ],
+   "ko": [
+    "하드웨어 지갑 — 키 오프라인 보관",
+    "오픈소스 보안",
+    "9000개 이상 코인 지원"
+   ],
+   "pl": [
+    "Portfel sprzętowy — klucze offline",
+    "Bezpieczeństwo open-source",
+    "Obsługa 9000+ monet"
+   ],
+   "th": [
+    "ฮาร์ดแวร์วอลเล็ต — เก็บคีย์ออฟไลน์",
+    "ความปลอดภัยแบบโอเพนซอร์ส",
+    "รองรับเหรียญ 9000+ สกุล"
    ]
   },
   "bonus": {
@@ -1018,7 +1635,14 @@
    "fr": "Protégez vos cryptos à vie",
    "ar": "احمِ عملاتك للأبد",
    "zh": "终身守护你的资产",
-   "hi": "अपनी क्रिप्टो हमेशा सुरक्षित रखें"
+   "hi": "अपनी क्रिप्टो हमेशा सुरक्षित रखें",
+   "id": "Lindungi kripto Anda seumur hidup",
+   "vi": "Bảo vệ crypto của bạn trọn đời",
+   "tr": "Kriptonuzu ömür boyu koruyun",
+   "ja": "暗号資産を一生守る",
+   "ko": "평생 안전하게 코인 보관",
+   "pl": "Chroń swoje krypto na zawsze",
+   "th": "ปกป้องคริปโตของคุณตลอดชีพ"
   }
  },
  {
@@ -1079,6 +1703,41 @@
     "क्रिप्टो, शेयर, फॉरेक्स CFD",
     "25+ साल का अनुभव",
     "MetaTrader 4/5"
+   ],
+   "id": [
+    "CFD kripto, saham, forex",
+    "25+ tahun di pasar",
+    "MetaTrader 4/5"
+   ],
+   "vi": [
+    "CFD tiền số, cổ phiếu, forex",
+    "25+ năm trên thị trường",
+    "MetaTrader 4/5"
+   ],
+   "tr": [
+    "Kripto, hisse, forex CFD",
+    "Piyasada 25+ yıl",
+    "MetaTrader 4/5"
+   ],
+   "ja": [
+    "暗号資産・株式・FXのCFD",
+    "市場で25年以上",
+    "MetaTrader 4/5"
+   ],
+   "ko": [
+    "코인·주식·외환 CFD",
+    "시장 경력 25년 이상",
+    "MetaTrader 4/5"
+   ],
+   "pl": [
+    "CFD na krypto, akcje, forex",
+    "25+ lat na rynku",
+    "MetaTrader 4/5"
+   ],
+   "th": [
+    "CFD คริปโต หุ้น ฟอเร็กซ์",
+    "อยู่ในตลาด 25+ ปี",
+    "MetaTrader 4/5"
    ]
   },
   "bonus": {
@@ -1091,8 +1750,18 @@
    "fr": "Comptes à spread zéro",
    "ar": "حسابات بدون فروق أسعار",
    "zh": "零点差账户",
-   "hi": "ज़ीरो स्प्रेड अकाउंट"
-  }
+   "hi": "ज़ीरो स्प्रेड अकाउंट",
+   "id": "Akun spread nol",
+   "vi": "Tài khoản spread bằng 0",
+   "tr": "Sıfır spread hesapları",
+   "ja": "ゼロスプレッド口座",
+   "ko": "제로 스프레드 계좌",
+   "pl": "Konta z zerowym spreadem",
+   "th": "บัญชีสเปรด 0"
+  },
+  "langs": [
+   "uk"
+  ]
  },
  {
   "id": "fxpro",
@@ -1152,6 +1821,41 @@
     "FCA/CySEC विनियमित",
     "2100+ इंस्ट्रूमेंट्स",
     "नो डीलिंग डेस्क"
+   ],
+   "id": [
+    "Diatur FCA/CySEC",
+    "2100+ instrumen",
+    "Tanpa dealing desk"
+   ],
+   "vi": [
+    "Được cấp phép FCA/CySEC",
+    "2100+ công cụ",
+    "Không dealing desk"
+   ],
+   "tr": [
+    "FCA/CySEC lisanslı",
+    "2100+ enstrüman",
+    "Dealing desk yok"
+   ],
+   "ja": [
+    "FCA/CySEC規制下",
+    "2100種類以上の銘柄",
+    "ディーリングデスクなし"
+   ],
+   "ko": [
+    "FCA/CySEC 규제",
+    "2100개 이상 상품",
+    "딜링 데스크 없음"
+   ],
+   "pl": [
+    "Regulacja FCA/CySEC",
+    "2100+ instrumentów",
+    "Bez dealing desk"
+   ],
+   "th": [
+    "กำกับดูแลโดย FCA/CySEC",
+    "ตราสาร 2100+ รายการ",
+    "ไม่มี dealing desk"
    ]
   },
   "bonus": {
@@ -1164,8 +1868,18 @@
    "fr": "Broker primé",
    "ar": "وسيط حائز على جوائز",
    "zh": "屡获殊荣的经纪商",
-   "hi": "पुरस्कृत ब्रोकर"
-  }
+   "hi": "पुरस्कृत ब्रोकर",
+   "id": "Broker peraih penghargaan",
+   "vi": "Sàn đoạt nhiều giải thưởng",
+   "tr": "Ödüllü aracı kurum",
+   "ja": "受賞歴のあるブローカー",
+   "ko": "수상 경력의 브로커",
+   "pl": "Nagradzany broker",
+   "th": "โบรกเกอร์รางวัลการันตี"
+  },
+  "langs": [
+   "uk"
+  ]
  },
  {
   "id": "puprime",
@@ -1225,6 +1939,41 @@
     "फॉरेक्स, मेटल्स, इंडेक्स, क्रिप्टो",
     "$20 से डिपॉज़िट",
     "कॉपी ट्रेडिंग ऐप"
+   ],
+   "id": [
+    "Forex, logam, indeks, kripto",
+    "Deposit mulai $20",
+    "Aplikasi copy trading"
+   ],
+   "vi": [
+    "Forex, kim loại, chỉ số, crypto",
+    "Nạp từ $20",
+    "Ứng dụng copy trading"
+   ],
+   "tr": [
+    "Forex, metal, endeks, kripto",
+    "$20'dan başlayan yatırım",
+    "Copy trading uygulaması"
+   ],
+   "ja": [
+    "FX・貴金属・指数・暗号資産",
+    "入金は$20から",
+    "コピートレードアプリ"
+   ],
+   "ko": [
+    "외환·금속·지수·코인",
+    "$20부터 입금",
+    "카피 트레이딩 앱"
+   ],
+   "pl": [
+    "Forex, metale, indeksy, krypto",
+    "Wpłata od $20",
+    "Aplikacja copy trading"
+   ],
+   "th": [
+    "ฟอเร็กซ์ โลหะ ดัชนี คริปโต",
+    "ฝากขั้นต่ำ $20",
+    "แอปคอปปี้เทรด"
    ]
   },
   "bonus": {
@@ -1237,7 +1986,14 @@
    "fr": "Bonus de dépôt jusqu'à 50%",
    "ar": "مكافآت إيداع حتى 50%",
    "zh": "入金奖励最高50%",
-   "hi": "50% तक डिपॉज़िट बोनस"
+   "hi": "50% तक डिपॉज़िट बोनस",
+   "id": "Bonus deposit hingga 50%",
+   "vi": "Thưởng nạp tới 50%",
+   "tr": "%50'ye varan yatırım bonusu",
+   "ja": "最大50%の入金ボーナス",
+   "ko": "최대 50% 입금 보너스",
+   "pl": "Bonusy do 50% od wpłaty",
+   "th": "โบนัสฝากสูงสุด 50%"
   }
  },
  {
@@ -1298,6 +2054,41 @@
     "$1 से ट्रेडिंग",
     "100+ एसेट्स",
     "मुफ्त डेमो अकाउंट"
+   ],
+   "id": [
+    "Trading mulai $1",
+    "100+ aset",
+    "Akun demo gratis"
+   ],
+   "vi": [
+    "Giao dịch từ $1",
+    "100+ tài sản",
+    "Tài khoản demo miễn phí"
+   ],
+   "tr": [
+    "$1'dan işlem",
+    "100+ varlık",
+    "Ücretsiz demo hesap"
+   ],
+   "ja": [
+    "$1から取引可能",
+    "100種類以上の資産",
+    "無料デモ口座"
+   ],
+   "ko": [
+    "$1부터 거래",
+    "100개 이상 자산",
+    "무료 데모 계좌"
+   ],
+   "pl": [
+    "Handel od $1",
+    "100+ aktywów",
+    "Darmowe konto demo"
+   ],
+   "th": [
+    "เทรดเริ่มต้น $1",
+    "สินทรัพย์ 100+ รายการ",
+    "บัญชีทดลองฟรี"
    ]
   },
   "bonus": {
@@ -1310,8 +2101,26 @@
    "fr": "+50% sur le premier dépôt",
    "ar": "+50% على أول إيداع",
    "zh": "首充+50%",
-   "hi": "पहले डिपॉज़िट पर +50%"
-  }
+   "hi": "पहले डिपॉज़िट पर +50%",
+   "id": "+50% di deposit pertama",
+   "vi": "+50% cho lần nạp đầu",
+   "tr": "İlk yatırımda +%50",
+   "ja": "初回入金で+50%",
+   "ko": "첫 입금 시 +50%",
+   "pl": "+50% od pierwszej wpłaty",
+   "th": "+50% เมื่อฝากครั้งแรก"
+  },
+  "langs": [
+   "es",
+   "pt",
+   "tr",
+   "ar",
+   "uk",
+   "ru",
+   "hi",
+   "id",
+   "th"
+  ]
  },
  {
   "id": "in1",
@@ -1371,6 +2180,41 @@
     "यूरोप के लिए क्रिप्टो कार्ड",
     "कहीं भी क्रिप्टो खर्च करें",
     "तुरंत टॉप-अप"
+   ],
+   "id": [
+    "Kartu kripto untuk Eropa",
+    "Belanja kripto di mana saja",
+    "Isi saldo instan"
+   ],
+   "vi": [
+    "Thẻ crypto cho châu Âu",
+    "Chi tiêu crypto mọi nơi",
+    "Nạp tiền tức thì"
+   ],
+   "tr": [
+    "Avrupa için kripto kart",
+    "Kriptoyu her yerde harca",
+    "Anında bakiye yükleme"
+   ],
+   "ja": [
+    "欧州向け暗号資産カード",
+    "暗号資産をどこでも使える",
+    "即時チャージ"
+   ],
+   "ko": [
+    "유럽용 크립토 카드",
+    "어디서나 코인 결제",
+    "즉시 충전"
+   ],
+   "pl": [
+    "Karta krypto dla Europy",
+    "Płać krypto wszędzie",
+    "Natychmiastowe doładowania"
+   ],
+   "th": [
+    "บัตรคริปโตสำหรับยุโรป",
+    "ใช้จ่ายคริปโตได้ทุกที่",
+    "เติมเงินทันที"
    ]
   },
   "bonus": {
@@ -1383,8 +2227,22 @@
    "fr": "Émission de carte gratuite",
    "ar": "إصدار مجاني للبطاقة",
    "zh": "免费发卡",
-   "hi": "मुफ्त कार्ड जारी"
-  }
+   "hi": "मुफ्त कार्ड जारी",
+   "id": "Penerbitan kartu gratis",
+   "vi": "Miễn phí phát hành thẻ",
+   "tr": "Ücretsiz kart çıkarma",
+   "ja": "カード発行無料",
+   "ko": "카드 발급 무료",
+   "pl": "Darmowe wydanie karty",
+   "th": "ออกบัตรฟรี"
+  },
+  "langs": [
+   "de",
+   "fr",
+   "es",
+   "pt",
+   "pl"
+  ]
  },
  {
   "id": "rockwallet",
@@ -1393,7 +2251,7 @@
   "logo": "R",
   "color": "#FF7847",
   "rating": 4.0,
-  "url": "#REPLACE_WITH_SALESDOUBLER_LINK",
+  "url": "https://rdr.myintsd.com/in/offer/8934?aid=107709",
   "features": {
    "en": [
     "Self-custody wallet + exchange",
@@ -1444,6 +2302,41 @@
     "सेल्फ-कस्टडी वॉलेट + एक्सचेंज",
     "ऐप में खरीदें/स्वैप करें",
     "US-केंद्रित"
+   ],
+   "id": [
+    "Dompet self-custody + bursa",
+    "Beli/tukar di aplikasi",
+    "Fokus pasar AS"
+   ],
+   "vi": [
+    "Ví tự quản + sàn giao dịch",
+    "Mua/hoán đổi trong ứng dụng",
+    "Tập trung thị trường Mỹ"
+   ],
+   "tr": [
+    "Kendi saklamalı cüzdan + borsa",
+    "Uygulamada al/takas et",
+    "ABD odaklı"
+   ],
+   "ja": [
+    "セルフカストディ財布＋取引所",
+    "アプリで購入・交換",
+    "米国市場に特化"
+   ],
+   "ko": [
+    "셀프 커스터디 지갑 + 거래소",
+    "앱에서 구매·스왑",
+    "미국 시장 중심"
+   ],
+   "pl": [
+    "Portfel self-custody + giełda",
+    "Kupuj/wymieniaj w aplikacji",
+    "Nastawiony na USA"
+   ],
+   "th": [
+    "วอลเล็ตถือคีย์เอง + เอ็กซ์เชนจ์",
+    "ซื้อ/สวอปในแอป",
+    "เน้นตลาดสหรัฐฯ"
    ]
   },
   "bonus": {
@@ -1456,7 +2349,17 @@
    "fr": "Départ simple et sûr",
    "ar": "بداية بسيطة وآمنة",
    "zh": "简单安全上手",
-   "hi": "सरल और सुरक्षित शुरुआत"
-  }
+   "hi": "सरल और सुरक्षित शुरुआत",
+   "id": "Mulai mudah dan aman",
+   "vi": "Khởi đầu đơn giản và an toàn",
+   "tr": "Basit ve güvenli başlangıç",
+   "ja": "シンプルで安全なスタート",
+   "ko": "간편하고 안전한 시작",
+   "pl": "Prosty i bezpieczny start",
+   "th": "เริ่มต้นง่ายและปลอดภัย"
+  },
+  "langs": [
+   "en"
+  ]
  }
 ]
