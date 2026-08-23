@@ -1,0 +1,77 @@
+name: Deploy files (bundle)
+
+# Зачем: push из сессии Claude заблокирован git-прокси (открытый баг),
+# поэтому каждая выкладка делалась вручную через форму загрузки GitHub —
+# по коммиту на папку, с риском оставить прод в промежуточном состоянии.
+# Этот workflow принимает один base64-архив со всеми файлами сразу
+# и коммитит их одной транзакцией.
+#
+# Как пользоваться:
+#   tar czf - build.js scripts/x.js | base64 -w0     — получить bundle
+#   Actions -> Deploy files (bundle) -> Run workflow -> вставить в поле bundle
+#
+# ОГРАНИЧЕНИЕ: файлы в .github/workflows/ этим способом залить НЕЛЬЗЯ —
+# у GITHUB_TOKEN нет права workflows, push будет отклонён. Такие файлы
+# по-прежнему через веб-форму загрузки. Workflow это проверяет и падает заранее
+# с понятным сообщением, а не молчаливым отказом push в конце.
+
+on:
+  workflow_dispatch:
+    inputs:
+      bundle:
+        description: 'base64 от tar.gz с файлами (пути относительно корня репозитория)'
+        required: true
+      message:
+        description: 'Сообщение коммита'
+        required: true
+        default: 'deploy: files via bundle'
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Unpack and validate
+        env:
+          BUNDLE: ${{ inputs.bundle }}
+        run: |
+          set -euo pipefail
+          printf '%s' "$BUNDLE" | base64 -d > /tmp/bundle.tgz
+          echo "Файлы в архиве:"
+          tar tzf /tmp/bundle.tgz | tee /tmp/list.txt
+
+          # Никаких путей наружу репозитория и никакой подмены истории git.
+          if grep -qE '(^/|(^|/)\.\./|^\.git/)' /tmp/list.txt; then
+            echo "::error::Архив содержит абсолютный путь, .. или .git/ — отказ"; exit 1
+          fi
+          # GITHUB_TOKEN не имеет права workflows: push будет отклонён в самом конце.
+          # Лучше сказать это сразу.
+          if grep -qE '^\.github/workflows/' /tmp/list.txt; then
+            echo "::error::Файлы .github/workflows/ этим способом не заливаются (у GITHUB_TOKEN нет права workflows). Используйте веб-форму загрузки GitHub."; exit 1
+          fi
+          tar xzf /tmp/bundle.tgz
+
+      - name: Sanity check (сборка обязана пройти)
+        env:
+          SITE_URL: ${{ vars.SITE_URL || 'https://finpulse24.com' }}
+        run: |
+          node build.js
+          node build.test.js
+          node scripts/dedup.test.js
+          node scripts/telegram.test.js
+
+      - name: Commit
+        run: |
+          git config user.name "finpulse-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add -A ':!dist'
+          if git diff --cached --quiet; then
+            echo "Нечего коммитить — файлы совпадают с тем, что уже в репозитории"
+            exit 0
+          fi
+          git commit -m "${{ inputs.message }}"
+          git push
