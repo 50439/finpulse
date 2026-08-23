@@ -63,6 +63,8 @@ function buildPrompt(t) {
 'TRANSLATION: produce the guide in ALL of these languages: ' + langs + '. ' +
 'These are native-quality translations, not literal ones: adapt examples, currency and payment methods ' +
 'to what a reader in that language actually uses. A native reader must not be able to tell it was translated.\n\n' +
+'JSON RULES: escape every double quote inside text as \\", never put a raw newline inside a string, ' +
+'do not use smart quotes \u201c \u201d as string delimiters. The response must parse with JSON.parse as-is.\n\n' +
 'Respond with ONLY valid JSON (no markdown fences), one object:\n' +
 '{"i18n":{"en":{"title":"...","excerpt":"1-2 sentences","sections":[{"h":"Section heading","p":["paragraph","paragraph"]}]}, ...one entry per requested language}}\n';
 }
@@ -77,12 +79,38 @@ function buildTranslatePrompt(t, en, langs) {
 'and regulators to what a reader in that language actually uses. A native reader must not be able to ' +
 'tell it was translated. Keep the same section structure and the same number of paragraphs.\n\n' +
 'SOURCE (English):\n' + JSON.stringify({ title: en.title, excerpt: en.excerpt, sections: en.sections }) + '\n\n' +
+'JSON RULES: escape every double quote inside text as \\", never put a raw newline inside a string. ' +
+'The response must parse with JSON.parse as-is.\n\n' +
 'Respond with ONLY valid JSON (no markdown fences):\n' +
 '{"i18n":{"<lang>":{"title":"...","excerpt":"...","sections":[{"h":"...","p":["...","..."]}]}, ...one entry per requested language}}\n';
 }
 
+// Генерация через LLM время от времени возвращает невалидный JSON (сорванное
+// экранирование, обрыв по лимиту). Один повтор дешевле, чем потерянный гайд.
+async function callClaudeRetry(prompt, tries) {
+  const n = tries || 3;
+  let last;
+  for (let i = 1; i <= n; i++) {
+    try { return await callClaude(prompt); }
+    catch (e) {
+      last = e;
+      const msg = e && e.message ? e.message : String(e);
+      if (i < n) console.warn('  попытка ' + i + ' не разобралась (' + msg.slice(0, 90) + '), повторяю');
+    }
+  }
+  throw last;
+}
+
+// Таймаут на запрос: без него один подвисший стрим держит прогон часами
+// (реальный случай 23.08 — crypto-glossary висел 45 минут и ничего не отдал).
+const REQ_TIMEOUT_MS = Number(process.env.GUIDE_TIMEOUT_MS || 8 * 60 * 1000);
+
 async function callClaude(prompt) {
+  const ac = new AbortController();
+  const timer = setTimeout(() => ac.abort(), REQ_TIMEOUT_MS);
+  try {
   const r = await fetch('https://api.anthropic.com/v1/messages', {
+    signal: ac.signal,
     method: 'POST',
     headers: { 'x-api-key': API_KEY, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' },
     body: JSON.stringify({
@@ -113,6 +141,14 @@ async function callClaude(prompt) {
   }
   console.log('Получено ' + text.length + ' символов');
   return JSON.parse(text.replace(/^```json?\s*/i, '').replace(/```\s*$/, '').trim());
+  } catch (e) {
+    if (e && e.name === 'AbortError') {
+      throw new Error('таймаут ' + Math.round(REQ_TIMEOUT_MS / 1000) + ' с — ответ не пришёл');
+    }
+    throw e;
+  } finally {
+    clearTimeout(timer);
+  }
 }
 
 // Сколько языков просить за один запрос. Больше — и ответ не влезает в лимит модели.
@@ -124,7 +160,7 @@ async function writeOne(topic, out, topics) {
   // Первый запрос: пишем сам гайд сразу на английском и первых нескольких языках.
   const head = topic.langs.slice(0, LANG_BATCH);
   if (!head.includes('en')) head.unshift('en');
-  const first = await callClaude(buildPrompt({ ...topic, langs: head }));
+  const first = await callClaudeRetry(buildPrompt({ ...topic, langs: head }));
   const i18n = first.i18n || first;
   if (!i18n.en || !i18n.en.sections || !i18n.en.sections.length) {
     throw new Error('Модель не вернула английскую версию — переводить нечего');
@@ -135,7 +171,7 @@ async function writeOne(topic, out, topics) {
   for (let i = 0; i < rest.length; i += LANG_BATCH) {
     const batch = rest.slice(i, i + LANG_BATCH);
     console.log('  перевод: ' + batch.join(', '));
-    const part = await callClaude(buildTranslatePrompt(topic, i18n.en, batch));
+    const part = await callClaudeRetry(buildTranslatePrompt(topic, i18n.en, batch));
     Object.assign(i18n, part.i18n || part);
   }
 
