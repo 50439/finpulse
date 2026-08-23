@@ -1,0 +1,138 @@
+[
+ {
+  "slug": "how-to-buy-crypto-poland",
+  "category": "guide",
+  "emoji": "🇵🇱",
+  "langs": [
+   "pl",
+   "en"
+  ],
+  "updated": "2026-08-23T13:42:14.170Z",
+  "i18n": {
+   "pl": {
+    "title": "Jak kupić kryptowaluty w Polsce: giełdy, metody płatności i wymogi podatkowe",
+    "excerpt": "Kompletny przewodnik po zakupie kryptowalut w Polsce, obejmujący giełdy akceptujące PLN, opcje płatności w tym BLIK i przelewy bankowe, weryfikację KYC, opłaty oraz 19% podatek od zysków kapitałowych.",
+    "sections": [
+     {
+      "h": "Ramy regulacyjne i zgodność z MiCA",
+      "p": [
+       "Polska działa w ramach unijnego rozporządzenia MiCA (Markets in Crypto-Assets), które ustanawia jednolite zasady dla dostawców usług kryptowalutowych w państwach członkowskich. Giełdy obsługujące polskich klientów muszą zarejestrować się w Generalnym Inspektorze Informacji Finansowej (GIIF) i przestrzegać dyrektyw dotyczących przeciwdziałania praniu pieniędzy. Te ramy prawne oznaczają, że renomowane platformy działające w Polsce stosują ujednolicone wymogi dotyczące ochrony konsumentów i przejrzystości.",
+       "Komisja Nadzoru Finansowego (KNF) monitoruje działalność związaną z kryptowalutami, choć same kryptowaluty nie są klasyfikowane jako prawny środek płatniczy ani instrumenty finansowe według polskiego prawa. Zamiast tego są traktowane jako prawa majątkowe dla celów podatkowych. Takie otoczenie regulacyjne zapewnia pewien stopień ochrony konsumentów, jednocześnie umożliwiając polskim rezydentom dostęp do głównych międzynarodowych i krajowych platform kryptowalutowych."
+      ]
+     },
+     {
+      "h": "Giełdy akceptujące PLN i polskie metody płatności",
+      "p": [
+       "Kilka głównych giełd obsługuje bezpośrednie wpłaty i wypłaty w PLN. Binance, Bitbay (platforma z siedzibą w Warszawie) oraz Coinbase akceptują polskie złote poprzez przelewy SEPA. Bitbay oferuje szczególnie mocną integrację z polską infrastrukturą bankową, natomiast międzynarodowe platformy jak Kraken i Bitstamp również udostępniają pary handlowe z PLN. Wybierając giełdę, upewnij się, że wyświetla salda w PLN i pozwala na bezpośrednie wpłaty w walucie fiducjarnej, zamiast wymagać konwersji przez EUR lub inne waluty pośrednie.",
+       "Jeśli chodzi o metody płatności, polscy użytkownicy mają zazwyczaj dostęp do standardowych przelewów SEPA, które trwają od jednego do trzech dni roboczych i często nie wiążą się z opłatą ze strony giełdy, choć Twój bank może pobierać opłatę za przelewy wychodzące. Zakupy kartą debetową i kredytową są dostępne na większości platform, ale zazwyczaj wiążą się z opłatami w wysokości 1,8-3,9%. BLIK, popularny w Polsce system płatności mobilnych, jest obsługiwany przez Bitbay i wybrane inne platformy dla natychmiastowych zakupów, zazwyczaj z opłatami podobnymi do płatności kartą. Błyskawiczne przelewy PLN za pośrednictwem usług takich jak Przelewy24 czy PayU są dostępne na niektórych giełdach i łączą szybkość płatności kartą z niższymi opłatami, zwykle 1-2%."
+      ]
+     },
+     {
+      "h": "Wymogi weryfikacji KYC",
+      "p": [
+       "Wszystkie regulowane giełdy działające w Polsce wymagają weryfikacji KYC (Know Your Customer) zanim będziesz mógł wpłacić walutę fiducjarną lub wypłacić znaczące kwoty. Standardowy proces weryfikacji wymaga dowodu tożsamości ze zdjęciem wydanego przez rząd—może to być polski dowód osobisty, paszport lub prawo jazdy UE. Musisz przesłać wyraźne zdjęcia lub skany obu stron dokumentu.",
+       "Większość platform wymaga również potwierdzenia adresu z datą nie starszą niż trzy miesiące. Akceptowane dokumenty to zazwyczaj rachunki za media (prąd, gaz, woda), wyciągi bankowe lub oficjalna korespondencja rządowa zawierająca Twoje imię i nazwisko oraz adres zamieszkania. Niektóre giełdy dodatkowo wymagają selfie z dowodem osobistym lub weryfikacji wideo na żywo. Czas przetwarzania waha się od kilku minut do kilku dni roboczych w zależności od platformy i kolejki weryfikacyjnej. Wyższe limity wypłat lub dostęp do zaawansowanych funkcji handlowych mogą wymagać ulepszonej weryfikacji, w tym dokumentacji źródła środków."
+      ]
+     },
+     {
+      "h": "Struktura opłat i koszty",
+      "p": [
+       "Giełdy kryptowalut pobierają opłaty przez kilka mechanizmów. Opłaty transakcyjne stosuje się przy kupnie lub sprzedaży kryptowalut i zazwyczaj wynoszą od 0,1% do 0,5% za transakcję, często w modelu maker-taker, gdzie zlecenia z limitem wiążą się z niższymi opłatami niż zlecenia rynkowe. Wiele platform oferuje obniżone opłaty transakcyjne, jeśli posiadasz ich natywny token lub osiągniesz wyższe miesięczne wolumeny handlowe.",
+       "Opłaty za wpłaty w PLN różnią się w zależności od metody: przelewy SEPA są zazwyczaj bezpłatne po stronie giełdy, podczas gdy płatności kartą kosztują 1,8-3,9%, a usługi błyskawicznych przelewów pobierają 1-2%. Opłaty za wypłaty zależą od tego, czy wypłacasz PLN czy kryptowalutę. Wypłaty PLN na polskie konta bankowe zazwyczaj kosztują 2-10 PLN lub niewielki procent, podczas gdy opłaty za wypłaty kryptowalut różnią się w zależności od sieci—wypłaty Bitcoina mogą kosztować 0,0005 BTC lub więcej w zależności od przeciążenia sieci, natomiast sieci o niższych opłatach jak Polygon czy Stellar pobierają równowartość ułamków złotego. Zawsze sprawdzaj harmonogram opłat przed inicjowaniem transakcji, ponieważ mogą one znacząco wpłynąć na małe zakupy."
+      ]
+     },
+     {
+      "h": "Dokonywanie pierwszego zakupu",
+      "p": [
+       "Po ukończeniu weryfikacji KYC wpłać PLN wybraną metodą. W przypadku przelewów bankowych przejdź do sekcji wpłat, wybierz PLN i użyj podanych danych konta bankowego oraz kodu referencyjnego—zawsze uwzględniaj unikalny kod referencyjny, aby zapewnić prawidłowe zaksięgowanie wpłaty. Środki zazwyczaj pojawiają się na koncie giełdowym w ciągu jednego dnia roboczego dla przelewów SEPA, natychmiast dla BLIK lub Przelewy24.",
+       "Gdy saldo w PLN będzie dostępne, przejdź do sekcji handlowej i wybierz żądaną parę kryptowalutową, taką jak BTC/PLN lub ETH/PLN. Możesz złożyć zlecenie rynkowe, aby kupić natychmiast po aktualnej cenie, lub zlecenie z limitem, aby kupić tylko wtedy, gdy cena osiągnie określony przez Ciebie poziom. Wprowadź kwotę w PLN lub ilość kryptowaluty, sprawdź sumę włącznie z opłatami i potwierdź transakcję. Zakupiona kryptowaluta pojawi się w Twoim portfelu na giełdzie, skąd możesz ją pozostawić na platformie lub wypłacić do prywatnego portfela, który kontrolujesz dla zwiększonego bezpieczeństwa."
+      ]
+     },
+     {
+      "h": "Opodatkowanie kryptowalut w Polsce",
+      "p": [
+       "Polska stosuje 19% stawkę podatku liniowego od zysków kapitałowych z transakcji kryptowalutowych. Podatek ten dotyczy różnicy między ceną zakupu a ceną sprzedaży, gdy sprzedajesz krypto za PLN, wymieniasz jedną kryptowalutę na inną lub używasz krypto do zakupu towarów i usług. Zdarzenie podatkowe następuje w momencie zbycia, a nie w momencie wypłaty środków na konto bankowe.",
+       "Musisz zgłosić dochód z kryptowalut za pomocą formularza PIT-38, który jest przeznaczony do zysków kapitałowych z praw majątkowych. Termin składania zeznań to 30 kwietnia roku następującego po roku podatkowym, w którym zrealizowałeś zyski. Jesteś odpowiedzialny za samodzielne obliczenie swoich zysków i strat, co wymaga prowadzenia szczegółowej dokumentacji wszystkich transakcji, w tym dat, kwot, kursów wymiany i opłat. Straty mogą kompensować zyski w tym samym roku podatkowym. Przepisy podatkowe się zmieniają, a interpretacje różnią się, więc nie jest to porada podatkowa—skonsultuj się z polskim doradcą podatkowym znającym opodatkowanie kryptowalut w celu uzyskania wskazówek specyficznych dla Twojej sytuacji, szczególnie jeśli handlujesz często lub posiadasz krypto nabyte poprzez kopanie, staking lub airdrops."
+      ]
+     },
+     {
+      "h": "Bezpieczeństwo i przechowywanie",
+      "p": [
+       "Przechowywanie kryptowalut na giełdzie jest wygodne dla aktywnego handlu, ale koncentruje ryzyko. Giełdy mogą zostać zhakowane, doświadczyć awarii technicznych lub napotkać działania regulacyjne ograniczające dostęp do Twoich środków. W przypadku kwot, którymi nie planujesz często handlować, rozważ wypłatę do prywatnego portfela, w którym kontrolujesz klucze.",
+       "Portfele sprzętowe jak Ledger czy Trezor zapewniają najwyższe bezpieczeństwo dla długoterminowego przechowywania, natomiast portfele programowe oferują równowagę między bezpieczeństwem a wygodą. Jeśli zdecydujesz się przechowywać środki na giełdzie, włącz wszystkie dostępne funkcje bezpieczeństwa, w tym uwierzytelnianie dwuskładnikowe (najlepiej przy użyciu aplikacji uwierzytelniającej zamiast SMS), białą listę wypłat i kody anty-phishingowe. Nigdy nie udostępniaj swoich danych logowania ani kodów uwierzytelniania dwuskładnikowego nikomu i pamiętaj, że obsługa klienta nigdy nie poprosi o te informacje."
+      ]
+     },
+     {
+      "h": "Typowe problemy i rozwiązania",
+      "p": [
+       "Opóźnienia wpłat to najczęstszy problem. Jeśli Twój przelew w PLN nie dotarł po oczekiwanym czasie, sprawdź, czy dołączyłeś prawidłowy kod referencyjny i czy nazwa nadawcy odpowiada nazwie na Twoim zweryfikowanym koncie. Skontaktuj się z obsługą giełdy, podając szczegóły transakcji, jeśli opóźnienie przekracza normalny czas przetwarzania. Niektóre banki oznaczają przelewy związane z kryptowalutami do dodatkowych kontroli bezpieczeństwa, co może powodować opóźnienia—poinformowanie banku z wyprzedzeniem może temu zapobiec.",
+       "Odrzucenia weryfikacji zazwyczaj wynikają ze słabej jakości zdjęć, wygasłych dokumentów lub niezgodności między przesłanymi dokumentami a zarejestrowaną nazwą. Upewnij się, że zdjęcia są wyraźne, dobrze oświetlone i pokazują wszystkie krawędzie i szczegóły dokumentu. Jeśli Twoje potwierdzenie adresu zostało odrzucone, sprawdź, czy jest wystarczająco świeże i czy Twoje imię i nazwisko oraz adres są wyraźnie widoczne. W przypadku uporczywych problemów skontaktuj się z obsługą przed wielokrotnymi próbami przesyłania, ponieważ powtarzające się niepowodzenia mogą oznakować Twoje konto do ręcznej weryfikacji i przedłużyć proces."
+      ]
+     }
+    ]
+   },
+   "en": {
+    "title": "How to Buy Cryptocurrency in Poland: Exchanges, Payment Methods, and Tax Requirements",
+    "excerpt": "A complete guide to purchasing cryptocurrency in Poland, covering PLN-compatible exchanges, payment options including BLIK and bank transfers, KYC verification, fees, and the 19% capital gains tax obligation.",
+    "sections": [
+     {
+      "h": "Regulatory Framework and MiCA Compliance",
+      "p": [
+       "Poland operates under the European Union's Markets in Crypto-Assets (MiCA) regulation, which establishes uniform rules for cryptocurrency service providers across member states. Exchanges serving Polish customers must register with the General Inspector of Financial Information (GIIF) and comply with anti-money laundering directives. This framework means that reputable platforms operating in Poland follow standardized consumer protection and transparency requirements.",
+       "The Polish Financial Supervision Authority (KNF) monitors crypto-related activities, though cryptocurrencies themselves are not classified as legal tender or financial instruments under Polish law. Instead, they are treated as property rights for tax purposes. This regulatory environment provides a degree of consumer protection while allowing Polish residents access to major international and domestic cryptocurrency platforms."
+      ]
+     },
+     {
+      "h": "Exchanges Accepting PLN and Polish Payment Methods",
+      "p": [
+       "Several major exchanges support direct PLN deposits and withdrawals. Binance, Bitbay (a Warsaw-based platform), and Coinbase all accept Polish złoty through SEPA bank transfers. Bitbay offers particularly strong integration with Polish banking infrastructure, while international platforms like Kraken and Bitstamp also provide PLN trading pairs. When selecting an exchange, verify that it displays PLN balances and allows direct fiat deposits rather than requiring conversion through EUR or other intermediary currencies.",
+       "For payment methods, Polish users typically have access to standard SEPA transfers, which take one to three business days and often carry no fee from the exchange side, though your bank may charge for outgoing transfers. Debit and credit card purchases are available on most platforms but generally incur fees between 1.8% and 3.9%. BLIK, Poland's popular mobile payment system, is supported by Bitbay and select other platforms for instant purchases, usually with fees similar to card payments. Instant PLN transfers via services like Przelewy24 or PayU are available on some exchanges and combine the speed of card payments with lower fees, typically 1-2%."
+      ]
+     },
+     {
+      "h": "KYC Verification Requirements",
+      "p": [
+       "All regulated exchanges operating in Poland require Know Your Customer (KYC) verification before you can deposit fiat currency or withdraw significant amounts. The standard verification process requires a government-issued photo ID—either a Polish dowód osobisty (identity card), passport, or EU driver's license. You will need to upload clear photos or scans of both sides of the document.",
+       "Most platforms also require proof of address dated within the past three months. Accepted documents typically include utility bills (electricity, gas, water), bank statements, or official government correspondence showing your name and residential address. Some exchanges additionally require a selfie holding your ID or a live video verification. Processing times range from a few minutes to several business days depending on the platform and verification queue. Higher withdrawal limits or access to advanced trading features may require enhanced verification, including source of funds documentation."
+      ]
+     },
+     {
+      "h": "Fee Structures and Costs",
+      "p": [
+       "Cryptocurrency exchanges charge fees through several mechanisms. Trading fees apply when you buy or sell crypto and typically range from 0.1% to 0.5% per transaction, often structured as maker-taker models where limit orders incur lower fees than market orders. Many platforms offer reduced trading fees if you hold their native token or reach higher monthly trading volumes.",
+       "Deposit fees for PLN vary by method: SEPA bank transfers are usually free on the exchange side, while card payments cost 1.8-3.9% and instant transfer services charge 1-2%. Withdrawal fees depend on whether you are withdrawing PLN or cryptocurrency. PLN withdrawals to Polish bank accounts typically cost 2-10 PLN or a small percentage, while cryptocurrency withdrawal fees vary by network—Bitcoin withdrawals might cost 0.0005 BTC or more depending on network congestion, while lower-fee networks like Polygon or Stellar charge fractions of a złoty equivalent. Always check the fee schedule before initiating transactions, as these can significantly affect small purchases."
+      ]
+     },
+     {
+      "h": "Making Your First Purchase",
+      "p": [
+       "After completing KYC verification, deposit PLN using your preferred method. For bank transfers, navigate to the deposit section, select PLN, and use the provided bank account details and reference code—always include the unique reference code to ensure your deposit is credited correctly. The funds typically appear in your exchange account within one business day for SEPA transfers, instantly for BLIK or Przelewy24.",
+       "Once your PLN balance is available, navigate to the trading section and select your desired cryptocurrency pair, such as BTC/PLN or ETH/PLN. You can place a market order to buy immediately at the current price or a limit order to buy only when the price reaches your specified level. Enter the amount in either PLN or the quantity of cryptocurrency, review the total including fees, and confirm the transaction. The purchased cryptocurrency will appear in your exchange wallet, from where you can either leave it on the platform or withdraw it to a private wallet you control for enhanced security."
+      ]
+     },
+     {
+      "h": "Cryptocurrency Taxation in Poland",
+      "p": [
+       "Poland applies a 19% flat tax rate on capital gains from cryptocurrency transactions. This tax applies to the difference between your purchase price and selling price when you sell crypto for PLN, exchange one cryptocurrency for another, or use crypto to purchase goods and services. The taxable event occurs at the moment of disposal, not when you withdraw funds to your bank account.",
+       "You must report cryptocurrency income using form PIT-38, which is dedicated to capital gains from property rights. The filing deadline is April 30 of the year following the tax year in which you realized gains. You are responsible for calculating your own gains and losses, which requires keeping detailed records of all transactions, including dates, amounts, exchange rates, and fees. Losses can offset gains within the same tax year. Tax rules change and interpretations vary, so this is not tax advice—consult a Polish tax advisor familiar with cryptocurrency taxation for guidance specific to your situation, especially if you trade frequently or hold crypto acquired through mining, staking, or airdrops."
+      ]
+     },
+     {
+      "h": "Security and Custody Considerations",
+      "p": [
+       "Keeping cryptocurrency on an exchange is convenient for active trading but concentrates risk. Exchanges can be hacked, experience technical failures, or face regulatory actions that restrict access to your funds. For amounts you do not plan to trade frequently, consider withdrawing to a private wallet where you control the keys.",
+       "Hardware wallets like Ledger or Trezor provide the highest security for long-term storage, while software wallets offer a balance of security and convenience. If you choose to keep funds on an exchange, enable all available security features including two-factor authentication (preferably using an authenticator app rather than SMS), withdrawal whitelisting, and anti-phishing codes. Never share your account credentials or two-factor authentication codes with anyone, and be aware that customer support will never ask for this information."
+      ]
+     },
+     {
+      "h": "Common Issues and Solutions",
+      "p": [
+       "Deposit delays are the most frequent issue. If your PLN transfer has not arrived after the expected timeframe, verify that you included the correct reference code and that the sender name matches your verified account name. Contact exchange support with your transaction details if the delay exceeds normal processing times. Some banks flag cryptocurrency-related transfers for additional security checks, which can cause delays—informing your bank in advance may prevent this.",
+       "Verification rejections usually occur due to poor image quality, expired documents, or mismatches between your uploaded documents and registered name. Ensure photos are clear, well-lit, and show all document edges and details. If your proof of address is rejected, verify that it is recent enough and that your name and address are clearly visible. For persistent issues, contact support before attempting multiple submissions, as repeated failures can flag your account for manual review and extend the process."
+      ]
+     }
+    ]
+   }
+  }
+ }
+]
