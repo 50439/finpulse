@@ -55,6 +55,12 @@ function titleSimilarity(a, b) {
 }
 
 const DUP_THRESHOLD = Number(process.env.DUP_THRESHOLD || 0.40);
+
+// Сколько статей писать за прогон. Снижено 2 -> 1 на месяц (23.08.2026):
+// сайт молодой, без ссылочной массы, а 17 языковых версий каждой статьи дают
+// до 100 новых страниц в сутки — это профиль, который Google разбирает
+// по политике scaled content abuse. Возвращать обратно через env, без правки кода.
+const ARTICLES_PER_RUN = Number(process.env.ARTICLES_PER_RUN || 1);
 // Слаг у нас всегда получает суффикс -xxxx, поэтому сравниваем базовую часть.
 const slugBase = s => String(s).toLowerCase().replace(/-[a-z0-9]{4}$/, '');
 
@@ -89,14 +95,16 @@ async function callClaude(headlines) {
   const existing = JSON.parse(fs.readFileSync(path.join(ROOT, 'content/articles.json'), 'utf8'));
   const recentTitles = existing.slice(0, 30).map(a => a.i18n.en.title);
   const prompt = 'You are the editor of FinPulse, a multilingual crypto & finance news site.\n\n' +
-'Below are fresh headlines from RSS feeds. Pick UP TO 2 genuinely NEW and DISTINCT stories (prefer variety: crypto, stocks/world economy, and if present something about Ukraine economy).\n\n' +
+'Below are fresh headlines from RSS feeds. Pick UP TO ' + ARTICLES_PER_RUN + ' genuinely NEW and DISTINCT stor' + (ARTICLES_PER_RUN === 1 ? 'y' : 'ies') + ' (prefer variety across runs: crypto, stocks/world economy, and if present something about Ukraine economy). Choose the single most consequential story, not the most sensational one.\n\n' +
 'WE ALREADY PUBLISHED THESE STORIES: ' + JSON.stringify(recentTitles) + '\n\n' +
 'A story counts as ALREADY COVERED if it is the same event, the same company/country, or the same figures as anything above — even if the wording, angle or framing differs. Only a genuinely NEW development (new decision, new number, new consequence) counts as a new story.\n\n' +
 'IMPORTANT: you are NOT required to return 2 articles. Return 1, or an empty array [], if there is nothing genuinely new. Publishing nothing is BETTER than republishing a story we already covered — repeats destroy reader trust. Do not stretch to fill a quota.\n\n' +
-'For each story write an ORIGINAL article (do not copy source text): a catchy title, a 1-2 sentence excerpt, and a body of 3-4 paragraphs. Then translate title, excerpt and body into ALL of: en, uk, ru, es, pt, de, fr, ar, zh, hi, id, vi, tr, ja, ko, pl, th. Native-quality natural translations.\n\n' +
+'For each story write an ORIGINAL article (do not copy source text): a catchy title, a 1-2 sentence excerpt, and a body of 6-8 paragraphs totalling 450-600 words in English.\n\n' +
+'DEPTH MATTERS MORE THAN SPEED. Our earlier articles averaged only ~190 words and read as thin rewrites of a headline — that is exactly what search engines discard. Each article must add something a reader cannot get from the headline alone: what actually happened, the concrete numbers, why it matters, who is affected, what it changes for an ordinary investor, and what to watch next. Explain mechanisms, not just events. No filler sentences, no restating the title, no empty hedging.\n\n' +
+'Then translate title, excerpt and body into ALL of: en, uk, ru, es, pt, de, fr, ar, zh, hi, id, vi, tr, ja, ko, pl, th. Native-quality natural translations — a native reader must not be able to tell it was translated.\n\n' +
 'Category must be one of: crypto, stocks, forex, world, ukraine. Pick a fitting emoji for each article.\n\n' +
-'Respond with ONLY valid JSON (no markdown fences), an array of 0 to 2 objects (empty array [] is a valid and welcome answer):\n' +
-'[{"slug":"kebab-case-slug","category":"crypto","emoji":"X","i18n":{"en":{"title":"...","excerpt":"...","body":["p1","p2","p3"]}, ...all 17 langs}}]\n\n' +
+'Respond with ONLY valid JSON (no markdown fences), an array of 0 to ' + ARTICLES_PER_RUN + ' objects (empty array [] is a valid and welcome answer):\n' +
+'[{"slug":"kebab-case-slug","category":"crypto","emoji":"X","i18n":{"en":{"title":"...","excerpt":"...","body":["p1","p2","p3","p4","p5","p6"]}, ...all 17 langs}}]\n\n' +
 'HEADLINES:\n' + JSON.stringify(headlines.slice(0, 40), null, 1);
 
   const r = await fetch('https://api.anthropic.com/v1/messages', {
@@ -186,6 +194,10 @@ async function main() {
     accepted.push(a);
   }
 
+  if (accepted.length > ARTICLES_PER_RUN) {
+    console.log('Модель вернула ' + accepted.length + ', оставляем ' + ARTICLES_PER_RUN + ' (лимит ARTICLES_PER_RUN)');
+    accepted.length = ARTICLES_PER_RUN;
+  }
   if (rejected) console.log('Отброшено дублей: ' + rejected + ' из ' + fresh.length);
 
   if (!accepted.length) {
