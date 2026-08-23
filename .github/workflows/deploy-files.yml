@@ -1,29 +1,34 @@
 name: Deploy files (bundle)
 
-# Зачем: push из сессии Claude заблокирован git-прокси (открытый баг),
-# поэтому каждая выкладка делалась вручную через форму загрузки GitHub —
-# по коммиту на папку, с риском оставить прод в промежуточном состоянии.
-# Этот workflow принимает один base64-архив со всеми файлами сразу
-# и коммитит их одной транзакцией.
+# Зачем: push из сессии Claude заблокирован git-прокси (открытый баг), и каждая
+# выкладка требовала отдельного коммита через веб-форму на КАЖДУЮ папку —
+# долго и оставляет прод в промежуточном состоянии между коммитами.
 #
-# Как пользоваться:
-#   tar czf - build.js scripts/x.js | base64 -w0     — получить bundle
-#   Actions -> Deploy files (bundle) -> Run workflow -> вставить в поле bundle
+# Как пользоваться (одна загрузка на всю выкладку, сколько бы файлов ни было):
+#   1) tar czf - build.js scripts/telegram.js data/x.json | base64 -w0 > bundle.b64
+#   2) загрузить bundle.b64 в папку deploy/ через github.com/50439/finpulse/upload/main/deploy
+#   3) всё: workflow сам распакует по правильным путям, прогонит сборку и тесты,
+#      закоммитит файлы и удалит bundle.b64
 #
-# ОГРАНИЧЕНИЕ: файлы в .github/workflows/ этим способом залить НЕЛЬЗЯ —
-# у GITHUB_TOKEN нет права workflows, push будет отклонён. Такие файлы
-# по-прежнему через веб-форму загрузки. Workflow это проверяет и падает заранее
-# с понятным сообщением, а не молчаливым отказом push в конце.
+# Почему файлом, а не полем формы: поле workflow_dispatch портит длинный base64
+# при urlencode ('+' приезжает пробелом), а загрузка файла отдаёт байты как есть.
+# Поле оставлено как запасной путь для маленьких выкладок.
+#
+# ОГРАНИЧЕНИЕ: файлы .github/workflows/ так залить нельзя — у GITHUB_TOKEN нет
+# права workflows. Workflow говорит это сразу, а не молчаливым отказом push в конце.
 
 on:
+  push:
+    branches: [main]
+    paths: ['deploy/bundle.b64']
   workflow_dispatch:
     inputs:
       bundle:
-        description: 'base64 от tar.gz с файлами (пути относительно корня репозитория)'
-        required: true
+        description: 'base64 от tar.gz (для больших выкладок лучше загрузить файл в deploy/bundle.b64)'
+        required: false
       message:
         description: 'Сообщение коммита'
-        required: true
+        required: false
         default: 'deploy: files via bundle'
 
 permissions:
@@ -37,31 +42,41 @@ jobs:
 
       - name: Unpack and validate
         env:
-          BUNDLE: ${{ inputs.bundle }}
+          BUNDLE_INPUT: ${{ inputs.bundle }}
         run: |
           set -euo pipefail
-          # Форма GitHub отправляет значение как urlencoded: '+' приезжает пробелом,
-          # и base64 разваливается с crc error. Чиним оба алфавита сразу:
-          # пробел -> '+', и base64url ('-','_') -> стандартный ('+','/').
-          printf '%s' "$BUNDLE" | tr -d '\n\r' | tr ' ' '+' | tr -- '-_' '+/' | base64 -d > /tmp/bundle.tgz
-          if ! tar tzf /tmp/bundle.tgz > /dev/null 2>&1; then
-            echo "::error::Архив не распаковывается. Проверьте, что вставлен полный вывод: tar czf - <файлы> | base64 -w0"; exit 1
+          if [ -f deploy/bundle.b64 ]; then
+            SRC=deploy/bundle.b64
+            echo "Источник: файл deploy/bundle.b64 ($(wc -c < deploy/bundle.b64) байт)"
+          elif [ -n "${BUNDLE_INPUT:-}" ]; then
+            printf '%s' "$BUNDLE_INPUT" > /tmp/input.b64
+            SRC=/tmp/input.b64
+            echo "Источник: поле workflow_dispatch ($(wc -c < /tmp/input.b64) байт)"
+          else
+            echo "Нечего разворачивать: нет ни deploy/bundle.b64, ни значения в поле bundle"
+            echo "NOTHING=1" >> "$GITHUB_ENV"; exit 0
           fi
-          echo "Файлы в архиве:"
-          tar tzf /tmp/bundle.tgz | tee /tmp/list.txt
 
-          # Никаких путей наружу репозитория и никакой подмены истории git.
+          # Терпим оба алфавита и порчу '+' -> пробел при urlencode.
+          tr -d '\n\r' < "$SRC" | tr ' ' '+' | tr -- '-_' '+/' | base64 -d > /tmp/bundle.tgz 2>/dev/null || true
+          if ! tar tzf /tmp/bundle.tgz > /dev/null 2>&1; then
+            echo "::error::Архив не распаковывается. Ожидается вывод: tar czf - <файлы> | base64 -w0"; exit 1
+          fi
+
+          echo "Файлы в архиве:"; tar tzf /tmp/bundle.tgz | tee /tmp/list.txt
+
           if grep -qE '(^/|(^|/)\.\./|^\.git/)' /tmp/list.txt; then
             echo "::error::Архив содержит абсолютный путь, .. или .git/ — отказ"; exit 1
           fi
-          # GITHUB_TOKEN не имеет права workflows: push будет отклонён в самом конце.
-          # Лучше сказать это сразу.
           if grep -qE '^\.github/workflows/' /tmp/list.txt; then
             echo "::error::Файлы .github/workflows/ этим способом не заливаются (у GITHUB_TOKEN нет права workflows). Используйте веб-форму загрузки GitHub."; exit 1
           fi
-          tar xzf /tmp/bundle.tgz
 
-      - name: Sanity check (сборка обязана пройти)
+          tar xzf /tmp/bundle.tgz
+          rm -f deploy/bundle.b64
+
+      - name: Sanity check (сборка и тесты обязаны пройти)
+        if: env.NOTHING != '1'
         env:
           SITE_URL: ${{ vars.SITE_URL || 'https://finpulse24.com' }}
         run: |
@@ -71,13 +86,14 @@ jobs:
           node scripts/telegram.test.js
 
       - name: Commit
+        if: env.NOTHING != '1'
         run: |
           git config user.name "finpulse-bot"
           git config user.email "bot@users.noreply.github.com"
           git add -A ':!dist'
           if git diff --cached --quiet; then
-            echo "Нечего коммитить — файлы совпадают с тем, что уже в репозитории"
-            exit 0
+            echo "Нечего коммитить — файлы совпадают с тем, что уже в репозитории"; exit 0
           fi
-          git commit -m "${{ inputs.message }}"
+          git status --short
+          git commit -m "${{ inputs.message || 'deploy: files via bundle' }}"
           git push
