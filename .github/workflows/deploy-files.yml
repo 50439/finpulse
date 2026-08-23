@@ -40,7 +40,13 @@ jobs:
           BUNDLE: ${{ inputs.bundle }}
         run: |
           set -euo pipefail
-          printf '%s' "$BUNDLE" | base64 -d > /tmp/bundle.tgz
+          # Форма GitHub отправляет значение как urlencoded: '+' приезжает пробелом,
+          # и base64 разваливается с crc error. Чиним оба алфавита сразу:
+          # пробел -> '+', и base64url ('-','_') -> стандартный ('+','/').
+          printf '%s' "$BUNDLE" | tr -d '\n\r' | tr ' ' '+' | tr -- '-_' '+/' | base64 -d > /tmp/bundle.tgz
+          if ! tar tzf /tmp/bundle.tgz > /dev/null 2>&1; then
+            echo "::error::Архив не распаковывается. Проверьте, что вставлен полный вывод: tar czf - <файлы> | base64 -w0"; exit 1
+          fi
           echo "Файлы в архиве:"
           tar tzf /tmp/bundle.tgz | tee /tmp/list.txt
 
