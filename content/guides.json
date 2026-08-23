@@ -2411,5 +2411,897 @@
     ]
    }
   }
+ },
+ {
+  "slug": "crypto-scams-how-to-avoid",
+  "category": "guide",
+  "emoji": "🛡️",
+  "langs": [
+   "en",
+   "de",
+   "fr",
+   "pl",
+   "pt",
+   "uk",
+   "ru",
+   "es",
+   "tr",
+   "id",
+   "vi",
+   "th",
+   "hi",
+   "ar"
+  ],
+  "updated": "2026-08-23T20:26:46.356Z",
+  "i18n": {
+   "en": {
+    "title": "The Most Common Crypto Scams and How to Recognise Them Before Losing Money",
+    "excerpt": "Cryptocurrency scams have evolved into sophisticated operations that steal billions annually. This guide explains the mechanics of the six most prevalent schemes and the specific red flags that expose them.",
+    "sections": [
+     {
+      "h": "Fake Support Accounts on Social Media and Messaging Apps",
+      "p": [
+       "When you post a question in a crypto community or mention an issue with an exchange, scammers monitor these channels and respond within minutes posing as official support. They use usernames nearly identical to legitimate accounts—often adding a single character, underscore, or using a zero instead of the letter O. On Telegram and Discord, they will direct-message you immediately, while on Twitter they reply to your tweet with a helpful tone.",
+       "The tell: no legitimate exchange, wallet provider, or blockchain project will ever initiate a direct message asking you to verify your account, validate your wallet, or resolve a withdrawal issue. Official support always directs you to submit a ticket through their website or in-app system. The moment someone asks you to enter your seed phrase on a website they provide, or to scan a QR code to \"synchronize\" your wallet, you are speaking to a scammer. Real support never requests this information.",
+       "If you have already entered credentials on a link they sent, move your funds immediately to a new wallet with a freshly generated seed phrase. Enable official two-factor authentication on exchange accounts only through the platform's settings page, never through a link sent in a message."
+      ]
+     },
+     {
+      "h": "Pig-Butchering Romance and Investment Scams",
+      "p": [
+       "This scam combines fake romantic interest with fraudulent investment advice. The approach begins on dating apps, social media, or even a \"wrong number\" WhatsApp message that turns into friendly conversation. Over weeks or months, the scammer builds trust and eventually mentions how much money they make trading cryptocurrency on a specific platform. They offer to teach you, guiding you to deposit funds on what appears to be a functioning exchange interface.",
+       "The platform is entirely fake. You will see your balance grow, often dramatically, reinforcing the belief that the strategy works. When you attempt a small withdrawal, it may even succeed to deepen trust. But when you try to withdraw a significant amount, the site will demand tax payments, security deposits, or verification fees—always requiring you to send more cryptocurrency. No matter how much you send, access to your funds will be denied, and eventually the scammer and the site disappear.",
+       "The tell: any trading platform you did not discover through independent research is suspect. Verify the exchange through multiple sources: check registration with financial regulators where applicable (rules vary widely by jurisdiction and this is not financial advice, but many countries maintain public lists of registered or warned-against entities), search for the domain name with the word \"scam\" added, and attempt to find reviews on independent forums. Genuine profits never require upfront tax payments in cryptocurrency; tax obligations are settled during official filing periods with tax authorities, not by sending Bitcoin to an exchange."
+      ]
+     },
+     {
+      "h": "Fraudulent Airdrops and Malicious Token Approvals",
+      "p": [
+       "You notice unfamiliar tokens worth hundreds or thousands of dollars suddenly appearing in your wallet. When you attempt to sell them on a decentralized exchange, the transaction requires you to approve a token spending permission. This approval grants a smart contract full access to the tokens in your wallet. Once signed, the contract drains your legitimate holdings—stablecoins, Ethereum, or other valuable assets.",
+       "A variation involves airdrop announcements on social media or via email requiring you to \"claim\" tokens by connecting your wallet to a malicious website. The site prompts a signature that appears to be a claim function but is actually an approval granting the attacker permission to transfer your assets.",
+       "The tell: unexpected tokens in your wallet should be ignored, not sold. Before signing any token approval, check exactly what you are authorizing using tools like Etherscan's transaction decoder or Revoke.cash to review active permissions. Legitimate airdrops from known projects are announced through their official channels and typically do not require you to sign broad wallet approvals. If a token cannot be sold without error, or the swap interface behaves unusually, stop. Revoke any suspicious permissions immediately using the same permission-management tools."
+      ]
+     },
+     {
+      "h": "Cloned Exchange and Wallet Websites",
+      "p": [
+       "Scammers purchase domain names nearly identical to major exchanges—substituting characters, adding hyphens, or using alternative top-level domains like .cc or .co instead of .com. These cloned sites replicate the design perfectly, and often appear in search engine ads above the legitimate result. When you log in, your credentials are captured. If you deposit cryptocurrency to a wallet address displayed on the site, the funds go directly to the scammer.",
+       "The tell: always type exchange URLs manually or use a bookmarked link you have verified. Check for HTTPS and examine the exact domain spelling before entering any login details. Search engine advertisements are a common vector; the first result is not always legitimate. If you have logged into a site and later realize it was fraudulent, assume your email, password, and two-factor backup codes are compromised. Immediately log into the real platform from a verified URL and change your credentials. If you enabled two-factor authentication on the fake site, the scammer has access to your 2FA secret; reset it on the genuine platform.",
+       "For wallet sites, verify the download link through the project's official social media accounts or GitHub repository. Fake wallet software will steal your seed phrase the moment you enter it."
+      ]
+     },
+     {
+      "h": "Guaranteed-Return Investment Funds and Ponzi Structures",
+      "p": [
+       "Platforms promise fixed daily, weekly, or monthly returns—often 1% per day, 10% per week, or similar figures far exceeding traditional finance. They may brand themselves as crypto hedge funds, mining operations, arbitrage bots, or liquidity pools managed by expert traders. Early participants receive payouts funded by deposits from new investors, which creates testimonials and social proof. The scheme continues until the operator disappears with the remaining funds.",
+       "The tell: no legitimate investment can guarantee returns, and certainly not at rates that would double your capital every few months. Returns in cryptocurrency markets, as in all markets, carry risk and fluctuate. Be especially wary of platforms requiring you to recruit others to unlock higher yields or withdrawal permissions—this is a hallmark of a pyramid structure. Check whether the fund is registered or licensed where applicable (regulatory requirements differ significantly by country, and this is not legal advice). A genuine fund will provide verifiable proof of reserves, transparent fee structures, and regulatory filings you can independently confirm.",
+       "If you have already deposited funds, attempt to withdraw immediately. Many such platforms impose lock-up periods or withdrawal limits designed to delay your access until the scheme collapses."
+      ]
+     },
+     {
+      "h": "SIM-Swap Attacks Targeting SMS Two-Factor Authentication",
+      "p": [
+       "A scammer gathers personal information about you—often from data breaches, social media, or phishing—and contacts your mobile carrier pretending to be you. They claim to have lost their phone and request the number be transferred to a new SIM card they control. Once the carrier complies, the attacker receives all SMS messages sent to your number, including two-factor authentication codes for email, exchange accounts, and other services.",
+       "With access to your SMS codes, they reset passwords and withdraw funds from accounts protected only by SMS-based authentication. This attack does not require physical access to your phone or sophisticated hacking; it exploits the carrier's customer service process.",
+       "The tell: SMS authentication is the weakest common form of two-factor security. Replace it wherever possible with authenticator apps that generate time-based codes (such as Google Authenticator, Authy, or others) or hardware security keys. These methods are not vulnerable to SIM swaps because they do not rely on the phone network. Contact your mobile carrier and ask to add a PIN or password requirement for any SIM changes—procedures vary by provider and country, but most now offer this protection. If you suddenly lose mobile service without explanation, assume a SIM swap may be in progress and immediately contact your carrier and begin securing accounts from a trusted device."
+      ]
+     },
+     {
+      "h": "What to Do If You Have Been Targeted",
+      "p": [
+       "If you have shared a seed phrase, entered it on a website, or signed a suspicious smart contract approval, move any remaining funds immediately to a new wallet with a freshly generated seed phrase on a device you trust. Do not reuse the compromised wallet. For exchange accounts, change passwords and reset two-factor authentication from a verified URL.",
+       "Report the scam to the platform where it occurred—social media networks, app stores, and exchanges do take action against reported accounts, though recovery of funds is rarely possible. If the amount is significant, consider reporting to law enforcement, though cross-border cryptocurrency theft is difficult to investigate and legal processes differ widely by jurisdiction.",
+       "Educate yourself on wallet security, smart contract interactions, and the specific mechanisms of the platforms you use. Scams succeed because they exploit urgency, trust, and unfamiliarity with technical processes. Taking the time to verify before acting is the most effective defense."
+      ]
+     }
+    ]
+   },
+   "de": {
+    "title": "Die häufigsten Krypto-Betrugsmaschen und wie Sie sie erkennen, bevor Sie Geld verlieren",
+    "excerpt": "Kryptowährungs-Betrug hat sich zu ausgefeilten Operationen entwickelt, die jährlich Milliarden stehlen. Dieser Leitfaden erklärt die Mechanismen der sechs häufigsten Maschen und die konkreten Warnsignale, die sie entlarven.",
+    "sections": [
+     {
+      "h": "Gefälschte Support-Konten in sozialen Medien und Messenger-Apps",
+      "p": [
+       "Wenn Sie eine Frage in einer Krypto-Community posten oder ein Problem mit einer Börse erwähnen, beobachten Betrüger diese Kanäle und antworten innerhalb von Minuten als angeblicher offizieller Support. Sie verwenden Nutzernamen, die legitimen Konten nahezu identisch sind – oft mit einem zusätzlichen Zeichen, Unterstrich oder einer Null anstelle des Buchstabens O. Bei Telegram und Discord schreiben sie Ihnen sofort eine Direktnachricht, bei Twitter antworten sie auf Ihren Tweet in hilfsbereit wirkendem Ton.",
+       "Das Erkennungsmerkmal: Keine seriöse Börse, kein Wallet-Anbieter und kein Blockchain-Projekt wird jemals eine Direktnachricht initiieren, in der Sie aufgefordert werden, Ihr Konto zu verifizieren, Ihre Wallet zu validieren oder ein Auszahlungsproblem zu lösen. Offizieller Support leitet Sie immer an, ein Ticket über deren Website oder In-App-System einzureichen. In dem Moment, in dem jemand Sie bittet, Ihre Seed-Phrase auf einer von ihm bereitgestellten Website einzugeben oder einen QR-Code zu scannen, um Ihre Wallet zu \"synchronisieren\", sprechen Sie mit einem Betrüger. Echter Support fordert diese Informationen niemals an.",
+       "Falls Sie bereits Zugangsdaten über einen Link eingegeben haben, den sie gesendet haben, verschieben Sie Ihre Guthaben sofort in eine neue Wallet mit einer frisch generierten Seed-Phrase. Aktivieren Sie die offizielle Zwei-Faktor-Authentifizierung bei Börsen-Konten ausschließlich über die Einstellungsseite der Plattform, niemals über einen in einer Nachricht gesendeten Link."
+      ]
+     },
+     {
+      "h": "Pig-Butchering: Romance- und Investment-Betrug",
+      "p": [
+       "Diese Betrugsmasche kombiniert vorgetäuschtes romantisches Interesse mit betrügerischer Anlageberatung. Der Ansatz beginnt auf Dating-Apps, in sozialen Medien oder sogar mit einer \"falschen Nummer\" per WhatsApp, die sich in ein freundliches Gespräch verwandelt. Über Wochen oder Monate baut der Betrüger Vertrauen auf und erwähnt schließlich, wie viel Geld er mit dem Handel von Kryptowährungen auf einer bestimmten Plattform verdient. Er bietet an, Sie zu unterrichten, und leitet Sie an, Geld auf einer scheinbar funktionierenden Börsen-Oberfläche einzuzahlen.",
+       "Die Plattform ist vollständig gefälscht. Sie werden sehen, wie Ihr Guthaben wächst, oft dramatisch, was den Glauben verstärkt, dass die Strategie funktioniert. Wenn Sie eine kleine Auszahlung versuchen, kann diese sogar gelingen, um das Vertrauen zu vertiefen. Aber wenn Sie versuchen, einen bedeutenden Betrag abzuheben, wird die Seite Steuerzahlungen, Sicherheitseinlagen oder Verifizierungsgebühren fordern – immer mit der Anforderung, mehr Kryptowährung zu senden. Egal wie viel Sie senden, der Zugang zu Ihren Mitteln wird verweigert, und schließlich verschwinden der Betrüger und die Seite.",
+       "Das Erkennungsmerkmal: Jede Handelsplattform, die Sie nicht durch unabhängige Recherche entdeckt haben, ist verdächtig. Überprüfen Sie die Börse über mehrere Quellen: Prüfen Sie die Registrierung bei Finanzaufsichtsbehörden, wo anwendbar (die Vorschriften variieren stark nach Land, und dies ist keine Finanzberatung, aber viele Länder führen öffentliche Listen registrierter oder vor denen gewarnt wird), suchen Sie nach dem Domain-Namen mit dem Wort \"Betrug\" hinzugefügt und versuchen Sie, Bewertungen in unabhängigen Foren zu finden. Echte Gewinne erfordern niemals Vorauszahlungen von Steuern in Kryptowährung; Steuerverpflichtungen werden während offizieller Steuererklärungsfristen mit den Finanzbehörden beglichen, nicht durch das Senden von Bitcoin an eine Börse."
+      ]
+     },
+     {
+      "h": "Betrügerische Airdrops und schädliche Token-Genehmigungen",
+      "p": [
+       "Sie bemerken unbekannte Token im Wert von Hunderten oder Tausenden Euro, die plötzlich in Ihrer Wallet auftauchen. Wenn Sie versuchen, sie auf einer dezentralen Börse zu verkaufen, verlangt die Transaktion, dass Sie eine Token-Ausgabegenehmigung erteilen. Diese Genehmigung gewährt einem Smart Contract vollen Zugriff auf die Token in Ihrer Wallet. Nach der Unterzeichnung leert der Contract Ihre legitimen Bestände – Stablecoins, Ethereum oder andere wertvolle Assets.",
+       "Eine Variante beinhaltet Airdrop-Ankündigungen in sozialen Medien oder per E-Mail, die verlangen, dass Sie Token \"beanspruchen\", indem Sie Ihre Wallet mit einer bösartigen Website verbinden. Die Seite fordert eine Signatur an, die wie eine Beanspruchungsfunktion aussieht, aber tatsächlich eine Genehmigung ist, die dem Angreifer die Erlaubnis erteilt, Ihre Assets zu übertragen.",
+       "Das Erkennungsmerkmal: Unerwartete Token in Ihrer Wallet sollten ignoriert, nicht verkauft werden. Bevor Sie eine Token-Genehmigung unterzeichnen, überprüfen Sie genau, was Sie autorisieren, indem Sie Tools wie den Transaction Decoder von Etherscan oder Revoke.cash verwenden, um aktive Berechtigungen zu überprüfen. Legitime Airdrops von bekannten Projekten werden über deren offizielle Kanäle angekündigt und erfordern normalerweise nicht, dass Sie umfassende Wallet-Genehmigungen unterzeichnen. Wenn ein Token nicht ohne Fehler verkauft werden kann oder die Swap-Oberfläche sich ungewöhnlich verhält, stoppen Sie. Widerrufen Sie verdächtige Berechtigungen sofort mit denselben Tools zur Berechtigungsverwaltung."
+      ]
+     },
+     {
+      "h": "Geklonte Börsen- und Wallet-Websites",
+      "p": [
+       "Betrüger kaufen Domain-Namen, die großen Börsen nahezu identisch sind – sie ersetzen Zeichen, fügen Bindestriche hinzu oder verwenden alternative Top-Level-Domains wie .cc oder .co anstelle von .com. Diese geklonten Seiten replizieren das Design perfekt und erscheinen oft in Suchmaschinenwerbung über dem legitimen Ergebnis. Wenn Sie sich anmelden, werden Ihre Zugangsdaten erfasst. Wenn Sie Kryptowährung auf eine auf der Seite angezeigte Wallet-Adresse einzahlen, gehen die Mittel direkt an den Betrüger.",
+       "Das Erkennungsmerkmal: Geben Sie Börsen-URLs immer manuell ein oder verwenden Sie einen Lesezeichen-Link, den Sie verifiziert haben. Überprüfen Sie HTTPS und untersuchen Sie die exakte Domain-Schreibweise, bevor Sie Anmeldedaten eingeben. Suchmaschinenwerbung ist ein häufiger Vektor; das erste Ergebnis ist nicht immer legitim. Wenn Sie sich auf einer Seite angemeldet und später erkannt haben, dass sie betrügerisch war, gehen Sie davon aus, dass Ihre E-Mail, Ihr Passwort und Ihre Zwei-Faktor-Backup-Codes kompromittiert sind. Melden Sie sich sofort von einer verifizierten URL aus bei der echten Plattform an und ändern Sie Ihre Zugangsdaten. Wenn Sie die Zwei-Faktor-Authentifizierung auf der gefälschten Seite aktiviert haben, hat der Betrüger Zugriff auf Ihr 2FA-Geheimnis; setzen Sie es auf der echten Plattform zurück.",
+       "Überprüfen Sie bei Wallet-Seiten den Download-Link über die offiziellen Social-Media-Konten oder das GitHub-Repository des Projekts. Gefälschte Wallet-Software stiehlt Ihre Seed-Phrase in dem Moment, in dem Sie sie eingeben."
+      ]
+     },
+     {
+      "h": "Investment-Fonds mit garantierten Renditen und Ponzi-Strukturen",
+      "p": [
+       "Plattformen versprechen feste tägliche, wöchentliche oder monatliche Renditen – oft 1% pro Tag, 10% pro Woche oder ähnliche Zahlen, die traditionelle Finanzen bei weitem übertreffen. Sie bezeichnen sich möglicherweise als Krypto-Hedgefonds, Mining-Betriebe, Arbitrage-Bots oder Liquiditätspools, die von Expertentradern verwaltet werden. Frühe Teilnehmer erhalten Auszahlungen, die durch Einlagen neuer Investoren finanziert werden, was Testimonials und Social Proof erzeugt. Das Schema läuft weiter, bis der Betreiber mit den verbleibenden Mitteln verschwindet.",
+       "Das Erkennungsmerkmal: Keine seriöse Anlage kann Renditen garantieren, und schon gar nicht zu Sätzen, die Ihr Kapital alle paar Monate verdoppeln würden. Renditen auf Kryptowährungsmärkten tragen wie auf allen Märkten Risiken und schwanken. Seien Sie besonders vorsichtig bei Plattformen, die verlangen, dass Sie andere rekrutieren, um höhere Erträge oder Auszahlungsberechtigungen freizuschalten – dies ist ein Kennzeichen einer Pyramidenstruktur. Überprüfen Sie, ob der Fonds registriert oder lizenziert ist, wo anwendbar (regulatorische Anforderungen unterscheiden sich erheblich nach Land, und dies ist keine Rechtsberatung). Ein echter Fonds wird überprüfbare Nachweise von Rücklagen, transparente Gebührenstrukturen und regulatorische Einreichungen bereitstellen, die Sie unabhängig bestätigen können.",
+       "Falls Sie bereits Mittel eingezahlt haben, versuchen Sie sofort eine Auszahlung. Viele solcher Plattformen verhängen Sperrfristen oder Auszahlungslimits, die darauf ausgelegt sind, Ihren Zugang zu verzögern, bis das Schema zusammenbricht."
+      ]
+     },
+     {
+      "h": "SIM-Swap-Angriffe auf SMS-Zwei-Faktor-Authentifizierung",
+      "p": [
+       "Ein Betrüger sammelt persönliche Informationen über Sie – oft aus Datenlecks, sozialen Medien oder Phishing – und kontaktiert Ihren Mobilfunkanbieter, wobei er vorgibt, Sie zu sein. Er behauptet, sein Telefon verloren zu haben, und fordert, dass die Nummer auf eine neue SIM-Karte übertragen wird, die er kontrolliert. Sobald der Anbieter zustimmt, empfängt der Angreifer alle SMS-Nachrichten, die an Ihre Nummer gesendet werden, einschließlich Zwei-Faktor-Authentifizierungscodes für E-Mail, Börsen-Konten und andere Dienste.",
+       "Mit Zugriff auf Ihre SMS-Codes setzen sie Passwörter zurück und heben Gelder von Konten ab, die nur durch SMS-basierte Authentifizierung geschützt sind. Dieser Angriff erfordert weder physischen Zugang zu Ihrem Telefon noch ausgefeiltes Hacking; er nutzt den Kundendienstprozess des Anbieters aus.",
+       "Das Erkennungsmerkmal: SMS-Authentifizierung ist die schwächste gängige Form der Zwei-Faktor-Sicherheit. Ersetzen Sie sie wo möglich durch Authentifizierungs-Apps, die zeitbasierte Codes generieren (wie Google Authenticator, Authy oder andere) oder Hardware-Sicherheitsschlüssel. Diese Methoden sind nicht anfällig für SIM-Swaps, da sie nicht auf das Telefonnetz angewiesen sind. Kontaktieren Sie Ihren Mobilfunkanbieter und bitten Sie darum, eine PIN- oder Passwortanforderung für jegliche SIM-Änderungen hinzuzufügen – die Verfahren variieren je nach Anbieter und Land, aber die meisten bieten diesen Schutz inzwischen an. Wenn Sie plötzlich ohne Erklärung Ihren Mobilfunkdienst verlieren, gehen Sie davon aus, dass ein SIM-Swap im Gange sein könnte, und kontaktieren Sie sofort Ihren Anbieter und beginnen Sie, Konten von einem vertrauenswürdigen Gerät aus zu sichern."
+      ]
+     },
+     {
+      "h": "Was zu tun ist, wenn Sie ins Visier genommen wurden",
+      "p": [
+       "Wenn Sie eine Seed-Phrase geteilt, sie auf einer Website eingegeben oder eine verdächtige Smart-Contract-Genehmigung unterzeichnet haben, verschieben Sie alle verbleibenden Guthaben sofort in eine neue Wallet mit einer frisch generierten Seed-Phrase auf einem Gerät, dem Sie vertrauen. Verwenden Sie die kompromittierte Wallet nicht wieder. Ändern Sie bei Börsen-Konten Passwörter und setzen Sie die Zwei-Faktor-Authentifizierung von einer verifizierten URL aus zurück.",
+       "Melden Sie den Betrug auf der Plattform, auf der er aufgetreten ist – soziale Netzwerke, App-Stores und Börsen ergreifen Maßnahmen gegen gemeldete Konten, obwohl die Wiedererlangung von Geldern selten möglich ist. Wenn der Betrag bedeutend ist, erwägen Sie eine Meldung bei den Strafverfolgungsbehörden, obwohl grenzüberschreitender Kryptowährungsdiebstahl schwer zu untersuchen ist und rechtliche Verfahren je nach Gerichtsbarkeit stark variieren.",
+       "Bilden Sie sich über Wallet-Sicherheit, Smart-Contract-Interaktionen und die spezifischen Mechanismen der Plattformen weiter, die Sie verwenden. Betrug gelingt, weil er Dringlichkeit, Vertrauen und mangelnde Vertrautheit mit technischen Prozessen ausnutzt. Sich die Zeit zu nehmen, vor dem Handeln zu überprüfen, ist die wirksamste Verteidigung."
+      ]
+     }
+    ]
+   },
+   "fr": {
+    "title": "Les arnaques crypto les plus courantes et comment les reconnaître avant de perdre de l'argent",
+    "excerpt": "Les arnaques aux cryptomonnaies ont évolué en opérations sophistiquées qui volent des milliards chaque année. Ce guide explique les mécanismes des six systèmes les plus répandus et les signaux d'alerte spécifiques qui les exposent.",
+    "sections": [
+     {
+      "h": "Faux comptes de support sur les réseaux sociaux et applications de messagerie",
+      "p": [
+       "Lorsque vous publiez une question dans une communauté crypto ou mentionnez un problème avec une plateforme d'échange, les escrocs surveillent ces canaux et répondent en quelques minutes en se faisant passer pour le support officiel. Ils utilisent des noms d'utilisateur presque identiques aux comptes légitimes – ajoutant souvent un seul caractère, un tiret bas, ou utilisant un zéro à la place de la lettre O. Sur Telegram et Discord, ils vous envoient immédiatement un message privé, tandis que sur Twitter ils répondent à votre tweet sur un ton serviable.",
+       "Le signal d'alerte : aucune plateforme d'échange, fournisseur de portefeuille ou projet blockchain légitime n'initiera jamais un message direct vous demandant de vérifier votre compte, valider votre portefeuille ou résoudre un problème de retrait. Le support officiel vous dirige toujours vers la soumission d'un ticket via leur site web ou système intégré à l'application. Dès qu'une personne vous demande d'entrer votre phrase de récupération sur un site web qu'elle fournit, ou de scanner un code QR pour \"synchroniser\" votre portefeuille, vous parlez à un escroc. Le vrai support ne demande jamais ces informations.",
+       "Si vous avez déjà saisi des identifiants sur un lien qu'ils ont envoyé, transférez vos fonds immédiatement vers un nouveau portefeuille avec une phrase de récupération fraîchement générée. Activez l'authentification à deux facteurs officielle sur les comptes d'échange uniquement via la page des paramètres de la plateforme, jamais via un lien envoyé dans un message."
+      ]
+     },
+     {
+      "h": "Arnaques sentimentales et d'investissement de type \"pig-butchering\"",
+      "p": [
+       "Cette arnaque combine un faux intérêt romantique avec de faux conseils d'investissement. L'approche commence sur des applications de rencontres, les réseaux sociaux ou même un message WhatsApp envoyé par \"erreur\" qui se transforme en conversation amicale. Pendant des semaines ou des mois, l'escroc établit la confiance et finit par mentionner combien d'argent il gagne en tradant des cryptomonnaies sur une plateforme spécifique. Il propose de vous enseigner, vous guidant pour déposer des fonds sur ce qui semble être une interface d'échange fonctionnelle.",
+       "La plateforme est entièrement fausse. Vous verrez votre solde augmenter, souvent de manière spectaculaire, renforçant la conviction que la stratégie fonctionne. Lorsque vous tentez un petit retrait, il peut même réussir pour approfondir la confiance. Mais lorsque vous essayez de retirer un montant significatif, le site exigera des paiements de taxes, des dépôts de sécurité ou des frais de vérification – toujours en exigeant que vous envoyiez plus de cryptomonnaie. Peu importe combien vous envoyez, l'accès à vos fonds sera refusé, et finalement l'escroc et le site disparaissent.",
+       "Le signal d'alerte : toute plateforme de trading que vous n'avez pas découverte par recherche indépendante est suspecte. Vérifiez l'échange via plusieurs sources : vérifiez l'enregistrement auprès des régulateurs financiers le cas échéant (les règles varient considérablement selon les pays et ceci n'est pas un conseil financier, mais de nombreux pays maintiennent des listes publiques d'entités enregistrées ou contre lesquelles ils mettent en garde), recherchez le nom de domaine en ajoutant le mot \"arnaque\", et essayez de trouver des avis sur des forums indépendants. Les profits réels ne nécessitent jamais de paiements de taxes anticipés en cryptomonnaie ; les obligations fiscales sont réglées pendant les périodes de déclaration officielles avec les autorités fiscales, pas en envoyant du Bitcoin à une plateforme."
+      ]
+     },
+     {
+      "h": "Airdrops frauduleux et approbations de tokens malveillants",
+      "p": [
+       "Vous remarquez des tokens inconnus valant des centaines ou des milliers d'euros apparaissant soudainement dans votre portefeuille. Lorsque vous tentez de les vendre sur un échange décentralisé, la transaction vous demande d'approuver une permission de dépense de tokens. Cette approbation accorde à un contrat intelligent un accès total aux tokens de votre portefeuille. Une fois signée, le contrat vide vos avoirs légitimes – stablecoins, Ethereum ou autres actifs de valeur.",
+       "Une variante implique des annonces d'airdrops sur les réseaux sociaux ou par e-mail exigeant que vous \"réclamiez\" des tokens en connectant votre portefeuille à un site web malveillant. Le site demande une signature qui semble être une fonction de réclamation mais est en réalité une approbation accordant à l'attaquant la permission de transférer vos actifs.",
+       "Le signal d'alerte : les tokens inattendus dans votre portefeuille doivent être ignorés, pas vendus. Avant de signer toute approbation de token, vérifiez exactement ce que vous autorisez en utilisant des outils comme le décodeur de transactions d'Etherscan ou Revoke.cash pour examiner les permissions actives. Les airdrops légitimes de projets connus sont annoncés via leurs canaux officiels et ne nécessitent généralement pas que vous signiez des approbations de portefeuille larges. Si un token ne peut pas être vendu sans erreur, ou si l'interface d'échange se comporte de manière inhabituelle, arrêtez. Révoquez immédiatement toute permission suspecte en utilisant les mêmes outils de gestion des permissions."
+      ]
+     },
+     {
+      "h": "Sites web d'échanges et de portefeuilles clonés",
+      "p": [
+       "Les escrocs achètent des noms de domaine presque identiques aux grandes plateformes d'échange – substituant des caractères, ajoutant des traits d'union ou utilisant des extensions alternatives comme .cc ou .co au lieu de .com. Ces sites clonés reproduisent parfaitement le design et apparaissent souvent dans les annonces de moteurs de recherche au-dessus du résultat légitime. Lorsque vous vous connectez, vos identifiants sont capturés. Si vous déposez de la cryptomonnaie à une adresse de portefeuille affichée sur le site, les fonds vont directement à l'escroc.",
+       "Le signal d'alerte : tapez toujours manuellement les URL des plateformes ou utilisez un lien mis en favori que vous avez vérifié. Vérifiez le HTTPS et examinez l'orthographe exacte du domaine avant d'entrer des identifiants de connexion. Les publicités des moteurs de recherche sont un vecteur courant ; le premier résultat n'est pas toujours légitime. Si vous vous êtes connecté à un site et avez réalisé plus tard qu'il était frauduleux, présumez que votre e-mail, mot de passe et codes de sauvegarde à deux facteurs sont compromis. Connectez-vous immédiatement à la vraie plateforme depuis une URL vérifiée et changez vos identifiants. Si vous avez activé l'authentification à deux facteurs sur le faux site, l'escroc a accès à votre secret 2FA ; réinitialisez-le sur la plateforme authentique.",
+       "Pour les sites de portefeuilles, vérifiez le lien de téléchargement via les comptes de réseaux sociaux officiels du projet ou le dépôt GitHub. Un logiciel de portefeuille faux volera votre phrase de récupération dès que vous l'entrerez."
+      ]
+     },
+     {
+      "h": "Fonds d'investissement à rendement garanti et structures de Ponzi",
+      "p": [
+       "Des plateformes promettent des rendements fixes quotidiens, hebdomadaires ou mensuels – souvent 1% par jour, 10% par semaine ou des chiffres similaires dépassant de loin la finance traditionnelle. Ils peuvent se présenter comme des hedge funds crypto, des opérations de mining, des bots d'arbitrage ou des pools de liquidité gérés par des traders experts. Les premiers participants reçoivent des paiements financés par les dépôts de nouveaux investisseurs, ce qui crée des témoignages et une preuve sociale. Le système continue jusqu'à ce que l'opérateur disparaisse avec les fonds restants.",
+       "Le signal d'alerte : aucun investissement légitime ne peut garantir des rendements, et certainement pas à des taux qui doubleraient votre capital tous les quelques mois. Les rendements sur les marchés de cryptomonnaies, comme sur tous les marchés, comportent des risques et fluctuent. Méfiez-vous particulièrement des plateformes vous demandant de recruter d'autres personnes pour débloquer des rendements plus élevés ou des permissions de retrait – c'est la marque d'une structure pyramidale. Vérifiez si le fonds est enregistré ou licencié le cas échéant (les exigences réglementaires diffèrent considérablement selon les pays, et ceci n'est pas un conseil juridique). Un fonds authentique fournira une preuve vérifiable des réserves, des structures de frais transparentes et des dépôts réglementaires que vous pouvez confirmer de manière indépendante.",
+       "Si vous avez déjà déposé des fonds, tentez de retirer immédiatement. Beaucoup de ces plateformes imposent des périodes de blocage ou des limites de retrait conçues pour retarder votre accès jusqu'à l'effondrement du système."
+      ]
+     },
+     {
+      "h": "Attaques par échange de carte SIM visant l'authentification à deux facteurs par SMS",
+      "p": [
+       "Un escroc recueille des informations personnelles vous concernant – souvent à partir de fuites de données, des réseaux sociaux ou du phishing – et contacte votre opérateur mobile en prétendant être vous. Il affirme avoir perdu son téléphone et demande que le numéro soit transféré sur une nouvelle carte SIM qu'il contrôle. Une fois que l'opérateur accepte, l'attaquant reçoit tous les messages SMS envoyés à votre numéro, y compris les codes d'authentification à deux facteurs pour l'e-mail, les comptes d'échange et autres services.",
+       "Avec l'accès à vos codes SMS, ils réinitialisent les mots de passe et retirent des fonds des comptes protégés uniquement par authentification basée sur SMS. Cette attaque ne nécessite pas d'accès physique à votre téléphone ni de piratage sophistiqué ; elle exploite le processus de service client de l'opérateur.",
+       "Le signal d'alerte : l'authentification par SMS est la forme la plus faible de sécurité à deux facteurs courante. Remplacez-la dans la mesure du possible par des applications d'authentification qui génèrent des codes basés sur le temps (comme Google Authenticator, Authy ou autres) ou des clés de sécurité matérielles. Ces méthodes ne sont pas vulnérables aux échanges de SIM car elles ne dépendent pas du réseau téléphonique. Contactez votre opérateur mobile et demandez à ajouter une exigence de code PIN ou de mot de passe pour tout changement de SIM – les procédures varient selon l'opérateur et le pays, mais la plupart offrent désormais cette protection. Si vous perdez soudainement le service mobile sans explication, présumez qu'un échange de SIM peut être en cours et contactez immédiatement votre opérateur et commencez à sécuriser les comptes depuis un appareil de confiance."
+      ]
+     },
+     {
+      "h": "Que faire si vous avez été ciblé",
+      "p": [
+       "Si vous avez partagé une phrase de récupération, l'avez entrée sur un site web ou signé une approbation de contrat intelligent suspect, transférez immédiatement tous les fonds restants vers un nouveau portefeuille avec une phrase de récupération fraîchement générée sur un appareil de confiance. Ne réutilisez pas le portefeuille compromis. Pour les comptes d'échange, changez les mots de passe et réinitialisez l'authentification à deux facteurs depuis une URL vérifiée.",
+       "Signalez l'arnaque à la plateforme où elle s'est produite – les réseaux sociaux, les boutiques d'applications et les plateformes d'échange prennent des mesures contre les comptes signalés, bien que la récupération des fonds soit rarement possible. Si le montant est significatif, envisagez de signaler aux forces de l'ordre, bien que le vol transfrontalier de cryptomonnaie soit difficile à enquêter et que les processus juridiques diffèrent considérablement selon la juridiction.",
+       "Formez-vous sur la sécurité des portefeuilles, les interactions avec les contrats intelligents et les mécanismes spécifiques des plateformes que vous utilisez. Les arnaques réussissent parce qu'elles exploitent l'urgence, la confiance et la méconnaissance des processus techniques. Prendre le temps de vérifier avant d'agir est la défense la plus efficace."
+      ]
+     }
+    ]
+   },
+   "pl": {
+    "title": "Najczęstsze oszustwa kryptowalutowe i jak je rozpoznać, zanim stracisz pieniądze",
+    "excerpt": "Oszustwa związane z kryptowalutami przekształciły się w wyrafinowane operacje, które kradną miliardy rocznie. Ten przewodnik wyjaśnia mechanizmy sześciu najpowszechniejszych schematów oraz konkretne sygnały ostrzegawcze, które je demaskują.",
+    "sections": [
+     {
+      "h": "Fałszywe konta wsparcia w mediach społecznościowych i aplikacjach komunikacyjnych",
+      "p": [
+       "Kiedy publikujesz pytanie w społeczności kryptowalutowej lub wspominasz o problemie z giełdą, oszuści monitorują te kanały i odpowiadają w ciągu kilku minut, podając się za oficjalne wsparcie. Używają nazw użytkownika niemal identycznych z legalnymi kontami – często dodając pojedynczy znak, podkreślenie lub używając zera zamiast litery O. Na Telegramie i Discordzie natychmiast wysyłają wiadomość prywatną, podczas gdy na Twitterze odpowiadają na twój tweet pomocnym tonem.",
+       "Sygnał rozpoznawczy: żadna legalna giełda, dostawca portfela ani projekt blockchain nigdy nie zainicjuje wiadomości bezpośredniej prosząc o weryfikację konta, walidację portfela lub rozwiązanie problemu z wypłatą. Oficjalne wsparcie zawsze kieruje do złożenia zgłoszenia przez ich stronę internetową lub system w aplikacji. W momencie gdy ktoś prosi o wprowadzenie frazy seed na udostępnionej przez nich stronie internetowej lub zeskanowanie kodu QR w celu \"synchronizacji\" portfela, rozmawiasz z oszustem. Prawdziwe wsparcie nigdy nie prosi o te informacje.",
+       "Jeśli już wprowadziłeś dane uwierzytelniające na linku, który wysłali, przenieś swoje środki natychmiast do nowego portfela z świeżo wygenerowaną frazą seed. Włącz oficjalną dwuskładnikową weryfikację na kontach giełdowych tylko przez stronę ustawień platformy, nigdy przez link wysłany w wiadomości."
+      ]
+     },
+     {
+      "h": "Oszustwa romansowo-inwestycyjne typu \"pig-butchering\"",
+      "p": [
+       "To oszustwo łączy fałszywe zainteresowanie romantyczne z oszukańczymi poradami inwestycyjnymi. Podejście zaczyna się w aplikacjach randkowych, mediach społecznościowych lub nawet \"pomyłkowej\" wiadomości WhatsApp, która zamienia się w przyjazną rozmowę. Przez tygodnie lub miesiące oszust buduje zaufanie i w końcu wspomina, ile zarabia na handlu kryptowalutami na konkretnej platformie. Proponuje nauczenie cię, kierując do zdeponowania środków na pozornie funkcjonującym interfejsie giełdy.",
+       "Platforma jest całkowicie fałszywa. Zobaczysz rosnące saldo, często dramatycznie, co wzmacnia przekonanie, że strategia działa. Gdy spróbujesz dokonać małej wypłaty, może nawet się udać, aby pogłębić zaufanie. Ale gdy spróbujesz wypłacić znaczną kwotę, strona będzie żądać płatności podatków, depozytów zabezpieczających lub opłat weryfikacyjnych – zawsze wymagając wysłania większej ilości kryptowaluty. Bez względu na to, ile wyślesz, dostęp do środków zostanie odmówiony, a w końcu oszust i strona znikają.",
+       "Sygnał rozpoznawczy: każda platforma handlowa, której nie odkryłeś poprzez niezależne badania, jest podejrzana. Zweryfikuj giełdę przez wiele źródeł: sprawdź rejestrację w organach nadzoru finansowego tam, gdzie ma to zastosowanie (przepisy różnią się znacznie w zależności od kraju i to nie jest porada finansowa, ale wiele krajów prowadzi publiczne listy zarejestrowanych podmiotów lub tych, przed którymi ostrzega), wyszukaj nazwę domeny z dodanym słowem \"oszustwo\" i spróbuj znaleźć recenzje na niezależnych forach. Prawdziwe zyski nigdy nie wymagają płatności podatków z góry w kryptowalucie; zobowiązania podatkowe są rozliczane podczas oficjalnych okresów składania deklaracji z organami podatkowymi, a nie przez wysyłanie Bitcoina na giełdę."
+      ]
+     },
+     {
+      "h": "Oszukańcze airdropy i szkodliwe zatwierdzenia tokenów",
+      "p": [
+       "Zauważasz nieznane tokeny o wartości setek lub tysięcy złotych, które nagle pojawiają się w twoim portfelu. Gdy próbujesz je sprzedać na zdecentralizowanej giełdzie, transakcja wymaga zatwierdzenia pozwolenia na wydatkowanie tokenów. To zatwierdzenie przyznaje smart kontraktowi pełny dostęp do tokenów w twoim portfelu. Po podpisaniu kontrakt opróżnia twoje legalne zasoby – stablecoiny, Ethereum lub inne wartościowe aktywa.",
+       "Wariant obejmuje ogłoszenia airdropów w mediach społecznościowych lub przez e-mail, wymagające \"odebrania\" tokenów przez podłączenie portfela do złośliwej strony internetowej. Strona wymaga podpisu, który wygląda jak funkcja odbioru, ale w rzeczywistości jest zatwierdzeniem przyznającym atakującemu uprawnienie do transferu twoich aktywów.",
+       "Sygnał rozpoznawczy: nieoczekiwane tokeny w portfelu należy ignorować, a nie sprzedawać. Przed podpisaniem jakiegokolwiek zatwierdzenia tokena sprawdź dokładnie, co zatwierdzasz, używając narzędzi takich jak dekoder transakcji Etherscan lub Revoke.cash do przeglądu aktywnych uprawnień. Legalne airdropy od znanych projektów są ogłaszane przez ich oficjalne kanały i zazwyczaj nie wymagają podpisywania szerokich zatwierdzeń portfela. Jeśli token nie może być sprzedany bez błędu lub interfejs wymiany zachowuje się nietypowo, zatrzymaj się. Odwołaj wszelkie podejrzane uprawnienia natychmiast używając tych samych narzędzi do zarządzania uprawnieniami."
+      ]
+     },
+     {
+      "h": "Sklonowane strony giełd i portfeli",
+      "p": [
+       "Oszuści kupują nazwy domen niemal identyczne z głównymi giełdami – podstawiając znaki, dodając myślniki lub używając alternatywnych domen najwyższego poziomu jak .cc lub .co zamiast .com. Te sklonowane strony replikują projekt doskonale i często pojawiają się w reklamach wyszukiwarek powyżej legalnego wyniku. Gdy się logujesz, twoje dane uwierzytelniające są przechwytywane. Jeśli wpłacisz kryptowalutę na adres portfela wyświetlany na stronie, środki trafiają bezpośrednio do oszusta.",
+       "Sygnał rozpoznawczy: zawsze wpisuj URL giełd ręcznie lub używaj zakładki, którą zweryfikowałeś. Sprawdź HTTPS i zbadaj dokładną pisownię domeny przed wprowadzeniem danych logowania. Reklamy w wyszukiwarkach są powszechnym wektorem; pierwszy wynik nie zawsze jest legalny. Jeśli zalogowałeś się na stronie i później zdałeś sobie sprawę, że była fałszywa, załóż, że twój e-mail, hasło i kody zapasowe dwuskładnikowej weryfikacji są skompromitowane. Natychmiast zaloguj się na prawdziwą platformę ze zweryfikowanego URL i zmień swoje dane. Jeśli włączyłeś dwuskładnikową weryfikację na fałszywej stronie, oszust ma dostęp do twojego sekretu 2FA; zresetuj go na prawdziwej platformie.",
+       "W przypadku stron portfeli zweryfikuj link do pobrania przez oficjalne konta mediów społecznościowych projektu lub repozytorium GitHub. Fałszywe oprogramowanie portfela ukradnie twoją frazę seed w momencie jej wprowadzenia."
+      ]
+     },
+     {
+      "h": "Fundusze inwestycyjne z gwarantowanym zwrotem i struktury Ponziego",
+      "p": [
+       "Platformy obiecują stałe dzienne, tygodniowe lub miesięczne zwroty – często 1% dziennie, 10% tygodniowo lub podobne liczby znacznie przewyższające tradycyjne finanse. Mogą nazywać się kryptowalutowymi funduszami hedgingowymi, operacjami wydobywczymi, botami arbitrażowymi lub pulami płynności zarządzanymi przez ekspertów. Wcześni uczestniczy otrzymują wypłaty finansowane z depozytów nowych inwestorów, co tworzy referencje i dowód społeczny. Schemat trwa, dopóki operator nie zniknie z pozostałymi środkami.",
+       "Sygnał rozpoznawczy: żadna legalna inwestycja nie może gwarantować zwrotów, a na pewno nie w stawkach, które podwoiłyby twój kapitał co kilka miesięcy. Zwroty na rynkach kryptowalut, jak na wszystkich rynkach, niosą ryzyko i wahają się. Bądź szczególnie ostrożny wobec platform wymagających rekrutowania innych w celu odblokowania wyższych zysków lub uprawnień do wypłat – to cecha struktury piramidy. Sprawdź, czy fundusz jest zarejestrowany lub licencjonowany tam, gdzie ma to zastosowanie (wymagania regulacyjne znacznie różnią się w zależności od kraju i to nie jest porada prawna). Prawdziwy fundusz dostarczy weryfikowalny dowód rezerw, przejrzyste struktury opłat i dokumentację regulacyjną, którą możesz niezależnie potwierdzić.",
+       "Jeśli już wpłaciłeś środki, spróbuj wypłacić natychmiast. Wiele takich platform nakłada okresy blokady lub limity wypłat zaprojektowane, aby opóźnić twój dostęp do czasu upadku schematu."
+      ]
+     },
+     {
+      "h": "Ataki typu SIM-swap wymierzone w dwuskładnikową weryfikację SMS",
+      "p": [
+       "Oszust zbiera osobiste informacje o tobie – często z wycieków danych, mediów społecznościowych lub phishingu – i kontaktuje się z twoim operatorem komórkowym podszywając się pod ciebie. Twierdzi, że stracił telefon i prosi o przeniesienie numeru na nową kartę SIM, którą kontroluje. Gdy operator wyrazi zgodę, atakujący otrzymuje wszystkie wiadomości SMS wysłane na twój numer, w tym kody dwuskładnikowej weryfikacji do poczty e-mail, kont giełdowych i innych usług.",
+       "Mając dostęp do kodów SMS, resetują hasła i wypłacają środki z kont chronionych tylko przez weryfikację opartą na SMS. Ten atak nie wymaga fizycznego dostępu do telefonu ani wyrafinowanego hakowania; wykorzystuje proces obsługi klienta operatora.",
+       "Sygnał rozpoznawczy: weryfikacja SMS jest najsłabszą powszechną formą zabezpieczenia dwuskładnikowego. Zastąp ją tam, gdzie to możliwe, aplikacjami uwierzytelniającymi generującymi kody oparte na czasie (takimi jak Google Authenticator, Authy lub inne) lub sprzętowymi kluczami bezpieczeństwa. Te metody nie są podatne na wymiany SIM, ponieważ nie polegają na sieci telefonicznej. Skontaktuj się z operatorem komórkowym i poproś o dodanie wymogu PIN lub hasła dla wszelkich zmian SIM – procedury różnią się w zależności od operatora i kraju, ale większość obecnie oferuje tę ochronę. Jeśli nagle stracisz usługę mobilną bez wyjaśnienia, załóż, że może być w toku wymiana SIM i natychmiast skontaktuj się z operatorem oraz zacznij zabezpieczać konta z zaufanego urządzenia."
+      ]
+     },
+     {
+      "h": "Co robić, jeśli zostałeś namierzony",
+      "p": [
+       "Jeśli udostępniłeś frazę seed, wprowadziłeś ją na stronie internetowej lub podpisałeś podejrzane zatwierdzenie smart kontraktu, przenieś wszelkie pozostałe środki natychmiast do nowego portfela ze świeżo wygenerowaną frazą seed na urządzeniu, któremu ufasz. Nie używaj ponownie skompromitowanego portfela. W przypadku kont giełdowych zmień hasła i zresetuj dwuskładnikową weryfikację ze zweryfikowanego URL.",
+       "Zgłoś oszustwo na platformie, na której wystąpiło – sieci społecznościowe, sklepy z aplikacjami i giełdy podejmują działania przeciwko zgłoszonym kontom, choć odzyskanie środków jest rzadko możliwe. Jeśli kwota jest znacząca, rozważ zgłoszenie organom ścigania, choć transgraniczne kradzieże kryptowalut są trudne do zbadania, a procesy prawne znacznie różnią się w zależności od jurysdykcji.",
+       "Edukuj się na temat bezpieczeństwa portfeli, interakcji ze smart kontraktami i konkretnych mechanizmów platform, których używasz. Oszustwa odnoszą sukcesy, ponieważ wykorzystują pilność, zaufanie i brak znajomości procesów technicznych. Poświęcenie czasu na weryfikację przed działaniem to najskuteczniejsza obrona."
+      ]
+     }
+    ]
+   },
+   "pt": {
+    "title": "Os Golpes Cripto Mais Comuns e Como Reconhecê-los Antes de Perder Dinheiro",
+    "excerpt": "Os golpes de criptomoedas evoluíram para operações sofisticadas que roubam bilhões anualmente. Este guia explica a mecânica dos seis esquemas mais prevalentes e os sinais de alerta específicos que os expõem.",
+    "sections": [
+     {
+      "h": "Contas Falsas de Suporte em Redes Sociais e Aplicativos de Mensagens",
+      "p": [
+       "Quando você posta uma pergunta numa comunidade cripto ou menciona um problema com uma corretora, os golpistas monitoram esses canais e respondem em minutos se passando por suporte oficial. Eles usam nomes de usuário quase idênticos às contas legítimas—frequentemente adicionando um único caractere, underscore, ou usando um zero no lugar da letra O. No Telegram e Discord, eles enviam mensagem direta imediatamente, enquanto no Twitter respondem ao seu tweet com um tom prestativo.",
+       "O sinal: nenhuma corretora, provedor de carteira ou projeto blockchain legítimo jamais iniciará uma mensagem direta pedindo para você verificar sua conta, validar sua carteira ou resolver um problema de saque. O suporte oficial sempre direciona você a abrir um ticket através do site ou sistema do aplicativo. No momento em que alguém pede para você inserir sua frase-semente num site que eles fornecem, ou escanear um código QR para \"sincronizar\" sua carteira, você está falando com um golpista. O suporte real nunca solicita essas informações.",
+       "Se você já inseriu credenciais num link que eles enviaram, mova seus fundos imediatamente para uma nova carteira com uma frase-semente recém-gerada. Ative a autenticação de dois fatores oficial em contas de corretoras apenas através da página de configurações da plataforma, nunca através de um link enviado por mensagem."
+      ]
+     },
+     {
+      "h": "Golpes de Romance e Investimento Tipo \"Abate de Porco\"",
+      "p": [
+       "Este golpe combina interesse romântico falso com conselhos fraudulentos de investimento. A abordagem começa em aplicativos de namoro, redes sociais ou até uma mensagem de WhatsApp de \"número errado\" que se transforma em conversa amigável. Ao longo de semanas ou meses, o golpista constrói confiança e eventualmente menciona quanto dinheiro ganha negociando criptomoedas numa plataforma específica. Eles se oferecem para ensinar você, guiando-o a depositar fundos no que parece ser uma interface de corretora funcional.",
+       "A plataforma é inteiramente falsa. Você verá seu saldo crescer, frequentemente de forma dramática, reforçando a crença de que a estratégia funciona. Quando você tenta um pequeno saque, pode até ter sucesso para aprofundar a confiança. Mas quando tenta sacar um valor significativo, o site exigirá pagamentos de impostos, depósitos de segurança ou taxas de verificação—sempre exigindo que você envie mais criptomoedas. Não importa quanto você envie, o acesso aos seus fundos será negado, e eventualmente o golpista e o site desaparecem.",
+       "O sinal: qualquer plataforma de negociação que você não descobriu através de pesquisa independente é suspeita. Verifique a corretora através de múltiplas fontes: cheque o registro junto a órgãos reguladores financeiros quando aplicável (as regras variam muito por jurisdição e isto não é conselho financeiro, mas muitos países mantêm listas públicas de entidades registradas ou com alertas), busque o nome do domínio com a palavra \"golpe\" adicionada, e tente encontrar avaliações em fóruns independentes. Lucros genuínos nunca exigem pagamentos antecipados de impostos em criptomoedas; obrigações fiscais são acertadas durante períodos oficiais de declaração junto à Receita Federal, não enviando Bitcoin para uma corretora."
+      ]
+     },
+     {
+      "h": "Airdrops Fraudulentos e Aprovações Maliciosas de Tokens",
+      "p": [
+       "Você nota tokens desconhecidos valendo centenas ou milhares de reais aparecendo subitamente na sua carteira. Quando você tenta vendê-los numa corretora descentralizada, a transação exige que você aprove uma permissão de gasto de tokens. Essa aprovação concede a um contrato inteligente acesso total aos tokens na sua carteira. Uma vez assinado, o contrato drena seus ativos legítimos—stablecoins, Ethereum ou outros ativos valiosos.",
+       "Uma variação envolve anúncios de airdrop em redes sociais ou por e-mail exigindo que você \"reivindique\" tokens conectando sua carteira a um site malicioso. O site solicita uma assinatura que parece ser uma função de reivindicação mas na verdade é uma aprovação concedendo ao atacante permissão para transferir seus ativos.",
+       "O sinal: tokens inesperados na sua carteira devem ser ignorados, não vendidos. Antes de assinar qualquer aprovação de token, verifique exatamente o que você está autorizando usando ferramentas como o decodificador de transações do Etherscan ou Revoke.cash para revisar permissões ativas. Airdrops legítimos de projetos conhecidos são anunciados através de seus canais oficiais e tipicamente não exigem que você assine aprovações amplas de carteira. Se um token não pode ser vendido sem erro, ou a interface de troca se comporta de forma incomum, pare. Revogue quaisquer permissões suspeitas imediatamente usando as mesmas ferramentas de gerenciamento de permissões."
+      ]
+     },
+     {
+      "h": "Sites Clonados de Corretoras e Carteiras",
+      "p": [
+       "Golpistas compram nomes de domínio quase idênticos às principais corretoras—substituindo caracteres, adicionando hífens, ou usando domínios de topo alternativos como .cc ou .co em vez de .com.br. Esses sites clonados replicam o design perfeitamente, e frequentemente aparecem em anúncios de mecanismos de busca acima do resultado legítimo. Quando você faz login, suas credenciais são capturadas. Se você deposita criptomoedas num endereço de carteira exibido no site, os fundos vão diretamente para o golpista.",
+       "O sinal: sempre digite URLs de corretoras manualmente ou use um link favorito que você verificou. Verifique o HTTPS e examine a ortografia exata do domínio antes de inserir quaisquer detalhes de login. Anúncios em mecanismos de busca são um vetor comum; o primeiro resultado nem sempre é legítimo. Se você fez login num site e depois percebeu que era fraudulento, assuma que seu e-mail, senha e códigos de backup de dois fatores estão comprometidos. Imediatamente faça login na plataforma real a partir de uma URL verificada e altere suas credenciais. Se você ativou autenticação de dois fatores no site falso, o golpista tem acesso ao seu segredo 2FA; redefina-o na plataforma genuína.",
+       "Para sites de carteiras, verifique o link de download através das contas oficiais do projeto nas redes sociais ou repositório GitHub. Software de carteira falso roubará sua frase-semente no momento em que você inseri-la."
+      ]
+     },
+     {
+      "h": "Fundos de Investimento com Retorno Garantido e Estruturas Ponzi",
+      "p": [
+       "Plataformas prometem retornos fixos diários, semanais ou mensais—frequentemente 1% por dia, 10% por semana, ou valores similares que excedem em muito as finanças tradicionais. Podem se apresentar como fundos hedge cripto, operações de mineração, robôs de arbitragem ou pools de liquidez geridos por traders experientes. Participantes iniciais recebem pagamentos financiados por depósitos de novos investidores, o que cria depoimentos e prova social. O esquema continua até o operador desaparecer com os fundos restantes.",
+       "O sinal: nenhum investimento legítimo pode garantir retornos, e certamente não a taxas que dobrariam seu capital a cada poucos meses. Retornos em mercados de criptomoedas, como em todos os mercados, carregam risco e flutuam. Desconfie especialmente de plataformas que exigem que você recrute outros para desbloquear rendimentos maiores ou permissões de saque—esta é uma marca registrada de estrutura de pirâmide. Verifique se o fundo está registrado ou licenciado quando aplicável (requisitos regulatórios diferem significativamente por país, e isto não é conselho jurídico). Um fundo genuíno fornecerá prova verificável de reservas, estruturas de taxas transparentes e registros regulatórios que você pode confirmar independentemente.",
+       "Se você já depositou fundos, tente sacar imediatamente. Muitas dessas plataformas impõem períodos de bloqueio ou limites de saque projetados para atrasar seu acesso até o esquema colapsar."
+      ]
+     },
+     {
+      "h": "Ataques de Troca de SIM Visando Autenticação de Dois Fatores por SMS",
+      "p": [
+       "Um golpista reúne informações pessoais sobre você—frequentemente de vazamentos de dados, redes sociais ou phishing—e contata sua operadora de celular se passando por você. Eles alegam ter perdido o telefone e solicitam que o número seja transferido para um novo chip SIM que eles controlam. Uma vez que a operadora atende, o atacante recebe todas as mensagens SMS enviadas ao seu número, incluindo códigos de autenticação de dois fatores para e-mail, contas de corretoras e outros serviços.",
+       "Com acesso aos seus códigos SMS, eles redefinem senhas e sacam fundos de contas protegidas apenas por autenticação baseada em SMS. Este ataque não requer acesso físico ao seu telefone ou hacking sofisticado; ele explora o processo de atendimento ao cliente da operadora.",
+       "O sinal: autenticação por SMS é a forma mais fraca de segurança de dois fatores comumente usada. Substitua-a sempre que possível por aplicativos autenticadores que geram códigos baseados em tempo (como Google Authenticator, Authy ou outros) ou chaves de segurança de hardware. Esses métodos não são vulneráveis a trocas de SIM porque não dependem da rede telefônica. Contate sua operadora de celular e peça para adicionar um requisito de PIN ou senha para quaisquer mudanças de SIM—procedimentos variam por operadora e país, mas a maioria agora oferece essa proteção. Se você perder subitamente o serviço móvel sem explicação, assuma que uma troca de SIM pode estar em andamento e imediatamente contate sua operadora e comece a proteger contas a partir de um dispositivo confiável."
+      ]
+     },
+     {
+      "h": "O Que Fazer Se Você Foi Alvo",
+      "p": [
+       "Se você compartilhou uma frase-semente, inseriu-a num site, ou assinou uma aprovação suspeita de contrato inteligente, mova quaisquer fundos restantes imediatamente para uma nova carteira com uma frase-semente recém-gerada num dispositivo que você confia. Não reutilize a carteira comprometida. Para contas de corretoras, altere senhas e redefina a autenticação de dois fatores a partir de uma URL verificada.",
+       "Denuncie o golpe à plataforma onde ocorreu—redes sociais, lojas de aplicativos e corretoras tomam medidas contra contas denunciadas, embora a recuperação de fundos raramente seja possível. Se o valor for significativo, considere denunciar às autoridades policiais, embora roubo transfronteiriço de criptomoedas seja difícil de investigar e processos legais diferem amplamente por jurisdição.",
+       "Eduque-se sobre segurança de carteiras, interações com contratos inteligentes e os mecanismos específicos das plataformas que você usa. Golpes têm sucesso porque exploram urgência, confiança e falta de familiaridade com processos técnicos. Dedicar tempo para verificar antes de agir é a defesa mais eficaz."
+      ]
+     }
+    ]
+   },
+   "uk": {
+    "title": "Найпоширеніші крипто-шахрайства та як їх розпізнати перед втратою грошей",
+    "excerpt": "Криптовалютні шахрайства еволюціонували в складні операції, які викрадають мільярди щороку. Цей посібник пояснює механіку шести найпоширеніших схем та конкретні ознаки, які їх викривають.",
+    "sections": [
+     {
+      "h": "Фальшиві акаунти підтримки в соціальних мережах та месенджерах",
+      "p": [
+       "Коли ви публікуєте питання в крипто-спільноті або згадуєте проблему з біржею, шахраї відстежують ці канали й відповідають протягом хвилин, видаючи себе за офіційну підтримку. Вони використовують імена користувачів майже ідентичні до легітимних акаунтів—часто додаючи один символ, підкреслення або використовуючи нуль замість літери О. У Telegram та Discord вони надсилають вам особисті повідомлення негайно, а в Twitter відповідають на ваш твіт у дружньому тоні.",
+       "Ознака: жодна легітимна біржа, постачальник гаманця чи блокчейн-проект ніколи не ініціює особисте повідомлення з проханням верифікувати ваш акаунт, підтвердити ваш гаманець або вирішити проблему з виведенням коштів. Офіційна підтримка завжди направляє вас подати заявку через їхній веб-сайт або систему в додатку. У момент, коли хтось просить вас ввести вашу seed-фразу на веб-сайті, який вони надають, або відсканувати QR-код для \"синхронізації\" вашого гаманця, ви спілкуєтеся з шахраєм. Справжня підтримка ніколи не запитує цю інформацію.",
+       "Якщо ви вже ввели облікові дані за посиланням, яке вони надіслали, негайно переведіть свої кошти в новий гаманець зі щойно згенерованою seed-фразою. Увімкніть офіційну двофакторну автентифікацію на біржових акаунтах лише через сторінку налаштувань платформи, ніколи через посилання, надіслане в повідомленні."
+      ]
+     },
+     {
+      "h": "Романтичні та інвестиційні шахрайства типу \"відгодівля свині\"",
+      "p": [
+       "Це шахрайство поєднує фальшивий романтичний інтерес з шахрайськими інвестиційними порадами. Підхід починається в додатках для знайомств, соціальних мережах або навіть \"помилковому\" повідомленні WhatsApp, яке переростає в дружню розмову. Протягом тижнів або місяців шахрай будує довіру й зрештою згадує, скільки грошей заробляє на торгівлі криптовалютою на конкретній платформі. Вони пропонують навчити вас, спрямовуючи внести кошти на те, що виглядає як функціонуючий біржовий інтерфейс.",
+       "Платформа повністю фальшива. Ви побачите, як ваш баланс зростає, часто драматично, що підсилює віру в те, що стратегія працює. Коли ви спробуєте невелике виведення, воно може навіть вдатися, щоб поглибити довіру. Але коли ви спробуєте вивести значну суму, сайт вимагатиме сплати податків, гарантійних депозитів або верифікаційних зборів—завжди вимагаючи надіслати більше криптовалюти. Незалежно від того, скільки ви надішлете, доступ до ваших коштів буде заборонено, і зрештою шахрай і сайт зникають.",
+       "Ознака: будь-яка торгова платформа, яку ви не виявили через незалежне дослідження, є підозрілою. Перевірте біржу через кілька джерел: перевірте реєстрацію у фінансових регуляторів, де це застосовно (правила сильно відрізняються залежно від юрисдикції, і це не фінансова порада, але багато країн ведуть публічні списки зареєстрованих або попереджених організацій), пошукайте доменне ім'я з доданим словом \"шахрайство\", і спробуйте знайти відгуки на незалежних форумах. Справжні прибутки ніколи не вимагають попередніх платежів податків у криптовалюті; податкові зобов'язання врегульовуються під час офіційних періодів подачі декларацій з податковими органами, а не надсиланням Bitcoin на біржу."
+      ]
+     },
+     {
+      "h": "Шахрайські airdrop'и та шкідливі схвалення токенів",
+      "p": [
+       "Ви помічаєте незнайомі токени вартістю сотні або тисячі гривень, що раптово з'являються у вашому гаманці. Коли ви намагаєтеся продати їх на децентралізованій біржі, транзакція вимагає схвалити дозвіл на витрату токенів. Це схвалення надає смарт-контракту повний доступ до токенів у вашому гаманці. Після підписання контракт зливає ваші легітимні активи—стейблкоїни, Ethereum або інші цінні активи.",
+       "Варіація включає оголошення airdrop'ів у соціальних мережах або електронною поштою, що вимагають \"отримати\" токени, підключивши свій гаманець до шкідливого веб-сайту. Сайт запитує підпис, який здається функцією отримання, але насправді є схваленням, що надає атакуючому дозвіл на переказ ваших активів.",
+       "Ознака: несподівані токени у вашому гаманці слід ігнорувати, а не продавати. Перед підписанням будь-якого схвалення токенів перевірте, що саме ви авторизуєте, використовуючи такі інструменти, як декодер транзакцій Etherscan або Revoke.cash для перегляду активних дозволів. Легітимні airdrop'и від відомих проектів оголошуються через їхні офіційні канали і зазвичай не вимагають підписувати широкі схвалення гаманця. Якщо токен не можна продати без помилки, або інтерфейс обміну поводиться незвично, зупиніться. Негайно відкличте будь-які підозрілі дозволи, використовуючи ті самі інструменти управління дозволами."
+      ]
+     },
+     {
+      "h": "Клоновані веб-сайти бірж та гаманців",
+      "p": [
+       "Шахраї купують доменні імена майже ідентичні до основних бірж—замінюючи символи, додаючи дефіси або використовуючи альтернативні доменні зони як .cc або .co замість .com. Ці клоновані сайти ідеально повторюють дизайн і часто з'являються в рекламі пошукових систем вище легітимного результату. Коли ви входите в систему, ваші облікові дані перехоплюються. Якщо ви вносите криптовалюту на адресу гаманця, відображену на сайті, кошти йдуть безпосередньо до шахрая.",
+       "Ознака: завжди вводьте URL-адреси бірж вручну або використовуйте закладку, яку ви перевірили. Перевірте наявність HTTPS і ретельно перевірте точне написання домену перед введенням будь-яких облікових даних. Реклама в пошукових системах є поширеним вектором; перший результат не завжди легітимний. Якщо ви увійшли на сайт і пізніше зрозуміли, що він був шахрайським, припустіть, що ваша електронна пошта, пароль і резервні коди двофакторної автентифікації скомпрометовані. Негайно увійдіть на справжню платформу з перевіреної URL-адреси та змініть свої облікові дані. Якщо ви увімкнули двофакторну автентифікацію на фальшивому сайті, шахрай має доступ до вашого секрету 2FA; скиньте його на справжній платформі.",
+       "Для сайтів гаманців перевірте посилання для завантаження через офіційні акаунти проекту в соціальних мережах або репозиторій GitHub. Фальшиве програмне забезпечення гаманця викраде вашу seed-фразу в момент її введення."
+      ]
+     },
+     {
+      "h": "Інвестиційні фонди з гарантованою прибутковістю та структури Понці",
+      "p": [
+       "Платформи обіцяють фіксовану щоденну, щотижневу або щомісячну прибутковість—часто 1% на день, 10% на тиждень або подібні цифри, що значно перевищують традиційні фінанси. Вони можуть представляти себе як крипто-хедж-фонди, майнінгові операції, арбітражні боти або пули ліквідності, керовані експертними трейдерами. Ранні учасники отримують виплати, які фінансуються депозитами нових інвесторів, що створює відгуки та соціальний доказ. Схема продовжується, доки оператор не зникне із залишковими коштами.",
+       "Ознака: жодна легітимна інвестиція не може гарантувати прибутковість, і точно не за ставками, які подвоїли б ваш капітал кожні кілька місяців. Прибутковість на ринках криптовалют, як і на всіх ринках, несе ризик і коливається. Будьте особливо обережні з платформами, які вимагають залучати інших для розблокування вищих доходів або дозволів на виведення—це характерна ознака пірамідальної структури. Перевірте, чи зареєстрований або ліцензований фонд, де це застосовно (регуляторні вимоги значно відрізняються за країнами, і це не юридична порада). Справжній фонд надасть перевіряємі докази резервів, прозорі структури комісій та регуляторні документи, які ви можете незалежно підтвердити.",
+       "Якщо ви вже внесли кошти, спробуйте вивести негайно. Багато таких платформ встановлюють періоди блокування або ліміти виведення, розроблені для затримки вашого доступу до колапсу схеми."
+      ]
+     },
+     {
+      "h": "SIM-swap атаки, спрямовані на двофакторну автентифікацію через SMS",
+      "p": [
+       "Шахрай збирає особисту інформацію про вас—часто з витоків даних, соціальних мереж або фішингу—і зв'язується з вашим мобільним оператором, видаючи себе за вас. Вони стверджують, що втратили телефон, і просять перенести номер на нову SIM-карту, яку вони контролюють. Як тільки оператор виконує запит, зловмисник отримує всі SMS-повідомлення, надіслані на ваш номер, включаючи коди двофакторної автентифікації для електронної пошти, біржових акаунтів та інших сервісів.",
+       "Маючи доступ до ваших SMS-кодів, вони скидають паролі та виводять кошти з акаунтів, захищених лише SMS-автентифікацією. Ця атака не вимагає фізичного доступу до вашого телефону чи складного злому; вона експлуатує процес обслуговування клієнтів оператора.",
+       "Ознака: SMS-автентифікація є найслабшою поширеною формою двофакторної безпеки. Замініть її, де можливо, на додатки-автентифікатори, що генерують коди на основі часу (такі як Google Authenticator, Authy або інші) або апаратні ключі безпеки. Ці методи не вразливі до SIM-swap, оскільки не покладаються на телефонну мережу. Зв'яжіться зі своїм мобільним оператором і попросіть додати вимогу PIN-коду або пароля для будь-яких змін SIM—процедури відрізняються за оператором і країною, але більшість зараз пропонують цей захист. Якщо ви раптово втратили мобільний зв'язок без пояснення, припустіть, що SIM-swap може бути в процесі, і негайно зв'яжіться з вашим оператором та почніть захищати акаунти з довіреного пристрою."
+      ]
+     },
+     {
+      "h": "Що робити, якщо ви стали ціллю",
+      "p": [
+       "Якщо ви поділилися seed-фразою, ввели її на веб-сайті або підписали підозріле схвалення смарт-контракту, негайно переведіть будь-які залишкові кошти в новий гаманець зі щойно згенерованою seed-фразою на пристрої, якому ви довіряєте. Не використовуйте повторно скомпрометований гаманець. Для біржових акаунтів змініть паролі та скиньте двофакторну автентифікацію з перевіреної URL-адреси.",
+       "Повідомте про шахрайство на платформі, де воно сталося—соціальні мережі, магазини додатків та біржі дійсно вживають заходів проти заявлених акаунтів, хоча відновлення коштів рідко можливе. Якщо сума значна, розгляньте можливість повідомлення правоохоронним органам, хоча транскордонну крадіжку криптовалюти важко розслідувати, і правові процеси значно відрізняються залежно від юрисдикції.",
+       "Освічуйте себе щодо безпеки гаманця, взаємодій зі смарт-контрактами та конкретних механізмів платформ, які ви використовуєте. Шахрайства успішні, тому що експлуатують терміновість, довіру та незнайомість з технічними процесами. Виділення часу на перевірку перед дією є найефективнішим захистом."
+      ]
+     }
+    ]
+   },
+   "ru": {
+    "title": "Самые распространённые крипто-мошенничества и как их распознать до потери денег",
+    "excerpt": "Криптовалютное мошенничество превратилось в сложные операции, которые крадут миллиарды ежегодно. Это руководство объясняет механику шести наиболее распространённых схем и конкретные признаки, которые их разоблачают.",
+    "sections": [
+     {
+      "h": "Фальшивые аккаунты поддержки в социальных сетях и мессенджерах",
+      "p": [
+       "Когда вы публикуете вопрос в крипто-сообществе или упоминаете проблему с биржей, мошенники отслеживают эти каналы и отвечают в течение минут, выдавая себя за официальную поддержку. Они используют имена пользователей почти идентичные легитимным аккаунтам—часто добавляя один символ, подчёркивание или используя ноль вместо буквы О. В Telegram и Discord они сразу отправляют личное сообщение, а в Twitter отвечают на ваш твит в дружелюбном тоне.",
+       "Признак: ни одна легитимная биржа, провайдер кошелька или блокчейн-проект никогда не инициирует личное сообщение с просьбой верифицировать ваш аккаунт, подтвердить ваш кошелёк или решить проблему с выводом средств. Официальная поддержка всегда направляет вас подать заявку через их веб-сайт или систему в приложении. В момент, когда кто-то просит вас ввести вашу seed-фразу на сайте, который они предоставляют, или отсканировать QR-код для \"синхронизации\" вашего кошелька, вы общаетесь с мошенником. Настоящая поддержка никогда не запрашивает эту информацию.",
+       "Если вы уже ввели учётные данные по ссылке, которую они прислали, немедленно переведите свои средства в новый кошелёк со свежесгенерированной seed-фразой. Включайте официальную двухфакторную аутентификацию на биржевых аккаунтах только через страницу настроек платформы, никогда через ссылку, отправленную в сообщении."
+      ]
+     },
+     {
+      "h": "Романтическое и инвестиционное мошенничество типа \"откорм свиньи\"",
+      "p": [
+       "Это мошенничество сочетает фальшивый романтический интерес с мошенническими инвестиционными советами. Подход начинается в приложениях знакомств, социальных сетях или даже \"ошибочном\" сообщении WhatsApp, которое превращается в дружескую беседу. В течение недель или месяцев мошенник строит доверие и в конечном итоге упоминает, сколько денег зарабатывает на торговле криптовалютой на конкретной платформе. Они предлагают научить вас, направляя внести средства на то, что выглядит как функционирующий биржевой интерфейс.",
+       "Платформа полностью фальшивая. Вы увидите, как ваш баланс растёт, часто драматически, что укрепляет веру в то, что стратегия работает. Когда вы попытаетесь небольшой вывод, он может даже пройти, чтобы углубить доверие. Но когда вы попытаетесь вывести значительную сумму, сайт потребует уплаты налогов, гарантийных депозитов или верификационных сборов—всегда требуя отправить больше криптовалюты. Независимо от того, сколько вы отправите, доступ к вашим средствам будет запрещён, и в конечном итоге мошенник и сайт исчезают.",
+       "Признак: любая торговая платформа, которую вы не обнаружили через независимое исследование, подозрительна. Проверьте биржу через несколько источников: проверьте регистрацию у финансовых регуляторов, где это применимо (правила сильно различаются в зависимости от юрисдикции, и это не финансовый совет, но многие страны ведут публичные списки зарегистрированных или предупреждённых организаций), найдите доменное имя с добавленным словом \"мошенничество\", и попытайтесь найти отзывы на независимых форумах. Настоящая прибыль никогда не требует предварительных налоговых платежей в криптовалюте; налоговые обязательства урегулируются во время официальных периодов подачи деклараций с налоговыми органами, а не отправкой Bitcoin на биржу."
+      ]
+     },
+     {
+      "h": "Мошеннические airdrop'ы и вредоносные одобрения токенов",
+      "p": [
+       "Вы замечаете незнакомые токены стоимостью сотни или тысячи рублей, внезапно появляющиеся в вашем кошельке. Когда вы пытаетесь продать их на децентрализованной бирже, транзакция требует одобрить разрешение на расход токенов. Это одобрение предоставляет смарт-контракту полный доступ к токенам в вашем кошельке. После подписания контракт сливает ваши легитимные активы—стейблкоины, Ethereum или другие ценные активы.",
+       "Вариация включает объявления airdrop'ов в социальных сетях или по электронной почте, требующие \"получить\" токены, подключив свой кошелёк к вредоносному сайту. Сайт запрашивает подпись, которая кажется функцией получения, но на самом деле является одобрением, предоставляющим атакующему разрешение на перевод ваших активов.",
+       "Признак: неожиданные токены в вашем кошельке следует игнорировать, а не продавать. Перед подписанием любого одобрения токенов проверьте, что именно вы авторизуете, используя такие инструменты, как декодер транзакций Etherscan или Revoke.cash для просмотра активных разрешений. Легитимные airdrop'ы от известных проектов объявляются через их официальные каналы и обычно не требуют подписывать широкие одобрения кошелька. Если токен не продаётся без ошибки, или интерфейс обмена ведёт себя необычно, остановитесь. Немедленно отзовите любые подозрительные разрешения, используя те же инструменты управления разрешениями."
+      ]
+     },
+     {
+      "h": "Клонированные веб-сайты бирж и кошельков",
+      "p": [
+       "Мошенники покупают доменные имена почти идентичные крупным биржам—заменяя символы, добавляя дефисы или используя альтернативные доменные зоны как .cc или .co вместо .com или .ru. Эти клонированные сайты идеально повторяют дизайн и часто появляются в рекламе поисковых систем выше легитимного результата. Когда вы входите в систему, ваши учётные данные перехватываются. Если вы вносите криптовалюту на адрес кошелька, отображённый на сайте, средства идут напрямую к мошеннику.",
+       "Признак: всегда вводите URL-адреса бирж вручную или используйте закладку, которую вы проверили. Проверьте наличие HTTPS и тщательно проверьте точное написание домена перед вводом любых учётных данных. Реклама в поисковых системах является распространённым вектором; первый результат не всегда легитимный. Если вы вошли на сайт и позже поняли, что он был мошенническим, предположите, что ваша электронная почта, пароль и резервные коды двухфакторной аутентификации скомпрометированы. Немедленно войдите на настоящую платформу с проверенного URL-адреса и измените свои учётные данные. Если вы включили двухфакторную аутентификацию на фальшивом сайте, мошенник имеет доступ к вашему секрету 2FA; сбросьте его на настоящей платформе.",
+       "Для сайтов кошельков проверьте ссылку для загрузки через официальные аккаунты проекта в социальных сетях или репозиторий GitHub. Фальшивое программное обеспечение кошелька украдёт вашу seed-фразу в момент её ввода."
+      ]
+     },
+     {
+      "h": "Инвестиционные фонды с гарантированной доходностью и структуры Понци",
+      "p": [
+       "Платформы обещают фиксированную ежедневную, еженедельную или ежемесячную доходность—часто 1% в день, 10% в неделю или подобные цифры, значительно превышающие традиционные финансы. Они могут представлять себя как крипто-хедж-фонды, майнинговые операции, арбитражные боты или пулы ликвидности, управляемые экспертными трейдерами. Ранние участники получают выплаты, финансируемые депозитами новых инвесторов, что создаёт отзывы и социальное доказательство. Схема продолжается, пока оператор не исчезнет с оставшимися средствами.",
+       "Признак: ни одна легитимная инвестиция не может гарантировать доходность, и уж точно не по ставкам, которые удвоили бы ваш капитал каждые несколько месяцев. Доходность на рынках криптовалют, как и на всех рынках, несёт риск и колеблется. Будьте особенно осторожны с платформами, требующими привлекать других для разблокировки более высоких доходов или разрешений на вывод—это характерный признак пирамидальной структуры. Проверьте, зарегистрирован ли или лицензирован фонд, где это применимо (регуляторные требования значительно различаются по странам, и это не юридический совет). Настоящий фонд предоставит проверяемые доказательства резервов, прозрачные структуры комиссий и регуляторные документы, которые вы можете независимо подтвердить.",
+       "Если вы уже внесли средства, попытайтесь вывести немедленно. Многие такие платформы устанавливают периоды блокировки или лимиты вывода, разработанные для задержки вашего доступа до краха схемы."
+      ]
+     },
+     {
+      "h": "SIM-swap атаки, направленные на двухфакторную аутентификацию через SMS",
+      "p": [
+       "Мошенник собирает личную информацию о вас—часто из утечек данных, социальных сетей или фишинга—и связывается с вашим мобильным оператором, выдавая себя за вас. Они утверждают, что потеряли телефон, и просят перенести номер на новую SIM-карту, которую они контролируют. Как только оператор выполняет запрос, злоумышленник получает все SMS-сообщения, отправленные на ваш номер, включая коды двухфакторной аутентификации для электронной почты, биржевых аккаунтов и других сервисов.",
+       "Имея доступ к вашим SMS-кодам, они сбрасывают пароли и выводят средства с аккаунтов, защищённых только SMS-аутентификацией. Эта атака не требует физического доступа к вашему телефону или сложного взлома; она эксплуатирует процесс обслуживания клиентов оператора.",
+       "Признак: SMS-аутентификация является самой слабой распространённой формой двухфакторной безопасности. Замените её, где возможно, на приложения-аутентификаторы, генерирующие коды на основе времени (такие как Google Authenticator, Authy или другие) или аппаратные ключи безопасности. Эти методы не уязвимы к SIM-swap, поскольку не полагаются на телефонную сеть. Свяжитесь со своим мобильным оператором и попросите добавить требование PIN-кода или пароля для любых изменений SIM—процедуры различаются по оператору и стране, но большинство сейчас предлагают эту защиту. Если вы внезапно потеряли мобильную связь без объяснения, предположите, что SIM-swap может быть в процессе, и немедленно свяжитесь с вашим оператором и начните защищать аккаунты с доверенного устройства."
+      ]
+     },
+     {
+      "h": "Что делать, если вы стали целью",
+      "p": [
+       "Если вы поделились seed-фразой, ввели её на сайте или подписали подозрительное одобрение смарт-контракта, немедленно переведите любые остаточные средства в новый кошелёк со свежесгенерированной seed-фразой на устройстве, которому вы доверяете. Не используйте повторно скомпрометированный кошелёк. Для биржевых аккаунтов измените пароли и сбросьте двухфакторную аутентификацию с проверенного URL-адреса.",
+       "Сообщите о мошенничестве на платформе, где оно произошло—социальные сети, магазины приложений и биржи действительно принимают меры против заявленных аккаунтов, хотя восстановление средств редко возможно. Если сумма значительна, рассмотрите возможность сообщения в правоохранительные органы, хотя трансграничную кражу криптовалюты сложно расследовать, и правовые процессы сильно различаются в зависимости от юрисдикции.",
+       "Обучайтесь безопасности кошельков, взаимодействиям со смарт-контрактами и конкретным механизмам платформ, которые вы используете. Мошенничество успешно, потому что эксплуатирует срочность, доверие и незнакомство с техническими процессами. Выделение времени на проверку перед действием является наиболее эффективной защитой."
+      ]
+     }
+    ]
+   },
+   "es": {
+    "title": "Las estafas cripto más comunes y cómo reconocerlas antes de perder dinero",
+    "excerpt": "Las estafas de criptomonedas han evolucionado en operaciones sofisticadas que roban miles de millones anualmente. Esta guía explica la mecánica de los seis esquemas más prevalentes y las señales de alerta específicas que los exponen.",
+    "sections": [
+     {
+      "h": "Cuentas falsas de soporte en redes sociales y aplicaciones de mensajería",
+      "p": [
+       "Cuando publicas una pregunta en una comunidad cripto o mencionas un problema con un exchange, los estafadores monitorean estos canales y responden en minutos haciéndose pasar por soporte oficial. Usan nombres de usuario casi idénticos a cuentas legítimas—frecuentemente agregando un solo carácter, guion bajo, o usando un cero en lugar de la letra O. En Telegram y Discord, te enviarán mensaje directo inmediatamente, mientras que en Twitter responden a tu tweet con un tono servicial.",
+       "La señal: ningún exchange, proveedor de wallet o proyecto blockchain legítimo jamás iniciará un mensaje directo pidiéndote verificar tu cuenta, validar tu billetera o resolver un problema de retiro. El soporte oficial siempre te dirige a presentar un ticket a través de su sitio web o sistema en la aplicación. En el momento en que alguien te pide ingresar tu frase semilla en un sitio web que proporcionan, o escanear un código QR para \"sincronizar\" tu billetera, estás hablando con un estafador. El soporte real nunca solicita esta información.",
+       "Si ya ingresaste credenciales en un enlace que enviaron, mueve tus fondos inmediatamente a una nueva wallet con una frase semilla recién generada. Activa la autenticación de dos factores oficial en cuentas de exchanges solo a través de la página de configuración de la plataforma, nunca mediante un enlace enviado en un mensaje."
+      ]
+     },
+     {
+      "h": "Estafas románticas y de inversión tipo \"engorde de cerdo\"",
+      "p": [
+       "Esta estafa combina interés romántico falso con consejos de inversión fraudulentos. El enfoque comienza en aplicaciones de citas, redes sociales o incluso un mensaje de WhatsApp de \"número equivocado\" que se convierte en conversación amistosa. Durante semanas o meses, el estafador construye confianza y eventualmente menciona cuánto dinero gana operando criptomonedas en una plataforma específica. Ofrecen enseñarte, guiándote a depositar fondos en lo que parece ser una interfaz de exchange funcional.",
+       "La plataforma es completamente falsa. Verás tu saldo crecer, a menudo dramáticamente, reforzando la creencia de que la estrategia funciona. Cuando intentas un pequeño retiro, puede incluso tener éxito para profundizar la confianza. Pero cuando intentas retirar una cantidad significativa, el sitio exigirá pagos de impuestos, depósitos de seguridad o tarifas de verificación—siempre requiriendo que envíes más criptomonedas. No importa cuánto envíes, se negará el acceso a tus fondos, y eventualmente el estafador y el sitio desaparecen.",
+       "La señal: cualquier plataforma de trading que no descubriste mediante investigación independiente es sospechosa. Verifica el exchange a través de múltiples fuentes: comprueba el registro con reguladores financieros donde aplique (las reglas varían ampliamente por jurisdicción y esto no es asesoramiento financiero, pero muchos países mantienen listas públicas de entidades registradas o advertidas), busca el nombre del dominio con la palabra \"estafa\" agregada, e intenta encontrar reseñas en foros independientes. Las ganancias genuinas nunca requieren pagos anticipados de impuestos en criptomonedas; las obligaciones fiscales se liquidan durante períodos oficiales de declaración con las autoridades tributarias (como la Agencia Tributaria), no enviando Bitcoin a un exchange."
+      ]
+     },
+     {
+      "h": "Airdrops fraudulentos y aprobaciones maliciosas de tokens",
+      "p": [
+       "Notas tokens desconocidos con valor de cientos o miles de euros apareciendo repentinamente en tu billetera. Cuando intentas venderlos en un exchange descentralizado, la transacción requiere que apruebes un permiso de gasto de tokens. Esta aprobación otorga a un contrato inteligente acceso total a los tokens en tu billetera. Una vez firmado, el contrato drena tus tenencias legítimas—stablecoins, Ethereum u otros activos valiosos.",
+       "Una variación involucra anuncios de airdrops en redes sociales o por correo electrónico que requieren \"reclamar\" tokens conectando tu billetera a un sitio web malicioso. El sitio solicita una firma que parece ser una función de reclamación pero en realidad es una aprobación que otorga al atacante permiso para transferir tus activos.",
+       "La señal: los tokens inesperados en tu billetera deben ignorarse, no venderse. Antes de firmar cualquier aprobación de token, verifica exactamente qué estás autorizando usando herramientas como el decodificador de transacciones de Etherscan o Revoke.cash para revisar permisos activos. Los airdrops legítimos de proyectos conocidos se anuncian a través de sus canales oficiales y típicamente no requieren que firmes aprobaciones amplias de billetera. Si un token no puede venderse sin error, o la interfaz de intercambio se comporta de manera inusual, detente. Revoca cualquier permiso sospechoso inmediatamente usando las mismas herramientas de gestión de permisos."
+      ]
+     },
+     {
+      "h": "Sitios web clonados de exchanges y wallets",
+      "p": [
+       "Los estafadores compran nombres de dominio casi idénticos a exchanges principales—sustituyendo caracteres, agregando guiones, o usando dominios de nivel superior alternativos como .cc o .co en lugar de .com o .es. Estos sitios clonados replican el diseño perfectamente, y a menudo aparecen en anuncios de motores de búsqueda por encima del resultado legítimo. Cuando inicias sesión, tus credenciales son capturadas. Si depositas criptomonedas en una dirección de billetera mostrada en el sitio, los fondos van directamente al estafador.",
+       "La señal: siempre escribe las URLs de exchanges manualmente o usa un enlace marcado que hayas verificado. Verifica HTTPS y examina la ortografía exacta del dominio antes de ingresar cualquier detalle de inicio de sesión. Los anuncios en motores de búsqueda son un vector común; el primer resultado no siempre es legítimo. Si has iniciado sesión en un sitio y luego te das cuenta de que era fraudulento, asume que tu correo electrónico, contraseña y códigos de respaldo de dos factores están comprometidos. Inmediatamente inicia sesión en la plataforma real desde una URL verificada y cambia tus credenciales. Si activaste autenticación de dos factores en el sitio falso, el estafador tiene acceso a tu secreto 2FA; restablécelo en la plataforma genuina.",
+       "Para sitios de wallets, verifica el enlace de descarga a través de las cuentas oficiales del proyecto en redes sociales o repositorio GitHub. El software de wallet falso robará tu frase semilla en el momento en que la ingreses."
+      ]
+     },
+     {
+      "h": "Fondos de inversión con retorno garantizado y estructuras Ponzi",
+      "p": [
+       "Las plataformas prometen retornos fijos diarios, semanales o mensuales—frecuentemente 1% por día, 10% por semana, o cifras similares que exceden en gran medida las finanzas tradicionales. Pueden presentarse como fondos de cobertura cripto, operaciones de minería, bots de arbitraje o pools de liquidez gestionados por traders expertos. Los participantes iniciales reciben pagos financiados por depósitos de nuevos inversores, lo que crea testimonios y prueba social. El esquema continúa hasta que el operador desaparece con los fondos restantes.",
+       "La señal: ninguna inversión legítima puede garantizar retornos, y ciertamente no a tasas que duplicarían tu capital cada pocos meses. Los retornos en mercados de criptomonedas, como en todos los mercados, conllevan riesgo y fluctúan. Desconfía especialmente de plataformas que requieren reclutar a otros para desbloquear mayores rendimientos o permisos de retiro—esto es una característica distintiva de una estructura piramidal. Verifica si el fondo está registrado o licenciado donde aplique (los requisitos regulatorios difieren significativamente por país, y esto no es asesoramiento legal). Un fondo genuino proporcionará prueba verificable de reservas, estructuras de tarifas transparentes y presentaciones regulatorias que puedes confirmar independientemente.",
+       "Si ya has depositado fondos, intenta retirar inmediatamente. Muchas de estas plataformas imponen períodos de bloqueo o límites de retiro diseñados para retrasar tu acceso hasta que el esquema colapsa."
+      ]
+     },
+     {
+      "h": "Ataques de intercambio de SIM dirigidos a la autenticación de dos factores por SMS",
+      "p": [
+       "Un estafador recopila información personal sobre ti—frecuentemente de filtraciones de datos, redes sociales o phishing—y contacta a tu operador móvil haciéndose pasar por ti. Afirman haber perdido su teléfono y solicitan que el número sea transferido a una nueva tarjeta SIM que controlan. Una vez que el operador cumple, el atacante recibe todos los mensajes SMS enviados a tu número, incluidos códigos de autenticación de dos factores para correo electrónico, cuentas de exchanges y otros servicios.",
+       "Con acceso a tus códigos SMS, restablecen contraseñas y retiran fondos de cuentas protegidas solo por autenticación basada en SMS. Este ataque no requiere acceso físico a tu teléfono ni hackeo sofisticado; explota el proceso de servicio al cliente del operador.",
+       "La señal: la autenticación por SMS es la forma más débil común de seguridad de dos factores. Reemplázala donde sea posible con aplicaciones autenticadoras que generan códigos basados en tiempo (como Google Authenticator, Authy u otras) o llaves de seguridad de hardware. Estos métodos no son vulnerables a intercambios de SIM porque no dependen de la red telefónica. Contacta a tu operador móvil y solicita agregar un requisito de PIN o contraseña para cualquier cambio de SIM—los procedimientos varían por operador y país, pero la mayoría ahora ofrece esta protección. Si pierdes repentinamente el servicio móvil sin explicación, asume que un intercambio de SIM puede estar en progreso e inmediatamente contacta a tu operador y comienza a asegurar cuentas desde un dispositivo confiable."
+      ]
+     },
+     {
+      "h": "Qué hacer si has sido objetivo",
+      "p": [
+       "Si has compartido una frase semilla, la ingresaste en un sitio web, o firmaste una aprobación sospechosa de contrato inteligente, mueve cualquier fondo restante inmediatamente a una nueva wallet con una frase semilla recién generada en un dispositivo de confianza. No reutilices la billetera comprometida. Para cuentas de exchanges, cambia contraseñas y restablece la autenticación de dos factores desde una URL verificada.",
+       "Reporta la estafa a la plataforma donde ocurrió—las redes sociales, tiendas de aplicaciones y exchanges sí toman acción contra cuentas reportadas, aunque la recuperación de fondos rara vez es posible. Si la cantidad es significativa, considera reportar a las fuerzas de seguridad, aunque el robo transfronterizo de criptomonedas es difícil de investigar y los procesos legales difieren ampliamente por jurisdicción.",
+       "Edúcate sobre seguridad de wallets, interacciones con contratos inteligentes y los mecanismos específicos de las plataformas que usas. Las estafas tienen éxito porque explotan urgencia, confianza y falta de familiaridad con procesos técnicos. Tomar el tiempo para verificar antes de actuar es la defensa más efectiva."
+      ]
+     }
+    ]
+   },
+   "tr": {
+    "title": "En Yaygın Kripto Dolandırıcılıkları ve Para Kaybetmeden Önce Nasıl Fark Edilir",
+    "excerpt": "Kripto para dolandırıcılıkları, her yıl milyarlarca lira çalan sofistike operasyonlara dönüşmüştür. Bu rehber, en yaygın altı dolandırıcılık türünün işleyişini ve bunları ortaya çıkaran belirli uyarı işaretlerini açıklamaktadır.",
+    "sections": [
+     {
+      "h": "Sosyal Medya ve Mesajlaşma Uygulamalarında Sahte Destek Hesapları",
+      "p": [
+       "Bir kripto topluluğunda soru sorduğunuzda veya bir borsa ile ilgili bir sorundan bahsettiğinizde, dolandırıcılar bu kanalları izler ve dakikalar içinde resmi destek ekibi gibi davranarak yanıt verir. Meşru hesaplarla neredeyse aynı kullanıcı adları kullanırlar—genellikle tek bir karakter ekleyerek, alt çizgi kullanarak veya O harfi yerine sıfır koyarak. Telegram ve Discord'da size doğrudan mesaj atarlar, Twitter'da ise tweetinize yardımsever bir tonla yanıt verirler.",
+       "İşaret: hiçbir meşru borsa, cüzdan sağlayıcısı veya blockchain projesi asla size direkt mesaj atarak hesabınızı doğrulamanızı, cüzdanınızı onaylamanızı veya bir çekim sorununu çözmenizi istemez. Resmi destek ekipleri her zaman sizi web siteleri veya uygulama içi sistemleri üzerinden destek talebi oluşturmaya yönlendirir. Birisi size sağladıkları bir web sitesine tohum ifadenizi (seed phrase) girmenizi veya cüzdanınızı \"senkronize etmek\" için bir QR kod taramanızı istediği anda, bir dolandırıcıyla konuşuyorsunuz demektir. Gerçek destek ekipleri asla bu bilgileri talep etmez.",
+       "Gönderdikleri bir bağlantıya kimlik bilgilerinizi zaten girdiyseniz, fonlarınızı hemen yeni bir tohum ifadesi ile oluşturulmuş yeni bir cüzdana taşıyın. Borsa hesaplarında resmi iki faktörlü kimlik doğrulamayı yalnızca platformun ayarlar sayfası üzerinden etkinleştirin, asla bir mesajda gönderilen bağlantı üzerinden değil."
+      ]
+     },
+     {
+      "h": "Domuz Kesimi Romantik İlişki ve Yatırım Dolandırıcılıkları",
+      "p": [
+       "Bu dolandırıcılık, sahte romantik ilgiyi hileli yatırım tavsiyesiyle birleştirir. Yaklaşım, flört uygulamalarında, sosyal medyada veya hatta WhatsApp'ta dostça sohbete dönüşen bir \"yanlış numara\" mesajıyla başlar. Haftalar veya aylar boyunca, dolandırıcı güven kazanır ve sonunda belirli bir platformda kripto para ticareti yaparak ne kadar para kazandığından bahseder. Size öğretmeyi teklif eder ve işleyen bir borsa arayüzü gibi görünen bir platforma para yatırmanız için sizi yönlendirir.",
+       "Platform tamamen sahte. Bakiyenizin büyüdüğünü, genellikle çarpıcı bir şekilde, göreceksiniz ve bu da stratejinin işe yaradığına olan inancı güçlendirir. Küçük bir çekim denediğinizde, güveni derinleştirmek için başarılı bile olabilir. Ancak önemli bir miktarı çekmeye çalıştığınızda, site vergi ödemeleri, güvenlik teminatları veya doğrulama ücretleri talep edecektir—her zaman daha fazla kripto para göndermenizi isteyerek. Ne kadar gönderirseniz gönderin, fonlarınıza erişim reddedilecek ve sonunda dolandırıcı ve site ortadan kaybolacaktır.",
+       "İşaret: bağımsız araştırma yaparak keşfetmediğiniz herhangi bir ticaret platformu şüphelidir. Borsayı birden fazla kaynaktan doğrulayın: uygun olduğunda mali düzenleyicilere kayıt kontrolü yapın (kurallar yargı yetkisine göre büyük ölçüde değişir ve bu finansal tavsiye değildir, ancak birçok ülke kayıtlı veya uyarılmış kuruluşların halka açık listelerini tutar), alan adını \"dolandırıcılık\" kelimesi ekleyerek arayın ve bağımsız forumlarda yorumlar bulmaya çalışın. Gerçek karlar asla kripto para cinsinden peşin vergi ödemeleri gerektirmez; vergi yükümlülükleri vergi daireleri ile resmi beyanname dönemlerinde ödenir, borsaya Bitcoin göndererek değil."
+      ]
+     },
+     {
+      "h": "Sahte Airdrop'lar ve Kötü Amaçlı Token Onayları",
+      "p": [
+       "Cüzdanınızda aniden yüzlerce veya binlerce lira değerinde tanımadığınız token'lar beliriyor. Bunları merkezi olmayan bir borsada satmaya çalıştığınızda, işlem bir token harcama izni onaylamanızı gerektirir. Bu onay, bir akıllı sözleşmeye cüzdanınızdaki token'lara tam erişim verir. İmzalandığında, sözleşme meşru varlıklarınızı—stablecoin'leri, Ethereum'u veya diğer değerli varlıkları—boşaltır.",
+       "Bir varyasyonu, sosyal medyada veya e-posta yoluyla cüzdanınızı kötü niyetli bir web sitesine bağlayarak token'ları \"talep etmenizi\" gerektiren airdrop duyurularını içerir. Site, talep işlevi gibi görünen ancak aslında saldırgana varlıklarınızı transfer etme izni veren bir onay olan bir imza ister.",
+       "İşaret: cüzdanınızda beklenmedik token'lar görmezden gelinmeli, satılmamalıdır. Herhangi bir token onayını imzalamadan önce, Etherscan'in işlem kod çözücüsü veya Revoke.cash gibi araçları kullanarak tam olarak neyi yetkilendirdiğinizi kontrol edin ve aktif izinleri gözden geçirin. Bilinen projelerden gelen meşru airdrop'lar, resmi kanalları üzerinden duyurulur ve genellikle geniş cüzdan onayları imzalamanızı gerektirmez. Bir token hata vermeden satılamazsa veya takas arayüzü olağandışı davranıyorsa, durun. Şüpheli izinleri aynı izin yönetim araçlarını kullanarak hemen iptal edin."
+      ]
+     },
+     {
+      "h": "Klonlanmış Borsa ve Cüzdan Web Siteleri",
+      "p": [
+       "Dolandırıcılar, büyük borsalarla neredeyse aynı alan adları satın alırlar—karakterleri değiştirerek, tire ekleyerek veya .com yerine .cc veya .co gibi alternatif üst düzey alan adları kullanarak. Bu klonlanmış siteler tasarımı mükemmel şekilde kopyalar ve genellikle arama motoru reklamlarında meşru sonucun üstünde görünür. Giriş yaptığınızda, kimlik bilgileriniz ele geçirilir. Sitede görüntülenen bir cüzdan adresine kripto para yatırırsanız, fonlar doğrudan dolandırıcıya gider.",
+       "İşaret: borsa URL'lerini her zaman manuel olarak yazın veya doğruladığınız yer imlerine alınmış bir bağlantı kullanın. Herhangi bir giriş bilgisi girmeden önce HTTPS olup olmadığını kontrol edin ve tam alan adı yazımını inceleyin. Arama motoru reklamları yaygın bir vektördür; ilk sonuç her zaman meşru değildir. Bir siteye giriş yaptıysanız ve daha sonra bunun sahte olduğunu fark ettiyseniz, e-postanızın, şifrenizin ve iki faktörlü yedek kodlarınızın ele geçirildiğini varsayın. Doğrulanmış bir URL'den gerçek platformda hemen oturum açın ve kimlik bilgilerinizi değiştirin. Sahte sitede iki faktörlü kimlik doğrulama etkinleştirdiyseniz, dolandırıcının 2FA sırrınıza erişimi vardır; gerçek platformda sıfırlayın.",
+       "Cüzdan siteleri için, indirme bağlantısını projenin resmi sosyal medya hesapları veya GitHub deposu üzerinden doğrulayın. Sahte cüzdan yazılımı, tohum ifadenizi girdiğiniz anda çalacaktır."
+      ]
+     },
+     {
+      "h": "Garantili Getiri Vaat Eden Yatırım Fonları ve Ponzi Yapıları",
+      "p": [
+       "Platformlar sabit günlük, haftalık veya aylık getiriler vaat eder—genellikle günde %1, haftada %10 veya geleneksel finansı çok aşan benzer rakamlar. Kendilerini kripto hedge fonları, madencilik operasyonları, arbitraj botları veya uzman yatırımcılar tarafından yönetilen likidite havuzları olarak markalaştırabilirler. Erken katılımcılar, yeni yatırımcılardan gelen mevduatlarla finanse edilen ödemeler alır ve bu da referanslar ve sosyal kanıt oluşturur. Plan, operatör kalan fonlarla ortadan kaybolana kadar devam eder.",
+       "İşaret: hiçbir meşru yatırım getiri garanti edemez ve kesinlikle sermayenizi birkaç ayda ikiye katlayacak oranlarda değil. Kripto para piyasalarındaki getiriler, tüm piyasalarda olduğu gibi, risk taşır ve dalgalanır. Özellikle daha yüksek getiri veya çekim izinlerinin kilidini açmak için başkalarını işe almanızı gerektiren platformlara karşı dikkatli olun—bu bir piramit yapısının ayırt edici özelliğidir. Uygun olduğunda fonun kayıtlı veya lisanslı olup olmadığını kontrol edin (düzenleyici gereklilikler ülkeye göre önemli ölçüde farklılık gösterir ve bu yasal tavsiye değildir). Gerçek bir fon, doğrulanabilir rezerv kanıtı, şeffaf ücret yapıları ve bağımsız olarak onaylayabileceğiniz düzenleyici başvurular sağlayacaktır.",
+       "Zaten para yatırdıysanız, derhal çekmeye çalışın. Bu tür platformların çoğu, plan çökene kadar erişiminizi geciktirmek için tasarlanmış kilitleme süreleri veya çekim limitleri uygular."
+      ]
+     },
+     {
+      "h": "SMS İki Faktörlü Kimlik Doğrulamayı Hedefleyen SIM-Swap Saldırıları",
+      "p": [
+       "Bir dolandırıcı, genellikle veri ihlallerinden, sosyal medyadan veya kimlik avından hakkınızda kişisel bilgiler toplar ve sizmiş gibi davranarak mobil operatörünüzü arar. Telefonlarını kaybettiklerini iddia eder ve numaranın kontrol ettikleri yeni bir SIM karta aktarılmasını talep eder. Operatör uyduğunda, saldırgan numaranıza gönderilen tüm SMS mesajları, e-posta, borsa hesapları ve diğer hizmetler için iki faktörlü kimlik doğrulama kodları dahil olmak üzere alır.",
+       "SMS kodlarınıza erişimle, yalnızca SMS tabanlı kimlik doğrulama ile korunan hesapların şifrelerini sıfırlar ve para çeker. Bu saldırı, telefonunuza fiziksel erişim veya karmaşık hackleme gerektirmez; operatörün müşteri hizmetleri sürecini istismar eder.",
+       "İşaret: SMS kimlik doğrulama, iki faktörlü güvenliğin en zayıf yaygın şeklidir. Mümkün olduğunda zamana dayalı kodlar üreten kimlik doğrulayıcı uygulamalarla (Google Authenticator, Authy veya diğerleri gibi) veya donanım güvenlik anahtarlarıyla değiştirin. Bu yöntemler telefon ağına güvenmedikleri için SIM takaslarına karşı savunmasız değildir. Mobil operatörünüzü arayın ve herhangi bir SIM değişikliği için PIN veya şifre gereksinimi eklenmesini isteyin—prosedürler sağlayıcı ve ülkeye göre değişir, ancak çoğu artık bu korumayı sunar. Açıklama olmadan aniden mobil hizmetinizi kaybederseniz, bir SIM takasının devam ediyor olabileceğini varsayın ve hemen operatörünüzle iletişime geçin ve güvenilir bir cihazdan hesapları güvence altına almaya başlayın."
+      ]
+     },
+     {
+      "h": "Hedef Alındıysanız Ne Yapmalısınız",
+      "p": [
+       "Bir tohum ifadesi paylaştıysanız, bir web sitesine girdiyseniz veya şüpheli bir akıllı sözleşme onayı imzaladıysanız, kalan fonları hemen güvendiğiniz bir cihazda yeni oluşturulmuş bir tohum ifadesi ile yeni bir cüzdana taşıyın. Tehlikeye giren cüzdanı yeniden kullanmayın. Borsa hesapları için, doğrulanmış bir URL'den şifreleri değiştirin ve iki faktörlü kimlik doğrulamayı sıfırlayın.",
+       "Dolandırıcılığı gerçekleştiği platformda bildirin—sosyal medya ağları, uygulama mağazaları ve borsalar bildirilen hesaplara karşı harekete geçer, ancak fon kurtarma nadiren mümkündür. Miktar önemliyse, kolluk kuvvetlerine bildirmeyi düşünün, ancak sınır ötesi kripto para hırsızlığını soruşturmak zordur ve yasal süreçler yargı yetkisine göre büyük ölçüde farklılık gösterir.",
+       "Cüzdan güvenliği, akıllı sözleşme etkileşimleri ve kullandığınız platformların spesifik mekanizmaları hakkında kendinizi eğitin. Dolandırıcılıklar aciliyet, güven ve teknik süreçlere aşina olmama durumunu istismar ettikleri için başarılı olur. Harekete geçmeden önce doğrulamak için zaman ayırmak en etkili savunmadır."
+      ]
+     }
+    ]
+   },
+   "id": {
+    "title": "Penipuan Kripto Paling Umum dan Cara Mengenalinya Sebelum Kehilangan Uang",
+    "excerpt": "Penipuan cryptocurrency telah berkembang menjadi operasi canggih yang mencuri miliaran rupiah setiap tahun. Panduan ini menjelaskan mekanisme enam skema paling umum dan tanda-tanda bahaya spesifik yang mengungkapnya.",
+    "sections": [
+     {
+      "h": "Akun Dukungan Palsu di Media Sosial dan Aplikasi Pesan",
+      "p": [
+       "Ketika Anda memposting pertanyaan di komunitas kripto atau menyebutkan masalah dengan bursa, penipu memantau saluran ini dan merespons dalam hitungan menit dengan menyamar sebagai dukungan resmi. Mereka menggunakan nama pengguna yang hampir identik dengan akun resmi—sering menambahkan satu karakter, garis bawah, atau menggunakan angka nol sebagai pengganti huruf O. Di Telegram dan Discord, mereka akan langsung mengirimi Anda pesan, sementara di Twitter mereka membalas tweet Anda dengan nada membantu.",
+       "Tandanya: tidak ada bursa, penyedia dompet, atau proyek blockchain yang sah yang akan memulai pesan langsung meminta Anda memverifikasi akun, memvalidasi dompet, atau menyelesaikan masalah penarikan. Dukungan resmi selalu mengarahkan Anda untuk mengajukan tiket melalui situs web atau sistem dalam aplikasi mereka. Saat seseorang meminta Anda memasukkan seed phrase di situs web yang mereka berikan, atau memindai kode QR untuk \"menyinkronkan\" dompet Anda, Anda sedang berbicara dengan penipu. Dukungan asli tidak pernah meminta informasi ini.",
+       "Jika Anda sudah memasukkan kredensial pada tautan yang mereka kirim, pindahkan dana Anda segera ke dompet baru dengan seed phrase yang baru dibuat. Aktifkan otentikasi dua faktor resmi pada akun bursa hanya melalui halaman pengaturan platform, tidak pernah melalui tautan yang dikirim dalam pesan."
+      ]
+     },
+     {
+      "h": "Penipuan Romantis dan Investasi Penggemukan Babi",
+      "p": [
+       "Penipuan ini menggabungkan minat romantis palsu dengan saran investasi penipuan. Pendekatan dimulai di aplikasi kencan, media sosial, atau bahkan pesan WhatsApp \"nomor salah\" yang berubah menjadi percakapan ramah. Selama berminggu-minggu atau berbulan-bulan, penipu membangun kepercayaan dan akhirnya menyebutkan berapa banyak uang yang mereka hasilkan dari trading cryptocurrency di platform tertentu. Mereka menawarkan untuk mengajari Anda, membimbing Anda untuk menyetor dana di platform yang tampak seperti antarmuka bursa yang berfungsi.",
+       "Platform tersebut sepenuhnya palsu. Anda akan melihat saldo Anda tumbuh, sering kali secara dramatis, memperkuat keyakinan bahwa strategi itu berhasil. Ketika Anda mencoba penarikan kecil, mungkin bahkan berhasil untuk memperdalam kepercayaan. Tetapi ketika Anda mencoba menarik jumlah yang signifikan, situs akan menuntut pembayaran pajak, deposit keamanan, atau biaya verifikasi—selalu mengharuskan Anda mengirim lebih banyak cryptocurrency. Tidak peduli berapa banyak yang Anda kirim, akses ke dana Anda akan ditolak, dan akhirnya penipu dan situs menghilang.",
+       "Tandanya: platform trading apa pun yang tidak Anda temukan melalui riset independen patut dicurigai. Verifikasi bursa melalui berbagai sumber: periksa pendaftaran dengan regulator keuangan jika berlaku (aturan sangat bervariasi menurut yurisdiksi dan ini bukan nasihat keuangan, tetapi banyak negara memelihara daftar publik entitas terdaftar atau yang diperingatkan), cari nama domain dengan kata \"penipuan\" ditambahkan, dan coba cari ulasan di forum independen. Keuntungan asli tidak pernah memerlukan pembayaran pajak di muka dalam cryptocurrency; kewajiban pajak diselesaikan selama periode pelaporan resmi dengan otoritas pajak, bukan dengan mengirim Bitcoin ke bursa."
+      ]
+     },
+     {
+      "h": "Airdrop Palsu dan Persetujuan Token Berbahaya",
+      "p": [
+       "Anda melihat token asing senilai ratusan ribu atau jutaan rupiah tiba-tiba muncul di dompet Anda. Ketika Anda mencoba menjualnya di bursa terdesentralisasi, transaksi mengharuskan Anda menyetujui izin pengeluaran token. Persetujuan ini memberikan akses penuh kontrak pintar ke token di dompet Anda. Setelah ditandatangani, kontrak menguras kepemilikan sah Anda—stablecoin, Ethereum, atau aset berharga lainnya.",
+       "Variasi melibatkan pengumuman airdrop di media sosial atau melalui email yang mengharuskan Anda \"mengklaim\" token dengan menghubungkan dompet Anda ke situs web berbahaya. Situs tersebut meminta tanda tangan yang tampaknya merupakan fungsi klaim tetapi sebenarnya merupakan persetujuan yang memberikan izin penyerang untuk mentransfer aset Anda.",
+       "Tandanya: token tak terduga di dompet Anda harus diabaikan, bukan dijual. Sebelum menandatangani persetujuan token apa pun, periksa dengan tepat apa yang Anda otorisasi menggunakan alat seperti dekoder transaksi Etherscan atau Revoke.cash untuk meninjau izin aktif. Airdrop sah dari proyek yang dikenal diumumkan melalui saluran resmi mereka dan biasanya tidak mengharuskan Anda menandatangani persetujuan dompet yang luas. Jika token tidak dapat dijual tanpa kesalahan, atau antarmuka swap berperilaku tidak biasa, berhenti. Cabut izin mencurigakan segera menggunakan alat manajemen izin yang sama."
+      ]
+     },
+     {
+      "h": "Situs Web Bursa dan Dompet Kloning",
+      "p": [
+       "Penipu membeli nama domain yang hampir identik dengan bursa besar—mengganti karakter, menambahkan tanda hubung, atau menggunakan domain tingkat atas alternatif seperti .cc atau .co alih-alih .com. Situs kloning ini mereplikasi desain dengan sempurna, dan sering muncul dalam iklan mesin pencari di atas hasil yang sah. Ketika Anda masuk, kredensial Anda ditangkap. Jika Anda menyetorkan cryptocurrency ke alamat dompet yang ditampilkan di situs, dana langsung pergi ke penipu.",
+       "Tandanya: selalu ketik URL bursa secara manual atau gunakan tautan yang telah Anda tandai yang telah diverifikasi. Periksa HTTPS dan periksa ejaan domain yang tepat sebelum memasukkan detail login apa pun. Iklan mesin pencari adalah vektor umum; hasil pertama tidak selalu sah. Jika Anda telah masuk ke situs dan kemudian menyadari itu palsu, asumsikan email, kata sandi, dan kode cadangan dua faktor Anda telah dikompromikan. Segera masuk ke platform asli dari URL yang diverifikasi dan ubah kredensial Anda. Jika Anda mengaktifkan otentikasi dua faktor di situs palsu, penipu memiliki akses ke rahasia 2FA Anda; setel ulang di platform asli.",
+       "Untuk situs dompet, verifikasi tautan unduhan melalui akun media sosial resmi proyek atau repositori GitHub. Perangkat lunak dompet palsu akan mencuri seed phrase Anda saat Anda memasukkannya."
+      ]
+     },
+     {
+      "h": "Dana Investasi dengan Jaminan Pengembalian dan Struktur Ponzi",
+      "p": [
+       "Platform menjanjikan pengembalian tetap harian, mingguan, atau bulanan—sering 1% per hari, 10% per minggu, atau angka serupa yang jauh melebihi keuangan tradisional. Mereka mungkin memberi merek diri mereka sebagai dana lindung nilai kripto, operasi penambangan, bot arbitrase, atau kumpulan likuiditas yang dikelola oleh pedagang ahli. Peserta awal menerima pembayaran yang didanai oleh setoran dari investor baru, yang menciptakan testimoni dan bukti sosial. Skema berlanjut hingga operator menghilang dengan dana yang tersisa.",
+       "Tandanya: tidak ada investasi sah yang dapat menjamin pengembalian, dan tentu saja tidak pada tingkat yang akan menggandakan modal Anda setiap beberapa bulan. Pengembalian di pasar cryptocurrency, seperti di semua pasar, membawa risiko dan berfluktuasi. Berhati-hatilah terutama terhadap platform yang mengharuskan Anda merekrut orang lain untuk membuka hasil lebih tinggi atau izin penarikan—ini adalah ciri struktur piramida. Periksa apakah dana terdaftar atau berlisensi jika berlaku (persyaratan regulasi berbeda secara signifikan menurut negara, dan ini bukan nasihat hukum). Dana asli akan memberikan bukti cadangan yang dapat diverifikasi, struktur biaya transparan, dan pengajuan regulasi yang dapat Anda konfirmasi secara independen.",
+       "Jika Anda sudah menyetor dana, coba tarik segera. Banyak platform semacam itu memberlakukan periode kunci atau batas penarikan yang dirancang untuk menunda akses Anda sampai skema runtuh."
+      ]
+     },
+     {
+      "h": "Serangan SIM-Swap yang Menargetkan Otentikasi Dua Faktor SMS",
+      "p": [
+       "Penipu mengumpulkan informasi pribadi tentang Anda—sering dari pelanggaran data, media sosial, atau phishing—dan menghubungi operator seluler Anda dengan berpura-pura menjadi Anda. Mereka mengklaim telah kehilangan ponsel mereka dan meminta nomor tersebut ditransfer ke kartu SIM baru yang mereka kendalikan. Setelah operator mematuhi, penyerang menerima semua pesan SMS yang dikirim ke nomor Anda, termasuk kode otentikasi dua faktor untuk email, akun bursa, dan layanan lainnya.",
+       "Dengan akses ke kode SMS Anda, mereka mengatur ulang kata sandi dan menarik dana dari akun yang hanya dilindungi oleh otentikasi berbasis SMS. Serangan ini tidak memerlukan akses fisik ke ponon Anda atau peretasan canggih; ini mengeksploitasi proses layanan pelanggan operator.",
+       "Tandanya: otentikasi SMS adalah bentuk keamanan dua faktor yang paling lemah. Ganti di mana pun mungkin dengan aplikasi autentikator yang menghasilkan kode berbasis waktu (seperti Google Authenticator, Authy, atau lainnya) atau kunci keamanan perangkat keras. Metode ini tidak rentan terhadap pertukaran SIM karena tidak bergantung pada jaringan telepon. Hubungi operator seluler Anda dan minta untuk menambahkan persyaratan PIN atau kata sandi untuk perubahan SIM apa pun—prosedur bervariasi menurut penyedia dan negara, tetapi sebagian besar sekarang menawarkan perlindungan ini. Jika Anda tiba-tiba kehilangan layanan seluler tanpa penjelasan, asumsikan pertukaran SIM mungkin sedang berlangsung dan segera hubungi operator Anda dan mulai mengamankan akun dari perangkat tepercaya."
+      ]
+     },
+     {
+      "h": "Apa yang Harus Dilakukan Jika Anda Telah Menjadi Target",
+      "p": [
+       "Jika Anda telah membagikan seed phrase, memasukkannya di situs web, atau menandatangani persetujuan kontrak pintar yang mencurigakan, pindahkan dana yang tersisa segera ke dompet baru dengan seed phrase yang baru dibuat di perangkat yang Anda percayai. Jangan gunakan kembali dompet yang telah dikompromikan. Untuk akun bursa, ubah kata sandi dan atur ulang otentikasi dua faktor dari URL yang diverifikasi.",
+       "Laporkan penipuan ke platform tempat itu terjadi—jaringan media sosial, toko aplikasi, dan bursa memang mengambil tindakan terhadap akun yang dilaporkan, meskipun pemulihan dana jarang mungkin. Jika jumlahnya signifikan, pertimbangkan untuk melaporkan ke penegak hukum, meskipun pencurian cryptocurrency lintas batas sulit diselidiki dan proses hukum berbeda secara luas menurut yurisdiksi.",
+       "Edukasi diri Anda tentang keamanan dompet, interaksi kontrak pintar, dan mekanisme spesifik platform yang Anda gunakan. Penipuan berhasil karena mereka mengeksploitasi urgensi, kepercayaan, dan ketidakakraban dengan proses teknis. Meluangkan waktu untuk memverifikasi sebelum bertindak adalah pertahanan paling efektif."
+      ]
+     }
+    ]
+   },
+   "vi": {
+    "title": "Các Trò Lừa Đảo Tiền Điện Tử Phổ Biến Nhất và Cách Nhận Biết Trước Khi Mất Tiền",
+    "excerpt": "Các vụ lừa đảo tiền điện tử đã phát triển thành các hoạt động tinh vi đánh cắp hàng nghìn tỷ đồng mỗi năm. Hướng dẫn này giải thích cơ chế của sáu loại lừa đảo phổ biến nhất và các dấu hiệu cảnh báo cụ thể để phát hiện chúng.",
+    "sections": [
+     {
+      "h": "Tài Khoản Hỗ Trợ Giả Mạo Trên Mạng Xã Hội và Ứng Dụng Nhắn Tin",
+      "p": [
+       "Khi bạn đăng câu hỏi trong cộng đồng tiền điện tử hoặc đề cập đến vấn đề với sàn giao dịch, những kẻ lừa đảo sẽ theo dõi các kênh này và phản hồi trong vòng vài phút, giả làm bộ phận hỗ trợ chính thức. Họ sử dụng tên người dùng gần giống hệt với tài khoản hợp pháp—thường thêm một ký tự, dấu gạch dưới, hoặc dùng số 0 thay cho chữ O. Trên Telegram và Discord, họ sẽ nhắn tin trực tiếp cho bạn ngay lập tức, trong khi trên Twitter họ trả lời tweet của bạn với giọng điệu nhiệt tình.",
+       "Dấu hiệu: không có sàn giao dịch, nhà cung cấp ví, hoặc dự án blockchain hợp pháp nào chủ động nhắn tin trực tiếp yêu cầu bạn xác minh tài khoản, xác thực ví, hoặc giải quyết vấn đề rút tiền. Bộ phận hỗ trợ chính thức luôn hướng dẫn bạn gửi yêu cầu qua trang web hoặc hệ thống trong ứng dụng của họ. Ngay khi ai đó yêu cầu bạn nhập cụm từ khôi phục (seed phrase) vào trang web họ cung cấp, hoặc quét mã QR để \"đồng bộ\" ví của bạn, bạn đang nói chuyện với kẻ lừa đảo. Bộ phận hỗ trợ thực sự không bao giờ yêu cầu thông tin này.",
+       "Nếu bạn đã nhập thông tin đăng nhập vào liên kết họ gửi, hãy chuyển tiền ngay lập tức sang ví mới với cụm từ khôi phục mới được tạo. Chỉ bật xác thực hai yếu tố chính thức trên tài khoản sàn giao dịch qua trang cài đặt của nền tảng, không bao giờ qua liên kết được gửi trong tin nhắn."
+      ]
+     },
+     {
+      "h": "Lừa Đảo Tình Cảm và Đầu Tư Kiểu Nuôi Heo",
+      "p": [
+       "Trò lừa đảo này kết hợp sự quan tâm lãng mạn giả mạo với lời khuyên đầu tư gian lận. Cách tiếp cận bắt đầu từ ứng dụng hẹn hò, mạng xã hội, hoặc thậm chí là tin nhắn WhatsApp \"nhầm số\" chuyển thành cuộc trò chuyện thân thiện. Trong vài tuần hoặc vài tháng, kẻ lừa đảo xây dựng lòng tin và cuối cùng đề cập đến việc họ kiếm được bao nhiêu tiền từ giao dịch tiền điện tử trên một nền tảng cụ thể. Họ đề nghị dạy bạn, hướng dẫn bạn nạp tiền vào một nền tảng có vẻ là giao diện sàn giao dịch hoạt động bình thường.",
+       "Nền tảng đó hoàn toàn giả mạo. Bạn sẽ thấy số dư tăng lên, thường là rất ấn tượng, củng cố niềm tin rằng chiến lược hiệu quả. Khi bạn thử rút một số tiền nhỏ, nó thậm chí có thể thành công để làm sâu sắc thêm lòng tin. Nhưng khi bạn cố rút một số tiền đáng kể, trang web sẽ yêu cầu thanh toán thuế, tiền ký quỹ bảo mật, hoặc phí xác minh—luôn yêu cầu bạn gửi thêm tiền điện tử. Dù bạn gửi bao nhiêu, quyền truy cập vào tiền của bạn sẽ bị từ chối, và cuối cùng kẻ lừa đảo và trang web biến mất.",
+       "Dấu hiệu: bất kỳ nền tảng giao dịch nào bạn không tự mình tìm hiểu đều đáng nghi ngờ. Xác minh sàn giao dịch qua nhiều nguồn: kiểm tra đăng ký với các cơ quan quản lý tài chính khi có thể (quy định khác nhau rất nhiều theo khu vực pháp lý và đây không phải lời khuyên tài chính, nhưng nhiều quốc gia duy trì danh sách công khai các tổ chức đã đăng ký hoặc bị cảnh báo), tìm kiếm tên miền với từ \"lừa đảo\" thêm vào, và cố tìm đánh giá trên các diễn đàn độc lập. Lợi nhuận thực sự không bao giờ yêu cầu thanh toán thuế trước bằng tiền điện tử; nghĩa vụ thuế được giải quyết trong kỳ khai báo chính thức với cơ quan thuế, không phải bằng cách gửi Bitcoin cho sàn giao dịch."
+      ]
+     },
+     {
+      "h": "Airdrop Giả Mạo và Phê Duyệt Token Độc Hại",
+      "p": [
+       "Bạn nhận thấy các token lạ trị giá hàng triệu đồng đột nhiên xuất hiện trong ví của bạn. Khi bạn cố bán chúng trên sàn giao dịch phi tập trung, giao dịch yêu cầu bạn phê duyệt quyền chi tiêu token. Phê duyệt này cấp cho hợp đồng thông minh quyền truy cập đầy đủ vào các token trong ví của bạn. Sau khi ký, hợp đồng sẽ rút sạch tài sản hợp pháp của bạn—stablecoin, Ethereum, hoặc các tài sản có giá trị khác.",
+       "Một biến thể liên quan đến thông báo airdrop trên mạng xã hội hoặc qua email yêu cầu bạn \"nhận\" token bằng cách kết nối ví với trang web độc hại. Trang web yêu cầu chữ ký có vẻ là chức năng nhận nhưng thực ra là phê duyệt cấp cho kẻ tấn công quyền chuyển tài sản của bạn.",
+       "Dấu hiệu: các token bất ngờ trong ví của bạn nên được bỏ qua, không nên bán. Trước khi ký bất kỳ phê duyệt token nào, hãy kiểm tra chính xác những gì bạn đang ủy quyền bằng các công cụ như bộ giải mã giao dịch của Etherscan hoặc Revoke.cash để xem lại các quyền đang hoạt động. Các airdrop hợp pháp từ các dự án đã biết được thông báo qua các kênh chính thức của họ và thường không yêu cầu bạn ký phê duyệt ví rộng rãi. Nếu một token không thể bán mà không có lỗi, hoặc giao diện hoán đổi hoạt động bất thường, hãy dừng lại. Hủy bỏ mọi quyền đáng ngờ ngay lập tức bằng cách sử dụng cùng các công cụ quản lý quyền."
+      ]
+     },
+     {
+      "h": "Trang Web Sàn Giao Dịch và Ví Nhái",
+      "p": [
+       "Kẻ lừa đảo mua tên miền gần giống hệt với các sàn giao dịch lớn—thay thế ký tự, thêm dấu gạch nối, hoặc sử dụng tên miền cấp cao thay thế như .cc hoặc .co thay vì .com. Các trang web nhái này sao chép thiết kế hoàn hảo, và thường xuất hiện trong quảng cáo công cụ tìm kiếm phía trên kết quả hợp pháp. Khi bạn đăng nhập, thông tin đăng nhập của bạn bị đánh cắp. Nếu bạn gửi tiền điện tử đến địa chỉ ví hiển thị trên trang web, tiền sẽ đi thẳng đến kẻ lừa đảo.",
+       "Dấu hiệu: luôn nhập URL sàn giao dịch thủ công hoặc sử dụng liên kết đã đánh dấu mà bạn đã xác minh. Kiểm tra HTTPS và xem xét kỹ chính tả tên miền chính xác trước khi nhập bất kỳ thông tin đăng nhập nào. Quảng cáo công cụ tìm kiếm là một phương thức phổ biến; kết quả đầu tiên không phải lúc nào cũng hợp pháp. Nếu bạn đã đăng nhập vào một trang web và sau đó nhận ra nó là giả mạo, hãy cho rằng email, mật khẩu và mã dự phòng xác thực hai yếu tố của bạn đã bị xâm phạm. Ngay lập tức đăng nhập vào nền tảng thật từ URL đã xác minh và đổi thông tin đăng nhập. Nếu bạn đã bật xác thực hai yếu tố trên trang giả, kẻ lừa đảo có quyền truy cập vào khóa bí mật 2FA của bạn; hãy đặt lại trên nền tảng thực.",
+       "Đối với trang ví, hãy xác minh liên kết tải xuống qua tài khoản mạng xã hội chính thức của dự án hoặc kho lưu trữ GitHub. Phần mềm ví giả sẽ đánh cắp cụm từ khôi phục ngay khi bạn nhập."
+      ]
+     },
+     {
+      "h": "Quỹ Đầu Tư Cam Kết Lợi Nhuận và Cấu Trúc Ponzi",
+      "p": [
+       "Các nền tảng hứa hẹn lợi nhuận cố định hàng ngày, hàng tuần hoặc hàng tháng—thường là 1% mỗi ngày, 10% mỗi tuần, hoặc con số tương tự vượt xa tài chính truyền thống. Họ có thể tự gọi mình là quỹ đầu cơ tiền điện tử, hoạt động khai thác, bot arbitrage, hoặc nhóm thanh khoản được quản lý bởi các nhà giao dịch chuyên nghiệp. Những người tham gia sớm nhận được khoản thanh toán được tài trợ bởi tiền gửi từ các nhà đầu tư mới, tạo ra lời chứng thực và bằng chứng xã hội. Kế hoạch tiếp tục cho đến khi người điều hành biến mất với số tiền còn lại.",
+       "Dấu hiệu: không có khoản đầu tư hợp pháp nào có thể đảm bảo lợi nhuận, và chắc chắn không phải ở mức sẽ nhân đôi vốn của bạn sau vài tháng. Lợi nhuận trong thị trường tiền điện tử, như tất cả các thị trường, có rủi ro và dao động. Đặc biệt cảnh giác với các nền tảng yêu cầu bạn tuyển dụng người khác để mở khóa lợi suất cao hơn hoặc quyền rút tiền—đây là dấu hiệu của cấu trúc kim tự tháp. Kiểm tra xem quỹ có đăng ký hoặc được cấp phép khi có thể (yêu cầu quy định khác nhau đáng kể theo quốc gia, và đây không phải lời khuyên pháp lý). Một quỹ thực sự sẽ cung cấp bằng chứng dự trữ có thể xác minh, cấu trúc phí minh bạch và hồ sơ quy định bạn có thể tự xác nhận.",
+       "Nếu bạn đã gửi tiền, hãy cố rút ngay lập tức. Nhiều nền tảng như vậy áp đặt thời gian khóa hoặc giới hạn rút tiền được thiết kế để trì hoãn quyền truy cập của bạn cho đến khi kế hoạch sụp đổ."
+      ]
+     },
+     {
+      "h": "Tấn Công Hoán Đổi SIM Nhắm Vào Xác Thực Hai Yếu Tố SMS",
+      "p": [
+       "Kẻ lừa đảo thu thập thông tin cá nhân về bạn—thường từ vi phạm dữ liệu, mạng xã hội, hoặc lừa đảo—và liên hệ với nhà mạng di động của bạn giả vờ là bạn. Họ tuyên bố đã mất điện thoại và yêu cầu số được chuyển sang thẻ SIM mới mà họ kiểm soát. Khi nhà mạng tuân thủ, kẻ tấn công nhận được tất cả tin nhắn SMS gửi đến số của bạn, bao gồm mã xác thực hai yếu tố cho email, tài khoản sàn giao dịch và các dịch vụ khác.",
+       "Với quyền truy cập vào mã SMS của bạn, họ đặt lại mật khẩu và rút tiền từ các tài khoản chỉ được bảo vệ bằng xác thực dựa trên SMS. Cuộc tấn công này không yêu cầu truy cập vật lý vào điện thoại của bạn hoặc tấn công tinh vi; nó khai thác quy trình dịch vụ khách hàng của nhà mạng.",
+       "Dấu hiệu: xác thực SMS là hình thức bảo mật hai yếu tố yếu nhất phổ biến. Thay thế nó bất cứ khi nào có thể bằng ứng dụng xác thực tạo mã theo thời gian (như Google Authenticator, Authy, hoặc các ứng dụng khác) hoặc khóa bảo mật phần cứng. Các phương pháp này không dễ bị tấn công hoán đổi SIM vì chúng không dựa vào mạng điện thoại. Liên hệ với nhà mạng di động của bạn và yêu cầu thêm yêu cầu mã PIN hoặc mật khẩu cho bất kỳ thay đổi SIM nào—quy trình khác nhau theo nhà cung cấp và quốc gia, nhưng hầu hết hiện nay cung cấp biện pháp bảo vệ này. Nếu bạn đột ngột mất dịch vụ di động mà không có lý do, hãy cho rằng một cuộc hoán đổi SIM có thể đang diễn ra và ngay lập tức liên hệ với nhà mạng và bắt đầu bảo mật tài khoản từ thiết bị đáng tin cậy."
+      ]
+     },
+     {
+      "h": "Phải Làm Gì Nếu Bạn Bị Nhắm Đến",
+      "p": [
+       "Nếu bạn đã chia sẻ cụm từ khôi phục, nhập nó trên trang web, hoặc ký phê duyệt hợp đồng thông minh đáng ngờ, hãy chuyển ngay bất kỳ khoản tiền còn lại nào sang ví mới với cụm từ khôi phục mới được tạo trên thiết bị bạn tin tưởng. Không sử dụng lại ví đã bị xâm phạm. Đối với tài khoản sàn giao dịch, hãy đổi mật khẩu và đặt lại xác thực hai yếu tố từ URL đã xác minh.",
+       "Báo cáo vụ lừa đảo cho nền tảng nơi nó xảy ra—các mạng xã hội, cửa hàng ứng dụng và sàn giao dịch có hành động chống lại các tài khoản bị báo cáo, mặc dù khả năng thu hồi tiền hiếm khi có thể. Nếu số tiền đáng kể, hãy cân nhắc báo cáo với cơ quan thực thi pháp luật, mặc dù hành vi trộm cắp tiền điện tử xuyên biên giới khó điều tra và quy trình pháp lý khác nhau rất nhiều theo khu vực pháp lý.",
+       "Tự giáo dục bản thân về bảo mật ví, tương tác hợp đồng thông minh và cơ chế cụ thể của các nền tảng bạn sử dụng. Các vụ lừa đảo thành công vì chúng khai thác sự khẩn cấp, lòng tin và sự không quen thuộc với các quy trình kỹ thuật. Dành thời gian xác minh trước khi hành động là biện pháp phòng thủ hiệu quả nhất."
+      ]
+     }
+    ]
+   },
+   "th": {
+    "title": "การหลอกลวงคริปโตที่พบบ่อยที่สุดและวิธีระวังก่อนเสียเงิน",
+    "excerpt": "การหลอกลวงสกุลเงินดิจิทัลได้พัฒนาเป็นการดำเนินงานที่ซับซ้อนซึ่งขโมยเงินหลายพันล้านบาทในแต่ละปี คู่มือนี้อธิบายกลไกของหกรูปแบบที่แพร่หลายที่สุดและสัญญาณเตือนเฉพาะที่เปิดเผยพวกมัน",
+    "sections": [
+     {
+      "h": "บัญชีฝ่ายสนับสนุนปลอมบนโซเชียลมีเดียและแอปส่งข้อความ",
+      "p": [
+       "เมื่อคุณโพสต์คำถามในชุมชนคริปโตหรือพูดถึงปัญหากับแพลตฟอร์มเทรด นักต้มตุ๋นจะเฝ้าดูช่องทางเหล่านี้และตอบกลับภายในไม่กี่นาทีโดยปลอมเป็นฝ่ายสนับสนุนอย่างเป็นทางการ พวกเขาใช้ชื่อผู้ใช้ที่เกือบจะเหมือนกับบัญชีที่ถูกต้อง—มักจะเพิ่มตัวอักษรตัวเดียว ขีดล่าง หรือใช้เลขศูนย์แทนตัวอักษร O บน Telegram และ Discord พวกเขาจะส่งข้อความถึงคุณทันที ในขณะที่บน Twitter พวกเขาตอบทวีตของคุณด้วยน้ำเสียงที่ช่วยเหลือ",
+       "สัญญาณ: ไม่มีแพลตฟอร์มเทรด ผู้ให้บริการวอลเล็ต หรือโปรเจกต์บล็อกเชนที่ถูกต้องจะเริ่มส่งข้อความโดยตรงขอให้คุณยืนยันบัญชี ตรวจสอบวอลเล็ต หรือแก้ไขปัญหาการถอนเงิน ฝ่ายสนับสนุนอย่างเป็นทางการจะนำทางคุณไปยังการส่งตั๋วผ่านเว็บไซต์หรือระบบในแอปของพวกเขาเสมอ ในทันทีที่มีคนขอให้คุณป้อน seed phrase บนเว็บไซต์ที่พวกเขาให้มา หรือสแกน QR code เพื่อ \"ซิงค์\" วอลเล็ตของคุณ คุณกำลังพูดกับนักต้มตุ๋น ฝ่ายสนับสนุนที่แท้จริงไม่เคยขอข้อมูลนี้",
+       "หากคุณป้อนข้อมูลรับรองในลิงก์ที่พวกเขาส่งมาแล้ว ให้ย้ายเงินทุนของคุณทันทีไปยังวอลเล็ตใหม่ด้วย seed phrase ที่สร้างใหม่ เปิดใช้งานการยืนยันตัวตนแบบสองปัจจัยอย่างเป็นทางการในบัญชีแพลตฟอร์มเทรดผ่านหน้าการตั้งค่าของแพลตฟอร์มเท่านั้น ไม่เคยผ่านลิงก์ที่ส่งมาในข้อความ"
+      ]
+     },
+     {
+      "h": "การหลอกลวงความรักและการลงทุนแบบเลี้ยงหมู",
+      "p": [
+       "การหลอกลวงนี้รวมความสนใจทางโรแมนติกปลอมกับคำแนะนำการลงทุนที่ฉ้อโกง การเข้าหาเริ่มต้นจากแอปหาคู่ โซเชียลมีเดีย หรือแม้แต่ข้อความ WhatsApp \"เบอร์ผิด\" ที่กลายเป็นการสนทนาที่เป็นมิตร ในช่วงหลายสัปดาห์หรือหลายเดือน นักต้มตุ๋นสร้างความไว้วางใจและในที่สุดก็พูดถึงว่าพวกเขาทำเงินได้มากแค่ไหนจากการเทรดสกุลเงินดิจิทัลบนแพลตฟอร์มเฉพาะ พวกเขาเสนอที่จะสอนคุณ โดยแนะนำให้คุณฝากเงินบนสิ่งที่ดูเหมือนเป็นอินเทอร์เฟซแพลตฟอร์มเทรดที่ทำงานจริง",
+       "แพลตฟอร์มนั้นปลอมทั้งหมด คุณจะเห็นยอดคงเหลือของคุณเติบโต มักจะเพิ่มขึ้นอย่างมาก เสริมความเชื่อที่ว่ากลยุทธ์นั้นได้ผล เมื่อคุณพยายามถอนเงินจำนวนเล็กน้อย มันอาจจะสำเร็จเพื่อสร้างความไว้วางใจให้ลึกซึ้งขึ้น แต่เมื่อคุณพยายามถอนจำนวนเงินที่มีนัยสำคัญ เว็บไซต์จะเรียกร้องการชำระภาษี เงินมัดจำความปลอดภัย หรือค่าธรรมเนียมการยืนยัน—เรียกร้องให้คุณส่งสกุลเงินดิจิทัลเพิ่มเติมเสมอ ไม่ว่าคุณจะส่งเท่าไหร่ การเข้าถึงเงินทุนของคุณจะถูกปฏิเสธ และในที่สุดนักต้มตุ๋นและเว็บไซต์ก็หายไป",
+       "สัญญาณ: แพลตฟอร์มเทรดใดๆ ที่คุณไม่ได้ค้นพบผ่านการวิจัยอิสระเป็นที่น่าสงสัย ตรวจสอบแพลตฟอร์มเทรดผ่านหลายแหล่ง: ตรวจสอบการลงทะเบียนกับหน่วยงานกำกับดูแลทางการเงินเมื่อเป็นไปได้ (กฎเกณฑ์แตกต่างกันอย่างมากตามเขตอำนาจศาลและนี่ไม่ใช่คำแนะนำทางการเงิน แต่หลายประเทศมีรายชื่อสาธารณะของหน่วยงานที่ลงทะเบียนหรือถูกเตือน) ค้นหาชื่อโดเมนด้วยคำว่า \"หลอกลวง\" เพิ่มเข้าไป และพยายามหารีวิวในฟอรัมอิสระ ผลกำไรที่แท้จริงไม่เคยต้องการการชำระภาษีล่วงหน้าในสกุลเงินดิจิทัล ภาระผูกพันด้านภาษีจะชำระระหว่างช่วงการยื่นเอกสารอย่างเป็นทางการกับหน่วยงานด้านภาษี ไม่ใช่โดยการส่ง Bitcoin ไปยังแพลตฟอร์มเทรด"
+      ]
+     },
+     {
+      "h": "Airdrop ปลอมและการอนุมัติโทเค็นที่เป็นอันตราย",
+      "p": [
+       "คุณสังเกตเห็นโทเค็นที่ไม่คุ้นเคยมูลค่าหลายแสนหรือหลายล้านบาทปรากฏในวอลเล็ตของคุณอย่างกะทันหัน เมื่อคุณพยายามขายมันบนแพลตฟอร์มเทรดแบบกระจายอำนาจ ธุรกรรมต้องการให้คุณอนุมัติสิทธิ์การใช้จ่ายโทเค็น การอนุมัตินี้ให้สิทธิ์สัญญาอัจฉริยะเข้าถึงโทเค็นในวอลเล็ตของคุณได้อย่างเต็มที่ เมื่อลงนามแล้ว สัญญาจะถอนทรัพย์สินที่ถูกต้องของคุณ—สเตเบิลคอยน์ อีเธอเรียม หรือสินทรัพย์อื่นๆ ที่มีค่า",
+       "รูปแบบหนึ่งเกี่ยวข้องกับการประกาศ airdrop บนโซเชียลมีเดียหรือผ่านอีเมลที่ต้องการให้คุณ \"อ้างสิทธิ์\" โทเค็นโดยเชื่อมต่อวอลเล็ตของคุณกับเว็บไซต์ที่เป็นอันตราย เว็บไซต์แจ้งให้ลงนามที่ดูเหมือนเป็นฟังก์ชันการอ้างสิทธิ์ แต่จริงๆ แล้วเป็นการอนุมัติที่ให้สิทธิ์ผู้โจมตีโอนสินทรัพย์ของคุณ",
+       "สัญญาณ: โทเค็นที่ไม่คาดคิดในวอลเล็ตของคุณควรถูกเพิกเฉย ไม่ใช่ขาย ก่อนที่จะลงนามในการอนุมัติโทเค็นใดๆ ให้ตรวจสอบว่าคุณกำลังอนุญาตอะไรโดยใช้เครื่องมือเช่นตัวถอดรหัสธุรกรรมของ Etherscan หรือ Revoke.cash เพื่อตรวจสอบสิทธิ์ที่ใช้งานอยู่ Airdrop ที่ถูกต้องจากโปรเจกต์ที่รู้จักจะประกาศผ่านช่องทางอย่างเป็นทางการและโดยทั่วไปไม่ต้องการให้คุณลงนามในการอนุมัติวอลเล็ตที่กว้าง หากโทเค็นไม่สามารถขายได้โดยไม่มีข้อผิดพลาด หรืออินเทอร์เฟซการแลกเปลี่ยนทำงานผิดปกติ ให้หยุด เพิกถอนสิทธิ์ที่น่าสงสัยทันทีโดยใช้เครื่องมือจัดการสิทธิ์เดียวกัน"
+      ]
+     },
+     {
+      "h": "เว็บไซต์แพลตฟอร์มเทรดและวอลเล็ตโคลน",
+      "p": [
+       "นักต้มตุ๋นซื้อชื่อโดเมนที่เกือบจะเหมือนกับแพลตฟอร์มเทรดใหญ่—เปลี่ยนตัวอักษร เพิ่มยัติภังค์ หรือใช้โดเมนระดับบนสุดทางเลือกเช่น .cc หรือ .co แทน .com เว็บไซต์โคลนเหล่านี้จำลองการออกแบบได้อย่างสมบูรณ์แบบ และมักปรากฏในโฆษณาเครื่องมือค้นหาเหนือผลลัพธ์ที่ถูกต้อง เมื่อคุณเข้าสู่ระบบ ข้อมูลรับรองของคุณถูกจับ หากคุณฝากสกุลเงินดิจิทัลไปยังที่อยู่วอลเล็ตที่แสดงบนเว็บไซต์ เงินทุนจะไปตรงที่นักต้มตุ๋น",
+       "สัญญาณ: พิมพ์ URL ของแพลตฟอร์มเทรดด้วยตนเองเสมอหรือใช้ลิงก์ที่คั่นหน้าที่คุณยืนยันแล้ว ตรวจสอบ HTTPS และตรวจสอบการสะกดโดเมนที่แน่นอนก่อนป้อนรายละเอียดการเข้าสู่ระบบใดๆ โฆษณาเครื่องมือค้นหาเป็นเวกเตอร์ทั่วไป ผลลัพธ์แรกไม่ใช่ผลลัพธ์ที่ถูกต้องเสมอไป หากคุณเข้าสู่ระบบเว็บไซต์และต่อมาตระหนักว่ามันเป็นของปลอม ให้สมมติว่าอีเมล รหัสผ่าน และรหัสสำรองการยืนยันตัวตนแบบสองปัจจัยของคุณถูกบุกรุก เข้าสู่ระบบแพลตฟอร์มจริงทันทีจาก URL ที่ยืนยันแล้วและเปลี่ยนข้อมูลรับรองของคุณ หากคุณเปิดใช้งานการยืนยันตัวตนแบบสองปัจจัยบนเว็บไซต์ปลอม นักต้มตุ๋นมีสิทธิ์เข้าถึงความลับ 2FA ของคุณ รีเซ็ตบนแพลตฟอร์มที่แท้จริง",
+       "สำหรับเว็บไซต์วอลเล็ต ให้ยืนยันลิงก์ดาวน์โหลดผ่านบัญชีโซเชียลมีเดียอย่างเป็นทางการของโปรเจกต์หรือที่เก็บ GitHub ซอฟต์แวร์วอลเล็ตปลอมจะขโมย seed phrase ของคุณทันทีที่คุณป้อน"
+      ]
+     },
+     {
+      "h": "กองทุนลงทุนที่รับประกันผลตอบแทนและโครงสร้างพอนซี",
+      "p": [
+       "แพลตฟอร์มสัญญาผลตอบแทนคงที่รายวัน รายสัปดาห์ หรือรายเดือน—มักจะเป็น 1% ต่อวัน 10% ต่อสัปดาห์ หรือตัวเลขที่คล้ายกันซึ่งเกินการเงินแบบดั้งเดิมอย่างมาก พวกเขาอาจสร้างตราสินค้าตัวเองว่าเป็นกองทุนป้องกันความเสี่ยงคริปโต การดำเนินงานขุด บอตอาร์บิทราจ หรือพูลสภาพคล่องที่จัดการโดยผู้เชี่ยวชาญ ผู้เข้าร่วมในช่วงแรกได้รับการจ่ายเงินที่ได้รับทุนจากเงินฝากจากนักลงทุนใหม่ ซึ่งสร้างคำรับรองและหลักฐานทางสังคม โครงการดำเนินต่อไปจนกระทั่งผู้ดำเนินการหายไปพร้อมเงินทุนที่เหลืออยู่",
+       "สัญญาณ: ไม่มีการลงทุนที่ถูกต้องใดสามารถรับประกันผลตอบแทนได้ และแน่นอนไม่ใช่ในอัตราที่จะทำให้เงินทุนของคุณเพิ่มเป็นสองเท่าทุกๆ ไม่กี่เดือน ผลตอบแทนในตลาดสกุลเงินดิจิทัล เช่นเดียวกับในตลาดทั้งหมด มีความเสี่ยงและผันผวน ระวังเป็นพิเศษกับแพลตฟอร์มที่ต้องการให้คุณสรรหาคนอื่นเพื่อปลดล็อกผลตอบแทนที่สูงขึ้นหรือสิทธิ์การถอน—นี่คือลักษณะเฉพาะของโครงสร้างพีระมิด ตรวจสอบว่ากองทุนได้รับการลงทะเบียนหรือได้รับใบอนุญาตเมื่อเป็นไปได้ (ข้อกำหนดด้านกฎระเบียบแตกต่างกันอย่างมากตามประเทศ และนี่ไม่ใช่คำแนะนำทางกฎหมาย) กองทุนที่แท้จริงจะให้หลักฐานสำรองที่สามารถตรวจสอบได้ โครงสร้างค่าธรรมเนียมที่โปร่งใส และการยื่นเอกสารกำกับดูแลที่คุณสามารถยืนยันได้อย่างอิสระ",
+       "หากคุณฝากเงินไปแล้ว ให้พยายามถอนทันที แพลตฟอร์มดังกล่าวหลายแห่งกำหนดระยะเวลาล็อกหรือข้อจำกัดการถอนที่ออกแบบมาเพื่อชะลอการเข้าถึงของคุณจนกว่าโครงการจะล่มสลาย"
+      ]
+     },
+     {
+      "h": "การโจมตีสลับ SIM ที่กำหนดเป้าหมายการยืนยันตัวตนแบบสองปัจจัย SMS",
+      "p": [
+       "นักต้มตุ๋นรวบรวมข้อมูลส่วนบุคคลเกี่ยวกับคุณ—มักจากการละเมิดข้อมูล โซเชียลมีเดีย หรือฟิชชิ่ง—และติดต่อผู้ให้บริการมือถือของคุณโดยแกล้งทำเป็นคุณ พวกเขาอ้างว่าทำโทรศัพท์หายและขอให้โอนหมายเลขไปยังซิมการ์ดใหม่ที่พวกเขาควบคุม เมื่อผู้ให้บริการปฏิบัติตาม ผู้โจมตีจะได้รับข้อความ SMS ทั้งหมดที่ส่งถึงหมายเลขของคุณ รวมถึงรหัสยืนยันตัวตนแบบสองปัจจัยสำหรับอีเมล บัญชีแพลตฟอร์มเทรด และบริการอื่นๆ",
+       "ด้วยการเข้าถึงรหัส SMS ของคุณ พวกเขารีเซ็ตรหัสผ่านและถอนเงินทุนจากบัญชีที่ได้รับการปกป้องโดยการยืนยันตัวตนแบบ SMS เท่านั้น การโจมตีนี้ไม่ต้องการการเข้าถึงทางกายภาพไปยังโทรศัพท์ของคุณหรือการแฮ็กที่ซับซ้อน มันใช้ประโยชน์จากกระบวนการบริการลูกค้าของผู้ให้บริการ",
+       "สัญญาณ: การยืนยันตัวตน SMS เป็นรูปแบบที่อ่อนแอที่สุดของการรักษาความปลอดภัยแบบสองปัจจัยที่พบบ่อย เปลี่ยนเมื่อใดก็ได้ด้วยแอปยืนยันตัวตนที่สร้างรหัสตามเวลา (เช่น Google Authenticator, Authy หรืออื่นๆ) หรือคีย์ความปลอดภัยฮาร์ดแวร์ วิธีการเหล่านี้ไม่เสี่ยงต่อการสลับ SIM เพราะไม่พึ่งพาเครือข่ายโทรศัพท์ ติดต่อผู้ให้บริการมือถือของคุณและขอเพิ่มข้อกำหนด PIN หรือรหัสผ่านสำหรับการเปลี่ยนแปลง SIM ใดๆ—ขั้นตอนแตกต่างกันไปตามผู้ให้บริการและประเทศ แต่ส่วนใหญ่ตอนนี้เสนอการปกป้องนี้ หากคุณสูญเสียบริการมือถืออย่างกะทันหันโดยไม่มีคำอธิบาย ให้สมมติว่าการสลับ SIM อาจกำลังดำเนินอยู่และติดต่อผู้ให้บริการของคุณทันทีและเริ่มรักษาความปลอดภัยบัญชีจากอุปกรณ์ที่เชื่อถือได้"
+      ]
+     },
+     {
+      "h": "สิ่งที่ต้องทำหากคุณถูกกำหนดเป้าหมาย",
+      "p": [
+       "หากคุณแบ่งปัน seed phrase ป้อนบนเว็บไซต์ หรือลงนามในการอนุมัติสัญญาอัจฉริยะที่น่าสงสัย ให้ย้ายเงินทุนที่เหลืออยู่ทันทีไปยังวอลเล็ตใหม่ด้วย seed phrase ที่สร้างใหม่บนอุปกรณ์ที่คุณไว้วางใจ อย่าใช้วอลเล็ตที่ถูกบุกรุกอีก สำหรับบัญชีแพลตฟอร์มเทรด ให้เปลี่ยนรหัสผ่านและรีเซ็ตการยืนยันตัวตนแบบสองปัจจัยจาก URL ที่ยืนยันแล้ว",
+       "รายงานการหลอกลวงไปยังแพลตฟอร์มที่เกิดขึ้น—เครือข่ายโซเชียลมีเดีย แอปสโตร์ และแพลตฟอร์มเทรดดำเนินการกับบัญชีที่รายงาน แม้ว่าการกู้คืนเงินทุนจะเป็นไปได้ยาก หากจำนวนเงินมีนัยสำคัญ ให้พิจารณารายงานต่อหน่วยงานบังคับใช้กฎหมาย แม้ว่าการโจรกรรมสกุลเงินดิจิทัลข้ามพรมแดนจะยากต่อการสืบสวนและกระบวนการทางกฎหมายแตกต่างกันอย่างกว้างขวางตามเขตอำนาจศาล",
+       "ให้ความรู้แก่ตัวเองเกี่ยวกับความปลอดภัยของวอลเล็ต การโต้ตอบกับสัญญาอัจฉริยะ และกลไกเฉพาะของแพลตฟอร์มที่คุณใช้ การหลอกลวงประสบความสำเร็จเพราะพวกเขาใช้ประโยชน์จากความเร่งด่วน ความไว้วางใจ และความไม่คุ้นเคยกับกระบวนการทางเทคนิค การใช้เวลาในการตรวจสอบก่อนดำเนินการเป็นการป้องกันที่มีประสิทธิภาพสูงสุด"
+      ]
+     }
+    ]
+   },
+   "hi": {
+    "title": "सबसे आम क्रिप्टो घोटाले और पैसे गंवाने से पहले उन्हें कैसे पहचानें",
+    "excerpt": "क्रिप्टोकरेंसी घोटाले अब परिष्कृत ऑपरेशन में बदल चुके हैं जो सालाना अरबों रुपये की चोरी करते हैं। यह गाइड छह सबसे प्रचलित योजनाओं की कार्यप्रणाली और उन विशिष्ट संकेतों को समझाती है जो उन्हें उजागर करते हैं।",
+    "sections": [
+     {
+      "h": "सोशल मीडिया और मैसेजिंग ऐप्स पर नकली सपोर्ट अकाउंट",
+      "p": [
+       "जब आप किसी क्रिप्टो कम्युनिटी में कोई सवाल पोस्ट करते हैं या किसी एक्सचेंज के साथ समस्या का जिक्र करते हैं, तो स्कैमर इन चैनलों की निगरानी करते हैं और मिनटों में आधिकारिक सपोर्ट बनकर जवाब देते हैं। वे असली अकाउंट से लगभग समान यूजरनेम इस्तेमाल करते हैं—अक्सर एक अक्षर जोड़कर, अंडरस्कोर लगाकर, या अक्षर O की जगह जीरो का उपयोग करके। टेलीग्राम और डिस्कॉर्ड पर, वे तुरंत आपको डायरेक्ट मैसेज करेंगे, जबकि ट्विटर पर वे आपके ट्वीट पर मददगार लहजे में जवाब देते हैं।",
+       "पहचान: कोई भी वैध एक्सचेंज, वॉलेट प्रोवाइडर, या ब्लॉकचेन प्रोजेक्ट कभी भी डायरेक्ट मैसेज शुरू करके आपसे अकाउंट वेरिफाई करने, वॉलेट वैलिडेट करने, या निकासी की समस्या हल करने के लिए नहीं कहेगा। आधिकारिक सपोर्ट हमेशा आपको उनकी वेबसाइट या इन-ऐप सिस्टम के माध्यम से टिकट सबमिट करने का निर्देश देता है। जिस क्षण कोई आपसे उनके दिए गए वेबसाइट पर सीड फ्रेज दर्ज करने, या वॉलेट \"सिंक्रोनाइज\" करने के लिए QR कोड स्कैन करने को कहे, आप किसी स्कैमर से बात कर रहे हैं। असली सपोर्ट कभी यह जानकारी नहीं मांगता।",
+       "अगर आपने पहले ही उनके भेजे लिंक पर क्रेडेंशियल दर्ज कर दिए हैं, तो तुरंत अपने फंड को एक नए वॉलेट में ट्रांसफर करें जिसमें नया सीड फ्रेज जेनरेट किया गया हो। एक्सचेंज अकाउंट पर आधिकारिक टू-फैक्टर ऑथेंटिकेशन केवल प्लेटफॉर्म के सेटिंग्स पेज के माध्यम से सक्षम करें, कभी भी मैसेज में भेजे गए लिंक से नहीं।"
+      ]
+     },
+     {
+      "h": "पिग-बुचरिंग रोमांस और निवेश घोटाले",
+      "p": [
+       "यह घोटाला नकली रोमांटिक रुचि को धोखाधड़ी वाली निवेश सलाह के साथ जोड़ता है। यह शुरुआत डेटिंग ऐप, सोशल मीडिया, या यहां तक कि \"गलत नंबर\" वाले WhatsApp मैसेज से होती है जो दोस्ताना बातचीत में बदल जाती है। हफ्तों या महीनों में, स्कैमर विश्वास बनाता है और अंततः जिक्र करता है कि वे किसी विशिष्ट प्लेटफॉर्म पर क्रिप्टोकरेंसी ट्रेडिंग करके कितना पैसा कमाते हैं। वे आपको सिखाने की पेशकश करते हैं, आपको एक काम करते हुए एक्सचेंज इंटरफेस जैसे दिखने वाली जगह पर फंड जमा करने का मार्गदर्शन करते हैं।",
+       "प्लेटफॉर्म पूरी तरह नकली है। आप अपना बैलेंस बढ़ता देखेंगे, अक्सर नाटकीय रूप से, जो इस विश्वास को मजबूत करता है कि रणनीति काम करती है। जब आप एक छोटी निकासी का प्रयास करते हैं, तो यह विश्वास गहरा करने के लिए सफल भी हो सकती है। लेकिन जब आप महत्वपूर्ण राशि निकालने की कोशिश करते हैं, तो साइट टैक्स भुगतान, सुरक्षा जमा, या वेरिफिकेशन फीस की मांग करेगी—हमेशा आपसे अधिक क्रिप्टोकरेंसी भेजने की आवश्यकता होती है। चाहे आप कितना भी भेजें, आपके फंड तक पहुंच से इनकार किया जाएगा, और अंततः स्कैमर और साइट गायब हो जाते हैं।",
+       "पहचान: कोई भी ट्रेडिंग प्लेटफॉर्म जिसे आपने स्वतंत्र शोध के माध्यम से खोजा नहीं है, संदिग्ध है। एक्सचेंज को कई स्रोतों के माध्यम से सत्यापित करें: जहां लागू हो वहां वित्तीय नियामकों के साथ पंजीकरण जांचें (नियम देश के अनुसार व्यापक रूप से भिन्न होते हैं और यह वित्तीय सलाह नहीं है, लेकिन कई देश पंजीकृत या चेतावनी-प्राप्त संस्थाओं की सार्वजनिक सूचियां बनाए रखते हैं), डोमेन नाम के साथ \"स्कैम\" शब्द जोड़कर खोजें, और स्वतंत्र फोरम पर समीक्षाएं खोजने का प्रयास करें। वास्तविक लाभ के लिए कभी भी क्रिप्टोकरेंसी में अग्रिम टैक्स भुगतान की आवश्यकता नहीं होती; टैक्स दायित्व आयकर विभाग के साथ आधिकारिक फाइलिंग अवधि के दौरान निपटाए जाते हैं, किसी एक्सचेंज को बिटकॉइन भेजकर नहीं।"
+      ]
+     },
+     {
+      "h": "धोखाधड़ी वाले एयरड्रॉप और दुर्भावनापूर्ण टोकन अनुमोदन",
+      "p": [
+       "आप अपने वॉलेट में अचानक सैकड़ों या हजारों रुपये मूल्य के अपरिचित टोकन दिखते हुए देखते हैं। जब आप उन्हें विकेंद्रीकृत एक्सचेंज पर बेचने का प्रयास करते हैं, तो लेनदेन के लिए आपको टोकन खर्च करने की अनुमति देनी होती है। यह अनुमोदन एक स्मार्ट कॉन्ट्रैक्ट को आपके वॉलेट में टोकन तक पूर्ण पहुंच प्रदान करता है। एक बार हस्ताक्षर करने पर, कॉन्ट्रैक्ट आपकी वैध होल्डिंग्स को खाली कर देता है—स्टेबलकॉइन, एथेरियम, या अन्य मूल्यवान संपत्तियां।",
+       "एक भिन्नता में सोशल मीडिया या ईमेल के माध्यम से एयरड्रॉप घोषणाएं शामिल होती हैं जिनमें आपसे किसी दुर्भावनापूर्ण वेबसाइट पर अपना वॉलेट कनेक्ट करके टोकन \"क्लेम\" करने के लिए कहा जाता है। साइट एक हस्ताक्षर का संकेत देती है जो क्लेम फंक्शन जैसा लगता है लेकिन वास्तव में एक अनुमोदन है जो हमलावर को आपकी संपत्ति ट्रांसफर करने की अनुमति देता है।",
+       "पहचान: आपके वॉलेट में अप्रत्याशित टोकन को नजरअंदाज किया जाना चाहिए, बेचा नहीं जाना चाहिए। किसी भी टोकन अनुमोदन पर हस्ताक्षर करने से पहले, Etherscan के ट्रांजैक्शन डिकोडर या Revoke.cash जैसे टूल का उपयोग करके जांचें कि आप वास्तव में क्या अधिकृत कर रहे हैं। ज्ञात प्रोजेक्ट्स से वैध एयरड्रॉप उनके आधिकारिक चैनलों के माध्यम से घोषित किए जाते हैं और आमतौर पर आपको व्यापक वॉलेट अनुमोदनों पर हस्ताक्षर करने की आवश्यकता नहीं होती। यदि कोई टोकन त्रुटि के बिना नहीं बेचा जा सकता, या स्वैप इंटरफेस असामान्य व्यवहार करता है, तो रुकें। उसी अनुमति-प्रबंधन टूल का उपयोग करके तुरंत किसी भी संदिग्ध अनुमति को रद्द करें।"
+      ]
+     },
+     {
+      "h": "क्लोन किए गए एक्सचेंज और वॉलेट वेबसाइट",
+      "p": [
+       "स्कैमर प्रमुख एक्सचेंजों के लगभग समान डोमेन नाम खरीदते हैं—अक्षर बदलकर, हाइफन जोड़कर, या .com की जगह .cc या .co जैसे वैकल्पिक टॉप-लेवल डोमेन का उपयोग करके। ये क्लोन साइटें डिजाइन को पूरी तरह से दोहराती हैं, और अक्सर सर्च इंजन विज्ञापनों में वैध परिणाम के ऊपर दिखाई देती हैं। जब आप लॉग इन करते हैं, तो आपके क्रेडेंशियल कैप्चर कर लिए जाते हैं। यदि आप साइट पर प्रदर्शित वॉलेट एड्रेस पर क्रिप्टोकरेंसी जमा करते हैं, तो फंड सीधे स्कैमर के पास चले जाते हैं।",
+       "पहचान: हमेशा एक्सचेंज URL मैन्युअल रूप से टाइप करें या एक बुकमार्क लिंक का उपयोग करें जिसे आपने सत्यापित किया है। कोई भी लॉगिन विवरण दर्ज करने से पहले HTTPS की जांच करें और सटीक डोमेन स्पेलिंग की जांच करें। सर्च इंजन विज्ञापन एक सामान्य माध्यम हैं; पहला परिणाम हमेशा वैध नहीं होता। यदि आपने किसी साइट में लॉग इन किया है और बाद में महसूस करते हैं कि यह धोखाधड़ी वाली थी, तो मान लें कि आपका ईमेल, पासवर्ड, और टू-फैक्टर बैकअप कोड समझौता हो गए हैं। तुरंत सत्यापित URL से असली प्लेटफॉर्म में लॉग इन करें और अपने क्रेडेंशियल बदलें। यदि आपने नकली साइट पर टू-फैक्टर ऑथेंटिकेशन सक्षम किया है, तो स्कैमर के पास आपके 2FA सीक्रेट तक पहुंच है; इसे वास्तविक प्लेटफॉर्म पर रीसेट करें।",
+       "वॉलेट साइटों के लिए, प्रोजेक्ट के आधिकारिक सोशल मीडिया अकाउंट या GitHub रिपॉजिटरी के माध्यम से डाउनलोड लिंक सत्यापित करें। नकली वॉलेट सॉफ्टवेयर जिस क्षण आप इसे दर्ज करते हैं, आपके सीड फ्रेज को चुरा लेगा।"
+      ]
+     },
+     {
+      "h": "गारंटीड-रिटर्न निवेश फंड और पोंजी संरचनाएं",
+      "p": [
+       "प्लेटफॉर्म निश्चित दैनिक, साप्ताहिक, या मासिक रिटर्न का वादा करते हैं—अक्सर प्रति दिन 1%, प्रति सप्ताह 10%, या पारंपरिक वित्त से कहीं अधिक समान आंकड़े। वे खुद को क्रिप्टो हेज फंड, माइनिंग ऑपरेशन, आर्बिट्रेज बॉट्स, या विशेषज्ञ ट्रेडर्स द्वारा प्रबंधित लिक्विडिटी पूल के रूप में ब्रांड कर सकते हैं। शुरुआती प्रतिभागियों को नए निवेशकों की जमा राशि से भुगतान प्राप्त होता है, जो प्रशंसापत्र और सामाजिक प्रमाण बनाता है। योजना तब तक जारी रहती है जब तक ऑपरेटर शेष फंड के साथ गायब नहीं हो जाता।",
+       "पहचान: कोई भी वैध निवेश रिटर्न की गारंटी नहीं दे सकता, और निश्चित रूप से उन दरों पर नहीं जो हर कुछ महीनों में आपकी पूंजी को दोगुना कर दें। क्रिप्टोकरेंसी बाजारों में रिटर्न, सभी बाजारों की तरह, जोखिम उठाते हैं और उतार-चढ़ाव करते हैं। विशेष रूप से उन प्लेटफॉर्म से सावधान रहें जिनमें उच्च उपज या निकासी अनुमति अनलॉक करने के लिए आपको दूसरों की भर्ती करने की आवश्यकता होती है—यह पिरामिड संरचना की पहचान है। जांचें कि फंड पंजीकृत या लाइसेंस प्राप्त है या नहीं जहां लागू हो (नियामक आवश्यकताएं देश के अनुसार काफी भिन्न होती हैं, और यह कानूनी सलाह नहीं है)। एक वास्तविक फंड सत्यापन योग्य रिजर्व का प्रमाण, पारदर्शी शुल्क संरचना, और नियामक फाइलिंग प्रदान करेगा जिसे आप स्वतंत्र रूप से पुष्टि कर सकते हैं।",
+       "यदि आपने पहले ही फंड जमा कर दिए हैं, तो तुरंत निकासी का प्रयास करें। कई ऐसे प्लेटफॉर्म लॉक-अप अवधि या निकासी सीमाएं लगाते हैं जो योजना के पतन तक आपकी पहुंच में देरी करने के लिए डिज़ाइन की गई हैं।"
+      ]
+     },
+     {
+      "h": "SMS टू-फैक्टर ऑथेंटिकेशन को लक्षित करने वाले SIM-स्वैप हमले",
+      "p": [
+       "एक स्कैमर आपके बारे में व्यक्तिगत जानकारी इकट्ठा करता है—अक्सर डेटा उल्लंघन, सोशल मीडिया, या फिशिंग से—और आपके मोबाइल कैरियर से संपर्क करके आप होने का दिखावा करता है। वे दावा करते हैं कि उन्होंने अपना फोन खो दिया है और अनुरोध करते हैं कि नंबर को एक नए SIM कार्ड में ट्रांसफर किया जाए जो वे नियंत्रित करते हैं। एक बार कैरियर के अनुपालन करने पर, हमलावर आपके नंबर पर भेजे गए सभी SMS संदेश प्राप्त करता है, जिसमें ईमेल, एक्सचेंज अकाउंट और अन्य सेवाओं के लिए टू-फैक्टर ऑथेंटिकेशन कोड शामिल हैं।",
+       "आपके SMS कोड तक पहुंच के साथ, वे पासवर्ड रीसेट करते हैं और केवल SMS-आधारित ऑथेंटिकेशन द्वारा संरक्षित अकाउंट से फंड निकालते हैं। इस हमले के लिए आपके फोन तक भौतिक पहुंच या परिष्कृत हैकिंग की आवश्यकता नहीं होती; यह कैरियर की ग्राहक सेवा प्रक्रिया का शोषण करता है।",
+       "पहचान: SMS ऑथेंटिकेशन टू-फैक्टर सुरक्षा का सबसे कमजोर सामान्य रूप है। जहां संभव हो, इसे ऑथेंटिकेटर ऐप्स से बदलें जो टाइम-आधारित कोड जेनरेट करते हैं (जैसे Google Authenticator, Authy, या अन्य) या हार्डवेयर सुरक्षा कुंजियां। ये विधियां SIM स्वैप के प्रति संवेदनशील नहीं हैं क्योंकि वे फोन नेटवर्क पर निर्भर नहीं करतीं। अपने मोबाइल कैरियर से संपर्क करें और किसी भी SIM परिवर्तन के लिए PIN या पासवर्ड आवश्यकता जोड़ने के लिए कहें—प्रक्रियाएं प्रदाता और देश के अनुसार भिन्न होती हैं, लेकिन अधिकांश अब यह सुरक्षा प्रदान करते हैं। यदि आप अचानक बिना स्पष्टीकरण के मोबाइल सेवा खो देते हैं, तो मान लें कि SIM स्वैप प्रगति में हो सकता है और तुरंत अपने कैरियर से संपर्क करें और एक विश्वसनीय डिवाइस से अकाउंट सुरक्षित करना शुरू करें।"
+      ]
+     },
+     {
+      "h": "यदि आप लक्षित हो गए हैं तो क्या करें",
+      "p": [
+       "यदि आपने सीड फ्रेज साझा किया है, इसे किसी वेबसाइट पर दर्ज किया है, या संदिग्ध स्मार्ट कॉन्ट्रैक्ट अनुमोदन पर हस्ताक्षर किए हैं, तो किसी भी शेष फंड को तुरंत एक नए वॉलेट में स्थानांतरित करें जिसमें एक विश्वसनीय डिवाइस पर नया सीड फ्रेज जेनरेट किया गया हो। समझौता किए गए वॉलेट का पुन: उपयोग न करें। एक्सचेंज अकाउंट के लिए, सत्यापित URL से पासवर्ड बदलें और टू-फैक्टर ऑथेंटिकेशन रीसेट करें।",
+       "घोटाले को उस प्लेटफॉर्म पर रिपोर्ट करें जहां यह हुआ—सोशल मीडिया नेटवर्क, ऐप स्टोर, और एक्सचेंज रिपोर्ट किए गए अकाउंट के खिलाफ कार्रवाई करते हैं, हालांकि फंड की वसूली शायद ही संभव है। यदि राशि महत्वपूर्ण है, तो कानून प्रवर्तन को रिपोर्ट करने पर विचार करें, हालांकि सीमा पार क्रिप्टोकरेंसी चोरी की जांच करना मुश्किल है और कानूनी प्रक्रियाएं अधिकार क्षेत्र के अनुसार व्यापक रूप से भिन्न होती हैं।",
+       "वॉलेट सुरक्षा, स्मार्ट कॉन्ट्रैक्ट इंटरैक्शन, और आपके द्वारा उपयोग किए जाने वाले प्लेटफॉर्म के विशिष्ट तंत्र के बारे में खुद को शिक्षित करें। घोटाले सफल होते हैं क्योंकि वे तात्कालिकता, विश्वास और तकनीकी प्रक्रियाओं से अपरिचितता का शोषण करते हैं। कार्य करने से पहले सत्यापित करने के लिए समय निकालना सबसे प्रभावी बचाव है।"
+      ]
+     }
+    ]
+   },
+   "ar": {
+    "title": "أكثر عمليات الاحتيال في العملات الرقمية شيوعاً وكيفية التعرف عليها قبل خسارة أموالك",
+    "excerpt": "تطورت عمليات الاحتيال بالعملات الرقمية إلى عمليات متطورة تسرق مليارات الدولارات سنوياً. يشرح هذا الدليل آليات الأساليب الستة الأكثر انتشاراً والعلامات التحذيرية المحددة التي تكشفها.",
+    "sections": [
+     {
+      "h": "حسابات الدعم المزيفة على وسائل التواصل الاجتماعي وتطبيقات المراسلة",
+      "p": [
+       "عندما تنشر سؤالاً في مجتمع العملات الرقمية أو تذكر مشكلة مع منصة تداول، يراقب المحتالون هذه القنوات ويستجيبون خلال دقائق متظاهرين بأنهم الدعم الرسمي. يستخدمون أسماء مستخدمين متطابقة تقريباً مع الحسابات الشرعية—غالباً بإضافة حرف واحد أو شرطة سفلية أو استخدام صفر بدلاً من حرف O. على تيليجرام وديسكورد، سيرسلون لك رسالة مباشرة فوراً، بينما على تويتر يردون على تغريدتك بنبرة مفيدة.",
+       "العلامة المميزة: لن تبدأ أي منصة تداول أو محفظة أو مشروع بلوكتشين شرعي أبداً برسالة مباشرة تطلب منك التحقق من حسابك أو التحقق من صحة محفظتك أو حل مشكلة سحب. يوجهك الدعم الرسمي دائماً لتقديم تذكرة عبر موقعهم الإلكتروني أو نظام التطبيق. في اللحظة التي يطلب فيها شخص ما منك إدخال عبارة الاستعادة الخاصة بك على موقع يقدمونه، أو مسح رمز QR \"لمزامنة\" محفظتك، فأنت تتحدث إلى محتال. الدعم الحقيقي لا يطلب هذه المعلومات أبداً.",
+       "إذا كنت قد أدخلت بيانات الاعتماد بالفعل على رابط أرسلوه، انقل أموالك فوراً إلى محفظة جديدة بعبارة استعادة جديدة تماماً. فعّل المصادقة الثنائية الرسمية على حسابات التداول فقط من خلال صفحة الإعدادات الخاصة بالمنصة، وليس أبداً من خلال رابط مرسل في رسالة."
+      ]
+     },
+     {
+      "h": "عمليات احتيال الرومانسية والاستثمار بأسلوب \"تسمين الخنزير\"",
+      "p": [
+       "يجمع هذا الاحتيال بين الاهتمام الرومانسي المزيف ونصائح الاستثمار الاحتيالية. يبدأ النهج على تطبيقات المواعدة أو وسائل التواصل الاجتماعي أو حتى رسالة واتساب \"رقم خاطئ\" تتحول إلى محادثة ودية. على مدار أسابيع أو أشهر، يبني المحتال الثقة وفي النهاية يذكر كم من المال يجنيه من تداول العملات الرقمية على منصة معينة. يعرضون تعليمك، موجهين إياك لإيداع أموال على ما يبدو أنه واجهة منصة تداول تعمل.",
+       "المنصة مزيفة بالكامل. سترى رصيدك ينمو، غالباً بشكل كبير، مما يعزز الاعتقاد بأن الاستراتيجية تعمل. عندما تحاول سحباً صغيراً، قد ينجح حتى لتعميق الثقة. لكن عندما تحاول سحب مبلغ كبير، سيطلب الموقع دفع ضرائب أو ودائع أمان أو رسوم تحقق—دائماً يتطلب منك إرسال المزيد من العملات الرقمية. بغض النظر عن المبلغ الذي ترسله، سيتم رفض الوصول إلى أموالك، وفي النهاية يختفي المحتال والموقع.",
+       "العلامة المميزة: أي منصة تداول لم تكتشفها من خلال بحث مستقل مشبوهة. تحقق من المنصة من خلال مصادر متعددة: تحقق من التسجيل لدى الجهات التنظيمية المالية حيثما ينطبق (تختلف القواعد بشكل كبير حسب الاختصاص القضائي وهذه ليست نصيحة مالية، لكن العديد من الدول تحتفظ بقوائم عامة للكيانات المسجلة أو المحذر منها)، ابحث عن اسم النطاق مع إضافة كلمة \"احتيال\"، وحاول العثور على مراجعات في منتديات مستقلة. الأرباح الحقيقية لا تتطلب أبداً دفعات ضريبية مقدمة بالعملات الرقمية؛ يتم تسوية الالتزامات الضريبية خلال فترات التقديم الرسمية مع مصلحة الضرائب، وليس بإرسال بيتكوين إلى منصة تداول."
+      ]
+     },
+     {
+      "h": "التوزيعات المجانية الاحتيالية والموافقات الضارة للعملات الرقمية",
+      "p": [
+       "تلاحظ عملات رقمية غير مألوفة تساوي مئات أو آلاف الريالات تظهر فجأة في محفظتك. عندما تحاول بيعها على منصة تبادل لامركزية، تتطلب المعاملة منك الموافقة على إذن إنفاق العملة. تمنح هذه الموافقة عقداً ذكياً وصولاً كاملاً إلى العملات في محفظتك. بمجرد التوقيع، يستنزف العقد ممتلكاتك الشرعية—العملات المستقرة أو الإيثيريوم أو الأصول القيمة الأخرى.",
+       "يتضمن أحد الأشكال إعلانات توزيع مجاني على وسائل التواصل الاجتماعي أو عبر البريد الإلكتروني تتطلب منك \"المطالبة\" بالعملات عن طريق توصيل محفظتك بموقع ضار. يطلب الموقع توقيعاً يبدو أنه وظيفة مطالبة لكنه في الواقع موافقة تمنح المهاجم إذناً لنقل أصولك.",
+       "العلامة المميزة: يجب تجاهل العملات غير المتوقعة في محفظتك وعدم بيعها. قبل التوقيع على أي موافقة للعملات، تحقق بالضبط مما تقوم بتفويضه باستخدام أدوات مثل فك تشفير المعاملات في Etherscan أو Revoke.cash لمراجعة الأذونات النشطة. يتم الإعلان عن التوزيعات المجانية الشرعية من المشاريع المعروفة من خلال قنواتهم الرسمية وعادة لا تتطلب منك التوقيع على موافقات محفظة واسعة النطاق. إذا تعذر بيع عملة دون خطأ، أو تصرفت واجهة التبادل بشكل غير عادي، توقف. ألغِ أي أذونات مشبوهة فوراً باستخدام نفس أدوات إدارة الأذونات."
+      ]
+     },
+     {
+      "h": "المواقع المستنسخة لمنصات التداول والمحافظ",
+      "p": [
+       "يشتري المحتالون أسماء نطاقات متطابقة تقريباً مع المنصات الكبرى—باستبدال الأحرف أو إضافة شرطات أو استخدام نطاقات عليا بديلة مثل .cc أو .co بدلاً من .com. تكرر هذه المواقع المستنسخة التصميم بشكل مثالي، وغالباً ما تظهر في إعلانات محرك البحث فوق النتيجة الشرعية. عندما تسجل الدخول، يتم التقاط بيانات اعتمادك. إذا أودعت عملات رقمية إلى عنوان محفظة معروض على الموقع، تذهب الأموال مباشرة إلى المحتال.",
+       "العلامة المميزة: اكتب دائماً عناوين URL للمنصات يدوياً أو استخدم رابطاً محفوظاً تحققت منه. تحقق من HTTPS وافحص التهجئة الدقيقة للنطاق قبل إدخال أي تفاصيل تسجيل دخول. إعلانات محرك البحث هي ناقل شائع؛ النتيجة الأولى ليست دائماً شرعية. إذا سجلت الدخول إلى موقع واكتشفت لاحقاً أنه احتيالي، افترض أن بريدك الإلكتروني وكلمة المرور ورموز النسخ الاحتياطي للمصادقة الثنائية قد تعرضت للاختراق. سجّل الدخول فوراً إلى المنصة الحقيقية من عنوان URL محقق وغيّر بيانات اعتمادك. إذا مكّنت المصادقة الثنائية على الموقع المزيف، فالمحتال لديه وصول إلى سر 2FA الخاص بك؛ أعد تعيينه على المنصة الحقيقية.",
+       "بالنسبة لمواقع المحافظ، تحقق من رابط التنزيل من خلال حسابات وسائل التواصل الاجتماعي الرسمية للمشروع أو مستودع GitHub. سيسرق برنامج المحفظة المزيف عبارة الاستعادة الخاصة بك بمجرد إدخالها."
+      ]
+     },
+     {
+      "h": "صناديق الاستثمار المضمونة العائد وهياكل بونزي",
+      "p": [
+       "تعد المنصات بعوائد ثابتة يومية أو أسبوعية أو شهرية—غالباً 1٪ في اليوم أو 10٪ في الأسبوع أو أرقام مماثلة تتجاوز بكثير التمويل التقليدي. قد يصفون أنفسهم بأنهم صناديق تحوط للعملات الرقمية أو عمليات تعدين أو روبوتات مراجحة أو مجموعات سيولة يديرها متداولون خبراء. يتلقى المشاركون الأوائل مدفوعات ممولة من ودائع المستثمرين الجدد، مما يخلق شهادات ودليلاً اجتماعياً. يستمر المخطط حتى يختفي المشغل بالأموال المتبقية.",
+       "العلامة المميزة: لا يمكن لأي استثمار شرعي ضمان العوائد، وبالتأكيد ليس بمعدلات تضاعف رأس مالك كل بضعة أشهر. العوائد في أسواق العملات الرقمية، كما في جميع الأسواق، تحمل مخاطر وتتقلب. كن حذراً بشكل خاص من المنصات التي تتطلب منك تجنيد آخرين لفتح عوائد أعلى أو أذونات سحب—هذه علامة مميزة لهيكل هرمي. تحقق مما إذا كان الصندوق مسجلاً أو مرخصاً حيثما ينطبق (تختلف المتطلبات التنظيمية بشكل كبير حسب البلد، وهذه ليست نصيحة قانونية). سيوفر الصندوق الحقيقي دليلاً قابلاً للتحقق على الاحتياطيات وهياكل رسوم شفافة وملفات تنظيمية يمكنك تأكيدها بشكل مستقل.",
+       "إذا كنت قد أودعت أموالاً بالفعل، حاول السحب فوراً. تفرض العديد من هذه المنصات فترات إغلاق أو حدود سحب مصممة لتأخير وصولك حتى ينهار المخطط."
+      ]
+     },
+     {
+      "h": "هجمات تبديل شريحة SIM المستهدفة للمصادقة الثنائية عبر الرسائل النصية",
+      "p": [
+       "يجمع المحتال معلومات شخصية عنك—غالباً من خروقات البيانات أو وسائل التواصل الاجتماعي أو التصيد الاحتيالي—ويتصل بمشغل شبكة الجوال الخاص بك متظاهراً بأنه أنت. يدعون أنهم فقدوا هاتفهم ويطلبون نقل الرقم إلى شريحة SIM جديدة يتحكمون فيها. بمجرد امتثال المشغل، يتلقى المهاجم جميع الرسائل النصية المرسلة إلى رقمك، بما في ذلك رموز المصادقة الثنائية للبريد الإلكتروني وحسابات التداول والخدمات الأخرى.",
+       "مع الوصول إلى رموز الرسائل النصية الخاصة بك، يعيدون تعيين كلمات المرور ويسحبون الأموال من الحسابات المحمية فقط بالمصادقة القائمة على الرسائل النصية. لا يتطلب هذا الهجوم وصولاً فعلياً إلى هاتفك أو قرصنة متطورة؛ إنه يستغل عملية خدمة العملاء لدى المشغل.",
+       "العلامة المميزة: مصادقة الرسائل النصية هي أضعف شكل شائع لأمان العاملين الثنائي. استبدلها حيثما أمكن بتطبيقات المصادقة التي تولد رموزاً قائمة على الوقت (مثل Google Authenticator أو Authy أو غيرها) أو مفاتيح أمان الأجهزة. هذه الأساليب ليست عرضة لتبديل شرائح SIM لأنها لا تعتمد على شبكة الهاتف. اتصل بمشغل شبكة الجوال الخاص بك واطلب إضافة متطلبات رمز PIN أو كلمة مرور لأي تغييرات في شريحة SIM—تختلف الإجراءات حسب المزود والبلد، لكن معظمها يقدم هذه الحماية الآن. إذا فقدت الخدمة المحمولة فجأة دون تفسير، افترض أن تبديل SIM قد يكون قيد التقدم واتصل فوراً بمشغلك وابدأ في تأمين الحسابات من جهاز موثوق."
+      ]
+     },
+     {
+      "h": "ماذا تفعل إذا تم استهدافك",
+      "p": [
+       "إذا كنت قد شاركت عبارة استعادة أو أدخلتها على موقع إلكتروني أو وقعت على موافقة عقد ذكي مشبوهة، انقل أي أموال متبقية فوراً إلى محفظة جديدة بعبارة استعادة جديدة تماماً على جهاز تثق به. لا تعد استخدام المحفظة المخترقة. بالنسبة لحسابات التداول، غيّر كلمات المرور وأعد تعيين المصادقة الثنائية من عنوان URL محقق.",
+       "أبلغ عن الاحتيال إلى المنصة التي حدث فيها—شبكات التواصل الاجتماعي ومتاجر التطبيقات ومنصات التداول تتخذ إجراءات ضد الحسابات المبلغ عنها، رغم أن استرداد الأموال نادراً ما يكون ممكناً. إذا كان المبلغ كبيراً، فكر في الإبلاغ لجهات إنفاذ القانون، على الرغم من أن سرقة العملات الرقمية عبر الحدود يصعب التحقيق فيها وتختلف العمليات القانونية بشكل كبير حسب الاختصاص القضائي.",
+       "ثقف نفسك بشأن أمان المحفظة وتفاعلات العقود الذكية والآليات المحددة للمنصات التي تستخدمها. تنجح عمليات الاحتيال لأنها تستغل الإلحاح والثقة وعدم الإلمام بالعمليات التقنية. إن أخذ الوقت للتحقق قبل التصرف هو الدفاع الأكثر فعالية."
+      ]
+     }
+    ]
+   }
+  }
  }
 ]
