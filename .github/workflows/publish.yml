@@ -6,7 +6,12 @@ on:
     # Раз в 8 часов (было 6). Вместе с ARTICLES_PER_RUN=1 это до 3 статей
     # в сутки вместо 8 — на месяц, пока сайт молодой. Вернуть: '0 */6 * * *'.
     - cron: '0 */8 * * *'
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      guides_per_run:
+        description: 'Сколько вечнозелёных гайдов написать за этот прогон (по расписанию всегда 1)'
+        required: false
+        default: '1'
 permissions:
   contents: write
   pages: write
@@ -48,6 +53,8 @@ jobs:
         if: github.event_name != 'push'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # \u041f\u043e \u0440\u0430\u0441\u043f\u0438\u0441\u0430\u043d\u0438\u044e \u0432\u0441\u0435\u0433\u0434\u0430 1. \u0411\u043e\u043b\u044c\u0448\u0435 \u2014 \u0442\u043e\u043b\u044c\u043a\u043e \u0440\u0443\u0447\u043d\u044b\u043c \u0437\u0430\u043f\u0443\u0441\u043a\u043e\u043c, \u043e\u0441\u043e\u0437\u043d\u0430\u043d\u043d\u043e.
+          GUIDES_PER_RUN: ${{ inputs.guides_per_run || '1' }}
         run: |
           if [ -z "$ANTHROPIC_API_KEY" ]; then
             echo "::warning::ANTHROPIC_API_KEY secret not set - skipping guide generation"
