@@ -192,8 +192,13 @@ if (guides.length) {
   const tgRaw = fs.existsSync(tgFile) ? JSON.parse(fs.readFileSync(tgFile,'utf8')) : {};
   const pub = {};
   for (const [l,c] of Object.entries(tgRaw)) {
-    if (l.startsWith('_') || !String(c).startsWith('@')) continue;
-    pub[l] = 'https://t.me/' + String(c).slice(1);
+    if (l.startsWith('_')) continue;
+    if (typeof c === 'string') {
+      if (!c.startsWith('@')) continue;
+      pub[l] = 'https://t.me/' + c.slice(1);
+    } else if (c && typeof c === 'object' && typeof c.link === 'string' && /^https:\/\/t\.me\//.test(c.link)) {
+      pub[l] = c.link;
+    }
   }
   check(Object.keys(pub).length > 0, '\u0432 data/telegram-channels.json \u043d\u0435 \u043e\u0441\u0442\u0430\u043b\u043e\u0441\u044c \u043d\u0438 \u043e\u0434\u043d\u043e\u0433\u043e \u043f\u0443\u0431\u043b\u0438\u0447\u043d\u043e\u0433\u043e \u043a\u0430\u043d\u0430\u043b\u0430');
 

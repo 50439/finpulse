@@ -67,9 +67,15 @@ const TG_FILE = path.join(ROOT, 'data/telegram-channels.json');
 const tgRaw = fs.existsSync(TG_FILE) ? JSON.parse(fs.readFileSync(TG_FILE, 'utf8')) : {};
 const tgChannels = {};
 for (const [l, chat] of Object.entries(tgRaw)) {
-  // Приватные каналы (числовой chat_id) на сайте не показываем — по ним нет публичной ссылки.
-  if (l.startsWith('_') || !String(chat).startsWith('@')) continue;
-  tgChannels[l] = 'https://t.me/' + String(chat).slice(1);
+  if (l.startsWith('_')) continue;
+  // Публичный канал: строка "@username". Приватный: {chat:"-100...", link:"https://t.me/+..."}.
+  // В обоих случаях нужна ссылка, по которой посетитель сайта может вступить.
+  if (typeof chat === 'string') {
+    if (!chat.startsWith('@')) continue;                       // числовой id без invite-ссылки — показать нечего
+    tgChannels[l] = 'https://t.me/' + chat.slice(1);
+  } else if (chat && typeof chat === 'object' && typeof chat.link === 'string' && /^https:\/\/t\.me\//.test(chat.link)) {
+    tgChannels[l] = chat.link;
+  }
 }
 const tgFor = lang => tgChannels[lang] || null;
 console.log('telegram: публичных каналов для сайта — ' + Object.keys(tgChannels).length +

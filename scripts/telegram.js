@@ -3,7 +3,7 @@
  * FinPulse -> Telegram. Постит свежие статьи и новые вечнозелёные гайды
  * в КАЖДЫЙ канал на его собственном языке.
  *
- * Карта каналов — data/telegram-channels.json (язык -> @username или числовой chat_id).
+ * Карта каналов — data/telegram-channels.json (язык -> "@username" или {chat:"-100...", link:"https://t.me/+..."}).
  * Она лежит в репозитории, а не в секретах: имена публичных каналов не секрет,
  * зато их можно править без доступа к настройкам GitHub. Секрет только токен бота.
  *
@@ -40,7 +40,10 @@ function loadChannels() {
     for (const [lang, chat] of Object.entries(raw)) {
       if (lang.startsWith('_')) continue;                 // комментарии в файле
       if (!i18n.languages[lang]) { console.warn('tg: язык ' + lang + ' не существует на сайте — пропускаю'); continue; }
-      map[lang] = String(chat);
+      // Публичный канал — строка "@username"; приватный — {chat:"-100...", link:"..."}.
+      const id = (chat && typeof chat === 'object') ? chat.chat : chat;
+      if (!id) { console.warn('tg: у языка ' + lang + ' нет chat id — пропускаю'); continue; }
+      map[lang] = String(id);
     }
   }
   if (!Object.keys(map).length && process.env.TELEGRAM_CHAT_ID) {
