@@ -1,98 +1,334 @@
 [
- {
-  "slug": "how-to-buy-crypto-poland",
-  "category": "guide",
-  "emoji": "🇵🇱",
-  "langs": ["pl", "en"],
-  "topic": "How to buy cryptocurrency in Poland: exchanges, payment methods, KYC, PLN deposits",
-  "brief": "Poland follows EU MiCA rules. Cover: which exchanges accept PLN and Polish bank transfers, Blik and card payments, what KYC documents are needed, typical fees, and how crypto income is taxed in Poland (19% flat rate on capital gains, PIT-38 filing)."
- },
- {
-  "slug": "how-to-buy-crypto-germany",
-  "category": "guide",
-  "emoji": "🇩🇪",
-  "langs": ["de", "en"],
-  "topic": "How to buy cryptocurrency in Germany: exchanges, SEPA, KYC, taxes",
-  "brief": "Germany has clear crypto rules under BaFin. Cover: SEPA deposits in EUR, which exchanges serve German residents, KYC via video identification, and the German tax specifics — the one-year holding rule that makes long-term gains tax-free, and how staking affects it."
- },
- {
-  "slug": "how-to-buy-crypto-thailand",
-  "category": "guide",
-  "emoji": "🇹🇭",
-  "langs": ["th", "en"],
-  "topic": "How to buy cryptocurrency in Thailand: SEC-licensed options, THB deposits, rules",
-  "brief": "Thailand regulates crypto through the SEC. Cover: what is allowed and what is not (paying for goods with crypto is banned), how to deposit THB, KYC requirements, VAT exemption on trading, and the practical difference between local licensed platforms and global exchanges."
- },
- {
-  "slug": "how-to-buy-crypto-vietnam",
-  "category": "guide",
-  "emoji": "🇻🇳",
-  "langs": ["vi", "en"],
-  "topic": "How to buy cryptocurrency in Vietnam: legal status from 2026, VND, P2P",
-  "brief": "Vietnam legalised crypto ownership from January 2026 under the Digital Technology Industry Law, while banning it as a means of payment. Cover: what changed, how to deposit VND, P2P versus card purchases, KYC, and the risks of unlicensed platforms."
- },
- {
-  "slug": "how-to-buy-crypto-indonesia",
-  "category": "guide",
-  "emoji": "🇮🇩",
-  "langs": ["id", "en"],
-  "topic": "How to buy cryptocurrency in Indonesia: Bappebti and OJK rules, IDR deposits",
-  "brief": "Indonesia treats crypto as a tradable commodity, supervised by Bappebti and now OJK. Cover: the registered-platform requirement, IDR deposit methods including bank transfer and e-wallets, the 0.11% VAT and 0.1% income tax on transactions, and KYC."
- },
- {
-  "slug": "how-to-buy-crypto-turkey",
-  "category": "guide",
-  "emoji": "🇹🇷",
-  "langs": ["tr", "en"],
-  "topic": "How to buy cryptocurrency in Turkey: TRY deposits, regulation, inflation hedging",
-  "brief": "Turkey has one of the highest crypto ownership rates in the world. Cover: why lira inflation drives adoption, how to deposit TRY, the ban on using crypto for payments while holding and trading stay legal, KYC under the new licensing regime, and stablecoins as a savings tool."
- },
- {
-  "slug": "how-to-buy-crypto-ukraine",
-  "category": "guide",
-  "emoji": "🇺🇦",
-  "langs": ["uk", "en"],
-  "topic": "How to buy cryptocurrency in Ukraine: UAH, card payments, legal status, taxes",
-  "brief": "Cover: the current legal status of virtual assets in Ukraine, how to deposit UAH via card and P2P, which exchanges work well for Ukrainian users, wartime banking limits, and what is known about taxation of crypto income."
- },
- {
-  "slug": "binance-vs-coinbase",
-  "category": "guide",
-  "emoji": "⚖️",
-  "langs": ["en", "de", "fr", "pl", "pt", "ja"],
-  "topic": "Binance vs Coinbase: fees, coin selection, security and which suits whom",
-  "brief": "A fair, concrete comparison. Cover: trading fee structures including maker/taker and card purchases, number of supported assets, custody and insurance, regulatory standing in the EU/US/Japan, ease of use for beginners, and a clear verdict on who each platform actually suits. Do not declare a universal winner."
- },
- {
-  "slug": "how-to-store-crypto-safely",
-  "category": "guide",
-  "emoji": "🔐",
-  "langs": ["en", "de", "fr", "pl", "pt", "uk", "ru", "es", "tr", "id", "vi", "th"],
-  "topic": "How to store crypto safely: exchange custody, hot wallets and hardware wallets",
-  "brief": "Cover: the practical difference between leaving funds on an exchange, using a mobile hot wallet, and a hardware wallet; what a seed phrase is and how people actually lose it; when self-custody is worth the hassle and when it is not; and a simple decision rule based on how much a person holds."
- },
- {
-  "slug": "crypto-scams-how-to-avoid",
-  "category": "guide",
-  "emoji": "🛡️",
-  "langs": ["en", "de", "fr", "pl", "pt", "uk", "ru", "es", "tr", "id", "vi", "th", "hi", "ar"],
-  "topic": "The most common crypto scams and how to recognise them before losing money",
-  "brief": "Cover concrete, current schemes: fake support accounts, pig-butchering romance investment scams, fraudulent airdrops and token approvals that drain wallets, cloned exchange sites, guaranteed-return funds, and SIM-swap attacks. For each: how it looks, the tell, and what to do. Practical and specific, no generic 'be careful'."
- },
- {
-  "slug": "crypto-tax-europe",
-  "category": "guide",
-  "emoji": "📋",
-  "langs": ["en", "de", "pl", "pt", "fr"],
-  "topic": "Crypto taxes in Europe: how gains are taxed in Germany, Poland, Portugal and France",
-  "brief": "Country-by-country comparison. Cover: Germany's one-year tax-free holding rule, Poland's 19% flat rate and PIT-38, Portugal's shift away from being tax-free for short-term holdings, and France's flat 30% PFU. Explain what counts as a taxable event, and note that rules change and this is not tax advice."
- },
- {
-  "slug": "crypto-glossary",
-  "category": "guide",
-  "emoji": "📖",
-  "langs": ["en", "uk", "ru", "pl", "de", "es", "pt", "tr", "id", "vi", "th"],
-  "topic": "Crypto glossary: the 40 terms you actually need to understand the market",
-  "brief": "Explain clearly and briefly: blockchain, private key, seed phrase, wallet types, exchange types (CEX/DEX), spot vs futures, leverage, liquidation, market/limit order, spread, slippage, gas fee, stablecoin, staking, yield, altcoin, market cap, halving, KYC/AML, cold storage, bridge, L2, and similar. Written so a complete beginner understands, grouped by theme."
- }
+  {
+    "slug": "how-to-buy-crypto-poland",
+    "category": "guide",
+    "emoji": "🇵🇱",
+    "langs": [
+      "pl",
+      "en"
+    ],
+    "topic": "How to buy cryptocurrency in Poland: exchanges, payment methods, KYC, PLN deposits",
+    "brief": "Poland follows EU MiCA rules. Cover: which exchanges accept PLN and Polish bank transfers, Blik and card payments, what KYC documents are needed, typical fees, and how crypto income is taxed in Poland (19% flat rate on capital gains, PIT-38 filing)."
+  },
+  {
+    "slug": "how-to-buy-crypto-germany",
+    "category": "guide",
+    "emoji": "🇩🇪",
+    "langs": [
+      "de",
+      "en"
+    ],
+    "topic": "How to buy cryptocurrency in Germany: exchanges, SEPA, KYC, taxes",
+    "brief": "Germany has clear crypto rules under BaFin. Cover: SEPA deposits in EUR, which exchanges serve German residents, KYC via video identification, and the German tax specifics — the one-year holding rule that makes long-term gains tax-free, and how staking affects it."
+  },
+  {
+    "slug": "how-to-buy-crypto-thailand",
+    "category": "guide",
+    "emoji": "🇹🇭",
+    "langs": [
+      "th",
+      "en"
+    ],
+    "topic": "How to buy cryptocurrency in Thailand: SEC-licensed options, THB deposits, rules",
+    "brief": "Thailand regulates crypto through the SEC. Cover: what is allowed and what is not (paying for goods with crypto is banned), how to deposit THB, KYC requirements, VAT exemption on trading, and the practical difference between local licensed platforms and global exchanges."
+  },
+  {
+    "slug": "how-to-buy-crypto-vietnam",
+    "category": "guide",
+    "emoji": "🇻🇳",
+    "langs": [
+      "vi",
+      "en"
+    ],
+    "topic": "How to buy cryptocurrency in Vietnam: legal status from 2026, VND, P2P",
+    "brief": "Vietnam legalised crypto ownership from January 2026 under the Digital Technology Industry Law, while banning it as a means of payment. Cover: what changed, how to deposit VND, P2P versus card purchases, KYC, and the risks of unlicensed platforms."
+  },
+  {
+    "slug": "how-to-buy-crypto-indonesia",
+    "category": "guide",
+    "emoji": "🇮🇩",
+    "langs": [
+      "id",
+      "en"
+    ],
+    "topic": "How to buy cryptocurrency in Indonesia: Bappebti and OJK rules, IDR deposits",
+    "brief": "Indonesia treats crypto as a tradable commodity, supervised by Bappebti and now OJK. Cover: the registered-platform requirement, IDR deposit methods including bank transfer and e-wallets, the 0.11% VAT and 0.1% income tax on transactions, and KYC."
+  },
+  {
+    "slug": "how-to-buy-crypto-turkey",
+    "category": "guide",
+    "emoji": "🇹🇷",
+    "langs": [
+      "tr",
+      "en"
+    ],
+    "topic": "How to buy cryptocurrency in Turkey: TRY deposits, regulation, inflation hedging",
+    "brief": "Turkey has one of the highest crypto ownership rates in the world. Cover: why lira inflation drives adoption, how to deposit TRY, the ban on using crypto for payments while holding and trading stay legal, KYC under the new licensing regime, and stablecoins as a savings tool."
+  },
+  {
+    "slug": "how-to-buy-crypto-ukraine",
+    "category": "guide",
+    "emoji": "🇺🇦",
+    "langs": [
+      "uk",
+      "en"
+    ],
+    "topic": "How to buy cryptocurrency in Ukraine: UAH, card payments, legal status, taxes",
+    "brief": "Cover: the current legal status of virtual assets in Ukraine, how to deposit UAH via card and P2P, which exchanges work well for Ukrainian users, wartime banking limits, and what is known about taxation of crypto income."
+  },
+  {
+    "slug": "binance-vs-coinbase",
+    "category": "guide",
+    "emoji": "⚖️",
+    "langs": [
+      "en",
+      "de",
+      "fr",
+      "pl",
+      "pt",
+      "ja"
+    ],
+    "topic": "Binance vs Coinbase: fees, coin selection, security and which suits whom",
+    "brief": "A fair, concrete comparison. Cover: trading fee structures including maker/taker and card purchases, number of supported assets, custody and insurance, regulatory standing in the EU/US/Japan, ease of use for beginners, and a clear verdict on who each platform actually suits. Do not declare a universal winner."
+  },
+  {
+    "slug": "how-to-store-crypto-safely",
+    "category": "guide",
+    "emoji": "🔐",
+    "langs": [
+      "en",
+      "de",
+      "fr",
+      "pl",
+      "pt",
+      "uk",
+      "ru",
+      "es",
+      "tr",
+      "id",
+      "vi",
+      "th"
+    ],
+    "topic": "How to store crypto safely: exchange custody, hot wallets and hardware wallets",
+    "brief": "Cover: the practical difference between leaving funds on an exchange, using a mobile hot wallet, and a hardware wallet; what a seed phrase is and how people actually lose it; when self-custody is worth the hassle and when it is not; and a simple decision rule based on how much a person holds."
+  },
+  {
+    "slug": "crypto-scams-how-to-avoid",
+    "category": "guide",
+    "emoji": "🛡️",
+    "langs": [
+      "en",
+      "de",
+      "fr",
+      "pl",
+      "pt",
+      "uk",
+      "ru",
+      "es",
+      "tr",
+      "id",
+      "vi",
+      "th",
+      "hi",
+      "ar"
+    ],
+    "topic": "The most common crypto scams and how to recognise them before losing money",
+    "brief": "Cover concrete, current schemes: fake support accounts, pig-butchering romance investment scams, fraudulent airdrops and token approvals that drain wallets, cloned exchange sites, guaranteed-return funds, and SIM-swap attacks. For each: how it looks, the tell, and what to do. Practical and specific, no generic 'be careful'."
+  },
+  {
+    "slug": "crypto-tax-europe",
+    "category": "guide",
+    "emoji": "📋",
+    "langs": [
+      "en",
+      "de",
+      "pl",
+      "pt",
+      "fr"
+    ],
+    "topic": "Crypto taxes in Europe: how gains are taxed in Germany, Poland, Portugal and France",
+    "brief": "Country-by-country comparison. Cover: Germany's one-year tax-free holding rule, Poland's 19% flat rate and PIT-38, Portugal's shift away from being tax-free for short-term holdings, and France's flat 30% PFU. Explain what counts as a taxable event, and note that rules change and this is not tax advice."
+  },
+  {
+    "slug": "crypto-glossary",
+    "category": "guide",
+    "emoji": "📖",
+    "langs": [
+      "en",
+      "uk",
+      "ru",
+      "pl",
+      "de",
+      "es",
+      "pt",
+      "tr",
+      "id",
+      "vi",
+      "th"
+    ],
+    "topic": "Crypto glossary: the 40 terms you actually need to understand the market",
+    "brief": "Explain clearly and briefly: blockchain, private key, seed phrase, wallet types, exchange types (CEX/DEX), spot vs futures, leverage, liquidation, market/limit order, spread, slippage, gas fee, stablecoin, staking, yield, altcoin, market cap, halving, KYC/AML, cold storage, bridge, L2, and similar. Written so a complete beginner understands, grouped by theme."
+  },
+  {
+    "slug": "how-to-buy-crypto-france",
+    "category": "guide",
+    "emoji": "🇫🇷",
+    "langs": [
+      "fr",
+      "en"
+    ],
+    "topic": "How to buy cryptocurrency in France: PSAN-registered platforms, SEPA, KYC, taxes",
+    "brief": "France applies EU MiCA plus the national PSAN register run by the AMF. Cover: how to check a platform is PSAN-registered before depositing, which platforms accept EUR SEPA transfers and cards, KYC documents required, typical fees, and how gains are taxed (30% flat 'prélèvement forfaitaire unique', form 2086, the obligation to declare foreign accounts on form 3916-bis)."
+  },
+  {
+    "slug": "how-to-buy-crypto-brazil",
+    "category": "guide",
+    "emoji": "🇧🇷",
+    "langs": [
+      "pt",
+      "en"
+    ],
+    "topic": "How to buy cryptocurrency in Brazil: PIX deposits, regulation, KYC, taxes",
+    "brief": "Brazil regulates crypto service providers through the Banco Central under Law 14.478. Cover: which platforms accept BRL via PIX and TED and how fast each settles, KYC with CPF, typical spreads and fees on BRL pairs, the monthly IN 1.888 reporting duty to Receita Federal, and how capital gains are taxed including the R$35,000 monthly exemption for sales."
+  },
+  {
+    "slug": "how-to-buy-crypto-japan",
+    "category": "guide",
+    "emoji": "🇯🇵",
+    "langs": [
+      "ja",
+      "en"
+    ],
+    "topic": "How to buy cryptocurrency in Japan: FSA-registered exchanges, JPY deposits, KYC, taxes",
+    "brief": "Japan requires exchanges to register with the Financial Services Agency under the Payment Services Act. Cover: how to verify FSA registration, which platforms accept JPY bank transfers and convenience-store payments, My Number and KYC requirements, typical fees, and how crypto profit is treated as miscellaneous income taxed progressively rather than at a flat capital-gains rate."
+  },
+  {
+    "slug": "how-to-buy-crypto-spain",
+    "category": "guide",
+    "emoji": "🇪🇸",
+    "langs": [
+      "es",
+      "en"
+    ],
+    "topic": "How to buy cryptocurrency in Spain: CNMV-registered providers, SEPA, KYC, taxes",
+    "brief": "Spain applies EU MiCA and maintains a Banco de España register of virtual asset providers. Cover: how to check the register before depositing, EUR SEPA and Bizum options, KYC with DNI or NIE, typical fees, the savings-income tax bands applied to crypto gains, and the modelo 721 declaration for crypto held abroad."
+  },
+  {
+    "slug": "how-to-buy-crypto-india",
+    "category": "guide",
+    "emoji": "🇮🇳",
+    "langs": [
+      "hi",
+      "en"
+    ],
+    "topic": "How to buy cryptocurrency in India: INR deposits, KYC, the 30% tax and 1% TDS",
+    "brief": "India permits crypto trading but taxes it heavily. Cover: which platforms accept INR via UPI and IMPS and the banking friction that comes and goes, KYC with PAN and Aadhaar, the flat 30% tax on gains with no loss offset, the 1% TDS deducted at source on transfers, and what the FIU-IND registration requirement means for which exchanges legally serve Indian users."
+  },
+  {
+    "slug": "best-crypto-exchanges-for-beginners",
+    "category": "guide",
+    "emoji": "🧭",
+    "langs": [
+      "en",
+      "de",
+      "fr",
+      "pl",
+      "pt",
+      "es",
+      "tr",
+      "id",
+      "vi",
+      "th",
+      "uk",
+      "ru"
+    ],
+    "topic": "Best crypto exchanges for beginners: how to choose without getting burned",
+    "brief": "A decision framework rather than a ranking. Cover: what actually matters for a first-time buyer (local currency deposits, regulatory registration in the user's own country, fee structure including the spread most beginners miss, withdrawal limits, and whether the platform lets you move coins out at all), the difference between a broker and an exchange and why the convenient one is usually more expensive, and the specific red flags that mark a platform you should not fund."
+  },
+  {
+    "slug": "how-to-withdraw-crypto-to-bank",
+    "category": "guide",
+    "emoji": "🏦",
+    "langs": [
+      "en",
+      "de",
+      "fr",
+      "pl",
+      "pt",
+      "es",
+      "tr",
+      "id",
+      "vi",
+      "th",
+      "uk",
+      "ru"
+    ],
+    "topic": "How to withdraw crypto to a bank account: routes, fees, delays and what triggers a freeze",
+    "brief": "The step most guides skip. Cover: the realistic routes out (exchange fiat withdrawal, P2P, crypto card), what each costs end to end, why the first withdrawal is often held for review, which behaviours make a bank flag an incoming crypto payment, how to document the source of funds before you need to, and the sequence that minimises the chance of a stuck transfer."
+  },
+  {
+    "slug": "stablecoins-explained",
+    "category": "guide",
+    "emoji": "🪙",
+    "langs": [
+      "en",
+      "de",
+      "fr",
+      "pl",
+      "pt",
+      "es",
+      "tr",
+      "id",
+      "vi",
+      "th",
+      "uk",
+      "ru",
+      "hi",
+      "ar"
+    ],
+    "topic": "Stablecoins explained: USDT, USDC and what actually backs them",
+    "brief": "Cover: what a stablecoin is and the three mechanisms used to hold a peg, how USDT and USDC differ in reserves, attestation and regulatory standing, what MiCA changed for euro users, the historical depegs and what caused each, the difference between holding a stablecoin on an exchange and in your own wallet, and the practical uses where a stablecoin genuinely beats a bank transfer."
+  },
+  {
+    "slug": "crypto-fees-explained",
+    "category": "guide",
+    "emoji": "💸",
+    "langs": [
+      "en",
+      "de",
+      "fr",
+      "pl",
+      "pt",
+      "es",
+      "tr",
+      "id",
+      "vi",
+      "th",
+      "uk",
+      "ru"
+    ],
+    "topic": "Crypto fees explained: where the money actually goes on every trade",
+    "brief": "Cover: the full stack of costs a beginner pays without noticing — the deposit fee, the spread built into an 'instant buy' price, the maker/taker trading fee, the network fee on withdrawal, and the conversion cost when your currency is not the quote currency. Show a worked example of a small purchase where the headline 'zero commission' price ends up costing several percent, and give the concrete order of operations that lowers the total."
+  },
+  {
+    "slug": "crypto-wallet-vs-exchange",
+    "category": "guide",
+    "emoji": "🔐",
+    "langs": [
+      "en",
+      "de",
+      "fr",
+      "pl",
+      "pt",
+      "es",
+      "tr",
+      "id",
+      "vi",
+      "th",
+      "uk",
+      "ru"
+    ],
+    "topic": "Wallet or exchange: where your crypto should actually sit",
+    "brief": "Cover: what custody means in practice and what happens to your coins when an exchange fails, the trade-off between convenience and control, when leaving funds on an exchange is the reasonable choice and when it is not, the difference between hot wallet, hardware wallet and paper backup, seed-phrase handling that survives real life, and a simple rule of thumb by amount held."
+  }
 ]
