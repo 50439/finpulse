@@ -3863,5 +3863,375 @@
     ]
    }
   }
+ },
+ {
+  "slug": "how-to-buy-crypto-france",
+  "category": "guide",
+  "emoji": "🇫🇷",
+  "langs": [
+   "fr",
+   "en"
+  ],
+  "updated": "2026-08-24T11:27:29.354Z",
+  "i18n": {
+   "fr": {
+    "title": "Comment acheter des cryptomonnaies en France : enregistrement PSAN, virements SEPA, KYC et fiscalité",
+    "excerpt": "La France impose l'enregistrement PSAN auprès de l'AMF et applique une flat tax de 30 % sur les plus-values crypto. Ce guide détaille comment vérifier l'enregistrement, approvisionner votre compte par SEPA, finaliser le KYC et respecter vos obligations fiscales.",
+    "sections": [
+     {
+      "h": "Vérifier l'enregistrement PSAN avant tout dépôt",
+      "p": [
+       "La France impose un registre national obligatoire pour les prestataires de services sur actifs numériques, appelé PSAN, géré par l'Autorité des marchés financiers (AMF). Toute plateforme offrant des services de conservation, achat, vente ou échange de cryptomonnaies aux résidents français doit détenir un enregistrement PSAN ou une autorisation équivalente dans le cadre du règlement européen MiCA. Opérer sans enregistrement est illégal, et les plateformes non enregistrées ne peuvent pas faire de publicité en France.",
+       "Avant de déposer des euros ou de fournir vos documents d'identité, consultez le registre public de l'AMF sur amf-france.org. Le registre distingue les enregistrements obligatoires et les enregistrements optionnels renforcés ; ces derniers ont subi des contrôles supplémentaires sur la lutte anti-blanchiment, l'adéquation des fonds propres et la gouvernance. Recherchez les plateformes avec « enregistrement PSAN » ou « agrément PSAN ». Si une plateforme n'apparaît pas et ne détient pas de licence MiCA délivrée par un autre régulateur européen, ne l'utilisez pas. Parmi les plateformes enregistrées PSAN figurent Bitstamp, Crypto.com, Coinhouse et Paymium ; de nombreuses autres détiennent un passeport MiCA délivré en Irlande, Lituanie ou ailleurs dans l'UE et peuvent servir légalement les clients français sans enregistrement AMF distinct."
+      ]
+     },
+     {
+      "h": "Approvisionner votre compte : virements SEPA et cartes bancaires",
+      "p": [
+       "La plupart des plateformes enregistrées PSAN ou autorisées MiCA acceptent les dépôts en euros par virement SEPA (espace unique de paiement en euros). Les virements SEPA sont gratuits du côté de votre banque pour les comptes en zone euro, arrivent généralement sous un jour ouvré et n'entraînent aucuns frais de conversion. Pour déposer, vous générez un code de référence SEPA unique ou un IBAN dans votre compte plateforme, puis vous lancez le virement depuis votre banque française. Le nom du compte à l'établissement destinataire doit correspondre à votre nom vérifié sur la plateforme pour respecter les règles anti-blanchiment.",
+       "Les paiements par carte bancaire—débit ou crédit—sont disponibles sur de nombreuses plateformes mais entraînent des frais plus élevés, souvent entre 1,5 % et 3,9 % par transaction. Certaines banques françaises bloquent les paiements par carte vers les plateformes crypto par mesure anti-fraude, donc le virement SEPA reste la méthode la plus fiable. Le virement SEPA instantané, lorsqu'il est disponible, peut créditer votre compte en quelques secondes mais peut entraîner de légers frais. Le retrait vers votre compte bancaire français utilise les mêmes rails SEPA et est généralement gratuit ou coûte un forfait nominal de un à trois euros."
+      ]
+     },
+     {
+      "h": "Exigences KYC et vérification des documents",
+      "p": [
+       "Les directives européennes anti-blanchiment et la réglementation française obligent toutes les plateformes à effectuer des contrôles KYC (connaissance client) avant que vous ne puissiez déposer des montants significatifs ou trader. Vous devrez fournir une pièce d'identité avec photo valide—typiquement une carte nationale d'identité française, un passeport ou un titre de séjour—et un justificatif de domicile de moins de trois mois. Les justificatifs acceptés incluent les factures de services publics (électricité, gaz, eau), les relevés bancaires, les avis d'imposition ou les contrats de location. Les factures de téléphone mobile et les attestations d'assurance sont généralement acceptées si elles affichent vos nom complet et adresse actuelle.",
+       "La vérification est généralement automatisée : vous téléchargez des photos ou scans, parfois via une application mobile avec détection de vivacité pour confirmer que vous êtes le détenteur du document. Le traitement prend de quelques minutes à plusieurs jours selon le volume de la plateforme et la qualité des documents. Certaines plateformes imposent des limites de dépôt ou retrait jusqu'à ce que la vérification soit finalisée. Si vous détenez une double nationalité, utilisez le document d'identité français ou européen pour éviter toute confusion. Les plateformes peuvent demander des informations supplémentaires si vous êtes assujetti fiscal américain, personne politiquement exposée, ou si vos schémas de transaction déclenchent une diligence renforcée."
+      ]
+     },
+     {
+      "h": "Frais de transaction, spreads et coûts de dépôt",
+      "p": [
+       "Les structures tarifaires varient selon les plateformes mais se répartissent généralement en trois catégories : frais maker-taker, frais en pourcentage simple ou tarification par spread. Les modèles maker-taker facturent des frais plus bas (souvent 0,10 % à 0,40 %) lorsque vous placez des ordres limites qui ajoutent de la liquidité au carnet d'ordres, et des frais plus élevés (0,20 % à 0,60 %) lorsque vous prenez de la liquidité avec des ordres au marché. Les modèles à pourcentage fixe appliquent le même taux quel que soit le type d'ordre, couramment 0,50 % à 1,50 %. Les plateformes à spread affichent un prix d'achat ou de vente unique mais intègrent une marge—souvent 0,50 % à 2 %—entre le taux du marché et le prix que vous payez.",
+       "Les dépôts SEPA sont gratuits sur la plupart des plateformes ; les retraits SEPA vont de gratuit à environ trois euros. Les dépôts par carte entraînent les frais de 1,5 % à 3,9 % mentionnés précédemment. Certaines plateformes facturent des frais de réseau lorsque vous retirez des cryptomonnaies vers un portefeuille externe ; ces frais reflètent le coût de transaction blockchain (frais de gas sur Ethereum, sat/vbyte sur Bitcoin) et varient selon la congestion du réseau. Comparez toujours le coût global—frais de dépôt, frais de transaction, spread, frais de retrait—plutôt que les seuls taux de transaction affichés."
+      ]
+     },
+     {
+      "h": "Fiscalité : la flat tax de 30 % sur les plus-values crypto",
+      "p": [
+       "La France impose les plus-values sur cryptomonnaies comme revenus de capitaux mobiliers selon le prélèvement forfaitaire unique (PFU), un taux forfaitaire de 30 % qui inclut 12,8 % d'impôt sur le revenu et 17,2 % de prélèvements sociaux. La plus-value imposable est calculée à chaque fois que vous cédez des cryptomonnaies—que vous vendiez contre des euros, échangiez une crypto contre une autre ou utilisiez de la crypto pour payer des biens ou services. L'impôt s'applique à la différence entre votre coût d'acquisition total (prix d'achat plus frais associés) et le produit de cession, proratisé sur l'ensemble de vos avoirs de cet actif.",
+       "Vous déclarez les gains et pertes sur le formulaire 2086, déposé avec votre déclaration annuelle de revenus (formulaire 2042). Le formulaire exige de lister chaque cession, la date, le produit et le prix de revient proratisé. Si le montant annuel total de vos cessions de crypto dépasse certains seuils, la déclaration devient obligatoire même en l'absence de gain net. Les pertes peuvent compenser les gains dans la même année fiscale mais ne peuvent pas être reportées sur les années futures sous le régime du PFU. Alternativement, vous pouvez opter pour le barème progressif de l'impôt sur le revenu si votre taux marginal est inférieur à 12,8 %, mais ce choix s'applique à tous les revenus de capitaux mobiliers de cette année et vous devez exercer l'option lors du dépôt. Les règles fiscales évoluent, et ceci n'est pas un conseil fiscal ; consultez un expert-comptable pour votre situation spécifique."
+      ]
+     },
+     {
+      "h": "Déclaration des comptes étrangers et plateformes",
+      "p": [
+       "Si vous détenez un compte sur une plateforme de cryptomonnaies située hors de France—c'est-à-dire que le siège, la société exploitante ou l'entité dépositaire de la plateforme n'est pas en France—vous devez déclarer ce compte annuellement sur le formulaire 3916-bis, même si le solde est nul ou si vous n'avez effectué aucune transaction. Cette obligation découle des règles anti-blanchiment et anti-évasion fiscale et s'applique aux comptes ouverts, détenus, utilisés ou clôturés durant l'année fiscale. Chaque compte plateforme étranger nécessite une ligne distincte sur le formulaire.",
+       "Le formulaire 3916-bis demande le nom de la plateforme, l'adresse, le pays, la référence ou le numéro de compte, les dates d'ouverture et de clôture, et la nature du compte. De nombreuses plateformes connues—Binance, Kraken, Coinbase—ont leur siège hors de France et déclenchent cette obligation. Le défaut de déclaration des comptes étrangers peut entraîner des pénalités à partir de 750 euros par compte non déclaré, montant à 1 500 euros si le compte se trouve dans une juridiction non coopérative. La déclaration est purement informative ; elle ne remplace pas le formulaire 2086 pour la déclaration des gains. Les plateformes domestiques enregistrées PSAN en France ne nécessitent pas de déclaration 3916-bis."
+      ]
+     },
+     {
+      "h": "Choisir une plateforme : enregistrement, liquidité et support",
+      "p": [
+       "Lors du choix d'une plateforme, privilégiez l'enregistrement PSAN ou MiCA, puis évaluez la liquidité, les frais et le support client. Une liquidité élevée—visible par des écarts achat-vente serrés et des carnets d'ordres profonds—signifie que vous pouvez acheter ou vendre sans déplacer significativement le prix, ce qui compte davantage à mesure que la taille de transaction augmente. Les plateformes avec support en français et des équipes de service client familières avec les exigences de l'AMF résoudront les problèmes plus rapidement, notamment lors de difficultés KYC ou de retrait.",
+       "Réfléchissez si vous souhaitez conserver vos cryptomonnaies sur la plateforme (garde déléguée) ou les transférer vers un portefeuille privé (auto-garde). Les comptes en garde déléguée sont plus simples mais comportent le risque que la plateforme contrôle vos clés ; si la plateforme devient insolvable ou gèle les comptes, l'accès à vos fonds peut être retardé ou perdu. L'auto-garde exige de gérer vos phrases de récupération et clés privées de manière sécurisée ; les perdre signifie perdre l'accès définitivement. Certains investisseurs répartissent leurs avoirs entre portefeuilles chauds pour le trading et stockage froid pour la détention long terme. Aucune approche n'est sans risque, et le bon équilibre dépend de votre confiance technique et des montants en jeu."
+      ]
+     }
+    ]
+   },
+   "en": {
+    "title": "How to Buy Cryptocurrency in France: PSAN Registration, Payment Methods, KYC and Tax Obligations",
+    "excerpt": "France requires crypto platforms to register with the AMF as PSANs and applies a 30% flat tax on gains. This guide covers how to verify registration, fund your account via SEPA, complete KYC, and meet your tax reporting obligations.",
+    "sections": [
+     {
+      "h": "Verify PSAN Registration Before Depositing Funds",
+      "p": [
+       "France operates a mandatory national register for crypto service providers called PSAN (Prestataires de Services sur Actifs Numériques), managed by the Autorité des marchés financiers (AMF). Any platform offering custody, buying, selling, or exchange services to French residents must either hold PSAN registration or an equivalent EU authorization under MiCA. Operating without registration is illegal, and unregistered platforms cannot legally advertise in France.",
+       "Before you deposit euros or provide identity documents, check the AMF public register at amf-france.org. The register lists both mandatory registrants and optional registrants; the latter have undergone additional compliance reviews covering anti-money-laundering controls, capital adequacy, and governance. Look for platforms with \"enregistrement PSAN\" or \"agrément PSAN.\" If a platform is not listed and does not hold a MiCA license from another EU regulator, do not use it. Major platforms registered as PSAN include Bitstamp, Crypto.com, Coinhouse, and Paymium; many others hold MiCA passports from regulators in Ireland, Lithuania, or other EU jurisdictions and can legally serve French clients without separate AMF registration."
+      ]
+     },
+     {
+      "h": "Funding Your Account: SEPA Transfers and Card Payments",
+      "p": [
+       "Most PSAN-registered and MiCA-authorized platforms accept euro deposits via SEPA (Single Euro Payments Area) bank transfer. SEPA transfers are free from your bank's perspective for euro-zone accounts, usually arrive within one business day, and carry no currency conversion fees. To deposit, you generate a unique SEPA reference code or IBAN in your platform account, then initiate the transfer from your French bank. The account name at the receiving institution must match your verified name on the platform to comply with anti-money-laundering rules.",
+       "Card payments—both debit and credit—are available on many platforms but typically incur higher fees, often between 1.5% and 3.9% per transaction. Some French banks block card payments to crypto platforms as a fraud-prevention measure, so SEPA transfers remain the most reliable method. Instant SEPA, where available, can credit your account within seconds but may carry a small platform fee. Withdrawal back to your French bank account uses the same SEPA rails and is usually free or costs a nominal flat fee of one to three euros."
+      ]
+     },
+     {
+      "h": "KYC Requirements and Document Verification",
+      "p": [
+       "EU anti-money-laundering directives and French regulations require all platforms to perform Know Your Customer (KYC) checks before you can deposit significant sums or trade. You will need to provide a valid government-issued photo ID—typically a French carte nationale d'identité, passport, or residence permit—and proof of address dated within the last three months. Accepted proof-of-address documents include utility bills (electricity, gas, water), bank statements, tax notices (avis d'imposition), or rental agreements. Mobile phone bills and insurance statements are usually accepted if they show your full name and current address.",
+       "Verification is usually automated: you upload photos or scans, sometimes using a mobile app with liveness detection to confirm you are the document holder. Processing takes anywhere from a few minutes to several days depending on platform volume and document quality. Some platforms impose deposit or withdrawal limits until verification is complete. If you hold dual nationality, use the French or EU identity document to avoid confusion. Platforms may request additional information if you are a US person for tax purposes, a politically exposed person, or if transaction patterns trigger enhanced due diligence."
+      ]
+     },
+     {
+      "h": "Trading Fees, Spreads and Deposit Costs",
+      "p": [
+       "Fee structures vary by platform but generally fall into three categories: maker-taker trading fees, simple percentage fees, or spread-based pricing. Maker-taker models charge lower fees (often 0.10% to 0.40%) when you place limit orders that add liquidity to the order book, and higher fees (0.20% to 0.60%) when you take liquidity with market orders. Flat percentage models apply the same rate regardless of order type, commonly 0.50% to 1.50%. Spread-based platforms show a single buy or sell price but embed a margin—often 0.50% to 2%—between the market rate and the price you pay.",
+       "SEPA deposits are free on most platforms; SEPA withdrawals range from free to around three euros. Card deposits carry the 1.5% to 3.9% fees mentioned earlier. Some platforms charge network fees when you withdraw cryptocurrency to an external wallet; these fees reflect the blockchain transaction cost (gas fees on Ethereum, sat/vbyte on Bitcoin) and vary with network congestion. Always compare the all-in cost—deposit fee, trading fee, spread, withdrawal fee—rather than headline trading rates alone."
+      ]
+     },
+     {
+      "h": "Tax Treatment: The 30% Flat Tax on Crypto Gains",
+      "p": [
+       "France taxes cryptocurrency gains as capital income under the prélèvement forfaitaire unique (PFU), a flat rate of 30% that includes 12.8% income tax and 17.2% social contributions. The taxable gain is calculated each time you dispose of cryptocurrency—whether you sell for euros, trade one crypto for another, or use crypto to pay for goods and services. The tax applies to the difference between your total acquisition cost (purchase price plus associated fees) and the disposal proceeds, prorated across your entire holdings of that asset.",
+       "You report gains and losses on form 2086, filed alongside your annual income tax declaration (form 2042). The form requires you to list each disposal, the date, the proceeds, and the prorated cost basis. If your total annual proceeds from crypto disposals exceed certain thresholds, reporting becomes mandatory even if you have no net gain. Losses can offset gains within the same tax year but cannot be carried forward to future years under the PFU regime. Alternatively, you may opt for the progressive income tax scale (barème progressif) if your marginal rate is lower than 12.8%, but this choice applies to all capital income for that year and you must make the election when filing. Tax rules change, and this is not tax advice; consult a French tax professional (expert-comptable) for your specific situation."
+      ]
+     },
+     {
+      "h": "Declaring Foreign Accounts and Platforms",
+      "p": [
+       "If you hold an account on a cryptocurrency platform located outside France—meaning the platform's headquarters, operating company, or custodial entity is not in France—you must declare that account annually on form 3916-bis, even if the account balance is zero or you made no transactions. This requirement stems from anti-money-laundering and tax-evasion rules and applies to accounts opened, held, used, or closed during the tax year. Each foreign platform account requires a separate line on the form.",
+       "Form 3916-bis asks for the platform name, address, country, account reference or number, opening and closing dates, and the nature of the account. Many well-known platforms—Binance, Kraken, Coinbase—are headquartered outside France and trigger this obligation. Failure to declare foreign accounts can result in penalties starting at 750 euros per undeclared account, rising to 1,500 euros if the account is in a non-cooperative jurisdiction. The declaration is purely informational; it does not replace the 2086 form for reporting gains. Domestic platforms registered as PSAN in France do not require 3916-bis reporting."
+      ]
+     },
+     {
+      "h": "Choosing a Platform: Registration, Liquidity and Support",
+      "p": [
+       "When selecting a platform, prioritize PSAN or MiCA registration, then evaluate liquidity, fees, and customer support. High liquidity—visible as tight bid-ask spreads and deep order books—means you can buy or sell without significantly moving the price, which matters more as trade size increases. Platforms with French-language support and customer service teams familiar with AMF requirements will resolve issues faster, especially during KYC or withdrawal problems.",
+       "Consider whether you want to keep cryptocurrency on the platform (custodial) or move it to a private wallet (self-custody). Custodial accounts are simpler but carry the risk that the platform controls your keys; if the platform becomes insolvent or freezes accounts, access to your funds may be delayed or lost. Self-custody requires you to manage seed phrases and private keys securely; losing them means losing access permanently. Some investors split holdings between hot wallets for trading and cold storage for long-term holdings. No approach is risk-free, and the right balance depends on your technical confidence and the amounts involved."
+      ]
+     }
+    ]
+   }
+  }
+ },
+ {
+  "slug": "how-to-buy-crypto-brazil",
+  "category": "guide",
+  "emoji": "🇧🇷",
+  "langs": [
+   "pt",
+   "en"
+  ],
+  "updated": "2026-08-24T11:31:01.068Z",
+  "i18n": {
+   "pt": {
+    "title": "Como Comprar Criptomoedas no Brasil: Depósitos via PIX, Regulamentação, KYC e Impostos",
+    "excerpt": "O Brasil regulamenta prestadores de serviços de ativos virtuais através do Banco Central, nos termos da Lei 14.478. Este guia cobre tudo o que você precisa saber sobre como comprar cripto com reais, desde depósitos via PIX e requisitos de KYC até imposto sobre ganhos de capital e obrigações mensais de declaração.",
+    "sections": [
+     {
+      "h": "Marco Legal e Regulamentação",
+      "p": [
+       "O Brasil formalizou a regulamentação de criptomoedas através da Lei 14.478/2022, que coloca os prestadores de serviços de ativos virtuais sob supervisão do Banco Central. Exchanges, corretoras e serviços de custódia operando no Brasil devem se registrar junto ao Banco Central e cumprir padrões de combate à lavagem de dinheiro. A lei não classifica criptomoedas como moeda de curso legal, mas as trata como ativos sujeitos a obrigações específicas de declaração e tributação.",
+       "Enquanto o Banco Central supervisiona a conformidade operacional, questões tributárias ficam a cargo da Receita Federal. Essa estrutura dupla significa que as plataformas devem satisfazer tanto regulamentos prudenciais quanto requisitos de transparência fiscal. As regras e sua interpretação continuam a evoluir conforme o Banco Central emite instruções normativas, portanto verifique os requisitos atuais com a plataforma escolhida ou consulte um profissional tributário brasileiro familiarizado com ativos digitais."
+      ]
+     },
+     {
+      "h": "Comprando Cripto com PIX e TED",
+      "p": [
+       "A maioria das exchanges brasileiras aceita depósitos em reais via PIX e TED (transferência bancária). O PIX normalmente liquida em segundos, permitindo que você negocie imediatamente após o depósito ser confirmado pela plataforma. Transferências TED geralmente chegam no mesmo dia útil se iniciadas durante o horário bancário, embora algumas plataformas possam aplicar uma breve retenção de verificação em depósitos de primeira vez.",
+       "O cadastro na plataforma normalmente exige vincular uma conta bancária registrada no seu CPF. Após a verificação, você gera uma chave PIX ou QR code dentro da interface da exchange, ou copia os dados bancários da plataforma para uma TED. Os depósitos mínimos variam por plataforma—algumas aceitam a partir de R$10, enquanto outras estabelecem pisos de R$50 ou R$100. O saque de reais de volta para sua conta bancária segue os mesmos trilhos: saques via PIX costumam chegar em minutos, saques via TED em até um dia útil."
+      ]
+     },
+     {
+      "h": "Requisitos de KYC e Verificação de CPF",
+      "p": [
+       "Todas as exchanges brasileiras regulamentadas aplicam procedimentos de Conheça Seu Cliente (KYC). No mínimo, você fornecerá seu CPF (Cadastro de Pessoas Físicas), nome completo, data de nascimento e um documento de identidade com foto emitido pelo governo, como RG (Registro Geral) ou CNH (carteira de motorista). Muitas plataformas também exigem comprovante de residência—uma conta de luz, extrato bancário ou correspondência oficial datada dos últimos três meses.",
+       "Os prazos de verificação variam de alguns minutos a vários dias úteis, dependendo do processo da plataforma e se uma revisão manual é acionada. Algumas exchanges usam leitura automatizada de documentos e reconhecimento facial para agilizar a aprovação; outras colocam as submissões em fila para revisão humana. Limites de transação mais altos ou acesso a recursos avançados como negociação com margem normalmente requerem KYC aprimorado, que pode incluir declarações de renda ou documentos de identidade adicionais. Mantenha cópias dos documentos enviados, pois a Receita Federal pode solicitar comprovação de identidade ao revisar suas declarações de transações cripto."
+      ]
+     },
+     {
+      "h": "Taxas e Spreads em Pares BRL",
+      "p": [
+       "As exchanges brasileiras cobram taxas através de vários modelos: comissões de negociação, taxas de depósito/saque e spreads de compra-venda em pares BRL. As taxas de negociação normalmente variam de 0,1% a 1,5% por transação, frequentemente estruturadas em camadas maker-taker, onde ordens passivas (maker) pagam menos que ordens a mercado (taker). Descontos baseados em volume são comuns—traders que movimentam volumes mensais mais altos em reais ou mantêm o token nativo da plataforma podem receber taxas reduzidas.",
+       "Depósitos via PIX geralmente são gratuitos, embora algumas plataformas limitem o número de depósitos gratuitos por mês ou cobrem uma pequena porcentagem sobre valores acima de um limite. Saques via PIX ou TED podem incorrer em taxas fixas de R$3 a R$10, ou taxas percentuais em torno de 0,5% a 1%. Preste atenção especial ao spread em pares de negociação BRL como BTC/BRL ou USDT/BRL. Spreads mais amplos efetivamente aumentam seu custo, especialmente em pares de menor liquidez ou durante períodos voláteis. Comparar o custo total—taxa mais spread—entre plataformas para o tamanho típico de sua operação oferece uma visão mais clara do que apenas as taxas de comissão anunciadas."
+      ]
+     },
+     {
+      "h": "Declaração Mensal à Receita Federal (IN 1.888)",
+      "p": [
+       "A Instrução Normativa 1.888 obriga exchanges operando no Brasil a reportar mensalmente à Receita Federal todas as transações dos usuários. Esse reporte cobre compras, vendas, transferências e quaisquer outras operações envolvendo criptoativos. As plataformas enviam esses relatórios automaticamente; usuários individuais não apresentam esta obrigação específica, mas devem estar cientes de que a autoridade fiscal recebe um registro detalhado da atividade vinculada ao seu CPF.",
+       "Como usuário, você tem sua própria obrigação de declaração se o total de suas participações exceder R$5.000 em qualquer momento do ano, ou se você realizar transações acima de certos limites. Você declara essas participações e transações na Declaração de Imposto de Renda anual. Mesmo que não deva imposto—por exemplo, se os ganhos ficarem abaixo da isenção mensal—você ainda deve declarar as participações e alienações com precisão. Deixar de declarar ou subdeclarar pode desencadear multas e juros. Como as regras tributárias e limites estão sujeitos a mudanças, consulte um contador brasileiro com experiência em tributação de criptomoedas para garantir conformidade com os requisitos atuais."
+      ]
+     },
+     {
+      "h": "Imposto sobre Ganhos de Capital e a Isenção de R$35.000",
+      "p": [
+       "Ganhos de capital na venda de criptomoedas são tributados como investimentos, não como câmbio de moeda. A Receita Federal aplica alíquotas progressivas: 15% sobre ganhos até R$5 milhões, 17,5% de R$5 milhões a R$10 milhões, 20% de R$10 milhões a R$30 milhões e 22,5% acima de R$30 milhões. Essas faixas se aplicam por transação ou por mês, dependendo de como você calcula o ganho.",
+       "Existe uma isenção crítica para pessoas físicas: se o total de suas vendas de criptoativos em um determinado mês calendário não exceder R$35.000, quaisquer ganhos dessas vendas estão isentos de imposto. Essa isenção aplica-se apenas a vendas; trocas entre criptomoedas (por exemplo, BTC para ETH) são consideradas alienações e podem gerar um fato gerador mesmo sem converter para reais. Se você vender R$40.000 em um mês, os ganhos sobre o valor total são tributáveis. Cronometrar as vendas para permanecer abaixo do limite mensal pode, portanto, proporcionar economias fiscais significativas, embora você deva documentar cada transação com data, valor, custo de aquisição e preço de venda.",
+       "O imposto é autoavaliado e pago via DARF (Documento de Arrecadação de Receitas Federais) até o último dia útil do mês seguinte à venda. Por exemplo, ganhos realizados em março vencem no final de abril. Calcular o custo de aquisição—frequentemente PEPS (primeiro a entrar, primeiro a sair) ou custo médio—requer manutenção cuidadosa de registros, especialmente se você negocia com frequência ou em várias plataformas. A interação da isenção mensal, métodos de custo de aquisição e obrigações de declaração torna a tributação cripto brasileira complexa. Esta é uma informação geral e não constitui assessoria fiscal; as regras mudam e situações individuais variam, portanto orientação profissional é prudente."
+      ]
+     },
+     {
+      "h": "Escolhendo uma Plataforma e Gerenciando Riscos",
+      "p": [
+       "Ao selecionar uma exchange brasileira, verifique se está registrada junto ao Banco Central e cumpre o reporte da IN 1.888. Plataformas estabelecidas publicam detalhes de registro e mantêm tabelas de taxas transparentes. Compare métodos de depósito e saque, criptomoedas suportadas, liquidez nos pares BRL que você pretende negociar e a qualidade do suporte ao cliente em português.",
+       "Recursos de segurança importam: procure autenticação de dois fatores, armazenamento a frio da maioria dos fundos dos usuários e uma política clara sobre seguro ou responsabilidade em caso de violação. Nenhuma plataforma é livre de riscos; hacks de exchanges, insolvência e falhas operacionais ocorreram globalmente. Manter saldos elevados em uma exchange expõe você ao risco de contraparte. Para participações de longo prazo, considere transferir ativos para uma carteira privada onde você controla as chaves, mantendo apenas saldos de negociação na plataforma.",
+       "Conformidade regulatória e comunicação transparente são sinais positivos, mas a due diligence permanece sua responsabilidade. Leia avaliações de usuários, teste a plataforma com um depósito pequeno e certifique-se de entender a estrutura de taxas e o processo de saque antes de comprometer capital significativo. O mercado cripto brasileiro é dinâmico, e as plataformas podem mudar políticas, estruturas de taxas ou até sair do mercado, portanto mantenha-se informado e reavalie sua escolha periodicamente."
+      ]
+     }
+    ]
+   },
+   "en": {
+    "title": "How to Buy Cryptocurrency in Brazil: PIX Deposits, Regulation, KYC, Taxes",
+    "excerpt": "Brazil regulates crypto service providers through the Banco Central under Law 14.478. This guide covers everything you need to know about buying crypto with BRL, from PIX deposits and KYC requirements to capital gains tax and monthly reporting obligations.",
+    "sections": [
+     {
+      "h": "Legal Framework and Regulation",
+      "p": [
+       "Brazil formalized crypto regulation through Law 14.478/2022, which places virtual asset service providers under Banco Central supervision. Exchanges, brokers, and custody services operating in Brazil must register with the central bank and comply with anti-money laundering standards. The law does not classify cryptocurrencies as legal tender but treats them as assets subject to specific reporting and tax obligations.",
+       "While the Banco Central oversees operational compliance, tax matters fall under the Receita Federal (Federal Revenue Service). This dual structure means platforms must satisfy both prudential regulations and tax transparency requirements. Rules and their interpretation continue to evolve as the Banco Central issues normative instructions, so verify current requirements with the platform you choose or consult a Brazilian tax professional familiar with digital assets."
+      ]
+     },
+     {
+      "h": "Buying Crypto with PIX and TED",
+      "p": [
+       "Most Brazilian exchanges accept deposits in reais via PIX and TED (bank transfer). PIX typically settles within seconds, allowing you to trade immediately after the deposit clears on the platform's side. TED transfers usually arrive within the same business day if initiated during banking hours, though some platforms may apply a brief verification hold on first-time deposits.",
+       "Platform onboarding typically requires linking a bank account registered in your CPF. After verification, you generate a PIX key or QR code within the exchange interface, or copy the platform's bank details for a TED. Minimum deposits vary by platform—some accept as little as R$10, while others set floors of R$50 or R$100. Withdrawal of reais back to your bank account follows the same rails: PIX withdrawals often arrive in minutes, TED withdrawals within one business day."
+      ]
+     },
+     {
+      "h": "KYC Requirements and CPF Verification",
+      "p": [
+       "All regulated Brazilian exchanges enforce Know Your Customer (KYC) procedures. At minimum, you will provide your CPF (Cadastro de Pessoas Físicas), full name, date of birth, and a government-issued photo ID such as RG (Registro Geral) or CNH (driver's license). Many platforms also require proof of address—a utility bill, bank statement, or official correspondence dated within the past three months.",
+       "Verification times range from a few minutes to several business days, depending on the platform's process and whether manual review is triggered. Some exchanges use automated document scanning and facial recognition to speed approval; others queue submissions for human review. Higher transaction limits or access to advanced features like margin trading typically require enhanced KYC, which may include income declarations or additional identity documents. Keep copies of submitted documents, as the Receita Federal may request proof of identity when reviewing your crypto transaction reports."
+      ]
+     },
+     {
+      "h": "Fees and Spreads on BRL Pairs",
+      "p": [
+       "Brazilian exchanges charge fees through several models: trading commissions, deposit/withdrawal fees, and bid-ask spreads on BRL pairs. Trading fees typically range from 0.1% to 1.5% per transaction, often structured in maker-taker tiers where passive orders (maker) pay less than market orders (taker). Volume-based discounts are common—traders moving higher monthly volumes in reais or holding the platform's native token may receive reduced rates.",
+       "PIX deposits are usually free, though some platforms cap the number of free deposits per month or charge a small percentage on amounts above a threshold. Withdrawals via PIX or TED may incur flat fees of R$3 to R$10, or percentage-based fees around 0.5% to 1%. Pay close attention to the spread on BRL trading pairs like BTC/BRL or USDT/BRL. Wider spreads effectively increase your cost, especially on lower-liquidity pairs or during volatile periods. Comparing the all-in cost—fee plus spread—across platforms for your typical trade size gives a clearer picture than headline commission rates alone."
+      ]
+     },
+     {
+      "h": "Monthly Reporting to Receita Federal (IN 1.888)",
+      "p": [
+       "Normative Instruction 1.888 obliges exchanges operating in Brazil to report all user transactions monthly to the Receita Federal. This reporting covers purchases, sales, transfers, and any other operations involving crypto assets. Platforms submit these reports automatically; individual users do not file this particular obligation themselves, but should be aware that the tax authority receives a detailed record of activity tied to your CPF.",
+       "As a user, you have your own reporting duty if your total holdings exceed R$5,000 at any point in the year, or if you conduct transactions above certain thresholds. You declare these holdings and transactions in the annual Declaração de Imposto de Renda (income tax return). Even if you owe no tax—for instance, if gains fall under the monthly exemption—you must still report holdings and disposals accurately. Failure to report or underreporting can trigger fines and interest. Because tax rules and thresholds are subject to change, consult a Brazilian accountant experienced in crypto taxation to ensure compliance with current requirements."
+      ]
+     },
+     {
+      "h": "Capital Gains Tax and the R$35,000 Exemption",
+      "p": [
+       "Capital gains on cryptocurrency sales are taxed as investimentos, not currency exchange. The Receita Federal applies progressive rates: 15% on gains up to R$5 million, 17.5% from R$5 million to R$10 million, 20% from R$10 million to R$30 million, and 22.5% above R$30 million. These brackets apply per transaction or per month, depending on how you calculate the gain.",
+       "A critical exemption exists for individuals: if your total sales of crypto assets in a given calendar month do not exceed R$35,000, any gains from those sales are exempt from tax. This exemption applies only to sales; exchanges between cryptocurrencies (for example, BTC to ETH) are considered disposals and may trigger a taxable event even without converting to reais. If you sell R$40,000 worth in one month, gains on the entire amount are taxable. Timing sales to stay under the monthly threshold can therefore provide significant tax savings, though you should document each transaction with date, amount, cost basis, and sale price.",
+       "Tax is self-assessed and paid via DARF (Documento de Arrecadação de Receitas Federais) by the last business day of the month following the sale. For example, gains realized in March are due by the end of April. Calculating cost basis—often FIFO (first in, first out) or average cost—requires careful record-keeping, especially if you trade frequently or across multiple platforms. The interplay of the monthly exemption, cost basis methods, and reporting obligations makes Brazilian crypto taxation complex. This is general information and not tax advice; rules change and individual situations vary, so professional guidance is prudent."
+      ]
+     },
+     {
+      "h": "Choosing a Platform and Managing Risk",
+      "p": [
+       "When selecting a Brazilian exchange, verify it is registered with the Banco Central and complies with IN 1.888 reporting. Established platforms publish registration details and maintain transparent fee schedules. Compare deposit and withdrawal methods, supported cryptocurrencies, liquidity on the BRL pairs you intend to trade, and the quality of customer support in Portuguese.",
+       "Security features matter: look for two-factor authentication, cold storage of the majority of user funds, and a clear policy on insurance or liability in case of breach. No platform is risk-free; exchange hacks, insolvency, and operational failures have occurred globally. Holding large balances on an exchange exposes you to counterparty risk. For long-term holdings, consider transferring assets to a private wallet where you control the keys, keeping only trading balances on the platform.",
+       "Regulatory compliance and transparent communication are positive signals, but due diligence remains your responsibility. Read user reviews, test the platform with a small deposit, and ensure you understand the fee structure and withdrawal process before committing significant capital. The Brazilian crypto market is dynamic, and platforms can change policies, fee structures, or even exit the market, so stay informed and reassess your choice periodically."
+      ]
+     }
+    ]
+   }
+  }
+ },
+ {
+  "slug": "how-to-buy-crypto-japan",
+  "category": "guide",
+  "emoji": "🇯🇵",
+  "langs": [
+   "ja",
+   "en"
+  ],
+  "updated": "2026-08-24T11:32:35.781Z",
+  "i18n": {
+   "ja": {
+    "title": "日本で暗号資産を購入する方法:金融庁登録業者、日本円入金、本人確認、税制の完全ガイド",
+    "excerpt": "日本ではすべての暗号資産交換業者が資金決済法に基づき金融庁への登録を義務付けられています。このガイドでは金融庁登録の確認方法、日本円の入金手段、マイナンバーを含む本人確認、手数料体系、そして暗号資産の利益が雑所得として累進課税される仕組みを解説します。",
+    "sections": [
+     {
+      "h": "金融庁登録とその重要性",
+      "p": [
+       "日本の資金決済法では、国内で営業するすべての暗号資産交換業者は金融庁への登録が義務付けられています。この登録により、業者は厳格な資本要件を満たし、顧客資産の分別管理を実施し、堅牢なセキュリティ対策を講じ、定期的な監査を受けることが保証されます。未登録業者の運営は違法であり、金融庁の認可を受けていない海外プラットフォームを利用することは大きなリスクを伴います。",
+       "交換業者の登録状況を確認するには、金融庁の公式ウェブサイトで暗号資産交換業者の登録一覧を確認してください。一覧には会社名、登録番号、登録年月日が記載されています。金融庁登録済みの主要な交換業者には、bitFlyer、Coincheck、GMOコイン、DMM Bitcoin、Bitbank、Zaifなどがあります。資金を送金する前に必ず登録を確認してください。金融庁は新規登録や登録抹消に伴いこの一覧を更新します。"
+      ]
+     },
+     {
+      "h": "口座開設:マイナンバーと本人確認の要件",
+      "p": [
+       "すべての金融庁登録業者は、マネーロンダリング対策規制に基づいて本人確認を実施する必要があります。手続きには運転免許証、在留カード、マイナンバーカードなどの顔写真付き身分証明書が必要です。多くの交換業者はマイナンバー(個人番号)の提出も求めます。マイナンバーカード自体、または通知カードと別の顔写真付き身分証明書の組み合わせで提出できます。",
+       "口座開設には通常1〜3営業日かかります。交換業者のウェブサイトまたはモバイルアプリを通じて、画像をアップロードするか、リアルタイム写真認証を利用して書類を提出します。一部の交換業者は追加の確認手段として、登録住所に確認コード付きのハガキを郵送します。外国籍の居住者も、有効な在留カードと日本の住所・電話番号があれば口座を開設できます。税法やコンプライアンス要件は変更されることがあるため、これは法的助言ではありません。最新の規則については交換業者または資格を持つアドバイザーに確認してください。"
+      ]
+     },
+     {
+      "h": "日本円の入金:銀行振込とコンビニ払い",
+      "p": [
+       "金融庁登録業者は複数の方法で日本円の入金を受け付けています。銀行振込(振込)が最も一般的で、交換業者は各顧客に専用の振込先口座番号を提供します。三菱UFJ銀行、みずほ銀行、三井住友銀行、りそな銀行、ゆうちょ銀行などの主要銀行から午後の締切時間前に振り込めば、通常は当日中に着金します。インターネットバンキングでの振込は無料または100〜300円程度の手数料がかかります。",
+       "多くの交換業者はファミリーマート、ローソン、セブン‐イレブンなどのコンビニエンスストアでの支払いにも対応しています。交換業者のアプリで支払番号またはバーコードを生成し、店舗に持参して現金で支払います。入金は10〜60分以内に交換業者の口座に反映されます。コンビニ入金は1回あたり300〜700円程度の手数料がかかり、1日あたり30万円程度の上限が設定されていることがあります。一部のプラットフォームはネット銀行からのクイック入金やATMからのペイジー決済にも対応しています。銀行口座への出金手数料は、交換業者や金額により200〜750円程度です。"
+      ]
+     },
+     {
+      "h": "取引手数料とスプレッド",
+      "p": [
+       "金融庁登録業者は、メイカー・テイカーモデルまたはスプレッドによって手数料を徴収します。BitbankやGMOコインなどのメイカー・テイカー型の交換業者は、流動性を提供する注文(メイカー注文、通常0%〜マイナス0.02%、つまりリベートを受け取れる)と流動性を消費する注文(テイカー注文、通常0.05%〜0.15%)で異なる手数料を設定しています。これらの交換業者では、特定の価格での買い注文と売り注文を確認できる板情報が表示されます。",
+       "Coincheckなどのプラットフォームは、スプレッドを含んだ提示価格で売買するシンプルなモデルを採用しています。スプレッドとは買値と売値の差額です。スプレッドは暗号資産や市場状況により変動しますが、通常0.1%〜5%の範囲です。スプレッドが広いほど実質的なコストが高くなります。交換業者を比較する際は、取引手数料と入出金手数料の両方を含めた総コストを計算してください。一部の交換業者はメイカー手数料を無料にしたり、大口取引者向けに手数料を割引したりしています。"
+      ]
+     },
+     {
+      "h": "税務上の取扱い:暗号資産の利益は雑所得",
+      "p": [
+       "日本では暗号資産の利益は譲渡所得ではなく、国税庁により雑所得(雑所得)に分類され、5%〜45%の累進所得税率に加えて約10%の住民税が課されます。つまり、給与と暗号資産の利益を含めた年間の総所得が税率を決定します。例えば、合計所得が20%の税率区分に該当する場合、住民税を含めた実効税率は約30%に達します。",
+       "各暗号資産取引の利益を計算するには、移動平均法または総平均法などの方法を使用して取得原価を算出する必要があります。暗号資産を別の暗号資産と交換した場合(日本円への売却だけでなく)も、その取引は課税対象の所得を発生させます。多くの交換業者は年間取引報告書を提供していますが、正確な計算と申告の責任は利用者にあります。損失は他の雑所得と相殺できますが、給与所得や株式の譲渡所得とは相殺できません。税法は変更されることがあり、計算は複雑になる可能性があるため、これは税務助言ではありません。利益が基礎控除額を超える場合や頻繁に取引する場合は、暗号資産に詳しい日本の税理士(税理士)に相談してください。"
+      ]
+     },
+     {
+      "h": "ニーズに応じた交換業者の選び方",
+      "p": [
+       "交換業者によって適した用途が異なります。BitbankやGMOコインは板情報を備えた本格的な取引画面、アクティブトレーダー向けの低手数料、幅広い暗号資産を提供しています。Coincheckは初心者に好まれるシンプルなインターフェース、迅速なオンボーディング、簡単なコンビニ入金を備えていますが、スプレッドが広い場合があります。DMM Bitcoinはレバレッジ取引を希望するユーザー向けに特化しています。bitFlyerは保険補償を伴う強固なセキュリティを提供し、簡単な購入と高度な取引の両方に対応しています。",
+       "購入したい暗号資産を考慮してください。すべての交換業者が同じ資産を取り扱っているわけではありません。希望する入金方法に対応しているか、手数料が取引規模に適しているかを確認してください。大口購入では、スプレッドが狭い、または手数料率が低い交換業者が有利です。一方、少額で頻度の低い購入では、取引ごとのコストよりも利便性やインターフェースのシンプルさを優先する場合があります。取引スタイルに関わらず、二段階認証、コールドウォレット保管、保険などのセキュリティ機能を選択基準に含めるべきです。"
+      ]
+     },
+     {
+      "h": "セキュリティと資産保護",
+      "p": [
+       "金融庁の規制により、交換業者は顧客の暗号資産を会社資産と分別管理し、一定水準の純資産を財務的裏付けとして保持する必要があります。ほとんどの交換業者は顧客資産の大部分をコールドウォレット(オフライン保管)に保管し、日々の出金に必要な量だけをホットウォレットに移動しています。これによりハッキングのリスクが軽減されます。bitFlyerなどの一部の交換業者は、不正アクセスやセキュリティ侵害による損失を補償する保険契約を結んでいますが、補償内容や限度額は異なります。",
+       "Google AuthenticatorやAuthyなどの認証アプリを使用して二段階認証を有効にしてください。SIMスワップ攻撃に脆弱なSMSよりも安全です。強力で固有のパスワードを使用し、交換業者が対応していればハードウェアセキュリティキーの使用を検討してください。金融庁登録により未規制プラットフォームと比べてリスクは軽減されますが、どの交換業者もセキュリティインシデントから完全に免れるわけではありません。大量の資産を交換業者に長期保管しないでください。多額の保有資産は秘密鍵を自分で管理できる個人用ハードウェアウォレットに移してください。フィッシング攻撃はしばしば交換業者になりすますため、交換業者のURLは常に手動で入力するか、メールのリンクをクリックするのではなくブックマークを使用してください。"
+      ]
+     }
+    ]
+   },
+   "en": {
+    "title": "How to Buy Cryptocurrency in Japan: A Complete Guide to FSA-Registered Exchanges, KYC, and Tax Treatment",
+    "excerpt": "Japan requires all cryptocurrency exchanges to register with the Financial Services Agency under the Payment Services Act. This guide covers FSA verification, JPY deposit methods, My Number requirements, fees, and how crypto profits are taxed as miscellaneous income.",
+    "sections": [
+     {
+      "h": "FSA Registration and Why It Matters",
+      "p": [
+       "Japan's Payment Services Act mandates that all cryptocurrency exchanges operating in the country must register with the Financial Services Agency (FSA). This registration ensures exchanges meet strict capital requirements, maintain segregated customer funds, implement robust security measures, and undergo regular audits. Operating an unregistered exchange is illegal, and residents face significant risk using offshore platforms that lack FSA approval.",
+       "To verify an exchange's registration status, visit the FSA's official website and check the list of registered crypto asset exchange service providers (暗号資産交換業者). The list includes company names, registration numbers, and registration dates. Major FSA-registered exchanges include bitFlyer, Coincheck, GMO Coin, DMM Bitcoin, Bitbank, and Zaif. Always confirm registration before transferring funds, as the FSA updates this list when new exchanges register or existing ones lose their license."
+      ]
+     },
+     {
+      "h": "Opening an Account: My Number and KYC Requirements",
+      "p": [
+       "All FSA-registered exchanges must verify your identity under anti-money laundering regulations. The process requires a government-issued photo ID such as a driver's license, residence card (zairyu card), or My Number card. Most exchanges also require your My Number (Individual Number), which can be provided via the My Number card itself or a notification card (tsuchi card) paired with another photo ID.",
+       "Account opening typically takes one to three business days. You'll submit documents through the exchange's website or mobile app, either by uploading images or using real-time photo verification. Some exchanges mail a postcard with an activation code to your registered address as an additional verification step. Foreign residents can open accounts if they hold a valid residence card and have a Japanese address and phone number. Tax laws and compliance requirements change, so this is not legal advice; verify current rules with the exchange or a qualified advisor."
+      ]
+     },
+     {
+      "h": "Depositing Japanese Yen: Bank Transfers and Convenience Store Options",
+      "p": [
+       "FSA-registered exchanges accept Japanese yen through several methods. Bank transfers (furikomi) are the most common, with exchanges providing dedicated virtual account numbers for each customer. Transfers from major banks like MUFG, Mizuho, Sumitomo Mitsui, Resona, and Japan Post Bank typically arrive within the same business day if sent before the afternoon cutoff. Internet banking transfers are usually free or cost 100 to 300 yen depending on your bank.",
+       "Many exchanges also accept convenience store payments through services like Family Mart, Lawson, and 7-Eleven. You generate a payment number or barcode in the exchange's app, bring it to the store, and pay in cash. Deposits appear in your exchange account within 10 to 60 minutes. Convenience store deposits often carry fees of 300 to 700 yen per transaction and may have daily limits around 300,000 yen. Some platforms support Quick Deposit services from internet banks and Pay-easy transfers through ATMs. Withdrawal fees to your bank account typically range from 200 to 750 yen depending on the exchange and amount."
+      ]
+     },
+     {
+      "h": "Trading Fees and Spreads",
+      "p": [
+       "FSA-registered exchanges charge fees through maker-taker models or spreads. Maker-taker exchanges like Bitbank and GMO Coin charge separate fees for orders that add liquidity (maker orders, typically 0% to negative 0.02%, meaning you earn a rebate) and orders that remove liquidity (taker orders, typically 0.05% to 0.15%). These exchanges display order books where you can see buy and sell orders at specific prices.",
+       "Other platforms like Coincheck use a simpler model where you buy and sell at quoted prices that include a spread—the difference between the buy price and sell price. Spreads vary by cryptocurrency and market conditions but typically range from 0.1% to 5%. Wider spreads mean higher effective costs. When comparing exchanges, calculate the total cost including both trading fees and any deposit or withdrawal charges. Some exchanges waive maker fees or offer reduced rates for high-volume traders."
+      ]
+     },
+     {
+      "h": "Tax Treatment: Crypto Profits as Miscellaneous Income",
+      "p": [
+       "Japan does not treat cryptocurrency profits as capital gains. Instead, the National Tax Agency classifies them as miscellaneous income (zatsushotoku), subject to progressive income tax rates ranging from 5% to 45% plus local inhabitant tax of approximately 10%. This means your total annual income, including salary and crypto profits, determines your tax rate. For example, if your combined income falls in the 20% bracket, your effective rate including local tax approaches 30%.",
+       "You must calculate profit for each cryptocurrency transaction using methods like moving-average cost or total-average cost to determine your acquisition cost. If you trade crypto for another crypto (not just selling for yen), that transaction triggers taxable income. Many exchanges provide annual transaction reports, but you remain responsible for accurate calculation and filing. Losses can offset other miscellaneous income but not employment income or capital gains from stocks. Because tax rules change and calculation can be complex, this is not tax advice; consult a Japanese tax professional (zeirishi) familiar with cryptocurrency, especially if your profits exceed basic deduction amounts or you trade frequently."
+      ]
+     },
+     {
+      "h": "Choosing an Exchange Based on Your Needs",
+      "p": [
+       "Different exchanges suit different priorities. Bitbank and GMO Coin offer professional trading interfaces with order books, lower fees for active traders, and a wide range of cryptocurrencies. Coincheck provides a simpler interface favored by beginners, faster onboarding, and easy convenience store deposits, though spreads may be higher. DMM Bitcoin specializes in leveraged trading for users interested in margin positions. BitFlyer offers strong security with insurance coverage and handles both simple purchases and advanced trading.",
+       "Consider which cryptocurrencies you want to buy, as not all exchanges list the same assets. Check whether the exchange supports your preferred deposit method and whether fees fit your transaction size. Larger purchases often benefit from exchanges with tighter spreads or lower percentage fees, while smaller, infrequent purchases may prioritize convenience and interface simplicity over per-transaction costs. Security features like two-factor authentication, cold wallet storage, and insurance should factor into your decision regardless of trading style."
+      ]
+     },
+     {
+      "h": "Security and Fund Protection",
+      "p": [
+       "FSA regulations require exchanges to hold customer crypto assets separately from company assets and to maintain a certain level of net assets as financial backing. Most exchanges store the majority of customer funds in cold wallets (offline storage), moving only the necessary amount to hot wallets for daily withdrawals. This reduces risk from hacking. Some exchanges like bitFlyer carry insurance policies covering losses from unauthorized access or security breaches, though coverage terms and limits vary.",
+       "Enable two-factor authentication using an authenticator app like Google Authenticator or Authy rather than SMS, which is vulnerable to SIM-swap attacks. Use a strong, unique password and consider using a hardware security key if the exchange supports it. Be aware that while FSA registration reduces risk compared to unregulated platforms, no exchange is immune to security incidents. Never store large amounts on an exchange long-term; transfer significant holdings to a personal hardware wallet where you control the private keys. Phishing attempts often impersonate exchanges, so always type the exchange URL manually or use a bookmark rather than clicking links in emails."
+      ]
+     }
+    ]
+   }
+  }
  }
 ]
