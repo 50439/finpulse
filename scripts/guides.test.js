@@ -12,7 +12,7 @@
  *     обязан снова попадать в очередь, а не считаться готовым.
  */
 const assert = require('assert');
-const { repairJson, missingLangs, hasLang } = require('./guides.js');
+const { repairJson, missingLangs, hasLang, isFatal } = require('./guides.js');
 
 let n = 0;
 const t = (name, fn) => { fn(); n++; console.log('  ok  ' + name); };
@@ -85,6 +85,30 @@ t('отсутствующий гайд требует все языки темы
 t('язык с пустыми секциями считается ненаписанным', () => {
   assert.strictEqual(hasLang({ fr: { sections: [] } }, 'fr'), false);
   assert.deepStrictEqual(missingLangs(topic, { i18n: { en: { sections: [1] }, de: { sections: [1] }, fr: { sections: [] } } }), ['fr']);
+});
+
+console.log('isFatal:');
+
+t('исчерпанный баланс — повторять бессмысленно', () => {
+  // ровно эта ошибка съела 40 минут прогона #75: скрипт трижды повторял запрос
+  // к API, у которого кончились деньги, по каждой из оставшихся тем
+  assert.strictEqual(isFatal(new Error('Anthropic API 400: {"message":"Your credit balance is too low to access the Anthropic API."}')), true);
+});
+
+t('неверный ключ — повторять бессмысленно', () => {
+  assert.strictEqual(isFatal(new Error('Anthropic API 401: authentication_error')), true);
+});
+
+t('таймаут — повторять СТОИТ', () => {
+  assert.strictEqual(isFatal(new Error('таймаут 480 с — ответ не пришёл')), false);
+});
+
+t('кривой JSON — повторять СТОИТ', () => {
+  assert.strictEqual(isFatal(new Error("Expected ',' or ']' after array element in JSON at position 8516")), false);
+});
+
+t('перегрузка API — повторять СТОИТ', () => {
+  assert.strictEqual(isFatal(new Error('Anthropic API 529: overloaded_error')), false);
 });
 
 console.log('\nВсе ' + n + ' проверок прошли.');

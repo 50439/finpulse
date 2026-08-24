@@ -114,11 +114,20 @@ const guides = fs.existsSync(guidesFile) ? JSON.parse(fs.readFileSync(guidesFile
 const topics = JSON.parse(fs.readFileSync(path.join(__dirname,'data/guides.json'),'utf8'));
 const topicById = Object.fromEntries(topics.map(t => [t.slug, t]));
 
+// Недописанный гайд — НОРМАЛЬНОЕ промежуточное состояние: если одна партия
+// переводов зависла, генератор сохраняет то, что успел, а следующий прогон дописывает.
+// Раньше здесь стояло строгое равенство, и такой гайд ронял сборку — то есть одна
+// зависшая партия блокировала выкладку ВСЕГО сайта (реальный провал прогона #75).
+// Настоящий инвариант другой: лишних языков быть не должно, недостающие допустимы.
+const incompleteGuides = [];
 for (const g of guides) {
   check(!!topicById[g.slug], '\u0433\u0430\u0439\u0434 '+g.slug+' \u043d\u0435\u0442 \u0432 data/guides.json \u2014 \u0442\u0435\u043c\u044b \u043a\u0443\u0440\u0438\u0440\u0443\u044e\u0442\u0441\u044f \u0432\u0440\u0443\u0447\u043d\u0443\u044e');
   if (topicById[g.slug]) {
-    check(g.langs.slice().sort().join(',') === topicById[g.slug].langs.slice().sort().join(','),
-      '\u0433\u0430\u0439\u0434 '+g.slug+': langs \u0440\u0430\u0437\u043e\u0448\u043b\u0438\u0441\u044c \u0441 data/guides.json');
+    const planned = topicById[g.slug].langs;
+    const extra = g.langs.filter(l => !planned.includes(l));
+    check(!extra.length, '\u0433\u0430\u0439\u0434 '+g.slug+': \u044f\u0437\u044b\u043a\u0438 \u0432\u043d\u0435 data/guides.json \u2014 '+extra.join(','));
+    const short = planned.filter(l => !g.langs.includes(l));
+    if (short.length) incompleteGuides.push(g.slug+' (\u043d\u0435\u0442: '+short.join(',')+')');
   }
   for (const l of langs) {
     const gp = path.join(DIST,l,'guide',g.slug,'index.html');
@@ -407,4 +416,7 @@ function walk(dir, acc) {
   }
 }
 
+if (incompleteGuides.length) {
+  console.log('guides: \u043d\u0435\u0434\u043e\u043f\u0438\u0441\u0430\u043d\u043e ' + incompleteGuides.length + ' \u2014 ' + incompleteGuides.join('; ') + ' (\u0441\u043b\u0435\u0434\u0443\u044e\u0449\u0438\u0439 \u043f\u0440\u043e\u0433\u043e\u043d \u0434\u043e\u043f\u0438\u0448\u0435\u0442)');
+}
 if (fails){console.error(fails+' failures');process.exit(1);} console.log('OK - all checks passed');

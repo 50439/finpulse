@@ -85,6 +85,13 @@ function buildTranslatePrompt(t, en, langs) {
 '{"i18n":{"<lang>":{"title":"...","excerpt":"...","sections":[{"h":"...","p":["...","..."]}]}, ...one entry per requested language}}\n';
 }
 
+// Ошибки, которые повтором не лечатся: кончился баланс, неверный ключ, нет доступа.
+// Прогон #75 после исчерпания баланса ещё трижды долбился в API по каждой из
+// оставшихся тем — впустую и с задержками. Такую ошибку надо признавать сразу
+// и останавливать весь прогон, а не только текущий гайд.
+const FATAL = /credit balance|authentication_error|invalid x-api-key|permission_error|Anthropic API 40[13]/i;
+const isFatal = e => FATAL.test(e && e.message ? e.message : String(e));
+
 // Генерация через LLM время от времени возвращает невалидный JSON (сорванное
 // экранирование, обрыв по лимиту). Один повтор дешевле, чем потерянный гайд.
 async function callClaudeRetry(prompt, tries) {
@@ -95,6 +102,7 @@ async function callClaudeRetry(prompt, tries) {
     catch (e) {
       last = e;
       const msg = e && e.message ? e.message : String(e);
+      if (isFatal(e)) { console.error('  ошибка не лечится повтором: ' + msg.slice(0, 160)); throw e; }
       if (i < n) console.warn('  попытка ' + i + ' не разобралась (' + msg.slice(0, 90) + '), повторяю');
     }
   }
@@ -221,7 +229,31 @@ async function callClaude(prompt) {
 }
 
 // Сколько языков просить за один запрос. Больше — и ответ не влезает в лимит модели.
-const LANG_BATCH = Math.max(1, Number(process.env.GUIDE_LANG_BATCH || 4));
+const LANG_BATCH = Math.max(1, Number(process.env.GUIDE_LANG_BATCH || 3));
+
+// Партия переводов, которая не далась, повторяется НЕ тем же запросом, а двумя
+// вдвое меньшими. Причина отказа в прогонах #73 и #75 одна и та же — ответ на 4
+// языка не успевал прийти за отведённое время; половинный ответ приходит вдвое
+// быстрее. Повтор идентичного запроса, наоборот, гарантированно повторяет отказ.
+async function translateBatch(topic, i18n, batch) {
+  console.log('  перевод: ' + batch.join(', '));
+  try {
+    const part = await callClaudeRetry(buildTranslatePrompt(topic, i18n.en, batch), 2);
+    Object.assign(i18n, part.i18n || part);
+    return;
+  } catch (e) {
+    if (isFatal(e)) throw e;
+    const msg = e && e.message ? e.message : String(e);
+    if (batch.length > 1) {
+      const half = Math.ceil(batch.length / 2);
+      console.warn('  партия ' + batch.join(', ') + ' не далась (' + msg.slice(0, 70) + ') — делю пополам');
+      await translateBatch(topic, i18n, batch.slice(0, half));
+      await translateBatch(topic, i18n, batch.slice(half));
+      return;
+    }
+    console.error('  язык ' + batch[0] + ' не получился: ' + msg.slice(0, 160));
+  }
+}
 
 // Язык считается готовым, только если есть непустые секции.
 const hasLang = (i18n, l) => !!(i18n && i18n[l] && Array.isArray(i18n[l].sections) && i18n[l].sections.length);
@@ -258,17 +290,8 @@ async function writeOne(topic, out, topics) {
   // и следующий прогон допишет остаток (в прогоне #73 из-за одной зависшей партии
   // выбрасывался целый готовый гайд вместе с английским текстом).
   const rest = topic.langs.filter(l => !hasLang(i18n, l));
-  const failed = [];
   for (let i = 0; i < rest.length; i += LANG_BATCH) {
-    const batch = rest.slice(i, i + LANG_BATCH);
-    console.log('  перевод: ' + batch.join(', '));
-    try {
-      const part = await callClaudeRetry(buildTranslatePrompt(topic, i18n.en, batch));
-      Object.assign(i18n, part.i18n || part);
-    } catch (e) {
-      failed.push(batch.join(', '));
-      console.error('  партия ' + batch.join(', ') + ' не далась: ' + (e && e.message ? e.message : e));
-    }
+    await translateBatch(topic, i18n, rest.slice(i, i + LANG_BATCH));
   }
 
   const produced = topic.langs.filter(l => hasLang(i18n, l));
@@ -327,10 +350,14 @@ async function main() {
     catch (e) {
       // Один неудачный гайд не должен ронять остальные: следующий прогон подберёт его снова.
       console.error('Гайд ' + topic.slug + ' не получился: ' + (e && e.message ? e.message : e));
+      if (isFatal(e)) {
+        console.error('Дальше идти незачем — проблема не в теме, а в доступе к API. Прогон остановлен.');
+        break;
+      }
     }
   }
   console.log('Прогон завершён: написано ' + ok + ' из ' + queue.length);
 }
 
 if (require.main === module) main().catch(e => { console.error(e); process.exit(1); });
-module.exports = { buildPrompt, LANG_NAMES, repairJson, stripFences, missingLangs, hasLang };
+module.exports = { buildPrompt, LANG_NAMES, repairJson, stripFences, missingLangs, hasLang, isFatal };
