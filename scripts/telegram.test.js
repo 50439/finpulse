@@ -82,19 +82,23 @@ check(!(after.guides.ru || []).length, 'гайд не должен числит�
 fs.rmSync(box, { recursive: true, force: true });
 // Предохранитель: домен не резолвится — не должно уйти ни одного сообщения.
 // 24.08.2026 зона отвалилась вместе с хостингом; без этой проверки автопостинг
-// разослал бы битые ссылки в 10 каналов.
+// разослал бы битые ссылки в 10 каналов. Адрес берётся из data/site.json,
+// поэтому подменяем именно файл, а не переменную окружения.
 {
-  const out2 = path.join(os.tmpdir(), 'tg-sent-dead-' + process.pid + '.json');
-  const r = require('child_process').spawnSync(process.execPath, [path.join(ROOT, 'scripts/telegram.js')], {
-    encoding: 'utf8',
-    env: { ...process.env, TELEGRAM_BOT_TOKEN: 'x', OUT: out2, TG_MAX_POSTS: '2',
-           SITE_URL: 'https://finpulse24-domain-that-cannot-exist-zzz.invalid', TG_SKIP_SITE_CHECK: '' }
+  const dead = fs.mkdtempSync(path.join(os.tmpdir(), 'tgdead-'));
+  fs.mkdirSync(path.join(dead, 'data')); fs.mkdirSync(path.join(dead, 'scripts')); fs.mkdirSync(path.join(dead, 'content'));
+  for (const f of ['data/i18n.json', 'data/telegram-channels.json', 'scripts/telegram.js'])
+    fs.copyFileSync(path.join(ROOT, f), path.join(dead, f));
+  fs.writeFileSync(path.join(dead, 'data/site.json'), JSON.stringify({ url: 'https://finpulse24-cannot-exist-zzz.invalid' }));
+  fs.writeFileSync(path.join(dead, 'content/articles.json'), '[]');
+  const outD = path.join(dead, 'sent.json');
+  const r = require('child_process').spawnSync(process.execPath, [path.join(dead, 'scripts/telegram.js')], {
+    encoding: 'utf8', env: { ...process.env, TELEGRAM_BOT_TOKEN: 'x', OUT: outD, TG_SKIP_SITE_CHECK: '' }
   });
-  const dead = fs.existsSync(out2) ? JSON.parse(fs.readFileSync(out2, 'utf8')) : [];
-  check(dead.length === 0, '\u0441\u0430\u0439\u0442 \u043d\u0435\u0434\u043e\u0441\u0442\u0443\u043f\u0435\u043d, \u043d\u043e \u0443\u0448\u043b\u043e ' + dead.length + ' \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0439');
   const log = (r.stdout || '') + (r.stderr || '');
+  check(!fs.existsSync(outD), '\u0441\u0430\u0439\u0442 \u043d\u0435\u0434\u043e\u0441\u0442\u0443\u043f\u0435\u043d, \u043d\u043e \u0441\u043a\u0440\u0438\u043f\u0442 \u0432\u0441\u0451 \u0440\u0430\u0432\u043d\u043e \u043f\u043e\u0441\u0442\u0438\u043b');
   check(/\u043d\u0435 \u043e\u0442\u0432\u0435\u0447\u0430\u0435\u0442/.test(log),
-    '\u043f\u0440\u0435\u0434\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u0435\u043b\u044c \u043d\u0435 \u0441\u043e\u043e\u0431\u0449\u0438\u043b, \u043f\u043e\u0447\u0435\u043c\u0443 \u043f\u0440\u043e\u043f\u0443\u0441\u0442\u0438\u043b \u043f\u0440\u043e\u0433\u043e\u043d. \u0412\u044b\u0432\u043e\u0434: ' + JSON.stringify(log.slice(0, 200)));
+    '\u043f\u0440\u0435\u0434\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u0435\u043b\u044c \u043d\u0435 \u0441\u0440\u0430\u0431\u043e\u0442\u0430\u043b. \u0412\u044b\u0432\u043e\u0434: ' + JSON.stringify(log.slice(0, 200)));
 }
 
 if (fails) { console.error(fails + ' failures'); process.exit(1); }

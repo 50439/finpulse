@@ -3,7 +3,9 @@ const fs = require('fs');
 const path = require('path');
 
 const KEY = 'ee221c0a3d35f01be5577688fa06a50a';
-const SITE = (process.env.SITE_URL || 'https://finpulse24.com').replace(/\/$/, '');
+const SITE_FILE = path.join(ROOT, 'data/site.json');
+const SITE = String((fs.existsSync(SITE_FILE) ? JSON.parse(fs.readFileSync(SITE_FILE,'utf8')).url : '')
+  || process.env.SITE_URL || 'https://finpulse24.com').replace(/\/$/, '');
 const HOST = SITE.replace(/^https?:\/\//, '');
 const STATE = path.join(__dirname, '..', 'content', 'indexnow-sent.json');
 

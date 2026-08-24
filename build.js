@@ -10,10 +10,11 @@ const DIST = path.join(ROOT, 'dist');
 //   ORIGIN — протокол+хост, к нему приклеиваются пути, В КОТОРЫХ BASE УЖЕ ЕСТЬ;
 //   BASE   — подпуть, его добавляют все внутренние ссылки.
 // Без этого разделения canonical получал /finpulse дважды.
-const SITE_URL = (process.env.SITE_URL || 'https://finpulse.example.com').replace(/\/$/, '');
+const SITE_FILE = path.join(ROOT, 'data/site.json');
+const siteCfg = fs.existsSync(SITE_FILE) ? JSON.parse(fs.readFileSync(SITE_FILE, 'utf8')) : {};
+const SITE_URL = String(siteCfg.url || process.env.SITE_URL || 'https://finpulse.example.com').replace(/\/$/, '');
 const ORIGIN = SITE_URL.replace(/^(https?:\/\/[^/]+).*$/, '$1');
-const BASE = process.env.BASE_PATH !== undefined ? process.env.BASE_PATH
-  : SITE_URL.slice(ORIGIN.length).replace(/\/$/, '');
+const BASE = SITE_URL.slice(ORIGIN.length).replace(/\/$/, '');
 
 const i18n = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/i18n.json'), 'utf8'));
 const allOffers = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/offers.json'), 'utf8'));

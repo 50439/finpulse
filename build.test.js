@@ -1,9 +1,11 @@
 const fs = require('fs');
 const path = require('path');
 const DIST = path.join(__dirname, 'dist');
-const SITE = (process.env.SITE_URL || '').replace(/\/$/, '');
+const SITE_FILE = path.join(__dirname, 'data/site.json');
+const SITE = String((fs.existsSync(SITE_FILE) ? JSON.parse(fs.readFileSync(SITE_FILE,'utf8')).url : '')
+  || process.env.SITE_URL || '').replace(/\/$/, '');
 const ORIGIN = SITE.replace(/^(https?:\/\/[^/]+).*$/, '$1');
-const BASE = process.env.BASE_PATH !== undefined ? process.env.BASE_PATH : SITE.slice(ORIGIN.length).replace(/\/$/, '');
+const BASE = SITE.slice(ORIGIN.length).replace(/\/$/, '');
 const langs = Object.keys(JSON.parse(fs.readFileSync(path.join(__dirname,'data/i18n.json'),'utf8')).languages);
 const articles = JSON.parse(fs.readFileSync(path.join(__dirname,'content/articles.json'),'utf8'));
 let fails = 0;
@@ -310,7 +312,7 @@ function walk(dir, acc) {
 // второй раз наступать на это не надо.
 {
   const f = path.join(DIST, 'CNAME');
-  const site = (process.env.SITE_URL || '').replace(/^https?:\/\//, '').replace(/\/.*$/, '');
+  const site = SITE.replace(/^https?:\/\//, '').replace(/\/.*$/, '');
   if (site && !/example\.com$/.test(site) && !/(^|\.)github\.io$/.test(site)) {
     check(fs.existsSync(f), 'SITE_URL задан (' + site + '), но dist/CNAME не создан \u2014 \u043a\u0430\u0441\u0442\u043e\u043c\u043d\u044b\u0439 \u0434\u043e\u043c\u0435\u043d \u0441\u043b\u0435\u0442\u0438\u0442 \u043f\u0440\u0438 \u0434\u0435\u043f\u043b\u043e\u0435');
     if (fs.existsSync(f)) {

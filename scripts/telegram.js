@@ -24,7 +24,9 @@ const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
 const TOKEN = process.env.TELEGRAM_BOT_TOKEN;
-const SITE = (process.env.SITE_URL || 'https://finpulse24.com').replace(/\/$/, '');
+const SITE_FILE = path.join(ROOT, 'data/site.json');
+const SITE = String((fs.existsSync(SITE_FILE) ? JSON.parse(fs.readFileSync(SITE_FILE,'utf8')).url : '')
+  || process.env.SITE_URL || 'https://finpulse24.com').replace(/\/$/, '');
 const MAX_POSTS = Number(process.env.TG_MAX_POSTS || 2);
 const LEGACY_LANG = process.env.TG_LANG || 'ru';
 const CHECK_ONLY = process.argv.includes('--check');
