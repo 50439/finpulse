@@ -61,6 +61,26 @@ const GUIDES_LABEL = { en: 'Guides', uk: '\u041f\u043e\u0441\u0456\u0431\u043d\u
 const gLabel = l => GUIDES_LABEL[l] || GUIDES_LABEL.en;
 const guidesFor = lang => guides.filter(g => Array.isArray(g.langs) && g.langs.includes(lang));
 
+// Telegram-каналы. Берём ту же карту, что и автопостинг, чтобы ссылка на сайте
+// и канал, куда реально идут посты, не разъехались.
+const TG_FILE = path.join(ROOT, 'data/telegram-channels.json');
+const tgRaw = fs.existsSync(TG_FILE) ? JSON.parse(fs.readFileSync(TG_FILE, 'utf8')) : {};
+const tgChannels = {};
+for (const [l, chat] of Object.entries(tgRaw)) {
+  // Приватные каналы (числовой chat_id) на сайте не показываем — по ним нет публичной ссылки.
+  if (l.startsWith('_') || !String(chat).startsWith('@')) continue;
+  tgChannels[l] = 'https://t.me/' + String(chat).slice(1);
+}
+const tgFor = lang => tgChannels[lang] || null;
+console.log('telegram: публичных каналов для сайта — ' + Object.keys(tgChannels).length +
+  ' (' + Object.keys(tgChannels).join(', ') + ')');
+
+const TG_LABEL = { en: 'Our Telegram', uk: '\u041d\u0430\u0448 Telegram', ru: '\u041d\u0430\u0448 Telegram', es: 'Nuestro Telegram',
+  pt: 'Nosso Telegram', de: 'Unser Telegram', fr: 'Notre Telegram', ar: '\u062a\u0644\u064a\u062c\u0631\u0627\u0645 \u0627\u0644\u062e\u0627\u0635 \u0628\u0646\u0627',
+  zh: '\u6211\u4eec\u7684 Telegram', hi: '\u0939\u092e\u093e\u0930\u093e Telegram', id: 'Telegram Kami', vi: 'Telegram c\u1ee7a ch\u00fang t\u00f4i',
+  tr: 'Telegram kanal\u0131m\u0131z', ja: '\u516c\u5f0f Telegram', ko: '\uacf5\uc2dd Telegram', pl: 'Nasz Telegram', th: 'Telegram \u0e02\u0e2d\u0e07\u0e40\u0e23\u0e32' };
+const tgLabel = l => TG_LABEL[l] || TG_LABEL.en;
+
 // \u041f\u043e\u0434\u043f\u0438\u0441\u044c \u0431\u043b\u043e\u043a\u0430 \u043f\u0435\u0440\u0435\u043b\u0438\u043d\u043a\u043e\u0432\u043a\u0438.
 const RELATED_LABEL = { en: 'Worth reading', uk: '\u0412\u0430\u0440\u0442\u043e \u043f\u0440\u043e\u0447\u0438\u0442\u0430\u0442\u0438', ru: '\u041f\u043e\u043b\u0435\u0437\u043d\u043e \u043f\u0440\u043e\u0447\u0438\u0442\u0430\u0442\u044c',
   es: 'Vale la pena leer', pt: 'Vale a pena ler', de: 'Lesenswert', fr: '\u00c0 lire aussi',
@@ -161,6 +181,8 @@ h2.sec::after{content:"";flex:1;height:1px;background:#ffffff14}
 .related ul{margin:0;padding:0;list-style:none}
 .related li{margin:6px 0}
 .related a{color:var(--accent);font-weight:600;font-size:.98rem;line-height:1.4}
+.tgbtn{display:inline-flex;align-items:center;gap:8px;padding:9px 18px;border-radius:999px;background:#229ED9;color:#fff;font-weight:700;font-size:.95rem;text-decoration:none}
+.tgbtn:hover{background:#1c8ac0}
 .backlink{color:var(--accent);font-size:.9rem;font-weight:600}
 .strip{background:linear-gradient(145deg,#1e2438,#161b28);border:1px solid #22d3ee2e;border-radius:var(--radius);padding:16px;margin:24px 0;display:flex;flex-direction:column;gap:10px}
 .mcta{position:fixed;bottom:0;left:0;right:0;z-index:60;background:rgba(17,21,31,.92);backdrop-filter:blur(12px);border-top:1px solid #ffffff1a;padding:10px 14px calc(10px + env(safe-area-inset-bottom));display:flex;align-items:center;gap:12px}
@@ -216,6 +238,7 @@ function page(opt) {
     '<meta property="og:type" content="website">\n<meta name="theme-color" content="#0b0e14">\n' +
     '<meta property="og:image" content="' + SITE_URL + '/og.png">\n<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">\n' +
     '<meta name="twitter:card" content="summary_large_image">\n<meta name="twitter:image" content="' + SITE_URL + '/og.png">\n' +
+    '<link rel="alternate" type="application/rss+xml" title="FinPulse RSS" href="' + BASE + '/' + lang + '/rss.xml">\n' +
     '<link rel="icon" type="image/png" sizes="32x32" href="' + BASE + '/favicon-32.png">\n<link rel="icon" type="image/png" sizes="192x192" href="' + BASE + '/favicon-192.png">\n<link rel="apple-touch-icon" href="' + BASE + '/apple-touch-icon.png">\n' +
     '<link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>\\uD83D\\uDCC8</text></svg>">\n' +
     (jsonld ? '<script type="application/ld+json">' + JSON.stringify(jsonld) + '</script>\n' : '') +
@@ -242,8 +265,10 @@ function header(lang, pathFn, only) {
 
 function footer(lang) {
   const links = LANGS.map(l => '<a href="' + BASE + '/' + l + '/">' + i18n.languages[l].name + '</a>').join('');
+  const tg = tgFor(lang);
   return '<footer><div class="wrap">' +
     '<div><b>FinPulse</b> \u2014 ' + esc(S('tagline', lang)) + '</div>' +
+    (tg ? '<div style="margin:14px 0"><a class="tgbtn" href="' + tg + '" target="_blank" rel="noopener">\u2708\uFE0F ' + esc(tgLabel(lang)) + '</a></div>' : '') +
     '<div class="langs">' + links + '</div>' +
     '<div>\u26A0\uFE0F ' + esc(S('riskDisclaimer', lang)) + '</div>' +
     '<div style="margin-top:8px">\u00A9 ' + new Date().getFullYear() + ' FinPulse</div>' +
@@ -303,7 +328,18 @@ for (const lang of LANGS) {
     title: 'FinPulse \u2014 ' + S('tagline', lang),
     desc: S('tagline', lang),
     pathFn: pathHome,
-    jsonld: { '@context': 'https://schema.org', '@type': 'WebSite', name: 'FinPulse', url: SITE_URL + '/' + lang + '/' },
+    jsonld: {
+      '@context': 'https://schema.org',
+      '@graph': [
+        { '@type': 'WebSite', name: 'FinPulse', url: SITE_URL + '/' + lang + '/',
+          inLanguage: lang, publisher: { '@id': SITE_URL + '/#org' } },
+        // sameAs связывает сайт и каналы в один бренд — без этого Google
+        // считает их несвязанными и не переносит доверие с одного на другой.
+        { '@type': 'Organization', '@id': SITE_URL + '/#org', name: 'FinPulse',
+          url: SITE_URL + '/', logo: SITE_URL + '/logo-512.png',
+          sameAs: Object.values(tgChannels) }
+      ]
+    },
     body: '<main class="wrap">' +
       '<section class="hero"><div class="badge"><span class="pulse"></span>' + esc(S('updatedEvery', lang)) + '</div>' +
       '<h1>' + esc(S('tagline', lang)) + '</h1></section>' +
@@ -464,6 +500,36 @@ fs.writeFileSync(path.join(DIST, 'sitemap.xml'),
     .concat(slowUrls.map(u => '<url><loc>' + SITE_URL + u + '</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>'))
     .join('\n') + '\n</urlset>');
 fs.writeFileSync(path.join(DIST, 'robots.txt'), 'User-agent: *\nAllow: /\nSitemap: ' + SITE_URL + '/sitemap.xml\n');
+
+// ---- RSS на каждом языке ----
+// Без фида сайт невидим для агрегаторов, читалок и автопостинг-сервисов —
+// то есть для целого класса площадок, куда контент попадает без нашего участия.
+const rssEsc = t => String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+let rssCount = 0;
+for (const lang of LANGS) {
+  const items = articles.slice(0, 30).map(a => {
+    const t = a.i18n[lang] || a.i18n.en;
+    const url = SITE_URL + '/' + lang + '/news/' + a.slug + '/';
+    return '<item>' +
+      '<title>' + rssEsc(t.title) + '</title>' +
+      '<link>' + url + '</link>' +
+      '<guid isPermaLink="true">' + url + '</guid>' +
+      '<pubDate>' + new Date(a.date).toUTCString() + '</pubDate>' +
+      '<description>' + rssEsc(t.excerpt) + '</description>' +
+      '</item>';
+  }).join('\n');
+  const feed = '<?xml version="1.0" encoding="UTF-8"?>\n' +
+    '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel>' +
+    '<title>FinPulse \u2014 ' + rssEsc(S('tagline', lang)) + '</title>' +
+    '<link>' + SITE_URL + '/' + lang + '/</link>' +
+    '<description>' + rssEsc(S('tagline', lang)) + '</description>' +
+    '<language>' + lang + '</language>' +
+    '<atom:link href="' + SITE_URL + '/' + lang + '/rss.xml" rel="self" type="application/rss+xml"/>' +
+    '\n' + items + '\n</channel></rss>';
+  fs.writeFileSync(path.join(DIST, lang, 'rss.xml'), feed);
+  rssCount++;
+}
+console.log('rss: ' + rssCount + ' \u0444\u0438\u0434\u043e\u0432');
 
 console.log('Built ' + (urls.length + slowUrls.length) + ' pages for ' + LANGS.length + ' languages -> dist/ (\u0438\u0437 \u043d\u0438\u0445 \u0433\u0430\u0439\u0434\u043e\u0432\u044b\u0445: ' + slowUrls.length + ')');
 

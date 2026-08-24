@@ -184,6 +184,56 @@ if (guides.length) {
   }
 }
 
+// --- \u041f\u0440\u0438\u0432\u043b\u0435\u0447\u0435\u043d\u0438\u0435: \u0441\u0430\u0439\u0442 \u2192 Telegram, RSS, \u0441\u0432\u044f\u0437\u043a\u0430 \u0431\u0440\u0435\u043d\u0434\u0430 -----------------
+// \u0421\u0430\u0439\u0442 \u0434\u0430\u0451\u0442 661 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0443 \u0442\u0440\u0430\u0444\u0438\u043a\u0430, \u043a\u0430\u043d\u0430\u043b\u044b \u043f\u0443\u0441\u0442\u044b\u0435. \u0415\u0441\u043b\u0438 \u043a\u043d\u043e\u043f\u043a\u0430 \u0442\u0438\u0445\u043e \u0438\u0441\u0447\u0435\u0437\u043d\u0435\u0442,
+// \u0435\u0434\u0438\u043d\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0439 \u043a\u0430\u043d\u0430\u043b \u0438\u0437 \u0447\u0438\u0442\u0430\u0442\u0435\u043b\u044f \u0432 \u043f\u043e\u0434\u043f\u0438\u0441\u0447\u0438\u043a\u0430 \u0437\u0430\u043a\u0440\u043e\u0435\u0442\u0441\u044f, \u0438 \u044d\u0442\u043e \u043d\u0438\u043a\u0430\u043a \u043d\u0435 \u043f\u0440\u043e\u044f\u0432\u0438\u0442\u0441\u044f.
+{
+  const tgFile = path.join(__dirname,'data/telegram-channels.json');
+  const tgRaw = fs.existsSync(tgFile) ? JSON.parse(fs.readFileSync(tgFile,'utf8')) : {};
+  const pub = {};
+  for (const [l,c] of Object.entries(tgRaw)) {
+    if (l.startsWith('_') || !String(c).startsWith('@')) continue;
+    pub[l] = 'https://t.me/' + String(c).slice(1);
+  }
+  check(Object.keys(pub).length > 0, '\u0432 data/telegram-channels.json \u043d\u0435 \u043e\u0441\u0442\u0430\u043b\u043e\u0441\u044c \u043d\u0438 \u043e\u0434\u043d\u043e\u0433\u043e \u043f\u0443\u0431\u043b\u0438\u0447\u043d\u043e\u0433\u043e \u043a\u0430\u043d\u0430\u043b\u0430');
+
+  for (const l of langs) {
+    const h = fs.readFileSync(path.join(DIST,l,'index.html'),'utf8');
+    const m = /<a class="tgbtn" href="([^"]+)"/.exec(h);
+    if (pub[l]) {
+      check(!!m && m[1] === pub[l],
+        '\u043d\u0430 /'+l+' \u043d\u0435\u0442 \u043a\u043d\u043e\u043f\u043a\u0438 Telegram \u0438\u043b\u0438 \u043e\u043d\u0430 \u0432\u0435\u0434\u0451\u0442 \u043d\u0435 \u043d\u0430 '+pub[l]+' (\u0441\u0435\u0439\u0447\u0430\u0441: '+(m?m[1]:'\u043d\u0435\u0442')+')');
+    } else {
+      check(!m, '\u043d\u0430 /'+l+' \u0435\u0441\u0442\u044c \u043a\u043d\u043e\u043f\u043a\u0430 Telegram, \u0445\u043e\u0442\u044f \u043a\u0430\u043d\u0430\u043b\u0430 \u043d\u0430 \u044d\u0442\u043e\u043c \u044f\u0437\u044b\u043a\u0435 \u043d\u0435\u0442');
+    }
+
+    // RSS: без фида сайт не попадает в агрегаторы и читалки
+    const rss = path.join(DIST,l,'rss.xml');
+    check(fs.existsSync(rss), '\u043d\u0435\u0442 RSS \u043d\u0430 /'+l);
+    if (fs.existsSync(rss)) {
+      const x = fs.readFileSync(rss,'utf8');
+      check(/<item>/.test(x), 'RSS /'+l+' \u043f\u0443\u0441\u0442\u043e\u0439');
+      check(x.includes('/'+l+'/</link>') && x.includes('<language>'+l+'</language>'),
+        'RSS /'+l+' \u0441\u0441\u044b\u043b\u0430\u0435\u0442\u0441\u044f \u043d\u0435 \u043d\u0430 \u0441\u0432\u043e\u0439 \u044f\u0437\u044b\u043a');
+      check(h.includes('/'+l+'/rss.xml'), '\u0432 <head> /'+l+' \u043d\u0435\u0442 \u0441\u0441\u044b\u043b\u043a\u0438 \u043d\u0430 \u0444\u0438\u0434');
+    }
+
+    // sameAs: связывает сайт и каналы в один бренд для Google
+    const ld = /<script type="application\/ld\+json">([\s\S]*?)<\/script>/.exec(h);
+    check(!!ld, '\u043d\u0430 /'+l+' \u043d\u0435\u0442 JSON-LD');
+    if (ld) {
+      let j = null;
+      try { j = JSON.parse(ld[1]); } catch (e) { check(false, '\u0431\u0438\u0442\u044b\u0439 JSON-LD \u043d\u0430 /'+l); }
+      const org = j && j['@graph'] && j['@graph'].find(x => x['@type'] === 'Organization');
+      check(!!org, '\u043d\u0430 /'+l+' \u043d\u0435\u0442 Organization \u0432 JSON-LD');
+      if (org) {
+        check(Array.isArray(org.sameAs) && org.sameAs.length === Object.keys(pub).length,
+          '\u043d\u0430 /'+l+' sameAs \u043d\u0435 \u0441\u043e\u0432\u043f\u0430\u0434\u0430\u0435\u0442 \u0441 \u043a\u0430\u0440\u0442\u043e\u0439 \u043a\u0430\u043d\u0430\u043b\u043e\u0432');
+      }
+    }
+  }
+}
+
 // --- \u0412\u0441\u0435 \u0432\u043d\u0443\u0442\u0440\u0435\u043d\u043d\u0438\u0435 \u0441\u0441\u044b\u043b\u043a\u0438 \u0434\u043e\u043b\u0436\u043d\u044b \u0432\u0435\u0441\u0442\u0438 \u043d\u0430 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u044e\u0449\u0438\u0435 \u0444\u0430\u0439\u043b\u044b -------------
 // \u041f\u043e\u0439\u043c\u0430\u043b\u043e \u0440\u0435\u0430\u043b\u044c\u043d\u044b\u0439 \u0431\u0430\u0433: \u043f\u0435\u0440\u0435\u043a\u043b\u044e\u0447\u0430\u0442\u0435\u043b\u044c \u044f\u0437\u044b\u043a\u043e\u0432 \u043d\u0430 \u0433\u0430\u0439\u0434\u0435 \u0432\u0451\u043b \u043d\u0430 /ja/guide/... \u2014 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u044b \u043d\u0435\u0442.
 function walk(dir, acc) {
