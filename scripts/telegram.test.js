@@ -51,7 +51,7 @@ fs.writeFileSync(path.join(box, 'runner.js'), runner);
 const out = path.join(box, 'sent.json');
 const res = require('child_process').spawnSync(process.execPath, ['runner.js'], {
   cwd: box, encoding: 'utf8',
-  env: { ...process.env, TELEGRAM_BOT_TOKEN: 'x', SITE_URL: 'https://finpulse24.com', OUT: out, TG_MAX_POSTS: '2' }
+  env: { ...process.env, TELEGRAM_BOT_TOKEN: 'x', SITE_URL: 'https://finpulse24.com', OUT: out, TG_MAX_POSTS: '2', TG_SKIP_SITE_CHECK: '1' }
 });
 const log = (res.stdout || '') + (res.stderr || '');
 const sent = JSON.parse(fs.readFileSync(out, 'utf8'));
@@ -80,5 +80,22 @@ check(after.guides.pl.includes('guide-pl'), 'гайд должен попаст�
 check(!(after.guides.ru || []).length, 'гайд не должен числиться опубликованным в ru');
 
 fs.rmSync(box, { recursive: true, force: true });
+// Предохранитель: домен не резолвится — не должно уйти ни одного сообщения.
+// 24.08.2026 зона отвалилась вместе с хостингом; без этой проверки автопостинг
+// разослал бы битые ссылки в 10 каналов.
+{
+  const out2 = path.join(os.tmpdir(), 'tg-sent-dead-' + process.pid + '.json');
+  const r = require('child_process').spawnSync(process.execPath, [path.join(ROOT, 'scripts/telegram.js')], {
+    encoding: 'utf8',
+    env: { ...process.env, TELEGRAM_BOT_TOKEN: 'x', OUT: out2, TG_MAX_POSTS: '2',
+           SITE_URL: 'https://finpulse24-domain-that-cannot-exist-zzz.invalid', TG_SKIP_SITE_CHECK: '' }
+  });
+  const dead = fs.existsSync(out2) ? JSON.parse(fs.readFileSync(out2, 'utf8')) : [];
+  check(dead.length === 0, '\u0441\u0430\u0439\u0442 \u043d\u0435\u0434\u043e\u0441\u0442\u0443\u043f\u0435\u043d, \u043d\u043e \u0443\u0448\u043b\u043e ' + dead.length + ' \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0439');
+  const log = (r.stdout || '') + (r.stderr || '');
+  check(/\u043d\u0435 \u043e\u0442\u0432\u0435\u0447\u0430\u0435\u0442/.test(log),
+    '\u043f\u0440\u0435\u0434\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u0435\u043b\u044c \u043d\u0435 \u0441\u043e\u043e\u0431\u0449\u0438\u043b, \u043f\u043e\u0447\u0435\u043c\u0443 \u043f\u0440\u043e\u043f\u0443\u0441\u0442\u0438\u043b \u043f\u0440\u043e\u0433\u043e\u043d. \u0412\u044b\u0432\u043e\u0434: ' + JSON.stringify(log.slice(0, 200)));
+}
+
 if (fails) { console.error(fails + ' failures'); process.exit(1); }
 console.log('OK - telegram: ' + sent.length + ' сообщений, каналы изолированы, языки не перепутаны');

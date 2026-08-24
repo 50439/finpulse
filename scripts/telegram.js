@@ -86,12 +86,40 @@ async function checkChannels(channels) {
   console.log(bad ? bad + ' канал(ов) требуют внимания' : 'Все каналы готовы');
 }
 
+// Проверка живости сайта: две попытки, любой ответ сервера считается «жив»
+// (даже 404 на главной означает, что домен резолвится и хост отвечает).
+// Ловим именно недоступность домена, а не код ответа.
+async function siteAlive() {
+  if (process.env.TG_SKIP_SITE_CHECK === '1') return true;
+  for (let i = 0; i < 2; i++) {
+    try {
+      const c = new AbortController();
+      const timer = setTimeout(() => c.abort(), 10000);
+      const r = await fetch(SITE + '/', { redirect: 'manual', signal: c.signal });
+      clearTimeout(timer);
+      if (r.status > 0) return true;
+    } catch (e) {
+      if (i === 0) await new Promise(r => setTimeout(r, 3000));
+    }
+  }
+  return false;
+}
+
 (async () => {
   if (!TOKEN) { console.log('TELEGRAM_BOT_TOKEN не задан — пропускаю'); return; }
   const channels = loadChannels();
   if (!Object.keys(channels).length) { console.log('tg: каналов не настроено — пропускаю'); return; }
 
   if (CHECK_ONLY) return checkChannels(channels);
+
+  // Предохранитель. 24.08.2026 DNS-зона домена отвалилась вместе с хостингом,
+  // сайт лёг, а автопостинг продолжал бы рассылать ссылки в 10 каналов —
+  // подписчик получает битую ссылку, RSS-читалки кэшируют 404, доверие тратится зря.
+  // Дешевле пропустить прогон, чем разослать мусор: новости никуда не денутся.
+  if (!(await siteAlive())) {
+    console.log('tg: ' + SITE + ' не отвечает — пропускаю прогон, чтобы не рассылать битые ссылки');
+    return;
+  }
 
   const articles = JSON.parse(fs.readFileSync(path.join(ROOT, 'content/articles.json'), 'utf8'));
   const guidesFile = path.join(ROOT, 'content/guides.json');

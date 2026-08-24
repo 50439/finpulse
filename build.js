@@ -523,6 +523,18 @@ fs.writeFileSync(path.join(DIST, 'index.html'),
   '<script>var l=(navigator.language||"en").slice(0,2);var s=' + JSON.stringify(LANGS) + ';location.replace("' + BASE + '/"+(s.indexOf(l)>-1?l:"en")+"/");</script>' +
   '<meta http-equiv="refresh" content="1;url=' + BASE + '/en/"></head><body></body></html>');
 
+// CNAME обязателен, когда Pages публикуется из артефакта: без файла в самом
+// артефакте кастомный домен держится только на настройке репозитория и слетает
+// при первом же деплое, который её не подтвердил. Домен берём из SITE_URL —
+// одна точка правды, менять в двух местах не нужно.
+{
+  const host = SITE_URL.replace(/^https?:\/\//, '').replace(/\/.*$/, '');
+  if (host && !/example\.com$/.test(host)) {
+    fs.writeFileSync(path.join(DIST, 'CNAME'), host + '\n');
+    console.log('CNAME: ' + host);
+  }
+}
+
 fs.writeFileSync(path.join(DIST, 'sitemap.xml'),
   '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
   urls.map(u => '<url><loc>' + SITE_URL + u + '</loc><changefreq>hourly</changefreq></url>')

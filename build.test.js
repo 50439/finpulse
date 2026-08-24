@@ -299,4 +299,22 @@ function walk(dir, acc) {
   console.log('analytics: ga4 ' + (ga4 || '\u043f\u0443\u0441\u0442') + ', \u043f\u0430\u0440\u0442\u043d\u0451\u0440\u0441\u043a\u0438\u0445 \u043a\u043d\u043e\u043f\u043e\u043a \u0441 data-offer: ' + ctasTagged + '/' + ctas);
 }
 
+// CNAME. Pages публикуется из артефакта: нет файла в артефакте — кастомный домен
+// держится только на настройке репозитория. 24.08.2026 сайт уже лежал из-за домена,
+// второй раз наступать на это не надо.
+{
+  const f = path.join(DIST, 'CNAME');
+  const site = (process.env.SITE_URL || '').replace(/^https?:\/\//, '').replace(/\/.*$/, '');
+  if (site && !/example\.com$/.test(site)) {
+    check(fs.existsSync(f), 'SITE_URL задан (' + site + '), но dist/CNAME не создан \u2014 \u043a\u0430\u0441\u0442\u043e\u043c\u043d\u044b\u0439 \u0434\u043e\u043c\u0435\u043d \u0441\u043b\u0435\u0442\u0438\u0442 \u043f\u0440\u0438 \u0434\u0435\u043f\u043b\u043e\u0435');
+    if (fs.existsSync(f)) {
+      const got = fs.readFileSync(f, 'utf8').trim();
+      check(got === site, 'dist/CNAME = "' + got + '", \u0430 SITE_URL \u0443\u043a\u0430\u0437\u044b\u0432\u0430\u0435\u0442 \u043d\u0430 "' + site + '"');
+      console.log('CNAME: ' + got);
+    }
+  } else {
+    console.log('CNAME: SITE_URL \u043d\u0435 \u0437\u0430\u0434\u0430\u043d \u2014 \u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0430 \u043f\u0440\u043e\u043f\u0443\u0449\u0435\u043d\u0430');
+  }
+}
+
 if (fails){console.error(fails+' failures');process.exit(1);} console.log('OK - all checks passed');
