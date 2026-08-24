@@ -5,8 +5,15 @@ const path = require('path');
 
 const ROOT = __dirname;
 const DIST = path.join(ROOT, 'dist');
-const SITE_URL = process.env.SITE_URL || 'https://finpulse.example.com';
-const BASE = process.env.BASE_PATH || '';
+// SITE_URL — единственная точка правды об адресе сайта. Он может содержать
+// подпуть (project pages: https://user.github.io/repo), поэтому разбираем его:
+//   ORIGIN — протокол+хост, к нему приклеиваются пути, В КОТОРЫХ BASE УЖЕ ЕСТЬ;
+//   BASE   — подпуть, его добавляют все внутренние ссылки.
+// Без этого разделения canonical получал /finpulse дважды.
+const SITE_URL = (process.env.SITE_URL || 'https://finpulse.example.com').replace(/\/$/, '');
+const ORIGIN = SITE_URL.replace(/^(https?:\/\/[^/]+).*$/, '$1');
+const BASE = process.env.BASE_PATH !== undefined ? process.env.BASE_PATH
+  : SITE_URL.slice(ORIGIN.length).replace(/\/$/, '');
 
 const i18n = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/i18n.json'), 'utf8'));
 const allOffers = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/offers.json'), 'utf8'));
@@ -251,8 +258,8 @@ function langLinks(pathFn, only) {
   // hreflang на несуществующую страницу Google считает ошибкой.
   const list = (Array.isArray(only) && only.length) ? LANGS.filter(l => only.includes(l)) : LANGS;
   const def = list.includes('en') ? 'en' : list[0];
-  return list.map(l => '<link rel="alternate" hreflang="' + l + '" href="' + SITE_URL + pathFn(l) + '">').join('\n  ')
-    + '\n  <link rel="alternate" hreflang="x-default" href="' + SITE_URL + pathFn(def) + '">';
+  return list.map(l => '<link rel="alternate" hreflang="' + l + '" href="' + ORIGIN + pathFn(l) + '">').join('\n  ')
+    + '\n  <link rel="alternate" hreflang="x-default" href="' + ORIGIN + pathFn(def) + '">';
 }
 
 function page(opt) {
@@ -261,7 +268,7 @@ function page(opt) {
   return '<!DOCTYPE html>\n<html lang="' + lang + '" dir="' + L.dir + '">\n<head>\n' +
     '<meta charset="UTF-8">\n<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n' +
     '<title>' + esc(title) + '</title>\n<meta name="description" content="' + esc(desc) + '">\n' +
-    '<link rel="canonical" href="' + SITE_URL + pathFn(lang) + '">\n  ' + langLinks(pathFn, hreflangs) + '\n' +
+    '<link rel="canonical" href="' + ORIGIN + pathFn(lang) + '">\n  ' + langLinks(pathFn, hreflangs) + '\n' +
     '<meta property="og:title" content="' + esc(title) + '">\n<meta property="og:description" content="' + esc(desc) + '">\n' +
     '<meta property="og:type" content="website">\n<meta name="theme-color" content="#0b0e14">\n' +
     '<meta property="og:image" content="' + SITE_URL + '/og.png">\n<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">\n' +
@@ -529,7 +536,7 @@ fs.writeFileSync(path.join(DIST, 'index.html'),
 // одна точка правды, менять в двух местах не нужно.
 {
   const host = SITE_URL.replace(/^https?:\/\//, '').replace(/\/.*$/, '');
-  if (host && !/example\.com$/.test(host)) {
+  if (host && !/example\.com$/.test(host) && !/(^|\.)github\.io$/.test(host)) {
     fs.writeFileSync(path.join(DIST, 'CNAME'), host + '\n');
     console.log('CNAME: ' + host);
   }
@@ -537,8 +544,8 @@ fs.writeFileSync(path.join(DIST, 'index.html'),
 
 fs.writeFileSync(path.join(DIST, 'sitemap.xml'),
   '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
-  urls.map(u => '<url><loc>' + SITE_URL + u + '</loc><changefreq>hourly</changefreq></url>')
-    .concat(slowUrls.map(u => '<url><loc>' + SITE_URL + u + '</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>'))
+  urls.map(u => '<url><loc>' + ORIGIN + u + '</loc><changefreq>hourly</changefreq></url>')
+    .concat(slowUrls.map(u => '<url><loc>' + ORIGIN + u + '</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>'))
     .join('\n') + '\n</urlset>');
 fs.writeFileSync(path.join(DIST, 'robots.txt'), 'User-agent: *\nAllow: /\nSitemap: ' + SITE_URL + '/sitemap.xml\n');
 

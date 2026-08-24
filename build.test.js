@@ -1,6 +1,9 @@
 const fs = require('fs');
 const path = require('path');
 const DIST = path.join(__dirname, 'dist');
+const SITE = (process.env.SITE_URL || '').replace(/\/$/, '');
+const ORIGIN = SITE.replace(/^(https?:\/\/[^/]+).*$/, '$1');
+const BASE = process.env.BASE_PATH !== undefined ? process.env.BASE_PATH : SITE.slice(ORIGIN.length).replace(/\/$/, '');
 const langs = Object.keys(JSON.parse(fs.readFileSync(path.join(__dirname,'data/i18n.json'),'utf8')).languages);
 const articles = JSON.parse(fs.readFileSync(path.join(__dirname,'content/articles.json'),'utf8'));
 let fails = 0;
@@ -257,7 +260,10 @@ function walk(dir, acc) {
     for (const m of h.matchAll(/href="(\/[^"#]*)"/g)) {
       const u = m[1];
       if (/\.(png|txt|xml|ico|svg|webmanifest)$/.test(u)) continue;
-      const target = path.join(DIST, u.replace(/^\//, ''), u.endsWith('/') ? 'index.html' : '');
+      // При сборке под project pages все ссылки начинаются с BASE (/finpulse),
+      // а в dist такой папки нет — dist и есть корень сайта. Отрезаем префикс.
+      const rel = BASE && u.startsWith(BASE + '/') ? u.slice(BASE.length) : u;
+      const target = path.join(DIST, rel.replace(/^\//, ''), rel.endsWith('/') ? 'index.html' : '');
       if (!fs.existsSync(target)) broken.add(u + '  \u2190 ' + path.relative(DIST, f));
     }
   }
@@ -305,7 +311,7 @@ function walk(dir, acc) {
 {
   const f = path.join(DIST, 'CNAME');
   const site = (process.env.SITE_URL || '').replace(/^https?:\/\//, '').replace(/\/.*$/, '');
-  if (site && !/example\.com$/.test(site)) {
+  if (site && !/example\.com$/.test(site) && !/(^|\.)github\.io$/.test(site)) {
     check(fs.existsSync(f), 'SITE_URL задан (' + site + '), но dist/CNAME не создан \u2014 \u043a\u0430\u0441\u0442\u043e\u043c\u043d\u044b\u0439 \u0434\u043e\u043c\u0435\u043d \u0441\u043b\u0435\u0442\u0438\u0442 \u043f\u0440\u0438 \u0434\u0435\u043f\u043b\u043e\u0435');
     if (fs.existsSync(f)) {
       const got = fs.readFileSync(f, 'utf8').trim();
