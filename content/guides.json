@@ -3303,5 +3303,565 @@
     ]
    }
   }
+ },
+ {
+  "slug": "crypto-glossary",
+  "category": "guide",
+  "emoji": "📖",
+  "langs": [
+   "en",
+   "uk",
+   "ru",
+   "pl",
+   "de",
+   "es",
+   "pt",
+   "tr",
+   "id",
+   "vi",
+   "th"
+  ],
+  "updated": "2026-08-24T02:13:37.988Z",
+  "i18n": {
+   "en": {
+    "title": "Crypto glossary: the 40 terms you actually need to understand the market",
+    "excerpt": "A practical reference to the essential vocabulary of cryptocurrency trading, wallets, and blockchain technology. Everything from private keys to leverage, explained so you can take action.",
+    "sections": [
+     {
+      "h": "Wallet fundamentals",
+      "p": [
+       "A **wallet** is software or hardware that stores your **private key**, the 64-character string that proves ownership of your cryptocurrency. Without the private key, you cannot move your funds. If someone else gets it, they own your crypto permanently—there is no password reset. Most wallets generate a **seed phrase** (also called recovery phrase or mnemonic), typically 12 or 24 common words in a specific order. This phrase is a human-readable backup of your private key. Write it on paper, store it securely offline, and never photograph it or store it digitally. Anyone with your seed phrase controls your funds.",
+       "Wallets come in several types. **Hot wallets** stay connected to the internet (mobile apps, browser extensions, desktop software) and prioritize convenience for frequent trading. **Cold wallets** remain offline—either hardware devices like Ledger or Trezor, or even paper with your keys printed. Cold storage sharply reduces hacking risk and is standard for long-term holdings. **Custodial wallets** are provided by exchanges: the company holds the private keys, you trust them to honor withdrawals. **Non-custodial wallets** give you full control and full responsibility. Lose your seed phrase with a non-custodial wallet and your funds are gone forever; no company can retrieve them."
+      ]
+     },
+     {
+      "h": "Exchanges and how you trade",
+      "p": [
+       "A **centralized exchange** (CEX) like Binance, Coinbase, or Kraken is a company that holds your crypto in custodial wallets, matches buyers with sellers, and typically requires **Know Your Customer** (KYC) verification—uploading a passport or ID and sometimes proof of address. **Anti-Money Laundering** (AML) rules vary by jurisdiction but generally require exchanges to report large or suspicious transactions. These rules change frequently, and this is not legal advice; check current regulations where you live.",
+       "A **decentralized exchange** (DEX) like Uniswap or PancakeSwap runs on smart contracts with no company in the middle. You connect your non-custodial wallet, trade directly from it, and pay a **gas fee**—a network transaction cost paid to blockchain validators, often in ETH on Ethereum or BNB on BNance Smart Chain. Gas fees fluctuate with network congestion; they have ranged from under one dollar to over one hundred during peak times. DEXs rarely require KYC, but you bear full responsibility for mistakes: send funds to the wrong address and they are irretrievable.",
+       "When you place a **market order**, you buy or sell immediately at the best available price. A **limit order** only executes at your chosen price or better, so you might wait indefinitely if the market never reaches it. The **spread** is the gap between the highest buy offer and the lowest sell offer; tighter spreads mean lower costs. **Slippage** occurs when your order is large enough to move the price while executing, or when prices shift between clicking and confirming. Slippage is more common on low-liquidity pairs and on DEXs during volatility."
+      ]
+     },
+     {
+      "h": "Leverage, futures, and liquidation",
+      "p": [
+       "**Spot trading** means buying actual cryptocurrency that sits in your wallet. **Futures** are contracts to buy or sell at a set price on a future date, and you do not own the underlying asset—only the contract. Futures let you use **leverage**, borrowing multiples of your capital: 10x leverage turns 100 dollars into 1,000 dollars of market exposure. Profits multiply, but so do losses. If the market moves against you by 10 percent on 10x leverage, your entire stake is gone.",
+       "**Liquidation** happens when losses eat through your margin (the collateral you deposited). The exchange or protocol automatically closes your position to prevent you owing more than you deposited. Liquidation prices are calculated at the time you open a leveraged position; if Bitcoin drops from 40,000 to 36,000 and your liquidation price was 36,500, you lose everything before the market touches 36,000. Futures and leverage are high-risk tools; many retail traders lose money, and this is not investment advice."
+      ]
+     },
+     {
+      "h": "Blockchain, layers, and bridges",
+      "p": [
+       "A **blockchain** is a shared ledger of transactions, copied across thousands of computers (nodes). Each new block of transactions links cryptographically to the previous one, making past records nearly impossible to alter. **Bitcoin** runs one blockchain; **Ethereum** runs another. Each processes transactions differently and charges its own fees.",
+       "**Layer 2** (L2) networks like Arbitrum, Optimism, or Polygon sit on top of a main chain (Layer 1) and bundle many transactions before settling them on the base layer. L2s cut gas fees and speed up confirmation but add a trust or complexity trade-off depending on their design. A **bridge** moves assets between blockchains—for example, wrapping Bitcoin to use on Ethereum. Bridges rely on smart contracts or custodians; several have been hacked for hundreds of millions of dollars. Only bridge amounts you can afford to lose, and research the bridge's security model before use."
+      ]
+     },
+     {
+      "h": "Coins, tokens, and market cap",
+      "p": [
+       "**Bitcoin** (BTC) is the first cryptocurrency; every other is an **altcoin**. Some altcoins, like Ethereum (ETH), run their own blockchains. Others are **tokens** built on existing chains using standards like ERC-20 (Ethereum) or BEP-20 (BNB Chain). **Stablecoins** are tokens designed to hold a steady value, usually pegged one-to-one with the US dollar. USDT (Tether) and USDC (Circle) are backed by reserves of cash and bonds, though the quality and auditing of reserves vary. DAI is algorithmic, backed by crypto collateral locked in smart contracts. Stablecoins simplify trading and storing value, but regulatory scrutiny is increasing and some have lost their peg during crises.",
+       "**Market capitalization** (market cap) multiplies current price by circulating supply. A coin priced at 2 dollars with 500 million circulating tokens has a 1 billion dollar market cap. Market cap gives rough scale but does not measure liquidity or whether the project has real use. Many high-cap coins have thin order books; selling large amounts moves the price significantly."
+      ]
+     },
+     {
+      "h": "Staking, yield, and halving",
+      "p": [
+       "**Staking** means locking your coins in a proof-of-stake blockchain (like Ethereum post-Merge, Cardano, or Solana) to help validate transactions. In return you earn rewards, typically paid in the same cryptocurrency. Rates vary from 3 to 15 percent annually depending on network and total staked. Staked funds may have unbonding periods of days or weeks during which you cannot sell. **Yield** is broader: any return from holding or lending crypto, including staking, liquidity provision on DEXs (where you deposit pairs of tokens into a pool), or lending on platforms like Aave. Higher yields usually mean higher risk—smart contract bugs, price volatility of the reward token, or outright scams. This is not financial advice; assess each protocol's audits and track record.",
+       "Bitcoin's **halving** occurs roughly every four years (every 210,000 blocks). The block reward paid to miners cuts in half, reducing the rate of new Bitcoin entering circulation. The most recent halving in 2024 dropped the reward from 6.25 to 3.125 BTC per block. Halving is built into Bitcoin's code and will continue until around the year 2140, when the supply caps at 21 million coins. Many traders watch halving cycles for potential price impact, but past performance does not guarantee future results."
+      ]
+     }
+    ]
+   },
+   "uk": {
+    "title": "Криптовалютний глосарій: 40 термінів, які дійсно потрібні для розуміння ринку",
+    "excerpt": "Практичний довідник з ключової термінології криптовалютної торгівлі, гаманців та блокчейн-технологій. Від приватних ключів до кредитного плеча — пояснено так, щоб можна було діяти.",
+    "sections": [
+     {
+      "h": "Основи гаманців",
+      "p": [
+       "**Гаманець** — це програма або пристрій, що зберігає ваш **приватний ключ**, рядок із 64 символів, який підтверджує право власності на криптовалюту. Без приватного ключа ви не можете переміщувати свої кошти. Якщо хтось інший його отримає, він назавжди стає власником вашої криптовалюти — відновлення пароля не існує. Більшість гаманців генерує **seed-фразу** (також відновлювальна фраза або мнемоніка) — зазвичай 12 або 24 звичайних слова в певному порядку. Ця фраза є зрозумілою людині резервною копією приватного ключа. Запишіть її на папері, зберігайте в безпеці офлайн і ніколи не фотографуйте та не зберігайте в цифровому вигляді. Будь-хто, хто має вашу seed-фразу, контролює ваші кошти.",
+       "Гаманці бувають кількох типів. **Гарячі гаманці** залишаються підключеними до інтернету (мобільні додатки, розширення браузера, настільні програми) і орієнтовані на зручність для частої торгівлі. **Холодні гаманці** залишаються офлайн — апаратні пристрої на кшталт Ledger чи Trezor або навіть папір із надрукованими ключами. Холодне зберігання різко знижує ризик злому і є стандартом для довгострокового зберігання. **Кастодіальні гаманці** надаються біржами: компанія зберігає приватні ключі, ви довіряєте їй виконувати виведення коштів. **Некастодіальні гаманці** дають вам повний контроль і повну відповідальність. Втратите seed-фразу з некастодіальним гаманцем — і ваші кошти зникнуть назавжди; жодна компанія не зможе їх відновити."
+      ]
+     },
+     {
+      "h": "Біржі та як ви торгуєте",
+      "p": [
+       "**Централізована біржа** (CEX) на кшталт Binance, Coinbase або Kraken — це компанія, яка зберігає вашу криптовалюту в кастодіальних гаманцях, поєднує покупців із продавцями і зазвичай вимагає верифікації **KYC** (Know Your Customer — знай свого клієнта) — завантаження паспорта або ID, а іноді й підтвердження адреси. Правила **AML** (протидія відмиванню грошей) відрізняються залежно від юрисдикції, але зазвичай вимагають від бірж повідомляти про великі або підозрілі транзакції. Ці правила часто змінюються, і це не юридична консультація; перевіряйте актуальне законодавство там, де ви живете.",
+       "**Децентралізована біржа** (DEX) на кшталт Uniswap або PancakeSwap працює на смарт-контрактах без компанії-посередника. Ви підключаєте свій некастодіальний гаманець, торгуєте безпосередньо з нього та сплачуєте **комісію gas** — вартість мережевої транзакції, що виплачується валідаторам блокчейну, часто в ETH в мережі Ethereum або BNB в BNB Chain. Комісії gas коливаються залежно від завантаження мережі; вони варіювалися від менше одного долара до понад ста в пікові періоди. DEX рідко вимагають KYC, але ви несете повну відповідальність за помилки: надішліть кошти на неправильну адресу — і вони безповоротно втрачені.",
+       "Коли ви розміщуєте **ринковий ордер**, ви купуєте або продаєте негайно за найкращою доступною ціною. **Лімітний ордер** виконується лише за вибраною вами ціною або кращою, тому ви можете чекати нескінченно, якщо ринок ніколи її не досягне. **Спред** — це розрив між найвищою пропозицією купівлі та найнижчою пропозицією продажу; вужчі спреди означають нижчі витрати. **Slippage** (проковзування) виникає, коли ваше замовлення достатньо велике, щоб зрушити ціну під час виконання, або коли ціни змінюються між натисканням і підтвердженням. Slippage частіший на парах із низькою ліквідністю та на DEX під час волатильності."
+      ]
+     },
+     {
+      "h": "Кредитне плече, ф'ючерси та ліквідація",
+      "p": [
+       "**Спотова торгівля** означає купівлю фактичної криптовалюти, яка зберігається у вашому гаманці. **Ф'ючерси** — це контракти на купівлю або продаж за встановленою ціною на майбутню дату, і ви не володієте базовим активом — лише контрактом. Ф'ючерси дозволяють використовувати **кредитне плече** (leverage), позичаючи кратні вашому капіталу суми: плече 10x перетворює 100 доларів на 1000 доларів ринкової експозиції. Прибутки множаться, але й збитки теж. Якщо ринок рухається проти вас на 10 відсотків при плечі 10x, ваша вся ставка втрачається.",
+       "**Ліквідація** відбувається, коли збитки з'їдають вашу маржу (заставу, яку ви внесли). Біржа або протокол автоматично закриває вашу позицію, щоб запобігти ситуації, коли ви винні більше, ніж внесли. Ціни ліквідації розраховуються на момент відкриття позиції з плечем; якщо Bitcoin падає з 40 000 до 36 000, а ваша ціна ліквідації була 36 500, ви втрачаєте все, перш ніж ринок досягне 36 000. Ф'ючерси та плече — це високоризикові інструменти; багато роздрібних трейдерів втрачають гроші, і це не інвестиційна порада."
+      ]
+     },
+     {
+      "h": "Блокчейн, рівні та мости",
+      "p": [
+       "**Блокчейн** — це спільний реєстр транзакцій, скопійований на тисячі комп'ютерів (вузлів). Кожен новий блок транзакцій криптографічно пов'язаний із попереднім, що робить зміну минулих записів майже неможливою. **Bitcoin** працює на одному блокчейні; **Ethereum** — на іншому. Кожен обробляє транзакції по-різному та стягує власні комісії.",
+       "Мережі **рівня 2** (L2) на кшталт Arbitrum, Optimism або Polygon розміщуються поверх основного ланцюга (рівня 1) і об'єднують багато транзакцій перед їх розрахунком на базовому рівні. L2 знижують комісії gas і прискорюють підтвердження, але додають компроміс довіри або складності залежно від їхньої конструкції. **Міст** переміщує активи між блокчейнами — наприклад, обгортає Bitcoin для використання в Ethereum. Мости покладаються на смарт-контракти або кастодіанів; кілька було зламано на сотні мільйонів доларів. Переміщуйте через мости лише суми, які можете дозволити собі втратити, і досліджуйте модель безпеки моста перед використанням."
+      ]
+     },
+     {
+      "h": "Монети, токени та ринкова капіталізація",
+      "p": [
+       "**Bitcoin** (BTC) — перша криптовалюта; усі інші є **альткоїнами**. Деякі альткоїни, як-от Ethereum (ETH), працюють на власних блокчейнах. Інші є **токенами**, побудованими на існуючих ланцюгах за стандартами на кшталт ERC-20 (Ethereum) або BEP-20 (BNB Chain). **Стейблкоїни** — токени, розроблені для підтримки стабільної вартості, зазвичай прив'язані один до одного з доларом США. USDT (Tether) і USDC (Circle) забезпечені резервами готівки та облігацій, хоча якість та аудит резервів відрізняються. DAI є алгоритмічним, забезпеченим криптозаставою, заблокованою в смарт-контрактах. Стейблкоїни спрощують торгівлю та зберігання вартості, але регуляторний контроль посилюється, і деякі втрачали прив'язку під час криз.",
+       "**Ринкова капіталізація** (market cap) множить поточну ціну на обіговий обсяг. Монета ціною 2 долари з 500 мільйонами токенів в обігу має ринкову капіталізацію 1 мільярд доларів. Ринкова капіталізація дає приблизний масштаб, але не вимірює ліквідність чи наявність реального використання проєкту. Багато висококапіталізованих монет мають тонкі книги ордерів; продаж великих обсягів значно рухає ціну."
+      ]
+     },
+     {
+      "h": "Стейкінг, дохідність та халвінг",
+      "p": [
+       "**Стейкінг** означає блокування ваших монет у блокчейні з доказом частки (proof-of-stake) (як-от Ethereum після Merge, Cardano або Solana) для допомоги в підтвердженні транзакцій. Натомість ви отримуєте винагороди, зазвичай виплачувані в тій же криптовалюті. Ставки варіюються від 3 до 15 відсотків щорічно залежно від мережі та загальної заставленої суми. Застейкані кошти можуть мати періоди розблокування від днів до тижнів, протягом яких ви не можете продавати. **Дохідність** (yield) — ширше поняття: будь-яка віддача від зберігання або кредитування криптовалюти, включно зі стейкінгом, наданням ліквідності на DEX (де ви вносите пари токенів у пул) або кредитуванням на платформах на кшталт Aave. Вища дохідність зазвичай означає вищий ризик — помилки смарт-контрактів, цінова волатильність токена винагороди або відверті шахрайства. Це не фінансова порада; оцінюйте аудити та репутацію кожного протоколу.",
+       "**Халвінг** (halving) Bitcoin відбувається приблизно кожні чотири роки (кожні 210 000 блоків). Блокова винагорода, що виплачується майнерам, скорочується вдвічі, зменшуючи швидкість надходження нового Bitcoin в обіг. Останній халвінг у 2024 році знизив винагороду з 6,25 до 3,125 BTC за блок. Халвінг вбудований у код Bitcoin і триватиме приблизно до 2140 року, коли обсяг обмежиться 21 мільйоном монет. Багато трейдерів стежать за циклами халвінгу щодо потенційного впливу на ціну, але минулі результати не гарантують майбутніх."
+      ]
+     }
+    ]
+   },
+   "ru": {
+    "title": "Криптовалютный глоссарий: 40 терминов, которые действительно нужны для понимания рынка",
+    "excerpt": "Практический справочник по ключевой терминологии криптовалютной торговли, кошельков и блокчейн-технологий. От приватных ключей до кредитного плеча — объяснено так, чтобы можно было действовать.",
+    "sections": [
+     {
+      "h": "Основы кошельков",
+      "p": [
+       "**Кошелек** — это программа или устройство, которое хранит ваш **приватный ключ**, строку из 64 символов, подтверждающую право собственности на криптовалюту. Без приватного ключа вы не можете перемещать свои средства. Если кто-то другой его получит, он навсегда становится владельцем вашей криптовалюты — восстановления пароля не существует. Большинство кошельков генерирует **seed-фразу** (также восстановительная фраза или мнемоника) — обычно 12 или 24 обычных слова в определенном порядке. Эта фраза является понятной человеку резервной копией приватного ключа. Запишите ее на бумаге, храните в безопасности офлайн и никогда не фотографируйте и не храните в цифровом виде. Любой, у кого есть ваша seed-фраза, контролирует ваши средства.",
+       "Кошельки бывают нескольких типов. **Горячие кошельки** остаются подключенными к интернету (мобильные приложения, расширения браузера, настольные программы) и ориентированы на удобство для частой торговли. **Холодные кошельки** остаются офлайн — аппаратные устройства вроде Ledger или Trezor или даже бумага с напечатанными ключами. Холодное хранение резко снижает риск взлома и является стандартом для долгосрочного хранения. **Кастодиальные кошельки** предоставляются биржами: компания хранит приватные ключи, вы доверяете ей выполнять выводы средств. **Некастодиальные кошельки** дают вам полный контроль и полную ответственность. Потеряете seed-фразу с некастодиальным кошельком — и ваши средства исчезнут навсегда; ни одна компания не сможет их восстановить."
+      ]
+     },
+     {
+      "h": "Биржи и как вы торгуете",
+      "p": [
+       "**Централизованная биржа** (CEX) вроде Binance, Coinbase или Kraken — это компания, которая хранит вашу криптовалюту в кастодиальных кошельках, соединяет покупателей с продавцами и обычно требует верификации **KYC** (Know Your Customer — знай своего клиента) — загрузки паспорта или ID, а иногда и подтверждения адреса. Правила **AML** (противодействие отмыванию денег) отличаются в зависимости от юрисдикции, но обычно требуют от бирж сообщать о крупных или подозрительных транзакциях. Эти правила часто меняются, и это не юридическая консультация; проверяйте актуальное законодательство там, где вы живете.",
+       "**Децентрализованная биржа** (DEX) вроде Uniswap или PancakeSwap работает на смарт-контрактах без компании-посредника. Вы подключаете свой некастодиальный кошелек, торгуете непосредственно с него и платите **комиссию gas** — стоимость сетевой транзакции, выплачиваемую валидаторам блокчейна, часто в ETH в сети Ethereum или BNB в BNB Chain. Комиссии gas колеблются в зависимости от загрузки сети; они варьировались от менее одного доллара до более ста в пиковые периоды. DEX редко требуют KYC, но вы несете полную ответственность за ошибки: отправите средства на неправильный адрес — и они безвозвратно потеряны.",
+       "Когда вы размещаете **рыночный ордер**, вы покупаете или продаете немедленно по лучшей доступной цене. **Лимитный ордер** исполняется только по выбранной вами цене или лучше, поэтому вы можете ждать бесконечно, если рынок никогда ее не достигнет. **Спред** — это разрыв между наивысшим предложением покупки и наименьшим предложением продажи; более узкие спреды означают более низкие затраты. **Slippage** (проскальзывание) возникает, когда ваш заказ достаточно велик, чтобы сдвинуть цену во время исполнения, или когда цены меняются между нажатием и подтверждением. Slippage чаще встречается на парах с низкой ликвидностью и на DEX во время волатильности."
+      ]
+     },
+     {
+      "h": "Кредитное плечо, фьючерсы и ликвидация",
+      "p": [
+       "**Спотовая торговля** означает покупку фактической криптовалюты, которая хранится в вашем кошельке. **Фьючерсы** — это контракты на покупку или продажу по установленной цене на будущую дату, и вы не владеете базовым активом — только контрактом. Фьючерсы позволяют использовать **кредитное плечо** (leverage), занимая кратные вашему капиталу суммы: плечо 10x превращает 100 долларов в 1000 долларов рыночной экспозиции. Прибыли множатся, но и убытки тоже. Если рынок движется против вас на 10 процентов при плече 10x, вся ваша ставка теряется.",
+       "**Ликвидация** происходит, когда убытки съедают вашу маржу (залог, который вы внесли). Биржа или протокол автоматически закрывает вашу позицию, чтобы предотвратить ситуацию, когда вы должны больше, чем внесли. Цены ликвидации рассчитываются в момент открытия позиции с плечом; если Bitcoin падает с 40 000 до 36 000, а ваша цена ликвидации была 36 500, вы теряете все, прежде чем рынок достигнет 36 000. Фьючерсы и плечо — это высокорисковые инструменты; многие розничные трейдеры теряют деньги, и это не инвестиционный совет."
+      ]
+     },
+     {
+      "h": "Блокчейн, уровни и мосты",
+      "p": [
+       "**Блокчейн** — это общий реестр транзакций, скопированный на тысячи компьютеров (узлов). Каждый новый блок транзакций криптографически связан с предыдущим, что делает изменение прошлых записей практически невозможным. **Bitcoin** работает на одном блокчейне; **Ethereum** — на другом. Каждый обрабатывает транзакции по-разному и взимает собственные комиссии.",
+       "Сети **уровня 2** (L2) вроде Arbitrum, Optimism или Polygon размещаются поверх основной цепи (уровня 1) и объединяют много транзакций перед их расчетом на базовом уровне. L2 снижают комиссии gas и ускоряют подтверждение, но добавляют компромисс доверия или сложности в зависимости от их конструкции. **Мост** перемещает активы между блокчейнами — например, оборачивает Bitcoin для использования в Ethereum. Мосты полагаются на смарт-контракты или кастодианов; несколько было взломано на сотни миллионов долларов. Перемещайте через мосты только суммы, которые можете позволить себе потерять, и исследуйте модель безопасности моста перед использованием."
+      ]
+     },
+     {
+      "h": "Монеты, токены и рыночная капитализация",
+      "p": [
+       "**Bitcoin** (BTC) — первая криптовалюта; все остальные являются **альткоинами**. Некоторые альткоины, например Ethereum (ETH), работают на собственных блокчейнах. Другие являются **токенами**, построенными на существующих цепях по стандартам вроде ERC-20 (Ethereum) или BEP-20 (BNB Chain). **Стейблкоины** — токены, разработанные для поддержания стабильной стоимости, обычно привязанные один к одному с долларом США. USDT (Tether) и USDC (Circle) обеспечены резервами наличных и облигаций, хотя качество и аудит резервов различаются. DAI является алгоритмическим, обеспеченным криптозалогом, заблокированным в смарт-контрактах. Стейблкоины упрощают торговлю и хранение стоимости, но регуляторный контроль усиливается, и некоторые теряли привязку во время кризисов.",
+       "**Рыночная капитализация** (market cap) умножает текущую цену на оборотный объем. Монета ценой 2 доллара с 500 миллионами токенов в обороте имеет рыночную капитализацию 1 миллиард долларов. Рыночная капитализация дает приблизительный масштаб, но не измеряет ликвидность или наличие реального использования проекта. Многие высококапитализированные монеты имеют тонкие книги ордеров; продажа больших объемов значительно двигает цену."
+      ]
+     },
+     {
+      "h": "Стейкинг, доходность и халвинг",
+      "p": [
+       "**Стейкинг** означает блокировку ваших монет в блокчейне с доказательством доли (proof-of-stake) (например, Ethereum после Merge, Cardano или Solana) для помощи в подтверждении транзакций. Взамен вы получаете вознаграждения, обычно выплачиваемые в той же криптовалюте. Ставки варьируются от 3 до 15 процентов ежегодно в зависимости от сети и общей застейканной суммы. Застейканные средства могут иметь периоды разблокировки от дней до недель, в течение которых вы не можете продавать. **Доходность** (yield) — более широкое понятие: любая отдача от хранения или кредитования криптовалюты, включая стейкинг, предоставление ликвидности на DEX (где вы вносите пары токенов в пул) или кредитование на платформах вроде Aave. Более высокая доходность обычно означает более высокий риск — ошибки смарт-контрактов, ценовая волатильность токена вознаграждения или откровенное мошенничество. Это не финансовый совет; оценивайте аудиты и репутацию каждого протокола.",
+       "**Халвинг** (halving) Bitcoin происходит примерно каждые четыре года (каждые 210 000 блоков). Блоковое вознаграждение, выплачиваемое майнерам, сокращается вдвое, уменьшая скорость поступления нового Bitcoin в оборот. Последний халвинг в 2024 году снизил вознаграждение с 6,25 до 3,125 BTC за блок. Халвинг встроен в код Bitcoin и будет продолжаться примерно до 2140 года, когда объем ограничится 21 миллионом монет. Многие трейдеры следят за циклами халвинга относительно потенциального влияния на цену, но прошлые результаты не гарантируют будущих."
+      ]
+     }
+    ]
+   },
+   "pl": {
+    "title": "Słownik kryptowalut: 40 terminów, które naprawdę musisz znać, aby zrozumieć rynek",
+    "excerpt": "Praktyczny przewodnik po kluczowej terminologii handlu kryptowalutami, portfeli i technologii blockchain. Od kluczy prywatnych po dźwignię — wyjaśnione tak, abyś mógł działać.",
+    "sections": [
+     {
+      "h": "Podstawy portfeli",
+      "p": [
+       "**Portfel** to oprogramowanie lub urządzenie, które przechowuje Twój **klucz prywatny**, ciąg 64 znaków potwierdzający własność kryptowaluty. Bez klucza prywatnego nie możesz przenosić swoich środków. Jeśli ktoś inny go zdobędzie, na zawsze staje się właścicielem Twojej kryptowaluty — nie ma resetowania hasła. Większość portfeli generuje **frazę seed** (zwana także frazą odzyskiwania lub mnemoniką), zazwyczaj 12 lub 24 zwykłe słowa w określonej kolejności. Ta fraza to czytelna dla człowieka kopia zapasowa klucza prywatnego. Zapisz ją na papierze, przechowuj bezpiecznie offline i nigdy nie fotografuj ani nie przechowuj cyfrowo. Każdy, kto ma Twoją frazę seed, kontroluje Twoje środki.",
+       "Portfele występują w kilku typach. **Portfele gorące** pozostają podłączone do internetu (aplikacje mobilne, rozszerzenia przeglądarki, programy desktopowe) i priorytetowo traktują wygodę dla częstego handlu. **Portfele zimne** pozostają offline — urządzenia sprzętowe jak Ledger lub Trezor, a nawet papier z wydrukowanymi kluczami. Przechowywanie na zimno drastycznie zmniejsza ryzyko włamania i jest standardem dla długoterminowych zasobów. **Portfele powiernicze** są udostępniane przez giełdy: firma przechowuje klucze prywatne, ufasz jej, że honoruje wypłaty. **Portfele niepowiernicze** dają Ci pełną kontrolę i pełną odpowiedzialność. Zgubisz frazę seed z portfelem niepowierniczym, a Twoje środki znikną na zawsze; żadna firma nie może ich odzyskać."
+      ]
+     },
+     {
+      "h": "Giełdy i jak handlujesz",
+      "p": [
+       "**Giełda scentralizowana** (CEX) jak Binance, Coinbase lub Kraken to firma, która przechowuje Twoją kryptowalutę w portfelach powierniczych, łączy kupujących ze sprzedającymi i zazwyczaj wymaga weryfikacji **KYC** (Know Your Customer — poznaj swojego klienta) — przesłania paszportu lub dowodu tożsamości, a czasem potwierdzenia adresu. Przepisy **AML** (przeciwdziałanie praniu pieniędzy) różnią się w zależności od jurysdykcji, ale zazwyczaj wymagają od giełd zgłaszania dużych lub podejrzanych transakcji. Te przepisy często się zmieniają i to nie jest porada prawna; sprawdź aktualne przepisy w miejscu zamieszkania.",
+       "**Giełda zdecentralizowana** (DEX) jak Uniswap lub PancakeSwap działa na inteligentnych kontraktach bez firmy pośredniczącej. Podłączasz swój portfel niepowierniczy, handlujesz bezpośrednio z niego i płacisz **opłatę gas** — koszt transakcji sieciowej wypłacany walidatorom blockchain, często w ETH w sieci Ethereum lub BNB w BNB Chain. Opłaty gas wahają się w zależności od przeciążenia sieci; wynosiły od mniej niż jednego dolara do ponad stu w szczytowych okresach. DEX-y rzadko wymagają KYC, ale ponosisz pełną odpowiedzialność za błędy: wyślij środki na niewłaściwy adres, a są one nieodwracalnie stracone.",
+       "Kiedy składasz **zlecenie rynkowe**, kupujesz lub sprzedajesz natychmiast po najlepszej dostępnej cenie. **Zlecenie z limitem** wykonuje się tylko po wybranej przez Ciebie cenie lub lepszej, więc możesz czekać w nieskończoność, jeśli rynek jej nigdy nie osiągnie. **Spread** to luka między najwyższą ofertą kupna a najniższą ofertą sprzedaży; węższe spready oznaczają niższe koszty. **Poślizg** (slippage) występuje, gdy Twoje zlecenie jest wystarczająco duże, aby przesunąć cenę podczas realizacji, lub gdy ceny zmieniają się między kliknięciem a potwierdzeniem. Poślizg jest częstszy na parach o niskiej płynności i na DEX-ach podczas zmienności."
+      ]
+     },
+     {
+      "h": "Dźwignia, kontrakty terminowe i likwidacja",
+      "p": [
+       "**Handel spot** oznacza kupowanie faktycznej kryptowaluty, która znajduje się w Twoim portfelu. **Kontrakty terminowe** to kontrakty na kupno lub sprzedaż po ustalonej cenie w przyszłym terminie i nie posiadasz aktywów bazowych — tylko kontrakt. Kontrakty terminowe pozwalają używać **dźwigni** (leverage), pożyczając wielokrotności Twojego kapitału: dźwignia 10x zamienia 100 dolarów w 1000 dolarów ekspozycji rynkowej. Zyski się mnożą, ale straty również. Jeśli rynek porusza się przeciwko Tobie o 10 procent przy dźwigni 10x, cała Twoja stawka zostaje utracona.",
+       "**Likwidacja** następuje, gdy straty pochłaniają Twój depozyt zabezpieczający (zabezpieczenie, które wpłaciłeś). Giełda lub protokół automatycznie zamyka Twoją pozycję, aby zapobiec sytuacji, w której jesteś winien więcej niż wpłaciłeś. Ceny likwidacji są obliczane w momencie otwarcia pozycji z dźwignią; jeśli Bitcoin spada z 40 000 do 36 000, a Twoja cena likwidacji wynosiła 36 500, tracisz wszystko, zanim rynek dotknie 36 000. Kontrakty terminowe i dźwignia to wysokie ryzyko; wielu traderów detalicznych traci pieniądze, i to nie jest porada inwestycyjna."
+      ]
+     },
+     {
+      "h": "Blockchain, warstwy i mosty",
+      "p": [
+       "**Blockchain** to wspólny rejestr transakcji, skopiowany na tysiące komputerów (węzłów). Każdy nowy blok transakcji jest kryptograficznie powiązany z poprzednim, co sprawia, że zmiana przeszłych zapisów jest prawie niemożliwa. **Bitcoin** działa na jednym blockchainie; **Ethereum** na innym. Każdy przetwarza transakcje inaczej i pobiera własne opłaty.",
+       "Sieci **warstwy 2** (L2) jak Arbitrum, Optimism czy Polygon znajdują się na szczycie głównego łańcucha (warstwy 1) i łączą wiele transakcji przed rozliczeniem ich na warstwie bazowej. L2 obniżają opłaty gas i przyspieszają potwierdzenia, ale dodają kompromis zaufania lub złożoności w zależności od ich konstrukcji. **Most** przenosi aktywa między blockchainami — na przykład opakowuje Bitcoin do użycia w Ethereum. Mosty opierają się na inteligentnych kontraktach lub powiernikach; kilka zostało zhakowanych na setki milionów dolarów. Przenoś przez mosty tylko kwoty, na których stratę możesz sobie pozwolić, i zbadaj model bezpieczeństwa mostu przed użyciem."
+      ]
+     },
+     {
+      "h": "Monety, tokeny i kapitalizacja rynkowa",
+      "p": [
+       "**Bitcoin** (BTC) to pierwsza kryptowaluta; wszystkie inne to **altcoiny**. Niektóre altcoiny, jak Ethereum (ETH), działają na własnych blockchainach. Inne to **tokeny** zbudowane na istniejących łańcuchach według standardów jak ERC-20 (Ethereum) czy BEP-20 (BNB Chain). **Stablecoiny** to tokeny zaprojektowane do utrzymywania stabilnej wartości, zazwyczaj związane jeden do jednego z dolarem amerykańskim. USDT (Tether) i USDC (Circle) są zabezpieczone rezerwami gotówki i obligacji, choć jakość i audyt rezerw się różnią. DAI jest algorytmiczny, zabezpieczony zabezpieczeniem kryptowalutowym zablokowanym w inteligentnych kontraktach. Stablecoiny upraszczają handel i przechowywanie wartości, ale kontrola regulacyjna się zwiększa, a niektóre straciły powiązanie podczas kryzysów.",
+       "**Kapitalizacja rynkowa** (market cap) mnoży aktualną cenę przez podaż w obiegu. Moneta po cenie 2 dolary z 500 milionami tokenów w obiegu ma kapitalizację rynkową 1 miliarda dolarów. Kapitalizacja rynkowa daje przybliżoną skalę, ale nie mierzy płynności ani tego, czy projekt ma realne zastosowanie. Wiele monet o wysokiej kapitalizacji ma cienkie księgi zleceń; sprzedaż dużych ilości znacząco przesuwa cenę."
+      ]
+     },
+     {
+      "h": "Staking, zysk i halving",
+      "p": [
+       "**Staking** oznacza blokowanie monet w blockchainie proof-of-stake (jak Ethereum po Merge, Cardano czy Solana), aby pomóc w walidacji transakcji. W zamian otrzymujesz nagrody, zazwyczaj wypłacane w tej samej kryptowalucie. Stawki wahają się od 3 do 15 procent rocznie w zależności od sieci i całkowitej stakowanej sumy. Stakowane środki mogą mieć okresy odblokowywania od dni do tygodni, podczas których nie możesz sprzedawać. **Zysk** (yield) to szersze pojęcie: każdy zwrot z trzymania lub pożyczania kryptowaluty, włączając staking, dostarczanie płynności na DEX-ach (gdzie wpłacasz pary tokenów do puli) lub pożyczanie na platformach jak Aave. Wyższe zyski zazwyczaj oznaczają wyższe ryzyko — błędy inteligentnych kontraktów, zmienność cen tokena nagrody lub jawne oszustwa. To nie jest porada finansowa; oceniaj audyty i reputację każdego protokołu.",
+       "**Halving** Bitcoin następuje mniej więcej co cztery lata (co 210 000 bloków). Nagroda blokowa wypłacana górnikom zmniejsza się o połowę, redukując tempo napływu nowego Bitcoina do obiegu. Ostatni halving w 2024 roku obniżył nagrodę z 6,25 do 3,125 BTC za blok. Halving jest wbudowany w kod Bitcoina i będzie kontynuowany do około 2140 roku, kiedy podaż osiągnie limit 21 milionów monet. Wielu traderów obserwuje cykle halvingów pod kątem potencjalnego wpływu na cenę, ale przeszłe wyniki nie gwarantują przyszłych."
+      ]
+     }
+    ]
+   },
+   "de": {
+    "title": "Krypto-Glossar: Die 40 Begriffe, die Sie wirklich brauchen, um den Markt zu verstehen",
+    "excerpt": "Eine praktische Referenz für das wesentliche Vokabular des Kryptowährungshandels, der Wallets und der Blockchain-Technologie. Alles von privaten Schlüsseln bis zu Hebeln, so erklärt, dass Sie handeln können.",
+    "sections": [
+     {
+      "h": "Wallet-Grundlagen",
+      "p": [
+       "Ein **Wallet** ist Software oder Hardware, die Ihren **Private Key** speichert – die 64-stellige Zeichenkette, die das Eigentum an Ihrer Kryptowährung nachweist. Ohne den Private Key können Sie Ihr Guthaben nicht bewegen. Wenn jemand anderes ihn erhält, gehört Ihre Krypto dauerhaft ihm – es gibt kein Zurücksetzen des Passworts. Die meisten Wallets generieren eine **Seed-Phrase** (auch Wiederherstellungsphrase oder Mnemonic genannt), typischerweise 12 oder 24 gewöhnliche Wörter in einer bestimmten Reihenfolge. Diese Phrase ist eine menschenlesbare Sicherung Ihres Private Keys. Schreiben Sie sie auf Papier, bewahren Sie sie sicher offline auf und fotografieren oder speichern Sie sie niemals digital. Jeder, der Ihre Seed-Phrase hat, kontrolliert Ihr Guthaben.",
+       "Wallets gibt es in mehreren Arten. **Hot Wallets** bleiben mit dem Internet verbunden (Mobile Apps, Browser-Erweiterungen, Desktop-Software) und legen Wert auf Bequemlichkeit für häufigen Handel. **Cold Wallets** bleiben offline – entweder Hardware-Geräte wie Ledger oder Trezor, oder sogar Papier mit Ihren gedruckten Schlüsseln. Cold Storage reduziert das Hacking-Risiko erheblich und ist Standard für langfristige Bestände. **Custodial Wallets** werden von Börsen bereitgestellt: Das Unternehmen hält die Private Keys, Sie vertrauen darauf, dass Auszahlungen gewährt werden. **Non-Custodial Wallets** geben Ihnen volle Kontrolle und volle Verantwortung. Verlieren Sie Ihre Seed-Phrase bei einem Non-Custodial Wallet, ist Ihr Guthaben für immer verloren; kein Unternehmen kann es wiederherstellen."
+      ]
+     },
+     {
+      "h": "Börsen und wie Sie handeln",
+      "p": [
+       "Eine **zentralisierte Börse** (CEX) wie Binance, Coinbase oder Kraken ist ein Unternehmen, das Ihre Krypto in Custodial Wallets hält, Käufer mit Verkäufern zusammenbringt und typischerweise eine **Know Your Customer** (KYC)-Verifizierung erfordert – das Hochladen eines Reisepasses oder Personalausweises und manchmal eines Adressnachweises. **Geldwäsche-Vorschriften** (AML) variieren je nach Rechtsordnung, erfordern aber in der Regel, dass Börsen große oder verdächtige Transaktionen melden. Diese Regeln ändern sich häufig, und dies ist keine Rechtsberatung; prüfen Sie die aktuellen Vorschriften an Ihrem Wohnort.",
+       "Eine **dezentralisierte Börse** (DEX) wie Uniswap oder PancakeSwap läuft auf Smart Contracts ohne zwischengeschaltetes Unternehmen. Sie verbinden Ihr Non-Custodial Wallet, handeln direkt daraus und zahlen eine **Gas-Gebühr** – Netzwerk-Transaktionskosten, die an Blockchain-Validatoren gezahlt werden, oft in ETH auf Ethereum oder BNB auf BNance Smart Chain. Gas-Gebühren schwanken mit der Netzwerkauslastung; sie reichten von unter einem Euro bis über hundert Euro in Spitzenzeiten. DEXs erfordern selten KYC, aber Sie tragen die volle Verantwortung für Fehler: Senden Sie Guthaben an die falsche Adresse, sind sie unwiederbringlich verloren.",
+       "Wenn Sie eine **Market Order** platzieren, kaufen oder verkaufen Sie sofort zum besten verfügbaren Preis. Eine **Limit Order** wird nur zu Ihrem gewählten Preis oder besser ausgeführt, sodass Sie möglicherweise unbegrenzt warten, wenn der Markt ihn nie erreicht. Der **Spread** ist die Lücke zwischen dem höchsten Kaufangebot und dem niedrigsten Verkaufsangebot; engere Spreads bedeuten niedrigere Kosten. **Slippage** tritt auf, wenn Ihre Order groß genug ist, um den Preis während der Ausführung zu bewegen, oder wenn sich Preise zwischen Klicken und Bestätigen verschieben. Slippage ist häufiger bei Paaren mit geringer Liquidität und auf DEXs während Volatilität."
+      ]
+     },
+     {
+      "h": "Hebel, Futures und Liquidation",
+      "p": [
+       "**Spot-Handel** bedeutet, tatsächliche Kryptowährung zu kaufen, die in Ihrem Wallet liegt. **Futures** sind Verträge zum Kauf oder Verkauf zu einem festgelegten Preis zu einem zukünftigen Datum, und Sie besitzen nicht den zugrunde liegenden Vermögenswert – nur den Vertrag. Futures ermöglichen **Hebel**, das Ausleihen von Vielfachen Ihres Kapitals: 10x-Hebel verwandelt 100 Euro in 1.000 Euro Marktengagement. Gewinne multiplizieren sich, aber auch Verluste. Wenn sich der Markt bei 10x-Hebel um 10 Prozent gegen Sie bewegt, ist Ihr gesamter Einsatz verloren.",
+       "**Liquidation** geschieht, wenn Verluste Ihre Margin (die von Ihnen hinterlegte Sicherheit) aufzehren. Die Börse oder das Protokoll schließt automatisch Ihre Position, um zu verhindern, dass Sie mehr schulden als Sie eingezahlt haben. Liquidationspreise werden beim Öffnen einer gehebelten Position berechnet; wenn Bitcoin von 40.000 auf 36.000 Euro fällt und Ihr Liquidationspreis bei 36.500 Euro lag, verlieren Sie alles, bevor der Markt 36.000 Euro erreicht. Futures und Hebel sind Hochrisiko-Instrumente; viele Privatanleger verlieren Geld, und dies ist keine Anlageberatung."
+      ]
+     },
+     {
+      "h": "Blockchain, Layer und Bridges",
+      "p": [
+       "Eine **Blockchain** ist ein gemeinsames Transaktionsregister, das über Tausende von Computern (Nodes) kopiert wird. Jeder neue Transaktionsblock ist kryptografisch mit dem vorherigen verknüpft, wodurch vergangene Aufzeichnungen nahezu unmöglich zu ändern sind. **Bitcoin** betreibt eine Blockchain; **Ethereum** betreibt eine andere. Jede verarbeitet Transaktionen unterschiedlich und erhebt eigene Gebühren.",
+       "**Layer-2-Netzwerke** (L2) wie Arbitrum, Optimism oder Polygon sitzen auf einer Hauptkette (Layer 1) und bündeln viele Transaktionen, bevor sie auf der Basisschicht abgerechnet werden. L2s senken Gas-Gebühren und beschleunigen Bestätigungen, fügen aber je nach Design einen Vertrauens- oder Komplexitäts-Kompromiss hinzu. Eine **Bridge** bewegt Vermögenswerte zwischen Blockchains – zum Beispiel Bitcoin wrappen, um es auf Ethereum zu nutzen. Bridges verlassen sich auf Smart Contracts oder Verwahrer; mehrere wurden für Hunderte Millionen Euro gehackt. Überbrücken Sie nur Beträge, die Sie verlieren können, und recherchieren Sie das Sicherheitsmodell der Bridge vor der Nutzung."
+      ]
+     },
+     {
+      "h": "Coins, Token und Marktkapitalisierung",
+      "p": [
+       "**Bitcoin** (BTC) ist die erste Kryptowährung; jede andere ist ein **Altcoin**. Einige Altcoins wie Ethereum (ETH) betreiben eigene Blockchains. Andere sind **Token**, die auf bestehenden Ketten mit Standards wie ERC-20 (Ethereum) oder BEP-20 (BNB Chain) aufgebaut sind. **Stablecoins** sind Token, die einen stabilen Wert halten sollen, normalerweise eins-zu-eins an den US-Dollar gekoppelt. USDT (Tether) und USDC (Circle) sind durch Reserven aus Bargeld und Anleihen gedeckt, wobei Qualität und Prüfung der Reserven variieren. DAI ist algorithmisch, gedeckt durch Krypto-Sicherheiten, die in Smart Contracts gesperrt sind. Stablecoins vereinfachen Handel und Wertspeicherung, aber die regulatorische Kontrolle nimmt zu und einige haben während Krisen ihre Bindung verloren.",
+       "**Marktkapitalisierung** (Market Cap) multipliziert den aktuellen Preis mit dem zirkulierenden Angebot. Ein Coin zu 2 Euro mit 500 Millionen zirkulierenden Token hat eine Marktkapitalisierung von 1 Milliarde Euro. Market Cap gibt ungefähre Größe an, misst aber nicht Liquidität oder ob das Projekt echten Nutzen hat. Viele hochkapitalisierte Coins haben dünne Orderbücher; der Verkauf großer Mengen bewegt den Preis erheblich."
+      ]
+     },
+     {
+      "h": "Staking, Rendite und Halving",
+      "p": [
+       "**Staking** bedeutet, Ihre Coins in einer Proof-of-Stake-Blockchain (wie Ethereum nach dem Merge, Cardano oder Solana) zu sperren, um bei der Validierung von Transaktionen zu helfen. Im Gegenzug erhalten Sie Belohnungen, die typischerweise in derselben Kryptowährung ausgezahlt werden. Die Raten variieren je nach Netzwerk und Gesamteinsatz zwischen 3 und 15 Prozent jährlich. Gestakte Mittel können Entsperrungszeiten von Tagen oder Wochen haben, während derer Sie nicht verkaufen können. **Rendite** ist breiter gefasst: jede Rendite aus dem Halten oder Verleihen von Krypto, einschließlich Staking, Liquiditätsbereitstellung auf DEXs (wo Sie Tokenpaare in einen Pool einzahlen) oder Verleihen auf Plattformen wie Aave. Höhere Renditen bedeuten normalerweise höheres Risiko – Smart-Contract-Fehler, Preisvolatilität des Belohnungstokens oder regelrechte Betrügereien. Dies ist keine Finanzberatung; bewerten Sie die Audits und die Erfolgsbilanz jedes Protokolls.",
+       "Bitcoins **Halving** erfolgt etwa alle vier Jahre (alle 210.000 Blöcke). Die an Miner gezahlte Blockbelohnung wird halbiert, wodurch die Rate neuer Bitcoins, die in Umlauf kommen, reduziert wird. Das jüngste Halving 2024 senkte die Belohnung von 6,25 auf 3,125 BTC pro Block. Halving ist in Bitcoins Code eingebaut und wird bis etwa zum Jahr 2140 fortgesetzt, wenn das Angebot bei 21 Millionen Coins gedeckelt ist. Viele Händler beobachten Halving-Zyklen wegen potenzieller Preisauswirkungen, aber vergangene Performance garantiert keine zukünftigen Ergebnisse."
+      ]
+     }
+    ]
+   },
+   "es": {
+    "title": "Glosario cripto: los 40 términos que realmente necesitas para entender el mercado",
+    "excerpt": "Una referencia práctica del vocabulario esencial del trading de criptomonedas, wallets y tecnología blockchain. Todo, desde claves privadas hasta apalancamiento, explicado para que puedas actuar.",
+    "sections": [
+     {
+      "h": "Fundamentos de las wallets",
+      "p": [
+       "Una **wallet** es software o hardware que almacena tu **clave privada**, la cadena de 64 caracteres que demuestra la propiedad de tu criptomoneda. Sin la clave privada, no puedes mover tus fondos. Si alguien más la obtiene, es dueño de tu cripto permanentemente—no hay recuperación de contraseña. La mayoría de las wallets generan una **frase semilla** (también llamada frase de recuperación o mnemónica), típicamente 12 o 24 palabras comunes en un orden específico. Esta frase es una copia de seguridad legible de tu clave privada. Escríbela en papel, guárdala de forma segura sin conexión y nunca la fotografíes o la almacenes digitalmente. Cualquiera con tu frase semilla controla tus fondos.",
+       "Las wallets vienen en varios tipos. Las **wallets calientes** permanecen conectadas a internet (apps móviles, extensiones de navegador, software de escritorio) y priorizan la comodidad para trading frecuente. Las **wallets frías** permanecen sin conexión—ya sean dispositivos de hardware como Ledger o Trezor, o incluso papel con tus claves impresas. El almacenamiento en frío reduce drásticamente el riesgo de hackeo y es estándar para tenencias a largo plazo. Las **wallets custodiales** son proporcionadas por exchanges: la empresa guarda las claves privadas, confías en que honrarán los retiros. Las **wallets no custodiales** te dan control total y responsabilidad total. Pierde tu frase semilla con una wallet no custodial y tus fondos se han ido para siempre; ninguna empresa puede recuperarlos."
+      ]
+     },
+     {
+      "h": "Exchanges y cómo operas",
+      "p": [
+       "Un **exchange centralizado** (CEX) como Binance, Coinbase o Kraken es una empresa que mantiene tu cripto en wallets custodiales, empareja compradores con vendedores y típicamente requiere verificación **Know Your Customer** (KYC)—subir un pasaporte o DNI y a veces un comprobante de domicilio. Las reglas **Anti-Lavado de Dinero** (AML) varían según la jurisdicción pero generalmente requieren que los exchanges reporten transacciones grandes o sospechosas. Estas reglas cambian frecuentemente, y esto no es asesoría legal; verifica las regulaciones actuales donde vives.",
+       "Un **exchange descentralizado** (DEX) como Uniswap o PancakeSwap funciona con contratos inteligentes sin empresa intermediaria. Conectas tu wallet no custodial, operas directamente desde ella y pagas una **tarifa de gas**—un costo de transacción de red pagado a validadores de blockchain, a menudo en ETH en Ethereum o BNB en BNance Smart Chain. Las tarifas de gas fluctúan con la congestión de la red; han variado desde menos de un euro hasta más de cien durante momentos pico. Los DEXs rara vez requieren KYC, pero asumes total responsabilidad por errores: envía fondos a la dirección equivocada y son irrecuperables.",
+       "Cuando colocas una **orden de mercado**, compras o vendes inmediatamente al mejor precio disponible. Una **orden limitada** solo se ejecuta a tu precio elegido o mejor, así que podrías esperar indefinidamente si el mercado nunca lo alcanza. El **spread** es la brecha entre la oferta de compra más alta y la oferta de venta más baja; spreads más ajustados significan menores costos. El **deslizamiento** ocurre cuando tu orden es lo suficientemente grande como para mover el precio mientras se ejecuta, o cuando los precios cambian entre hacer clic y confirmar. El deslizamiento es más común en pares de baja liquidez y en DEXs durante volatilidad."
+      ]
+     },
+     {
+      "h": "Apalancamiento, futuros y liquidación",
+      "p": [
+       "**Trading al contado** significa comprar criptomoneda real que queda en tu wallet. Los **futuros** son contratos para comprar o vender a un precio establecido en una fecha futura, y no posees el activo subyacente—solo el contrato. Los futuros te permiten usar **apalancamiento**, pidiendo prestados múltiplos de tu capital: apalancamiento 10x convierte 100 euros en 1.000 euros de exposición al mercado. Las ganancias se multiplican, pero también las pérdidas. Si el mercado se mueve en tu contra un 10 por ciento con apalancamiento 10x, toda tu apuesta se pierde.",
+       "La **liquidación** ocurre cuando las pérdidas consumen tu margen (la garantía que depositaste). El exchange o protocolo cierra automáticamente tu posición para evitar que debas más de lo que depositaste. Los precios de liquidación se calculan cuando abres una posición apalancada; si Bitcoin cae de 40.000 a 36.000 euros y tu precio de liquidación era 36.500, pierdes todo antes de que el mercado toque 36.000. Los futuros y el apalancamiento son herramientas de alto riesgo; muchos traders minoristas pierden dinero, y esto no es consejo de inversión."
+      ]
+     },
+     {
+      "h": "Blockchain, capas y puentes",
+      "p": [
+       "Una **blockchain** es un registro compartido de transacciones, copiado en miles de computadoras (nodos). Cada nuevo bloque de transacciones se vincula criptográficamente al anterior, haciendo casi imposible alterar registros pasados. **Bitcoin** ejecuta una blockchain; **Ethereum** ejecuta otra. Cada una procesa transacciones de manera diferente y cobra sus propias tarifas.",
+       "Las redes **Layer 2** (L2) como Arbitrum, Optimism o Polygon se sitúan encima de una cadena principal (Layer 1) y agrupan muchas transacciones antes de liquidarlas en la capa base. Las L2 reducen las tarifas de gas y aceleran la confirmación pero añaden un compromiso de confianza o complejidad dependiendo de su diseño. Un **puente** mueve activos entre blockchains—por ejemplo, envolver Bitcoin para usarlo en Ethereum. Los puentes dependen de contratos inteligentes o custodios; varios han sido hackeados por cientos de millones de euros. Solo cruza cantidades que puedas permitirte perder, e investiga el modelo de seguridad del puente antes de usarlo."
+      ]
+     },
+     {
+      "h": "Monedas, tokens y capitalización de mercado",
+      "p": [
+       "**Bitcoin** (BTC) es la primera criptomoneda; todas las demás son **altcoins**. Algunas altcoins, como Ethereum (ETH), ejecutan sus propias blockchains. Otras son **tokens** construidos en cadenas existentes usando estándares como ERC-20 (Ethereum) o BEP-20 (BNB Chain). Las **stablecoins** son tokens diseñados para mantener un valor estable, usualmente vinculados uno a uno con el dólar estadounidense. USDT (Tether) y USDC (Circle) están respaldados por reservas de efectivo y bonos, aunque la calidad y auditoría de las reservas varían. DAI es algorítmica, respaldada por garantía cripto bloqueada en contratos inteligentes. Las stablecoins simplifican el trading y el almacenamiento de valor, pero el escrutinio regulatorio está aumentando y algunas han perdido su paridad durante crisis.",
+       "La **capitalización de mercado** (market cap) multiplica el precio actual por la oferta en circulación. Una moneda a 2 euros con 500 millones de tokens en circulación tiene una capitalización de mercado de 1.000 millones de euros. La capitalización da escala aproximada pero no mide liquidez o si el proyecto tiene uso real. Muchas monedas de alta capitalización tienen libros de órdenes delgados; vender grandes cantidades mueve el precio significativamente."
+      ]
+     },
+     {
+      "h": "Staking, rendimiento y halving",
+      "p": [
+       "**Staking** significa bloquear tus monedas en una blockchain de prueba de participación (como Ethereum post-Merge, Cardano o Solana) para ayudar a validar transacciones. A cambio obtienes recompensas, típicamente pagadas en la misma criptomoneda. Las tasas varían del 3 al 15 por ciento anual dependiendo de la red y el total en staking. Los fondos en staking pueden tener períodos de desbloqueo de días o semanas durante los cuales no puedes vender. El **rendimiento** es más amplio: cualquier retorno de mantener o prestar cripto, incluyendo staking, provisión de liquidez en DEXs (donde depositas pares de tokens en un pool), o préstamos en plataformas como Aave. Rendimientos más altos usualmente significan mayor riesgo—errores en contratos inteligentes, volatilidad de precio del token de recompensa o estafas directas. Esto no es asesoría financiera; evalúa las auditorías y el historial de cada protocolo.",
+       "El **halving** de Bitcoin ocurre aproximadamente cada cuatro años (cada 210.000 bloques). La recompensa de bloque pagada a los mineros se reduce a la mitad, reduciendo la tasa de nuevos Bitcoins que entran en circulación. El halving más reciente en 2024 redujo la recompensa de 6,25 a 3,125 BTC por bloque. El halving está incorporado en el código de Bitcoin y continuará hasta aproximadamente el año 2140, cuando la oferta alcance un límite de 21 millones de monedas. Muchos traders observan los ciclos de halving por el potencial impacto en el precio, pero el rendimiento pasado no garantiza resultados futuros."
+      ]
+     }
+    ]
+   },
+   "pt": {
+    "title": "Glossário cripto: os 40 termos que você realmente precisa para entender o mercado",
+    "excerpt": "Uma referência prática do vocabulário essencial de trading de criptomoedas, carteiras e tecnologia blockchain. Tudo, desde chaves privadas até alavancagem, explicado para você poder agir.",
+    "sections": [
+     {
+      "h": "Fundamentos das carteiras",
+      "p": [
+       "Uma **carteira** é um software ou hardware que armazena sua **chave privada**, a sequência de 64 caracteres que comprova a propriedade de sua criptomoeda. Sem a chave privada, você não pode movimentar seus fundos. Se outra pessoa a obtiver, ela é dona da sua cripto permanentemente—não há redefinição de senha. A maioria das carteiras gera uma **frase-semente** (também chamada de frase de recuperação ou mnemônica), tipicamente 12 ou 24 palavras comuns em uma ordem específica. Esta frase é um backup legível de sua chave privada. Escreva-a no papel, guarde-a com segurança offline e nunca a fotografe ou armazene digitalmente. Qualquer pessoa com sua frase-semente controla seus fundos.",
+       "As carteiras vêm em vários tipos. **Carteiras quentes** permanecem conectadas à internet (aplicativos móveis, extensões de navegador, software de desktop) e priorizam conveniência para negociações frequentes. **Carteiras frias** permanecem offline—seja dispositivos de hardware como Ledger ou Trezor, ou até papel com suas chaves impressas. Armazenamento frio reduz drasticamente o risco de hacking e é padrão para participações de longo prazo. **Carteiras custodiadas** são fornecidas por exchanges: a empresa mantém as chaves privadas, você confia que elas honrarão os saques. **Carteiras não custodiadas** lhe dão controle total e responsabilidade total. Perca sua frase-semente com uma carteira não custodiada e seus fundos se foram para sempre; nenhuma empresa pode recuperá-los."
+      ]
+     },
+     {
+      "h": "Exchanges e como você negocia",
+      "p": [
+       "Uma **exchange centralizada** (CEX) como Binance, Coinbase ou Kraken é uma empresa que mantém sua cripto em carteiras custodiadas, combina compradores com vendedores e tipicamente exige verificação **Conheça Seu Cliente** (KYC)—envio de passaporte ou RG e às vezes comprovante de residência. Regras **Anti-Lavagem de Dinheiro** (AML) variam por jurisdição mas geralmente exigem que exchanges reportem transações grandes ou suspeitas. Essas regras mudam frequentemente, e isto não é aconselhamento jurídico; verifique as regulamentações atuais onde você mora.",
+       "Uma **exchange descentralizada** (DEX) como Uniswap ou PancakeSwap funciona com contratos inteligentes sem empresa intermediária. Você conecta sua carteira não custodiada, negocia diretamente dela e paga uma **taxa de gas**—um custo de transação de rede pago aos validadores de blockchain, frequentemente em ETH no Ethereum ou BNB na BNance Smart Chain. Taxas de gas flutuam com o congestionamento da rede; já variaram de menos de um real a mais de quinhentos reais em momentos de pico. DEXs raramente exigem KYC, mas você assume total responsabilidade por erros: envie fundos para o endereço errado e eles são irrecuperáveis.",
+       "Quando você faz uma **ordem a mercado**, compra ou vende imediatamente ao melhor preço disponível. Uma **ordem limitada** só executa no preço escolhido ou melhor, então você pode esperar indefinidamente se o mercado nunca o alcançar. O **spread** é a lacuna entre a oferta de compra mais alta e a oferta de venda mais baixa; spreads mais apertados significam custos menores. **Slippage** ocorre quando sua ordem é grande o suficiente para mover o preço durante a execução, ou quando os preços mudam entre clicar e confirmar. Slippage é mais comum em pares de baixa liquidez e em DEXs durante volatilidade."
+      ]
+     },
+     {
+      "h": "Alavancagem, futuros e liquidação",
+      "p": [
+       "**Negociação à vista** significa comprar criptomoeda real que fica em sua carteira. **Futuros** são contratos para comprar ou vender a um preço definido em uma data futura, e você não possui o ativo subjacente—apenas o contrato. Futuros permitem usar **alavancagem**, tomando emprestado múltiplos de seu capital: alavancagem 10x transforma 100 reais em 1.000 reais de exposição ao mercado. Lucros se multiplicam, mas perdas também. Se o mercado se mover contra você em 10 por cento com alavancagem 10x, toda sua aposta se foi.",
+       "**Liquidação** acontece quando perdas consomem sua margem (a garantia que você depositou). A exchange ou protocolo fecha automaticamente sua posição para evitar que você deva mais do que depositou. Preços de liquidação são calculados no momento em que você abre uma posição alavancada; se Bitcoin cai de 40.000 para 36.000 reais e seu preço de liquidação era 36.500, você perde tudo antes do mercado tocar 36.000. Futuros e alavancagem são ferramentas de alto risco; muitos traders de varejo perdem dinheiro, e isto não é aconselhamento de investimento."
+      ]
+     },
+     {
+      "h": "Blockchain, camadas e pontes",
+      "p": [
+       "Uma **blockchain** é um livro-razão compartilhado de transações, copiado em milhares de computadores (nós). Cada novo bloco de transações se vincula criptograficamente ao anterior, tornando registros passados quase impossíveis de alterar. **Bitcoin** executa uma blockchain; **Ethereum** executa outra. Cada uma processa transações de forma diferente e cobra suas próprias taxas.",
+       "Redes **Layer 2** (L2) como Arbitrum, Optimism ou Polygon ficam em cima de uma cadeia principal (Layer 1) e agrupam muitas transações antes de liquidá-las na camada base. L2s reduzem taxas de gas e aceleram confirmação mas adicionam um trade-off de confiança ou complexidade dependendo de seu design. Uma **ponte** move ativos entre blockchains—por exemplo, embrulhar Bitcoin para usar no Ethereum. Pontes dependem de contratos inteligentes ou custodiantes; várias foram hackeadas por centenas de milhões de reais. Apenas cruze quantias que você pode perder, e pesquise o modelo de segurança da ponte antes de usar."
+      ]
+     },
+     {
+      "h": "Moedas, tokens e capitalização de mercado",
+      "p": [
+       "**Bitcoin** (BTC) é a primeira criptomoeda; todas as outras são **altcoins**. Algumas altcoins, como Ethereum (ETH), executam suas próprias blockchains. Outras são **tokens** construídos em cadeias existentes usando padrões como ERC-20 (Ethereum) ou BEP-20 (BNB Chain). **Stablecoins** são tokens projetados para manter um valor estável, geralmente atrelados um-para-um com o dólar americano. USDT (Tether) e USDC (Circle) são garantidos por reservas de dinheiro e títulos, embora a qualidade e auditoria das reservas variem. DAI é algorítmica, garantida por garantias cripto bloqueadas em contratos inteligentes. Stablecoins simplificam negociação e armazenamento de valor, mas o escrutínio regulatório está aumentando e algumas perderam sua paridade durante crises.",
+       "**Capitalização de mercado** (market cap) multiplica o preço atual pela oferta em circulação. Uma moeda a 2 reais com 500 milhões de tokens em circulação tem uma capitalização de mercado de 1 bilhão de reais. Market cap dá escala aproximada mas não mede liquidez ou se o projeto tem uso real. Muitas moedas de alta capitalização têm livros de ordens finos; vender grandes quantidades move o preço significativamente."
+      ]
+     },
+     {
+      "h": "Staking, rendimento e halving",
+      "p": [
+       "**Staking** significa bloquear suas moedas em uma blockchain de prova de participação (como Ethereum pós-Merge, Cardano ou Solana) para ajudar a validar transações. Em troca você ganha recompensas, tipicamente pagas na mesma criptomoeda. Taxas variam de 3 a 15 por cento anualmente dependendo da rede e total em staking. Fundos em staking podem ter períodos de desbloqueio de dias ou semanas durante os quais você não pode vender. **Rendimento** é mais amplo: qualquer retorno de manter ou emprestar cripto, incluindo staking, provisão de liquidez em DEXs (onde você deposita pares de tokens em um pool), ou empréstimos em plataformas como Aave. Rendimentos mais altos geralmente significam maior risco—bugs em contratos inteligentes, volatilidade de preço do token de recompensa ou golpes diretos. Isto não é aconselhamento financeiro; avalie as auditorias e histórico de cada protocolo.",
+       "O **halving** do Bitcoin ocorre aproximadamente a cada quatro anos (a cada 210.000 blocos). A recompensa de bloco paga aos mineradores é cortada pela metade, reduzindo a taxa de novos Bitcoins entrando em circulação. O halving mais recente em 2024 reduziu a recompensa de 6,25 para 3,125 BTC por bloco. O halving está embutido no código do Bitcoin e continuará até aproximadamente o ano 2140, quando a oferta alcançará o limite de 21 milhões de moedas. Muitos traders observam ciclos de halving por potencial impacto no preço, mas desempenho passado não garante resultados futuros."
+      ]
+     }
+    ]
+   },
+   "tr": {
+    "title": "Kripto sözlüğü: Piyasayı anlamak için gerçekten ihtiyacınız olan 40 terim",
+    "excerpt": "Kripto para ticareti, cüzdanlar ve blockchain teknolojisinin temel kelime dağarcığına pratik bir başvuru. Özel anahtarlardan kaldıraca kadar her şey, harekete geçebilmeniz için açıklanmıştır.",
+    "sections": [
+     {
+      "h": "Cüzdan temelleri",
+      "p": [
+       "Bir **cüzdan**, kripto para sahipliğinizi kanıtlayan 64 karakterlik dize olan **özel anahtarınızı** saklayan yazılım veya donanımdır. Özel anahtar olmadan fonlarınızı hareket ettiremezsiniz. Bir başkası onu ele geçirirse, kriptonuz kalıcı olarak ona aittir—şifre sıfırlama yoktur. Çoğu cüzdan, tipik olarak belirli bir sırada 12 veya 24 yaygın kelimeden oluşan bir **tohum ifadesi** (kurtarma ifadesi veya anımsatıcı olarak da adlandırılır) oluşturur. Bu ifade, özel anahtarınızın insan tarafından okunabilir bir yedeğidir. Kağıda yazın, çevrimdışı güvenli bir şekilde saklayın ve asla fotoğrafını çekmeyin veya dijital olarak saklamayın. Tohum ifadenize sahip olan herkes fonlarınızı kontrol eder.",
+       "Cüzdanlar çeşitli türlerde gelir. **Sıcak cüzdanlar** internete bağlı kalır (mobil uygulamalar, tarayıcı uzantıları, masaüstü yazılımı) ve sık ticaret için kolaylığa öncelik verir. **Soğuk cüzdanlar** çevrimdışı kalır—Ledger veya Trezor gibi donanım cihazları veya hatta anahtarlarınızın basılı olduğu kağıt. Soğuk depolama, hackleme riskini keskin bir şekilde azaltır ve uzun vadeli varlıklar için standarttır. **Saklama cüzdanları** borsalar tarafından sağlanır: şirket özel anahtarları tutar, çekimleri onurlayacaklarına güvenirsiniz. **Saklama dışı cüzdanlar** size tam kontrol ve tam sorumluluk verir. Saklama dışı bir cüzdanla tohum ifadenizi kaybederseniz fonlarınız sonsuza dek gitmiştir; hiçbir şirket bunları kurtaramaz."
+      ]
+     },
+     {
+      "h": "Borsalar ve nasıl işlem yaparsınız",
+      "p": [
+       "Binance, Coinbase veya Kraken gibi bir **merkezi borsa** (CEX), kriptonuzu saklama cüzdanlarında tutan, alıcıları satıcılarla eşleştiren ve tipik olarak **Müşterinizi Tanıyın** (KYC) doğrulaması gerektiren bir şirkettir—pasaport veya kimlik yükleme ve bazen adres kanıtı. **Kara Para Aklamayı Önleme** (AML) kuralları yargı yetkisine göre değişir ancak genel olarak borsaların büyük veya şüpheli işlemleri bildirmesini gerektirir. Bu kurallar sıkça değişir ve bu yasal tavsiye değildir; yaşadığınız yerdeki güncel düzenlemeleri kontrol edin.",
+       "Uniswap veya PancakeSwap gibi bir **merkezi olmayan borsa** (DEX), arada şirket olmadan akıllı sözleşmeler üzerinde çalışır. Saklama dışı cüzdanınızı bağlarsınız, doğrudan ondan işlem yaparsınız ve bir **gaz ücreti** ödersiniz—Ethereum'da ETH veya BNance Smart Chain'de BNB olarak blockchain doğrulayıcılarına ödenen ağ işlem maliyeti. Gaz ücretleri ağ tıkanıklığıyla dalgalanır; yoğun zamanlarda bir liradan yüz liraya kadar değişmiştir. DEX'ler nadiren KYC gerektirir, ancak hatalardan tam sorumluluk taşırsınız: yanlış adrese fon gönderirseniz geri alınamaz.",
+       "Bir **piyasa emri** verdiğinizde, en iyi mevcut fiyattan hemen alır veya satarsınız. Bir **limit emri** yalnızca seçtiğiniz fiyattan veya daha iyisinde gerçekleşir, bu nedenle piyasa asla ona ulaşmazsa süresiz bekleyebilirsiniz. **Spread**, en yüksek alış teklifi ile en düşük satış teklifi arasındaki boşluktur; daha dar spread'ler daha düşük maliyetler anlamına gelir. **Kayma**, siparişiniz yürütülürken fiyatı hareket ettirmeye yetecek kadar büyük olduğunda veya tıklama ile onaylama arasında fiyatlar değiştiğinde oluşur. Kayma, düşük likiditeye sahip çiftlerde ve volatilite sırasında DEX'lerde daha yaygındır."
+      ]
+     },
+     {
+      "h": "Kaldıraç, vadeli işlemler ve tasfiye",
+      "p": [
+       "**Spot ticaret**, cüzdanınızda duran gerçek kripto para satın almak anlamına gelir. **Vadeli işlemler**, gelecekteki bir tarihte belirli bir fiyattan alım veya satım yapmak için yapılan sözleşmelerdir ve dayanak varlığa sahip değilsiniz—yalnızca sözleşmeye. Vadeli işlemler **kaldıraç** kullanmanıza izin verir, sermayenizin katlarını ödünç alır: 10x kaldıraç 100 lirayı 1.000 lira piyasa maruziyetine dönüştürür. Karlar katlanır, ancak kayıplar da öyle. Piyasa 10x kaldıraçla yüzde 10 size karşı hareket ederse, tüm bahsiniz gider.",
+       "**Tasfiye**, kayıplar marjınızı (yatırdığınız teminatı) tükettiğinde gerçekleşir. Borsa veya protokol, yatırdığınızdan daha fazla borçlanmanızı önlemek için pozisyonunuzu otomatik olarak kapatır. Tasfiye fiyatları, kaldıraçlı bir pozisyon açtığınızda hesaplanır; Bitcoin 40.000'den 36.000 TL'ye düşerse ve tasfiye fiyatınız 36.500 idi ise, piyasa 36.000'e dokunmadan önce her şeyi kaybedersiniz. Vadeli işlemler ve kaldıraç yüksek riskli araçlardır; birçok perakende yatırımcı para kaybeder ve bu yatırım tavsiyesi değildir."
+      ]
+     },
+     {
+      "h": "Blockchain, katmanlar ve köprüler",
+      "p": [
+       "Bir **blockchain**, binlerce bilgisayara (düğüm) kopyalanan paylaşılan bir işlem defteridir. Her yeni işlem bloğu kriptografik olarak bir öncekine bağlanır ve geçmiş kayıtların değiştirilmesini neredeyse imkansız hale getirir. **Bitcoin** bir blockchain çalıştırır; **Ethereum** başka birini çalıştırır. Her biri işlemleri farklı şekilde işler ve kendi ücretlerini alır.",
+       "Arbitrum, Optimism veya Polygon gibi **Layer 2** (L2) ağları, ana zincirin (Layer 1) üzerinde oturur ve birçok işlemi temel katmanda kapatmadan önce gruplandırır. L2'ler gaz ücretlerini düşürür ve onayı hızlandırır ancak tasarımlarına bağlı olarak güven veya karmaşıklık ödünleşimi ekler. Bir **köprü**, varlıkları blockchain'ler arasında taşır—örneğin, Ethereum'da kullanmak için Bitcoin'i sarma. Köprüler akıllı sözleşmelere veya emanetçilere güvenir; birkaçı yüz milyonlarca lira için hacklenmiştir. Yalnızca kaybetmeyi göze alabileceğiniz miktarları köprüleyin ve kullanmadan önce köprünün güvenlik modelini araştırın."
+      ]
+     },
+     {
+      "h": "Coinler, tokenler ve piyasa değeri",
+      "p": [
+       "**Bitcoin** (BTC) ilk kripto paradır; diğer her biri bir **altcoin**'dir. Ethereum (ETH) gibi bazı altcoinler kendi blockchain'lerini çalıştırır. Diğerleri, ERC-20 (Ethereum) veya BEP-20 (BNB Chain) gibi standartlar kullanılarak mevcut zincirlerde oluşturulan **tokenlerdir**. **Stablecoinler**, genellikle ABD doları ile bire bir sabitlenmiş, sabit bir değer tutmak için tasarlanmış tokenlardır. USDT (Tether) ve USDC (Circle), nakit ve tahvil rezervleriyle desteklenir, ancak rezervlerin kalitesi ve denetimi değişir. DAI algoritmiktir, akıllı sözleşmelerde kilitli kripto teminatla desteklenir. Stablecoinler ticareti ve değer saklamayı basitleştirir, ancak düzenleyici inceleme artıyor ve bazıları kriz sırasında sabitlemelerini kaybetmiştir.",
+       "**Piyasa değeri** (market cap), mevcut fiyatı dolaşımdaki arzla çarpar. 500 milyon dolaşımdaki token ile 2 lira fiyatlı bir coin, 1 milyar lira piyasa değerine sahiptir. Piyasa değeri yaklaşık ölçek verir ancak likiditeyi veya projenin gerçek kullanımının olup olmadığını ölçmez. Birçok yüksek değerli coin ince emir defterlerine sahiptir; büyük miktarlar satmak fiyatı önemli ölçüde hareket ettirir."
+      ]
+     },
+     {
+      "h": "Staking, getiri ve yarılanma",
+      "p": [
+       "**Staking**, işlemleri doğrulamaya yardımcı olmak için coinlerinizi bir proof-of-stake blockchain'inde (Merge sonrası Ethereum, Cardano veya Solana gibi) kilitlemek anlamına gelir. Karşılığında, tipik olarak aynı kripto para cinsinden ödenen ödüller kazanırsınız. Oranlar ağa ve toplam stake edilene bağlı olarak yıllık yüzde 3 ile 15 arasında değişir. Stake edilmiş fonların, satış yapamadığınız günler veya haftalar süren bağ çözme dönemleri olabilir. **Getiri** daha geniştir: staking, DEX'lerde likidite sağlama (token çiftlerini bir havuza yatırdığınız) veya Aave gibi platformlarda borç verme dahil olmak üzere kripto tutma veya ödünç vermeden elde edilen herhangi bir getiri. Daha yüksek getiriler genellikle daha yüksek risk anlamına gelir—akıllı sözleşme hataları, ödül tokeninin fiyat volatilitesi veya doğrudan dolandırıcılıklar. Bu finansal tavsiye değildir; her protokolün denetimlerini ve sicilini değerlendirin.",
+       "Bitcoin'in **yarılanması** yaklaşık her dört yılda bir gerçekleşir (her 210.000 blok). Madencilere ödenen blok ödülü yarıya iner ve dolaşıma giren yeni Bitcoin oranını azaltır. 2024'teki en son yarılanma, ödülü blok başına 6,25'ten 3,125 BTC'ye düşürdü. Yarılanma Bitcoin'in koduna yerleştirilmiştir ve arz 21 milyon coinde üst sınıra ulaştığında yaklaşık 2140 yılına kadar devam edecektir. Birçok yatırımcı potansiyel fiyat etkisi için yarılanma döngülerini izler, ancak geçmiş performans gelecekteki sonuçları garanti etmez."
+      ]
+     }
+    ]
+   },
+   "id": {
+    "title": "Glosarium Kripto: 40 istilah yang benar-benar perlu Anda pahami untuk memahami pasar",
+    "excerpt": "Referensi praktis untuk kosakata penting perdagangan mata uang kripto, dompet, dan teknologi blockchain. Semua hal mulai dari private key hingga leverage, dijelaskan agar Anda bisa langsung bertindak.",
+    "sections": [
+     {
+      "h": "Dasar-dasar dompet",
+      "p": [
+       "**Dompet** (wallet) adalah perangkat lunak atau perangkat keras yang menyimpan **private key** Anda, rangkaian 64 karakter yang membuktikan kepemilikan mata uang kripto Anda. Tanpa private key, Anda tidak bisa memindahkan dana. Jika orang lain mendapatkannya, mereka memiliki kripto Anda secara permanen—tidak ada reset kata sandi. Sebagian besar dompet menghasilkan **seed phrase** (juga disebut recovery phrase atau mnemonic), biasanya 12 atau 24 kata umum dalam urutan tertentu. Frasa ini adalah cadangan private key Anda yang dapat dibaca manusia. Tulis di kertas, simpan secara aman offline, dan jangan pernah memfotonya atau menyimpannya secara digital. Siapa pun yang memiliki seed phrase Anda menguasai dana Anda.",
+       "Dompet tersedia dalam beberapa jenis. **Hot wallet** tetap terhubung ke internet (aplikasi seluler, ekstensi browser, perangkat lunak desktop) dan memprioritaskan kemudahan untuk perdagangan sering. **Cold wallet** tetap offline—baik perangkat keras seperti Ledger atau Trezor, atau bahkan kertas dengan kunci Anda yang dicetak. Penyimpanan dingin sangat mengurangi risiko peretasan dan merupakan standar untuk kepemilikan jangka panjang. **Dompet kustodian** disediakan oleh exchange: perusahaan memegang private key, Anda mempercayai mereka untuk menghormati penarikan. **Dompet non-kustodian** memberi Anda kontrol penuh dan tanggung jawab penuh. Kehilangan seed phrase dengan dompet non-kustodian dan dana Anda hilang selamanya; tidak ada perusahaan yang dapat memulihkannya."
+      ]
+     },
+     {
+      "h": "Exchange dan cara Anda berdagang",
+      "p": [
+       "**Exchange terpusat** (CEX) seperti Indodax, Tokocrypto, atau Pintu adalah perusahaan yang menyimpan kripto Anda di dompet kustodian, mencocokkan pembeli dengan penjual, dan biasanya memerlukan verifikasi **Know Your Customer** (KYC)—mengunggah KTP atau paspor dan terkadang bukti alamat. Aturan **Anti-Money Laundering** (AML) bervariasi menurut yurisdiksi tetapi umumnya mengharuskan exchange melaporkan transaksi besar atau mencurigakan. Aturan ini sering berubah, dan ini bukan nasihat hukum; periksa peraturan saat ini di tempat Anda tinggal.",
+       "**Exchange terdesentralisasi** (DEX) seperti Uniswap atau PancakeSwap berjalan pada smart contract tanpa perusahaan di tengahnya. Anda menghubungkan dompet non-kustodian Anda, berdagang langsung darinya, dan membayar **gas fee**—biaya transaksi jaringan yang dibayarkan kepada validator blockchain, sering dalam ETH di Ethereum atau BNB di BNB Smart Chain. Gas fee berfluktuasi dengan kemacetan jaringan; berkisar dari di bawah Rp15.000 hingga lebih dari Rp1.500.000 selama waktu puncak. DEX jarang memerlukan KYC, tetapi Anda menanggung tanggung jawab penuh atas kesalahan: kirim dana ke alamat yang salah dan tidak dapat dipulihkan.",
+       "Ketika Anda menempatkan **market order**, Anda membeli atau menjual segera pada harga terbaik yang tersedia. **Limit order** hanya dieksekusi pada harga pilihan Anda atau lebih baik, jadi Anda mungkin menunggu tanpa batas jika pasar tidak pernah mencapainya. **Spread** adalah kesenjangan antara tawaran beli tertinggi dan tawaran jual terendah; spread yang lebih ketat berarti biaya lebih rendah. **Slippage** terjadi ketika pesanan Anda cukup besar untuk menggerakkan harga saat eksekusi, atau ketika harga bergeser antara mengklik dan mengonfirmasi. Slippage lebih umum pada pasangan likuiditas rendah dan pada DEX selama volatilitas."
+      ]
+     },
+     {
+      "h": "Leverage, futures, dan likuidasi",
+      "p": [
+       "**Spot trading** berarti membeli mata uang kripto sebenarnya yang ada di dompet Anda. **Futures** adalah kontrak untuk membeli atau menjual pada harga yang ditetapkan pada tanggal mendatang, dan Anda tidak memiliki aset yang mendasarinya—hanya kontraknya. Futures memungkinkan Anda menggunakan **leverage**, meminjam kelipatan modal Anda: leverage 10x mengubah Rp1.500.000 menjadi eksposur pasar Rp15.000.000. Keuntungan berlipat ganda, tetapi begitu juga kerugian. Jika pasar bergerak melawan Anda sebesar 10 persen pada leverage 10x, seluruh taruhan Anda hilang.",
+       "**Likuidasi** terjadi ketika kerugian menghabiskan margin Anda (jaminan yang Anda setorkan). Exchange atau protokol secara otomatis menutup posisi Anda untuk mencegah Anda berhutang lebih dari yang Anda setorkan. Harga likuidasi dihitung pada saat Anda membuka posisi leverage; jika Bitcoin turun dari Rp640.000.000 ke Rp576.000.000 dan harga likuidasi Anda adalah Rp584.000.000, Anda kehilangan segalanya sebelum pasar menyentuh Rp576.000.000. Futures dan leverage adalah alat berisiko tinggi; banyak trader ritel kehilangan uang, dan ini bukan nasihat investasi."
+      ]
+     },
+     {
+      "h": "Blockchain, layer, dan bridge",
+      "p": [
+       "**Blockchain** adalah buku besar transaksi bersama, disalin di ribuan komputer (node). Setiap blok transaksi baru terhubung secara kriptografis ke yang sebelumnya, membuat catatan masa lalu hampir tidak mungkin diubah. **Bitcoin** menjalankan satu blockchain; **Ethereum** menjalankan yang lain. Masing-masing memproses transaksi secara berbeda dan mengenakan biaya sendiri.",
+       "Jaringan **Layer 2** (L2) seperti Arbitrum, Optimism, atau Polygon berada di atas rantai utama (Layer 1) dan menggabungkan banyak transaksi sebelum menyelesaikannya di lapisan dasar. L2 memotong gas fee dan mempercepat konfirmasi tetapi menambah trade-off kepercayaan atau kompleksitas tergantung pada desainnya. **Bridge** memindahkan aset antar blockchain—misalnya, membungkus Bitcoin untuk digunakan di Ethereum. Bridge bergantung pada smart contract atau kustodian; beberapa telah diretas ratusan juta dolar. Hanya bridge jumlah yang mampu Anda kehilangan, dan teliti model keamanan bridge sebelum digunakan."
+      ]
+     },
+     {
+      "h": "Coin, token, dan kapitalisasi pasar",
+      "p": [
+       "**Bitcoin** (BTC) adalah mata uang kripto pertama; setiap yang lain adalah **altcoin**. Beberapa altcoin, seperti Ethereum (ETH), menjalankan blockchain mereka sendiri. Yang lain adalah **token** yang dibangun di rantai yang ada menggunakan standar seperti ERC-20 (Ethereum) atau BEP-20 (BNB Chain). **Stablecoin** adalah token yang dirancang untuk mempertahankan nilai stabil, biasanya dipatok satu-satu dengan dolar AS. USDT (Tether) dan USDC (Circle) didukung oleh cadangan uang tunai dan obligasi, meskipun kualitas dan audit cadangan bervariasi. DAI adalah algoritmik, didukung oleh jaminan kripto yang terkunci dalam smart contract. Stablecoin menyederhanakan perdagangan dan penyimpanan nilai, tetapi pengawasan regulasi meningkat dan beberapa telah kehilangan patokannya selama krisis.",
+       "**Kapitalisasi pasar** (market cap) mengalikan harga saat ini dengan pasokan yang beredar. Koin berharga Rp32.000 dengan 500 juta token yang beredar memiliki market cap Rp16 triliun. Market cap memberikan skala kasar tetapi tidak mengukur likuiditas atau apakah proyek memiliki penggunaan nyata. Banyak koin berkapitalisasi tinggi memiliki order book tipis; menjual jumlah besar menggerakkan harga secara signifikan."
+      ]
+     },
+     {
+      "h": "Staking, yield, dan halving",
+      "p": [
+       "**Staking** berarti mengunci koin Anda di blockchain proof-of-stake (seperti Ethereum pasca-Merge, Cardano, atau Solana) untuk membantu memvalidasi transaksi. Sebagai imbalannya Anda mendapatkan hadiah, biasanya dibayar dalam mata uang kripto yang sama. Tingkat bervariasi dari 3 hingga 15 persen per tahun tergantung pada jaringan dan total yang di-stake. Dana yang di-stake mungkin memiliki periode unbonding beberapa hari atau minggu di mana Anda tidak dapat menjual. **Yield** lebih luas: setiap pengembalian dari memegang atau meminjamkan kripto, termasuk staking, penyediaan likuiditas di DEX (di mana Anda menyetorkan pasangan token ke dalam pool), atau meminjamkan di platform seperti Aave. Yield yang lebih tinggi biasanya berarti risiko lebih tinggi—bug smart contract, volatilitas harga token hadiah, atau penipuan langsung. Ini bukan nasihat keuangan; nilai audit dan rekam jejak setiap protokol.",
+       "**Halving** Bitcoin terjadi kira-kira setiap empat tahun (setiap 210.000 blok). Hadiah blok yang dibayarkan kepada penambang dipotong setengah, mengurangi laju Bitcoin baru yang masuk sirkulasi. Halving terbaru pada 2024 menurunkan hadiah dari 6,25 menjadi 3,125 BTC per blok. Halving dibangun ke dalam kode Bitcoin dan akan berlanjut hingga sekitar tahun 2140, ketika pasokan dibatasi pada 21 juta koin. Banyak trader mengamati siklus halving untuk dampak harga potensial, tetapi kinerja masa lalu tidak menjamin hasil masa depan."
+      ]
+     }
+    ]
+   },
+   "vi": {
+    "title": "Từ điển Crypto: 40 thuật ngữ bạn thực sự cần biết để hiểu thị trường",
+    "excerpt": "Tài liệu tham khảo thực tế về từ vựng thiết yếu của giao dịch tiền điện tử, ví và công nghệ blockchain. Mọi thứ từ khóa riêng tư đến đòn bẩy, được giải thích để bạn có thể hành động.",
+    "sections": [
+     {
+      "h": "Kiến thức cơ bản về ví",
+      "p": [
+       "**Ví** (wallet) là phần mềm hoặc phần cứng lưu trữ **khóa riêng tư** (private key) của bạn, chuỗi 64 ký tự chứng minh quyền sở hữu tiền điện tử của bạn. Không có khóa riêng tư, bạn không thể chuyển tiền. Nếu người khác lấy được nó, họ sở hữu tiền điện tử của bạn vĩnh viễn—không có đặt lại mật khẩu. Hầu hết các ví tạo ra **cụm từ khôi phục** (seed phrase, còn gọi là recovery phrase hoặc mnemonic), thường là 12 hoặc 24 từ phổ biến theo thứ tự cụ thể. Cụm từ này là bản sao lưu khóa riêng tư của bạn mà con người có thể đọc được. Viết ra giấy, cất giữ an toàn ngoại tuyến và không bao giờ chụp ảnh hoặc lưu trữ kỹ thuật số. Bất kỳ ai có cụm từ khôi phục của bạn đều kiểm soát tiền của bạn.",
+       "Ví có nhiều loại. **Ví nóng** (hot wallet) luôn kết nối internet (ứng dụng di động, tiện ích mở rộng trình duyệt, phần mềm máy tính) và ưu tiên sự tiện lợi cho giao dịch thường xuyên. **Ví lạnh** (cold wallet) vẫn ngoại tuyến—thiết bị phần cứng như Ledger hoặc Trezor, hoặc thậm chí giấy in khóa của bạn. Lưu trữ lạnh giảm mạnh rủi ro bị hack và là tiêu chuẩn cho việc nắm giữ dài hạn. **Ví ký gửi** (custodial wallet) được cung cấp bởi sàn giao dịch: công ty giữ khóa riêng tư, bạn tin tưởng họ thực hiện việc rút tiền. **Ví không ký gửi** (non-custodial wallet) cho bạn toàn quyền kiểm soát và toàn bộ trách nhiệm. Mất cụm từ khôi phục với ví không ký gửi và tiền của bạn mất vĩnh viễn; không có công ty nào có thể khôi phục chúng."
+      ]
+     },
+     {
+      "h": "Sàn giao dịch và cách bạn giao dịch",
+      "p": [
+       "**Sàn giao dịch tập trung** (CEX) như Binance, Remitano, hoặc VNDC là công ty giữ tiền điện tử của bạn trong ví ký gửi, ghép người mua với người bán và thường yêu cầu xác minh **Hiểu Biết Khách Hàng** (KYC)—tải lên CMND hoặc hộ chiếu và đôi khi bằng chứng địa chỉ. Quy định **Chống Rửa Tiền** (AML) khác nhau tùy theo khu vực pháp lý nhưng thường yêu cầu sàn giao dịch báo cáo các giao dịch lớn hoặc đáng ngờ. Các quy tắc này thay đổi thường xuyên và đây không phải là lời khuyên pháp lý; kiểm tra quy định hiện tại nơi bạn sống.",
+       "**Sàn giao dịch phi tập trung** (DEX) như Uniswap hoặc PancakeSwap chạy trên hợp đồng thông minh không có công ty ở giữa. Bạn kết nối ví không ký gửi của mình, giao dịch trực tiếp từ đó và trả **phí gas**—chi phí giao dịch mạng được trả cho người xác thực blockchain, thường bằng ETH trên Ethereum hoặc BNB trên BNB Smart Chain. Phí gas biến động theo tắc nghẽn mạng; đã dao động từ dưới 20.000 đồng đến hơn 2 triệu đồng trong thời gian cao điểm. DEX hiếm khi yêu cầu KYC, nhưng bạn chịu toàn bộ trách nhiệm về sai lầm: gửi tiền đến địa chỉ sai và không thể lấy lại.",
+       "Khi bạn đặt **lệnh thị trường** (market order), bạn mua hoặc bán ngay lập tức ở mức giá tốt nhất hiện có. **Lệnh giới hạn** (limit order) chỉ thực hiện ở mức giá bạn chọn hoặc tốt hơn, vì vậy bạn có thể chờ vô thời hạn nếu thị trường không bao giờ đạt đến đó. **Chênh lệch** (spread) là khoảng cách giữa mức chào mua cao nhất và mức chào bán thấp nhất; chênh lệch chặt chẽ hơn có nghĩa là chi phí thấp hơn. **Trượt giá** (slippage) xảy ra khi lệnh của bạn đủ lớn để di chuyển giá trong khi thực hiện, hoặc khi giá thay đổi giữa nhấp chuột và xác nhận. Trượt giá phổ biến hơn trên các cặp thanh khoản thấp và trên DEX trong thời kỳ biến động."
+      ]
+     },
+     {
+      "h": "Đòn bẩy, hợp đồng tương lai và thanh lý",
+      "p": [
+       "**Giao dịch giao ngay** (spot trading) có nghĩa là mua tiền điện tử thực tế nằm trong ví của bạn. **Hợp đồng tương lai** (futures) là hợp đồng mua hoặc bán ở mức giá định sẵn vào một ngày trong tương lai, và bạn không sở hữu tài sản cơ bản—chỉ có hợp đồng. Hợp đồng tương lai cho phép bạn sử dụng **đòn bẩy** (leverage), vay bội số vốn của bạn: đòn bẩy 10x biến 2 triệu đồng thành 20 triệu đồng tiếp xúc thị trường. Lợi nhuận nhân lên, nhưng thua lỗ cũng vậy. Nếu thị trường di chuyển ngược bạn 10 phần trăm với đòn bẩy 10x, toàn bộ cược của bạn biến mất.",
+       "**Thanh lý** (liquidation) xảy ra khi thua lỗ ăn hết ký quỹ của bạn (tài sản thế chấp bạn đã ký gửi). Sàn giao dịch hoặc giao thức tự động đóng vị thế của bạn để ngăn bạn nợ nhiều hơn số bạn đã ký gửi. Giá thanh lý được tính tại thời điểm bạn mở vị thế có đòn bẩy; nếu Bitcoin giảm từ 1 tỷ đồng xuống 900 triệu đồng và giá thanh lý của bạn là 912 triệu đồng, bạn mất tất cả trước khi thị trường chạm 900 triệu đồng. Hợp đồng tương lai và đòn bẩy là công cụ rủi ro cao; nhiều nhà giao dịch lẻ thua lỗ, và đây không phải là lời khuyên đầu tư."
+      ]
+     },
+     {
+      "h": "Blockchain, layer và cầu nối",
+      "p": [
+       "**Blockchain** là sổ cái giao dịch được chia sẻ, sao chép trên hàng nghìn máy tính (node). Mỗi khối giao dịch mới liên kết mật mã với khối trước đó, làm cho hồ sơ quá khứ gần như không thể thay đổi. **Bitcoin** chạy một blockchain; **Ethereum** chạy một blockchain khác. Mỗi cái xử lý giao dịch khác nhau và tính phí riêng.",
+       "Mạng **Layer 2** (L2) như Arbitrum, Optimism hoặc Polygon nằm trên chuỗi chính (Layer 1) và gộp nhiều giao dịch trước khi giải quyết chúng trên lớp cơ sở. L2 cắt giảm phí gas và tăng tốc xác nhận nhưng thêm sự đánh đổi về tin cậy hoặc độ phức tạp tùy thuộc vào thiết kế của chúng. **Cầu nối** (bridge) di chuyển tài sản giữa các blockchain—ví dụ, bọc Bitcoin để sử dụng trên Ethereum. Cầu nối dựa vào hợp đồng thông minh hoặc người giám sát; một số đã bị hack hàng trăm triệu đô la. Chỉ bắc cầu số tiền bạn có thể mất và nghiên cứu mô hình bảo mật của cầu trước khi sử dụng."
+      ]
+     },
+     {
+      "h": "Coin, token và vốn hóa thị trường",
+      "p": [
+       "**Bitcoin** (BTC) là tiền điện tử đầu tiên; tất cả những cái khác là **altcoin**. Một số altcoin, như Ethereum (ETH), chạy blockchain riêng của họ. Những cái khác là **token** được xây dựng trên chuỗi hiện có bằng các tiêu chuẩn như ERC-20 (Ethereum) hoặc BEP-20 (BNB Chain). **Stablecoin** là token được thiết kế để giữ giá trị ổn định, thường được neo một-một với đô la Mỹ. USDT (Tether) và USDC (Circle) được hỗ trợ bởi dự trữ tiền mặt và trái phiếu, mặc dù chất lượng và kiểm toán dự trữ khác nhau. DAI là thuật toán, được hỗ trợ bởi tài sản thế chấp tiền điện tử bị khóa trong hợp đồng thông minh. Stablecoin đơn giản hóa giao dịch và lưu trữ giá trị, nhưng giám sát quy định đang tăng lên và một số đã mất neo trong khủng hoảng.",
+       "**Vốn hóa thị trường** (market cap) nhân giá hiện tại với nguồn cung lưu hành. Một coin có giá 50.000 đồng với 500 triệu token lưu hành có vốn hóa thị trường 25 nghìn tỷ đồng. Vốn hóa thị trường cho quy mô sơ bộ nhưng không đo lường thanh khoản hoặc liệu dự án có sử dụng thực hay không. Nhiều coin vốn hóa cao có sổ lệnh mỏng; bán số lượng lớn di chuyển giá đáng kể."
+      ]
+     },
+     {
+      "h": "Staking, lợi suất và halving",
+      "p": [
+       "**Staking** có nghĩa là khóa coin của bạn trong blockchain bằng chứng cổ phần (như Ethereum sau Merge, Cardano hoặc Solana) để giúp xác thực giao dịch. Đổi lại bạn kiếm được phần thưởng, thường được trả bằng cùng loại tiền điện tử. Tỷ lệ dao động từ 3 đến 15 phần trăm hàng năm tùy thuộc vào mạng và tổng số đã stake. Tiền đã stake có thể có thời gian mở khóa từ vài ngày đến vài tuần trong đó bạn không thể bán. **Lợi suất** (yield) rộng hơn: bất kỳ lợi nhuận nào từ việc giữ hoặc cho vay tiền điện tử, bao gồm staking, cung cấp thanh khoản trên DEX (nơi bạn gửi các cặp token vào pool), hoặc cho vay trên các nền tảng như Aave. Lợi suất cao hơn thường có nghĩa là rủi ro cao hơn—lỗi hợp đồng thông minh, biến động giá của token phần thưởng hoặc lừa đảo trắng trợn. Đây không phải là lời khuyên tài chính; đánh giá kiểm toán và hồ sơ theo dõi của từng giao thức.",
+       "**Halving** của Bitcoin xảy ra khoảng bốn năm một lần (mỗi 210.000 khối). Phần thưởng khối được trả cho thợ đào cắt một nửa, giảm tốc độ Bitcoin mới vào lưu thông. Halving gần đây nhất vào năm 2024 đã giảm phần thưởng từ 6,25 xuống 3,125 BTC mỗi khối. Halving được tích hợp vào mã Bitcoin và sẽ tiếp tục cho đến khoảng năm 2140, khi nguồn cung giới hạn ở 21 triệu coin. Nhiều nhà giao dịch theo dõi chu kỳ halving để tìm tác động giá tiềm năng, nhưng hiệu suất trong quá khứ không đảm bảo kết quả trong tương lai."
+      ]
+     }
+    ]
+   },
+   "th": {
+    "title": "พจนานุกรมคริปโต: 40 คำศัพท์ที่คุณต้องเข้าใจจริงๆ เพื่อทำความเข้าใจตลาด",
+    "excerpt": "คู่มืออ้างอิงเชิงปฏิบัติสำหรับคำศัพท์สำคัญของการซื้อขายสินทรัพย์ดิจิทัล กระเป๋าเงิน และเทคโนโลยีบลอกเชน ทุกอย่างตั้งแต่คีย์ส่วนตัวไปจนถึงเลเวอเรจ อธิบายเพื่อให้คุณสามารถดำเนินการได้",
+    "sections": [
+     {
+      "h": "พื้นฐานของกระเป๋าเงิน",
+      "p": [
+       "**กระเป๋าเงิน** (wallet) คือซอฟต์แวร์หรือฮาร์ดแวร์ที่เก็บ **คีย์ส่วนตัว** (private key) ของคุณ ซึ่งเป็นสตริง 64 ตัวอักษรที่พิสูจน์การเป็นเจ้าของสินทรัพย์ดิจิทัลของคุณ หากไม่มีคีย์ส่วนตัว คุณจะไม่สามารถย้ายเงินได้ หากคนอื่นได้มันไป พวกเขาจะเป็นเจ้าของคริปโตของคุณอย่างถาวร—ไม่มีการรีเซ็ตรหัสผ่าน กระเป๋าเงินส่วนใหญ่จะสร้าง **วลีกู้คืน** (seed phrase หรือเรียกว่า recovery phrase หรือ mnemonic) โดยทั่วไปจะเป็น 12 หรือ 24 คำทั่วไปในลำดับเฉพาะ วลีนี้เป็นการสำรองข้อมูลคีย์ส่วนตัวของคุณที่มนุษย์อ่านได้ เขียนลงกระดาษ เก็บไว้อย่างปลอดภัยแบบออฟไลน์ และอย่าถ่ายภาพหรือเก็บไว้ในรูปแบบดิจิทัล ใครก็ตามที่มีวลีกู้คืนของคุณจะควบคุมเงินของคุณ",
+       "กระเป๋าเงินมีหลายประเภท **กระเป๋าร้อน** (hot wallet) เชื่อมต่ออินเทอร์เน็ตตลอดเวลา (แอปมือถือ ส่วนขยายเบราว์เซอร์ ซอฟต์แวร์เดสก์ท็อป) และให้ความสำคัญกับความสะดวกสบายสำหรับการซื้อขายบ่อยๆ **กระเป๋าเย็น** (cold wallet) อยู่แบบออฟไลน์—ไม่ว่าจะเป็นอุปกรณ์ฮาร์ดแวร์เช่น Ledger หรือ Trezor หรือแม้แต่กระดาษที่พิมพ์คีย์ของคุณ การจัดเก็บแบบเย็นช่วยลดความเสี่ยงจากการแฮ็กอย่างมากและเป็นมาตรฐานสำหรับการถือครองระยะยาว **กระเป๋าแบบดูแล** (custodial wallet) ให้บริการโดยแพลตฟอร์มซื้อขาย บริษัทถือคีย์ส่วนตัว คุณต้องเชื่อใจพวกเขาในการถอนเงิน **กระเป๋าแบบไม่ดูแล** (non-custodial wallet) ให้คุณควบคุมและรับผิดชอบอย่างเต็มที่ หากสูญเสียวลีกู้คืนกับกระเป๋าแบบไม่ดูแล เงินของคุณจะหายไปตลอดกาล ไม่มีบริษัทใดสามารถกู้คืนได้"
+      ]
+     },
+     {
+      "h": "แพลตฟอร์มซื้อขายและวิธีการซื้อขาย",
+      "p": [
+       "**แพลตฟอร์มซื้อขายแบบรวมศูนย์** (CEX) เช่น Bitkub, Zipmex หรือ Satang Pro เป็นบริษัทที่เก็บคริปโตของคุณในกระเป๋าแบบดูแล จับคู่ผู้ซื้อกับผู้ขาย และมักต้องการการยืนยันตัวตน **Know Your Customer** (KYC)—อัปโหลดบัตรประชาชนหรือหนังสือเดินทาง และบางครั้งหลักฐานที่อยู่ กฎ **ป้องกันการฟอกเงิน** (AML) แตกต่างกันไปตามเขตอำนาจศาล แต่โดยทั่วไปต้องการให้แพลตฟอร์มซื้อขายรายงานธุรกรรมขนาดใหญ่หรือน่าสงสัย กฎเหล่านี้เปลี่ยนแปลงบ่อยครั้ง และนี่ไม่ใช่คำแนะนำทางกฎหมาย ตรวจสอบกฎระเบียบปัจจุบันในที่ที่คุณอาศัยอยู่",
+       "**แพลตฟอร์มซื้อขายแบบกระจายศูนย์** (DEX) เช่น Uniswap หรือ PancakeSwap ทำงานบนสมาร์ทคอนแทรกต์โดยไม่มีบริษัทอยู่ตรงกลาง คุณเชื่อมต่อกระเป๋าแบบไม่ดูแลของคุณ ซื้อขายโดยตรงจากมัน และจ่าย **ค่าแก๊ส** (gas fee)—ค่าธรรมเนียมธุรกรรมเครือข่ายที่จ่ายให้ผู้ตรวจสอบบลอกเชน มักเป็น ETH บน Ethereum หรือ BNB บน BNB Smart Chain ค่าแก๊สผันผวนตามความแออัดของเครือข่าย มีตั้งแต่ต่ำกว่า 30 บาทจนถึงมากกว่า 3,000 บาทในช่วงเวลาที่มีการใช้งานสูงสุด DEX ไม่ค่อยต้องการ KYC แต่คุณต้องรับผิดชอบอย่างเต็มที่สำหรับข้อผิดพลาด ส่งเงินไปยังที่อยู่ผิดและไม่สามารถกู้คืนได้",
+       "เมื่อคุณทำ **คำสั่งตลาด** (market order) คุณซื้อหรือขายทันทีที่ราคาที่ดีที่สุดที่มี **คำสั่งจำกัด** (limit order) จะดำเนินการเฉพาะที่ราคาที่คุณเลือกหรือดีกว่า ดังนั้นคุณอาจรออย่างไม่มีกำหนดหากตลาดไม่เคยถึง **สเปรด** (spread) คือช่องว่างระหว่างข้อเสนอซื้อสูงสุดและข้อเสนอขายต่ำสุด สเปรดที่แน่นหมายถึงต้นทุนที่ต่ำกว่า **Slippage** เกิดขึ้นเมื่อคำสั่งของคุณใหญ่พอที่จะเคลื่อนย้ายราคาในขณะที่ดำเนินการ หรือเมื่อราคาเปลี่ยนระหว่างการคลิกและการยืนยัน Slippage พบได้บ่อยในคู่สภาพคล่องต่ำและใน DEX ในช่วงความผันผวน"
+      ]
+     },
+     {
+      "h": "เลเวอเรจ ฟิวเจอร์ส และการชำระบัญชี",
+      "p": [
+       "**การซื้อขายแบบสปอต** (spot trading) หมายถึงการซื้อสินทรัพย์ดิจิทัลจริงที่อยู่ในกระเป๋าเงินของคุณ **ฟิวเจอร์ส** (futures) เป็นสัญญาซื้อหรือขายในราคาที่กำหนดในวันที่ในอนาคต และคุณไม่ได้เป็นเจ้าของสินทรัพย์อ้างอิง—เป็นเพียงสัญญา ฟิวเจอร์สช่วยให้คุณใช้ **เลเวอเรจ** (leverage) ยืมเป็นเท่าตัวของเงินทุนของคุณ เลเวอเรจ 10 เท่าเปลี่ยน 3,000 บาทให้เป็นการเปิดรับตลาด 30,000 บาท กำไรเพิ่มขึ้นเป็นทวีคูณ แต่การขาดทุนก็เช่นกัน หากตลาดเคลื่อนที่ต่อต้านคุณ 10 เปอร์เซ็นต์บนเลเวอเรจ 10 เท่า เงินเดิมพันทั้งหมดของคุณหายไป",
+       "**การชำระบัญชี** (liquidation) เกิดขึ้นเมื่อการขาดทุนกัดกินมาร์จิ้น (หลักประกันที่คุณฝาก) แพลตฟอร์มซื้อขายหรือโปรโตคอลจะปิดสถานะของคุณโดยอัตโนมัติเพื่อป้องกันไม่ให้คุณเป็นหนี้มากกว่าที่คุณฝาก ราคาชำระบัญชีคำนวณในเวลาที่คุณเปิดสถานะที่มีเลเวอเรจ หาก Bitcoin ลดลงจาก 1,200,000 บาทเป็น 1,080,000 บาทและราคาชำระบัญชีของคุณคือ 1,095,000 บาท คุณจะสูญเสียทุกอย่างก่อนที่ตลาดจะแตะ 1,080,000 บาท ฟิวเจอร์สและเลเวอเรจเป็นเครื่องมือความเสี่ยงสูง ผู้ค้าปลีกจำนวนมากขาดทุน และนี่ไม่ใช่คำแนะนำการลงทุน"
+      ]
+     },
+     {
+      "h": "บลอกเชน เลเยอร์ และสะพานเชื่อม",
+      "p": [
+       "**บลอกเชน** (blockchain) เป็นบันทึกธุรกรรมที่ใช้ร่วมกัน คัดลอกไปยังคอมพิวเตอร์หลายพันเครื่อง (โหนด) บลอกธุรกรรมใหม่แต่ละบลอกเชื่อมโยงทางการเข้ารหัสกับบลอกก่อนหน้า ทำให้บันทึกในอดีตเกือบจะเปลี่ยนแปลงไม่ได้ **Bitcoin** ใช้บลอกเชนหนึ่ง **Ethereum** ใช้อีกอันหนึ่ง แต่ละอันประมวลผลธุรกรรมแตกต่างกันและเรียกเก็บค่าธรรมเนียมของตนเอง",
+       "เครือข่าย **Layer 2** (L2) เช่น Arbitrum, Optimism หรือ Polygon อยู่ด้านบนของเชนหลัก (Layer 1) และรวมธุรกรรมจำนวนมากก่อนจะชำระบนเลเยอร์ฐาน L2 ลดค่าแก๊สและเพิ่มความเร็วในการยืนยัน แต่เพิ่มการแลกเปลี่ยนด้านความไว้วางใจหรือความซับซ้อนขึ้นอยู่กับการออกแบบ **สะพาน** (bridge) ย้ายสินทรัพย์ระหว่างบลอกเชน—ตัวอย่างเช่น การห่อ Bitcoin เพื่อใช้บน Ethereum สะพานพึ่งพาสมาร์ทคอนแทรกต์หรือผู้ดูแล หลายแห่งถูกแฮ็กไปหลายร้อยล้านดอลลาร์ ใช้สะพานเฉพาะจำนวนที่คุณสามารถสูญเสียได้ และศึกษาโมเดลความปลอดภัยของสะพานก่อนใช้งาน"
+      ]
+     },
+     {
+      "h": "เหรียญ โทเค็น และมูลค่าตลาด",
+      "p": [
+       "**Bitcoin** (BTC) เป็นสกุลเงินดิจิทัลแรก ทุกสกุลอื่นเป็น **altcoin** Altcoin บางตัวเช่น Ethereum (ETH) ใช้บลอกเชนของตัวเอง อื่นๆ เป็น **โทเค็น** ที่สร้างขึ้นบนเชนที่มีอยู่โดยใช้มาตรฐานเช่น ERC-20 (Ethereum) หรือ BEP-20 (BNB Chain) **Stablecoin** เป็นโทเค็นที่ออกแบบมาเพื่อรักษามูลค่าคงที่ มักจะผูกหนึ่งต่อหนึ่งกับดอลลาร์สหรัฐ USDT (Tether) และ USDC (Circle) ได้รับการสนับสนุนโดยสำรองเงินสดและพันธบัตร แม้ว่าคุณภาพและการตรวจสอบสำรองจะแตกต่างกัน DAI เป็นอัลกอริทึม ได้รับการสนับสนุนโดยหลักประกันคริปโตที่ล็อกในสมาร์ทคอนแทรกต์ Stablecoin ทำให้การซื้อขายและการเก็บมูลค่าง่ายขึ้น แต่การกำกับดูแลด้านกฎระเบียบกำลังเพิ่มขึ้นและบางตัวสูญเสียการผูกราคาระหว่างวิกฤต",
+       "**มูลค่าตลาด** (market cap) คูณราคาปัจจุบันด้วยอุปทานที่หมุนเวียน เหรียญที่ราคา 64 บาทพร้อมโทเค็นที่หมุนเวียน 500 ล้านมีมูลค่าตลาด 32,000 ล้านบาท มูลค่าตลาดให้ขนาดคร่าวๆ แต่ไม่ได้วัดสภาพคล่องหรือว่าโครงการมีการใช้งานจริงหรือไม่ เหรียญที่มีมูลค่าตลาดสูงหลายเหรียญมีสมุดคำสั่งบาง การขายจำนวนมากเคลื่อนย้ายราคาอย่างมีนัยสำคัญ"
+      ]
+     },
+     {
+      "h": "การ Stake ผลตอบแทน และ Halving",
+      "p": [
+       "**การ Stake** (staking) หมายถึงการล็อกเหรียญของคุณในบลอกเชนแบบ proof-of-stake (เช่น Ethereum หลัง Merge, Cardano หรือ Solana) เพื่อช่วยตรวจสอบธุรกรรม ในทางกลับคุณจะได้รับรางวัล โดยทั่วไปจ่ายในสกุลเงินดิจิทัลเดียวกัน อัตราแตกต่างกันไปตั้งแต่ 3 ถึง 15 เปอร์เซ็นต์ต่อปีขึ้นอยู่กับเครือข่ายและจำนวนที่ stake ไว้ทั้งหมด เงินที่ stake ไว้อาจมีระยะเวลา unbonding หลายวันหรือหลายสัปดาห์ซึ่งคุณไม่สามารถขายได้ **ผลตอบแทน** (yield) กว้างขึ้น ผลตอบแทนใดๆ จากการถือครองหรือการให้กู้ยืมคริปโต รวมถึงการ stake การให้สภาพคล่องใน DEX (ที่คุณฝากคู่โทเค็นเข้าพูล) หรือการให้กู้ยืมบนแพลตฟอร์มเช่น Aave ผลตอบแทนที่สูงขึ้นมักหมายถึงความเสี่ยงที่สูงขึ้น—ข้อบกพร่องของสมาร์ทคอนแทรกต์ ความผันผวนของราคาของโทเค็นรางวัล หรือการหลอกลวงโดยตรง นี่ไม่ใช่คำแนะนำทางการเงิน ประเมินการตรวจสอบและประวัติติดตามของแต่ละโปรโตคอล",
+       "**Halving** ของ Bitcoin เกิดขึ้นประมาณทุกสี่ปี (ทุก 210,000 บลอก) รางวัลบลอกที่จ่ายให้ผู้ขุดลดลงครึ่งหนึ่ง ลดอัตราการเข้าสู่การหมุนเวียนของ Bitcoin ใหม่ Halving ล่าสุดในปี 2024 ลดรางวัลจาก 6.25 เป็น 3.125 BTC ต่อบลอก Halving ถูกสร้างขึ้นในโค้ด Bitcoin และจะดำเนินต่อไปจนถึงประมาณปี 2140 เมื่ออุปทานจำกัดที่ 21 ล้านเหรียญ ผู้ค้าจำนวนมากติดตามวงจร halving สำหรับผลกระทบด้านราคาที่อาจเกิดขึ้น แต่ผลการดำเนินงานในอดีตไม่ได้รับประกันผลลัพธ์ในอนาคต"
+      ]
+     }
+    ]
+   }
+  }
  }
 ]

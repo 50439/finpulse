@@ -37,22 +37,26 @@
  "guides": {
   "ru": [
    "how-to-store-crypto-safely",
-   "crypto-scams-how-to-avoid"
+   "crypto-scams-how-to-avoid",
+   "crypto-glossary"
   ],
   "tr": [
    "how-to-store-crypto-safely",
    "how-to-buy-crypto-turkey",
-   "crypto-scams-how-to-avoid"
+   "crypto-scams-how-to-avoid",
+   "crypto-glossary"
   ],
   "vi": [
    "how-to-store-crypto-safely",
    "how-to-buy-crypto-vietnam",
-   "crypto-scams-how-to-avoid"
+   "crypto-scams-how-to-avoid",
+   "crypto-glossary"
   ],
   "id": [
    "how-to-store-crypto-safely",
    "how-to-buy-crypto-indonesia",
-   "crypto-scams-how-to-avoid"
+   "crypto-scams-how-to-avoid",
+   "crypto-glossary"
   ],
   "ko": [],
   "ja": [
@@ -63,12 +67,14 @@
    "how-to-store-crypto-safely",
    "binance-vs-coinbase",
    "crypto-scams-how-to-avoid",
-   "crypto-tax-europe"
+   "crypto-tax-europe",
+   "crypto-glossary"
   ],
   "th": [
    "how-to-buy-crypto-thailand",
    "how-to-store-crypto-safely",
-   "crypto-scams-how-to-avoid"
+   "crypto-scams-how-to-avoid",
+   "crypto-glossary"
   ]
  },
  "tr": [
@@ -78,7 +84,8 @@
   "crypto-card-spending-tops-1-billion-stablecoins-drive-everyd-aaeq",
   "india-forex-reserves-surge-716-billion-six-month-high-yug5",
   "analysts-divided-bitcoin-surge-signals-new-bull-run-yug5",
-  "zcash-soars-800-grayscale-etf-filing-advances-52oo"
+  "zcash-soars-800-grayscale-etf-filing-advances-52oo",
+  "treasury-buyback-program-sparks-bitcoin-rally-80k-52oo"
  ],
  "vi": [
   "bitmart-exchange-weighs-partial-restart-creditor-payouts-o3xh",
@@ -87,7 +94,8 @@
   "crypto-card-spending-tops-1-billion-stablecoins-drive-everyd-aaeq",
   "india-forex-reserves-surge-716-billion-six-month-high-yug5",
   "analysts-divided-bitcoin-surge-signals-new-bull-run-yug5",
-  "zcash-soars-800-grayscale-etf-filing-advances-52oo"
+  "zcash-soars-800-grayscale-etf-filing-advances-52oo",
+  "treasury-buyback-program-sparks-bitcoin-rally-80k-52oo"
  ],
  "id": [
   "bitmart-exchange-weighs-partial-restart-creditor-payouts-o3xh",
@@ -96,7 +104,8 @@
   "crypto-card-spending-tops-1-billion-stablecoins-drive-everyd-aaeq",
   "india-forex-reserves-surge-716-billion-six-month-high-yug5",
   "analysts-divided-bitcoin-surge-signals-new-bull-run-yug5",
-  "zcash-soars-800-grayscale-etf-filing-advances-52oo"
+  "zcash-soars-800-grayscale-etf-filing-advances-52oo",
+  "treasury-buyback-program-sparks-bitcoin-rally-80k-52oo"
  ],
  "ko": [
   "bitmart-exchange-weighs-partial-restart-creditor-payouts-o3xh",
@@ -108,7 +117,9 @@
   "treasury-buyback-program-sparks-bitcoin-rally-80k-52oo",
   "zcash-soars-800-grayscale-etf-filing-advances-52oo",
   "coldcard-ships-firmware-update-after-114-million-bitcoin-the-5gw9",
-  "emerging-market-currencies-rally-dollar-weakness-52oo"
+  "emerging-market-currencies-rally-dollar-weakness-52oo",
+  "canada-us-trade-negotiations-reach-final-hours-before-deadli-5gw9",
+  "nomura-backed-laser-digital-wins-japan-first-crypto-approval-5gw9"
  ],
  "ja": [
   "bitmart-exchange-weighs-partial-restart-creditor-payouts-o3xh",
@@ -119,18 +130,22 @@
   "analysts-divided-bitcoin-surge-signals-new-bull-run-yug5",
   "zcash-soars-800-grayscale-etf-filing-advances-52oo",
   "emerging-market-currencies-rally-dollar-weakness-52oo",
-  "treasury-buyback-program-sparks-bitcoin-rally-80k-52oo"
+  "treasury-buyback-program-sparks-bitcoin-rally-80k-52oo",
+  "nomura-backed-laser-digital-wins-japan-first-crypto-approval-5gw9",
+  "coldcard-ships-firmware-update-after-114-million-bitcoin-the-5gw9"
  ],
  "pl": [
   "sandbox-suspends-base-bnb-bridging-after-exploit-tph0",
   "bitmart-exchange-weighs-partial-restart-creditor-payouts-o3xh",
   "crypto-card-spending-tops-1-billion-stablecoins-drive-everyd-aaeq",
   "analysts-divided-bitcoin-surge-signals-new-bull-run-yug5",
-  "canada-announces-retaliatory-tariffs-us-trade-talks-break-do-o3xh"
+  "canada-announces-retaliatory-tariffs-us-trade-talks-break-do-o3xh",
+  "india-forex-reserves-surge-716-billion-six-month-high-yug5"
  ],
  "th": [
   "crypto-card-spending-tops-1-billion-stablecoins-drive-everyd-aaeq",
   "sandbox-suspends-base-bnb-bridging-after-exploit-tph0",
-  "bitmart-exchange-weighs-partial-restart-creditor-payouts-o3xh"
+  "bitmart-exchange-weighs-partial-restart-creditor-payouts-o3xh",
+  "canada-announces-retaliatory-tariffs-us-trade-talks-break-do-o3xh"
  ]
 }
