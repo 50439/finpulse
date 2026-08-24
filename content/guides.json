@@ -4233,5 +4233,113 @@
     ]
    }
   }
+ },
+ {
+  "slug": "how-to-buy-crypto-spain",
+  "category": "guide",
+  "emoji": "🇪🇸",
+  "langs": [
+   "es",
+   "en"
+  ],
+  "updated": "2026-08-24T15:49:30.305Z",
+  "i18n": {
+   "es": {
+    "title": "Cómo comprar criptomonedas en España: proveedores registrados, SEPA, KYC e impuestos",
+    "excerpt": "España aplica la regulación MiCA de la UE y mantiene un registro de proveedores de activos virtuales en el Banco de España. Esta guía cubre la verificación de proveedores, opciones de pago, requisitos de identidad, comisiones y las obligaciones fiscales sobre ganancias y tenencias de criptomonedas.",
+    "sections": [
+     {
+      "h": "Consulta el registro del Banco de España antes de depositar",
+      "p": [
+       "España exige que los exchanges de criptomonedas y los proveedores de monederos se registren en el Banco de España como proveedores de servicios de monedas virtuales. El registro oficial recoge todos los operadores legales y es de consulta pública en la web del Banco de España. Antes de transferir dinero o facilitar documentos de identidad, verifica que la plataforma elegida aparece en este registro. Operar sin registro es ilegal, y los proveedores no registrados no ofrecen protección legal si pierdes fondos o tu cuenta queda bloqueada.",
+       "El registro incluye tanto empresas españolas como plataformas extranjeras autorizadas para operar con residentes en España. Muestra el nombre de la empresa, número de registro y fecha de autorización. La normativa MiCA de la UE, que España aplica, establece estándares comunes entre estados miembros, pero el registro sigue siendo nacional. Si una plataforma afirma operar en España pero no aparece en el registro, evítala sin importar su publicidad o reputación aparente."
+      ]
+     },
+     {
+      "h": "Depósitos en euros por transferencia SEPA y Bizum",
+      "p": [
+       "La mayoría de los exchanges españoles aceptan transferencias bancarias SEPA para depositar euros. Las transferencias SEPA son gratuitas desde bancos españoles, suelen llegar en un día hábil y no implican conversión de divisa, ya que tanto tu cuenta bancaria como la del exchange están en euros. Debes facilitar el IBAN del exchange, código de referencia y nombre del remitente que coincida con tu cuenta verificada. Las transferencias SEPA inmediatas, admitidas por muchos bancos españoles, pueden acreditar tu saldo en segundos por una comisión pequeña, normalmente inferior a un euro.",
+       "Bizum cuenta con soporte creciente en exchanges enfocados al mercado español para depósitos pequeños, con límites que suelen rondar unos cientos de euros por transacción. Las transferencias Bizum son instantáneas y gratuitas para quien envía, aunque el exchange puede aplicar una comisión de conveniencia o reservar este método para usuarios verificados. Para cantidades mayores, SEPA estándar sigue siendo el método dominante. Algunas plataformas también aceptan tarjetas de débito, pero los depósitos con tarjeta suelen conllevar comisiones del 1,5 al 3 por ciento y límites más estrictos por el riesgo de contracargo."
+      ]
+     },
+     {
+      "h": "Verificación KYC con DNI o NIE",
+      "p": [
+       "Todos los proveedores de criptomonedas registrados en España deben realizar verificación de identidad (Know Your Customer) antes de permitir operaciones o depósitos significativos. Necesitarás aportar un documento de identidad válido emitido por el gobierno: los nacionales españoles usan el Documento Nacional de Identidad (DNI), mientras que los extranjeros residentes facilitan el Número de Identidad de Extranjero (NIE). Algunas plataformas también aceptan pasaportes, pero DNI y NIE son los documentos estándar y se procesan más rápido.",
+       "La verificación suele requerir subir una foto o escaneo nítido del documento, un selfie o vídeo en directo para cotejar tu rostro, y un justificante de domicilio reciente como factura de suministros, extracto bancario o certificado de empadronamiento con tu dirección en España. El procesamiento tarda desde unos minutos hasta varios días según la plataforma y el volumen. Puede requerirse una nueva verificación si cambias de domicilio o si las normas regulatorias se endurecen. Hasta que el KYC esté completo, los depósitos y el trading están bloqueados del todo o limitados a cantidades muy bajas."
+      ]
+     },
+     {
+      "h": "Comisiones de trading, spread y costes de retirada",
+      "p": [
+       "Los exchanges cobran de una o ambas formas: una comisión porcentual en cada compra o venta, y un spread entre el precio de compra y el de venta. Las comisiones de trading en plataformas españolas suelen oscilar entre el 0,1 y el 1 por ciento por operación, a menudo estructuradas en tramos que premian mayor volumen mensual con tarifas más bajas. El spread—la diferencia entre el precio al que el exchange compra y vende una criptomoneda—puede añadir otro 0,5 al 2 por ciento en coste implícito, especialmente en plataformas que anuncian trading sin comisiones.",
+       "Retirar euros de vuelta a tu cuenta bancaria suele ser gratuito por SEPA, aunque algunos exchanges establecen un importe mínimo de retirada o cobran una tarifa fija de uno o dos euros. Retirar criptomonedas a un monedero externo conlleva comisiones de red blockchain, que varían según el activo y la congestión de la red. Las retiradas de Bitcoin pueden costar unos pocos euros, mientras que Ethereum o tokens en Ethereum pueden costar bastante más en periodos de alta actividad. Consulta siempre el cuadro de comisiones en la página de tarifas de la plataforma, ya que las promociones caducan y las estructuras cambian."
+      ]
+     },
+     {
+      "h": "IRPF sobre ganancias de criptomonedas: tramos del ahorro",
+      "p": [
+       "Las ganancias de criptomonedas en España tributan como rendimientos del ahorro y se gravan por separado de los ingresos del trabajo o actividades económicas. El impuesto se aplica solo al vender, intercambiar por otra criptomoneda o usar cripto para comprar bienes o servicios; simplemente mantener no genera hecho imponible. Los rendimientos del ahorro tributan en tramos progresivos: conforme a la ley vigente, los primeros 6.000 € tributan al 19 por ciento, de 6.000 a 50.000 € al 21 por ciento, de 50.000 a 200.000 € al 23 por ciento, y por encima de 200.000 € al 26 por ciento. Estos tramos y tipos los fija el Estado, aunque las comunidades autónomas pueden ajustarlos levemente.",
+       "Las pérdidas de operaciones con cripto pueden compensar ganancias dentro del mismo ejercicio fiscal y hasta los cuatro siguientes, pero solo contra otros rendimientos del ahorro como dividendos o intereses, no contra rendimientos del trabajo. Se calcula la ganancia o pérdida por operación usando el coste de adquisición y el precio de venta en euros. Mantener un registro detallado de cada transacción, incluyendo fecha, importe, activo, precio y comisiones, es imprescindible. Las normas y tipos cambian con los presupuestos anuales, y esto no es asesoramiento fiscal: consulta con un asesor fiscal español para garantizar el cumplimiento según tu situación concreta."
+      ]
+     },
+     {
+      "h": "Modelo 721: declaración de criptomonedas en el extranjero",
+      "p": [
+       "Si mantienes criptomonedas en un exchange extranjero o en monederos no custodiados por un proveedor español, y el valor conjunto supera los 50.000 € en cualquier momento del año natural, debes presentar el modelo 721 (Declaración informativa sobre monedas virtuales situadas en el extranjero) antes del 31 de marzo del año siguiente. El umbral se aplica por persona, no por cuenta o activo, y se mide con el valor máximo alcanzado durante el año convertido a euros al tipo de cambio de esa fecha.",
+       "El modelo 721 es una declaración informativa, no un pago de impuestos. Su propósito es la transparencia, permitiendo que la Agencia Tributaria cruce las tenencias con las declaraciones de renta. No presentar, hacerlo fuera de plazo o facilitar información incorrecta puede resultar en sanciones significativas, desde 5.000 € por grupo de activos no declarados y aumentando en caso de reincidencia. Si tus tenencias están por debajo de 50.000 € o están exclusivamente con proveedores registrados en España, el modelo 721 no aplica. Las normas y sanciones pueden cambiar, así que verifica los umbrales y requisitos vigentes cada año o trabaja con un profesional fiscal familiarizado con la declaración de criptomonedas."
+      ]
+     }
+    ]
+   },
+   "en": {
+    "title": "How to Buy Cryptocurrency in Spain: Providers, Payments, KYC, and Taxes",
+    "excerpt": "Spain operates under EU MiCA regulations and maintains a Banco de España registry of authorized virtual asset service providers. This guide covers verifying providers, funding options, identity requirements, fees, and the tax obligations that apply to crypto gains and holdings.",
+    "sections": [
+     {
+      "h": "Check the Banco de España register before you deposit",
+      "p": [
+       "Spain requires cryptocurrency exchanges and wallet providers to register with the Banco de España as virtual currency service providers. The official register lists every legal operator and is publicly searchable on the Banco de España website. Before transferring money or providing identity documents, verify that your chosen platform appears on this register. Operating without registration is illegal, and unregistered providers offer no legal recourse if funds are lost or frozen.",
+       "The register includes both Spanish companies and foreign platforms authorized to serve Spanish residents. It shows the company name, registration number, and the date of authorization. EU MiCA rules, which Spain applies, set common standards across member states, but registration remains national. If a platform claims to serve Spain but does not appear on the register, avoid it regardless of marketing or perceived reputation."
+      ]
+     },
+     {
+      "h": "EUR deposits via SEPA transfer and Bizum",
+      "p": [
+       "Most Spanish exchanges accept SEPA bank transfers for depositing euros. SEPA transfers are free from Spanish banks, typically arrive within one business day, and involve no currency conversion since both your bank account and the exchange account are denominated in euros. You provide the exchange's IBAN, reference code, and sender name that matches your verified account. Instant SEPA transfers, supported by many Spanish banks, can credit your exchange balance within seconds for a small fee, typically under one euro.",
+       "Bizum is increasingly supported by Spanish-focused exchanges for smaller deposits, usually capped at a few hundred euros per transaction. Bizum transfers are instant and free for the sender, though exchanges may apply a convenience fee or reserve this method for verified users. For larger amounts, standard SEPA remains the dominant method. Some platforms also accept debit cards, but card deposits often incur fees of 1.5 to 3 percent and face stricter limits due to chargeback risk."
+      ]
+     },
+     {
+      "h": "KYC verification with DNI or NIE",
+      "p": [
+       "All registered Spanish crypto providers must perform Know Your Customer verification before allowing trades or significant deposits. You will need to provide a valid government-issued identity document—Spanish nationals use the Documento Nacional de Identidad (DNI), while foreign residents provide the Número de Identidad de Extranjero (NIE). Some platforms also accept passports, but DNI and NIE are standard and process faster.",
+       "Verification typically involves uploading a clear photo or scan of your document, a selfie or live video to match your face, and proof of residence such as a recent utility bill, bank statement, or padrón certificate showing your Spanish address. Processing takes anywhere from a few minutes to a few days depending on the platform and volume. Repeat verification may be required if you change address or if regulatory rules tighten. Until KYC is complete, deposits and trading are either blocked entirely or capped at very low amounts."
+      ]
+     },
+     {
+      "h": "Trading fees, spreads, and withdrawal costs",
+      "p": [
+       "Exchanges charge in one or both of two ways: a percentage trading fee on each buy or sell, and a spread between the buy and sell price. Trading fees on Spanish platforms typically range from 0.1 to 1 percent per transaction, often structured in tiers that reward higher monthly volume with lower rates. The spread—the difference between the price at which the exchange buys and sells a cryptocurrency—can add another 0.5 to 2 percent in implicit cost, especially on platforms that advertise zero-commission trading.",
+       "Withdrawing euros back to your bank account is usually free via SEPA, though some exchanges set a minimum withdrawal amount or charge a flat fee of one or two euros. Withdrawing cryptocurrency to an external wallet incurs blockchain network fees, which vary by asset and network congestion. Bitcoin withdrawals might cost a few euros, while Ethereum or tokens on Ethereum can cost significantly more during busy periods. Always confirm the fee schedule in the platform's fee page, as promotional rates expire and structures change."
+      ]
+     },
+     {
+      "h": "Income tax on crypto gains: savings income bands",
+      "p": [
+       "Cryptocurrency gains in Spain are treated as savings income (rendimientos del ahorro) and taxed separately from employment or business income. The tax applies only when you sell, trade for another cryptocurrency, or use crypto to buy goods or services—simply holding does not trigger a taxable event. Savings income is taxed in progressive bands: as of current law, the first €6,000 is taxed at 19 percent, income from €6,000 to €50,000 at 21 percent, €50,000 to €200,000 at 23 percent, and income above €200,000 at 26 percent. These bands and rates are set by the state, though autonomous communities can adjust them slightly.",
+       "Losses from crypto trades can offset gains within the same tax year and up to four subsequent years, but only against other savings income such as dividends or interest, not against employment income. You calculate the gain or loss per transaction using the acquisition cost and the sale price in euros. Keeping detailed records of every transaction, including date, amount, asset, price, and fees, is essential. Rules and rates do change with annual budgets, and this is not tax advice—consult a Spanish tax advisor (asesor fiscal) to ensure compliance with your specific situation."
+      ]
+     },
+     {
+      "h": "Modelo 721: declaring crypto held abroad",
+      "p": [
+       "If you hold cryptocurrency on a foreign exchange or in wallets not custodied by a Spanish provider, and the combined value exceeds €50,000 at any point during the calendar year, you must file modelo 721 (Declaración informativa sobre monedas virtuales situadas en el extranjero) by March 31 of the following year. The threshold applies per person, not per account or asset, and is measured using the highest value reached during the year converted to euros at the exchange rate of that date.",
+       "Modelo 721 is an informational declaration, not a tax payment. Its purpose is transparency, allowing the tax authority (Agencia Tributaria) to cross-reference holdings with income declarations. Failing to file, filing late, or providing incorrect information can result in significant penalties, starting at €5,000 per undeclared asset group and increasing for repeat offenses. If your holdings are below €50,000 or are held exclusively with Spanish-registered providers, modelo 721 does not apply. Rules and penalties are subject to change, so verify current thresholds and requirements each year or work with a tax professional familiar with crypto reporting."
+      ]
+     }
+    ]
+   }
+  }
  }
 ]
