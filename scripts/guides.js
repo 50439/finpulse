@@ -105,9 +105,59 @@ async function callClaudeRetry(prompt, tries) {
 // (реальный случай 23.08 — crypto-glossary висел 45 минут и ничего не отдал).
 const REQ_TIMEOUT_MS = Number(process.env.GUIDE_TIMEOUT_MS || 8 * 60 * 1000);
 
+// Модель регулярно отдаёт почти-валидный JSON: пропущенная запятая между
+// элементами массива, сырой перевод строки внутри строки, текст вокруг объекта.
+// Раньше на это тратился ЦЕЛЫЙ повторный запрос (в прогоне #73 повтор случился
+// в 4 вызовах из 5 — двойной расход токенов). Чиним локально и бесплатно;
+// если починить не вышло — только тогда повторяем запрос.
+function stripFences(raw) {
+  let s = String(raw).replace(/^\uFEFF/, '').trim();
+  s = s.replace(/^```json?\s*/i, '').replace(/```\s*$/, '').trim();
+  const a = s.indexOf('{'), b = s.lastIndexOf('}');
+  if (a >= 0 && b > a) s = s.slice(a, b + 1);
+  return s;
+}
+
+function repairJson(raw) {
+  const s = stripFences(raw);
+  try { return JSON.parse(s); } catch (e) { /* чиним ниже */ }
+
+  let out = '', inStr = false, esc = false, lastSig = '';
+  const needsComma = c => c === '"' || c === '}' || c === ']' || /[0-9a-z]/i.test(c);
+  for (let i = 0; i < s.length; i++) {
+    const c = s[i];
+    if (inStr) {
+      if (esc) { out += c; esc = false; continue; }
+      if (c === '\\') { out += c; esc = true; continue; }
+      if (c === '"') { inStr = false; out += c; lastSig = '"'; continue; }
+      if (c === '\n') { out += '\\n'; continue; }
+      if (c === '\r') { out += '\\r'; continue; }
+      if (c === '\t') { out += '\\t'; continue; }
+      out += c; continue;
+    }
+    if (c === '"' || c === '{' || c === '[') {
+      if (needsComma(lastSig)) out += ',';
+      if (c === '"') { inStr = true; out += c; continue; }
+      out += c; lastSig = c; continue;
+    }
+    if (/\s/.test(c)) { out += c; continue; }
+    out += c; lastSig = c;
+  }
+  out = out.replace(/,(\s*[}\]])/g, '$1');
+  return JSON.parse(out);
+}
+
+// Пауза в стриме: абсолютный таймаут рубит и честную долгую генерацию,
+// а зависший стрим отличается тем, что байты перестают идти совсем.
+const IDLE_TIMEOUT_MS = Number(process.env.GUIDE_IDLE_MS || 150 * 1000);
+
 async function callClaude(prompt) {
   const ac = new AbortController();
   const timer = setTimeout(() => ac.abort(), REQ_TIMEOUT_MS);
+  let idleAt = Date.now(), stalled = false;
+  const idleTimer = setInterval(() => {
+    if (Date.now() - idleAt > IDLE_TIMEOUT_MS) { stalled = true; ac.abort(); }
+  }, 5000);
   try {
   const r = await fetch('https://api.anthropic.com/v1/messages', {
     signal: ac.signal,
@@ -126,6 +176,7 @@ async function callClaude(prompt) {
   for (;;) {
     const { done, value } = await reader.read();
     if (done) break;
+    idleAt = Date.now();
     buf += dec.decode(value, { stream: true });
     const lines = buf.split('\n'); buf = lines.pop();
     for (const line of lines) {
@@ -140,43 +191,88 @@ async function callClaude(prompt) {
     }
   }
   console.log('Получено ' + text.length + ' символов');
-  return JSON.parse(text.replace(/^```json?\s*/i, '').replace(/```\s*$/, '').trim());
+  try {
+    return JSON.parse(stripFences(text));
+  } catch (e1) {
+    try {
+      const fixed = repairJson(text);
+      console.log('  JSON починен локально (' + String(e1.message || '').slice(0, 60) + ') — повторный запрос не нужен');
+      return fixed;
+    } catch (e2) {
+      const m = /position (\d+)/.exec(String(e1.message || ''));
+      if (m) {
+        const at = Number(m[1]);
+        console.warn('  около ошибки: …' + text.slice(Math.max(0, at - 120), at + 120).replace(/\n/g, '\\n') + '…');
+      }
+      throw e1;
+    }
+  }
   } catch (e) {
     if (e && e.name === 'AbortError') {
-      throw new Error('таймаут ' + Math.round(REQ_TIMEOUT_MS / 1000) + ' с — ответ не пришёл');
+      throw new Error(stalled
+        ? 'стрим завис: ' + Math.round(IDLE_TIMEOUT_MS / 1000) + ' с без единого байта'
+        : 'таймаут ' + Math.round(REQ_TIMEOUT_MS / 1000) + ' с — ответ не пришёл');
     }
     throw e;
   } finally {
     clearTimeout(timer);
+    clearInterval(idleTimer);
   }
 }
 
 // Сколько языков просить за один запрос. Больше — и ответ не влезает в лимит модели.
 const LANG_BATCH = Math.max(1, Number(process.env.GUIDE_LANG_BATCH || 4));
 
-async function writeOne(topic, out, topics) {
-  console.log('Пишу гайд: ' + topic.slug + ' (' + topic.langs.join(', ') + ')');
+// Язык считается готовым, только если есть непустые секции.
+const hasLang = (i18n, l) => !!(i18n && i18n[l] && Array.isArray(i18n[l].sections) && i18n[l].sections.length);
 
-  // Первый запрос: пишем сам гайд сразу на английском и первых нескольких языках.
-  const head = topic.langs.slice(0, LANG_BATCH);
-  if (!head.includes('en')) head.unshift('en');
-  const first = await callClaudeRetry(buildPrompt({ ...topic, langs: head }));
-  const i18n = first.i18n || first;
-  if (!i18n.en || !i18n.en.sections || !i18n.en.sections.length) {
-    throw new Error('Модель не вернула английскую версию — переводить нечего');
+// Каких языков темы ещё нет в уже сохранённом гайде.
+function missingLangs(topic, entry) {
+  if (!entry) return topic.langs.slice();
+  return topic.langs.filter(l => !hasLang(entry.i18n, l));
+}
+
+async function writeOne(topic, out, topics) {
+  const idx = out.findIndex(g => g.slug === topic.slug);
+  const prev = idx >= 0 && !process.env.REGENERATE ? out[idx] : null;
+  // Гайд, у которого прошлый прогон добил не все языки, дописываем, а не пишем заново:
+  // английский текст уже оплачен, платить за него второй раз незачем.
+  const i18n = prev && prev.i18n ? { ...prev.i18n } : {};
+  const todo = missingLangs(topic, prev);
+  if (!todo.length) { console.log('Гайд ' + topic.slug + ' уже полный.'); return; }
+  console.log('Пишу гайд: ' + topic.slug + ' (' + todo.join(', ') + (prev ? '; уже есть: ' + topic.langs.filter(l => hasLang(i18n, l)).join(', ') : '') + ')');
+
+  if (!hasLang(i18n, 'en')) {
+    // Первый запрос: пишем сам гайд сразу на английском и первых нескольких языках.
+    const head = todo.slice(0, LANG_BATCH);
+    if (!head.includes('en')) head.unshift('en');
+    const first = await callClaudeRetry(buildPrompt({ ...topic, langs: head }));
+    Object.assign(i18n, first.i18n || first);
+    if (!hasLang(i18n, 'en')) {
+      throw new Error('Модель не вернула английскую версию — переводить нечего');
+    }
   }
 
   // Остальные языки догоняем партиями, переводя уже написанный английский текст.
-  const rest = topic.langs.filter(l => !i18n[l] || !i18n[l].sections || !i18n[l].sections.length);
+  // Партия, которая не далась, НЕ роняет гайд: сохраняем то, что получилось,
+  // и следующий прогон допишет остаток (в прогоне #73 из-за одной зависшей партии
+  // выбрасывался целый готовый гайд вместе с английским текстом).
+  const rest = topic.langs.filter(l => !hasLang(i18n, l));
+  const failed = [];
   for (let i = 0; i < rest.length; i += LANG_BATCH) {
     const batch = rest.slice(i, i + LANG_BATCH);
     console.log('  перевод: ' + batch.join(', '));
-    const part = await callClaudeRetry(buildTranslatePrompt(topic, i18n.en, batch));
-    Object.assign(i18n, part.i18n || part);
+    try {
+      const part = await callClaudeRetry(buildTranslatePrompt(topic, i18n.en, batch));
+      Object.assign(i18n, part.i18n || part);
+    } catch (e) {
+      failed.push(batch.join(', '));
+      console.error('  партия ' + batch.join(', ') + ' не далась: ' + (e && e.message ? e.message : e));
+    }
   }
 
-  const missing = topic.langs.filter(l => !i18n[l] || !i18n[l].sections || !i18n[l].sections.length);
-  if (missing.length) throw new Error('Модель не вернула языки: ' + missing.join(', '));
+  const produced = topic.langs.filter(l => hasLang(i18n, l));
+  if (!produced.includes('en')) throw new Error('Нет английской версии — сохранять нечего');
 
   const words = i18n.en.sections.reduce((n, s) => n + s.p.join(' ').split(/\s+/).length, 0);
   console.log('Английская версия: ' + i18n.en.sections.length + ' секций, ~' + words + ' слов');
@@ -186,29 +282,34 @@ async function writeOne(topic, out, topics) {
     slug: topic.slug,
     category: topic.category || 'guide',
     emoji: topic.emoji || '📘',
-    langs: topic.langs,
+    langs: produced,
     updated: new Date().toISOString(),
-    i18n: Object.fromEntries(topic.langs.map(l => [l, i18n[l]]))
+    i18n: Object.fromEntries(produced.map(l => [l, i18n[l]]))
   };
 
-  const idx = out.findIndex(g => g.slug === entry.slug);
   if (idx >= 0) out[idx] = entry; else out.push(entry);
   // Пишем сразу: прогон на несколько гайдов не должен терять уже готовые из-за сбоя на последнем.
   fs.writeFileSync(OUT_FILE, JSON.stringify(out, null, 1) + '\n');
-  console.log('Готово. Гайдов в content/guides.json: ' + out.length + ' из ' + topics.length);
+  const short = topic.langs.filter(l => !produced.includes(l));
+  console.log('Готово: ' + topic.slug + ' на ' + produced.length + ' из ' + topic.langs.length + ' языков' +
+    (short.length ? ' (не хватает: ' + short.join(', ') + ' — допишет следующий прогон)' : '') +
+    '. Гайдов в content/guides.json: ' + out.length + ' из ' + topics.length);
 }
 
 async function main() {
   if (!API_KEY) { console.error('ANTHROPIC_API_KEY is not set'); process.exit(1); }
   const topics = JSON.parse(fs.readFileSync(TOPICS_FILE, 'utf8'));
   const out = loadOut();
-  const done = new Set(out.map(g => g.slug));
+  const byslug = new Map(out.map(g => [g.slug, g]));
+  // Гайд считается готовым, только если написаны ВСЕ языки его темы.
+  // Иначе он снова попадёт в очередь и следующий прогон допишет недостающие.
+  const done = new Set(topics.filter(t => !missingLangs(t, byslug.get(t.slug)).length).map(t => t.slug));
 
   if (process.env.SLUG) {
     const topic = topics.find(t => t.slug === process.env.SLUG);
     if (!topic) { console.error('Нет темы со slug=' + process.env.SLUG); process.exit(1); }
     if (done.has(topic.slug) && !process.env.REGENERATE) {
-      console.log('Гайд ' + topic.slug + ' уже есть. REGENERATE=1 чтобы перезаписать.'); return;
+      console.log('Гайд ' + topic.slug + ' уже написан целиком. REGENERATE=1 чтобы перезаписать.'); return;
     }
     return writeOne(topic, out, topics);
   }
@@ -232,4 +333,4 @@ async function main() {
 }
 
 if (require.main === module) main().catch(e => { console.error(e); process.exit(1); });
-module.exports = { buildPrompt, LANG_NAMES };
+module.exports = { buildPrompt, LANG_NAMES, repairJson, stripFences, missingLangs, hasLang };

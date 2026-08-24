@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "node build.js",
-    "test": "node build.test.js",
+    "test": "node scripts/dedup.test.js && node scripts/telegram.test.js && node scripts/guides.test.js && node build.js && node build.test.js",
     "generate": "node scripts/generate.js"
   }
 }
