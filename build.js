@@ -115,6 +115,26 @@ const analyticsBody = lang => GA4 ? '\n<script>document.addEventListener(\'click
 // Для финансовой тематики (YMYL) это не украшение: без указания, кто отвечает
 // за контент и на чём сайт зарабатывает, Google оценивает страницы как
 // низкокачественные — что и показал отчёт «просканирована, но не проиндексирована».
+// Порог «тонкой» страницы. Новость короче него закрывается от индексации
+// и не попадает в sitemap. Причина: Google отверг 207 страниц из 213 как
+// «просканирована, но не проиндексирована» — это оценка качества, и пока
+// в индекс просятся пересказы на 50 слов, страдает доверие ко всему домену.
+// noindex,follow — важно именно follow: ссылки со страницы продолжают работать.
+const NEWS_MIN_WORDS = Number(siteCfg.newsMinWords || 0);
+// Считать «слова» по пробелам можно не везде: китайский и японский пишутся без
+// них вовсе, тайский тоже. Первый прогон отправил в noindex 100% страниц zh, ja и th —
+// ложное срабатывание. Коэффициенты замерены на собственных переводах: столько
+// символов приходится в этом языке на одно английское слово.
+const CHARS_PER_WORD = { zh: 2.0, ja: 3.1, th: 6.7, ko: 2.6 };
+const wordCount = (t, lang) => {
+  const str = String(t || '').trim();
+  if (!str) return 0;
+  const k = CHARS_PER_WORD[lang];
+  if (k) return Math.round(str.replace(/\s+/g, '').length / k);
+  return str.split(/\s+/).filter(Boolean).length;
+};
+let thinCount = 0;
+
 const PAGES_FILE = path.join(ROOT, 'data/pages.json');
 const pagesRaw = fs.existsSync(PAGES_FILE) ? JSON.parse(fs.readFileSync(PAGES_FILE, 'utf8')) : {};
 const staticPages = Object.entries(pagesRaw)
@@ -285,11 +305,12 @@ function langLinks(pathFn, only) {
 }
 
 function page(opt) {
-  const { lang, title, desc, pathFn, body, jsonld, hreflangs } = opt;
+  const { lang, title, desc, pathFn, body, jsonld, hreflangs, robots } = opt;
   const L = i18n.languages[lang];
   return '<!DOCTYPE html>\n<html lang="' + lang + '" dir="' + L.dir + '">\n<head>\n' +
     '<meta charset="UTF-8">\n<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n' +
     '<title>' + esc(title) + '</title>\n<meta name="description" content="' + esc(desc) + '">\n' +
+    (robots ? '<meta name="robots" content="' + robots + '">\n' : '') +
     '<link rel="canonical" href="' + ORIGIN + pathFn(lang) + '">\n  ' + langLinks(pathFn, hreflangs) + '\n' +
     '<meta property="og:title" content="' + esc(title) + '">\n<meta property="og:description" content="' + esc(desc) + '">\n' +
     '<meta property="og:type" content="website">\n<meta name="theme-color" content="#0b0e14">\n' +
@@ -456,8 +477,11 @@ for (const lang of LANGS) {
     const t = a.i18n[lang] || a.i18n.en;
     const pf = l => BASE + '/' + l + '/news/' + a.slug + '/';
     const topOffers = forLang(articleOffers, lang).slice(0, 2);
+    const thin = NEWS_MIN_WORDS > 0 && wordCount((t.body || []).join(' '), lang) < NEWS_MIN_WORDS;
+    if (thin) thinCount++;
     const artHtml = page({
       lang,
+      robots: thin ? 'noindex,follow' : undefined,
       title: t.title + ' \u2014 FinPulse',
       desc: t.excerpt,
       pathFn: pf,
@@ -488,7 +512,7 @@ for (const lang of LANGS) {
     const dir = path.join(DIST, lang, 'news', a.slug);
     fs.mkdirSync(dir, { recursive: true });
     fs.writeFileSync(path.join(dir, 'index.html'), artHtml);
-    urls.push(pf(lang));
+    if (!thin) urls.push(pf(lang));   // тонкую страницу не зовём в индекс и сами
   }
 
   // ---- \u0412\u0435\u0447\u043d\u043e\u0437\u0435\u043b\u0451\u043d\u044b\u0435 \u0433\u0430\u0439\u0434\u044b ----
@@ -607,6 +631,7 @@ fs.writeFileSync(path.join(DIST, 'sitemap.xml'),
   urls.map(u => '<url><loc>' + ORIGIN + u + '</loc><changefreq>hourly</changefreq></url>')
     .concat(slowUrls.map(u => '<url><loc>' + ORIGIN + u + '</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>'))
     .join('\n') + '\n</urlset>');
+if (NEWS_MIN_WORDS > 0) console.log('news: ' + thinCount + ' \u0442\u043e\u043d\u043a\u0438\u0445 \u0441\u0442\u0440\u0430\u043d\u0438\u0446 (<' + NEWS_MIN_WORDS + ' \u0441\u043b\u043e\u0432) \u2014 noindex \u0438 \u0432\u043d\u0435 sitemap');
 fs.writeFileSync(path.join(DIST, 'robots.txt'), 'User-agent: *\nAllow: /\nSitemap: ' + SITE_URL + '/sitemap.xml\n');
 
 // ---- RSS на каждом языке ----

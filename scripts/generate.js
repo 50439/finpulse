@@ -150,11 +150,32 @@ async function main() {
   const headlines = await fetchFeeds();
   if (!headlines.length) { console.error('No headlines fetched'); process.exit(1); }
   console.log('Fetched', headlines.length, 'headlines. Generating articles...');
+  // Суточный лимит проверяем ДО обращения к модели: пропущенный прогон
+  // не должен стоить ни одного токена.
+  const _file = path.join(ROOT, 'content/articles.json');
+  const _existing = JSON.parse(fs.readFileSync(_file, 'utf8'));
+  {
+    const cfgFile = path.join(ROOT, 'data/site.json');
+    const cfg = fs.existsSync(cfgFile) ? JSON.parse(fs.readFileSync(cfgFile, 'utf8')) : {};
+    const perDay = Number(cfg.newsPerDay || 0);
+    if (perDay > 0) {
+      const since = Date.now() - 24 * 60 * 60 * 1000;
+      const last24 = _existing.filter(x => Date.parse(x.date) >= since).length;
+      if (last24 >= perDay) {
+        console.log('\u0417\u0430 \u0441\u0443\u0442\u043a\u0438 \u0443\u0436\u0435 \u043e\u043f\u0443\u0431\u043b\u0438\u043a\u043e\u0432\u0430\u043d\u043e ' + last24 + ' \u0441\u0442\u0430\u0442\u0435\u0439 \u043f\u0440\u0438 \u043b\u0438\u043c\u0438\u0442\u0435 ' + perDay +
+          ' (data/site.json \u2192 newsPerDay) \u2014 \u043f\u0440\u043e\u0433\u043e\u043d \u043f\u0440\u043e\u043f\u0443\u0441\u043a\u0430\u044e, \u043c\u043e\u0434\u0435\u043b\u044c \u043d\u0435 \u0432\u044b\u0437\u044b\u0432\u0430\u044e.');
+        return;
+      }
+      console.log('\u0421\u0443\u0442\u043e\u0447\u043d\u044b\u0439 \u043b\u0438\u043c\u0438\u0442: ' + last24 + '/' + perDay + ' \u0441\u0442\u0430\u0442\u0435\u0439 \u0437\u0430 \u043f\u043e\u0441\u043b\u0435\u0434\u043d\u0438\u0435 24 \u0447\u0430\u0441\u0430.');
+    }
+  }
+
   const fresh = await callClaude(headlines);
 
   const file = path.join(ROOT, 'content/articles.json');
   const existing = JSON.parse(fs.readFileSync(file, 'utf8'));
   const now = new Date().toISOString();
+
   const gradients = {
     crypto: 'linear-gradient(135deg,#f7931a33,#0b0e1400)',
     stocks: 'linear-gradient(135deg,#34d39933,#0b0e1400)',

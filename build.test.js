@@ -365,4 +365,46 @@ function walk(dir, acc) {
   console.log('pages: ' + slugs.length + '\u00d7' + langs.length + ', \u0440\u0430\u0441\u043a\u0440\u044b\u0442\u0438\u0435 \u043d\u0430 ' + withDisc + '/' + withCta + ' \u0441\u0442\u0440\u0430\u043d\u0438\u0446 \u0441 \u043e\u0444\u0444\u0435\u0440\u0430\u043c\u0438');
 }
 
+// Тонкие новости: noindex + вне sitemap.
+// Плюс защита от бага, который уже случился: счёт «слов» по пробелам отправил
+// в noindex 100% страниц zh, ja и th, потому что эти языки пишутся без пробелов.
+{
+  const arts = JSON.parse(fs.readFileSync(path.join(__dirname, 'content/articles.json'), 'utf8'));
+  const cfg = JSON.parse(fs.readFileSync(path.join(__dirname, 'data/site.json'), 'utf8'));
+  const minW = Number(cfg.newsMinWords || 0);
+  const K = { zh: 2.0, ja: 3.1, th: 6.7, ko: 2.6 };
+  const wc = (t, l) => { const s2 = String(t || '').trim(); if (!s2) return 0;
+    return K[l] ? Math.round(s2.replace(/\s+/g, '').length / K[l]) : s2.split(/\s+/).filter(Boolean).length; };
+
+  if (minW > 0) {
+    const sm = fs.readFileSync(path.join(DIST, 'sitemap.xml'), 'utf8');
+    let noTag = 0, leaked = 0, wrongTag = 0;
+    const per = {};
+    for (const a of arts) for (const [l, t] of Object.entries(a.i18n)) {
+      const f = path.join(DIST, l, 'news', a.slug, 'index.html');
+      if (!fs.existsSync(f)) continue;
+      const h = fs.readFileSync(f, 'utf8');
+      const hasNo = /<meta name="robots" content="noindex/.test(h);
+      const inSm = sm.includes(BASE + '/' + l + '/news/' + a.slug + '/<');
+      const thin = wc((t.body || []).join(' '), l) < minW;
+      per[l] = per[l] || { thin: 0, tot: 0 };
+      per[l].tot++; if (thin) per[l].thin++;
+      if (thin && !hasNo) noTag++;
+      if (thin && inSm) leaked++;
+      if (!thin && hasNo) wrongTag++;
+    }
+    check(noTag === 0, '\u0442\u043e\u043d\u043a\u0438\u0445 \u0441\u0442\u0440\u0430\u043d\u0438\u0446 \u0431\u0435\u0437 noindex: ' + noTag);
+    check(leaked === 0, '\u0442\u043e\u043d\u043a\u0438\u0435 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u044b \u043f\u043e\u043f\u0430\u043b\u0438 \u0432 sitemap: ' + leaked);
+    check(wrongTag === 0, '\u043f\u043e\u043b\u043d\u043e\u0446\u0435\u043d\u043d\u044b\u0435 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u044b \u0437\u0430\u043a\u0440\u044b\u0442\u044b noindex: ' + wrongTag);
+    // ни один язык не должен уходить в noindex целиком — это признак сломанного счётчика
+    for (const [l, v] of Object.entries(per)) {
+      check(!(v.tot >= 5 && v.thin === v.tot),
+        '\u044f\u0437\u044b\u043a ' + l + ': \u0432\u0441\u0435 ' + v.tot + ' \u0441\u0442\u0440\u0430\u043d\u0438\u0446 \u0443\u0448\u043b\u0438 \u0432 noindex \u2014 \u043f\u043e\u0445\u043e\u0436\u0435 \u043d\u0430 \u0441\u043b\u043e\u043c\u0430\u043d\u043d\u044b\u0439 \u0441\u0447\u0451\u0442\u0447\u0438\u043a \u0441\u043b\u043e\u0432');
+    }
+    const thinAll = Object.values(per).reduce((n, v) => n + v.thin, 0);
+    const totAll = Object.values(per).reduce((n, v) => n + v.tot, 0);
+    console.log('news: ' + thinAll + '/' + totAll + ' \u0442\u043e\u043d\u043a\u0438\u0445 \u2192 noindex');
+  }
+}
+
 if (fails){console.error(fails+' failures');process.exit(1);} console.log('OK - all checks passed');
