@@ -4341,5 +4341,137 @@
     ]
    }
   }
+ },
+ {
+  "slug": "how-to-buy-crypto-india",
+  "category": "guide",
+  "emoji": "🇮🇳",
+  "langs": [
+   "hi",
+   "en"
+  ],
+  "updated": "2026-08-24T19:00:54.325Z",
+  "i18n": {
+   "hi": {
+    "title": "भारत में क्रिप्टोकरेंसी कैसे खरीदें: INR जमा, KYC, 30% टैक्स और 1% TDS",
+    "excerpt": "भारत में क्रिप्टो ट्रेडिंग की अनुमति है लेकिन सख्त टैक्स नियम लागू हैं। यह गाइड INR जमा के तरीके, PAN और आधार के साथ अनिवार्य KYC, बिना नुकसान समायोजन के 30% फ्लैट टैक्स, ट्रांसफर पर 1% TDS, और कौन से एक्सचेंज भारतीय निवासियों को कानूनी रूप से सेवा दे सकते हैं, को कवर करती है।",
+    "sections": [
+     {
+      "h": "कौन से एक्सचेंज INR जमा स्वीकार करते हैं और बैंकिंग कैसे काम करती है",
+      "p": [
+       "भारतीय उपयोगकर्ता उन प्लेटफॉर्म पर INR जमा कर सकते हैं जो भारत की वित्तीय खुफिया इकाई (FIU-IND) के साथ पंजीकृत हैं, जिनमें WazirX, CoinDCX, ZebPay और कुछ अन्य शामिल हैं जिन्होंने अनुपालन पंजीकरण पूरा किया है। ये प्लेटफॉर्म आमतौर पर UPI (यूनिफाइड पेमेंट्स इंटरफेस) और IMPS (इमीडिएट पेमेंट सर्विस) के माध्यम से जमा स्वीकार करते हैं, हालांकि उपलब्धता अलग-अलग बैंकों और भुगतान प्रोसेसर की नीतियों के आधार पर बदलती रहती है।",
+       "बैंकिंग में रुकावट एक बार-बार होने वाली समस्या है। हालांकि सुप्रीम कोर्ट ने 2020 में RBI के 2018 के क्रिप्टो पर बैंकिंग प्रतिबंध को हटा दिया था, व्यक्तिगत बैंकों के पास उन लेनदेन को ब्लॉक या सीमित करने का विवेकाधिकार है जिन्हें वे उच्च जोखिम मानते हैं। कुछ उपयोगकर्ता बताते हैं कि UPI भुगतान अस्वीकृत हो जाते हैं या बार-बार क्रिप्टो-संबंधित ट्रांसफर के बाद खाते फ्रीज हो जाते हैं। कई बैंक खाते उपयोग करना और बार-बार बड़े ट्रांसफर से बचना रुकावट कम कर सकता है, हालांकि कोई भी तरीका पूरी तरह सुरक्षित नहीं है। NEFT और RTGS ट्रांसफर में UPI की तुलना में बड़ी राशि के लिए कम स्वचालित ब्लॉक होते हैं, लेकिन प्रोसेसिंग समय अधिक होता है।",
+       "Binance, Kraken और Coinbase जैसे अंतरराष्ट्रीय एक्सचेंज के पास FIU-IND पंजीकरण नहीं है और वे भारतीय निवासियों को सीधे INR जमा या निकासी सेवाएं प्रदान नहीं करते हैं। जो उपयोगकर्ता इन प्लेटफॉर्म तक पहुंचते हैं, वे आमतौर पर कहीं और खरीदी गई स्टेबलकॉइन या क्रिप्टोकरेंसी से खाते फंड करते हैं, जिसमें अतिरिक्त कदम और अक्सर रूपांतरण स्प्रेड और नेटवर्क शुल्क के कारण अधिक लागत आती है।"
+      ]
+     },
+     {
+      "h": "KYC आवश्यकताएं: PAN, आधार और सत्यापन स्तर",
+      "p": [
+       "हर पंजीकृत भारतीय एक्सचेंज में आपके INR जमा करने या व्यापार करने से पहले नो योर कस्टमर (KYC) सत्यापन अनिवार्य है। न्यूनतम रूप से, आपको अपना स्थायी खाता संख्या (PAN) कार्ड प्रदान करना होगा, जो आपकी क्रिप्टो गतिविधि को आपके आयकर रिकॉर्ड से जोड़ता है, और पहचान प्रमाण, आमतौर पर आधार कार्ड। अधिकांश प्लेटफॉर्म को आपके सबमिट किए गए दस्तावेजों के खिलाफ आपके चेहरे को मिलाने के लिए लाइव फोटो या वीडियो सत्यापन की भी आवश्यकता होती है।",
+       "सत्यापन आमतौर पर कुछ घंटों से लेकर दो व्यावसायिक दिनों के भीतर पूरा हो जाता है। कुछ एक्सचेंज नए सत्यापित खातों पर लेनदेन सीमाएं लगाते हैं जो प्रतीक्षा अवधि या अतिरिक्त दस्तावेज सबमिशन, जैसे बैंक स्टेटमेंट या पता प्रमाण के बाद हट जाती हैं। यदि आपका PAN और आधार सरकार के डेटाबेस में लिंक नहीं हैं, तो कुछ प्लेटफॉर्म आपके KYC को अस्वीकार कर सकते हैं या आपको आगे बढ़ने से पहले आयकर ई-फाइलिंग पोर्टल के माध्यम से लिंकिंग पूरी करने की आवश्यकता हो सकती है। यह लिंकिंग कर उद्देश्यों के लिए एक सरकारी आवश्यकता है, क्रिप्टो के लिए अद्वितीय नहीं।"
+      ]
+     },
+     {
+      "h": "क्रिप्टो लाभ पर बिना नुकसान समायोजन के 30% फ्लैट टैक्स",
+      "p": [
+       "2022 के वित्त अधिनियम के बाद से, वर्चुअल डिजिटल परिसंपत्तियों के हस्तांतरण से किसी भी आय पर आयकर अधिनियम की धारा 115BBH के तहत 30% की फ्लैट दर से कर लगाया जाता है। यह सभी लाभों पर लागू होता है: अल्पकालिक, दीर्घकालिक, व्यापार लाभ, या धारित परिसंपत्तियों पर मूल्य वृद्धि। केवल अधिग्रहण की लागत की कटौती की अनुमति है; आप कर योग्य आय की गणना करते समय लेनदेन शुल्क, प्लेटफॉर्म शुल्क, या अन्य क्रिप्टो ट्रेडों से नुकसान काट नहीं सकते।",
+       "नुकसान समायोजन पर प्रतिबंध विशेष रूप से कठोर है। यदि आप एक ही वित्तीय वर्ष में एक व्यापार पर ₹100,000 का लाभ कमाते हैं और दूसरे पर ₹100,000 का नुकसान उठाते हैं, तो भी आपको लाभदायक व्यापार पर ₹30,000 कर देना होगा। नुकसान को भविष्य के वर्षों में आगे नहीं ले जाया जा सकता है, और क्रिप्टो में नुकसान अन्य परिसंपत्ति वर्गों में लाभ को ऑफसेट नहीं कर सकता। यह संरचना बार-बार ट्रेडिंग को कर दृष्टिकोण से महंगा बनाती है, क्योंकि प्रत्येक लाभदायक लेनदेन एक देनदारी उत्पन्न करता है जिसे हारने वाले व्यापार कम नहीं कर सकते।",
+       "ये नियम होल्डिंग अवधि या परिसंपत्ति की प्रकृति की परवाह किए बिना लागू होते हैं। प्रत्येक निपटान पर कर की गणना की जाती है, चाहे आप INR के लिए बेचें, एक क्रिप्टो को दूसरे के लिए व्यापार करें, या वस्तुओं या सेवाओं को खरीदने के लिए क्रिप्टो का उपयोग करें। भारत में कर कानून विकसित होता है, और सरकार ने डिजिटल परिसंपत्ति विनियमन की चल रही समीक्षा का संकेत दिया है, इसलिए फाइलिंग से पहले वर्तमान नियमों से परिचित एक योग्य कर पेशेवर से परामर्श करें। यह कर सलाह नहीं है।"
+      ]
+     },
+     {
+      "h": "हर ट्रांसफर पर स्रोत पर काटा गया 1% TDS",
+      "p": [
+       "लाभ पर 30% कर के अलावा, भारतीय एक्सचेंजों को धारा 194S के अनुसार हर बार जब आप वर्चुअल डिजिटल परिसंपत्ति बेचते या स्थानांतरित करते हैं तो कुल लेनदेन मूल्य पर 1% स्रोत पर कर कटौती (TDS) काटना होता है। यह लाभ पर कर नहीं बल्कि बिक्री की सकल राशि पर है। यदि आप ₹100,000 मूल्य का Bitcoin बेचते हैं, तो एक्सचेंज ₹1,000 रोकता है और इसे आयकर विभाग को भेजता है, इसे आपके PAN में जमा करता है।",
+       "TDS तब काटा जाता है चाहे आप लाभ कमाएं या नुकसान उठाएं। यह व्यापार के प्रत्येक चरण पर लागू होता है: INR के लिए Bitcoin बेचने पर 1% TDS लगता है, और यदि आप फिर उस INR से Ethereum खरीदते हैं, तो खरीद मूल्य पर अन्य 1% रोका जाता है। सक्रिय व्यापारियों के लिए, TDS कटौतियां तेजी से जमा होती हैं और जब तक आप अपना वार्षिक कर रिटर्न दाखिल नहीं करते और किसी भी अतिरिक्त को रिफंड के रूप में दावा नहीं करते तब तक महत्वपूर्ण पूंजी बांध सकती हैं।",
+       "आप अपने नाम पर काटे गए TDS को आयकर ई-फाइलिंग पोर्टल पर फॉर्म 26AS की जांच करके देख सकते हैं। जब आप फाइल करते हैं तो रोकी गई राशि आपकी अंतिम कर देनदारी के खिलाफ जमा की जाती है, इसलिए यदि आपका कुल बकाया कर पहले से काटे गए TDS से कम है, तो आपको रिफंड मिलता है। हालांकि, रिफंड प्रक्रिया में कई महीने लग सकते हैं, और अंतरिम नकदी प्रवाह प्रभाव वास्तविक है, विशेष रूप से उच्च-आवृत्ति व्यापारियों के लिए।"
+      ]
+     },
+     {
+      "h": "FIU-IND पंजीकरण का उपयोगकर्ताओं के लिए क्या मतलब है",
+      "p": [
+       "वित्तीय खुफिया इकाई-इंडिया (FIU-IND) को भारतीय निवासियों को वर्चुअल डिजिटल परिसंपत्ति सेवाएं प्रदान करने वाली सभी संस्थाओं को धन शोधन निवारण अधिनियम (PMLA) के तहत पंजीकरण करना आवश्यक है। पंजीकरण एक्सचेंजों को धन-शोधन विरोधी नियंत्रण लागू करने, संदिग्ध लेनदेन की रिपोर्ट करने और विस्तृत उपयोगकर्ता रिकॉर्ड बनाए रखने के लिए बाध्य करता है। केवल वे एक्सचेंज जिन्होंने यह पंजीकरण पूरा किया है, कानूनी रूप से भारत में काम कर सकते हैं।",
+       "उपयोगकर्ताओं के लिए, इसका मतलब है कि अनुपालक प्लेटफॉर्म का पूल सीमित है और समय के साथ बदलता है। कई अंतरराष्ट्रीय एक्सचेंज जिन्होंने पहले भारतीय ग्राहकों को सेवा दी थी, पंजीकरण जनादेश लागू होने के बाद या तो वापस ले लिए गए या सेवाओं को प्रतिबंधित कर दिया। बिना FIU-IND पंजीकरण के काम करने वाले प्लेटफॉर्म प्रवर्तन जोखिम का सामना करते हैं, जिसमें भारतीय अधिकारियों द्वारा उनकी वेबसाइटों या सेवाओं को ब्लॉक करने की संभावना शामिल है। जबकि कुछ उपयोगकर्ता VPN या पीयर-टू-पीयर चैनलों के माध्यम से अपंजीकृत अपतटीय एक्सचेंजों तक पहुंचते हैं, ऐसा करने से कानूनी अनिश्चितता होती है और यदि धनराशि खो जाती है या जमी हुई है तो कोई सहारा नहीं मिलता।",
+       "धनराशि जमा करने से पहले, सत्यापित करें कि एक्सचेंज के पास सक्रिय FIU-IND पंजीकरण है। FIU-IND एक लाइव सार्वजनिक रजिस्ट्री प्रकाशित नहीं करता है, लेकिन पंजीकृत एक्सचेंज आमतौर पर अपनी वेबसाइटों या सहायता दस्तावेज़ीकरण पर अपनी पंजीकरण स्थिति प्रदर्शित करते हैं। यदि अनिश्चित हैं, तो ग्राहक सहायता से संपर्क करें और पंजीकरण संख्या और तिथि की पुष्टि का अनुरोध करें। किसी अपंजीकृत प्लेटफॉर्म का उपयोग करना आपको 30% कर या 1% TDS से छूट नहीं देता है; आपके कर दायित्व बने रहते हैं चाहे आप कहीं भी व्यापार करें।"
+      ]
+     },
+     {
+      "h": "पीयर-टू-पीयर प्लेटफॉर्म और अनौपचारिक चैनल",
+      "p": [
+       "पीयर-टू-पीयर (P2P) प्लेटफॉर्म उपयोगकर्ताओं को एक दूसरे के साथ सीधे क्रिप्टो खरीदने और बेचने की अनुमति देते हैं, प्लेटफॉर्म एस्क्रो के रूप में कार्य करता है। WazirX और CoinDCX जैसे पंजीकृत भारतीय एक्सचेंज अंतर्निहित P2P बाज़ार प्रदान करते हैं जहां आप व्यक्तिगत विक्रेताओं से UPI, IMPS, बैंक ट्रांसफर, या यहां तक कि PayTM का उपयोग करके क्रिप्टो खरीद सकते हैं। P2P बाजारों पर कीमतें अक्सर स्थानीय मांग और बैंकिंग घर्षण के कारण वैश्विक स्पॉट दरों से 1-5% प्रीमियम लेती हैं।",
+       "P2P व्यापार अभी भी वही कर दायित्व ट्रिगर करते हैं: कोई भी लाभ 30% कर के अधीन है, और प्लेटफॉर्म प्रत्येक लेनदेन पर 1% TDS काटता है। P2P का मुख्य लाभ भुगतान विधियों में लचीलापन और कभी-कभी बेहतर उपलब्धता है जब सीधे INR जमा चैनल व्यवधान का सामना करते हैं। हालांकि, प्रतिपक्ष जोखिम मौजूद है; हमेशा प्लेटफॉर्म के एस्क्रो और विवाद समाधान का उपयोग करें बजाय प्लेटफॉर्म के बाहर धनराशि स्थानांतरित करने के, और विक्रेताओं से सावधान रहें जो ऑफ-प्लेटफॉर्म भुगतान का अनुरोध करते हैं, जो खरीदार सुरक्षा को हटाता है और धोखाधड़ी के लिए एक वेक्टर हो सकता है।"
+      ]
+     },
+     {
+      "h": "INR के साथ अपनी पहली क्रिप्टो खरीदने के चरण",
+      "p": [
+       "एक पंजीकृत एक्सचेंज चुनें—WazirX, CoinDCX, और ZebPay सबसे व्यापक रूप से उपयोग किए जाते हैं। ऐप डाउनलोड करें या वेबसाइट पर जाएं और अपना PAN कार्ड, आधार, लाइव फोटो, और बैंक खाता विवरण सबमिट करके KYC शुरू करें। अनुमोदन में आमतौर पर कुछ घंटे लगते हैं। एक बार सत्यापित होने के बाद, जमा अनुभाग पर जाएं और UPI या IMPS चुनें। वह राशि दर्ज करें जो आप जमा करना चाहते हैं; न्यूनतम जमा आमतौर पर ₹100 होता है, हालांकि कुछ प्लेटफॉर्म उच्च सीमाएं निर्धारित करते हैं।",
+       "जमा शुरू करने के बाद, आपको UPI भुगतान अनुरोध या बैंक ट्रांसफर विवरण प्राप्त होगा। अपने बैंकिंग ऐप के माध्यम से भुगतान पूरा करें। UPI के लिए धनराशि आमतौर पर सेकंडों में और IMPS के लिए कुछ घंटों तक आपके एक्सचेंज वॉलेट में दिखाई देती है। एक बार जमा होने के बाद, ट्रेडिंग अनुभाग पर जाएं, उस क्रिप्टोकरेंसी का चयन करें जिसे आप खरीदना चाहते हैं—Bitcoin, Ethereum, और USDT INR के खिलाफ सबसे तरल जोड़े हैं—और एक मार्केट या लिमिट ऑर्डर दें। एक्सचेंज लेनदेन मूल्य से 1% TDS काटेगा और शेष क्रिप्टो को आपके वॉलेट में जमा करेगा।",
+       "अपनी पहली खरीद के लिए, प्रक्रिया और इंटरफेस से परिचित होने के लिए एक छोटी राशि से शुरू करें। सत्यापित करें कि एक्सचेंज लेनदेन के कुछ सप्ताह बाद अपने फॉर्म 26AS की जांच करके TDS सही ढंग से रिपोर्ट करता है। हर व्यापार का विस्तृत रिकॉर्ड रखें, जिसमें तारीख, राशि, परिसंपत्ति, खरीद मूल्य और बिक्री मूल्य शामिल हों, क्योंकि आपको लाभ की गणना करने और सटीक रूप से कर दाखिल करने के लिए इनकी आवश्यकता होगी। भारत में क्रिप्टो कर और नियामक ढांचे का विकास जारी है, इसलिए सूचित रहना और साधारण खरीद-और-रखने से परे किसी भी चीज़ के लिए कर सलाहकार से परामर्श करना विवेकपूर्ण है। यह वित्तीय या कानूनी सलाह नहीं है।"
+      ]
+     }
+    ]
+   },
+   "en": {
+    "title": "How to Buy Cryptocurrency in India: INR Deposits, KYC, the 30% Tax and 1% TDS",
+    "excerpt": "India allows crypto trading but imposes strict tax rules and regulatory requirements. This guide covers INR deposit methods, mandatory KYC with PAN and Aadhaar, the 30% flat tax on gains with no loss offset, 1% TDS on transfers, and which exchanges can legally serve Indian residents.",
+    "sections": [
+     {
+      "h": "Which Exchanges Accept INR Deposits and How Banking Works",
+      "p": [
+       "Indian users can deposit INR on platforms registered with India's Financial Intelligence Unit (FIU-IND), which include WazirX, CoinDCX, ZebPay, and a handful of others that have completed compliance registration. These platforms typically accept deposits via UPI (Unified Payments Interface) and IMPS (Immediate Payment Service), though availability fluctuates based on the policies of individual banks and payment processors.",
+       "Banking friction remains a recurring issue. While the Supreme Court lifted the Reserve Bank of India's 2018 banking ban on crypto in 2020, individual banks retain discretion to block or limit transactions they consider high-risk. Some users report UPI payments being declined or accounts frozen after repeated crypto-related transfers. Using multiple bank accounts and avoiding frequent large transfers can reduce friction, though no method is foolproof. NEFT and RTGS transfers tend to face fewer automated blocks than UPI for larger amounts, but processing times are longer.",
+       "International exchanges like Binance, Kraken, and Coinbase do not hold FIU-IND registration and do not offer direct INR deposit or withdrawal services to Indian residents. Users who access these platforms typically fund accounts with stablecoins or cryptocurrency purchased elsewhere, which carries additional steps and often higher costs due to conversion spreads and network fees."
+      ]
+     },
+     {
+      "h": "KYC Requirements: PAN, Aadhaar and Verification Levels",
+      "p": [
+       "Every registered Indian exchange mandates Know Your Customer (KYC) verification before you can deposit INR or trade. At minimum, you must provide your Permanent Account Number (PAN) card, which ties your crypto activity to your income tax records, and identity proof, typically an Aadhaar card. Most platforms also require a live photo or video verification to match your face against your submitted documents.",
+       "Verification usually completes within a few hours to two business days. Some exchanges impose transaction limits on newly verified accounts that lift after a waiting period or additional document submission, such as a bank statement or address proof. If your PAN and Aadhaar are not linked in the government's database, some platforms may reject your KYC or require you to complete linking through the income tax e-filing portal before proceeding. This linking is a government requirement for tax purposes, not unique to crypto."
+      ]
+     },
+     {
+      "h": "The 30% Flat Tax on Crypto Gains with No Loss Offset",
+      "p": [
+       "Since the 2022 Finance Act, any income from the transfer of virtual digital assets is taxed at a flat rate of 30% under Section 115BBH of the Income Tax Act. This applies to all gains: short-term, long-term, trading profits, or appreciation on held assets. The only deduction allowed is the cost of acquisition; you cannot deduct transaction fees, platform charges, or losses from other crypto trades when calculating taxable income.",
+       "The prohibition on loss offset is particularly harsh. If you gain ₹100,000 on one trade and lose ₹100,000 on another in the same financial year, you still owe ₹30,000 in tax on the profitable trade. Losses cannot be carried forward to future years, and losses in crypto cannot offset gains in other asset classes. This structure makes frequent trading expensive from a tax perspective, as each profitable transaction generates a liability that losing trades cannot reduce.",
+       "These rules apply regardless of holding period or the nature of the asset. Tax is calculated on each disposal, whether you sell for INR, trade one crypto for another, or use crypto to purchase goods or services. Tax law in India evolves, and the government has indicated ongoing review of digital asset regulation, so consult a qualified tax professional familiar with current rules before filing. This is not tax advice."
+      ]
+     },
+     {
+      "h": "1% TDS Deducted at Source on Every Transfer",
+      "p": [
+       "In addition to the 30% tax on gains, Indian exchanges must deduct 1% Tax Deducted at Source (TDS) on the total transaction value every time you sell or transfer a virtual digital asset, as per Section 194S. This is not a tax on profit but on the gross amount of the sale. If you sell ₹100,000 worth of Bitcoin, the exchange withholds ₹1,000 and remits it to the income tax department, crediting it to your PAN.",
+       "TDS is withheld whether you make a profit or a loss. It applies to each leg of a trade: selling Bitcoin for INR incurs 1% TDS, and if you then buy Ethereum with that INR, another 1% is withheld on the purchase value. For active traders, TDS deductions accumulate quickly and can tie up significant capital until you file your annual tax return and claim any excess as a refund.",
+       "You can view TDS deducted in your name by checking Form 26AS on the income tax e-filing portal. The withheld amount is credited against your final tax liability when you file, so if your total tax owed is less than the TDS already deducted, you receive a refund. However, the refund process can take several months, and the interim cash-flow impact is real, especially for high-frequency traders."
+      ]
+     },
+     {
+      "h": "What FIU-IND Registration Means for Users",
+      "p": [
+       "The Financial Intelligence Unit-India (FIU-IND) requires all entities offering virtual digital asset services to Indian residents to register under the Prevention of Money Laundering Act (PMLA). Registration obligates exchanges to implement anti-money-laundering controls, report suspicious transactions, and maintain detailed user records. Only exchanges that have completed this registration can legally operate in India.",
+       "For users, this means the pool of compliant platforms is limited and shifts over time. Several international exchanges that previously served Indian customers either withdrew or restricted services after the registration mandate took effect. Platforms that operate without FIU-IND registration face enforcement risk, including potential blocking of their websites or services by Indian authorities. While some users access unregistered offshore exchanges via VPNs or peer-to-peer channels, doing so carries legal uncertainty and offers no recourse if funds are lost or frozen.",
+       "Before depositing funds, verify that an exchange holds active FIU-IND registration. The FIU-IND does not publish a live public registry, but registered exchanges typically display their registration status on their websites or in help documentation. If uncertain, contact customer support and request confirmation of registration number and date. Using an unregistered platform does not exempt you from the 30% tax or 1% TDS; your tax obligations remain regardless of where you trade."
+      ]
+     },
+     {
+      "h": "Peer-to-Peer Platforms and Informal Channels",
+      "p": [
+       "Peer-to-peer (P2P) platforms allow users to buy and sell crypto directly with one another, with the platform acting as an escrow. Registered Indian exchanges like WazirX and CoinDCX offer built-in P2P marketplaces where you can purchase crypto using UPI, IMPS, bank transfer, or even PayTM from individual sellers. Prices on P2P markets often carry a premium of 1-5% above global spot rates due to local demand and banking friction.",
+       "P2P trades still trigger the same tax obligations: any gain is subject to the 30% tax, and the platform deducts 1% TDS on each transaction. The main advantage of P2P is flexibility in payment methods and sometimes better availability when direct INR deposit channels face disruptions. However, counterparty risk exists; always use the platform's escrow and dispute resolution rather than transferring funds outside the platform, and be cautious of sellers requesting off-platform payment, which removes buyer protection and can be a vector for fraud."
+      ]
+     },
+     {
+      "h": "Steps to Buy Your First Crypto with INR",
+      "p": [
+       "Choose a registered exchange—WazirX, CoinDCX, and ZebPay are the most widely used. Download the app or visit the website and begin KYC by submitting your PAN card, Aadhaar, a live photo, and bank account details. Approval typically takes a few hours. Once verified, navigate to the deposit section and select UPI or IMPS. Enter the amount you wish to deposit; minimum deposits are usually ₹100, though some platforms set higher thresholds.",
+       "After initiating the deposit, you will receive a UPI payment request or bank transfer details. Complete the payment through your banking app. Funds generally reflect in your exchange wallet within seconds for UPI and up to a few hours for IMPS. Once credited, go to the trading section, select the cryptocurrency you want to buy—Bitcoin, Ethereum, and USDT are the most liquid pairs against INR—and place a market or limit order. The exchange will deduct 1% TDS from the transaction value and credit the remaining crypto to your wallet.",
+       "For your first purchase, start with a small amount to familiarize yourself with the process and interface. Verify that the exchange reports TDS correctly by checking your Form 26AS a few weeks after the transaction. Keep detailed records of every trade, including date, amount, asset, purchase price, and sale price, since you will need these to calculate gains and file taxes accurately. Crypto tax and regulatory frameworks in India continue to develop, so staying informed and consulting a tax advisor for anything beyond simple buy-and-hold is prudent. This is not financial or legal advice."
+      ]
+     }
+    ]
+   }
+  }
  }
 ]
