@@ -265,4 +265,38 @@ function walk(dir, acc) {
   console.log('\u043f\u0440\u043e\u0432\u0435\u0440\u0435\u043d\u043e \u0441\u0442\u0440\u0430\u043d\u0438\u0446: ' + pages.length + ', \u0431\u0438\u0442\u044b\u0445 \u0441\u0441\u044b\u043b\u043e\u043a: ' + broken.size);
 }
 
+// Аналитика. Ловим две противоположные ошибки:
+//  - счётчик забыли выключить и он висит на всех страницах, пока id пустой (лишний внешний запрос);
+//  - id заведён, но скрипт не попал на страницы или партнёрские ссылки без data-offer —
+//    тогда счётчик покажет визиты и НЕ покажет главное: дошёл ли кто-то до партнёрки.
+{
+  const anFile = path.join(__dirname, 'data/analytics.json');
+  const an = fs.existsSync(anFile) ? JSON.parse(fs.readFileSync(anFile, 'utf8')) : {};
+  const ga4 = String(an.ga4 || '');
+  const pages = walk(DIST, []).filter(f => path.relative(DIST, f) !== 'index.html');
+  let withGa = 0, withEvent = 0, ctas = 0, ctasTagged = 0;
+  for (const f of pages) {
+    const h = fs.readFileSync(f, 'utf8');
+    if (h.includes('googletagmanager.com/gtag/js?id=' + (ga4 || '\u0000'))) withGa++;
+    if (h.includes("'affiliate_click'")) withEvent++;
+    // внутренняя навигация тоже носит класс cta — она не оффер, метка ей не нужна
+    for (const m of h.matchAll(/<a class="cta"([^>]*)>/g)) {
+      if (!/href="https?:\/\//.test(m[1])) continue;
+      ctas++;
+      if (/data-offer="[^"]+"/.test(m[1])) ctasTagged++;
+    }
+  }
+  check(ctas > 0, '\u043d\u0438 \u043e\u0434\u043d\u043e\u0439 \u043f\u0430\u0440\u0442\u043d\u0451\u0440\u0441\u043a\u043e\u0439 \u043a\u043d\u043e\u043f\u043a\u0438 \u043d\u0430 \u0441\u0430\u0439\u0442\u0435 \u0432\u043e\u043e\u0431\u0449\u0435');
+  check(ctas === ctasTagged, '\u043f\u0430\u0440\u0442\u043d\u0451\u0440\u0441\u043a\u0438\u0435 \u043a\u043d\u043e\u043f\u043a\u0438 \u0431\u0435\u0437 data-offer: ' + (ctas - ctasTagged) + ' \u0438\u0437 ' + ctas + ' \u2014 \u043a\u043b\u0438\u043a\u0438 \u043f\u043e \u043d\u0438\u043c \u043d\u0435 \u0431\u0443\u0434\u0443\u0442 \u0441\u0447\u0438\u0442\u0430\u0442\u044c\u0441\u044f');
+  if (ga4) {
+    check(withGa === pages.length, 'GA4 \u0437\u0430\u0432\u0435\u0434\u0451\u043d, \u043d\u043e \u0441\u0447\u0451\u0442\u0447\u0438\u043a \u0435\u0441\u0442\u044c \u0442\u043e\u043b\u044c\u043a\u043e \u043d\u0430 ' + withGa + ' \u0438\u0437 ' + pages.length + ' \u0441\u0442\u0440\u0430\u043d\u0438\u0446');
+    check(withEvent === pages.length, 'GA4 \u0437\u0430\u0432\u0435\u0434\u0451\u043d, \u043d\u043e \u0441\u043e\u0431\u044b\u0442\u0438\u0435 affiliate_click \u0435\u0441\u0442\u044c \u0442\u043e\u043b\u044c\u043a\u043e \u043d\u0430 ' + withEvent + ' \u0438\u0437 ' + pages.length + ' \u0441\u0442\u0440\u0430\u043d\u0438\u0446');
+  } else {
+    let ext = 0;
+    for (const f of pages) if (fs.readFileSync(f, 'utf8').includes('googletagmanager')) ext++;
+    check(ext === 0, 'ga4 \u043f\u0443\u0441\u0442, \u043d\u043e googletagmanager \u043e\u0441\u0442\u0430\u043b\u0441\u044f \u043d\u0430 ' + ext + ' \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0430\u0445');
+  }
+  console.log('analytics: ga4 ' + (ga4 || '\u043f\u0443\u0441\u0442') + ', \u043f\u0430\u0440\u0442\u043d\u0451\u0440\u0441\u043a\u0438\u0445 \u043a\u043d\u043e\u043f\u043e\u043a \u0441 data-offer: ' + ctasTagged + '/' + ctas);
+}
+
 if (fails){console.error(fails+' failures');process.exit(1);} console.log('OK - all checks passed');

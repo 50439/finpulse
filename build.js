@@ -81,6 +81,28 @@ const tgFor = lang => tgChannels[lang] || null;
 console.log('telegram: публичных каналов для сайта — ' + Object.keys(tgChannels).length +
   ' (' + Object.keys(tgChannels).join(', ') + ')');
 
+// Аналитика. Без неё нельзя ответить на вопрос «трафик доходит до партнёрской ссылки?» —
+// а без этого ответа любой платный или бесплатный источник трафика оценивать нечем.
+// Пустой ga4 = ни одного внешнего запроса со страницы. Так и должно быть, пока id не заведён.
+const AN_FILE = path.join(ROOT, 'data/analytics.json');
+const anRaw = fs.existsSync(AN_FILE) ? JSON.parse(fs.readFileSync(AN_FILE, 'utf8')) : {};
+const GA4 = /^G-[A-Z0-9]{6,}$/.test(String(anRaw.ga4 || '')) ? String(anRaw.ga4) : '';
+if (anRaw.ga4 && !GA4) throw new Error('data/analytics.json: ga4 "' + anRaw.ga4 + '" не похож на идентификатор GA4 (G-XXXXXXXXXX)');
+console.log('analytics: ' + (GA4 ? 'GA4 ' + GA4 + ', cookieless' : 'выключена (ga4 пуст)'));
+
+// Счётчик грузится только при непустом id. storage:'none' — без cookies, поэтому
+// баннер согласия не нужен ни на одной из европейских языковых версий.
+const analyticsHead = () => GA4 ? '<script async src="https://www.googletagmanager.com/gtag/js?id=' + GA4 + '"></script>\n' +
+  '<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag(\'js\',new Date());' +
+  'gtag(\'config\',\'' + GA4 + '\',{client_storage:\'none\',anonymize_ip:true});</script>\n' : '';
+
+// Делегированный обработчик: одна ссылка на страницу не нужна — ловим всплытие.
+// data-offer проставляется на каждой партнёрской ссылке в offerCard().
+const analyticsBody = lang => GA4 ? '\n<script>document.addEventListener(\'click\',function(e){' +
+  'var a=e.target.closest&&e.target.closest(\'a[data-offer]\');if(!a||!window.gtag)return;' +
+  'gtag(\'event\',\'affiliate_click\',{offer:a.getAttribute(\'data-offer\'),lang:\'' + lang + '\',page_path:location.pathname});' +
+  '},{passive:true});</script>' : '';
+
 const TG_LABEL = { en: 'Our Telegram', uk: '\u041d\u0430\u0448 Telegram', ru: '\u041d\u0430\u0448 Telegram', es: 'Nuestro Telegram',
   pt: 'Nosso Telegram', de: 'Unser Telegram', fr: 'Notre Telegram', ar: '\u062a\u0644\u064a\u062c\u0631\u0627\u0645 \u0627\u0644\u062e\u0627\u0635 \u0628\u0646\u0627',
   zh: '\u6211\u4eec\u7684 Telegram', hi: '\u0939\u092e\u093e\u0930\u093e Telegram', id: 'Telegram Kami', vi: 'Telegram c\u1ee7a ch\u00fang t\u00f4i',
@@ -248,9 +270,10 @@ function page(opt) {
     '<link rel="icon" type="image/png" sizes="32x32" href="' + BASE + '/favicon-32.png">\n<link rel="icon" type="image/png" sizes="192x192" href="' + BASE + '/favicon-192.png">\n<link rel="apple-touch-icon" href="' + BASE + '/apple-touch-icon.png">\n' +
     '<link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>\\uD83D\\uDCC8</text></svg>">\n' +
     (jsonld ? '<script type="application/ld+json">' + JSON.stringify(jsonld) + '</script>\n' : '') +
+    analyticsHead() +
     '<style>' + CSS + '</style>\n</head>\n<body>\n' +
     header(lang, pathFn, hreflangs) + '\n' + body + '\n' + footer(lang) +
-    '\n<script>' + TICKER_JS + '</script>\n</body>\n</html>';
+    '\n<script>' + TICKER_JS + '</script>' + analyticsBody(lang) + '\n</body>\n</html>';
 }
 
 function header(lang, pathFn, only) {
@@ -288,7 +311,7 @@ function offerCard(o, lang, top) {
     '<div class="orate">\u2605 ' + o.rating + '</div></div>' +
     '<div class="obonus">\uD83C\uDF81 ' + esc(o.bonus[lang] || o.bonus.en) + '</div>' +
     '<ul class="ofeat">' + (o.features[lang] || o.features.en).map(f => '<li>' + esc(f) + '</li>').join('') + '</ul>' +
-    '<a class="cta" href="' + o.url + '" rel="nofollow sponsored noopener" target="_blank">' + esc(S('startTrading', lang)) + ' \u2192</a>' +
+    '<a class="cta" data-offer="' + esc(o.id) + '" href="' + o.url + '" rel="nofollow sponsored noopener" target="_blank">' + esc(S('startTrading', lang)) + ' \u2192</a>' +
     '</div>';
 }
 
@@ -406,7 +429,7 @@ for (const lang of LANGS) {
         '<div class="strip">' + topOffers.map(o => offerCard(o, lang)).join('') + '</div>' +
         '</main>' +
         (topOffers.length
-          ? '<div class="mcta"><div class="t">\uD83C\uDF81 ' + esc(topOffers[0].bonus[lang] || topOffers[0].bonus.en) + '</div><a class="cta" href="' + topOffers[0].url + '" rel="nofollow sponsored noopener" target="_blank">' + esc(S('startTrading', lang)) + '</a></div>'
+          ? '<div class="mcta"><div class="t">\uD83C\uDF81 ' + esc(topOffers[0].bonus[lang] || topOffers[0].bonus.en) + '</div><a class="cta" data-offer="' + esc(topOffers[0].id) + '" href="' + topOffers[0].url + '" rel="nofollow sponsored noopener" target="_blank">' + esc(S('startTrading', lang)) + '</a></div>'
           : '')
     });
     // Страховка: оффер, запрещённый рекламодателем для редакционного контента,
@@ -476,7 +499,7 @@ for (const lang of LANGS) {
           '<div class="strip">' + topOffers.map(o => offerCard(o, lang)).join('') + '</div>' +
           '</main>' +
           (topOffers.length
-            ? '<div class="mcta"><div class="t">\uD83C\uDF81 ' + esc(topOffers[0].bonus[lang] || topOffers[0].bonus.en) + '</div><a class="cta" href="' + topOffers[0].url + '" rel="nofollow sponsored noopener" target="_blank">' + esc(S('startTrading', lang)) + '</a></div>'
+            ? '<div class="mcta"><div class="t">\uD83C\uDF81 ' + esc(topOffers[0].bonus[lang] || topOffers[0].bonus.en) + '</div><a class="cta" data-offer="' + esc(topOffers[0].id) + '" href="' + topOffers[0].url + '" rel="nofollow sponsored noopener" target="_blank">' + esc(S('startTrading', lang)) + '</a></div>'
             : '')
       });
       // \u0422\u0430 \u0436\u0435 \u0441\u0442\u0440\u0430\u0445\u043e\u0432\u043a\u0430, \u0447\u0442\u043e \u0438 \u0434\u043b\u044f \u0441\u0442\u0430\u0442\u0435\u0439: \u0433\u0430\u0439\u0434 \u2014 \u044d\u0442\u043e \u043a\u043e\u043d\u0442\u0435\u043d\u0442, \u0430 \u043d\u0435 \u0432\u0438\u0442\u0440\u0438\u043d\u0430.
