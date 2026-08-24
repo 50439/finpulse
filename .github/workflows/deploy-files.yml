@@ -94,6 +94,7 @@ jobs:
           node build.test.js
           node scripts/dedup.test.js
           node scripts/telegram.test.js
+          node scripts/guides.test.js
 
       - name: Commit
         if: env.NOTHING != '1'

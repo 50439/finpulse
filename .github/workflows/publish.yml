@@ -38,6 +38,8 @@ jobs:
         run: node scripts/dedup.test.js
       - name: Test telegram multi-channel routing
         run: node scripts/telegram.test.js
+      - name: Test guide generation (JSON repair, top-up)
+        run: node scripts/guides.test.js
       # Статьи генерируем ТОЛЬКО по расписанию или вручную.
       # Раньше шаг запускался и на push: каждый коммит с правкой кода порождал
       # ещё 2 статьи. 22.08 получилось 7 прогонов вместо 4 за сутки.
