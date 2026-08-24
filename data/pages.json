@@ -1,0 +1,489 @@
+{
+ "about": {
+  "emoji": "ℹ️",
+  "order": 1,
+  "title": {
+   "en": "About FinPulse",
+   "ru": "О проекте FinPulse",
+   "uk": "Про проєкт FinPulse",
+   "es": "Sobre FinPulse",
+   "pt": "Sobre a FinPulse",
+   "de": "Über FinPulse",
+   "fr": "À propos de FinPulse",
+   "pl": "O projekcie FinPulse",
+   "tr": "FinPulse Hakkında",
+   "id": "Tentang FinPulse",
+   "vi": "Giới thiệu FinPulse",
+   "th": "เกี่ยวกับ FinPulse",
+   "ja": "FinPulseについて",
+   "ko": "FinPulse 소개",
+   "zh": "关于 FinPulse",
+   "hi": "FinPulse के बारे में",
+   "ar": "عن FinPulse"
+  },
+  "body": {
+   "en": [
+    "FinPulse is an independent publication about cryptocurrency and financial markets. We publish news in 17 languages and long-form country guides on how to buy, store and declare crypto legally.",
+    "**How the news is made.** Items are compiled from public sources: exchange and regulator announcements, company press releases and established financial media. Every article is dated and shows when it was published.",
+    "**How the guides are made.** Country guides are written from primary sources — national regulator registers, official fee schedules and published tax rules. Where a rule can change, we say which authority sets it so you can check it yourself.",
+    "**Use of AI.** Texts are prepared with the help of AI language models and reviewed before publication. We consider this worth stating plainly rather than hiding.",
+    "**What we are not.** We are not a licensed financial adviser, broker or exchange. We do not manage money, accept deposits or give personal recommendations. See the Disclosure page for how the site is funded.",
+    "Found an error? Write to us — corrections are made quickly and we are glad to receive them."
+   ],
+   "ru": [
+    "FinPulse — независимое издание о криптовалютах и финансовых рынках. Мы публикуем новости на 17 языках и подробные страновые руководства о том, как легально купить, хранить и задекларировать криптовалюту.",
+    "**Как делаются новости.** Материалы составляются по открытым источникам: сообщениям бирж и регуляторов, пресс-релизам компаний и признанным финансовым медиа. У каждой статьи проставлена дата публикации.",
+    "**Как делаются руководства.** Страновые гайды пишутся по первоисточникам — реестрам национальных регуляторов, официальным тарифным сеткам и опубликованным налоговым правилам. Если правило может измениться, мы называем ведомство, которое его устанавливает, чтобы вы могли проверить сами.",
+    "**Использование ИИ.** Тексты готовятся с помощью языковых моделей и проверяются перед публикацией. Мы считаем правильным сказать об этом прямо, а не умалчивать.",
+    "**Чем мы не являемся.** Мы не лицензированный финансовый советник, не брокер и не биржа. Мы не управляем деньгами, не принимаем депозиты и не даём персональных рекомендаций. О том, на чём зарабатывает сайт, — на странице «Раскрытие».",
+    "Нашли ошибку? Напишите нам — правки вносятся быстро, и мы им рады."
+   ],
+   "uk": [
+    "FinPulse — незалежне видання про криптовалюти та фінансові ринки. Ми публікуємо новини 17 мовами й докладні країнові посібники про те, як легально купити, зберігати та задекларувати криптовалюту.",
+    "**Як робляться новини.** Матеріали складаються з відкритих джерел: повідомлень бірж і регуляторів, пресрелізів компаній та визнаних фінансових медіа. Кожна стаття має дату публікації.",
+    "**Як робляться посібники.** Країнові гайди пишуться за першоджерелами — реєстрами національних регуляторів, офіційними тарифними сітками та опублікованими податковими правилами. Якщо правило може змінитися, ми називаємо відомство, яке його встановлює, щоб ви могли перевірити самі.",
+    "**Використання ШІ.** Тексти готуються за допомогою мовних моделей і перевіряються перед публікацією. Вважаємо за правильне сказати про це прямо, а не замовчувати.",
+    "**Чим ми не є.** Ми не ліцензований фінансовий радник, не брокер і не біржа. Ми не управляємо грошима, не приймаємо депозитів і не даємо персональних рекомендацій. Про те, на чому заробляє сайт, — на сторінці «Розкриття».",
+    "Знайшли помилку? Напишіть нам — правки вносимо швидко і раді їм."
+   ],
+   "es": [
+    "FinPulse es una publicación independiente sobre criptomonedas y mercados financieros. Publicamos noticias en 17 idiomas y guías detalladas por país sobre cómo comprar, custodiar y declarar criptomonedas legalmente.",
+    "**Cómo se hacen las noticias.** Se elaboran a partir de fuentes públicas: comunicados de exchanges y reguladores, notas de prensa de empresas y medios financieros reconocidos. Cada artículo lleva su fecha de publicación.",
+    "**Cómo se hacen las guías.** Las guías por país se escriben a partir de fuentes primarias: registros de reguladores nacionales, tarifas oficiales y normas fiscales publicadas. Cuando una norma puede cambiar, indicamos qué organismo la fija para que usted pueda comprobarlo.",
+    "**Uso de IA.** Los textos se preparan con ayuda de modelos de lenguaje y se revisan antes de publicarse. Preferimos decirlo abiertamente en lugar de ocultarlo.",
+    "**Lo que no somos.** No somos asesores financieros con licencia, ni brókeres, ni un exchange. No gestionamos dinero, no aceptamos depósitos ni damos recomendaciones personales. Cómo se financia el sitio: página de Divulgación.",
+    "¿Ha encontrado un error? Escríbanos: corregimos rápido y agradecemos los avisos."
+   ],
+   "pt": [
+    "A FinPulse é uma publicação independente sobre criptomoedas e mercados financeiros. Publicamos notícias em 17 idiomas e guias detalhados por país sobre como comprar, guardar e declarar criptomoedas legalmente.",
+    "**Como as notícias são feitas.** São compiladas de fontes públicas: comunicados de exchanges e reguladores, releases de empresas e veículos financeiros reconhecidos. Cada artigo traz a data de publicação.",
+    "**Como os guias são feitos.** Os guias por país são escritos a partir de fontes primárias: registros de reguladores nacionais, tabelas oficiais de tarifas e regras fiscais publicadas. Quando uma regra pode mudar, indicamos qual órgão a define para que você possa verificar.",
+    "**Uso de IA.** Os textos são preparados com apoio de modelos de linguagem e revisados antes da publicação. Preferimos dizer isso abertamente a omitir.",
+    "**O que não somos.** Não somos consultores financeiros licenciados, corretora nem exchange. Não gerimos dinheiro, não aceitamos depósitos e não damos recomendações pessoais. Como o site se sustenta: página de Divulgação.",
+    "Encontrou um erro? Escreva — corrigimos rápido e agradecemos o aviso."
+   ],
+   "de": [
+    "FinPulse ist eine unabhängige Publikation über Kryptowährungen und Finanzmärkte. Wir veröffentlichen Nachrichten in 17 Sprachen und ausführliche Länderratgeber dazu, wie man Krypto legal kauft, verwahrt und deklariert.",
+    "**Wie die Nachrichten entstehen.** Sie werden aus öffentlichen Quellen zusammengestellt: Mitteilungen von Börsen und Aufsichtsbehörden, Pressemitteilungen von Unternehmen und etablierten Finanzmedien. Jeder Artikel trägt sein Veröffentlichungsdatum.",
+    "**Wie die Ratgeber entstehen.** Länderratgeber werden aus Primärquellen geschrieben: Registern nationaler Aufsichtsbehörden, offiziellen Gebührenverzeichnissen und veröffentlichten Steuerregeln. Wenn sich eine Regel ändern kann, nennen wir die zuständige Behörde, damit Sie selbst nachprüfen können.",
+    "**Einsatz von KI.** Die Texte werden mit Hilfe von Sprachmodellen erstellt und vor der Veröffentlichung geprüft. Wir halten es für richtig, das offen zu sagen, statt es zu verschweigen.",
+    "**Was wir nicht sind.** Wir sind kein lizenzierter Finanzberater, kein Broker und keine Börse. Wir verwalten kein Geld, nehmen keine Einlagen entgegen und geben keine persönlichen Empfehlungen. Wie sich die Seite finanziert: Seite „Offenlegung“.",
+    "Einen Fehler gefunden? Schreiben Sie uns — Korrekturen erfolgen schnell und wir freuen uns über Hinweise."
+   ],
+   "fr": [
+    "FinPulse est une publication indépendante consacrée aux cryptomonnaies et aux marchés financiers. Nous publions des actualités en 17 langues et des guides détaillés par pays sur l'achat, la conservation et la déclaration légale des cryptomonnaies.",
+    "**Comment sont faites les actualités.** Elles sont établies à partir de sources publiques : communiqués des plateformes et des régulateurs, communiqués de presse d'entreprises et médias financiers reconnus. Chaque article porte sa date de publication.",
+    "**Comment sont faits les guides.** Les guides par pays sont rédigés à partir de sources primaires : registres des régulateurs nationaux, grilles tarifaires officielles et règles fiscales publiées. Lorsqu'une règle peut évoluer, nous indiquons l'autorité qui la fixe afin que vous puissiez vérifier vous-même.",
+    "**Recours à l'IA.** Les textes sont préparés à l'aide de modèles de langage et relus avant publication. Nous préférons le dire clairement plutôt que de le taire.",
+    "**Ce que nous ne sommes pas.** Nous ne sommes ni conseiller financier agréé, ni courtier, ni plateforme d'échange. Nous ne gérons pas d'argent, n'acceptons pas de dépôts et ne donnons aucune recommandation personnelle. Le financement du site est expliqué sur la page Divulgation.",
+    "Vous avez repéré une erreur ? Écrivez-nous : les corrections sont rapides et vos signalements sont les bienvenus."
+   ],
+   "pl": [
+    "FinPulse to niezależny serwis o kryptowalutach i rynkach finansowych. Publikujemy wiadomości w 17 językach oraz szczegółowe poradniki krajowe o tym, jak legalnie kupić, przechowywać i rozliczyć kryptowaluty.",
+    "**Jak powstają wiadomości.** Opracowujemy je na podstawie źródeł publicznych: komunikatów giełd i regulatorów, informacji prasowych firm oraz uznanych mediów finansowych. Każdy artykuł ma datę publikacji.",
+    "**Jak powstają poradniki.** Poradniki krajowe piszemy na podstawie źródeł pierwotnych: rejestrów krajowych regulatorów, oficjalnych tabel opłat i opublikowanych przepisów podatkowych. Gdy zasada może się zmienić, wskazujemy organ, który ją ustala, abyś mógł sprawdzić samodzielnie.",
+    "**Wykorzystanie AI.** Teksty przygotowujemy z pomocą modeli językowych i sprawdzamy przed publikacją. Uważamy, że lepiej powiedzieć to wprost niż przemilczeć.",
+    "**Czym nie jesteśmy.** Nie jesteśmy licencjonowanym doradcą finansowym, brokerem ani giełdą. Nie zarządzamy pieniędzmi, nie przyjmujemy depozytów i nie udzielamy osobistych rekomendacji. O tym, z czego utrzymuje się serwis, piszemy na stronie „Ujawnienie”.",
+    "Znalazłeś błąd? Napisz do nas — poprawki wprowadzamy szybko i jesteśmy za nie wdzięczni."
+   ],
+   "tr": [
+    "FinPulse, kripto paralar ve finansal piyasalar üzerine bağımsız bir yayındır. 17 dilde haber ve kripto paranın yasal olarak nasıl satın alınacağı, saklanacağı ve beyan edileceğine dair ayrıntılı ülke rehberleri yayımlıyoruz.",
+    "**Haberler nasıl hazırlanıyor.** Açık kaynaklardan derleniyor: borsa ve düzenleyici duyuruları, şirket basın bültenleri ve saygın finans medyası. Her yazıda yayın tarihi bulunur.",
+    "**Rehberler nasıl hazırlanıyor.** Ülke rehberleri birincil kaynaklardan yazılıyor: ulusal düzenleyici kayıtları, resmi ücret tarifeleri ve yayımlanmış vergi kuralları. Bir kural değişebiliyorsa, kendiniz kontrol edebilmeniz için kuralı belirleyen kurumu belirtiyoruz.",
+    "**Yapay zekâ kullanımı.** Metinler dil modelleri yardımıyla hazırlanıyor ve yayından önce gözden geçiriliyor. Bunu gizlemek yerine açıkça söylemeyi doğru buluyoruz.",
+    "**Ne değiliz.** Lisanslı finansal danışman, aracı kurum veya borsa değiliz. Para yönetmiyor, mevduat kabul etmiyor ve kişisel tavsiye vermiyoruz. Sitenin nasıl finanse edildiği için Açıklama sayfasına bakın.",
+    "Hata mı buldunuz? Bize yazın — düzeltmeleri hızla yapıyoruz ve bildirimlerden memnun oluruz."
+   ],
+   "id": [
+    "FinPulse adalah publikasi independen tentang kripto dan pasar keuangan. Kami menerbitkan berita dalam 17 bahasa serta panduan per negara yang rinci tentang cara membeli, menyimpan, dan melaporkan kripto secara legal.",
+    "**Bagaimana berita dibuat.** Disusun dari sumber publik: pengumuman bursa dan regulator, siaran pers perusahaan, serta media keuangan tepercaya. Setiap artikel mencantumkan tanggal terbit.",
+    "**Bagaimana panduan dibuat.** Panduan negara ditulis dari sumber primer: daftar resmi regulator nasional, tabel biaya resmi, dan aturan pajak yang dipublikasikan. Jika sebuah aturan bisa berubah, kami sebutkan lembaga yang menetapkannya agar Anda dapat memeriksa sendiri.",
+    "**Penggunaan AI.** Teks disiapkan dengan bantuan model bahasa dan diperiksa sebelum terbit. Kami memilih menyatakannya terus terang daripada menyembunyikannya.",
+    "**Kami bukan apa.** Kami bukan penasihat keuangan berlisensi, bukan broker, bukan bursa. Kami tidak mengelola dana, tidak menerima setoran, dan tidak memberi rekomendasi pribadi. Sumber pendanaan situs ada di halaman Pengungkapan.",
+    "Menemukan kekeliruan? Tulis kepada kami — koreksi kami lakukan cepat dan kami menyambutnya."
+   ],
+   "vi": [
+    "FinPulse là ấn phẩm độc lập về tiền mã hóa và thị trường tài chính. Chúng tôi đăng tin tức bằng 17 ngôn ngữ và các hướng dẫn chi tiết theo quốc gia về cách mua, lưu trữ và kê khai tiền mã hóa hợp pháp.",
+    "**Tin tức được làm thế nào.** Được tổng hợp từ nguồn công khai: thông báo của sàn và cơ quan quản lý, thông cáo báo chí của doanh nghiệp và các báo tài chính uy tín. Mỗi bài đều ghi ngày đăng.",
+    "**Hướng dẫn được làm thế nào.** Hướng dẫn theo quốc gia được viết từ nguồn gốc: danh bạ của cơ quan quản lý quốc gia, biểu phí chính thức và quy định thuế đã công bố. Khi một quy định có thể thay đổi, chúng tôi nêu rõ cơ quan ban hành để bạn tự kiểm chứng.",
+    "**Sử dụng AI.** Văn bản được soạn với sự hỗ trợ của mô hình ngôn ngữ và được rà soát trước khi đăng. Chúng tôi thấy nên nói thẳng điều này thay vì giấu.",
+    "**Chúng tôi không phải là gì.** Chúng tôi không phải cố vấn tài chính có giấy phép, không phải môi giới, không phải sàn giao dịch. Chúng tôi không quản lý tiền, không nhận tiền gửi và không đưa khuyến nghị cá nhân. Nguồn thu của trang được nêu ở trang Công bố.",
+    "Phát hiện sai sót? Hãy viết cho chúng tôi — chúng tôi sửa nhanh và luôn hoan nghênh phản hồi."
+   ],
+   "th": [
+    "FinPulse เป็นสื่ออิสระด้านคริปโทเคอร์เรนซีและตลาดการเงิน เราเผยแพร่ข่าวใน 17 ภาษา พร้อมคู่มือรายประเทศแบบละเอียดว่าจะซื้อ เก็บรักษา และแจ้งภาษีคริปโทอย่างถูกกฎหมายได้อย่างไร",
+    "**ข่าวจัดทำอย่างไร** เรารวบรวมจากแหล่งสาธารณะ ได้แก่ ประกาศของเอ็กซ์เชนจ์และหน่วยงานกำกับดูแล ข่าวประชาสัมพันธ์ของบริษัท และสื่อการเงินที่เชื่อถือได้ ทุกบทความระบุวันที่เผยแพร่",
+    "**คู่มือจัดทำอย่างไร** คู่มือรายประเทศเขียนจากแหล่งข้อมูลปฐมภูมิ ได้แก่ ทะเบียนของหน่วยงานกำกับดูแลในประเทศ ตารางค่าธรรมเนียมทางการ และกฎภาษีที่ประกาศแล้ว เมื่อกฎอาจเปลี่ยนแปลง เราจะระบุหน่วยงานที่กำหนดกฎนั้นเพื่อให้คุณตรวจสอบเองได้",
+    "**การใช้ AI** เนื้อหาจัดทำโดยใช้แบบจำลองภาษาช่วย และตรวจทานก่อนเผยแพร่ เราเห็นว่าควรบอกตรง ๆ มากกว่าปกปิด",
+    "**สิ่งที่เราไม่ใช่** เราไม่ใช่ที่ปรึกษาการเงินที่มีใบอนุญาต ไม่ใช่โบรกเกอร์ และไม่ใช่เอ็กซ์เชนจ์ เราไม่บริหารเงิน ไม่รับฝากเงิน และไม่ให้คำแนะนำเฉพาะบุคคล รายละเอียดว่าเว็บไซต์มีรายได้อย่างไรอยู่ในหน้าการเปิดเผยข้อมูล",
+    "พบข้อผิดพลาดหรือไม่ เขียนถึงเราได้ เราแก้ไขอย่างรวดเร็วและยินดีรับแจ้ง"
+   ],
+   "ja": [
+    "FinPulseは暗号資産と金融市場を扱う独立系メディアです。17言語でニュースを配信し、暗号資産を合法的に購入・保管・申告する方法を国別に詳しく解説したガイドを掲載しています。",
+    "**ニュースの作り方。** 取引所や規制当局の発表、企業のプレスリリース、定評ある金融メディアなど公開情報をもとに構成しています。各記事には公開日を明記しています。",
+    "**ガイドの作り方。** 国別ガイドは一次情報から執筆します。各国規制当局の登録簿、公式の手数料表、公表された税制ルールなどです。変更されうる規則については、ご自身で確認できるよう所管当局名を示します。",
+    "**AIの利用。** 本文は言語モデルを用いて作成し、公開前に確認しています。これは隠すのではなく明示すべきことだと考えています。",
+    "**当サイトでないもの。** 当サイトは登録済みの金融アドバイザー、ブローカー、取引所のいずれでもありません。資金を運用せず、預託も受け付けず、個別の推奨も行いません。運営資金については「開示」ページをご覧ください。",
+    "誤りを見つけた場合はご連絡ください。訂正は速やかに行い、ご指摘を歓迎します。"
+   ],
+   "ko": [
+    "FinPulse는 암호화폐와 금융시장을 다루는 독립 매체입니다. 17개 언어로 뉴스를 발행하고, 암호화폐를 합법적으로 구매·보관·신고하는 방법을 국가별로 상세히 다룬 가이드를 제공합니다.",
+    "**뉴스 제작 방식.** 거래소와 규제기관의 공지, 기업 보도자료, 신뢰받는 금융 매체 등 공개 자료를 바탕으로 작성합니다. 모든 기사에는 발행일이 표기됩니다.",
+    "**가이드 제작 방식.** 국가별 가이드는 1차 자료를 근거로 씁니다. 각국 규제기관 등록부, 공식 수수료표, 공표된 세법 규정 등입니다. 규정이 바뀔 수 있는 경우 직접 확인하실 수 있도록 해당 규정을 정하는 기관명을 밝힙니다.",
+    "**AI 활용.** 본문은 언어 모델의 도움을 받아 작성하고 게시 전에 검토합니다. 숨기기보다 분명히 밝히는 편이 옳다고 봅니다.",
+    "**우리가 아닌 것.** 저희는 인가받은 금융자문사도, 중개업자도, 거래소도 아닙니다. 자금을 운용하지 않고 예치를 받지 않으며 개인별 권유를 하지 않습니다. 사이트 운영 재원은 '공시' 페이지를 참고하십시오.",
+    "오류를 발견하셨다면 알려주십시오. 정정은 신속히 반영하며 제보를 환영합니다."
+   ],
+   "zh": [
+    "FinPulse 是一家独立的加密货币与金融市场媒体。我们以 17 种语言发布新闻，并提供按国家划分的详细指南，说明如何合法购买、保管和申报加密货币。",
+    "**新闻如何形成。** 内容取自公开来源：交易所与监管机构的公告、企业新闻稿以及有公信力的财经媒体。每篇文章均标注发布日期。",
+    "**指南如何形成。** 国别指南依据一手资料撰写：各国监管机构的登记名录、官方费率表和已公布的税收规则。若某项规定可能变动，我们会指明制定该规定的机构，方便您自行核实。",
+    "**关于人工智能。** 文本借助语言模型撰写，并在发布前经过复核。我们认为将这一点直接说明，胜过避而不谈。",
+    "**我们不是什么。** 我们不是持牌财务顾问、经纪商或交易所。我们不管理资金、不接受存款，也不提供个人化建议。网站的收入来源见「披露」页面。",
+    "发现错误？请与我们联系——更正会尽快处理，我们欢迎读者指出问题。"
+   ],
+   "hi": [
+    "FinPulse क्रिप्टोकरेंसी और वित्तीय बाज़ारों पर एक स्वतंत्र प्रकाशन है। हम 17 भाषाओं में समाचार प्रकाशित करते हैं और देश-वार विस्तृत गाइड देते हैं कि क्रिप्टो को कानूनी रूप से कैसे खरीदें, सुरक्षित रखें और घोषित करें।",
+    "**समाचार कैसे बनते हैं।** सामग्री सार्वजनिक स्रोतों से संकलित होती है: एक्सचेंज और नियामकों की घोषणाएँ, कंपनियों की प्रेस विज्ञप्तियाँ और प्रतिष्ठित वित्तीय मीडिया। हर लेख पर प्रकाशन तिथि दर्ज होती है।",
+    "**गाइड कैसे बनते हैं।** देश-वार गाइड प्राथमिक स्रोतों से लिखे जाते हैं: राष्ट्रीय नियामकों की पंजिकाएँ, आधिकारिक शुल्क तालिकाएँ और प्रकाशित कर नियम। जहाँ नियम बदल सकता है, वहाँ हम उसे तय करने वाली संस्था का नाम देते हैं ताकि आप स्वयं जाँच सकें।",
+    "**AI का उपयोग।** पाठ भाषा मॉडल की सहायता से तैयार किए जाते हैं और प्रकाशन से पहले जाँचे जाते हैं। हम इसे छिपाने के बजाय स्पष्ट कहना उचित मानते हैं।",
+    "**हम क्या नहीं हैं।** हम लाइसेंसधारी वित्तीय सलाहकार, ब्रोकर या एक्सचेंज नहीं हैं। हम धन का प्रबंधन नहीं करते, जमा स्वीकार नहीं करते और व्यक्तिगत सिफ़ारिशें नहीं देते। साइट की आय का स्रोत «प्रकटीकरण» पृष्ठ पर देखें।",
+    "कोई त्रुटि मिली? हमें लिखें — सुधार शीघ्र किए जाते हैं और हम ऐसी सूचनाओं का स्वागत करते हैं।"
+   ],
+   "ar": [
+    "FinPulse منصّة مستقلة تُعنى بالعملات المشفّرة والأسواق المالية. ننشر الأخبار بسبع عشرة لغة، إلى جانب أدلة تفصيلية لكل بلد حول كيفية شراء العملات المشفّرة وحفظها والإفصاح عنها ضريبياً بصورة قانونية.",
+    "**كيف تُعدّ الأخبار.** تُجمَع من مصادر عامة: إعلانات المنصّات والجهات التنظيمية، والبيانات الصحفية للشركات، ووسائل الإعلام المالية المعتبرة. ويحمل كل مقال تاريخ نشره.",
+    "**كيف تُعدّ الأدلة.** تُكتب أدلة الدول من مصادر أولية: سجلات الجهات التنظيمية الوطنية، وجداول الرسوم الرسمية، والقواعد الضريبية المنشورة. وحين تكون القاعدة عرضة للتغيّر نذكر الجهة التي تضعها لتتمكن من التحقق بنفسك.",
+    "**استخدام الذكاء الاصطناعي.** تُعدّ النصوص بمساعدة نماذج لغوية وتُراجَع قبل النشر. ونرى أن التصريح بذلك أولى من إخفائه.",
+    "**ما لسنا عليه.** لسنا مستشاراً مالياً مرخّصاً ولا وسيطاً ولا منصّة تداول. لا ندير أموالاً ولا نقبل ودائع ولا نقدّم توصيات شخصية. أما مصدر تمويل الموقع فمبيَّن في صفحة الإفصاح.",
+    "وجدت خطأً؟ راسلنا — نصحّح بسرعة ونرحّب بالملاحظات."
+   ]
+  }
+ },
+ "contact": {
+  "emoji": "✉️",
+  "order": 2,
+  "title": {
+   "en": "Contact",
+   "ru": "Контакты",
+   "uk": "Контакти",
+   "es": "Contacto",
+   "pt": "Contato",
+   "de": "Kontakt",
+   "fr": "Contact",
+   "pl": "Kontakt",
+   "tr": "İletişim",
+   "id": "Kontak",
+   "vi": "Liên hệ",
+   "th": "ติดต่อ",
+   "ja": "お問い合わせ",
+   "ko": "문의",
+   "zh": "联系我们",
+   "hi": "संपर्क",
+   "ar": "اتصل بنا"
+  },
+  "body": {
+   "en": [
+    "**Email:** 50439al@gmail.com",
+    "**Telegram:** @aleks50439",
+    "Write to us about an error or inaccuracy in a material, a takedown or correction request, cooperation and advertising, or any legal enquiry.",
+    "We usually reply within two business days. For corrections, please include a link to the page and describe what exactly is wrong — that is the fastest route to a fix."
+   ],
+   "ru": [
+    "**Почта:** 50439al@gmail.com",
+    "**Telegram:** @aleks50439",
+    "Пишите об ошибке или неточности в материале, с просьбой удалить или исправить публикацию, по вопросам сотрудничества и рекламы, а также по любым юридическим запросам.",
+    "Обычно отвечаем в течение двух рабочих дней. Для правки приложите ссылку на страницу и опишите, что именно неверно, — так исправление произойдёт быстрее всего."
+   ],
+   "uk": [
+    "**Пошта:** 50439al@gmail.com",
+    "**Telegram:** @aleks50439",
+    "Пишіть про помилку чи неточність у матеріалі, з проханням видалити або виправити публікацію, щодо співпраці та реклами, а також з будь-яких юридичних запитів.",
+    "Зазвичай відповідаємо протягом двох робочих днів. Для виправлення додайте посилання на сторінку й опишіть, що саме не так, — так виправлення станеться найшвидше."
+   ],
+   "es": [
+    "**Email:** 50439al@gmail.com",
+    "**Telegram:** @aleks50439",
+    "Escríbanos por un error o imprecisión en un material, para solicitar la corrección o retirada de una publicación, por colaboraciones y publicidad, o por cualquier consulta legal.",
+    "Solemos responder en dos días hábiles. Para una corrección, incluya el enlace de la página y explique qué es incorrecto: así se arregla antes."
+   ],
+   "pt": [
+    "**Email:** 50439al@gmail.com",
+    "**Telegram:** @aleks50439",
+    "Escreva sobre erro ou imprecisão em um material, para pedir correção ou remoção de uma publicação, sobre parcerias e publicidade, ou para qualquer questão jurídica.",
+    "Costumamos responder em dois dias úteis. Para uma correção, inclua o link da página e descreva o que está errado — assim o conserto sai mais rápido."
+   ],
+   "de": [
+    "**Email:** 50439al@gmail.com",
+    "**Telegram:** @aleks50439",
+    "Schreiben Sie uns bei Fehlern oder Ungenauigkeiten in einem Beitrag, für Korrektur- oder Löschanfragen, zu Kooperation und Werbung sowie bei rechtlichen Anfragen.",
+    "Wir antworten in der Regel innerhalb von zwei Werktagen. Fügen Sie für eine Korrektur den Link zur Seite bei und beschreiben Sie, was genau falsch ist — so geht es am schnellsten."
+   ],
+   "fr": [
+    "**Email:** 50439al@gmail.com",
+    "**Telegram:** @aleks50439",
+    "Écrivez-nous pour une erreur ou une imprécision dans un contenu, une demande de correction ou de retrait, un partenariat ou de la publicité, ou toute question juridique.",
+    "Nous répondons généralement sous deux jours ouvrés. Pour une correction, joignez le lien de la page et précisez ce qui est inexact : c'est la voie la plus rapide."
+   ],
+   "pl": [
+    "**Email:** 50439al@gmail.com",
+    "**Telegram:** @aleks50439",
+    "Napisz w sprawie błędu lub nieścisłości w materiale, prośby o korektę albo usunięcie publikacji, współpracy i reklamy, a także w każdej sprawie prawnej.",
+    "Zwykle odpowiadamy w ciągu dwóch dni roboczych. Przy zgłoszeniu korekty dołącz link do strony i opisz, co dokładnie jest nie tak — tak poprawimy najszybciej."
+   ],
+   "tr": [
+    "**Email:** 50439al@gmail.com",
+    "**Telegram:** @aleks50439",
+    "Bir içerikteki hata veya yanlışlık, düzeltme ya da kaldırma talebi, iş birliği ve reklam ile her türlü hukuki soru için bize yazın.",
+    "Genellikle iki iş günü içinde yanıt veriyoruz. Düzeltme için sayfanın bağlantısını ekleyin ve tam olarak neyin yanlış olduğunu yazın — en hızlı yol budur."
+   ],
+   "id": [
+    "**Email:** 50439al@gmail.com",
+    "**Telegram:** @aleks50439",
+    "Tulis kepada kami soal kekeliruan atau ketidakakuratan dalam materi, permintaan koreksi atau penghapusan, kerja sama dan iklan, serta pertanyaan hukum apa pun.",
+    "Biasanya kami membalas dalam dua hari kerja. Untuk koreksi, sertakan tautan halaman dan jelaskan apa yang salah — itu jalur tercepat."
+   ],
+   "vi": [
+    "**Email:** 50439al@gmail.com",
+    "**Telegram:** @aleks50439",
+    "Hãy viết cho chúng tôi về lỗi hoặc điểm thiếu chính xác trong bài, yêu cầu đính chính hay gỡ bài, hợp tác và quảng cáo, hoặc bất kỳ vấn đề pháp lý nào.",
+    "Chúng tôi thường trả lời trong hai ngày làm việc. Khi báo lỗi, xin kèm liên kết trang và mô tả chính xác chỗ sai — đó là cách sửa nhanh nhất."
+   ],
+   "th": [
+    "**Email:** 50439al@gmail.com",
+    "**Telegram:** @aleks50439",
+    "เขียนถึงเราได้เรื่องข้อผิดพลาดหรือความคลาดเคลื่อนในเนื้อหา คำขอแก้ไขหรือถอดบทความ ความร่วมมือและโฆษณา รวมถึงคำถามทางกฎหมายทุกประเภท",
+    "โดยทั่วไปเราตอบภายในสองวันทำการ หากแจ้งแก้ไข กรุณาแนบลิงก์หน้าเว็บและระบุว่าจุดใดไม่ถูกต้อง วิธีนี้แก้ไขได้เร็วที่สุด"
+   ],
+   "ja": [
+    "**Email:** 50439al@gmail.com",
+    "**Telegram:** @aleks50439",
+    "記事の誤りや不正確な記述、訂正・削除のご依頼、協業や広告のご相談、法務に関するお問い合わせは上記までご連絡ください。",
+    "通常は二営業日以内に返信します。訂正のご連絡には該当ページのリンクと、どこが誤っているかを添えていただくと最も早く対応できます。"
+   ],
+   "ko": [
+    "**Email:** 50439al@gmail.com",
+    "**Telegram:** @aleks50439",
+    "기사의 오류나 부정확한 내용, 정정 또는 삭제 요청, 제휴와 광고 문의, 법률 관련 문의는 위 연락처로 보내주십시오.",
+    "보통 영업일 기준 이틀 안에 회신합니다. 정정 요청 시 해당 페이지 링크와 어느 부분이 잘못되었는지 함께 적어주시면 가장 빠릅니다."
+   ],
+   "zh": [
+    "**Email:** 50439al@gmail.com",
+    "**Telegram:** @aleks50439",
+    "如发现文章中的错误或不准确之处，需要更正或撤稿，洽谈合作与广告，或有任何法律事宜，请与我们联系。",
+    "我们通常在两个工作日内回复。提交更正时，请附上页面链接并说明具体错在哪里——这是最快的处理方式。"
+   ],
+   "hi": [
+    "**Email:** 50439al@gmail.com",
+    "**Telegram:** @aleks50439",
+    "सामग्री में त्रुटि या अशुद्धि, सुधार या हटाने के अनुरोध, सहयोग और विज्ञापन, तथा किसी भी कानूनी प्रश्न के लिए हमें लिखें।",
+    "हम आमतौर पर दो कार्यदिवसों में उत्तर देते हैं। सुधार के लिए पृष्ठ का लिंक संलग्न करें और बताएँ कि ठीक क्या गलत है — यही सबसे तेज़ रास्ता है।"
+   ],
+   "ar": [
+    "**Email:** 50439al@gmail.com",
+    "**Telegram:** @aleks50439",
+    "راسلنا بشأن أي خطأ أو عدم دقة في مادة منشورة، أو طلب تصحيح أو حذف، أو التعاون والإعلان، أو أي استفسار قانوني.",
+    "نردّ عادةً خلال يومَي عمل. وعند طلب التصحيح أرفق رابط الصفحة ووضّح موضع الخطأ تحديداً — فهذا أسرع طريق للمعالجة."
+   ]
+  }
+ },
+ "disclosure": {
+  "emoji": "⚖️",
+  "order": 3,
+  "title": {
+   "en": "Disclosure and legal information",
+   "ru": "Раскрытие информации и правовые условия",
+   "uk": "Розкриття інформації та правові умови",
+   "es": "Divulgación e información legal",
+   "pt": "Divulgação e informações legais",
+   "de": "Offenlegung und rechtliche Hinweise",
+   "fr": "Divulgation et informations légales",
+   "pl": "Ujawnienie i informacje prawne",
+   "tr": "Açıklama ve yasal bilgiler",
+   "id": "Pengungkapan dan informasi hukum",
+   "vi": "Công bố và thông tin pháp lý",
+   "th": "การเปิดเผยข้อมูลและข้อกำหนดทางกฎหมาย",
+   "ja": "開示および法的情報",
+   "ko": "공시 및 법적 고지",
+   "zh": "披露与法律信息",
+   "hi": "प्रकटीकरण और कानूनी जानकारी",
+   "ar": "الإفصاح والمعلومات القانونية"
+  },
+  "body": {
+   "en": [
+    "**Affiliate links.** Some links to exchanges and financial services on this site are affiliate links. If you open an account through them, we may receive a commission from the company. This costs you nothing: the price and terms are the same as going directly.",
+    "**How this affects the content.** We only feature platforms we have a partnership with, so our lists are not a survey of the whole market. Ratings and descriptions are not sold, but you should read any list here knowing it is limited in this way, and compare with other sources.",
+    "**Not investment advice.** Everything here is general information, not a personal recommendation. We know nothing about your finances, tax residence or risk tolerance and cannot advise you.",
+    "**Risk.** Cryptocurrency is highly volatile. You can lose the entire amount invested. Leveraged and derivative products increase that risk. Never invest money you cannot afford to lose.",
+    "**Accuracy.** Fees, rules and regulatory requirements change. Materials show a date; by the time you read one, details may have changed. Always check the current terms on the provider's own site.",
+    "**Jurisdiction.** Crypto rules differ by country and some services are unavailable or restricted where you live. Checking that is your responsibility."
+   ],
+   "ru": [
+    "**Партнёрские ссылки.** Часть ссылок на биржи и финансовые сервисы на этом сайте — партнёрские. Если вы откроете счёт по такой ссылке, мы можем получить комиссию от компании. Для вас это бесплатно: цена и условия те же, что при прямом переходе.",
+    "**Как это влияет на содержание.** Мы показываем только те площадки, с которыми у нас есть партнёрство, поэтому наши подборки не являются обзором всего рынка. Места в рейтинге и описания не продаются, но читать любой список здесь стоит с поправкой на это ограничение и сверять с другими источниками.",
+    "**Не инвестиционный совет.** Всё опубликованное — общая информация, а не персональная рекомендация. Мы не знаем вашего финансового положения, налогового резидентства и допустимого уровня риска и не можем вас консультировать.",
+    "**Риск.** Криптовалюта крайне волатильна. Можно потерять всю вложенную сумму. Продукты с плечом и деривативы этот риск увеличивают. Никогда не вкладывайте деньги, потерю которых вы не можете себе позволить.",
+    "**Актуальность.** Комиссии, правила и требования регуляторов меняются. У материалов проставлена дата; к моменту чтения детали могли устареть. Всегда проверяйте действующие условия на сайте самой площадки.",
+    "**Юрисдикция.** Правила обращения с криптовалютой различаются по странам, и часть сервисов у вас может быть недоступна или ограничена. Проверить это — ваша ответственность."
+   ],
+   "uk": [
+    "**Партнерські посилання.** Частина посилань на біржі та фінансові сервіси на цьому сайті — партнерські. Якщо ви відкриєте рахунок за таким посиланням, ми можемо отримати комісію від компанії. Для вас це безкоштовно: ціна й умови ті самі, що й за прямого переходу.",
+    "**Як це впливає на зміст.** Ми показуємо лише ті майданчики, з якими маємо партнерство, тому наші добірки не є оглядом усього ринку. Місця в рейтингу та описи не продаються, але читати будь-який список тут варто з поправкою на це обмеження і звіряти з іншими джерелами.",
+    "**Не інвестиційна порада.** Усе опубліковане — загальна інформація, а не персональна рекомендація. Ми не знаємо вашого фінансового становища, податкового резидентства та прийнятного рівня ризику і не можемо вас консультувати.",
+    "**Ризик.** Криптовалюта вкрай волатильна. Можна втратити всю вкладену суму. Продукти з плечем і деривативи цей ризик збільшують. Ніколи не вкладайте гроші, втрату яких ви не можете собі дозволити.",
+    "**Актуальність.** Комісії, правила та вимоги регуляторів змінюються. Матеріали мають дату; на момент читання деталі могли застаріти. Завжди перевіряйте чинні умови на сайті самого майданчика.",
+    "**Юрисдикція.** Правила поводження з криптовалютою різняться за країнами, і частина сервісів у вас може бути недоступна чи обмежена. Перевірити це — ваша відповідальність."
+   ],
+   "es": [
+    "**Enlaces de afiliado.** Algunos enlaces a exchanges y servicios financieros de este sitio son de afiliado. Si abre una cuenta a través de ellos, podemos recibir una comisión de la empresa. A usted no le cuesta nada: el precio y las condiciones son los mismos que accediendo directamente.",
+    "**Cómo afecta al contenido.** Solo mostramos plataformas con las que tenemos acuerdo, así que nuestras listas no son un repaso de todo el mercado. Ni las posiciones ni las descripciones se venden, pero conviene leer cualquier lista teniendo presente esa limitación y contrastarla con otras fuentes.",
+    "**No es asesoramiento de inversión.** Todo lo publicado es información general, no una recomendación personal. Desconocemos su situación financiera, su residencia fiscal y su tolerancia al riesgo, y no podemos asesorarle.",
+    "**Riesgo.** Las criptomonedas son muy volátiles. Puede perder la totalidad de lo invertido. Los productos apalancados y los derivados aumentan ese riesgo. Nunca invierta dinero que no pueda permitirse perder.",
+    "**Vigencia.** Comisiones, normas y requisitos regulatorios cambian. Los materiales llevan fecha; al leerlos, los detalles pueden haber cambiado. Compruebe siempre las condiciones vigentes en la web del propio proveedor.",
+    "**Jurisdicción.** Las normas sobre criptomonedas varían según el país y algunos servicios pueden no estar disponibles donde usted reside. Comprobarlo es su responsabilidad."
+   ],
+   "pt": [
+    "**Links de afiliado.** Alguns links para exchanges e serviços financeiros neste site são de afiliado. Se você abrir conta por eles, podemos receber comissão da empresa. Para você não custa nada: preço e condições são os mesmos do acesso direto.",
+    "**Como isso afeta o conteúdo.** Só exibimos plataformas com as quais temos parceria, então nossas listas não são um retrato de todo o mercado. Posições e descrições não são vendidas, mas leia qualquer lista aqui ciente dessa limitação e compare com outras fontes.",
+    "**Não é recomendação de investimento.** Tudo aqui é informação geral, não recomendação pessoal. Não conhecemos sua situação financeira, residência fiscal nem tolerância a risco e não podemos aconselhá-lo.",
+    "**Risco.** Criptomoedas são muito voláteis. Você pode perder todo o valor investido. Produtos alavancados e derivativos aumentam esse risco. Nunca invista dinheiro que não pode perder.",
+    "**Atualidade.** Tarifas, regras e exigências regulatórias mudam. Os materiais têm data; ao ler, detalhes podem ter mudado. Confira sempre as condições vigentes no site do próprio provedor.",
+    "**Jurisdição.** As regras sobre cripto variam por país e alguns serviços podem não estar disponíveis onde você mora. Verificar isso é responsabilidade sua."
+   ],
+   "de": [
+    "**Affiliate-Links.** Einige Links zu Börsen und Finanzdiensten auf dieser Seite sind Affiliate-Links. Wenn Sie darüber ein Konto eröffnen, erhalten wir unter Umständen eine Provision vom Anbieter. Für Sie entstehen keine Kosten: Preis und Konditionen sind dieselben wie beim direkten Zugang.",
+    "**Wie sich das auf die Inhalte auswirkt.** Wir zeigen nur Plattformen, mit denen eine Partnerschaft besteht; unsere Listen sind daher kein Marktüberblick. Platzierungen und Beschreibungen werden nicht verkauft, doch lesen Sie jede Liste hier im Bewusstsein dieser Einschränkung und vergleichen Sie mit anderen Quellen.",
+    "**Keine Anlageberatung.** Alles hier ist allgemeine Information, keine persönliche Empfehlung. Wir kennen weder Ihre finanzielle Lage noch Ihre Steueransässigkeit oder Risikotoleranz und können Sie nicht beraten.",
+    "**Risiko.** Kryptowährungen sind hochvolatil. Sie können den gesamten eingesetzten Betrag verlieren. Hebel- und Derivateprodukte erhöhen dieses Risiko. Investieren Sie niemals Geld, dessen Verlust Sie sich nicht leisten können.",
+    "**Aktualität.** Gebühren, Regeln und aufsichtsrechtliche Anforderungen ändern sich. Beiträge sind datiert; beim Lesen können Details überholt sein. Prüfen Sie stets die geltenden Bedingungen auf der Seite des Anbieters selbst.",
+    "**Rechtsraum.** Kryptoregeln unterscheiden sich je nach Land, und manche Dienste sind bei Ihnen nicht verfügbar oder eingeschränkt. Das zu prüfen liegt in Ihrer Verantwortung."
+   ],
+   "fr": [
+    "**Liens d'affiliation.** Certains liens vers des plateformes et services financiers sur ce site sont des liens d'affiliation. Si vous ouvrez un compte par leur intermédiaire, nous pouvons percevoir une commission de la société. Cela ne vous coûte rien : le prix et les conditions sont identiques à un accès direct.",
+    "**Incidence sur le contenu.** Nous ne présentons que des plateformes avec lesquelles nous avons un partenariat ; nos listes ne constituent donc pas un panorama du marché. Les places et les descriptions ne se vendent pas, mais lisez toute liste en gardant cette limite à l'esprit et recoupez avec d'autres sources.",
+    "**Pas un conseil en investissement.** Tout ce qui est publié relève de l'information générale et non d'une recommandation personnelle. Nous ignorons votre situation financière, votre résidence fiscale et votre tolérance au risque, et ne pouvons vous conseiller.",
+    "**Risque.** Les cryptomonnaies sont très volatiles. Vous pouvez perdre la totalité du montant investi. Les produits à effet de levier et les dérivés accroissent ce risque. N'investissez jamais une somme dont la perte vous serait insupportable.",
+    "**Actualité.** Frais, règles et exigences réglementaires évoluent. Les contenus sont datés ; à la lecture, certains détails peuvent être dépassés. Vérifiez toujours les conditions en vigueur sur le site du prestataire.",
+    "**Juridiction.** Les règles applicables aux cryptomonnaies diffèrent selon les pays et certains services peuvent être indisponibles ou restreints chez vous. Cette vérification vous incombe."
+   ],
+   "pl": [
+    "**Linki afiliacyjne.** Część linków do giełd i usług finansowych w tym serwisie to linki afiliacyjne. Jeśli założysz przez nie konto, możemy otrzymać prowizję od firmy. Ciebie to nic nie kosztuje: cena i warunki są takie same jak przy wejściu bezpośrednim.",
+    "**Jak to wpływa na treści.** Pokazujemy wyłącznie platformy, z którymi mamy współpracę, więc nasze zestawienia nie są przeglądem całego rynku. Miejsca w rankingu ani opisy nie są na sprzedaż, ale każde zestawienie czytaj z tym zastrzeżeniem i porównuj z innymi źródłami.",
+    "**To nie jest porada inwestycyjna.** Wszystko tu to informacja ogólna, a nie osobista rekomendacja. Nie znamy Twojej sytuacji finansowej, rezydencji podatkowej ani akceptowalnego poziomu ryzyka i nie możemy Ci doradzać.",
+    "**Ryzyko.** Kryptowaluty są bardzo zmienne. Możesz stracić całą zainwestowaną kwotę. Produkty lewarowane i instrumenty pochodne zwiększają to ryzyko. Nigdy nie inwestuj pieniędzy, których strata jest dla Ciebie nie do przyjęcia.",
+    "**Aktualność.** Opłaty, zasady i wymogi regulacyjne się zmieniają. Materiały mają datę; w chwili lektury szczegóły mogą być nieaktualne. Zawsze sprawdzaj obowiązujące warunki na stronie samego dostawcy.",
+    "**Jurysdykcja.** Przepisy dotyczące kryptowalut różnią się w zależności od kraju, a część usług może być u Ciebie niedostępna lub ograniczona. Sprawdzenie tego należy do Ciebie."
+   ],
+   "tr": [
+    "**Ortaklık bağlantıları.** Bu sitedeki borsa ve finansal hizmet bağlantılarının bir kısmı ortaklık bağlantısıdır. Bunlar üzerinden hesap açarsanız şirketten komisyon alabiliriz. Size bir maliyeti yoktur: fiyat ve koşullar doğrudan girişle aynıdır.",
+    "**İçeriğe etkisi.** Yalnızca ortaklığımız olan platformları gösteriyoruz; dolayısıyla listelerimiz tüm piyasanın taraması değildir. Sıralama ve açıklamalar satılık değildir, ancak buradaki her listeyi bu sınırlamayı bilerek okuyun ve başka kaynaklarla karşılaştırın.",
+    "**Yatırım tavsiyesi değildir.** Buradaki her şey genel bilgidir, kişisel tavsiye değil. Mali durumunuzu, vergi mukimliğinizi ve risk toleransınızı bilmiyoruz; size danışmanlık veremeyiz.",
+    "**Risk.** Kripto para son derece oynaktır. Yatırdığınız tutarın tamamını kaybedebilirsiniz. Kaldıraçlı ürünler ve türevler bu riski artırır. Kaybını göze alamayacağınız parayı asla yatırmayın.",
+    "**Güncellik.** Ücretler, kurallar ve düzenleyici gereklilikler değişir. İçeriklerde tarih vardır; okuduğunuzda ayrıntılar değişmiş olabilir. Geçerli koşulları her zaman sağlayıcının kendi sitesinden doğrulayın.",
+    "**Yargı alanı.** Kripto kuralları ülkeye göre farklıdır ve bazı hizmetler bulunduğunuz yerde kullanılamayabilir veya kısıtlı olabilir. Bunu kontrol etmek sizin sorumluluğunuzdadır."
+   ],
+   "id": [
+    "**Tautan afiliasi.** Sebagian tautan ke bursa dan layanan keuangan di situs ini adalah tautan afiliasi. Jika Anda membuka akun melaluinya, kami dapat menerima komisi dari perusahaan tersebut. Bagi Anda tidak ada biaya: harga dan ketentuannya sama seperti mengakses langsung.",
+    "**Pengaruhnya pada konten.** Kami hanya menampilkan platform yang bermitra dengan kami, jadi daftar kami bukan gambaran seluruh pasar. Peringkat dan deskripsi tidak diperjualbelikan, tetapi bacalah setiap daftar di sini dengan menyadari batasan itu dan bandingkan dengan sumber lain.",
+    "**Bukan nasihat investasi.** Semua di sini adalah informasi umum, bukan rekomendasi pribadi. Kami tidak mengetahui kondisi keuangan, domisili pajak, maupun toleransi risiko Anda, dan tidak dapat menasihati Anda.",
+    "**Risiko.** Kripto sangat fluktuatif. Anda bisa kehilangan seluruh dana yang diinvestasikan. Produk berleverage dan derivatif menambah risiko itu. Jangan pernah menginvestasikan uang yang tidak sanggup Anda relakan.",
+    "**Kekinian data.** Biaya, aturan, dan persyaratan regulator berubah. Materi mencantumkan tanggal; saat Anda membaca, detailnya mungkin sudah berubah. Selalu periksa ketentuan terkini di situs penyedia itu sendiri.",
+    "**Yurisdiksi.** Aturan kripto berbeda tiap negara dan sebagian layanan mungkin tidak tersedia atau dibatasi di tempat Anda. Memeriksanya adalah tanggung jawab Anda."
+   ],
+   "vi": [
+    "**Liên kết tiếp thị.** Một số liên kết tới sàn và dịch vụ tài chính trên trang này là liên kết tiếp thị. Nếu bạn mở tài khoản qua đó, chúng tôi có thể nhận hoa hồng từ công ty. Bạn không mất thêm gì: giá và điều kiện giống như truy cập trực tiếp.",
+    "**Ảnh hưởng tới nội dung.** Chúng tôi chỉ giới thiệu những nền tảng có hợp tác, nên danh sách của chúng tôi không phải bức tranh toàn thị trường. Thứ hạng và mô tả không được bán, nhưng hãy đọc mọi danh sách ở đây với ý thức về giới hạn đó và đối chiếu với nguồn khác.",
+    "**Không phải lời khuyên đầu tư.** Mọi thứ ở đây là thông tin chung, không phải khuyến nghị cá nhân. Chúng tôi không biết tình hình tài chính, nơi cư trú thuế hay mức chấp nhận rủi ro của bạn nên không thể tư vấn.",
+    "**Rủi ro.** Tiền mã hóa biến động rất mạnh. Bạn có thể mất toàn bộ số tiền đã bỏ ra. Sản phẩm đòn bẩy và phái sinh làm rủi ro tăng thêm. Đừng bao giờ đầu tư khoản tiền mà bạn không thể chịu mất.",
+    "**Tính cập nhật.** Phí, quy định và yêu cầu quản lý thay đổi theo thời gian. Bài viết có ghi ngày; khi bạn đọc, chi tiết có thể đã khác. Luôn kiểm tra điều kiện hiện hành trên trang của chính nhà cung cấp.",
+    "**Thẩm quyền pháp lý.** Quy định về tiền mã hóa khác nhau giữa các nước và một số dịch vụ có thể không khả dụng hoặc bị hạn chế ở nơi bạn sống. Việc kiểm tra là trách nhiệm của bạn."
+   ],
+   "th": [
+    "**ลิงก์พันธมิตร** ลิงก์บางส่วนไปยังเอ็กซ์เชนจ์และบริการทางการเงินบนเว็บไซต์นี้เป็นลิงก์พันธมิตร หากคุณเปิดบัญชีผ่านลิงก์ดังกล่าว เราอาจได้รับค่าคอมมิชชันจากบริษัทนั้น คุณไม่ต้องจ่ายเพิ่ม ราคาและเงื่อนไขเท่ากับการเข้าโดยตรง",
+    "**ผลต่อเนื้อหา** เราแสดงเฉพาะแพลตฟอร์มที่เรามีความร่วมมือด้วย รายการของเราจึงไม่ใช่ภาพรวมของทั้งตลาด อันดับและคำอธิบายไม่ได้ขาย แต่โปรดอ่านรายการใด ๆ ที่นี่โดยตระหนักถึงข้อจำกัดนี้ และเปรียบเทียบกับแหล่งอื่น",
+    "**ไม่ใช่คำแนะนำการลงทุน** ทุกอย่างที่นี่เป็นข้อมูลทั่วไป ไม่ใช่คำแนะนำเฉพาะบุคคล เราไม่ทราบสถานะทางการเงิน ถิ่นที่อยู่ทางภาษี หรือระดับความเสี่ยงที่คุณรับได้ จึงให้คำปรึกษาแก่คุณไม่ได้",
+    "**ความเสี่ยง** คริปโทเคอร์เรนซีผันผวนสูงมาก คุณอาจสูญเสียเงินลงทุนทั้งหมด ผลิตภัณฑ์ที่ใช้เลเวอเรจและอนุพันธ์ยิ่งเพิ่มความเสี่ยง อย่าลงทุนด้วยเงินที่คุณรับความสูญเสียไม่ได้",
+    "**ความเป็นปัจจุบัน** ค่าธรรมเนียม กฎเกณฑ์ และข้อกำหนดของหน่วยงานกำกับดูแลเปลี่ยนแปลงได้ เนื้อหามีวันที่กำกับ เมื่อคุณอ่าน รายละเอียดอาจเปลี่ยนไปแล้ว ควรตรวจสอบเงื่อนไขปัจจุบันบนเว็บไซต์ของผู้ให้บริการเสมอ",
+    "**เขตอำนาจศาล** กฎเกี่ยวกับคริปโทแตกต่างกันในแต่ละประเทศ และบางบริการอาจใช้ไม่ได้หรือถูกจำกัดในพื้นที่ของคุณ การตรวจสอบเรื่องนี้เป็นความรับผิดชอบของคุณ"
+   ],
+   "ja": [
+    "**アフィリエイトリンク。** 当サイトの取引所・金融サービスへのリンクの一部はアフィリエイトリンクです。そこから口座を開設された場合、当サイトが企業から手数料を受け取ることがあります。利用者に追加の費用は発生せず、価格や条件は直接申し込む場合と同じです。",
+    "**内容への影響。** 掲載しているのは提携関係のあるプラットフォームのみであり、当サイトの一覧は市場全体を網羅したものではありません。順位や説明文を販売することはありませんが、この制約を踏まえて読み、他の情報源と照らし合わせてください。",
+    "**投資助言ではありません。** 掲載内容はすべて一般的な情報であり、個別の推奨ではありません。当サイトは読者の財務状況、税務上の居住地、許容リスクを把握しておらず、助言はできません。",
+    "**リスク。** 暗号資産は価格変動が非常に大きく、投資額の全額を失う可能性があります。レバレッジ商品やデリバティブはそのリスクをさらに高めます。失っても差し支えない範囲を超える資金は投じないでください。",
+    "**情報の鮮度。** 手数料、規則、規制要件は変わります。記事には日付を記載していますが、お読みの時点で内容が変わっている場合があります。最新の条件は必ず提供事業者自身のサイトでご確認ください。",
+    "**管轄。** 暗号資産に関する規則は国ごとに異なり、お住まいの地域では利用できない、または制限されるサービスもあります。その確認は利用者の責任となります。"
+   ],
+   "ko": [
+    "**제휴 링크.** 이 사이트의 거래소·금융서비스 링크 일부는 제휴 링크입니다. 이를 통해 계정을 개설하시면 해당 기업으로부터 수수료를 받을 수 있습니다. 이용자에게는 추가 비용이 없으며, 가격과 조건은 직접 가입할 때와 같습니다.",
+    "**콘텐츠에 미치는 영향.** 제휴 관계가 있는 플랫폼만 소개하므로, 저희 목록은 시장 전체를 조망한 것이 아닙니다. 순위나 설명을 판매하지는 않지만, 이 한계를 감안해 읽으시고 다른 자료와 비교하시기 바랍니다.",
+    "**투자 자문이 아닙니다.** 이곳의 모든 내용은 일반 정보이며 개인별 권유가 아닙니다. 저희는 독자의 재무 상황, 세무상 거주지, 감내 가능한 위험 수준을 알지 못하므로 자문을 제공할 수 없습니다.",
+    "**위험.** 암호화폐는 변동성이 매우 큽니다. 투자 원금 전액을 잃을 수 있습니다. 레버리지 상품과 파생상품은 그 위험을 더 키웁니다. 잃어도 감당할 수 있는 범위를 넘는 돈은 절대 넣지 마십시오.",
+    "**최신성.** 수수료, 규정, 규제 요건은 변합니다. 자료에는 날짜가 적혀 있으며, 읽으시는 시점에는 세부 내용이 달라졌을 수 있습니다. 현행 조건은 반드시 해당 사업자 사이트에서 확인하십시오.",
+    "**관할.** 암호화폐 규정은 국가마다 다르며 일부 서비스는 거주 지역에서 이용이 불가하거나 제한될 수 있습니다. 이를 확인하는 것은 이용자의 책임입니다."
+   ],
+   "zh": [
+    "**联盟链接。** 本站部分指向交易所与金融服务的链接为联盟链接。若您通过这些链接开户，我们可能从相关公司获得佣金。这不会增加您的成本：价格与条件同直接开户一致。",
+    "**这如何影响内容。** 我们只展示已建立合作关系的平台，因此本站的榜单并非对整个市场的普查。排名与描述不出售，但阅读本站任何榜单时都请考虑这一局限，并与其他来源对照。",
+    "**并非投资建议。** 本站所有内容均为一般性信息，而非针对个人的建议。我们不了解您的财务状况、税务居民身份与风险承受能力，无法为您提供咨询。",
+    "**风险。** 加密货币波动极大，您可能损失全部投入资金。杠杆产品与衍生品会进一步放大该风险。切勿投入您无法承受损失的资金。",
+    "**时效性。** 费率、规则与监管要求会发生变化。文章均标注日期；您阅读时细节可能已有改变。请务必在服务商自有网站上核对现行条件。",
+    "**司法管辖。** 各国对加密货币的规定不同，部分服务在您所在地可能无法使用或受到限制。核实这一点是您的责任。"
+   ],
+   "hi": [
+    "**एफ़िलिएट लिंक।** इस साइट पर एक्सचेंज और वित्तीय सेवाओं के कुछ लिंक एफ़िलिएट लिंक हैं। यदि आप उनके माध्यम से खाता खोलते हैं, तो हमें कंपनी से कमीशन मिल सकता है। आपको इसका कोई शुल्क नहीं देना पड़ता: मूल्य और शर्तें सीधे जाने जैसी ही रहती हैं।",
+    "**इसका सामग्री पर प्रभाव।** हम केवल उन्हीं प्लेटफ़ॉर्म को दिखाते हैं जिनके साथ हमारी साझेदारी है, इसलिए हमारी सूचियाँ पूरे बाज़ार का सर्वेक्षण नहीं हैं। रैंकिंग और विवरण बिकाऊ नहीं हैं, फिर भी यहाँ की कोई भी सूची इस सीमा को ध्यान में रखकर पढ़ें और अन्य स्रोतों से मिलाएँ।",
+    "**यह निवेश सलाह नहीं है।** यहाँ सब कुछ सामान्य जानकारी है, व्यक्तिगत सिफ़ारिश नहीं। हम आपकी वित्तीय स्थिति, कर-निवास और जोखिम सहनशीलता नहीं जानते, इसलिए सलाह नहीं दे सकते।",
+    "**जोखिम।** क्रिप्टोकरेंसी अत्यधिक अस्थिर है। आप पूरी निवेशित राशि खो सकते हैं। लीवरेज और डेरिवेटिव उत्पाद इस जोखिम को और बढ़ाते हैं। ऐसा धन कभी न लगाएँ जिसका नुकसान आप सह न सकें।",
+    "**अद्यतनता।** शुल्क, नियम और नियामकीय आवश्यकताएँ बदलती रहती हैं। सामग्री पर तिथि दर्ज है; पढ़ते समय विवरण बदल चुके हो सकते हैं। वर्तमान शर्तें हमेशा सेवा प्रदाता की अपनी साइट पर जाँचें।",
+    "**अधिकार-क्षेत्र।** क्रिप्टो संबंधी नियम देश के अनुसार भिन्न हैं और कुछ सेवाएँ आपके यहाँ उपलब्ध न हों या सीमित हों। इसकी जाँच करना आपकी ज़िम्मेदारी है।"
+   ],
+   "ar": [
+    "**روابط الإحالة.** بعض الروابط المؤدية إلى منصّات التداول والخدمات المالية على هذا الموقع روابط إحالة. فإن فتحت حساباً عبرها فقد نتقاضى عمولة من الشركة. ولا يكلّفك ذلك شيئاً: السعر والشروط هي ذاتها عند الدخول المباشر.",
+    "**أثر ذلك على المحتوى.** لا نعرض سوى المنصّات التي تربطنا بها شراكة، ولذلك فقوائمنا ليست مسحاً للسوق بأكمله. ولا تُباع المراتب ولا الأوصاف، لكن اقرأ أي قائمة هنا واضعاً هذا القيد في الحسبان، وقارنها بمصادر أخرى.",
+    "**ليست نصيحة استثمارية.** كل ما يُنشر هنا معلومات عامة لا توصية شخصية. فنحن لا نعرف وضعك المالي ولا موطنك الضريبي ولا قدرتك على تحمّل المخاطر، ولا يمكننا إسداء المشورة إليك.",
+    "**المخاطر.** العملات المشفّرة شديدة التقلّب، وقد تخسر كامل المبلغ المستثمَر. وتزيد المنتجات ذات الرافعة والمشتقات من هذه المخاطر. فلا تستثمر أبداً مالاً لا تحتمل خسارته.",
+    "**حداثة المعلومات.** تتغيّر الرسوم والقواعد والمتطلبات التنظيمية. وتحمل الموادّ تاريخاً، وقد تكون التفاصيل قد تغيّرت وقت قراءتك. تحقّق دائماً من الشروط السارية على موقع مقدّم الخدمة نفسه.",
+    "**الاختصاص القضائي.** تختلف قواعد العملات المشفّرة من بلد إلى آخر، وقد تكون بعض الخدمات غير متاحة أو مقيّدة في بلدك. والتحقق من ذلك مسؤوليتك."
+   ]
+  }
+ },
+ "_adNotice": {
+  "en": "Advertising disclosure: some links here are affiliate links.",
+  "ru": "Раскрытие: часть ссылок ниже — партнёрские.",
+  "uk": "Розкриття: частина посилань нижче — партнерські.",
+  "es": "Divulgación: algunos enlaces son de afiliado.",
+  "pt": "Divulgação: alguns links são de afiliado.",
+  "de": "Offenlegung: Einige Links sind Affiliate-Links.",
+  "fr": "Divulgation : certains liens sont des liens d'affiliation.",
+  "pl": "Ujawnienie: część linków to linki afiliacyjne.",
+  "tr": "Açıklama: buradaki bazı bağlantılar ortaklık bağlantısıdır.",
+  "id": "Pengungkapan: sebagian tautan di sini adalah tautan afiliasi.",
+  "vi": "Công bố: một số liên kết ở đây là liên kết tiếp thị.",
+  "th": "การเปิดเผย: ลิงก์บางส่วนที่นี่เป็นลิงก์พันธมิตร",
+  "ja": "広告表示：一部のリンクはアフィリエイトリンクです。",
+  "ko": "광고 고지: 일부 링크는 제휴 링크입니다.",
+  "zh": "广告披露：本页部分链接为联盟链接。",
+  "hi": "प्रकटीकरण: यहाँ कुछ लिंक एफ़िलिएट लिंक हैं।",
+  "ar": "إفصاح إعلاني: بعض الروابط هنا روابط إحالة."
+ },
+ "_moreLabel": {
+  "en": "Details",
+  "ru": "Подробнее",
+  "uk": "Докладніше",
+  "es": "Detalles",
+  "pt": "Detalhes",
+  "de": "Details",
+  "fr": "Détails",
+  "pl": "Szczegóły",
+  "tr": "Ayrıntılar",
+  "id": "Rincian",
+  "vi": "Chi tiết",
+  "th": "รายละเอียด",
+  "ja": "詳細",
+  "ko": "자세히",
+  "zh": "详情",
+  "hi": "विवरण",
+  "ar": "التفاصيل"
+ }
+}

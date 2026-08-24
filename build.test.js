@@ -325,4 +325,44 @@ function walk(dir, acc) {
   }
 }
 
+// Служебные страницы и раскрытие партнёрства.
+// Для YMYL-тематики отсутствие «кто мы» и «на чём зарабатываем» — прямая причина,
+// по которой Google не берёт страницы в индекс. А пометка рядом с партнёрскими
+// ссылками требуется правилами сетей: убрать её молча нельзя.
+{
+  const pf = path.join(__dirname, 'data/pages.json');
+  const praw = fs.existsSync(pf) ? JSON.parse(fs.readFileSync(pf, 'utf8')) : {};
+  const slugs = Object.keys(praw).filter(k => !k.startsWith('_'));
+  check(slugs.length >= 3, '\u0432 data/pages.json \u043c\u0435\u043d\u044c\u0448\u0435 \u0442\u0440\u0451\u0445 \u0441\u043b\u0443\u0436\u0435\u0431\u043d\u044b\u0445 \u0441\u0442\u0440\u0430\u043d\u0438\u0446');
+
+  let missing = 0, noLink = 0, thin = 0;
+  for (const l of langs) {
+    const home = fs.readFileSync(path.join(DIST, l, 'index.html'), 'utf8');
+    for (const sl of slugs) {
+      const f = path.join(DIST, l, sl, 'index.html');
+      if (!fs.existsSync(f)) { check(false, '\u043d\u0435\u0442 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u044b /' + l + '/' + sl + '/'); missing++; continue; }
+      const h = fs.readFileSync(f, 'utf8');
+      const art = (h.match(/<article class="art">([\s\S]*?)<\/article>/) || [, ''])[1].replace(/<[^>]*>/g, ' ').trim();
+      const min = ['zh', 'ja', 'ko', 'th'].includes(l) ? 150 : 250;  // иероглифика плотнее
+      if (art.length < min) { check(false, '/' + l + '/' + sl + '/ \u043f\u043e\u0447\u0442\u0438 \u043f\u0443\u0441\u0442\u0430\u044f (' + art.length + ' \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432)'); thin++; }
+      if (!home.includes('href="' + BASE + '/' + l + '/' + sl + '/"')) {
+        check(false, '\u043d\u0430 /' + l + '/ \u043d\u0435\u0442 \u0441\u0441\u044b\u043b\u043a\u0438 \u0432 \u043f\u043e\u0434\u0432\u0430\u043b\u0435 \u043d\u0430 ' + sl); noLink++;
+      }
+    }
+  }
+
+  // раскрытие обязано быть на каждой странице, где есть партнёрская кнопка
+  const pages2 = walk(DIST, []).filter(f => path.relative(DIST, f) !== 'index.html');
+  let withCta = 0, withDisc = 0;
+  for (const f of pages2) {
+    const h = fs.readFileSync(f, 'utf8');
+    if (!/<a class="cta"[^>]*href="https?:\/\//.test(h)) continue;
+    withCta++;
+    if (/class="addisc"/.test(h)) withDisc++;
+  }
+  check(withCta > 0, '\u043d\u0438 \u043e\u0434\u043d\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u044b \u0441 \u043f\u0430\u0440\u0442\u043d\u0451\u0440\u0441\u043a\u043e\u0439 \u043a\u043d\u043e\u043f\u043a\u043e\u0439');
+  check(withCta === withDisc, '\u043f\u0430\u0440\u0442\u043d\u0451\u0440\u0441\u043a\u0438\u0435 \u043a\u043d\u043e\u043f\u043a\u0438 \u0431\u0435\u0437 \u0440\u0430\u0441\u043a\u0440\u044b\u0442\u0438\u044f: ' + (withCta - withDisc) + ' \u0441\u0442\u0440\u0430\u043d\u0438\u0446 \u0438\u0437 ' + withCta);
+  console.log('pages: ' + slugs.length + '\u00d7' + langs.length + ', \u0440\u0430\u0441\u043a\u0440\u044b\u0442\u0438\u0435 \u043d\u0430 ' + withDisc + '/' + withCta + ' \u0441\u0442\u0440\u0430\u043d\u0438\u0446 \u0441 \u043e\u0444\u0444\u0435\u0440\u0430\u043c\u0438');
+}
+
 if (fails){console.error(fails+' failures');process.exit(1);} console.log('OK - all checks passed');

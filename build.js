@@ -111,6 +111,27 @@ const analyticsBody = lang => GA4 ? '\n<script>document.addEventListener(\'click
   'gtag(\'event\',\'affiliate_click\',{offer:a.getAttribute(\'data-offer\'),lang:\'' + lang + '\',page_path:location.pathname});' +
   '},{passive:true});</script>' : '';
 
+// Служебные страницы: «О проекте», «Контакты», «Раскрытие».
+// Для финансовой тематики (YMYL) это не украшение: без указания, кто отвечает
+// за контент и на чём сайт зарабатывает, Google оценивает страницы как
+// низкокачественные — что и показал отчёт «просканирована, но не проиндексирована».
+const PAGES_FILE = path.join(ROOT, 'data/pages.json');
+const pagesRaw = fs.existsSync(PAGES_FILE) ? JSON.parse(fs.readFileSync(PAGES_FILE, 'utf8')) : {};
+const staticPages = Object.entries(pagesRaw)
+  .filter(([k]) => !k.startsWith('_'))
+  .map(([slug, p]) => ({ slug, ...p }))
+  .sort((x, y) => (x.order || 0) - (y.order || 0));
+const pageLabel = (slug, lang) => {
+  const p = pagesRaw[slug];
+  return p ? (p.title[lang] || p.title.en) : slug;
+};
+const adNotice = lang => (pagesRaw._adNotice || {})[lang] || (pagesRaw._adNotice || {}).en || '';
+const moreLabel = lang => (pagesRaw._moreLabel || {})[lang] || (pagesRaw._moreLabel || {}).en || '';
+// **жирный** -> <b>, остального markdown в этих текстах нет
+const mdBold = t => esc(t).replace(/\*\*([^*]+)\*\*/g, '<b>$1</b>');
+console.log('pages: ' + staticPages.length + ' \u0441\u043b\u0443\u0436\u0435\u0431\u043d\u044b\u0445 \u0441\u0442\u0440\u0430\u043d\u0438\u0446 \u00d7 ' +
+  (staticPages[0] ? Object.keys(staticPages[0].title).length : 0) + ' \u044f\u0437\u044b\u043a\u043e\u0432');
+
 const TG_LABEL = { en: 'Our Telegram', uk: '\u041d\u0430\u0448 Telegram', ru: '\u041d\u0430\u0448 Telegram', es: 'Nuestro Telegram',
   pt: 'Nosso Telegram', de: 'Unser Telegram', fr: 'Notre Telegram', ar: '\u062a\u0644\u064a\u062c\u0631\u0627\u0645 \u0627\u0644\u062e\u0627\u0635 \u0628\u0646\u0627',
   zh: '\u6211\u4eec\u7684 Telegram', hi: '\u0939\u092e\u093e\u0930\u093e Telegram', id: 'Telegram Kami', vi: 'Telegram c\u1ee7a ch\u00fang t\u00f4i',
@@ -306,10 +327,23 @@ function footer(lang) {
   return '<footer><div class="wrap">' +
     '<div><b>FinPulse</b> \u2014 ' + esc(S('tagline', lang)) + '</div>' +
     (tg ? '<div style="margin:14px 0"><a class="tgbtn" href="' + tg + '" target="_blank" rel="noopener">\u2708\uFE0F ' + esc(tgLabel(lang)) + '</a></div>' : '') +
+    (staticPages.length ? '<div style="margin:12px 0">' + staticPages
+      .map(p => '<a href="' + BASE + '/' + lang + '/' + p.slug + '/">' + esc(pageLabel(p.slug, lang)) + '</a>')
+      .join(' \u00b7 ') + '</div>' : '') +
     '<div class="langs">' + links + '</div>' +
     '<div>\u26A0\uFE0F ' + esc(S('riskDisclaimer', lang)) + '</div>' +
     '<div style="margin-top:8px">\u00A9 ' + new Date().getFullYear() + ' FinPulse</div>' +
     '</div></footer>';
+}
+
+// Раскрытие рядом с самими ссылками, а не только на отдельной странице:
+// правила партнёрских сетей и законы ряда стран требуют, чтобы читатель видел
+// пометку там, где он принимает решение о переходе.
+function adDisclosure(lang) {
+  if (!adNotice(lang)) return '';
+  return '<p class="addisc" style="font-size:13px;opacity:.75;margin:0 0 10px">' +
+    esc(adNotice(lang)) + ' <a href="' + BASE + '/' + lang + '/disclosure/">' +
+    esc(moreLabel(lang)) + '</a></p>';
 }
 
 function offerCard(o, lang, top) {
@@ -381,6 +415,7 @@ for (const lang of LANGS) {
       '<section class="hero"><div class="badge"><span class="pulse"></span>' + esc(S('updatedEvery', lang)) + '</div>' +
       '<h1>' + esc(S('tagline', lang)) + '</h1></section>' +
       '<h2 class="sec" id="offers">\uD83C\uDFC6 ' + esc(S('topPlatforms', lang)) + '</h2>' +
+      adDisclosure(lang) +
       '<div class="offers">' + forLang(offers, lang).map((o, i) => offerCard(o, lang, i === 0)).join('') + '</div>' +
       (guidesFor(lang).length
         ? '<h2 class="sec">\uD83D\uDCD8 ' + esc(gLabel(lang)) + '</h2>' +
@@ -437,7 +472,7 @@ for (const lang of LANGS) {
         '<div class="strip">' + topOffers.map(o => offerCard(o, lang)).join('') + '</div>' +
         '</main>' +
         (topOffers.length
-          ? '<div class="mcta"><div class="t">\uD83C\uDF81 ' + esc(topOffers[0].bonus[lang] || topOffers[0].bonus.en) + '</div><a class="cta" data-offer="' + esc(topOffers[0].id) + '" href="' + topOffers[0].url + '" rel="nofollow sponsored noopener" target="_blank">' + esc(S('startTrading', lang)) + '</a></div>'
+          ? adDisclosure(lang) + '<div class="mcta"><div class="t">\uD83C\uDF81 ' + esc(topOffers[0].bonus[lang] || topOffers[0].bonus.en) + '</div><a class="cta" data-offer="' + esc(topOffers[0].id) + '" href="' + topOffers[0].url + '" rel="nofollow sponsored noopener" target="_blank">' + esc(S('startTrading', lang)) + '</a></div>'
           : '')
     });
     // Страховка: оффер, запрещённый рекламодателем для редакционного контента,
@@ -475,6 +510,29 @@ for (const lang of LANGS) {
     fs.mkdirSync(path.join(DIST, lang, 'guides'), { recursive: true });
     fs.writeFileSync(path.join(DIST, lang, 'guides', 'index.html'), gIdxHtml);
     slowUrls.push(gIdxPath(lang));
+  }
+
+  // ---- Служебные страницы ----
+  for (const p of staticPages) {
+    const pPath = l => BASE + '/' + l + '/' + p.slug + '/';
+    const title = p.title[lang] || p.title.en;
+    const body = p.body[lang] || p.body.en;
+    const html = page({
+      lang,
+      title: title + ' \u2014 FinPulse',
+      desc: String(body[0] || title).replace(/\*\*/g, '').slice(0, 155),
+      pathFn: pPath,
+      jsonld: { '@context': 'https://schema.org', '@type': 'WebPage', name: title, inLanguage: lang,
+        publisher: { '@type': 'Organization', name: 'FinPulse', url: ORIGIN + '/' } },
+      body: '<main class="wrap">' +
+        '<section class="hero"><h1>' + esc(p.emoji || '') + ' ' + esc(title) + '</h1></section>' +
+        '<article class="art">' + body.map(t => '<p>' + mdBold(t) + '</p>').join('') + '</article>' +
+        '</main>'
+    });
+    const dir = path.join(DIST, lang, p.slug);
+    fs.mkdirSync(dir, { recursive: true });
+    fs.writeFileSync(path.join(dir, 'index.html'), html);
+    slowUrls.push(pPath(lang));
 
     for (const g of langGuides) {
       const t = g.i18n[lang] || g.i18n.en;
@@ -491,7 +549,8 @@ for (const lang of LANGS) {
           '@context': 'https://schema.org', '@type': 'Article', headline: t.title,
           description: t.excerpt, inLanguage: lang,
           dateModified: g.updated || undefined,
-          publisher: { '@type': 'Organization', name: 'FinPulse' }
+          author: { '@type': 'Organization', name: 'FinPulse', url: ORIGIN + BASE + '/' + lang + '/about/' },
+          publisher: { '@type': 'Organization', name: 'FinPulse', url: ORIGIN + BASE + '/' + lang + '/' }
         },
         body: '<main class="art">' +
           '<a class="backlink" href="' + BASE + '/' + lang + '/guides/">\u2190 ' + esc(gLabel(lang)) + '</a>' +
@@ -507,7 +566,7 @@ for (const lang of LANGS) {
           '<div class="strip">' + topOffers.map(o => offerCard(o, lang)).join('') + '</div>' +
           '</main>' +
           (topOffers.length
-            ? '<div class="mcta"><div class="t">\uD83C\uDF81 ' + esc(topOffers[0].bonus[lang] || topOffers[0].bonus.en) + '</div><a class="cta" data-offer="' + esc(topOffers[0].id) + '" href="' + topOffers[0].url + '" rel="nofollow sponsored noopener" target="_blank">' + esc(S('startTrading', lang)) + '</a></div>'
+            ? adDisclosure(lang) + '<div class="mcta"><div class="t">\uD83C\uDF81 ' + esc(topOffers[0].bonus[lang] || topOffers[0].bonus.en) + '</div><a class="cta" data-offer="' + esc(topOffers[0].id) + '" href="' + topOffers[0].url + '" rel="nofollow sponsored noopener" target="_blank">' + esc(S('startTrading', lang)) + '</a></div>'
             : '')
       });
       // \u0422\u0430 \u0436\u0435 \u0441\u0442\u0440\u0430\u0445\u043e\u0432\u043a\u0430, \u0447\u0442\u043e \u0438 \u0434\u043b\u044f \u0441\u0442\u0430\u0442\u0435\u0439: \u0433\u0430\u0439\u0434 \u2014 \u044d\u0442\u043e \u043a\u043e\u043d\u0442\u0435\u043d\u0442, \u0430 \u043d\u0435 \u0432\u0438\u0442\u0440\u0438\u043d\u0430.
