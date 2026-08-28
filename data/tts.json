@@ -1,11 +1,15 @@
 {
-  "_comment": "Озвучка роликов. Без ключа в переменных окружения ролик всё равно соберётся — молча, с текстом на экране. Это сделано намеренно: конвейер не должен вставать из-за неоплаченного стороннего сервиса.",
+  "_comment": "Озвучка роликов. По умолчанию — БЕСПЛАТНАЯ локальная модель Kokoro: крутится на том же раннере GitHub, ключа не требует, счёта не выставляет, лимита не имеет. Лицензия Apache 2.0 прямо разрешает коммерческое использование — в отличие от бесплатных тарифов Azure и ElevenLabs, где коммерческое использование звука запрещено.",
   "enabled": true,
-  "provider": "openai",
-  "_provider": "openai — ключ в OPENAI_API_KEY; elevenlabs — ключ в ELEVENLABS_API_KEY.",
-  "model": "gpt-4o-mini-tts",
-  "voice": "onyx",
-  "_voice": "openai: alloy, echo, fable, onyx, nova, shimmer. elevenlabs: id голоса из кабинета.",
-  "speed": 1.05,
-  "instructions": "Read like a crypto news anchor: confident, brisk, clear. No hype, no shouting."
+  "provider": "kokoro",
+  "_provider": "kokoro — локально, Apache 2.0, лучший звук; piper — локально, GPL-3.0, ставится в разы быстрее и легче; openai / elevenlabs — облако, нужен платный ключ в OPENAI_API_KEY / ELEVENLABS_API_KEY.",
+  "voice": "am_michael",
+  "_voice": "kokoro: am_michael, am_onyx, af_heart, af_bella и др. piper: en_US-ryan-high, en_US-lessac-high. openai: alloy, onyx, nova. elevenlabs: id голоса из кабинета.",
+  "langCode": "a",
+  "_langCode": "Только для kokoro: a — американский английский, b — британский, e — испанский, f — французский, h — хинди, i — итальянский, j — японский, p — португальский (Бразилия), z — китайский.",
+  "dataDir": "tts-voices",
+  "_dataDir": "Только для piper: куда скачаны файлы голосов .onnx.",
+  "speed": 1.12,
+  "instructions": "Read like a crypto news anchor: confident, brisk, clear. No hype, no shouting.",
+  "_instructions": "Только для openai."
 }

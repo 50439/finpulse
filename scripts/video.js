@@ -76,6 +76,21 @@ const PAUSE = 0.45;
 const cardDuration = audioSec => (audioSec > 0 ? audioSec + PAUSE : (cfg.secondsPerCardSilent || 3.6));
 
 
+// Какой синтезатор речи использовать. Локальные модели (Kokoro, Piper) крутятся
+// на том же раннере: ключа нет, счёта нет, лимита нет — поэтому требовать для них
+// переменную окружения нельзя, иначе выключится единственный бесплатный вариант.
+// Облачные (OpenAI, ElevenLabs) без ключа молча отключаются: ролик всё равно
+// соберётся, просто молча.
+const LOCAL_TTS = ['kokoro', 'piper'];
+function ttsMode(cfg, env) {
+  cfg = cfg || {}; env = env || {};
+  if (cfg.enabled === false) return 'none';
+  const p = String(cfg.provider || 'kokoro').toLowerCase();
+  if (LOCAL_TTS.includes(p)) return p;
+  if (p === 'elevenlabs') return env.ELEVENLABS_API_KEY ? 'elevenlabs' : 'none';
+  return env.OPENAI_API_KEY ? 'openai' : 'none';
+}
+
 // ---------------------------------------------------------------- вёрстка карточки
 
 const ttsCfg = (() => {
@@ -175,13 +190,55 @@ function shot(html, png) {
 
 // ---------------------------------------------------------------- озвучка
 
-// Без ключа ролик собирается МОЛЧА и всё равно годен к публикации: конвейер не
-// должен вставать из-за неоплаченного стороннего сервиса.
-async function speak(text, mp3) {
-  if (ttsCfg.enabled === false) return null;
-  const provider = ttsCfg.provider || 'openai';
+// Локальный синтез: модель крутится на этом же раннере, сети и денег не требует.
+// Kokoro (Apache 2.0) звучит заметно живее, Piper (GPL-3.0) в разы легче ставится.
+// Лицензия GPL распространяется на сам движок, а не на порождённый им звук.
+// ВЕСЬ ролик озвучивается ОДНИМ процессом. Запуск python и загрузка модели стоят
+// ~13 с; на карточку это давало 78 с чистого простоя из 145 с рендера. Пакетом —
+// один раз на ролик.
+function speakLocalBatch(mode, texts, outs) {
+  const wavs = outs.map(o => o.replace(/\.mp3$/, '.wav'));
+  const job = texts.map((text, i) => ({ text, wav: wavs[i] }));
+  const jobFile = wavs[0].replace(/\.wav$/, '-job.json');
+  fs.writeFileSync(jobFile, JSON.stringify(job));
+  try {
+    if (mode === 'kokoro') {
+      const py = 'import sys,json,numpy as np,soundfile as sf\n' +
+        'from kokoro import KPipeline\n' +
+        'p=KPipeline(lang_code=' + JSON.stringify(ttsCfg.langCode || 'a') + ')\n' +
+        'for j in json.load(open(sys.argv[1])):\n' +
+        '    a=np.concatenate([x for _,_,x in p(j["text"],voice=' + JSON.stringify(ttsCfg.voice || 'am_michael') +
+        ',speed=' + (ttsCfg.speed || 1) + ')])\n' +
+        '    sf.write(j["wav"],a,24000)\n';
+      execFileSync('python3', ['-c', py, jobFile], { stdio: ['ignore', 'ignore', 'pipe'] });
+    } else {
+      for (const j of job) {
+        execFileSync('python3', ['-m', 'piper', '-m', ttsCfg.voice || 'en_US-ryan-high',
+          '--data-dir', ttsCfg.dataDir || 'tts-voices', '-f', j.wav],
+          { input: j.text, stdio: ['pipe', 'ignore', 'pipe'] });
+      }
+    }
+    return outs.map((out, i) => {
+      if (!fs.existsSync(wavs[i])) return null;
+      execFileSync('ffmpeg', ['-y', '-i', wavs[i], '-b:a', '128k', out], { stdio: 'ignore' });
+      fs.unlinkSync(wavs[i]);
+      return out;
+    });
+  } catch (e) {
+    // Молчащий ролик — не повод терять ролик целиком.
+    console.warn('  ' + mode + ' не озвучил: ' +
+      String((e && e.stderr ? e.stderr.toString() : e.message) || e).slice(0, 200).replace(/\n/g, ' '));
+    return outs.map(() => null);
+  } finally {
+    if (fs.existsSync(jobFile)) fs.unlinkSync(jobFile);
+  }
+}
+
+// Без ключа (для облачных) или без установленной модели (для локальных) ролик
+// собирается МОЛЧА и всё равно годен к публикации: конвейер не должен вставать
+// из-за неоплаченного или неустановленного стороннего сервиса.
+async function speakCloud(provider, text, mp3) {
   const key = provider === 'elevenlabs' ? process.env.ELEVENLABS_API_KEY : process.env.OPENAI_API_KEY;
-  if (!key) return null;
 
   let url, headers, body;
   if (provider === 'elevenlabs') {
@@ -260,14 +317,24 @@ async function makeOne(article) {
     { kind: 'cta', text: 'Daily crypto news, 17 languages', tag: article.category, note: 'Follow for daily updates' }
   ];
 
-  let voiced = 0;
-  for (let i = 0; i < cards.length; i++) {
-    const c = cards[i];
+  cards.forEach((c, i) => {
     const stem = path.join(dir, String(i).padStart(2, '0'));
     c.png = stem + '.png';
+    c.audioPath = stem + '.mp3';
+    c.spoken = c.kind === 'cta' ? 'Full story on Fin Pulse. Follow for daily crypto news.' : c.text;
     shot(cardHtml(c, i, cards.length), c.png);
-    const spoken = c.kind === 'cta' ? 'Full story on Fin Pulse. Follow for daily crypto news.' : c.text;
-    c.mp3 = await speak(spoken, stem + '.mp3');
+  });
+
+  const mode = ttsMode(ttsCfg, process.env);
+  if (LOCAL_TTS.includes(mode)) {
+    const got = speakLocalBatch(mode, cards.map(c => c.spoken), cards.map(c => c.audioPath));
+    cards.forEach((c, i) => { c.mp3 = got[i]; });
+  } else if (mode !== 'none') {
+    for (const c of cards) c.mp3 = await speakCloud(mode, c.spoken, c.audioPath);
+  }
+
+  let voiced = 0;
+  for (const c of cards) {
     if (c.mp3) voiced++;
     c.seconds = cardDuration(c.mp3 ? audioSeconds(c.mp3) : 0);
   }
@@ -315,4 +382,4 @@ async function main() {
 
 if (require.main === module) main().catch(e => { console.error(e); process.exit(1); });
 
-module.exports = { sentences, bodyCards, fitSize, caption, cardDuration, cardHtml };
+module.exports = { sentences, bodyCards, fitSize, caption, cardDuration, cardHtml, ttsMode };

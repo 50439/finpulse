@@ -8,7 +8,7 @@
  * а ломается на практике не они, а разбивка текста.
  */
 const assert = require('assert');
-const { sentences, bodyCards, fitSize, caption, cardDuration } = require('./video.js');
+const { sentences, bodyCards, fitSize, caption, cardDuration, ttsMode } = require('./video.js');
 
 let n = 0;
 const t = (name, fn) => { fn(); n++; console.log('  ok  ' + name); };
@@ -101,6 +101,27 @@ t('с озвучкой длительность идёт от реального
 t('без озвучки берётся длительность из data/video.json', () => {
   assert.strictEqual(cardDuration(null), 3.6);
   assert.strictEqual(cardDuration(0), 3.6);
+});
+
+console.log('ttsMode:');
+
+t('локальная модель не требует ключа', () => {
+  // Kokoro и Piper крутятся на своём же раннере: ключа нет, счёта нет,
+  // лимита нет. Требовать для них переменную окружения — значит без причины
+  // выключить единственный бесплатный вариант.
+  assert.strictEqual(ttsMode({ enabled: true, provider: 'kokoro' }, {}), 'kokoro');
+  assert.strictEqual(ttsMode({ enabled: true, provider: 'piper' }, {}), 'piper');
+});
+
+t('облачный провайдер без ключа отключается, а не роняет прогон', () => {
+  assert.strictEqual(ttsMode({ enabled: true, provider: 'openai' }, {}), 'none');
+  assert.strictEqual(ttsMode({ enabled: true, provider: 'elevenlabs' }, {}), 'none');
+  assert.strictEqual(ttsMode({ enabled: true, provider: 'openai' }, { OPENAI_API_KEY: 'sk-x' }), 'openai');
+});
+
+t('enabled:false выключает озвучку даже с ключом', () => {
+  assert.strictEqual(ttsMode({ enabled: false, provider: 'openai' }, { OPENAI_API_KEY: 'sk-x' }), 'none');
+  assert.strictEqual(ttsMode({ enabled: false, provider: 'kokoro' }, {}), 'none');
 });
 
 console.log('\nВсе ' + n + ' проверок прошли.');
