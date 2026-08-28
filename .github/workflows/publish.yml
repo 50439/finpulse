@@ -1,15 +1,25 @@
 name: Build & publish (auto-news every 6 hours)
+
+# Два ОТДЕЛЬНЫХ job'а, и это принципиально.
+#
+# Раньше всё было одним job'ом под шлюзом `concurrency: pages`. Генерация гайдов
+# идёт до часа — и весь этот час сайт не мог выложиться ничем другим: любая
+# bundle-выкладка стояла в очереди за моделью. Хуже того, прогон #75 упал на сборке
+# ПОСЛЕ генерации, и сайт не выложился вовсе, хотя контент был готов и закоммичен.
+#
+# Теперь шлюз `pages` висит только на job'е deploy. Пока content общается с моделью,
+# выкладка сайта свободна. deploy делает свежий checkout и берёт то, что content
+# успел закоммитить.
+
 on:
   push:
     branches: [main]
     # deploy/bundle.b64 обрабатывает deploy-files.yml: он распаковывает файлы,
     # коммитит и сам публикует Pages. Если publish.yml тоже стартует на этот push,
     # он собирает ЕЩЁ СТАРЫЙ код и, финишируя вторым, затирает свежую публикацию.
-    # Ровно это и произошло 24.08: прогоны зелёные, а сайт остался прежним.
     paths-ignore: ['deploy/**']
   schedule:
-    # Раз в 8 часов (было 6). Вместе с ARTICLES_PER_RUN=1 это до 3 статей
-    # в сутки вместо 8 — на месяц, пока сайт молодой. Вернуть: '0 */6 * * *'.
+    # Раз в 8 часов. Вместе с newsPerDay=1 в data/site.json это 1 статья в сутки.
     - cron: '0 */8 * * *'
   workflow_dispatch:
     inputs:
@@ -17,19 +27,19 @@ on:
         description: 'Сколько вечнозелёных гайдов написать за этот прогон (по расписанию всегда 1)'
         required: false
         default: '1'
+
 permissions:
   contents: write
   pages: write
   id-token: write
-concurrency:
-  group: pages
-  cancel-in-progress: false
+
 jobs:
-  publish:
+  # ---------------------------------------------------------------- контент
+  # Долгий job: ходит в модель, пишет статьи и гайды, постит в Telegram.
+  # НЕ держит шлюз pages и ничего не публикует.
+  content:
+    if: github.event_name != 'push'
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -40,27 +50,20 @@ jobs:
         run: node scripts/telegram.test.js
       - name: Test guide generation (JSON repair, top-up)
         run: node scripts/guides.test.js
-      # Статьи генерируем ТОЛЬКО по расписанию или вручную.
-      # Раньше шаг запускался и на push: каждый коммит с правкой кода порождал
-      # ещё 2 статьи. 22.08 получилось 7 прогонов вместо 4 за сутки.
       - name: Generate fresh articles (RSS -> Claude -> 17 languages)
-        if: github.event_name != 'push'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
           if [ -z "$ANTHROPIC_API_KEY" ]; then
-            echo "::warning::ANTHROPIC_API_KEY secret not set - skipping article generation, publishing existing content"
+            echo "::warning::ANTHROPIC_API_KEY secret not set - skipping article generation"
           else
             node scripts/generate.js || echo "::warning::article generation failed - publishing existing content"
           fi
-      # \u0412\u0435\u0447\u043d\u043e\u0437\u0435\u043b\u0451\u043d\u044b\u0435 \u0433\u0430\u0439\u0434\u044b \u2014 \u041e\u0414\u0418\u041d \u0432 \u0441\u0443\u0442\u043a\u0438 (\u0442\u043e\u043b\u044c\u043a\u043e \u043d\u0430 \u043d\u043e\u0447\u043d\u043e\u043c \u043f\u0440\u043e\u0433\u043e\u043d\u0435 00:00 UTC).
-      # 12 \u0442\u0435\u043c \u0438\u0437 data/guides.json \u0440\u0430\u0441\u0442\u044f\u043d\u0443\u0442\u0441\u044f \u043d\u0430 ~12 \u0434\u043d\u0435\u0439 \u0438 \u0434\u0430\u043b\u044c\u0448\u0435 \u0448\u0430\u0433 \u0441\u0430\u043c \u0441\u0442\u0430\u043d\u0435\u0442 no-op.
-      # \u041f\u0430\u0447\u043a\u0430 \u0438\u0437 12 \u0433\u0430\u0439\u0434\u043e\u0432 \u0437\u0430 \u0441\u0443\u0442\u043a\u0438 \u0432\u044b\u0433\u043b\u044f\u0434\u0438\u0442 \u043a\u0430\u043a \u0434\u0430\u043c\u043f, \u043f\u043e \u043e\u0434\u043d\u043e\u043c\u0443 \u0432 \u0434\u0435\u043d\u044c \u2014 \u043a\u0430\u043a \u0436\u0438\u0432\u043e\u0439 \u0441\u0430\u0439\u0442.
+      # Вечнозелёные гайды — ОДИН в сутки (только на ночном прогоне до 08:00 UTC).
+      # Пачка гайдов за сутки выглядит как дамп, по одному в день — как живой сайт.
       - name: Generate evergreen guide (1/day)
-        if: github.event_name != 'push'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          # \u041f\u043e \u0440\u0430\u0441\u043f\u0438\u0441\u0430\u043d\u0438\u044e \u0432\u0441\u0435\u0433\u0434\u0430 1. \u0411\u043e\u043b\u044c\u0448\u0435 \u2014 \u0442\u043e\u043b\u044c\u043a\u043e \u0440\u0443\u0447\u043d\u044b\u043c \u0437\u0430\u043f\u0443\u0441\u043a\u043e\u043c, \u043e\u0441\u043e\u0437\u043d\u0430\u043d\u043d\u043e.
           GUIDES_PER_RUN: ${{ inputs.guides_per_run || '1' }}
         run: |
           if [ -z "$ANTHROPIC_API_KEY" ]; then
@@ -71,7 +74,6 @@ jobs:
             echo "not the nightly run - skipping guide generation"
           fi
       - name: Post to Telegram (all language channels)
-        if: github.event_name != 'push'
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
@@ -85,10 +87,30 @@ jobs:
           git config user.email "bot@users.noreply.github.com"
           git add content/articles.json content/tg-posted.json content/guides.json 2>/dev/null || git add content/articles.json
           git commit -m "auto: fresh content $(date -u +'%Y-%m-%d %H:%M')" && git push || echo "nothing to commit"
+
+  # ---------------------------------------------------------------- выкладка
+  # Короткий job: собрать и опубликовать. Только он держит шлюз pages.
+  # Идёт даже если content упал: контент, который тот успел закоммитить,
+  # всё равно должен доехать до сайта.
+  deploy:
+    needs: [content]
+    if: ${{ !cancelled() }}
+    runs-on: ubuntu-latest
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      # ref: main, а не SHA прогона — нужен коммит, который только что сделал content.
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
       - name: Build site
         env:
           SITE_URL: ${{ vars.SITE_URL || 'https://finpulse24.com' }}
-          BASE_PATH: ${{ vars.BASE_PATH || '' }}
         run: node build.js && node build.test.js
       - uses: actions/upload-pages-artifact@v3
         with: { path: dist }
