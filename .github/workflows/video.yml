@@ -1,0 +1,81 @@
+name: Vertical video (TikTok / Shorts / Reels)
+
+# Отдельный workflow, а не шаг в publish.yml — по той же причине, по которой
+# генерация контента вынесена из деплоя: рендер видео не должен ни задерживать
+# выкладку сайта, ни падать вместе с ней.
+#
+# Готовые ролики забираются во вкладке Actions → нужный прогон → Artifacts.
+# Автопубликация в TikTok здесь НЕ делается: Content Posting API без аудита
+# умеет постить только в приватный аккаунт в режиме SELF_ONLY, то есть в никуда.
+
+on:
+  schedule:
+    # Раз в сутки, 07:10 UTC — после ночного прогона publish.yml,
+    # чтобы в ролик попала уже опубликованная свежая новость.
+    - cron: '10 7 * * *'
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: 'Slug конкретной статьи (пусто — самая свежая ещё не снятая)'
+        required: false
+      count:
+        description: 'Сколько роликов сделать'
+        required: false
+        default: '1'
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+
+      - name: Test video card logic
+        run: node scripts/video.test.js
+
+      # ffmpeg на раннере не предустановлен, Chrome — предустановлен.
+      - name: Install ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
+      - name: Render videos
+        env:
+          SLUG: ${{ inputs.slug }}
+          CHROME_BIN: /usr/bin/google-chrome
+          # Ключа нет — ролик соберётся молча и всё равно будет пригоден к публикации.
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+        run: |
+          if [ -n "${{ inputs.count }}" ] && [ "${{ inputs.count }}" != "1" ]; then
+            node -e "
+              const fs=require('fs'),p='data/video.json';
+              const c=JSON.parse(fs.readFileSync(p,'utf8'));
+              c.perRun=Number('${{ inputs.count }}')||1;
+              fs.writeFileSync(p,JSON.stringify(c,null,2));
+            "
+          fi
+          node scripts/video.js
+          # Промежуточные PNG и MP3 в артефакт не кладём — это десятки мегабайт,
+          # а нужны только MP4 и текст описания.
+          find out/video -mindepth 1 -maxdepth 1 -type d -exec rm -rf {} +
+          ls -la out/video || true
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: finpulse-video
+          path: out/video
+          retention-days: 30
+          if-no-files-found: warn
+
+      # Отметка «этот слаг уже снят» должна пережить прогон, иначе завтра
+      # сделается ролик про ту же новость.
+      - name: Remember what was rendered
+        run: |
+          git config user.name "finpulse-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add content/video-done.json 2>/dev/null || true
+          git checkout -- data/video.json 2>/dev/null || true
+          git commit -m "video: rendered $(date -u +'%Y-%m-%d')" && git push || echo "nothing to commit"
