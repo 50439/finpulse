@@ -1,0 +1,318 @@
+#!/usr/bin/env node
+/**
+ * FinPulse — генератор вертикальных видео-новостей (TikTok / Shorts / Reels).
+ *
+ * Зачем: Telegram раздаёт контент тем, кто уже подписан. TikTok — платформа
+ * ОТКРЫТИЙ: показывает незнакомым. Это единственный доступный канал, где
+ * аудитория может появиться без ссылочной массы и без бюджета.
+ *
+ * Чем НЕ является: это не лечение индексации. Ссылка в профиле TikTok закрыта
+ * nofollow и веса домену не даёт. Ролики дают трафик, а не авторитет.
+ */
+
+const fs = require('fs');
+const path = require('path');
+const { execFileSync } = require('child_process');
+
+const ROOT = path.join(__dirname, '..');
+const cfg = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/video.json'), 'utf8'));
+
+// Режем абзац на предложения — из них потом собираются карточки ролика.
+// Сокращения («U.S.», «Inc.») концом предложения НЕ считаются: иначе карточка
+// обрывается на середине мысли и на экране висит огрызок в два слова.
+const ABBR = /\b(?:U\.S|U\.K|E\.U|Inc|Ltd|Corp|Co|vs|approx|etc|e\.g|i\.e|Mr|Mrs|Ms|Dr|St|No)\.$/i;
+function sentences(text) {
+  const out = [];
+  let buf = '';
+  for (const chunk of String(text).split(/(?<=[.!?])\s+/)) {
+    buf = buf ? buf + ' ' + chunk : chunk;
+    if (ABBR.test(buf.trim())) continue;
+    if (buf.trim()) out.push(buf.trim());
+    buf = '';
+  }
+  if (buf.trim()) out.push(buf.trim());
+  return out;
+}
+
+// Из предложений собираем карточки. Слишком короткое склеиваем со следующим:
+// карточка в два слова — это пустой экран на три секунды, на нём зритель уходит.
+// Слишком длинное не берём вовсе — на 1080 px оно превращается в мелкую стену текста.
+const CARD_MIN = 60, CARD_MAX = 200;
+function bodyCards(paragraphs, limit) {
+  const cards = [];
+  let buf = '';
+  for (const s of (paragraphs || []).flatMap(sentences)) {
+    if (s.length > CARD_MAX) { buf = ''; continue; }
+    buf = buf ? buf + ' ' + s : s;
+    if (buf.length >= CARD_MIN) {
+      if (buf.length <= CARD_MAX) cards.push(buf);
+      buf = '';
+    }
+    if (cards.length >= limit) break;
+  }
+  return cards.slice(0, limit);
+}
+
+// Кегль от длины текста. Заголовок («крючок») крупнее обычной карточки:
+// первые две секунды решают, останется зритель или пролистнёт.
+const fitSize = (text, big) => {
+  const n = String(text).length;
+  if (big) return n < 60 ? 92 : n < 100 ? 78 : 64;
+  return n < 80 ? 66 : n < 140 ? 56 : 48;
+};
+
+// Описание под роликом. URL в текст НЕ кладём: TikTok ссылки в описании не
+// кликает, они только съедают место и читаются как спам. Работает ссылка в профиле.
+function caption(t) {
+  const tags = ['FinPulse', ...(cfg.hashtags || [])].map(h => '#' + h).join(' ');
+  return t.title + '\n\n' + (t.excerpt || '') +
+    '\n\nFull story: ' + cfg.site + ' (link in bio)\n\n' + tags + '\n';
+}
+
+// Длительность карточки. С озвучкой — РЕАЛЬНАЯ длина аудио плюс пауза: без паузы
+// карточки сменяются встык и ролик частит, а с фиксированной длительностью голос
+// и текст разъезжаются уже к третьей карточке.
+const PAUSE = 0.45;
+const cardDuration = audioSec => (audioSec > 0 ? audioSec + PAUSE : (cfg.secondsPerCardSilent || 3.6));
+
+
+// ---------------------------------------------------------------- вёрстка карточки
+
+const ttsCfg = (() => {
+  const p = path.join(ROOT, 'data/tts.json');
+  return fs.existsSync(p) ? JSON.parse(fs.readFileSync(p, 'utf8')) : {};
+})();
+
+const OUT = process.env.VIDEO_OUT || path.join(ROOT, 'out/video');
+const DONE_FILE = path.join(ROOT, 'content/video-done.json');
+const LANG = cfg.lang || 'en';
+const W = cfg.width || 1080, H = cfg.height || 1920, FPS = cfg.fps || 30;
+
+const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+// Карточка — это обычная HTML-страница 1080×1920. Так она выглядит ровно как сайт
+// (та же палитра, те же кольца из логотипа), и вёрстку можно править глазами.
+function cardHtml(card, i, total) {
+  const isHook = card.kind === 'hook';
+  const isCta = card.kind === 'cta';
+  const size = fitSize(card.text, isHook);
+  const progress = total > 1 ? Math.round(((i + 1) / total) * 100) : 100;
+  return '<!doctype html><meta charset="utf-8"><style>' +
+'*{margin:0;padding:0;box-sizing:border-box}' +
+// html красим тоже: без этого Chrome оставляет внизу белую полосу там,
+// где body чуть ниже вьюпорта — на видео это выглядит как брак печати.
+'html{width:' + W + 'px;height:' + H + 'px;overflow:hidden;background:#070E1A}' +
+'body{width:' + W + 'px;height:' + H + 'px;overflow:hidden}' +
+'body{background:radial-gradient(120% 90% at 32% 22%,#16294A 0%,#0E1B30 55%,#070E1A 100%);' +
+'color:#E8ECF4;font-family:"DejaVu Sans","Noto Sans","Liberation Sans",sans-serif;' +
+// Нижние ~340 px в TikTok закрыты описанием и кнопками, правые ~180 px — иконками.
+// Всё значимое держим выше и левее, иначе интерфейс приложения съест текст.
+'display:flex;flex-direction:column;justify-content:space-between;padding:120px 190px 340px 84px}' +
+'.rings{position:absolute;inset:0;overflow:hidden}' +
+'.rings i{position:absolute;border:6px solid #24406B;border-radius:50%;opacity:.30}' +
+'.r1{width:1340px;height:1340px;left:-280px;top:290px}' +
+'.r2{width:1000px;height:1000px;left:-110px;top:460px;border-width:3px;opacity:.18}' +
+'.top{position:relative;display:flex;align-items:center;gap:26px}' +
+'.mark{width:78px;height:78px;border-radius:24px;flex:none;' +
+'background:linear-gradient(135deg,#19C79A,#3BE8B0 55%,#F7C948)}' +
+'.brand{font-size:42px;font-weight:700;letter-spacing:.5px}' +
+'.tag{margin-left:auto;font-size:28px;color:#8FA3C4;text-transform:uppercase;letter-spacing:4px}' +
+'main{position:relative;flex:1;display:flex;flex-direction:column;justify-content:center;gap:46px}' +
+'.kicker{font-size:34px;font-weight:700;letter-spacing:5px;text-transform:uppercase;color:#3BE8B0}' +
+'.text{font-size:' + size + 'px;line-height:1.28;font-weight:' + (isHook ? 800 : 600) + ';' +
+'text-wrap:balance' + (isHook ? ';letter-spacing:-1px' : '') + '}' +
+'.cta .text{font-size:74px;font-weight:800}' +
+'.url{margin-top:40px;font-size:54px;font-weight:700;color:#3BE8B0}' +
+'.handle{font-size:40px;color:#8FA3C4;margin-top:16px}' +
+'.foot{position:relative;display:flex;flex-direction:column;gap:34px}' +
+'.bar{height:10px;border-radius:6px;background:#ffffff1a;overflow:hidden}' +
+'.bar b{display:block;height:100%;width:' + progress + '%;' +
+'background:linear-gradient(90deg,#19C79A,#3BE8B0 60%,#F7C948)}' +
+'.note{font-size:28px;color:#6F82A3;letter-spacing:1px}' +
+'</style>' +
+'<div class="rings"><i class="r1"></i><i class="r2"></i></div>' +
+'<div class="top"><div class="mark"></div><div class="brand">FinPulse</div>' +
+'<div class="tag">' + esc(card.tag || 'crypto') + '</div></div>' +
+'<main class="' + (isCta ? 'cta' : '') + '">' +
+(card.kicker ? '<div class="kicker">' + esc(card.kicker) + '</div>' : '') +
+'<div class="text">' + esc(card.text) + '</div>' +
+(isCta ? '<div><div class="url">' + esc(cfg.site) + '</div>' +
+         '<div class="handle">' + esc(cfg.handle) + '</div></div>' : '') +
+'</main>' +
+'<div class="foot"><div class="bar"><b></b></div>' +
+'<div class="note">' + esc(card.note || '') + '</div></div>';
+}
+
+// ---------------------------------------------------------------- рендер
+
+// Headless Chrome вместо библиотеки рендеринга: в репозитории НЕТ ни одной
+// npm-зависимости, и терять это ради подписей на картинке не хочется.
+// `--screenshot` есть в самом браузере, а Chrome стоит и здесь, и на раннерах GitHub.
+function chromeBinary() {
+  const guesses = [process.env.CHROME_BIN, '/usr/bin/google-chrome',
+    '/usr/bin/chromium', '/usr/bin/chromium-browser'].filter(Boolean);
+  for (const g of guesses) if (fs.existsSync(g)) return g;
+  const base = process.env.PLAYWRIGHT_BROWSERS_PATH || '/opt/pw-browsers';
+  if (fs.existsSync(base)) {
+    for (const d of fs.readdirSync(base)) {
+      const p = path.join(base, d, 'chrome-linux/chrome');
+      if (fs.existsSync(p)) return p;
+    }
+  }
+  throw new Error('не найден Chrome — задайте CHROME_BIN');
+}
+
+function shot(html, png) {
+  const tmp = png.replace(/\.png$/, '.html');
+  fs.writeFileSync(tmp, html);
+  execFileSync(chromeBinary(), ['--headless', '--no-sandbox', '--disable-gpu',
+    '--hide-scrollbars', '--force-device-scale-factor=1',
+    '--window-size=' + W + ',' + H, '--screenshot=' + png, 'file://' + tmp],
+    { stdio: ['ignore', 'ignore', 'pipe'] });
+  fs.unlinkSync(tmp);
+  if (!fs.existsSync(png)) throw new Error('Chrome не отдал ' + png);
+}
+
+// ---------------------------------------------------------------- озвучка
+
+// Без ключа ролик собирается МОЛЧА и всё равно годен к публикации: конвейер не
+// должен вставать из-за неоплаченного стороннего сервиса.
+async function speak(text, mp3) {
+  if (ttsCfg.enabled === false) return null;
+  const provider = ttsCfg.provider || 'openai';
+  const key = provider === 'elevenlabs' ? process.env.ELEVENLABS_API_KEY : process.env.OPENAI_API_KEY;
+  if (!key) return null;
+
+  let url, headers, body;
+  if (provider === 'elevenlabs') {
+    url = 'https://api.elevenlabs.io/v1/text-to-speech/' + encodeURIComponent(ttsCfg.voice || 'Rachel');
+    headers = { 'xi-api-key': key, 'content-type': 'application/json' };
+    body = { text, model_id: ttsCfg.model || 'eleven_multilingual_v2' };
+  } else {
+    url = 'https://api.openai.com/v1/audio/speech';
+    headers = { authorization: 'Bearer ' + key, 'content-type': 'application/json' };
+    body = { model: ttsCfg.model || 'gpt-4o-mini-tts', voice: ttsCfg.voice || 'onyx',
+             input: text, speed: ttsCfg.speed || 1, response_format: 'mp3' };
+    if (ttsCfg.instructions) body.instructions = ttsCfg.instructions;
+  }
+  const r = await fetch(url, { method: 'POST', headers, body: JSON.stringify(body) });
+  if (!r.ok) {
+    console.warn('  TTS ' + r.status + ': ' + (await r.text()).slice(0, 150) + ' — карточка будет молчать');
+    return null;
+  }
+  fs.writeFileSync(mp3, Buffer.from(await r.arrayBuffer()));
+  return mp3;
+}
+
+const audioSeconds = f => Number(execFileSync('ffprobe',
+  ['-v', 'error', '-show_entries', 'format=duration', '-of', 'default=nw=1:nk=1', f]
+).toString().trim()) || 0;
+
+// ---------------------------------------------------------------- сборка
+
+function buildVideo(dir, cards, mp4) {
+  // Последний файл в списке повторяется: concat-демультиплексор ffmpeg
+  // игнорирует duration последней записи, и без дубля хвост ролика обрезается.
+  const list = cards.map(c => "file '" + c.png + "'\nduration " + c.seconds.toFixed(3)).join('\n') +
+    "\nfile '" + cards[cards.length - 1].png + "'\n";
+  const listFile = path.join(dir, 'concat.txt');
+  fs.writeFileSync(listFile, list);
+
+  const withVoice = cards.some(c => c.mp3);
+  const args = ['-y', '-f', 'concat', '-safe', '0', '-i', listFile];
+  if (withVoice) {
+    // Молчащие карточки заменяем тишиной нужной длины, иначе голос уедет вперёд картинки.
+    for (const c of cards) {
+      if (c.mp3) continue;
+      c.mp3 = path.join(dir, path.basename(c.png, '.png') + '-silence.mp3');
+      execFileSync('ffmpeg', ['-y', '-f', 'lavfi', '-i', 'anullsrc=r=44100:cl=mono',
+        '-t', String(c.seconds), '-q:a', '9', c.mp3], { stdio: 'ignore' });
+    }
+    const aList = path.join(dir, 'audio.txt');
+    fs.writeFileSync(aList, cards.map(c => "file '" + c.mp3 + "'").join('\n') + '\n');
+    args.push('-f', 'concat', '-safe', '0', '-i', aList);
+  }
+  args.push('-vf', 'scale=' + W + ':' + H + ':force_original_aspect_ratio=increase,crop=' +
+      W + ':' + H + ',fps=' + FPS,
+    '-c:v', 'libx264', '-preset', 'medium', '-crf', '20', '-pix_fmt', 'yuv420p',
+    '-profile:v', 'high', '-level', '4.1', '-movflags', '+faststart');
+  if (withVoice) args.push('-c:a', 'aac', '-b:a', '128k', '-shortest');
+  args.push(mp4);
+  execFileSync('ffmpeg', args, { stdio: ['ignore', 'ignore', 'pipe'] });
+}
+
+// ---------------------------------------------------------------- главное
+
+async function makeOne(article) {
+  const t = article.i18n && article.i18n[LANG];
+  if (!t || !t.title || !Array.isArray(t.body)) throw new Error('нет версии ' + LANG);
+
+  const dir = path.join(OUT, article.slug);
+  fs.mkdirSync(dir, { recursive: true });
+  console.log('Ролик: ' + article.slug);
+
+  const body = bodyCards(t.body, cfg.maxBodyCards || 4);
+  if (!body.length) throw new Error('из текста не собралось ни одной карточки');
+
+  const cards = [
+    { kind: 'hook', text: t.title, kicker: 'Breaking', tag: article.category, note: cfg.site },
+    ...body.map((text, i) => ({ kind: 'body', text, tag: article.category, note: (i + 1) + ' / ' + body.length })),
+    { kind: 'cta', text: 'Daily crypto news, 17 languages', tag: article.category, note: 'Follow for daily updates' }
+  ];
+
+  let voiced = 0;
+  for (let i = 0; i < cards.length; i++) {
+    const c = cards[i];
+    const stem = path.join(dir, String(i).padStart(2, '0'));
+    c.png = stem + '.png';
+    shot(cardHtml(c, i, cards.length), c.png);
+    const spoken = c.kind === 'cta' ? 'Full story on Fin Pulse. Follow for daily crypto news.' : c.text;
+    c.mp3 = await speak(spoken, stem + '.mp3');
+    if (c.mp3) voiced++;
+    c.seconds = cardDuration(c.mp3 ? audioSeconds(c.mp3) : 0);
+  }
+
+  const mp4 = path.join(OUT, article.slug + '.mp4');
+  buildVideo(dir, cards, mp4);
+  fs.writeFileSync(path.join(OUT, article.slug + '.txt'), caption(t));
+
+  const total = cards.reduce((n, c) => n + c.seconds, 0);
+  console.log('  ' + cards.length + ' карточек, ' + total.toFixed(1) + ' с, ' +
+    (fs.statSync(mp4).size / 1048576).toFixed(1) + ' МБ, ' +
+    (voiced ? 'озвучено ' + voiced + '/' + cards.length : 'без озвучки'));
+  return mp4;
+}
+
+async function main() {
+  const articles = JSON.parse(fs.readFileSync(path.join(ROOT, 'content/articles.json'), 'utf8'));
+  const done = fs.existsSync(DONE_FILE) ? JSON.parse(fs.readFileSync(DONE_FILE, 'utf8')) : [];
+  fs.mkdirSync(OUT, { recursive: true });
+
+  let queue;
+  if (process.env.SLUG) {
+    queue = articles.filter(a => a.slug === process.env.SLUG);
+    if (!queue.length) { console.error('Нет статьи со slug=' + process.env.SLUG); process.exit(1); }
+  } else {
+    queue = articles.filter(a => !done.includes(a.slug) && a.i18n && a.i18n[LANG])
+      .sort((x, y) => Date.parse(y.date) - Date.parse(x.date))
+      .slice(0, Math.max(1, Number(cfg.perRun || 1)));
+  }
+  if (!queue.length) { console.log('Новых статей для роликов нет.'); return; }
+
+  let ok = 0;
+  for (const a of queue) {
+    try {
+      await makeOne(a);
+      if (!done.includes(a.slug)) done.push(a.slug);
+      fs.writeFileSync(DONE_FILE, JSON.stringify(done.slice(-300), null, 1) + '\n');
+      ok++;
+    } catch (e) {
+      console.error('  ' + a.slug + ' не получился: ' + (e && e.message ? e.message : e));
+    }
+  }
+  console.log('Готово: ' + ok + ' из ' + queue.length + ' → ' + OUT);
+}
+
+if (require.main === module) main().catch(e => { console.error(e); process.exit(1); });
+
+module.exports = { sentences, bodyCards, fitSize, caption, cardDuration, cardHtml };
