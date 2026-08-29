@@ -55,6 +55,14 @@ function bodyCards(paragraphs, limit) {
   return cards.slice(0, limit);
 }
 
+// Плашка на первом кадре. «BREAKING» ставится ТОЛЬКО на свежую новость:
+// на материале шестидневной давности это враньё зрителю, а для новостного
+// аккаунта репутация дороже охвата.
+const FRESH_MS = 48 * 60 * 60 * 1000;
+const kickerFor = (dateIso, now) => (
+  (now || Date.now()) - Date.parse(dateIso) <= FRESH_MS ? 'Breaking' : 'Crypto'
+);
+
 // Заголовок целиком на первом кадре — это девять слов, которые надо прочесть
 // за секунду. Замер первого ролика: среднее время просмотра 3,64 с из 39,
 // «большинство зрителей перестали смотреть в 0:01». Поэтому заголовок режется:
@@ -360,7 +368,7 @@ async function makeOne(article) {
   // палец успевает смахнуть: замер показал уход «в 0:01» на полном заголовке.
   const [hook, rest] = hookSplit(t.title);
   const cards = [
-    { kind: 'hook', text: hook, kicker: 'Breaking', tag: article.category, note: cfg.site },
+    { kind: 'hook', text: hook, kicker: kickerFor(article.date), tag: article.category, note: cfg.site },
     ...(rest ? [{ kind: 'lead', text: rest, tag: article.category, note: cfg.site }] : []),
     ...body.map((text, i) => ({ kind: 'body', text, tag: article.category, note: (i + 1) + ' / ' + body.length })),
     { kind: 'cta', text: 'Daily crypto news, 17 languages', tag: article.category, note: 'Follow for daily updates' }
@@ -431,4 +439,4 @@ async function main() {
 
 if (require.main === module) main().catch(e => { console.error(e); process.exit(1); });
 
-module.exports = { sentences, bodyCards, fitSize, caption, cardDuration, cardHtml, ttsMode, hookSplit };
+module.exports = { sentences, bodyCards, fitSize, caption, cardDuration, cardHtml, ttsMode, hookSplit, kickerFor };

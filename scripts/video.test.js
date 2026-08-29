@@ -8,7 +8,7 @@
  * а ломается на практике не они, а разбивка текста.
  */
 const assert = require('assert');
-const { sentences, bodyCards, fitSize, caption, cardDuration, ttsMode, hookSplit } = require('./video.js');
+const { sentences, bodyCards, fitSize, caption, cardDuration, ttsMode, hookSplit, kickerFor } = require('./video.js');
 
 let n = 0;
 const t = (name, fn) => { fn(); n++; console.log('  ok  ' + name); };
@@ -139,6 +139,16 @@ t('длинный заголовок разбивается на крючок и
   assert.strictEqual((hook + ' ' + rest).replace(/\s+/g, ' '),
     'Standard Chartered Becomes First Bank to Distribute Hong Kong Dollar Stablecoin',
     'при разбивке потерялись или задвоились слова');
+});
+
+console.log('kickerFor:');
+
+t('свежая новость получает BREAKING, несвежая — нет', () => {
+  // Плашка BREAKING на новости шестидневной давности — это враньё зрителю,
+  // и для новостного аккаунта это дороже любого охвата.
+  const now = Date.parse('2026-08-29T12:00:00Z');
+  assert.strictEqual(kickerFor('2026-08-29T06:00:00Z', now), 'Breaking');
+  assert.strictEqual(kickerFor('2026-08-23T06:00:00Z', now), 'Crypto');
 });
 
 console.log('\nВсе ' + n + ' проверок прошли.');
