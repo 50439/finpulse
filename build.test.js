@@ -246,7 +246,12 @@ if (guides.length) {
       const org = j && j['@graph'] && j['@graph'].find(x => x['@type'] === 'Organization');
       check(!!org, '\u043d\u0430 /'+l+' \u043d\u0435\u0442 Organization \u0432 JSON-LD');
       if (org) {
-        check(Array.isArray(org.sameAs) && org.sameAs.length === Object.keys(pub).length,
+        // sameAs = каналы Telegram + аккаунты в соцсетях из data/social.json
+        const socialCount = Object.entries(
+          fs.existsSync(path.join(__dirname,'data/social.json'))
+            ? JSON.parse(fs.readFileSync(path.join(__dirname,'data/social.json'),'utf8')) : {}
+        ).filter(([k,v]) => !k.startsWith('_') && typeof v === 'string' && v.trim()).length;
+        check(Array.isArray(org.sameAs) && org.sameAs.length === Object.keys(pub).length + socialCount,
           '\u043d\u0430 /'+l+' sameAs \u043d\u0435 \u0441\u043e\u0432\u043f\u0430\u0434\u0430\u0435\u0442 \u0441 \u043a\u0430\u0440\u0442\u043e\u0439 \u043a\u0430\u043d\u0430\u043b\u043e\u0432');
       }
     }
@@ -414,6 +419,36 @@ function walk(dir, acc) {
     const totAll = Object.values(per).reduce((n, v) => n + v.tot, 0);
     console.log('news: ' + thinAll + '/' + totAll + ' \u0442\u043e\u043d\u043a\u0438\u0445 \u2192 noindex');
   }
+}
+
+// --- Соцсети: одна точка правды ------------------------------------------
+// Аккаунты живут в data/social.json. Пустое значение = аккаунта ещё нет,
+// и ссылка НЕ должна появиться нигде: битая ссылка на несуществующий профиль
+// хуже отсутствия ссылки и роняет доверие ровно там, где мы его строим.
+{
+  const socialFile = path.join(__dirname, 'data/social.json');
+  const social = fs.existsSync(socialFile) ? JSON.parse(fs.readFileSync(socialFile, 'utf8')) : {};
+  const live = Object.entries(social)
+    .filter(([k, v]) => !k.startsWith('_') && typeof v === 'string' && v.trim())
+    .map(([k, v]) => [k, v.trim()]);
+
+  const home = fs.readFileSync(path.join(DIST, 'en', 'index.html'), 'utf8');
+  for (const [net, handle] of live) {
+    const url = net === 'tiktok' ? 'https://www.tiktok.com/@' + handle.replace(/^@/, '')
+      : net === 'youtube' ? 'https://www.youtube.com/@' + handle.replace(/^@/, '')
+      : net === 'instagram' ? 'https://www.instagram.com/' + handle.replace(/^@/, '') + '/'
+      : net === 'x' ? 'https://x.com/' + handle.replace(/^@/, '') : null;
+    if (!url) continue;
+    check(home.includes(url), 'нет ссылки на ' + net + ' (' + url + ') в подвале /en/');
+    check(home.includes('"' + url + '"'), 'ссылка на ' + net + ' не попала в sameAs — Google не свяжет аккаунт с сайтом');
+  }
+  // Пустые сети не должны протекать в разметку даже пустой строкой
+  for (const [k, v] of Object.entries(social)) {
+    if (k.startsWith('_') || (typeof v === 'string' && v.trim())) continue;
+    check(!/tiktok\.com\/@["'\s>]|youtube\.com\/@["'\s>]/.test(home),
+      'в разметке есть ссылка на соцсеть без аккаунта');
+  }
+  console.log('social: ' + (live.length ? live.map(([k, v]) => k + ' ' + v).join(', ') : 'аккаунтов пока нет'));
 }
 
 if (incompleteGuides.length) {

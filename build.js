@@ -86,6 +86,24 @@ for (const [l, chat] of Object.entries(tgRaw)) {
   }
 }
 const tgFor = lang => tgChannels[lang] || null;
+
+// Соцсети из data/social.json. Пустое значение = аккаунта ещё нет, ссылка не
+// появляется нигде: битая ссылка на несуществующий профиль хуже её отсутствия.
+// Одно место правки — и подвал, и sameAs, и подпись в роликах меняются вместе.
+const SOCIAL_FILE = path.join(ROOT, 'data/social.json');
+const socialRaw = fs.existsSync(SOCIAL_FILE) ? JSON.parse(fs.readFileSync(SOCIAL_FILE, 'utf8')) : {};
+const SOCIAL_URL = {
+  tiktok: h => 'https://www.tiktok.com/@' + h,
+  youtube: h => 'https://www.youtube.com/@' + h,
+  instagram: h => 'https://www.instagram.com/' + h + '/',
+  x: h => 'https://x.com/' + h
+};
+const SOCIAL_LABEL = { tiktok: 'TikTok', youtube: 'YouTube', instagram: 'Instagram', x: 'X' };
+const socialLinks = Object.entries(socialRaw)
+  .filter(([k, v]) => !k.startsWith('_') && SOCIAL_URL[k] && typeof v === 'string' && v.trim())
+  .map(([k, v]) => ({ net: k, label: SOCIAL_LABEL[k], url: SOCIAL_URL[k](v.trim().replace(/^@/, '')) }));
+console.log('social: ' + (socialLinks.length
+  ? socialLinks.map(s => s.net + ' ' + s.url).join(', ') : 'аккаунтов пока нет'));
 console.log('telegram: публичных каналов для сайта — ' + Object.keys(tgChannels).length +
   ' (' + Object.keys(tgChannels).join(', ') + ')');
 
@@ -258,7 +276,7 @@ h2.sec::after{content:"";flex:1;height:1px;background:#ffffff14}
 .related ul{margin:0;padding:0;list-style:none}
 .related li{margin:6px 0}
 .related a{color:var(--accent);font-weight:600;font-size:.98rem;line-height:1.4}
-.tgbtn{display:inline-flex;align-items:center;gap:8px;padding:9px 18px;border-radius:999px;background:#229ED9;color:#fff;font-weight:700;font-size:.95rem;text-decoration:none}
+.tgbtn{display:inline-flex;align-items:center;gap:8px;padding:9px 18px;border-radius:999px;background:#229ED9;color:#fff;font-weight:700;font-size:.95rem;text-decoration:none}.socbtn{display:inline-flex;align-items:center;padding:9px 18px;border-radius:999px;border:1px solid #ffffff2e;background:#ffffff0f;color:#E8ECF4;font-weight:700;font-size:.95rem;text-decoration:none;margin-right:8px}
 .tgbtn:hover{background:#1c8ac0}
 .backlink{color:var(--accent);font-size:.9rem;font-weight:600}
 .strip{background:linear-gradient(145deg,#1e2438,#161b28);border:1px solid #22d3ee2e;border-radius:var(--radius);padding:16px;margin:24px 0;display:flex;flex-direction:column;gap:10px}
@@ -348,6 +366,9 @@ function footer(lang) {
   return '<footer><div class="wrap">' +
     '<div><b>FinPulse</b> \u2014 ' + esc(S('tagline', lang)) + '</div>' +
     (tg ? '<div style="margin:14px 0"><a class="tgbtn" href="' + tg + '" target="_blank" rel="noopener">\u2708\uFE0F ' + esc(tgLabel(lang)) + '</a></div>' : '') +
+    (socialLinks.length ? '<div style="margin:14px 0">' + socialLinks
+      .map(x => '<a class="socbtn" href="' + x.url + '" target="_blank" rel="noopener">' + esc(x.label) + '</a>')
+      .join(' ') + '</div>' : '') +
     (staticPages.length ? '<div style="margin:12px 0">' + staticPages
       .map(p => '<a href="' + BASE + '/' + lang + '/' + p.slug + '/">' + esc(pageLabel(p.slug, lang)) + '</a>')
       .join(' \u00b7 ') + '</div>' : '') +
@@ -429,7 +450,7 @@ for (const lang of LANGS) {
         // считает их несвязанными и не переносит доверие с одного на другой.
         { '@type': 'Organization', '@id': SITE_URL + '/#org', name: 'FinPulse',
           url: SITE_URL + '/', logo: SITE_URL + '/logo-512.png',
-          sameAs: Object.values(tgChannels) }
+          sameAs: [...Object.values(tgChannels), ...socialLinks.map(x => x.url)] }
       ]
     },
     body: '<main class="wrap">' +

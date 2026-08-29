@@ -98,6 +98,15 @@ const ttsCfg = (() => {
   return fs.existsSync(p) ? JSON.parse(fs.readFileSync(p, 'utf8')) : {};
 })();
 
+// Ник берём из общей точки правды data/social.json — чтобы подпись в ролике,
+// кнопка в подвале сайта и sameAs не разъезжались между собой.
+const social = (() => {
+  const p = path.join(ROOT, 'data/social.json');
+  return fs.existsSync(p) ? JSON.parse(fs.readFileSync(p, 'utf8')) : {};
+})();
+const HANDLE = (social.tiktok && social.tiktok.trim())
+  ? '@' + social.tiktok.trim().replace(/^@/, '') : (cfg.handle || '');
+
 const OUT = process.env.VIDEO_OUT || path.join(ROOT, 'out/video');
 const DONE_FILE = path.join(ROOT, 'content/video-done.json');
 const LANG = cfg.lang || 'en';
@@ -152,7 +161,7 @@ function cardHtml(card, i, total) {
 (card.kicker ? '<div class="kicker">' + esc(card.kicker) + '</div>' : '') +
 '<div class="text">' + esc(card.text) + '</div>' +
 (isCta ? '<div><div class="url">' + esc(cfg.site) + '</div>' +
-         '<div class="handle">' + esc(cfg.handle) + '</div></div>' : '') +
+         '<div class="handle">' + esc(HANDLE) + '</div></div>' : '') +
 '</main>' +
 '<div class="foot"><div class="bar"><b></b></div>' +
 '<div class="note">' + esc(card.note || '') + '</div></div>';
