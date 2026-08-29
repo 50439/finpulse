@@ -37,7 +37,9 @@ function sentences(text) {
 // Из предложений собираем карточки. Слишком короткое склеиваем со следующим:
 // карточка в два слова — это пустой экран на три секунды, на нём зритель уходит.
 // Слишком длинное не берём вовсе — на 1080 px оно превращается в мелкую стену текста.
-const CARD_MIN = 60, CARD_MAX = 200;
+// CARD_MAX 200 давал ~10 с речи на карточку. При замеренном удержании 3,64 с
+// это заведомо больше, чем зритель готов слушать: режем до ~7 с.
+const CARD_MIN = 60, CARD_MAX = 145;
 function bodyCards(paragraphs, limit) {
   const cards = [];
   let buf = '';
@@ -51,6 +53,24 @@ function bodyCards(paragraphs, limit) {
     if (cards.length >= limit) break;
   }
   return cards.slice(0, limit);
+}
+
+// Заголовок целиком на первом кадре — это девять слов, которые надо прочесть
+// за секунду. Замер первого ролика: среднее время просмотра 3,64 с из 39,
+// «большинство зрителей перестали смотреть в 0:01». Поэтому заголовок режется:
+// первые 2-4 слова уходят на «крючок» огромным кеглем, остальное — на второй кадр.
+function hookSplit(title) {
+  const words = String(title).trim().split(/\s+/).filter(Boolean);
+  if (words.length <= 4) return [words.join(' '), ''];
+  // 22 символа и 3 слова — это предел того, что читается «одним взглядом».
+  // Первый вариант допускал 34 символа, и на экран лезло «Standard Chartered
+  // Becomes First» в четыре строки: обрывок фразы, который надо дочитывать.
+  let n = 0;
+  for (let i = 1; i <= Math.min(3, words.length - 1); i++) {
+    if (words.slice(0, i).join(' ').length <= 22) n = i; else break;
+  }
+  if (!n) n = 1;
+  return [words.slice(0, n).join(' '), words.slice(n).join(' ')];
 }
 
 // Кегль от длины текста. Заголовок («крючок») крупнее обычной карточки:
@@ -117,9 +137,9 @@ const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(
 // Карточка — это обычная HTML-страница 1080×1920. Так она выглядит ровно как сайт
 // (та же палитра, те же кольца из логотипа), и вёрстку можно править глазами.
 function cardHtml(card, i, total) {
-  const isHook = card.kind === 'hook';
+  const isHook = card.kind === 'hook' || card.kind === 'lead';
   const isCta = card.kind === 'cta';
-  const size = fitSize(card.text, isHook);
+  const size = card.kind === 'hook' ? 132 : fitSize(card.text, isHook);
   const progress = total > 1 ? Math.round(((i + 1) / total) * 100) : 100;
   return '<!doctype html><meta charset="utf-8"><style>' +
 '*{margin:0;padding:0;box-sizing:border-box}' +
@@ -294,12 +314,28 @@ function buildVideo(dir, cards, mp4) {
       execFileSync('ffmpeg', ['-y', '-f', 'lavfi', '-i', 'anullsrc=r=44100:cl=mono',
         '-t', String(c.seconds), '-q:a', '9', c.mp3], { stdio: 'ignore' });
     }
+    // Паузу между карточками дописываем В АУДИО. Иначе видео длиннее звука на
+    // сумму пауз, -shortest режет хвост, а голос уезжает вперёд картинки.
+    for (const c of cards) {
+      if (/-silence\.mp3$/.test(c.mp3)) continue;
+      const padded = c.mp3.replace(/\.mp3$/, '-pad.mp3');
+      execFileSync('ffmpeg', ['-y', '-i', c.mp3, '-af', 'apad=pad_dur=' + PAUSE,
+        '-b:a', '128k', padded], { stdio: 'ignore' });
+      c.mp3 = padded;
+    }
     const aList = path.join(dir, 'audio.txt');
     fs.writeFileSync(aList, cards.map(c => "file '" + c.mp3 + "'").join('\n') + '\n');
     args.push('-f', 'concat', '-safe', '0', '-i', aList);
   }
-  args.push('-vf', 'scale=' + W + ':' + H + ':force_original_aspect_ratio=increase,crop=' +
-      W + ':' + H + ',fps=' + FPS,
+  // Медленный наезд. Статичная картинка в ленте читается как пауза, и палец
+  // уходит: TikTok раздаёт по удержанию, а удержание начинается с движения.
+  // fps ДО zoompan обязателен: concat-демультиплексор отдаёт по одному кадру на
+  // картинку, а zoompan работает покадрово — без него из 33 секунд получилось 0,2.
+  const SRC_W = Math.round(W * 1.3 / 2) * 2, SRC_H = Math.round(H * 1.3 / 2) * 2;
+  args.push('-vf', 'fps=' + FPS + ',scale=' + SRC_W + ':' + SRC_H +
+      ':force_original_aspect_ratio=increase,crop=' + SRC_W + ':' + SRC_H + ',' +
+      "zoompan=z='min(zoom+0.0004,1.12)':d=1:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':" +
+      's=' + W + 'x' + H + ':fps=' + FPS,
     '-c:v', 'libx264', '-preset', 'medium', '-crf', '20', '-pix_fmt', 'yuv420p',
     '-profile:v', 'high', '-level', '4.1', '-movflags', '+faststart');
   if (withVoice) args.push('-c:a', 'aac', '-b:a', '128k', '-shortest');
@@ -320,8 +356,12 @@ async function makeOne(article) {
   const body = bodyCards(t.body, cfg.maxBodyCards || 4);
   if (!body.length) throw new Error('из текста не собралось ни одной карточки');
 
+  // Первый кадр — 2-4 слова огромным кеглем. Он должен читаться быстрее, чем
+  // палец успевает смахнуть: замер показал уход «в 0:01» на полном заголовке.
+  const [hook, rest] = hookSplit(t.title);
   const cards = [
-    { kind: 'hook', text: t.title, kicker: 'Breaking', tag: article.category, note: cfg.site },
+    { kind: 'hook', text: hook, kicker: 'Breaking', tag: article.category, note: cfg.site },
+    ...(rest ? [{ kind: 'lead', text: rest, tag: article.category, note: cfg.site }] : []),
     ...body.map((text, i) => ({ kind: 'body', text, tag: article.category, note: (i + 1) + ' / ' + body.length })),
     { kind: 'cta', text: 'Daily crypto news, 17 languages', tag: article.category, note: 'Follow for daily updates' }
   ];
@@ -391,4 +431,4 @@ async function main() {
 
 if (require.main === module) main().catch(e => { console.error(e); process.exit(1); });
 
-module.exports = { sentences, bodyCards, fitSize, caption, cardDuration, cardHtml, ttsMode };
+module.exports = { sentences, bodyCards, fitSize, caption, cardDuration, cardHtml, ttsMode, hookSplit };

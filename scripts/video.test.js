@@ -8,7 +8,7 @@
  * а ломается на практике не они, а разбивка текста.
  */
 const assert = require('assert');
-const { sentences, bodyCards, fitSize, caption, cardDuration, ttsMode } = require('./video.js');
+const { sentences, bodyCards, fitSize, caption, cardDuration, ttsMode, hookSplit } = require('./video.js');
 
 let n = 0;
 const t = (name, fn) => { fn(); n++; console.log('  ok  ' + name); };
@@ -122,6 +122,23 @@ t('облачный провайдер без ключа отключается,
 t('enabled:false выключает озвучку даже с ключом', () => {
   assert.strictEqual(ttsMode({ enabled: false, provider: 'openai' }, { OPENAI_API_KEY: 'sk-x' }), 'none');
   assert.strictEqual(ttsMode({ enabled: false, provider: 'kokoro' }, {}), 'none');
+});
+
+console.log('hookSplit:');
+
+t('длинный заголовок разбивается на крючок и продолжение', () => {
+  // Замер первого ролика: среднее время просмотра 3,64 с из 39, «большинство
+  // зрителей перестали смотреть в 0:01». Причина — первый кадр требовал прочесть
+  // девятисловный заголовок. Первый кадр должен читаться за полсекунды.
+  const [hook, rest] = hookSplit('Standard Chartered Becomes First Bank to Distribute Hong Kong Dollar Stablecoin');
+  assert.ok(hook.length <= 22, 'крючок длиннее 22 символов: ' + hook);
+  assert.ok(hook.split(/\s+/).length <= 3, 'в крючке больше 3 слов: ' + hook);
+  assert.strictEqual(hook, 'Standard Chartered',
+    'крючок должен быть узнаваемым именем, а не обрывком фразы');
+  assert.ok(rest.length > 0, 'продолжение пустое');
+  assert.strictEqual((hook + ' ' + rest).replace(/\s+/g, ' '),
+    'Standard Chartered Becomes First Bank to Distribute Hong Kong Dollar Stablecoin',
+    'при разбивке потерялись или задвоились слова');
 });
 
 console.log('\nВсе ' + n + ' проверок прошли.');
