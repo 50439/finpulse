@@ -33,14 +33,16 @@
   "global-markets-rate-outlook",
   "sandbox-suspends-base-bnb-bridging-after-exploit-tph0",
   "crypto-card-spending-tops-1-billion-stablecoins-drive-everyd-aaeq",
-  "standard-chartered-first-bank-distribute-hong-kong-dollar-st-7k3c"
+  "standard-chartered-first-bank-distribute-hong-kong-dollar-st-7k3c",
+  "neobank-crypto-card-hack-crashes-avici-token-49-percent-5pd9"
  ],
  "guides": {
   "ru": [
    "how-to-store-crypto-safely",
    "crypto-scams-how-to-avoid",
    "crypto-glossary",
-   "best-crypto-exchanges-for-beginners"
+   "best-crypto-exchanges-for-beginners",
+   "how-to-withdraw-crypto-to-bank"
   ],
   "tr": [
    "how-to-store-crypto-safely",
@@ -55,7 +57,8 @@
    "how-to-buy-crypto-vietnam",
    "crypto-scams-how-to-avoid",
    "crypto-glossary",
-   "best-crypto-exchanges-for-beginners"
+   "best-crypto-exchanges-for-beginners",
+   "how-to-withdraw-crypto-to-bank"
   ],
   "id": [
    "how-to-store-crypto-safely",
@@ -85,7 +88,8 @@
    "how-to-store-crypto-safely",
    "crypto-scams-how-to-avoid",
    "crypto-glossary",
-   "best-crypto-exchanges-for-beginners"
+   "best-crypto-exchanges-for-beginners",
+   "how-to-withdraw-crypto-to-bank"
   ],
   "en": [
    "how-to-buy-crypto-germany",
@@ -151,7 +155,8 @@
   "bitcoin-institutional-demand",
   "us-government-plans-40-trillion-debt-crackdown-wrenching-tim-qfum",
   "ukraine-economy-recovery",
-  "global-markets-rate-outlook"
+  "global-markets-rate-outlook",
+  "neobank-crypto-card-hack-crashes-avici-token-49-percent-5pd9"
  ],
  "vi": [
   "bitmart-exchange-weighs-partial-restart-creditor-payouts-o3xh",
@@ -187,7 +192,8 @@
   "bitcoin-institutional-demand",
   "us-government-plans-40-trillion-debt-crackdown-wrenching-tim-qfum",
   "ukraine-economy-recovery",
-  "global-markets-rate-outlook"
+  "global-markets-rate-outlook",
+  "neobank-crypto-card-hack-crashes-avici-token-49-percent-5pd9"
  ],
  "id": [
   "bitmart-exchange-weighs-partial-restart-creditor-payouts-o3xh",
@@ -223,7 +229,8 @@
   "bitcoin-institutional-demand",
   "us-government-plans-40-trillion-debt-crackdown-wrenching-tim-qfum",
   "ukraine-economy-recovery",
-  "global-markets-rate-outlook"
+  "global-markets-rate-outlook",
+  "neobank-crypto-card-hack-crashes-avici-token-49-percent-5pd9"
  ],
  "ko": [
   "bitmart-exchange-weighs-partial-restart-creditor-payouts-o3xh",
@@ -259,7 +266,8 @@
   "bitcoin-institutional-demand",
   "us-government-plans-40-trillion-debt-crackdown-wrenching-tim-qfum",
   "ukraine-economy-recovery",
-  "global-markets-rate-outlook"
+  "global-markets-rate-outlook",
+  "neobank-crypto-card-hack-crashes-avici-token-49-percent-5pd9"
  ],
  "ja": [
   "bitmart-exchange-weighs-partial-restart-creditor-payouts-o3xh",
@@ -295,7 +303,8 @@
   "bitcoin-institutional-demand",
   "us-government-plans-40-trillion-debt-crackdown-wrenching-tim-qfum",
   "ukraine-economy-recovery",
-  "global-markets-rate-outlook"
+  "global-markets-rate-outlook",
+  "neobank-crypto-card-hack-crashes-avici-token-49-percent-5pd9"
  ],
  "pl": [
   "sandbox-suspends-base-bnb-bridging-after-exploit-tph0",
@@ -331,7 +340,8 @@
   "bitcoin-institutional-demand",
   "us-government-plans-40-trillion-debt-crackdown-wrenching-tim-qfum",
   "ukraine-economy-recovery",
-  "global-markets-rate-outlook"
+  "global-markets-rate-outlook",
+  "neobank-crypto-card-hack-crashes-avici-token-49-percent-5pd9"
  ],
  "th": [
   "crypto-card-spending-tops-1-billion-stablecoins-drive-everyd-aaeq",
@@ -367,7 +377,8 @@
   "bitcoin-institutional-demand",
   "us-government-plans-40-trillion-debt-crackdown-wrenching-tim-qfum",
   "ukraine-economy-recovery",
-  "global-markets-rate-outlook"
+  "global-markets-rate-outlook",
+  "neobank-crypto-card-hack-crashes-avici-token-49-percent-5pd9"
  ],
  "en": [
   "standard-chartered-first-bank-distribute-hong-kong-dollar-st-7k3c",
@@ -388,7 +399,9 @@
   "ethena-ena-token-surges-48-percent-falconx-deal-d9ah",
   "canada-us-trade-negotiations-deadline-looms-s9ys",
   "canada-us-trade-deadline-provincial-pushback-intensifies-d9ah",
-  "us-national-debt-surpasses-40-trillion-borrowing-costs-rise-d9ah"
+  "us-national-debt-surpasses-40-trillion-borrowing-costs-rise-d9ah",
+  "bitcoin-rally-crypto-stocks-miners-surge-r2uj",
+  "neobank-crypto-card-hack-crashes-avici-token-49-percent-5pd9"
  ],
  "es": [
   "crypto-card-spending-tops-1-billion-stablecoins-drive-everyd-aaeq",
@@ -422,6 +435,8 @@
   "japan-approves-nomura-backed-laser-digital-first-crypto-lice-qfum",
   "coldcard-releases-emergency-firmware-update-after-major-bitc-qfum",
   "bitcoin-institutional-demand",
-  "us-government-plans-40-trillion-debt-crackdown-wrenching-tim-qfum"
+  "us-government-plans-40-trillion-debt-crackdown-wrenching-tim-qfum",
+  "global-markets-rate-outlook",
+  "neobank-crypto-card-hack-crashes-avici-token-49-percent-5pd9"
  ]
 }
