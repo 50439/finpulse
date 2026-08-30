@@ -1,4 +1,4 @@
-const { titleSimilarity, slugBase, DUP_THRESHOLD } = require('./generate.js');
+const { titleSimilarity, slugBase, DUP_THRESHOLD, feedStall } = require('./generate.js');
 
 // Пары, которые РЕАЛЬНО были опубликованы дважды (взяты из прода)
 const MUST_CATCH = [
@@ -54,5 +54,26 @@ for (const [a,b] of sl) {
   if (!ok) fail++;
   console.log((ok?'  OK  ':'  FAIL') + ' ' + slugBase(a));
 }
+// --- Молчаливый простой ленты ------------------------------------------
+// Прогоны #76-#92: модель шесть суток подряд возвращала пустой массив,
+// скрипт писал «Свежих новостей нет — это нормально» и завершался успешно.
+// Новостной сайт неделю не публиковал новости, и ни один прогон об этом
+// не сказал. Пустой ответ модели — норма. Пустая лента шестые сутки — нет.
+console.log('\n--- простой ленты замечается ---');
+{
+  const now = Date.parse('2026-08-30T12:00:00Z');
+  const cases = [
+    [[{ date: '2026-08-30T06:00:00Z' }], false, 'свежая статья — молчим'],
+    [[{ date: '2026-08-24T16:54:00Z' }], true,  'шесть суток тишины — кричим'],
+    [[],                                 true,  'пустая лента — кричим']
+  ];
+  for (const [arts, wantWarn, name] of cases) {
+    const got = feedStall(arts, now);
+    const ok = wantWarn ? typeof got === 'string' && got.length > 0 : got === null;
+    if (!ok) fail++;
+    console.log((ok ? '  OK  ' : '  FAIL') + ' ' + name + '  ->  ' + JSON.stringify(got));
+  }
+}
+
 console.log('\n' + (fail ? 'ПРОВАЛЕНО проверок: ' + fail : 'ВСЕ ПРОВЕРКИ ПРОЙДЕНЫ'));
 process.exit(fail ? 1 : 0);

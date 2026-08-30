@@ -144,6 +144,42 @@ const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(
 
 // Карточка — это обычная HTML-страница 1080×1920. Так она выглядит ровно как сайт
 // (та же палитра, те же кольца из логотипа), и вёрстку можно править глазами.
+// Сборка кадров ролика. Вынесена из makeOne отдельной чистой функцией:
+// именно порядок и состав кадров определяет, досмотрят ролик или смахнут,
+// и именно это надо уметь проверять тестом, а не глазами на готовом mp4.
+function buildCards(article, t, conf) {
+  conf = conf || cfg;
+  const body = bodyCards(t.body, conf.maxBodyCards || 4);
+  if (!body.length) throw new Error('из текста не собралось ни одной карточки');
+
+  const tag = article.category;
+  const site = conf.site || '';
+
+  // Первый кадр — 2-4 слова огромным кеглем. Он должен читаться быстрее, чем
+  // палец успевает смахнуть: замер показал уход «в 0:01» на полном заголовке.
+  const [hook, rest] = hookSplit(t.title);
+
+  // Ставка для зрителя («тебя это касается, если…»). Живёт НА кадре с крючком
+  // мелкой строкой сверху и произносится ПЕРВОЙ. Отдельным кадром её ставить
+  // нельзя: это отодвинуло бы новость ровно на ту секунду, в которой зритель
+  // и уходит. Пустая строка в data/video.json полностью выключает механику.
+  const stake = String(conf.openingLine || '').trim();
+
+  const first = { kind: 'hook', text: hook, kicker: kickerFor(article.date), tag, note: site };
+  if (stake) { first.stake = stake; first.spoken = stake + ' ' + hook; }
+
+  const cards = [
+    first,
+    ...(rest ? [{ kind: 'lead', text: rest, tag, note: site }] : []),
+    ...body.map((text, i) => ({ kind: 'body', text, tag, note: (i + 1) + ' / ' + body.length })),
+    { kind: 'cta', text: 'Daily crypto news, 17 languages', tag,
+      note: 'Follow for daily updates',
+      spoken: 'Full story on Fin Pulse. Follow for daily crypto news.' }
+  ];
+  for (const c of cards) if (!c.spoken) c.spoken = c.text;
+  return cards;
+}
+
 function cardHtml(card, i, total) {
   const isHook = card.kind === 'hook' || card.kind === 'lead';
   const isCta = card.kind === 'cta';
@@ -170,6 +206,7 @@ function cardHtml(card, i, total) {
 '.brand{font-size:42px;font-weight:700;letter-spacing:.5px}' +
 '.tag{margin-left:auto;font-size:28px;color:#8FA3C4;text-transform:uppercase;letter-spacing:4px}' +
 'main{position:relative;flex:1;display:flex;flex-direction:column;justify-content:center;gap:46px}' +
+'.stake{font-size:38px;font-weight:700;line-height:1.3;color:#F7C948;max-width:760px}' +
 '.kicker{font-size:34px;font-weight:700;letter-spacing:5px;text-transform:uppercase;color:#3BE8B0}' +
 '.text{font-size:' + size + 'px;line-height:1.28;font-weight:' + (isHook ? 800 : 600) + ';' +
 'text-wrap:balance' + (isHook ? ';letter-spacing:-1px' : '') + '}' +
@@ -187,6 +224,7 @@ function cardHtml(card, i, total) {
 '<div class="tag">' + esc(card.tag || 'crypto') + '</div></div>' +
 '<main class="' + (isCta ? 'cta' : '') + '">' +
 (card.kicker ? '<div class="kicker">' + esc(card.kicker) + '</div>' : '') +
+(card.stake ? '<div class="stake">' + esc(card.stake) + '</div>' : '') +
 '<div class="text">' + esc(card.text) + '</div>' +
 (isCta ? '<div><div class="url">' + esc(cfg.site) + '</div>' +
          '<div class="handle">' + esc(HANDLE) + '</div></div>' : '') +
@@ -361,24 +399,12 @@ async function makeOne(article) {
   fs.mkdirSync(dir, { recursive: true });
   console.log('Ролик: ' + article.slug);
 
-  const body = bodyCards(t.body, cfg.maxBodyCards || 4);
-  if (!body.length) throw new Error('из текста не собралось ни одной карточки');
-
-  // Первый кадр — 2-4 слова огромным кеглем. Он должен читаться быстрее, чем
-  // палец успевает смахнуть: замер показал уход «в 0:01» на полном заголовке.
-  const [hook, rest] = hookSplit(t.title);
-  const cards = [
-    { kind: 'hook', text: hook, kicker: kickerFor(article.date), tag: article.category, note: cfg.site },
-    ...(rest ? [{ kind: 'lead', text: rest, tag: article.category, note: cfg.site }] : []),
-    ...body.map((text, i) => ({ kind: 'body', text, tag: article.category, note: (i + 1) + ' / ' + body.length })),
-    { kind: 'cta', text: 'Daily crypto news, 17 languages', tag: article.category, note: 'Follow for daily updates' }
-  ];
+  const cards = buildCards(article, t, cfg);
 
   cards.forEach((c, i) => {
     const stem = path.join(dir, String(i).padStart(2, '0'));
     c.png = stem + '.png';
     c.audioPath = stem + '.mp3';
-    c.spoken = c.kind === 'cta' ? 'Full story on Fin Pulse. Follow for daily crypto news.' : c.text;
     shot(cardHtml(c, i, cards.length), c.png);
   });
 
@@ -439,4 +465,4 @@ async function main() {
 
 if (require.main === module) main().catch(e => { console.error(e); process.exit(1); });
 
-module.exports = { sentences, bodyCards, fitSize, caption, cardDuration, cardHtml, ttsMode, hookSplit, kickerFor };
+module.exports = { sentences, bodyCards, fitSize, caption, cardDuration, cardHtml, ttsMode, hookSplit, kickerFor, buildCards };

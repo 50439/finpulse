@@ -8,7 +8,7 @@
  * а ломается на практике не они, а разбивка текста.
  */
 const assert = require('assert');
-const { sentences, bodyCards, fitSize, caption, cardDuration, ttsMode, hookSplit, kickerFor } = require('./video.js');
+const { sentences, bodyCards, fitSize, caption, cardDuration, ttsMode, hookSplit, kickerFor, buildCards } = require('./video.js');
 
 let n = 0;
 const t = (name, fn) => { fn(); n++; console.log('  ok  ' + name); };
@@ -149,6 +149,44 @@ t('свежая новость получает BREAKING, несвежая — �
   const now = Date.parse('2026-08-29T12:00:00Z');
   assert.strictEqual(kickerFor('2026-08-29T06:00:00Z', now), 'Breaking');
   assert.strictEqual(kickerFor('2026-08-23T06:00:00Z', now), 'Crypto');
+});
+
+console.log('buildCards:');
+
+const artFixture = { slug: 'x', category: 'crypto', date: '2026-08-30T06:00:00Z' };
+const trFixture = {
+  title: 'Standard Chartered Becomes First Bank to Distribute Hong Kong Dollar Stablecoin',
+  body: [
+    'The exchange said the new custody arrangement will cover institutional clients from the first quarter.',
+    'Regulators in three jurisdictions have already signed off on the structure, according to the filing.'
+  ]
+};
+
+t('ставка для зрителя живёт НА кадре с крючком, а не перед ним', () => {
+  // Соблазн — поставить «не пропусти важное» отдельным кадром. Но замер обоих
+  // роликов: уход в 0:01. Отдельный кадр отодвигает новость на полторы секунды
+  // ИМЕННО в ту секунду, когда зритель решает. Ставка идёт первой в озвучке,
+  // но крючок при этом на экране с нулевого кадра.
+  const withLine = buildCards(artFixture, trFixture, { maxBodyCards: 2, openingLine: 'Hold crypto? This one matters.' });
+  const without  = buildCards(artFixture, trFixture, { maxBodyCards: 2 });
+  assert.strictEqual(withLine.length, without.length, 'ставка добавила лишний кадр — крючок отодвинулся');
+  assert.strictEqual(withLine[0].kind, 'hook');
+  assert.strictEqual(withLine[0].text, without[0].text, 'текст крючка изменился');
+  assert.strictEqual(withLine[0].stake, 'Hold crypto? This one matters.');
+  assert.ok(withLine[0].spoken.startsWith('Hold crypto? This one matters.'),
+    'озвучка не начинается со ставки: ' + withLine[0].spoken);
+  assert.ok(withLine[0].spoken.includes(without[0].text), 'крючок пропал из озвучки');
+});
+
+t('пустая openingLine ничего не добавляет', () => {
+  const cards = buildCards(artFixture, trFixture, { maxBodyCards: 2, openingLine: '   ' });
+  assert.strictEqual(cards[0].stake, undefined);
+  assert.strictEqual(cards[0].spoken, cards[0].text);
+});
+
+t('последний кадр — призыв подписаться', () => {
+  const cards = buildCards(artFixture, trFixture, { maxBodyCards: 2 });
+  assert.strictEqual(cards[cards.length - 1].kind, 'cta');
 });
 
 console.log('\nВсе ' + n + ' проверок прошли.');

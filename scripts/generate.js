@@ -64,6 +64,24 @@ const ARTICLES_PER_RUN = Number(process.env.ARTICLES_PER_RUN || 1);
 // Слаг у нас всегда получает суффикс -xxxx, поэтому сравниваем базовую часть.
 const slugBase = s => String(s).toLowerCase().replace(/-[a-z0-9]{4}$/, '');
 
+// --- Простой ленты ------------------------------------------------------
+// Прогоны #76-#92 (24-30 августа) шесть суток подряд получали от модели пустой
+// массив и завершались успешно с сообщением «это нормально». Формально верно:
+// один пустой ответ действительно лучше дубля. Но шесть суток без единой
+// новости на новостном сайте — это отказ, и он не был виден ни в одном логе.
+// Здесь простой превращается в ::warning:: в Actions.
+const STALL_HOURS = Number(process.env.STALL_HOURS || 30);
+
+function feedStall(existing, now) {
+  now = now || Date.now();
+  if (!existing || !existing.length) return 'лента пуста: не опубликовано ни одной статьи';
+  const last = Math.max(...existing.map(a => Date.parse(a.date) || 0));
+  const hours = (now - last) / 3600000;
+  if (hours < STALL_HOURS) return null;
+  return 'последняя статья опубликована ' + (hours / 24).toFixed(1) +
+    ' сут. назад (порог ' + STALL_HOURS + ' ч) — лента стоит, проверьте отбор новостей';
+}
+
 function parseRss(xml, category) {
   const items = [];
   const re = /<item>([\s\S]*?)<\/item>/g;
@@ -97,8 +115,8 @@ async function callClaude(headlines) {
   const prompt = 'You are the editor of FinPulse, a multilingual crypto & finance news site.\n\n' +
 'Below are fresh headlines from RSS feeds. Pick UP TO ' + ARTICLES_PER_RUN + ' genuinely NEW and DISTINCT stor' + (ARTICLES_PER_RUN === 1 ? 'y' : 'ies') + ' (prefer variety across runs: crypto, stocks/world economy, and if present something about Ukraine economy). Choose the single most consequential story, not the most sensational one.\n\n' +
 'WE ALREADY PUBLISHED THESE STORIES: ' + JSON.stringify(recentTitles) + '\n\n' +
-'A story counts as ALREADY COVERED if it is the same event, the same company/country, or the same figures as anything above — even if the wording, angle or framing differs. Only a genuinely NEW development (new decision, new number, new consequence) counts as a new story.\n\n' +
-'IMPORTANT: you are NOT required to return 2 articles. Return 1, or an empty array [], if there is nothing genuinely new. Publishing nothing is BETTER than republishing a story we already covered — repeats destroy reader trust. Do not stretch to fill a quota.\n\n' +
+'A story is ALREADY COVERED only if it reports the SAME EVENT as something above: the same decision, the same incident, the same filing, the same set of figures. Sharing a company, an asset, a country or a theme with an earlier article does NOT make a story covered — we are a crypto and finance site, so nearly every story mentions crypto and most mention the US. A new decision, a new incident, a new number or a new consequence is a NEW story even if the same names appear in it.\n\n' +
+'An empty array [] is allowed, but it is the RARE exception, not the safe default. The headlines below are pulled fresh from live newswires: if any of them reports a development we have not covered, cover it. Return [] only when every single headline is the same event as an article listed above. Do not return [] out of caution — a news site that publishes nothing for days fails its readers just as badly as one that repeats itself.\n\n' +
 'For each story write an ORIGINAL article (do not copy source text): a catchy title, a 1-2 sentence excerpt, and a body of 6-8 paragraphs totalling 450-600 words in English.\n\n' +
 'DEPTH MATTERS MORE THAN SPEED. Our earlier articles averaged only ~190 words and read as thin rewrites of a headline — that is exactly what search engines discard. Each article must add something a reader cannot get from the headline alone: what actually happened, the concrete numbers, why it matters, who is affected, what it changes for an ordinary investor, and what to watch next. Explain mechanisms, not just events. No filler sentences, no restating the title, no empty hedging.\n\n' +
 'Then translate title, excerpt and body into ALL of: en, uk, ru, es, pt, de, fr, ar, zh, hi, id, vi, tr, ja, ko, pl, th. Native-quality natural translations — a native reader must not be able to tell it was translated.\n\n' +
@@ -222,6 +240,8 @@ async function main() {
   if (rejected) console.log('Отброшено дублей: ' + rejected + ' из ' + fresh.length);
 
   if (!accepted.length) {
+    const stall = feedStall(existing);
+    if (stall) console.log('::warning::FinPulse: ' + stall);
     console.log('Свежих новостей нет — ничего не публикуем. Это нормально: повтор хуже паузы.');
     return;
   }
@@ -248,4 +268,4 @@ if (require.main === module) {
   main().catch(e => { console.error(e); process.exit(1); });
 }
 
-module.exports = { keywords, titleSimilarity, slugBase, DUP_THRESHOLD };
+module.exports = { keywords, titleSimilarity, slugBase, DUP_THRESHOLD, feedStall };
