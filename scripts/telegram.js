@@ -119,7 +119,7 @@ async function siteAlive() {
   // подписчик получает битую ссылку, RSS-читалки кэшируют 404, доверие тратится зря.
   // Дешевле пропустить прогон, чем разослать мусор: новости никуда не денутся.
   if (!(await siteAlive())) {
-    console.log('tg: ' + SITE + ' не отвечает — пропускаю прогон, чтобы не рассылать битые ссылки');
+    console.log('::warning::FinPulse: ' + SITE + ' не отвечает — постинг в Telegram пропущен, чтобы не рассылать битые ссылки');
     return;
   }
 
@@ -128,7 +128,7 @@ async function siteAlive() {
   const guides = fs.existsSync(guidesFile) ? JSON.parse(fs.readFileSync(guidesFile, 'utf8')) : [];
   const posted = loadPosted();
 
-  let total = 0;
+  let total = 0, queued = 0;
   for (const [lang, chat] of Object.entries(channels)) {
     const seen = posted[lang] || (posted[lang] = []);
     const seenG = posted.guides[lang] || (posted.guides[lang] = []);
@@ -150,6 +150,7 @@ async function siteAlive() {
 
     const batch = queue.slice(0, MAX_POSTS).reverse();
     if (!batch.length) { console.log('tg ' + lang + ': нечего постить'); continue; }
+    queued += batch.length;
 
     for (const item of batch) {
       const text = item.emoji + ' <b>' + item.t.title + '</b>\n\n' + item.t.excerpt +
@@ -173,5 +174,11 @@ async function siteAlive() {
     posted[k] = posted[k].slice(-200);
   }
   fs.writeFileSync(postedFile, JSON.stringify(posted, null, 1) + '\n');
+  // Урок инцидента с лентой (24-30.08): зелёный прогон не значит «работает».
+  // Материалы к отправке были, не ушло ни одно сообщение — это отказ постинга
+  // целиком (мёртвый токен, все каналы недоступны), а не шум одного канала.
+  if (queued > 0 && total === 0) {
+    console.log('::warning::FinPulse: к отправке было ' + queued + ' материал(ов), не отправлено ни одного — постинг в Telegram стоит, проверьте токен и каналы');
+  }
   console.log('tg: опубликовано ' + total + ' сообщени(й) в ' + Object.keys(channels).length + ' канал(ов)');
 })().catch(e => { console.error(e); process.exit(0); });

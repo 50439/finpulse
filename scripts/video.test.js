@@ -8,7 +8,7 @@
  * а ломается на практике не они, а разбивка текста.
  */
 const assert = require('assert');
-const { sentences, bodyCards, fitSize, caption, cardDuration, ttsMode, hookSplit, kickerFor, buildCards } = require('./video.js');
+const { sentences, bodyCards, fitSize, caption, cardDuration, ttsMode, hookSplit, kickerFor, buildCards, pickQueue } = require('./video.js');
 
 let n = 0;
 const t = (name, fn) => { fn(); n++; console.log('  ok  ' + name); };
@@ -187,6 +187,43 @@ t('пустая openingLine ничего не добавляет', () => {
 t('последний кадр — призыв подписаться', () => {
   const cards = buildCards(artFixture, trFixture, { maxBodyCards: 2 });
   assert.strictEqual(cards[cards.length - 1].kind, 'cta');
+});
+
+console.log('pickQueue:');
+
+t('старая новость не попадает в очередь рендера', () => {
+  // 30.08 после недельного простоя ленты в очереди на рендер стояли статьи
+  // от 23 августа. Ролик «новость недельной давности» для новостного аккаунта
+  // хуже, чем отсутствие ролика: плашки Breaking нет, но сам факт запоздалой
+  // публикации виден любому, кто читает новости где-то ещё.
+  const now = Date.parse('2026-08-30T12:00:00Z');
+  const arts = [
+    { slug: 'old',   date: '2026-08-23T06:00:00Z', i18n: { en: {} } },
+    { slug: 'fresh', date: '2026-08-30T06:00:00Z', i18n: { en: {} } }
+  ];
+  const q = pickQueue(arts, [], { perRun: 5 }, now);
+  assert.deepStrictEqual(q.map(a => a.slug), ['fresh'], 'в очередь попала старая статья');
+});
+
+t('уже отрендеренная и свежая — очередь пуста, а не откат к старым', () => {
+  const now = Date.parse('2026-08-30T12:00:00Z');
+  const arts = [
+    { slug: 'old',   date: '2026-08-23T06:00:00Z', i18n: { en: {} } },
+    { slug: 'fresh', date: '2026-08-30T06:00:00Z', i18n: { en: {} } }
+  ];
+  const q = pickQueue(arts, ['fresh'], { perRun: 1 }, now);
+  assert.deepStrictEqual(q, [], 'после свежей статьи генератор откатился к старой');
+});
+
+t('свежие сортируются от новых к старым и режутся по perRun', () => {
+  const now = Date.parse('2026-08-30T12:00:00Z');
+  const arts = [
+    { slug: 'a', date: '2026-08-29T20:00:00Z', i18n: { en: {} } },
+    { slug: 'b', date: '2026-08-30T06:00:00Z', i18n: { en: {} } },
+    { slug: 'c', date: '2026-08-30T02:00:00Z', i18n: { en: {} } }
+  ];
+  const q = pickQueue(arts, [], { perRun: 2 }, now);
+  assert.deepStrictEqual(q.map(a => a.slug), ['b', 'c']);
 });
 
 console.log('\nВсе ' + n + ' проверок прошли.');

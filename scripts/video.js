@@ -433,6 +433,22 @@ async function makeOne(article) {
   return mp4;
 }
 
+// Отбор статей на рендер. Чистая функция ради теста: именно здесь 30.08
+// генератор чуть не отрендерил новость семидневной давности — после простоя
+// ленты «новейшая неотрендеренная» и «свежая» перестали быть одним и тем же.
+// Ролик по старой новости хуже отсутствия ролика: запоздание видно любому,
+// кто читает новости ещё где-то. maxAgeHours в data/video.json, по умолчанию 48.
+function pickQueue(articles, done, conf, now) {
+  conf = conf || cfg;
+  now = now || Date.now();
+  const maxAge = Number(conf.maxAgeHours || 48) * 3600000;
+  return articles
+    .filter(a => !done.includes(a.slug) && a.i18n && a.i18n[LANG])
+    .filter(a => now - Date.parse(a.date) <= maxAge)
+    .sort((x, y) => Date.parse(y.date) - Date.parse(x.date))
+    .slice(0, Math.max(1, Number(conf.perRun || 1)));
+}
+
 async function main() {
   const articles = JSON.parse(fs.readFileSync(path.join(ROOT, 'content/articles.json'), 'utf8'));
   const done = fs.existsSync(DONE_FILE) ? JSON.parse(fs.readFileSync(DONE_FILE, 'utf8')) : [];
@@ -443,11 +459,9 @@ async function main() {
     queue = articles.filter(a => a.slug === process.env.SLUG);
     if (!queue.length) { console.error('Нет статьи со slug=' + process.env.SLUG); process.exit(1); }
   } else {
-    queue = articles.filter(a => !done.includes(a.slug) && a.i18n && a.i18n[LANG])
-      .sort((x, y) => Date.parse(y.date) - Date.parse(x.date))
-      .slice(0, Math.max(1, Number(cfg.perRun || 1)));
+    queue = pickQueue(articles, done, cfg);
   }
-  if (!queue.length) { console.log('Новых статей для роликов нет.'); return; }
+  if (!queue.length) { console.log('Свежих неотрендеренных статей нет — ролик не делаем. Старьё не рендерим сознательно: запоздалый ролик хуже пропуска.'); return; }
 
   let ok = 0;
   for (const a of queue) {
@@ -465,4 +479,4 @@ async function main() {
 
 if (require.main === module) main().catch(e => { console.error(e); process.exit(1); });
 
-module.exports = { sentences, bodyCards, fitSize, caption, cardDuration, cardHtml, ttsMode, hookSplit, kickerFor, buildCards };
+module.exports = { sentences, bodyCards, fitSize, caption, cardDuration, cardHtml, ttsMode, hookSplit, kickerFor, buildCards, pickQueue };

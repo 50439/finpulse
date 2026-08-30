@@ -101,5 +101,38 @@ fs.rmSync(box, { recursive: true, force: true });
     '\u043f\u0440\u0435\u0434\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u0435\u043b\u044c \u043d\u0435 \u0441\u0440\u0430\u0431\u043e\u0442\u0430\u043b. \u0412\u044b\u0432\u043e\u0434: ' + JSON.stringify(log.slice(0, 200)));
 }
 
+// --- Молчаливый отказ постинга -----------------------------------------
+// Урок инцидента с лентой (24-30.08): «зелёный прогон» не значит «работает».
+// Если материалы к отправке БЫЛИ, а не ушло НИ ОДНО сообщение — это отказ
+// постинга, и он обязан быть виден в Actions как ::warning::, а не тонуть
+// в построчных ошибках каналов.
+{
+  const box2 = fs.mkdtempSync(path.join(os.tmpdir(), 'tgtest2-'));
+  fs.mkdirSync(path.join(box2, 'data')); fs.mkdirSync(path.join(box2, 'scripts')); fs.mkdirSync(path.join(box2, 'content'));
+  fs.copyFileSync(path.join(ROOT, 'data/i18n.json'), path.join(box2, 'data/i18n.json'));
+  fs.copyFileSync(path.join(ROOT, 'scripts/telegram.js'), path.join(box2, 'scripts/telegram.js'));
+  fs.writeFileSync(path.join(box2, 'data/telegram-channels.json'), JSON.stringify({ ru: '@dead_ru', pl: '@dead_pl' }));
+  fs.writeFileSync(path.join(box2, 'content/articles.json'), JSON.stringify([
+    { slug: 'news-x', emoji: 'N', date: '2026-08-23', category: 'crypto', i18n: i18nFor('X') }
+  ]));
+  fs.writeFileSync(path.join(box2, 'content/guides.json'), '[]');
+  fs.writeFileSync(path.join(box2, 'content/tg-posted.json'), '{"guides":{}}');
+  fs.writeFileSync(path.join(box2, 'runner.js'), `
+global.fetch = async () => ({ json: async () => ({ ok: false, description: 'chat not found' }) });
+require('./scripts/telegram.js');
+`);
+  const r2 = require('child_process').spawnSync(process.execPath, ['runner.js'], {
+    cwd: box2, encoding: 'utf8',
+    env: { ...process.env, TELEGRAM_BOT_TOKEN: 'x', SITE_URL: 'https://finpulse24.com', TG_MAX_POSTS: '2', TG_SKIP_SITE_CHECK: '1' }
+  });
+  const log2 = (r2.stdout || '') + (r2.stderr || '');
+  check(/::warning::.*не отправлено ни одного/.test(log2),
+    'все каналы мертвы, материалы были — прогон обязан печатать ::warning:: о простое постинга. Вывод: ' + log2.slice(0, 300));
+}
+
+// обычный прогон (часть каналов работает) предупреждения о простое давать не должен
+check(!/::warning::.*не отправлено ни одного/.test(log),
+  'при частично успешном постинге предупреждения о простое быть не должно');
+
 if (fails) { console.error(fails + ' failures'); process.exit(1); }
 console.log('OK - telegram: ' + sent.length + ' сообщений, каналы изолированы, языки не перепутаны');
