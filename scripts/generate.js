@@ -19,7 +19,12 @@ const FEEDS = [
   { url: 'https://feeds.content.dowjones.io/public/rss/mw_topstories', category: 'stocks' },
   { url: 'https://www.investing.com/rss/news_1.rss', category: 'forex' },
   { url: 'https://feeds.bbci.co.uk/news/business/rss.xml', category: 'world' },
-  { url: 'https://www.epravda.com.ua/rss/', category: 'ukraine' }
+  { url: 'https://www.epravda.com.ua/rss/', category: 'ukraine' },
+  // Второй украинский источник: epravda отдаёт 403 с раннеров GitHub (блок по
+  // IP-диапазону, из других сетей — 200), и категория ukraine была мертва.
+  // У РБК фид — статический файл, собранный для агрегатора ukr.net: его
+  // раздаёт CDN без фильтрации по IP, раннеры его получают.
+  { url: 'https://www.rbc.ua/static/rss/ukrnet.economic.ukr.rss.xml', category: 'ukraine' }
 ];
 
 // --- Дедупликация -------------------------------------------------------
