@@ -3,6 +3,11 @@ const fs = require('fs');
 const path = require('path');
 
 const KEY = 'ee221c0a3d35f01be5577688fa06a50a';
+// ROOT отсутствовал с 24.08 (правка под data/site.json) — скрипт падал на
+// ReferenceError, каждый deploy печатал «indexnow failed», и IndexNow не
+// отправил ни одного URL. Ошибка жила неделю, потому что шаг обёрнут в
+// `|| echo warning` и жёлтая строка в зелёном прогоне никого не остановила.
+const ROOT = path.join(__dirname, '..');
 const SITE_FILE = path.join(ROOT, 'data/site.json');
 const SITE = String((fs.existsSync(SITE_FILE) ? JSON.parse(fs.readFileSync(SITE_FILE,'utf8')).url : '')
   || process.env.SITE_URL || 'https://finpulse24.com').replace(/\/$/, '');
