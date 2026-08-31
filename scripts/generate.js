@@ -77,6 +77,19 @@ const slugBase = s => String(s).toLowerCase().replace(/-[a-z0-9]{4}$/, '');
 // Здесь простой превращается в ::warning:: в Actions.
 const STALL_HOURS = Number(process.env.STALL_HOURS || 30);
 
+// Суточный лимит. Окно НЕ 24 часа, и это принципиально: прогоны идут по
+// сетке раз в 8 часов, и при окне 24 ч статья, вышедшая в 06:19, блокировала
+// завтрашний прогон 05:44 (ей 23,4 ч) — публикация уезжала на 13:44 и дальше
+// по кругу. Фактический каденс был 29-32 ч: «1 в сутки» тихо стала «5 в
+// неделю». Окно 20 ч < 24 - 8/2 гарантирует, что тот же слот назавтра проходит.
+function quotaFull(existing, cfg, now) {
+  const perDay = Number((cfg || {}).newsPerDay || 0);
+  if (!perDay) return false;
+  const windowH = Number((cfg || {}).newsWindowHours || 20);
+  const since = (now || Date.now()) - windowH * 3600000;
+  return existing.filter(x => Date.parse(x.date) >= since).length >= perDay;
+}
+
 function feedStall(existing, now) {
   now = now || Date.now();
   if (!existing || !existing.length) return 'лента пуста: не опубликовано ни одной статьи';
@@ -180,16 +193,10 @@ async function main() {
   {
     const cfgFile = path.join(ROOT, 'data/site.json');
     const cfg = fs.existsSync(cfgFile) ? JSON.parse(fs.readFileSync(cfgFile, 'utf8')) : {};
-    const perDay = Number(cfg.newsPerDay || 0);
-    if (perDay > 0) {
-      const since = Date.now() - 24 * 60 * 60 * 1000;
-      const last24 = _existing.filter(x => Date.parse(x.date) >= since).length;
-      if (last24 >= perDay) {
-        console.log('\u0417\u0430 \u0441\u0443\u0442\u043a\u0438 \u0443\u0436\u0435 \u043e\u043f\u0443\u0431\u043b\u0438\u043a\u043e\u0432\u0430\u043d\u043e ' + last24 + ' \u0441\u0442\u0430\u0442\u0435\u0439 \u043f\u0440\u0438 \u043b\u0438\u043c\u0438\u0442\u0435 ' + perDay +
-          ' (data/site.json \u2192 newsPerDay) \u2014 \u043f\u0440\u043e\u0433\u043e\u043d \u043f\u0440\u043e\u043f\u0443\u0441\u043a\u0430\u044e, \u043c\u043e\u0434\u0435\u043b\u044c \u043d\u0435 \u0432\u044b\u0437\u044b\u0432\u0430\u044e.');
-        return;
-      }
-      console.log('\u0421\u0443\u0442\u043e\u0447\u043d\u044b\u0439 \u043b\u0438\u043c\u0438\u0442: ' + last24 + '/' + perDay + ' \u0441\u0442\u0430\u0442\u0435\u0439 \u0437\u0430 \u043f\u043e\u0441\u043b\u0435\u0434\u043d\u0438\u0435 24 \u0447\u0430\u0441\u0430.');
+    if (quotaFull(_existing, cfg)) {
+      console.log('Лимит: за окно newsWindowHours уже опубликовано >= ' + (cfg.newsPerDay || 0) +
+        ' статей (data/site.json) — прогон пропускаю, модель не вызываю.');
+      return;
     }
   }
 
@@ -273,4 +280,4 @@ if (require.main === module) {
   main().catch(e => { console.error(e); process.exit(1); });
 }
 
-module.exports = { keywords, titleSimilarity, slugBase, DUP_THRESHOLD, feedStall };
+module.exports = { keywords, titleSimilarity, slugBase, DUP_THRESHOLD, feedStall, quotaFull };

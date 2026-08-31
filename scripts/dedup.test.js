@@ -1,4 +1,4 @@
-const { titleSimilarity, slugBase, DUP_THRESHOLD, feedStall } = require('./generate.js');
+const { titleSimilarity, slugBase, DUP_THRESHOLD, feedStall, quotaFull } = require('./generate.js');
 
 // Пары, которые РЕАЛЬНО были опубликованы дважды (взяты из прода)
 const MUST_CATCH = [
@@ -72,6 +72,28 @@ console.log('\n--- простой ленты замечается ---');
     const ok = wantWarn ? typeof got === 'string' && got.length > 0 : got === null;
     if (!ok) fail++;
     console.log((ok ? '  OK  ' : '  FAIL') + ' ' + name + '  ->  ' + JSON.stringify(got));
+  }
+}
+
+// --- Дрейф суточного лимита --------------------------------------------
+// Прогоны идут по сетке раз в 8 часов, а лимит считал «статьи за 24 часа».
+// Статья, вышедшая в 06:19, блокирует завтрашний прогон 05:44 (ей 23,4 ч) —
+// публикация уезжает на 13:44, послезавтра ещё позже. Фактический каденс
+// получался 29-32 часа: «1 статья в сутки» тихо превратилась в «5 статей в
+// неделю». Окно 20 ч < 24 - 8/2: тот же слот назавтра всегда проходит.
+console.log('\n--- окно лимита не дрейфует ---');
+{
+  const now = Date.parse('2026-08-31T05:44:00Z');
+  const cases = [
+    [[{ date: '2026-08-30T06:19:00Z' }], false, 'вчерашняя статья (23.4 ч) не блокирует сегодняшний слот'],
+    [[{ date: '2026-08-31T00:00:00Z' }], true,  'сегодняшняя статья (5.7 ч) блокирует'],
+    [[{ date: '2026-08-30T06:19:00Z' }], false, 'perDay=0 выключает лимит', { newsPerDay: 0 }]
+  ];
+  for (const [arts, want, name, cfg] of cases) {
+    const got = quotaFull(arts, cfg || { newsPerDay: 1 }, now);
+    const ok = got === want || (cfg && cfg.newsPerDay === 0 && got === false);
+    if (!ok) fail++;
+    console.log((ok ? '  OK  ' : '  FAIL') + ' ' + name + '  ->  ' + got);
   }
 }
 
