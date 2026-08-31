@@ -6669,5 +6669,759 @@
     ]
    }
   }
+ },
+ {
+  "slug": "crypto-fees-explained",
+  "category": "guide",
+  "emoji": "💸",
+  "langs": [
+   "en",
+   "de",
+   "fr",
+   "pl",
+   "pt",
+   "es",
+   "tr",
+   "id",
+   "vi",
+   "th",
+   "uk",
+   "ru"
+  ],
+  "updated": "2026-08-31T10:26:24.529Z",
+  "i18n": {
+   "en": {
+    "title": "Crypto Fees Explained: Where the Money Actually Goes on Every Trade",
+    "excerpt": "Buying cryptocurrency involves five layers of fees that can eat 3–7% of a small trade even when the platform advertises zero commission. Here's how each cost works and the order of operations that cuts your total expense.",
+    "sections": [
+     {
+      "h": "Deposit fees: the cost of getting money onto the platform",
+      "p": [
+       "Most exchanges charge nothing for bank transfers but apply a fee when you deposit by debit card or credit card. Card deposits typically cost 1.5–3.9% because the exchange pays interchange fees to card networks. Wire transfers are usually free but can take one to three business days. Some platforms charge a flat fee for smaller deposits, which becomes expensive on amounts under $100.",
+       "If you plan to trade regularly, the lowest-cost path is a free bank transfer, even when it means waiting. One-time buyers paying by card should factor that percentage into the total cost before comparing platform prices."
+      ]
+     },
+     {
+      "h": "The spread: markup hidden inside the quoted price",
+      "p": [
+       "When you click 'instant buy' or use a simplified interface, you see a single price with no separate fee line. That price already includes a spread—the difference between the market rate and what you pay. Spread markups typically range from 0.5% to 2%, and they are higher for less-liquid cryptocurrencies and smaller trade sizes.",
+       "The platform is buying from its own order book or a liquidity provider at one price and selling to you at another. This is not listed as a fee, so a 'zero commission' promise can still be accurate. To see the spread, compare the instant buy price to the mid-market price shown on a live order book or aggregator. The difference is your cost."
+      ]
+     },
+     {
+      "h": "Maker and taker fees: what you pay on an order book",
+      "p": [
+       "If you place an order on the exchange's order book instead of using instant buy, you pay a trading fee. A maker fee applies when you add liquidity—placing a limit order that sits in the book waiting for a match. A taker fee applies when you remove liquidity—placing a market order or a limit order that matches immediately.",
+       "Maker fees are lower, often 0.1–0.4%, while taker fees range from 0.15–0.6%. High-volume traders and users who hold the platform's native token often receive discounts, dropping fees below 0.1% per side. Each exchange publishes a fee schedule, usually tiered by 30-day trading volume. Trading on the order book is cheaper than instant buy, but requires understanding order types and accepting that limit orders may not fill if the market moves."
+      ]
+     },
+     {
+      "h": "Network fees: the cost of moving crypto off the exchange",
+      "p": [
+       "When you withdraw cryptocurrency to your own wallet, you pay a network fee—sometimes called a miner fee or gas fee. This fee compensates validators or miners who process the transaction on the blockchain. Fee amounts vary by network: Bitcoin withdrawals might cost $1–5, Ethereum $2–20 depending on congestion, and networks like Solana or Polygon under $0.50.",
+       "Some exchanges charge a flat withdrawal fee that covers their estimate of the network cost plus a margin. Others pass through the exact network fee. A few platforms offer one free withdrawal per month. If you trade small amounts, a $5 withdrawal fee on a $50 purchase is a 10% cost. Consolidating multiple trades into a single withdrawal, or choosing lower-fee networks when the asset is available on several chains, reduces this expense."
+      ]
+     },
+     {
+      "h": "Currency conversion costs: the invisible tax on non-USD trades",
+      "p": [
+       "If your local currency is not the quote currency for the trading pair, you pay twice. First, the exchange converts your deposit from your currency into the quote currency—usually USD, EUR, or a stablecoin—applying a foreign exchange spread or conversion fee of 0.3–1%. Then you trade that quote currency for the cryptocurrency, paying the trading fee or spread again.",
+       "Some platforms let you deposit in your local currency but only offer crypto pairs quoted in USD or USDT. Others offer direct local-currency pairs, which skip one conversion. Check whether the platform supports a direct pair like BTC/GBP or ETH/AUD. If not, depositing a stablecoin you acquired elsewhere at a better rate may save money, though that introduces an extra transfer step."
+      ]
+     },
+     {
+      "h": "Worked example: the real cost of a $100 Bitcoin purchase",
+      "p": [
+       "You deposit $100 by debit card. The platform charges 2.5%, so $97.50 reaches your account. You use instant buy, which includes a 1.5% spread. You receive $96.04 worth of Bitcoin at mid-market rates. Later you withdraw to your wallet, paying a $3 network fee. Your Bitcoin is now worth $93.04 at the price you bought—a total cost of $6.96, or nearly 7%, despite 'zero commission' advertising.",
+       "If instead you deposit by free bank transfer, wait for it to clear, place a limit order as a maker paying 0.2%, and leave the Bitcoin on the exchange until you accumulate a larger amount to withdraw, your cost drops to $0.20 in trading fees plus an eventual $3 withdrawal fee spread over multiple purchases. On a $500 total across five trades, that's $4 total, or 0.8%."
+      ]
+     },
+     {
+      "h": "The order of operations that minimizes total cost",
+      "p": [
+       "First, deposit using a zero-fee method even when it requires waiting. Second, trade on the order book using limit orders to pay maker fees, not instant buy. Third, consolidate purchases before withdrawing—ten $50 purchases paying one $3 withdrawal fee costs less than ten separate withdrawals. Fourth, compare platforms: a site with 0.1% maker fees and $2 withdrawals beats one with 0.5% fees and $5 withdrawals once your trade size exceeds a few hundred dollars.",
+       "Fifth, choose the blockchain network carefully. If you buy a token available on Ethereum and Polygon, withdrawing on Polygon may cost $0.20 instead of $10, but check that your destination wallet and any future platform you send to supports that network. Sending to the wrong network can result in permanent loss."
+      ]
+     },
+     {
+      "h": "Tax reporting and record-keeping",
+      "p": [
+       "Every trade, withdrawal, and conversion can be a taxable event depending on your jurisdiction. Keep records of each step: deposit timestamps, trade prices, fees paid, and withdrawal addresses. Many countries tax crypto-to-crypto trades, not only cash-outs, and fees are often deductible or adjust your cost basis. Rules vary widely and change frequently, so this is not tax advice—consult a local professional or use specialized crypto tax software that imports exchange transaction histories."
+      ]
+     }
+    ]
+   },
+   "de": {
+    "title": "Krypto-Gebühren erklärt: Wohin das Geld bei jedem Trade wirklich fließt",
+    "excerpt": "Der Kauf von Kryptowährungen umfasst fünf Gebührenebenen, die bei kleinen Trades 3–7 % verschlingen können, selbst wenn die Plattform mit null Provision wirbt. So funktioniert jede Kostenart und diese Reihenfolge senkt die Gesamtausgaben.",
+    "sections": [
+     {
+      "h": "Einzahlungsgebühren: Kosten für den Geldtransfer auf die Plattform",
+      "p": [
+       "Die meisten Börsen verlangen nichts für Banküberweisungen, erheben aber eine Gebühr bei Einzahlung per Debit- oder Kreditkarte. Karteneinzahlungen kosten typischerweise 1,5–3,9 %, weil die Börse Interchange-Gebühren an Kartennetzwerke zahlt. SEPA-Überweisungen sind meist kostenlos, dauern aber ein bis drei Werktage. Einige Plattformen erheben eine Pauschalgebühr für kleinere Einzahlungen, was bei Beträgen unter 100 € teuer wird.",
+       "Wer regelmäßig handeln möchte, wählt den kostengünstigsten Weg über eine kostenlose Banküberweisung, auch wenn das Warten bedeutet. Einmalkäufer, die per Karte zahlen, sollten diesen Prozentsatz in die Gesamtkosten einrechnen, bevor sie Plattformpreise vergleichen."
+      ]
+     },
+     {
+      "h": "Der Spread: Aufschlag im angezeigten Preis versteckt",
+      "p": [
+       "Wenn Sie auf ‚Sofortkauf' klicken oder eine vereinfachte Oberfläche nutzen, sehen Sie einen einzelnen Preis ohne separate Gebührenzeile. Dieser Preis enthält bereits einen Spread – die Differenz zwischen dem Marktkurs und Ihrem Kaufpreis. Spread-Aufschläge liegen typischerweise zwischen 0,5 % und 2 % und sind höher bei weniger liquiden Kryptowährungen und kleineren Handelsgrößen.",
+       "Die Plattform kauft aus ihrem eigenen Orderbuch oder von einem Liquiditätsanbieter zu einem Preis und verkauft an Sie zu einem anderen. Dies wird nicht als Gebühr aufgeführt, sodass ein ‚null Provision'-Versprechen trotzdem korrekt sein kann. Um den Spread zu sehen, vergleichen Sie den Sofortkaufpreis mit dem Mittelkurs im Live-Orderbuch oder bei einem Aggregator. Die Differenz sind Ihre Kosten."
+      ]
+     },
+     {
+      "h": "Maker- und Taker-Gebühren: Was Sie im Orderbuch zahlen",
+      "p": [
+       "Wenn Sie eine Order im Orderbuch der Börse platzieren statt Sofortkauf zu nutzen, zahlen Sie eine Handelsgebühr. Eine Maker-Gebühr fällt an, wenn Sie Liquidität hinzufügen – also eine Limit-Order platzieren, die im Buch auf Ausführung wartet. Eine Taker-Gebühr fällt an, wenn Sie Liquidität entnehmen – mit einer Market-Order oder einer Limit-Order, die sofort ausgeführt wird.",
+       "Maker-Gebühren sind niedriger, oft 0,1–0,4 %, während Taker-Gebühren zwischen 0,15–0,6 % liegen. Händler mit hohem Volumen und Nutzer, die den nativen Token der Plattform halten, erhalten oft Rabatte, wodurch die Gebühren unter 0,1 % pro Seite fallen. Jede Börse veröffentlicht eine Gebührenordnung, meist gestaffelt nach 30-Tage-Handelsvolumen. Der Handel im Orderbuch ist günstiger als Sofortkauf, erfordert aber Verständnis von Ordertypen und die Akzeptanz, dass Limit-Orders möglicherweise nicht ausgeführt werden, wenn sich der Markt bewegt."
+      ]
+     },
+     {
+      "h": "Netzwerkgebühren: Kosten für die Auszahlung auf Ihr Wallet",
+      "p": [
+       "Wenn Sie Kryptowährung auf Ihr eigenes Wallet auszahlen, zahlen Sie eine Netzwerkgebühr – manchmal Miner-Gebühr oder Gas-Gebühr genannt. Diese Gebühr entschädigt Validatoren oder Miner, die die Transaktion auf der Blockchain verarbeiten. Gebührenhöhen variieren je nach Netzwerk: Bitcoin-Auszahlungen kosten möglicherweise 1–5 €, Ethereum 2–20 € je nach Auslastung und Netzwerke wie Solana oder Polygon unter 0,50 €.",
+       "Einige Börsen erheben eine pauschale Auszahlungsgebühr, die ihre geschätzten Netzwerkkosten plus Marge abdeckt. Andere geben die exakte Netzwerkgebühr weiter. Wenige Plattformen bieten eine kostenlose Auszahlung pro Monat. Wenn Sie kleine Beträge handeln, ist eine 5-€-Auszahlungsgebühr bei einem 50-€-Kauf ein 10-%-Kostenfaktor. Mehrere Trades in einer Auszahlung zu bündeln oder Netzwerke mit niedrigeren Gebühren zu wählen, wenn der Coin auf mehreren Chains verfügbar ist, reduziert diese Ausgabe."
+      ]
+     },
+     {
+      "h": "Währungsumrechnungskosten: Die unsichtbare Steuer bei Nicht-Euro-Trades",
+      "p": [
+       "Wenn Ihre lokale Währung nicht die Basiswährung des Handelspaars ist, zahlen Sie zweimal. Zuerst rechnet die Börse Ihre Einzahlung von Ihrer Währung in die Basiswährung um – meist USD, EUR oder ein Stablecoin – und wendet einen Wechselkurs-Spread oder eine Umrechnungsgebühr von 0,3–1 % an. Dann handeln Sie diese Basiswährung gegen die Kryptowährung und zahlen erneut die Handelsgebühr oder den Spread.",
+       "Einige Plattformen lassen Sie in Ihrer lokalen Währung einzahlen, bieten aber nur Krypto-Paare in USD oder USDT an. Andere bieten direkte Lokalwährungs-Paare, die eine Umrechnung überspringen. Prüfen Sie, ob die Plattform ein direktes Paar wie BTC/EUR oder ETH/CHF unterstützt. Falls nicht, kann die Einzahlung eines Stablecoins, den Sie anderswo zu einem besseren Kurs erworben haben, Geld sparen, führt aber einen zusätzlichen Transfer-Schritt ein."
+      ]
+     },
+     {
+      "h": "Praxisbeispiel: Die echten Kosten eines 100-€-Bitcoin-Kaufs",
+      "p": [
+       "Sie zahlen 100 € per Debitkarte ein. Die Plattform berechnet 2,5 %, also erreichen 97,50 € Ihr Konto. Sie nutzen Sofortkauf mit 1,5 % Spread eingerechnet. Sie erhalten Bitcoin im Wert von 96,04 € zu Mittelkursen. Später zahlen Sie auf Ihr Wallet aus und zahlen 3 € Netzwerkgebühr. Ihr Bitcoin ist nun 93,04 € wert zum Kaufpreis – Gesamtkosten von 6,96 €, also knapp 7 %, trotz ‚null Provision'-Werbung.",
+       "Wenn Sie stattdessen per kostenloser SEPA-Überweisung einzahlen, auf die Gutschrift warten, eine Limit-Order als Maker mit 0,2 % Gebühr platzieren und den Bitcoin auf der Börse lassen, bis Sie einen größeren Betrag zum Auszahlen angesammelt haben, sinken Ihre Kosten auf 0,20 € Handelsgebühren plus eine spätere 3-€-Auszahlungsgebühr auf mehrere Käufe verteilt. Bei 500 € gesamt über fünf Trades sind das 4 € insgesamt, oder 0,8 %."
+      ]
+     },
+     {
+      "h": "Die Reihenfolge, die Gesamtkosten minimiert",
+      "p": [
+       "Erstens: Zahlen Sie mit einer gebührenfreien Methode ein, auch wenn das Warten erfordert. Zweitens: Handeln Sie im Orderbuch mit Limit-Orders für Maker-Gebühren, nicht per Sofortkauf. Drittens: Bündeln Sie Käufe vor der Auszahlung – zehn 50-€-Käufe mit einer 3-€-Auszahlungsgebühr kosten weniger als zehn separate Auszahlungen. Viertens: Vergleichen Sie Plattformen: Eine Seite mit 0,1 % Maker-Gebühren und 2-€-Auszahlungen schlägt eine mit 0,5 % Gebühren und 5-€-Auszahlungen, sobald Ihre Handelsgröße einige hundert Euro übersteigt.",
+       "Fünftens: Wählen Sie das Blockchain-Netzwerk sorgfältig. Wenn Sie einen Token kaufen, der auf Ethereum und Polygon verfügbar ist, kann die Auszahlung auf Polygon 0,20 € statt 10 € kosten, aber prüfen Sie, dass Ihr Ziel-Wallet und jede zukünftige Plattform, an die Sie senden, dieses Netzwerk unterstützt. Das Senden an das falsche Netzwerk kann zu permanentem Verlust führen."
+      ]
+     },
+     {
+      "h": "Steuerberichterstattung und Aufzeichnungen",
+      "p": [
+       "Jeder Trade, jede Auszahlung und jede Umrechnung kann je nach Rechtsordnung ein steuerpflichtiges Ereignis sein. Führen Sie Aufzeichnungen über jeden Schritt: Einzahlungszeitstempel, Handelspreise, gezahlte Gebühren und Auszahlungsadressen. Viele Länder besteuern Krypto-zu-Krypto-Trades, nicht nur Auszahlungen in Fiat, und Gebühren sind oft abzugsfähig oder passen Ihre Anschaffungskosten an. Regeln variieren stark und ändern sich häufig, dies ist also keine Steuerberatung – konsultieren Sie einen lokalen Fachmann oder nutzen Sie spezialisierte Krypto-Steuersoftware, die Transaktionshistorien von Börsen importiert."
+      ]
+     }
+    ]
+   },
+   "fr": {
+    "title": "Frais crypto expliqués : où va réellement l'argent sur chaque transaction",
+    "excerpt": "L'achat de cryptomonnaie implique cinq niveaux de frais qui peuvent représenter 3 à 7 % d'une petite transaction, même quand la plateforme affiche zéro commission. Voici comment fonctionne chaque coût et l'ordre des opérations qui réduit la dépense totale.",
+    "sections": [
+     {
+      "h": "Frais de dépôt : le coût pour créditer la plateforme",
+      "p": [
+       "La plupart des échanges ne facturent rien pour les virements bancaires mais appliquent des frais lors d'un dépôt par carte bancaire ou carte de crédit. Les dépôts par carte coûtent généralement 1,5 à 3,9 % car l'échange paie des frais d'interchange aux réseaux de cartes. Les virements SEPA sont habituellement gratuits mais prennent un à trois jours ouvrés. Certaines plateformes facturent des frais fixes pour les petits dépôts, ce qui devient coûteux sur des montants inférieurs à 100 €.",
+       "Si vous prévoyez de trader régulièrement, le chemin le moins cher est un virement bancaire gratuit, même si cela implique d'attendre. Les acheteurs ponctuels payant par carte doivent intégrer ce pourcentage dans le coût total avant de comparer les prix des plateformes."
+      ]
+     },
+     {
+      "h": "Le spread : la majoration cachée dans le prix affiché",
+      "p": [
+       "Quand vous cliquez sur 'achat instantané' ou utilisez une interface simplifiée, vous voyez un prix unique sans ligne de frais séparée. Ce prix inclut déjà un spread – la différence entre le taux du marché et ce que vous payez. Les majorations de spread vont généralement de 0,5 % à 2 %, et elles sont plus élevées pour les cryptomonnaies moins liquides et les petites tailles de transaction.",
+       "La plateforme achète depuis son propre carnet d'ordres ou auprès d'un fournisseur de liquidité à un prix et vous vend à un autre. Ceci n'est pas listé comme frais, donc une promesse 'zéro commission' peut rester exacte. Pour voir le spread, comparez le prix d'achat instantané au prix du marché affiché sur un carnet d'ordres en direct ou un agrégateur. La différence est votre coût."
+      ]
+     },
+     {
+      "h": "Frais maker et taker : ce que vous payez sur un carnet d'ordres",
+      "p": [
+       "Si vous placez un ordre sur le carnet d'ordres de l'échange plutôt que d'utiliser l'achat instantané, vous payez des frais de transaction. Des frais maker s'appliquent quand vous ajoutez de la liquidité – en plaçant un ordre limité qui attend dans le carnet. Des frais taker s'appliquent quand vous retirez de la liquidité – en plaçant un ordre au marché ou un ordre limité qui s'exécute immédiatement.",
+       "Les frais maker sont plus bas, souvent 0,1 à 0,4 %, tandis que les frais taker vont de 0,15 à 0,6 %. Les traders à haut volume et les utilisateurs qui détiennent le token natif de la plateforme bénéficient souvent de réductions, faisant chuter les frais en dessous de 0,1 % par côté. Chaque échange publie un barème de frais, généralement échelonné selon le volume de trading sur 30 jours. Trader sur le carnet d'ordres est moins cher que l'achat instantané, mais nécessite de comprendre les types d'ordres et d'accepter que les ordres limités peuvent ne pas s'exécuter si le marché bouge."
+      ]
+     },
+     {
+      "h": "Frais de réseau : le coût du retrait crypto vers votre wallet",
+      "p": [
+       "Quand vous retirez de la cryptomonnaie vers votre propre portefeuille, vous payez des frais de réseau – parfois appelés frais de mineur ou frais de gas. Ces frais rémunèrent les validateurs ou mineurs qui traitent la transaction sur la blockchain. Les montants varient selon le réseau : les retraits Bitcoin peuvent coûter 1 à 5 €, Ethereum 2 à 20 € selon la congestion, et des réseaux comme Solana ou Polygon moins de 0,50 €.",
+       "Certains échanges facturent des frais de retrait forfaitaires couvrant leur estimation du coût réseau plus une marge. D'autres répercutent les frais réseau exacts. Quelques plateformes offrent un retrait gratuit par mois. Si vous tradez de petits montants, des frais de retrait de 5 € sur un achat de 50 € représentent un coût de 10 %. Consolider plusieurs achats en un seul retrait, ou choisir des réseaux à frais réduits quand l'actif est disponible sur plusieurs chaînes, réduit cette dépense."
+      ]
+     },
+     {
+      "h": "Coûts de conversion monétaire : la taxe invisible sur les trades hors euro",
+      "p": [
+       "Si votre monnaie locale n'est pas la devise de cotation de la paire de trading, vous payez deux fois. D'abord, l'échange convertit votre dépôt de votre devise vers la devise de cotation – habituellement USD, EUR ou un stablecoin – en appliquant un spread de change ou des frais de conversion de 0,3 à 1 %. Ensuite vous échangez cette devise de cotation contre la cryptomonnaie, payant à nouveau les frais de trading ou le spread.",
+       "Certaines plateformes vous laissent déposer dans votre monnaie locale mais n'offrent que des paires crypto cotées en USD ou USDT. D'autres proposent des paires directes en monnaie locale, ce qui évite une conversion. Vérifiez si la plateforme supporte une paire directe comme BTC/EUR ou ETH/CHF. Sinon, déposer un stablecoin que vous avez acquis ailleurs à un meilleur taux peut économiser de l'argent, bien que cela introduise une étape de transfert supplémentaire."
+      ]
+     },
+     {
+      "h": "Exemple concret : le coût réel d'un achat Bitcoin de 100 €",
+      "p": [
+       "Vous déposez 100 € par carte bancaire. La plateforme facture 2,5 %, donc 97,50 € arrivent sur votre compte. Vous utilisez l'achat instantané, qui inclut un spread de 1,5 %. Vous recevez du Bitcoin d'une valeur de 96,04 € aux taux du marché. Plus tard vous retirez vers votre portefeuille, payant 3 € de frais réseau. Votre Bitcoin vaut maintenant 93,04 € au prix d'achat – un coût total de 6,96 €, soit près de 7 %, malgré une publicité 'zéro commission'.",
+       "Si à la place vous déposez par virement bancaire gratuit, attendez la compensation, placez un ordre limité en tant que maker payant 0,2 %, et laissez le Bitcoin sur l'échange jusqu'à accumuler un montant plus important à retirer, votre coût tombe à 0,20 € de frais de trading plus des frais de retrait de 3 € répartis sur plusieurs achats. Sur un total de 500 € en cinq trades, cela fait 4 € au total, soit 0,8 %."
+      ]
+     },
+     {
+      "h": "L'ordre des opérations qui minimise le coût total",
+      "p": [
+       "Premièrement : déposez avec une méthode à frais zéro même si cela nécessite d'attendre. Deuxièmement : tradez sur le carnet d'ordres en utilisant des ordres limités pour payer des frais maker, pas d'achat instantané. Troisièmement : consolidez les achats avant de retirer – dix achats de 50 € payant un seul retrait à 3 € coûtent moins que dix retraits séparés. Quatrièmement : comparez les plateformes : un site avec des frais maker de 0,1 % et des retraits à 2 € bat un site avec des frais de 0,5 % et des retraits à 5 € dès que votre taille de trade dépasse quelques centaines d'euros.",
+       "Cinquièmement : choisissez le réseau blockchain avec soin. Si vous achetez un token disponible sur Ethereum et Polygon, retirer sur Polygon peut coûter 0,20 € au lieu de 10 €, mais vérifiez que votre portefeuille de destination et toute plateforme future vers laquelle vous envoyez supporte ce réseau. Envoyer vers le mauvais réseau peut entraîner une perte permanente."
+      ]
+     },
+     {
+      "h": "Déclaration fiscale et tenue de registres",
+      "p": [
+       "Chaque trade, retrait et conversion peut constituer un événement imposable selon votre juridiction. Conservez des enregistrements de chaque étape : horodatages de dépôt, prix de transaction, frais payés et adresses de retrait. Beaucoup de pays taxent les échanges crypto-à-crypto, pas seulement les retraits en monnaie fiat, et les frais sont souvent déductibles ou ajustent votre prix de revient. Les règles varient largement et changent fréquemment, donc ceci n'est pas un conseil fiscal – consultez un professionnel local ou utilisez un logiciel fiscal crypto spécialisé qui importe les historiques de transactions des échanges."
+      ]
+     }
+    ]
+   },
+   "pl": {
+    "title": "Opłaty kryptowalutowe wyjaśnione: gdzie faktycznie trafiają pieniądze z każdej transakcji",
+    "excerpt": "Kupno kryptowaluty wiąże się z pięcioma warstwami opłat, które mogą pochłonąć 3–7% niewielkiej transakcji, nawet gdy platforma reklamuje zerową prowizję. Oto jak działa każdy koszt i kolejność działań, która zmniejsza łączne wydatki.",
+    "sections": [
+     {
+      "h": "Opłaty za wpłatę: koszt przelania pieniędzy na platformę",
+      "p": [
+       "Większość giełd nie pobiera opłat za przelewy bankowe, ale stosuje prowizję przy wpłacie kartą debetową lub kredytową. Wpłaty kartą zazwyczaj kosztują 1,5–3,9%, ponieważ giełda płaci opłaty interchange operatorom kart. Przelewy bankowe są zwykle darmowe, ale mogą trwać od jednego do trzech dni roboczych. Niektóre platformy pobierają stałą opłatę za mniejsze wpłaty, co staje się kosztowne przy kwotach poniżej 400 zł.",
+       "Jeśli planujesz regularnie handlować, najtańszą opcją jest darmowy przelew bankowy, nawet jeśli oznacza to oczekiwanie. Osoby kupujące jednorazowo kartą powinny uwzględnić ten procent w całkowitym koszcie przed porównaniem cen na różnych platformach."
+      ]
+     },
+     {
+      "h": "Spread: narzut ukryty w podanej cenie",
+      "p": [
+       "Kiedy klikasz 'kup natychmiast' lub korzystasz z uproszczonego interfejsu, widzisz pojedynczą cenę bez osobnej linii opłat. Ta cena już zawiera spread — różnicę między kursem rynkowym a tym, co płacisz. Narzuty spreadu zazwyczaj wahają się od 0,5% do 2% i są wyższe dla mniej płynnych kryptowalut oraz mniejszych transakcji.",
+       "Platforma kupuje z własnej księgi zleceń lub od dostawcy płynności po jednej cenie i sprzedaje tobie po innej. Nie jest to wykazywane jako opłata, więc obietnica 'zerowej prowizji' może nadal być prawdziwa. Aby zobaczyć spread, porównaj cenę natychmiastowego zakupu z ceną rynkową pokazaną w aktualnej księdze zleceń lub agregatorze. Różnica to twój koszt."
+      ]
+     },
+     {
+      "h": "Opłaty maker i taker: co płacisz w księdze zleceń",
+      "p": [
+       "Jeśli składasz zlecenie w księdze zleceń giełdy zamiast używać natychmiastowego zakupu, płacisz opłatę transakcyjną. Opłata maker obowiązuje, gdy dodajesz płynność — składając zlecenie z limitem, które czeka w księdze na dopasowanie. Opłata taker obowiązuje, gdy pobierasz płynność — składając zlecenie rynkowe lub zlecenie z limitem, które zostaje natychmiast zrealizowane.",
+       "Opłaty maker są niższe, często 0,1–0,4%, podczas gdy opłaty taker wahają się od 0,15–0,6%. Traderzy o dużych obrotach i użytkownicy posiadający natywny token platformy często otrzymują zniżki, obniżając opłaty poniżej 0,1% za stronę. Każda giełda publikuje harmonogram opłat, zwykle warstwowy według 30-dniowego wolumenu obrotu. Handel w księdze zleceń jest tańszy niż natychmiastowy zakup, ale wymaga zrozumienia rodzajów zleceń i akceptacji, że zlecenia z limitem mogą nie zostać zrealizowane, jeśli rynek się poruszy."
+      ]
+     },
+     {
+      "h": "Opłaty sieciowe: koszt przeniesienia kryptowaluty z giełdy",
+      "p": [
+       "Kiedy wypłacasz kryptowalutę do własnego portfela, płacisz opłatę sieciową — czasami nazywaną opłatą górniczą lub opłatą za gaz. Ta opłata rekompensuje walidatorom lub górnikom przetwarzanie transakcji w blockchainie. Wysokość opłat różni się w zależności od sieci: wypłaty Bitcoin mogą kosztować 5–20 zł, Ethereum 8–80 zł w zależności od przeciążenia, a sieci takie jak Solana czy Polygon poniżej 2 zł.",
+       "Niektóre giełdy pobierają stałą opłatę za wypłatę, która pokrywa ich szacunek kosztu sieciowego plus marżę. Inne przekazują dokładną opłatę sieciową. Kilka platform oferuje jedną darmową wypłatę miesięcznie. Jeśli handlujesz małymi kwotami, opłata za wypłatę w wysokości 20 zł przy zakupie za 200 zł to koszt 10%. Konsolidacja wielu transakcji w jedną wypłatę lub wybór sieci o niższych opłatach, gdy aktywo jest dostępne w kilku łańcuchach, zmniejsza ten wydatek."
+      ]
+     },
+     {
+      "h": "Koszty przewalutowania: niewidzialny podatek od transakcji w walutach innych niż USD",
+      "p": [
+       "Jeśli twoja lokalna waluta nie jest walutą kwotowania dla pary handlowej, płacisz dwukrotnie. Najpierw giełda przewalutowuje twoją wpłatę z twojej waluty na walutę kwotowania — zwykle USD, EUR lub stablecoin — stosując spread walutowy lub opłatę konwersji wynoszącą 0,3–1%. Następnie wymieniasz tę walutę kwotowania na kryptowalutę, płacąc ponownie opłatę transakcyjną lub spread.",
+       "Niektóre platformy pozwalają wpłacać w lokalnej walucie, ale oferują tylko pary kryptowalutowe kwotowane w USD lub USDT. Inne oferują bezpośrednie pary w walucie lokalnej, co pomija jedną konwersję. Sprawdź, czy platforma obsługuje bezpośrednią parę jak BTC/PLN lub ETH/PLN. Jeśli nie, wpłacenie stablecoina nabytego gdzie indziej po lepszym kursie może zaoszczędzić pieniądze, choć wprowadza to dodatkowy krok transferu."
+      ]
+     },
+     {
+      "h": "Przykład praktyczny: rzeczywisty koszt zakupu Bitcoin za 400 zł",
+      "p": [
+       "Wpłacasz 400 zł kartą debetową. Platforma pobiera 2,5%, więc na twoje konto trafia 390 zł. Używasz natychmiastowego zakupu, który zawiera 1,5% spreadu. Otrzymujesz Bitcoin o wartości 384,15 zł według kursów rynkowych. Później wypłacasz do swojego portfela, płacąc 12 zł opłaty sieciowej. Twój Bitcoin jest teraz wart 372,15 zł po cenie, za którą kupowałeś — łączny koszt 27,85 zł, czyli prawie 7%, pomimo reklamy 'zerowej prowizji'.",
+       "Jeśli zamiast tego wpłacisz darmowym przelewem bankowym, poczekasz na realizację, złożysz zlecenie z limitem jako maker płacąc 0,2% i zostawisz Bitcoin na giełdzie, dopóki nie zgromadzisz większej kwoty do wypłaty, twój koszt spada do 0,80 zł opłat transakcyjnych plus ewentualna opłata za wypłatę 12 zł rozłożona na wiele zakupów. Przy łącznej kwocie 2000 zł w pięciu transakcjach to 16 zł łącznie, czyli 0,8%."
+      ]
+     },
+     {
+      "h": "Kolejność działań minimalizująca całkowity koszt",
+      "p": [
+       "Po pierwsze, wpłacaj metodą zerowej opłaty, nawet jeśli wymaga to oczekiwania. Po drugie, handluj w księdze zleceń używając zleceń z limitem, aby płacić opłaty maker, a nie natychmiastowy zakup. Po trzecie, konsoliduj zakupy przed wypłatą — dziesięć zakupów po 200 zł z jedną opłatą za wypłatę 12 zł kosztuje mniej niż dziesięć oddzielnych wypłat. Po czwarte, porównaj platformy: witryna z opłatami maker 0,1% i wypłatami 8 zł jest lepsza niż ta z opłatami 0,5% i wypłatami 20 zł, gdy wielkość transakcji przekracza kilkaset złotych.",
+       "Po piąte, wybieraj sieć blockchain starannie. Jeśli kupujesz token dostępny na Ethereum i Polygon, wypłata na Polygon może kosztować 0,80 zł zamiast 40 zł, ale sprawdź, czy twój docelowy portfel i przyszłe platformy, na które wysyłasz, obsługują tę sieć. Wysłanie do niewłaściwej sieci może skutkować trwałą utratą środków."
+      ]
+     },
+     {
+      "h": "Rozliczenia podatkowe i prowadzenie dokumentacji",
+      "p": [
+       "Każda transakcja, wypłata i konwersja może być zdarzeniem podlegającym opodatkowaniu w zależności od jurysdykcji. Prowadź zapisy każdego kroku: znaczniki czasu wpłat, ceny transakcji, zapłacone opłaty i adresy wypłat. Wiele krajów opodatkowuje transakcje krypto-krypto, nie tylko wypłaty gotówki, a opłaty często można odliczyć lub dostosowują podstawę kosztową. Przepisy różnią się znacznie i zmieniają się często, więc nie jest to porada podatkowa — skonsultuj się z lokalnym specjalistą lub użyj specjalistycznego oprogramowania podatkowego do kryptowalut, które importuje historię transakcji z giełd."
+      ]
+     }
+    ]
+   },
+   "pt": {
+    "title": "Taxas de Criptomoedas Explicadas: Para Onde Vai o Dinheiro em Cada Transação",
+    "excerpt": "Comprar criptomoedas envolve cinco camadas de taxas que podem consumir 3–7% de uma transação pequena mesmo quando a plataforma anuncia comissão zero. Veja como cada custo funciona e a ordem de operações que reduz sua despesa total.",
+    "sections": [
+     {
+      "h": "Taxas de depósito: o custo de colocar dinheiro na plataforma",
+      "p": [
+       "A maioria das exchanges não cobra nada por transferências bancárias (TED/PIX), mas aplica uma taxa quando você deposita por cartão de débito ou crédito. Depósitos com cartão normalmente custam 1,5–3,9% porque a exchange paga taxas de intercâmbio às bandeiras. Transferências bancárias geralmente são gratuitas, mas podem levar de um a três dias úteis. Algumas plataformas cobram uma taxa fixa para depósitos menores, o que fica caro em valores abaixo de R$ 500.",
+       "Se você planeja negociar regularmente, o caminho mais econômico é uma transferência bancária gratuita (especialmente PIX), mesmo que signifique esperar. Compradores ocasionais que pagam com cartão devem incluir essa porcentagem no custo total antes de comparar preços entre plataformas."
+      ]
+     },
+     {
+      "h": "O spread: margem escondida dentro do preço cotado",
+      "p": [
+       "Quando você clica em 'compra instantânea' ou usa uma interface simplificada, você vê um preço único sem linha separada de taxa. Esse preço já inclui um spread—a diferença entre a taxa de mercado e o que você paga. Margens de spread normalmente variam de 0,5% a 2%, e são maiores para criptomoedas menos líquidas e transações menores.",
+       "A plataforma está comprando de seu próprio livro de ordens ou de um provedor de liquidez a um preço e vendendo para você a outro. Isso não é listado como taxa, então uma promessa de 'comissão zero' ainda pode ser precisa. Para ver o spread, compare o preço de compra instantânea com o preço de mercado mostrado em um livro de ordens ao vivo ou agregador. A diferença é seu custo."
+      ]
+     },
+     {
+      "h": "Taxas maker e taker: o que você paga no livro de ordens",
+      "p": [
+       "Se você coloca uma ordem no livro de ordens da exchange em vez de usar compra instantânea, você paga uma taxa de negociação. Uma taxa maker se aplica quando você adiciona liquidez—colocando uma ordem limitada que fica no livro esperando por correspondência. Uma taxa taker se aplica quando você remove liquidez—colocando uma ordem a mercado ou uma ordem limitada que corresponde imediatamente.",
+       "Taxas maker são menores, geralmente 0,1–0,4%, enquanto taxas taker variam de 0,15–0,6%. Traders de alto volume e usuários que mantêm o token nativo da plataforma frequentemente recebem descontos, reduzindo taxas abaixo de 0,1% por lado. Cada exchange publica uma tabela de taxas, geralmente escalonada por volume de negociação de 30 dias. Negociar no livro de ordens é mais barato que compra instantânea, mas requer entender tipos de ordens e aceitar que ordens limitadas podem não ser executadas se o mercado se mover."
+      ]
+     },
+     {
+      "h": "Taxas de rede: o custo de mover cripto para fora da exchange",
+      "p": [
+       "Quando você saca criptomoedas para sua própria carteira, você paga uma taxa de rede—às vezes chamada de taxa de minerador ou taxa de gas. Essa taxa compensa validadores ou mineradores que processam a transação na blockchain. Os valores variam por rede: saques de Bitcoin podem custar R$ 5–25, Ethereum R$ 10–100 dependendo do congestionamento, e redes como Solana ou Polygon menos de R$ 2,50.",
+       "Algumas exchanges cobram uma taxa fixa de saque que cobre sua estimativa do custo de rede mais uma margem. Outras repassam a taxa de rede exata. Algumas plataformas oferecem um saque gratuito por mês. Se você negocia valores pequenos, uma taxa de saque de R$ 25 em uma compra de R$ 250 representa um custo de 10%. Consolidar várias negociações em um único saque, ou escolher redes de taxa mais baixa quando o ativo está disponível em várias cadeias, reduz essa despesa."
+      ]
+     },
+     {
+      "h": "Custos de conversão de moeda: o imposto invisível em negociações fora do BRL",
+      "p": [
+       "Se sua moeda local não é a moeda de cotação do par de negociação, você paga duas vezes. Primeiro, a exchange converte seu depósito de reais para a moeda de cotação—geralmente USD, EUR ou uma stablecoin—aplicando um spread cambial ou taxa de conversão de 0,3–1%. Então você negocia essa moeda de cotação pela criptomoeda, pagando a taxa de negociação ou spread novamente.",
+       "Algumas plataformas permitem depositar em reais mas só oferecem pares cripto cotados em USD ou USDT. Outras oferecem pares diretos em moeda local, que pulam uma conversão. Verifique se a plataforma suporta um par direto como BTC/BRL ou ETH/BRL. Se não, depositar uma stablecoin que você adquiriu em outro lugar a uma taxa melhor pode economizar dinheiro, embora isso introduza uma etapa extra de transferência."
+      ]
+     },
+     {
+      "h": "Exemplo prático: o custo real de uma compra de R$ 500 em Bitcoin",
+      "p": [
+       "Você deposita R$ 500 por cartão de débito. A plataforma cobra 2,5%, então R$ 487,50 chegam à sua conta. Você usa compra instantânea, que inclui um spread de 1,5%. Você recebe R$ 480,19 em Bitcoin às taxas de mercado. Depois você saca para sua carteira, pagando uma taxa de rede de R$ 15. Seu Bitcoin agora vale R$ 465,19 ao preço que você comprou—um custo total de R$ 34,81, ou quase 7%, apesar da publicidade de 'comissão zero'.",
+       "Se em vez disso você depositar por PIX gratuito, esperar a compensação, colocar uma ordem limitada como maker pagando 0,2%, e deixar o Bitcoin na exchange até acumular um valor maior para sacar, seu custo cai para R$ 1,00 em taxas de negociação mais eventuais R$ 15 de taxa de saque distribuídos por várias compras. Em um total de R$ 2.500 ao longo de cinco negociações, isso é R$ 20 no total, ou 0,8%."
+      ]
+     },
+     {
+      "h": "A ordem de operações que minimiza o custo total",
+      "p": [
+       "Primeiro, deposite usando um método sem taxa mesmo que exija espera (PIX é ideal no Brasil). Segundo, negocie no livro de ordens usando ordens limitadas para pagar taxas maker, não compra instantânea. Terceiro, consolide compras antes de sacar—dez compras de R$ 250 pagando uma taxa de saque de R$ 15 custa menos que dez saques separados. Quarto, compare plataformas: um site com taxas maker de 0,1% e saques de R$ 10 vence um com taxas de 0,5% e saques de R$ 25 quando seu valor de negociação excede algumas centenas de reais.",
+       "Quinto, escolha a rede blockchain cuidadosamente. Se você compra um token disponível em Ethereum e Polygon, sacar na Polygon pode custar R$ 1 em vez de R$ 50, mas verifique se sua carteira de destino e qualquer plataforma futura para onde você enviar suporta essa rede. Enviar para a rede errada pode resultar em perda permanente."
+      ]
+     },
+     {
+      "h": "Declaração de impostos e manutenção de registros",
+      "p": [
+       "Cada negociação, saque e conversão pode ser um evento tributável dependendo da jurisdição brasileira. Mantenha registros de cada etapa: horários de depósito, preços de negociação, taxas pagas e endereços de saque. No Brasil, a Receita Federal exige declaração de criptomoedas e tributa ganhos acima de R$ 35.000 em vendas mensais, e taxas geralmente são dedutíveis ou ajustam sua base de custo. As regras variam e mudam frequentemente, então isso não é aconselhamento fiscal—consulte um contador local ou use software especializado em impostos sobre cripto que importa históricos de transações da exchange."
+      ]
+     }
+    ]
+   },
+   "es": {
+    "title": "Comisiones en criptomonedas explicadas: Adónde va realmente el dinero en cada operación",
+    "excerpt": "Comprar criptomonedas implica cinco capas de comisiones que pueden consumir del 3 al 7% de una operación pequeña incluso cuando la plataforma anuncia cero comisiones. Aquí te explicamos cómo funciona cada coste y el orden de operaciones que reduce tu gasto total.",
+    "sections": [
+     {
+      "h": "Comisiones de depósito: el coste de ingresar dinero en la plataforma",
+      "p": [
+       "La mayoría de los exchanges no cobran nada por transferencias bancarias, pero aplican una comisión cuando depositas con tarjeta de débito o crédito. Los depósitos con tarjeta suelen costar entre el 1,5% y el 3,9% porque el exchange paga comisiones de intercambio a las redes de tarjetas. Las transferencias bancarias suelen ser gratuitas pero pueden tardar de uno a tres días hábiles. Algunas plataformas cobran una tarifa fija por depósitos pequeños, lo que resulta caro en cantidades inferiores a 100 €.",
+       "Si planeas operar con regularidad, la opción más económica es una transferencia bancaria gratuita, aunque signifique esperar. Los compradores ocasionales que pagan con tarjeta deben incluir ese porcentaje en el coste total antes de comparar precios entre plataformas."
+      ]
+     },
+     {
+      "h": "El diferencial: margen oculto dentro del precio mostrado",
+      "p": [
+       "Cuando haces clic en 'compra instantánea' o usas una interfaz simplificada, ves un solo precio sin línea de comisión separada. Ese precio ya incluye un diferencial (spread): la diferencia entre el tipo de mercado y lo que pagas. Los márgenes del diferencial suelen oscilar entre el 0,5% y el 2%, y son mayores para criptomonedas menos líquidas y operaciones más pequeñas.",
+       "La plataforma compra de su propio libro de órdenes o de un proveedor de liquidez a un precio y te vende a otro. Esto no figura como comisión, por lo que una promesa de 'cero comisiones' puede seguir siendo exacta. Para ver el diferencial, compara el precio de compra instantánea con el precio medio del mercado mostrado en un libro de órdenes en vivo o un agregador. La diferencia es tu coste."
+      ]
+     },
+     {
+      "h": "Comisiones maker y taker: lo que pagas en un libro de órdenes",
+      "p": [
+       "Si colocas una orden en el libro de órdenes del exchange en lugar de usar compra instantánea, pagas una comisión de trading. Se aplica una comisión maker cuando añades liquidez: colocas una orden limitada que permanece en el libro esperando una coincidencia. Se aplica una comisión taker cuando retiras liquidez: colocas una orden de mercado o una orden limitada que coincide inmediatamente.",
+       "Las comisiones maker son más bajas, a menudo del 0,1% al 0,4%, mientras que las taker van del 0,15% al 0,6%. Los traders de alto volumen y los usuarios que poseen el token nativo de la plataforma suelen recibir descuentos, reduciendo las comisiones por debajo del 0,1% por operación. Cada exchange publica un calendario de comisiones, normalmente escalonado por volumen de trading de 30 días. Operar en el libro de órdenes es más barato que la compra instantánea, pero requiere entender los tipos de órdenes y aceptar que las órdenes limitadas pueden no ejecutarse si el mercado se mueve."
+      ]
+     },
+     {
+      "h": "Comisiones de red: el coste de sacar cripto del exchange",
+      "p": [
+       "Cuando retiras criptomonedas a tu propia cartera, pagas una comisión de red, a veces llamada comisión de minero o gas. Esta comisión recompensa a los validadores o mineros que procesan la transacción en la blockchain. Las cantidades varían según la red: los retiros de Bitcoin pueden costar entre 1 y 5 €, Ethereum entre 2 y 20 € dependiendo de la congestión, y redes como Solana o Polygon menos de 0,50 €.",
+       "Algunos exchanges cobran una comisión de retiro fija que cubre su estimación del coste de red más un margen. Otros traspasan la comisión de red exacta. Algunas plataformas ofrecen un retiro gratuito al mes. Si operas con cantidades pequeñas, una comisión de retiro de 5 € sobre una compra de 50 € representa un coste del 10%. Consolidar múltiples operaciones en un solo retiro, o elegir redes con comisiones más bajas cuando el activo está disponible en varias cadenas, reduce este gasto."
+      ]
+     },
+     {
+      "h": "Costes de conversión de divisa: el impuesto invisible en operaciones que no son en EUR",
+      "p": [
+       "Si tu moneda local no es la divisa de cotización del par de trading, pagas dos veces. Primero, el exchange convierte tu depósito de tu divisa a la divisa de cotización (normalmente USD, EUR o una stablecoin), aplicando un diferencial de cambio o comisión de conversión del 0,3% al 1%. Luego intercambias esa divisa de cotización por la criptomoneda, pagando de nuevo la comisión de trading o diferencial.",
+       "Algunas plataformas te permiten depositar en tu moneda local pero solo ofrecen pares de cripto cotizados en USD o USDT. Otras ofrecen pares directos en moneda local, que evitan una conversión. Comprueba si la plataforma admite un par directo como BTC/EUR o ETH/GBP. Si no es así, depositar una stablecoin que hayas adquirido en otro lugar a mejor tipo puede ahorrarte dinero, aunque eso introduce un paso de transferencia adicional."
+      ]
+     },
+     {
+      "h": "Ejemplo práctico: el coste real de comprar 100 € en Bitcoin",
+      "p": [
+       "Depositas 100 € con tarjeta de débito. La plataforma cobra el 2,5%, por lo que 97,50 € llegan a tu cuenta. Usas compra instantánea, que incluye un diferencial del 1,5%. Recibes Bitcoin por valor de 96,04 € a tipos de mercado medios. Más tarde lo retiras a tu cartera, pagando una comisión de red de 3 €. Tu Bitcoin ahora vale 93,04 € al precio que compraste: un coste total de 6,96 €, o casi el 7%, a pesar de la publicidad de 'cero comisiones'.",
+       "Si en cambio depositas mediante transferencia bancaria gratuita, esperas a que se complete, colocas una orden limitada como maker pagando el 0,2% y dejas el Bitcoin en el exchange hasta acumular una cantidad mayor para retirar, tu coste baja a 0,20 € en comisiones de trading más una eventual comisión de retiro de 3 € repartida entre múltiples compras. Sobre un total de 500 € en cinco operaciones, son 4 € en total, o el 0,8%."
+      ]
+     },
+     {
+      "h": "El orden de operaciones que minimiza el coste total",
+      "p": [
+       "Primero, deposita usando un método sin comisiones aunque requiera esperar. Segundo, opera en el libro de órdenes usando órdenes limitadas para pagar comisiones maker, no compra instantánea. Tercero, consolida compras antes de retirar: diez compras de 50 € pagando una comisión de retiro de 3 € cuesta menos que diez retiros separados. Cuarto, compara plataformas: un sitio con comisiones maker del 0,1% y retiros de 2 € supera a uno con comisiones del 0,5% y retiros de 5 € una vez que tu operación supera unos pocos cientos de euros.",
+       "Quinto, elige la red blockchain con cuidado. Si compras un token disponible en Ethereum y Polygon, retirar en Polygon puede costar 0,20 € en lugar de 10 €, pero verifica que tu cartera de destino y cualquier plataforma futura a la que envíes admita esa red. Enviar a la red incorrecta puede resultar en pérdida permanente."
+      ]
+     },
+     {
+      "h": "Declaración de impuestos y registro de operaciones",
+      "p": [
+       "Cada operación, retiro y conversión puede ser un hecho imponible dependiendo de tu jurisdicción. Guarda registros de cada paso: marcas de tiempo de depósitos, precios de operaciones, comisiones pagadas y direcciones de retiro. Muchos países gravan las operaciones cripto-a-cripto, no solo las retiradas a efectivo, y las comisiones a menudo son deducibles o ajustan tu base de coste. Las normas varían ampliamente y cambian con frecuencia, así que esto no es asesoramiento fiscal: consulta a un profesional local o usa software especializado de impuestos cripto que importe el historial de transacciones del exchange."
+      ]
+     }
+    ]
+   },
+   "tr": {
+    "title": "Kripto Ücretleri Açıklaması: Her İşlemde Paranız Gerçekte Nereye Gidiyor",
+    "excerpt": "Kripto para satın alırken, platform sıfır komisyon reklamı yapsa bile küçük bir işlemin %3–7'sini yiyebilen beş katmanlı ücret yapısıyla karşılaşırsınız. Her maliyetin nasıl işlediğini ve toplam giderinizi azaltan işlem sırasını burada bulabilirsiniz.",
+    "sections": [
+     {
+      "h": "Yatırma ücretleri: platforma para aktarmanın maliyeti",
+      "p": [
+       "Çoğu borsa banka havalesi için ücret almaz ancak banka kartı veya kredi kartıyla yatırım yaptığınızda ücret uygular. Kart ile yapılan yatırımlar genellikle %1,5–3,9 maliyete sahiptir çünkü borsa, kart ağlarına değişim ücreti öder. Havale genellikle ücretsizdir ancak bir ila üç iş günü sürebilir. Bazı platformlar küçük yatırımlar için sabit ücret alır ve bu da 100 TL'nin altındaki tutarlarda pahalıya mal olur.",
+       "Düzenli işlem yapmayı planlıyorsanız, beklemek anlamına gelse bile en düşük maliyetli yol ücretsiz banka havaesidir. Kartla ödeme yapan tek seferlik alıcılar, platform fiyatlarını karşılaştırmadan önce bu yüzdeyi toplam maliyete dahil etmelidir."
+      ]
+     },
+     {
+      "h": "Spread: teklif edilen fiyatın içine gizlenmiş kar marjı",
+      "p": [
+       "'Anında al' seçeneğine tıkladığınızda veya basitleştirilmiş bir arayüz kullandığınızda, ayrı bir ücret satırı olmayan tek bir fiyat görürsünüz. Bu fiyat zaten bir spread içerir—piyasa fiyatı ile ödediğiniz fiyat arasındaki fark. Spread marjları genellikle %0,5 ile %2 arasında değişir ve likiditesi düşük kripto paralar ile daha küçük işlem boyutlarında daha yüksektir.",
+       "Platform kendi emir defterinden veya likidite sağlayıcısından bir fiyattan alıp size başka bir fiyattan satıyor. Bu bir ücret olarak listelenmez, dolayısıyla 'sıfır komisyon' vaadi hala doğru olabilir. Spread'i görmek için anında alış fiyatını, canlı emir defterinde veya bir toplayıcıda gösterilen orta piyasa fiyatıyla karşılaştırın. Aradaki fark sizin maliyetinizdir."
+      ]
+     },
+     {
+      "h": "Maker ve taker ücretleri: emir defterinde ödediğiniz bedel",
+      "p": [
+       "Anında alım yerine borsanın emir defterine emir verirseniz, bir işlem ücreti ödersiniz. Maker ücreti likidite eklediğinizde uygulanır—defterde eşleşme bekleyen bir limit emri verdiğinizde. Taker ücreti likiditeyi kaldırdığınızda uygulanır—piyasa emri veya anında eşleşen bir limit emri verdiğinizde.",
+       "Maker ücretleri daha düşüktür, genellikle %0,1–0,4 arasındayken taker ücretleri %0,15–0,6 arasında değişir. Yüksek hacimli yatırımcılar ve platformun yerel tokenını elinde tutan kullanıcılar genellikle indirim alır ve ücretler taraf başına %0,1'in altına düşer. Her borsa genellikle 30 günlük işlem hacmine göre kademeli bir ücret tarifesi yayınlar. Emir defterinde işlem yapmak anında alımdan daha ucuzdur, ancak emir türlerini anlamayı ve piyasa hareket ederse limit emirlerinin dolmayabileceğini kabul etmeyi gerektirir."
+      ]
+     },
+     {
+      "h": "Ağ ücretleri: kripto parayı borsadan çekmenin maliyeti",
+      "p": [
+       "Kripto parayı kendi cüzdanınıza çektiğinizde bir ağ ücreti ödersiniz—bazen madenci ücreti veya gas ücreti olarak adlandırılır. Bu ücret, blok zincirinde işlemi işleyen doğrulayıcıları veya madencileri tazmin eder. Ücret miktarları ağa göre değişir: Bitcoin çekimleri 7–35 TL, Ethereum yoğunluğa bağlı olarak 15–150 TL ve Solana veya Polygon gibi ağlar 4 TL'nin altında olabilir.",
+       "Bazı borsalar, ağ maliyeti tahminlerini artı bir marj içeren sabit bir çekim ücreti alır. Diğerleri tam ağ ücretini yansıtır. Birkaç platform ayda bir ücretsiz çekim sunar. Küçük miktarlarda işlem yapıyorsanız, 350 TL'lik bir alışverişte 35 TL çekim ücreti %10 maliyet demektir. Birden fazla işlemi tek bir çekimde birleştirmek veya varlık birkaç zincirde mevcut olduğunda düşük ücretli ağları seçmek bu gideri azaltır."
+      ]
+     },
+     {
+      "h": "Döviz dönüşüm maliyetleri: TL dışı işlemlerdeki görünmez vergi",
+      "p": [
+       "Yerel para biriminiz işlem çiftinin kotasyon para birimi değilse, iki kez ödersiniz. Önce borsa, yatırdığınız parayı kendi para biriminizden kotasyon para birimine—genellikle USD, EUR veya bir stablecoin—dönüştürür ve %0,3–1 arasında bir döviz spread'i veya dönüşüm ücreti uygular. Sonra o kotasyon para birimini kripto para ile işlem yaparak yeniden işlem ücreti veya spread ödersiniz.",
+       "Bazı platformlar yerel para biriminizde yatırım yapmanıza izin verir ancak yalnızca USD veya USDT cinsinden kotasyon yapılan kripto çiftleri sunar. Diğerleri doğrudan yerel para birimi çiftleri sunar ve bu bir dönüşümü atlar. Platformun BTC/TRY veya ETH/TRY gibi doğrudan bir çifti destekleyip desteklemediğini kontrol edin. Desteklemiyorsa, başka bir yerden daha iyi bir kurdan edindiğiniz bir stablecoin yatırmak para kazandırabilir, ancak bu ekstra bir transfer adımı getirir."
+      ]
+     },
+     {
+      "h": "Çalışma örneği: 700 TL'lik Bitcoin alımının gerçek maliyeti",
+      "p": [
+       "Banka kartıyla 700 TL yatırıyorsunuz. Platform %2,5 alıyor, yani hesabınıza 682,50 TL ulaşıyor. Anında alım kullanıyorsunuz, bu da %1,5 spread içeriyor. Orta piyasa fiyatlarına göre 672,28 TL değerinde Bitcoin alıyorsunuz. Daha sonra cüzdanınıza çekiyorsunuz ve 21 TL ağ ücreti ödüyorsunuz. Bitcoin'iniz artık aldığınız fiyattan 651,28 TL değerinde—'sıfır komisyon' reklamına rağmen toplam maliyet 48,72 TL veya yaklaşık %7.",
+       "Bunun yerine ücretsiz banka havalesi ile yatırım yapar, işlemin tamamlanmasını bekler, maker olarak %0,2 ödeyerek limit emri verirseniz ve çekmek için daha büyük bir miktar biriktirene kadar Bitcoin'i borsada bırakırsanız, maliyetiniz 1,40 TL işlem ücretine artı birden fazla alışverişe yayılan 21 TL'lik nihai çekim ücretine düşer. Beş işlem üzerinden toplam 3.500 TL'de bu toplam 28 TL veya %0,8'dir."
+      ]
+     },
+     {
+      "h": "Toplam maliyeti minimize eden işlem sırası",
+      "p": [
+       "İlk olarak, beklemek gerekse bile sıfır ücretli bir yöntemle yatırım yapın. İkinci olarak, anında alım değil, maker ücretleri ödemek için limit emirleri kullanarak emir defterinde işlem yapın. Üçüncü olarak, çekmeden önce alımları birleştirin—tek 21 TL çekim ücreti ödeyen on adet 350 TL'lik alışveriş, on ayrı çekimden daha ucuza mal olur. Dördüncü olarak, platformları karşılaştırın: %0,1 maker ücreti ve 14 TL çekim ücreti olan bir site, işlem boyutunuz birkaç bin lirayı geçtiğinde %0,5 ücret ve 35 TL çekim ücreti olan siteden daha iyidir.",
+       "Beşinci olarak, blok zinciri ağını dikkatlice seçin. Ethereum ve Polygon'da mevcut bir token satın alırsanız, Polygon'da çekim 1,5 TL yerine 70 TL tutabilir, ancak hedef cüzdanınızın ve gelecekte göndereceğiniz herhangi bir platformun o ağı desteklediğinden emin olun. Yanlış ağa göndermek kalıcı kayba neden olabilir."
+      ]
+     },
+     {
+      "h": "Vergi raporlaması ve kayıt tutma",
+      "p": [
+       "Her işlem, çekim ve dönüşüm, bulunduğunuz yargı bölgesine bağlı olarak vergiye tabi bir olay olabilir. Her adımın kaydını tutun: yatırım zaman damgaları, işlem fiyatları, ödenen ücretler ve çekim adresleri. Birçok ülke sadece nakde çevirme değil, kripto-kripto işlemlerini de vergilendirir ve ücretler genellikle indirilebilir veya maliyet esasınızı ayarlar. Kurallar büyük ölçüde değişir ve sık sık değişir, bu nedenle bu vergi tavsiyesi değildir—yerel bir profesyonele danışın veya borsa işlem geçmişlerini içe aktaran özel kripto vergi yazılımı kullanın."
+      ]
+     }
+    ]
+   },
+   "id": {
+    "title": "Penjelasan Biaya Kripto: Ke Mana Uang Anda Sebenarnya Pergi di Setiap Transaksi",
+    "excerpt": "Membeli mata uang kripto melibatkan lima lapis biaya yang bisa memakan 3–7% dari transaksi kecil meskipun platform mengiklankan nol komisi. Berikut cara kerja setiap biaya dan urutan operasi yang memangkas total pengeluaran Anda.",
+    "sections": [
+     {
+      "h": "Biaya deposit: biaya memasukkan uang ke platform",
+      "p": [
+       "Sebagian besar exchange tidak mengenakan biaya untuk transfer bank tetapi menerapkan biaya saat Anda deposit dengan kartu debit atau kartu kredit. Deposit kartu biasanya dikenakan biaya 1,5–3,9% karena exchange membayar biaya interchange ke jaringan kartu. Transfer bank biasanya gratis tetapi bisa memakan waktu satu hingga tiga hari kerja. Beberapa platform mengenakan biaya tetap untuk deposit kecil, yang menjadi mahal pada jumlah di bawah Rp1.500.000.",
+       "Jika Anda berencana trading secara rutin, jalur termurah adalah transfer bank gratis, bahkan jika itu berarti menunggu. Pembeli satu kali yang membayar dengan kartu harus memasukkan persentase itu ke dalam total biaya sebelum membandingkan harga platform."
+      ]
+     },
+     {
+      "h": "Spread: markup tersembunyi di dalam harga yang dikutip",
+      "p": [
+       "Ketika Anda mengklik 'beli instan' atau menggunakan antarmuka yang disederhanakan, Anda melihat satu harga tanpa baris biaya terpisah. Harga itu sudah termasuk spread—selisih antara harga pasar dan yang Anda bayar. Markup spread biasanya berkisar dari 0,5% hingga 2%, dan lebih tinggi untuk mata uang kripto yang kurang likuid dan ukuran transaksi yang lebih kecil.",
+       "Platform membeli dari order book sendiri atau penyedia likuiditas dengan satu harga dan menjual kepada Anda dengan harga lain. Ini tidak tercatat sebagai biaya, jadi janji 'nol komisi' masih bisa akurat. Untuk melihat spread, bandingkan harga beli instan dengan harga pasar menengah yang ditampilkan di order book langsung atau agregator. Selisihnya adalah biaya Anda."
+      ]
+     },
+     {
+      "h": "Biaya maker dan taker: apa yang Anda bayar di order book",
+      "p": [
+       "Jika Anda menempatkan order di order book exchange alih-alih menggunakan beli instan, Anda membayar biaya trading. Biaya maker berlaku ketika Anda menambah likuiditas—menempatkan limit order yang menunggu di book untuk dicocokkan. Biaya taker berlaku ketika Anda menghilangkan likuiditas—menempatkan market order atau limit order yang langsung cocok.",
+       "Biaya maker lebih rendah, sering 0,1–0,4%, sedangkan biaya taker berkisar dari 0,15–0,6%. Trader volume tinggi dan pengguna yang memegang token asli platform sering mendapat diskon, menurunkan biaya di bawah 0,1% per sisi. Setiap exchange menerbitkan jadwal biaya, biasanya berjenjang berdasarkan volume trading 30 hari. Trading di order book lebih murah daripada beli instan, tetapi memerlukan pemahaman jenis order dan menerima bahwa limit order mungkin tidak terisi jika pasar bergerak."
+      ]
+     },
+     {
+      "h": "Biaya jaringan: biaya memindahkan kripto keluar dari exchange",
+      "p": [
+       "Ketika Anda menarik mata uang kripto ke dompet Anda sendiri, Anda membayar biaya jaringan—kadang disebut biaya penambang atau biaya gas. Biaya ini mengompensasi validator atau penambang yang memproses transaksi di blockchain. Jumlah biaya bervariasi menurut jaringan: penarikan Bitcoin mungkin Rp70.000–350.000, Ethereum Rp140.000–1.400.000 tergantung kemacetan, dan jaringan seperti Solana atau Polygon di bawah Rp35.000.",
+       "Beberapa exchange mengenakan biaya penarikan tetap yang mencakup perkiraan biaya jaringan mereka ditambah margin. Yang lain meneruskan biaya jaringan yang tepat. Beberapa platform menawarkan satu penarikan gratis per bulan. Jika Anda trading dalam jumlah kecil, biaya penarikan Rp350.000 pada pembelian Rp3.500.000 adalah biaya 10%. Menggabungkan beberapa transaksi menjadi satu penarikan, atau memilih jaringan dengan biaya lebih rendah ketika aset tersedia di beberapa chain, mengurangi biaya ini."
+      ]
+     },
+     {
+      "h": "Biaya konversi mata uang: pajak tak terlihat pada transaksi non-USD",
+      "p": [
+       "Jika mata uang lokal Anda bukan mata uang kutipan untuk pasangan trading, Anda membayar dua kali. Pertama, exchange mengonversi deposit Anda dari mata uang Anda ke mata uang kutipan—biasanya USD, EUR, atau stablecoin—menerapkan spread valuta asing atau biaya konversi 0,3–1%. Kemudian Anda trading mata uang kutipan itu untuk mata uang kripto, membayar biaya trading atau spread lagi.",
+       "Beberapa platform memungkinkan Anda deposit dalam mata uang lokal tetapi hanya menawarkan pasangan kripto yang dikutip dalam USD atau USDT. Yang lain menawarkan pasangan mata uang lokal langsung, yang melewati satu konversi. Periksa apakah platform mendukung pasangan langsung seperti BTC/IDR atau ETH/IDR. Jika tidak, deposit stablecoin yang Anda peroleh di tempat lain dengan kurs lebih baik mungkin menghemat uang, meskipun itu memperkenalkan langkah transfer ekstra."
+      ]
+     },
+     {
+      "h": "Contoh perhitungan: biaya nyata pembelian Bitcoin Rp1.500.000",
+      "p": [
+       "Anda deposit Rp1.500.000 dengan kartu debit. Platform mengenakan biaya 2,5%, jadi Rp1.462.500 masuk ke akun Anda. Anda menggunakan beli instan, yang mencakup spread 1,5%. Anda menerima Bitcoin senilai Rp1.440.675 pada harga pasar menengah. Nanti Anda menarik ke dompet Anda, membayar biaya jaringan Rp210.000. Bitcoin Anda sekarang bernilai Rp1.230.675 pada harga yang Anda beli—total biaya Rp269.325, atau hampir 18%, meskipun iklan 'nol komisi'.",
+       "Jika sebaliknya Anda deposit dengan transfer bank gratis, menunggu sampai jelas, menempatkan limit order sebagai maker membayar 0,2%, dan meninggalkan Bitcoin di exchange sampai Anda mengakumulasi jumlah yang lebih besar untuk ditarik, biaya Anda turun menjadi Rp3.000 dalam biaya trading ditambah akhirnya biaya penarikan Rp210.000 yang tersebar di beberapa pembelian. Pada total Rp7.500.000 di lima transaksi, itu Rp213.000 total, atau 2,8%."
+      ]
+     },
+     {
+      "h": "Urutan operasi yang meminimalkan total biaya",
+      "p": [
+       "Pertama, deposit menggunakan metode tanpa biaya bahkan jika memerlukan menunggu. Kedua, trading di order book menggunakan limit order untuk membayar biaya maker, bukan beli instan. Ketiga, konsolidasikan pembelian sebelum menarik—sepuluh pembelian Rp700.000 yang membayar satu biaya penarikan Rp210.000 lebih murah daripada sepuluh penarikan terpisah. Keempat, bandingkan platform: situs dengan biaya maker 0,1% dan penarikan Rp140.000 mengalahkan yang dengan biaya 0,5% dan penarikan Rp350.000 setelah ukuran transaksi Anda melebihi beberapa juta rupiah.",
+       "Kelima, pilih jaringan blockchain dengan hati-hati. Jika Anda membeli token yang tersedia di Ethereum dan Polygon, menarik di Polygon mungkin Rp14.000 alih-alih Rp700.000, tetapi periksa bahwa dompet tujuan Anda dan platform masa depan yang Anda kirim mendukung jaringan itu. Mengirim ke jaringan yang salah dapat mengakibatkan kehilangan permanen."
+      ]
+     },
+     {
+      "h": "Pelaporan pajak dan pencatatan",
+      "p": [
+       "Setiap transaksi, penarikan, dan konversi dapat menjadi peristiwa kena pajak tergantung pada yurisdiksi Anda. Simpan catatan setiap langkah: cap waktu deposit, harga transaksi, biaya yang dibayar, dan alamat penarikan. Banyak negara mengenakan pajak pada transaksi kripto-ke-kripto, tidak hanya pencairan tunai, dan biaya sering dapat dikurangkan atau menyesuaikan basis biaya Anda. Aturan sangat bervariasi dan sering berubah, jadi ini bukan nasihat pajak—konsultasikan dengan profesional lokal atau gunakan perangkat lunak pajak kripto khusus yang mengimpor riwayat transaksi exchange."
+      ]
+     }
+    ]
+   },
+   "vi": {
+    "title": "Giải Thích Phí Giao Dịch Crypto: Tiền Của Bạn Thực Sự Đi Đâu Trong Mỗi Giao Dịch",
+    "excerpt": "Mua tiền điện tử liên quan đến năm lớp phí có thể chiếm 3–7% của một giao dịch nhỏ ngay cả khi nền tảng quảng cáo không có hoa hồng. Đây là cách mỗi chi phí hoạt động và trình tự thao tác giúp giảm tổng chi phí của bạn.",
+    "sections": [
+     {
+      "h": "Phí nạp tiền: chi phí đưa tiền vào nền tảng",
+      "p": [
+       "Hầu hết các sàn không tính phí cho chuyển khoản ngân hàng nhưng áp dụng phí khi bạn nạp bằng thẻ ghi nợ hoặc thẻ tín dụng. Nạp tiền bằng thẻ thường tốn 1,5–3,9% vì sàn phải trả phí interchange cho mạng lưới thẻ. Chuyển khoản ngân hàng thường miễn phí nhưng có thể mất một đến ba ngày làm việc. Một số nền tảng tính phí cố định cho các khoản nạp nhỏ hơn, điều này trở nên đắt đỏ với số tiền dưới 2.000.000 VND.",
+       "Nếu bạn định giao dịch thường xuyên, con đường chi phí thấp nhất là chuyển khoản ngân hàng miễn phí, ngay cả khi điều đó có nghĩa là phải chờ đợi. Người mua một lần thanh toán bằng thẻ nên tính phần trăm đó vào tổng chi phí trước khi so sánh giá nền tảng."
+      ]
+     },
+     {
+      "h": "Spread: phần đánh giá ẩn bên trong giá được niêm yết",
+      "p": [
+       "Khi bạn nhấp vào 'mua ngay lập tức' hoặc sử dụng giao diện đơn giản, bạn thấy một mức giá duy nhất không có dòng phí riêng biệt. Giá đó đã bao gồm spread—chênh lệch giữa tỷ giá thị trường và giá bạn trả. Đánh giá spread thường dao động từ 0,5% đến 2%, và cao hơn đối với tiền điện tử kém thanh khoản và quy mô giao dịch nhỏ hơn.",
+       "Nền tảng đang mua từ sổ lệnh của chính họ hoặc nhà cung cấp thanh khoản ở một mức giá và bán cho bạn ở mức giá khác. Điều này không được liệt kê là phí, vì vậy lời hứa 'không hoa hồng' vẫn có thể chính xác. Để xem spread, hãy so sánh giá mua ngay lập tức với giá thị trường trung bình được hiển thị trên sổ lệnh trực tiếp hoặc bộ tổng hợp. Sự khác biệt chính là chi phí của bạn."
+      ]
+     },
+     {
+      "h": "Phí maker và taker: những gì bạn trả trên sổ lệnh",
+      "p": [
+       "Nếu bạn đặt lệnh trên sổ lệnh của sàn thay vì sử dụng mua ngay lập tức, bạn phải trả phí giao dịch. Phí maker áp dụng khi bạn thêm thanh khoản—đặt lệnh giới hạn nằm trong sổ chờ khớp lệnh. Phí taker áp dụng khi bạn loại bỏ thanh khoản—đặt lệnh thị trường hoặc lệnh giới hạn khớp ngay lập tức.",
+       "Phí maker thấp hơn, thường là 0,1–0,4%, trong khi phí taker dao động từ 0,15–0,6%. Nhà giao dịch khối lượng cao và người dùng nắm giữ token gốc của nền tảng thường nhận được giảm giá, giảm phí xuống dưới 0,1% mỗi bên. Mỗi sàn công bố bảng phí, thường được phân cấp theo khối lượng giao dịch 30 ngày. Giao dịch trên sổ lệnh rẻ hơn mua ngay lập tức, nhưng đòi hỏi hiểu biết về các loại lệnh và chấp nhận rằng lệnh giới hạn có thể không được khớp nếu thị trường di chuyển."
+      ]
+     },
+     {
+      "h": "Phí mạng: chi phí chuyển crypto ra khỏi sàn",
+      "p": [
+       "Khi bạn rút tiền điện tử về ví của mình, bạn phải trả phí mạng—đôi khi được gọi là phí thợ đào hoặc phí gas. Phí này bồi thường cho các validator hoặc thợ đào xử lý giao dịch trên blockchain. Số tiền phí thay đổi theo mạng: rút Bitcoin có thể tốn 50.000–200.000 VND, Ethereum 100.000–1.000.000 VND tùy thuộc vào tắc nghẽn, và các mạng như Solana hoặc Polygon dưới 25.000 VND.",
+       "Một số sàn tính phí rút tiền cố định bao gồm ước tính chi phí mạng của họ cộng với lợi nhuận. Những sàn khác chuyển đúng phí mạng. Một số nền tảng cung cấp một lần rút tiền miễn phí mỗi tháng. Nếu bạn giao dịch số tiền nhỏ, phí rút 200.000 VND cho giao dịch mua 2.000.000 VND là chi phí 10%. Hợp nhất nhiều giao dịch thành một lần rút, hoặc chọn các mạng phí thấp hơn khi tài sản có sẵn trên nhiều chuỗi, giảm chi phí này."
+      ]
+     },
+     {
+      "h": "Chi phí chuyển đổi tiền tệ: thuế vô hình trên giao dịch không phải USD",
+      "p": [
+       "Nếu đồng tiền địa phương của bạn không phải là đồng tiền niêm yết cho cặp giao dịch, bạn phải trả hai lần. Đầu tiên, sàn chuyển đổi khoản tiền gửi của bạn từ đồng tiền của bạn sang đồng tiền niêm yết—thường là USD, EUR hoặc stablecoin—áp dụng spread ngoại hối hoặc phí chuyển đổi 0,3–1%. Sau đó, bạn giao dịch đồng tiền niêm yết đó để lấy tiền điện tử, trả phí giao dịch hoặc spread một lần nữa.",
+       "Một số nền tảng cho phép bạn nạp tiền bằng đồng tiền địa phương nhưng chỉ cung cấp các cặp crypto được niêm yết bằng USD hoặc USDT. Những nền tảng khác cung cấp các cặp đồng tiền địa phương trực tiếp, bỏ qua một lần chuyển đổi. Kiểm tra xem nền tảng có hỗ trợ cặp trực tiếp như BTC/VND hoặc ETH/VND không. Nếu không, việc nạp stablecoin mà bạn có được ở nơi khác với tỷ giá tốt hơn có thể tiết kiệm tiền, mặc dù điều đó tạo ra một bước chuyển khoản bổ sung."
+      ]
+     },
+     {
+      "h": "Ví dụ thực tế: chi phí thực của việc mua Bitcoin 5.000.000 VND",
+      "p": [
+       "Bạn nạp 5.000.000 VND bằng thẻ ghi nợ. Nền tảng tính phí 2,5%, vì vậy 4.875.000 VND đến tài khoản của bạn. Bạn sử dụng mua ngay lập tức, bao gồm spread 1,5%. Bạn nhận được Bitcoin trị giá 4.801.875 VND theo tỷ giá thị trường trung bình. Sau đó bạn rút về ví, trả phí mạng 150.000 VND. Bitcoin của bạn bây giờ trị giá 4.651.875 VND tại mức giá bạn mua—tổng chi phí 348.125 VND, hoặc gần 7%, bất chấp quảng cáo 'không hoa hồng'.",
+       "Nếu thay vào đó bạn nạp bằng chuyển khoản ngân hàng miễn phí, chờ nó xác nhận, đặt lệnh giới hạn với tư cách là maker trả 0,2%, và để Bitcoin trên sàn cho đến khi bạn tích lũy một số lượng lớn hơn để rút, chi phí của bạn giảm xuống 10.000 VND phí giao dịch cộng với phí rút 150.000 VND cuối cùng được phân bổ cho nhiều giao dịch mua. Trên tổng số 25.000.000 VND qua năm giao dịch, đó là tổng cộng 200.000 VND, hoặc 0,8%."
+      ]
+     },
+     {
+      "h": "Trình tự thao tác giúp giảm thiểu tổng chi phí",
+      "p": [
+       "Đầu tiên, nạp tiền bằng phương thức không phí ngay cả khi cần chờ đợi. Thứ hai, giao dịch trên sổ lệnh bằng lệnh giới hạn để trả phí maker, không phải mua ngay lập tức. Thứ ba, hợp nhất các lần mua trước khi rút—mười lần mua 2.000.000 VND trả một phí rút 150.000 VND tốn ít hơn mười lần rút riêng biệt. Thứ tư, so sánh các nền tảng: một trang web có phí maker 0,1% và rút tiền 100.000 VND tốt hơn trang có phí 0,5% và rút 250.000 VND khi quy mô giao dịch của bạn vượt quá vài triệu đồng.",
+       "Thứ năm, chọn mạng blockchain cẩn thận. Nếu bạn mua token có sẵn trên Ethereum và Polygon, rút trên Polygon có thể tốn 10.000 VND thay vì 500.000 VND, nhưng hãy kiểm tra rằng ví đích của bạn và bất kỳ nền tảng tương lai nào bạn gửi đến đều hỗ trợ mạng đó. Gửi đến sai mạng có thể dẫn đến mất vĩnh viễn."
+      ]
+     },
+     {
+      "h": "Báo cáo thuế và lưu trữ hồ sơ",
+      "p": [
+       "Mỗi giao dịch, rút tiền và chuyển đổi có thể là một sự kiện chịu thuế tùy thuộc vào phạm vi pháp lý của bạn. Giữ hồ sơ của từng bước: dấu thời gian nạp tiền, giá giao dịch, phí đã trả và địa chỉ rút tiền. Nhiều quốc gia đánh thuế giao dịch crypto-sang-crypto, không chỉ rút tiền mặt, và phí thường có thể được khấu trừ hoặc điều chỉnh cơ sở chi phí của bạn. Các quy tắc thay đổi rộng rãi và thay đổi thường xuyên, vì vậy đây không phải là lời khuyên về thuế—hãy tham khảo ý kiến chuyên gia địa phương hoặc sử dụng phần mềm thuế crypto chuyên dụng nhập lịch sử giao dịch sàn."
+      ]
+     }
+    ]
+   },
+   "th": {
+    "title": "ค่าธรรมเนียมคริปโตฉบับเข้าใจง่าย: เงินของคุณไปอยู่ที่ไหนในแต่ละการเทรด",
+    "excerpt": "การซื้อคริปโทเคอร์เรนซีมีค่าธรรมเนียมซ่อนอยู่ถึงห้าชั้นที่สามารถกินเงินคุณไป 3-7% ของยอดเทรดเล็กๆ แม้ว่าแพลตฟอร์มจะโฆษณาว่าไม่มีค่าคอมมิชชั่น มาดูกันว่าแต่ละค่าใช้จ่ายทำงานอย่างไร และลำดับขั้นตอนที่จะช่วยลดค่าใช้จ่ายรวมของคุณ",
+    "sections": [
+     {
+      "h": "ค่าธรรมเนียมการฝาก: ต้นทุนในการนำเงินเข้าแพลตฟอร์ม",
+      "p": [
+       "แลกเปลี่ยนส่วนใหญ่ไม่เรียกเก็บค่าธรรมเนียมสำหรับการโอนผ่านธนาคาร แต่จะมีค่าธรรมเนียมเมื่อคุณฝากผ่านบัตรเดบิตหรือบัตรเครดิต การฝากผ่านบัตรมักมีค่าใช้จ่าย 1.5-3.9% เพราะแลกเปลี่ยนต้องจ่ายค่า interchange ให้เครือข่ายบัตร การโอนเงินผ่านธนาคารมักฟรีแต่อาจใช้เวลาหนึ่งถึงสามวันทำการ บางแพลตฟอร์มเรียกเก็บค่าธรรมเนียมคงที่สำหรับการฝากจำนวนน้อย ซึ่งจะแพงมากสำหรับยอดต่ำกว่า 3,000 บาท",
+       "หากคุณวางแผนจะเทรดเป็นประจำ วิธีที่ประหยัดที่สุดคือการโอนผ่านธนาคารฟรี แม้ว่าจะต้องรอก็ตาม ผู้ซื้อครั้งเดียวที่จ่ายผ่านบัตรควรคำนวณเปอร์เซ็นต์นั้นรวมในต้นทุนรวมก่อนเปรียบเทียบราคาแพลตฟอร์ม"
+      ]
+     },
+     {
+      "h": "สเปรด: มาร์กอัปที่ซ่อนอยู่ในราคาที่แสดง",
+      "p": [
+       "เมื่อคุณคลิก 'ซื้อทันที' หรือใช้อินเทอร์เฟซแบบง่าย คุณจะเห็นราคาเดียวโดยไม่มีบรรทัดค่าธรรมเนียมแยก ราคานั้นรวมสเปรดไว้แล้ว ซึ่งเป็นความแตกต่างระหว่างราคาตลาดกับราคาที่คุณจ่าย มาร์กอัปสเปรดมักอยู่ระหว่าง 0.5% ถึง 2% และจะสูงขึ้นสำหรับคริปโทที่มีสภาพคล่องน้อยกว่าและขนาดเทรดที่เล็กกว่า",
+       "แพลตฟอร์มกำลังซื้อจาก order book ของตัวเองหรือจากผู้ให้สภาพคล่องในราคาหนึ่ง แล้วขายให้คุณในอีกราคาหนึ่ง สิ่งนี้ไม่ได้ระบุเป็นค่าธรรมเนียม ดังนั้นคำสัญญา 'ไม่มีค่าคอมมิชชั่น' ก็ยังถูกต้อง หากต้องการเห็นสเปรด ให้เปรียบเทียบราคาซื้อทันทีกับราคากลางตลาดที่แสดงใน order book หรือเว็บรวมราคา ความแตกต่างคือต้นทุนของคุณ"
+      ]
+     },
+     {
+      "h": "ค่าธรรมเนียม maker และ taker: สิ่งที่คุณจ่ายบน order book",
+      "p": [
+       "หากคุณวางคำสั่งบน order book ของแลกเปลี่ยนแทนที่จะใช้ซื้อทันที คุณจะจ่ายค่าธรรมเนียมการเทรด ค่าธรรมเนียม maker ใช้เมื่อคุณเพิ่มสภาพคล่อง คือการวางคำสั่ง limit order ที่นั่งรออยู่ใน book เพื่อรอการจับคู่ ค่าธรรมเนียม taker ใช้เมื่อคุณดึงสภาพคล่องออก คือการวาง market order หรือ limit order ที่จับคู่ทันที",
+       "ค่าธรรมเนียม maker ต่ำกว่า มักอยู่ที่ 0.1-0.4% ในขณะที่ค่าธรรมเนียม taker อยู่ระหว่าง 0.15-0.6% เทรดเดอร์ปริมาณสูงและผู้ใช้ที่ถือโทเค็นของแพลตฟอร์มมักได้รับส่วนลด ทำให้ค่าธรรมเนียมต่ำกว่า 0.1% ต่อฝ่าง แต่ละแลกเปลี่ยนเผยแพร่ตารางค่าธรรมเนียม มักแบ่งตามปริมาณการเทรด 30 วัน การเทรดบน order book ถูกกว่าการซื้อทันที แต่ต้องเข้าใจประเภทคำสั่งและยอมรับว่า limit order อาจไม่เต็มหากตลาดเคลื่อนไหว"
+      ]
+     },
+     {
+      "h": "ค่าธรรมเนียมเครือข่าย: ต้นทุนในการย้ายคริปโตออกจากแลกเปลี่ยน",
+      "p": [
+       "เมื่อคุณถอนคริปโทเคอร์เรนซีไปยังกระเป๋าของคุณเอง คุณจ่ายค่าธรรมเนียมเครือข่าย บางครั้งเรียกว่าค่า miner หรือค่า gas ค่าธรรมเนียมนี้เป็นค่าตอบแทนแก่ผู้ตรวจสอบหรือไมเนอร์ที่ประมวลผลธุรกรรมบนบล็อกเชน จำนวนค่าธรรมเนียมแตกต่างกันตามเครือข่าย: การถอน Bitcoin อาจมีค่าใช้จ่าย 30-150 บาท, Ethereum 60-600 บาทขึ้นอยู่กับความแออัด และเครือข่ายอย่าง Solana หรือ Polygon ต่ำกว่า 15 บาท",
+       "บางแลกเปลี่ยนเรียกเก็บค่าธรรมเนียมถอนคงที่ที่ครอบคลุมประมาณการต้นทุนเครือข่ายบวกกำไร แห่งอื่นส่งต่อค่าธรรมเนียมเครือข่ายที่แท้จริง บางแพลตฟอร์มให้ถอนฟรีหนึ่งครั้งต่อเดือน หากคุณเทรดจำนวนน้อย ค่าธรรมเนียมถอน 150 บาทจากการซื้อ 1,500 บาทคือต้นทุน 10% การรวมหลายการเทรดเป็นการถอนเดียว หรือเลือกเครือข่ายค่าธรรมเนียมต่ำเมื่อสินทรัพย์มีอยู่ในหลายเชน จะช่วยลดค่าใช้จ่ายนี้"
+      ]
+     },
+     {
+      "h": "ต้นทุนการแปลงสกุลเงิน: ภาษีที่มองไม่เห็นสำหรับการเทรดที่ไม่ใช่ USD",
+      "p": [
+       "หากสกุลเงินท้องถิ่นของคุณไม่ใช่สกุลเงินคู่สำหรับคู่เทรด คุณจ่ายสองครั้ง ครั้งแรก แลกเปลี่ยนแปลงเงินฝากของคุณจากสกุลเงินของคุณเป็นสกุลเงินคู่ มักเป็น USD, EUR หรือสเตเบิลคอยน์ โดยใช้สเปรดอัตราแลกเปลี่ยนหรือค่าธรรมเนียมแปลง 0.3-1% จากนั้นคุณเทรดสกุลเงินคู่นั้นเป็นคริปโทเคอร์เรนซี โดยจ่ายค่าธรรมเนียมเทรดหรือสเปรดอีกครั้ง",
+       "บางแพลตฟอร์มให้คุณฝากเงินสกุลท้องถิ่นแต่เสนอคู่คริปโตที่อ้างอิงเป็น USD หรือ USDT เท่านั้น แห่งอื่นเสนอคู่สกุลท้องถิ่นโดยตรง ซึ่งข้ามการแปลงหนึ่งครั้ง ตรวจสอบว่าแพลตฟอร์มรองรับคู่โดยตรงเช่น BTC/THB หรือ ETH/THB หรือไม่ หากไม่ การฝากสเตเบิลคอยน์ที่คุณได้มาจากที่อื่นในอัตราที่ดีกว่าอาจประหยัดเงิน แม้ว่าจะเพิ่มขั้นตอนการโอนพิเศษ"
+      ]
+     },
+     {
+      "h": "ตัวอย่างการคำนวณ: ต้นทุนจริงของการซื้อ Bitcoin 3,000 บาท",
+      "p": [
+       "คุณฝาก 3,000 บาทด้วยบัตรเดบิต แพลตฟอร์มเรียกเก็บ 2.5% ดังนั้น 2,925 บาทเข้าบัญชีคุณ คุณใช้ซื้อทันทีซึ่งรวมสเปรด 1.5% คุณได้รับ Bitcoin มูลค่า 2,881 บาทตามราคากลางตลาด ต่อมาคุณถอนไปยังกระเป๋าของคุณ จ่ายค่าธรรมเนียมเครือข่าย 90 บาท Bitcoin ของคุณตอนนี้มีมูลค่า 2,791 บาทที่ราคาที่คุณซื้อ ต้นทุนรวม 209 บาท หรือเกือบ 7% แม้จะโฆษณา 'ไม่มีค่าคอมมิชชั่น'",
+       "หากแทนที่คุณฝากโดยโอนธนาคารฟรี รอให้เคลียร์ วาง limit order เป็น maker จ่าย 0.2% และฝาก Bitcoin ไว้บนแลกเปลี่ยนจนกว่าคุณจะสะสมจำนวนที่มากขึ้นเพื่อถอน ต้นทุนของคุณลดลงเหลือ 6 บาทในค่าธรรมเนียมเทรดบวกค่าถอน 90 บาทในที่สุดกระจายไปหลายการซื้อ จาก 15,000 บาททั้งหมดในห้าการเทรด นั่นคือ 120 บาททั้งหมด หรือ 0.8%"
+      ]
+     },
+     {
+      "h": "ลำดับการดำเนินการที่ลดต้นทุนรวม",
+      "p": [
+       "ประการแรก ฝากโดยใช้วิธีไม่มีค่าธรรมเนียมแม้จะต้องรอ ประการที่สอง เทรดบน order book โดยใช้ limit order เพื่อจ่ายค่าธรรมเนียม maker ไม่ใช่ซื้อทันที ประการที่สาม รวมการซื้อก่อนถอน การซื้อสิบครั้งๆ ละ 1,500 บาทจ่ายค่าถอน 90 บาทครั้งเดียวถูกกว่าสิบครั้งถอนแยก ประการที่สี่ เปรียบเทียบแพลตฟอร์ม: เว็บที่มีค่าธรรมเนียม maker 0.1% และค่าถอน 60 บาทดีกว่าเว็บที่มีค่าธรรมเนียม 0.5% และค่าถอน 150 บาทเมื่อขนาดเทรดของคุณเกินหลายพันบาท",
+       "ประการที่ห้า เลือกเครือข่ายบล็อกเชนอย่างระมัดระวัง หากคุณซื้อโทเค็นที่มีบน Ethereum และ Polygon การถอนบน Polygon อาจมีค่าใช้จ่าย 6 บาทแทน 300 บาท แต่ตรวจสอบว่ากระเป๋าปลายทางและแพลตฟอร์มในอนาคตที่คุณจะส่งไปรองรับเครือข่ายนั้น การส่งไปยังเครือข่ายผิดอาจส่งผลให้สูญหายถาวร"
+      ]
+     },
+     {
+      "h": "การรายงานภาษีและการเก็บบันทึก",
+      "p": [
+       "การเทรด การถอน และการแปลงทุกครั้งอาจเป็นเหตุการณ์ที่ต้องเสียภาษีขึ้นอยู่กับเขตอำนาจศาลของคุณ เก็บบันทึกแต่ละขั้นตอน: เวลาฝาก ราคาเทรด ค่าธรรมเนียมที่จ่าย และที่อยู่ถอน หลายประเทศเก็บภาษีการเทรดคริปโต-คริปโต ไม่ใช่แค่การถอนเป็นเงินสด และค่าธรรมเนียมมักหักได้หรือปรับต้นทุนพื้นฐานของคุณ กฎแตกต่างกันอย่างมากและเปลี่ยนบ่อย ดังนั้นนี่ไม่ใช่คำแนะนำด้านภาษี ปรึกษาผู้เชี่ยวชาญท้องถิ่นหรือใช้ซอฟต์แวร์ภาษีคริปโตเฉพาะทางที่นำเข้าประวัติธุรกรรมจากแลกเปลี่ยน"
+      ]
+     }
+    ]
+   },
+   "uk": {
+    "title": "Комісії на криптовалютних біржах: куди насправді йдуть ваші гроші при кожній угоді",
+    "excerpt": "Купівля криптовалюти передбачає п'ять рівнів комісій, які можуть з'їсти 3–7% навіть невеликої угоди, коли платформа рекламує нульову комісію. Ось як працює кожна вартість і послідовність дій, яка зменшить ваші загальні витрати.",
+    "sections": [
+     {
+      "h": "Комісії за депозит: вартість внесення грошей на платформу",
+      "p": [
+       "Більшість бірж не стягують плату за банківські перекази, але застосовують комісію, коли ви вносите депозит дебетовою або кредитною карткою. Депозити карткою зазвичай коштують 1,5–3,9%, оскільки біржа сплачує комісії еквайрингу карткових мереж. Банківські перекази зазвичай безкоштовні, але можуть займати від одного до трьох робочих днів. Деякі платформи стягують фіксовану комісію за невеликі депозити, що стає дорого на суми до 3000 грн.",
+       "Якщо ви плануєте торгувати регулярно, найдешевший шлях — безкоштовний банківський переказ, навіть якщо доведеться чекати. Одноразові покупці, які платять карткою, повинні врахувати цей відсоток у загальну вартість перед порівнянням цін платформ."
+      ]
+     },
+     {
+      "h": "Спред: націнка, прихована в котируваній ціні",
+      "p": [
+       "Коли ви натискаєте 'миттєва купівля' або використовуєте спрощений інтерфейс, ви бачите одну ціну без окремого рядка комісії. Ця ціна вже включає спред — різницю між ринковим курсом і тим, що ви платите. Націнки спреду зазвичай коливаються від 0,5% до 2%, і вони вищі для менш ліквідних криптовалют і менших розмірів угод.",
+       "Платформа купує зі свого власного стакана ордерів або у постачальника ліквідності за однією ціною і продає вам за іншою. Це не зазначається як комісія, тому обіцянка 'нульової комісії' все ще може бути точною. Щоб побачити спред, порівняйте ціну миттєвої купівлі з середньоринковою ціною, показаною в реальному стакані або агрегаторі. Різниця — це ваша вартість."
+      ]
+     },
+     {
+      "h": "Комісії мейкера і тейкера: що ви платите в стакані ордерів",
+      "p": [
+       "Якщо ви розміщуєте ордер у стакані біржі замість використання миттєвої купівлі, ви платите торгову комісію. Комісія мейкера застосовується, коли ви додаєте ліквідність — розміщуєте лімітний ордер, який чекає збігу в стакані. Комісія тейкера застосовується, коли ви забираєте ліквідність — розміщуєте ринковий ордер або лімітний ордер, який збігається миттєво.",
+       "Комісії мейкера нижчі, часто 0,1–0,4%, тоді як комісії тейкера коливаються від 0,15–0,6%. Трейдери з великими обсягами та користувачі, які тримають власний токен платформи, часто отримують знижки, знижуючи комісії нижче 0,1% на сторону. Кожна біржа публікує графік комісій, зазвичай рівневий за 30-денним обсягом торгівлі. Торгівля в стакані ордерів дешевша за миттєву купівлю, але вимагає розуміння типів ордерів і прийняття того, що лімітні ордери можуть не виконатися, якщо ринок рухається."
+      ]
+     },
+     {
+      "h": "Мережеві комісії: вартість виведення криптовалюти з біржі",
+      "p": [
+       "Коли ви виводите криптовалюту на свій власний гаманець, ви платите мережеву комісію — іноді її називають комісією майнера або комісією газу. Ця комісія компенсує валідаторам або майнерам, які обробляють транзакцію в блокчейні. Суми комісій різняться за мережами: виведення Bitcoin може коштувати 30-150 грн, Ethereum 60-600 грн залежно від завантаженості, а мережі на кшталт Solana або Polygon — менше 15 грн.",
+       "Деякі біржі стягують фіксовану комісію за виведення, яка покриває їхню оцінку мережевої вартості плюс маржу. Інші передають точну мережеву комісію. Кілька платформ пропонують одне безкоштовне виведення на місяць. Якщо ви торгуєте невеликими сумами, комісія за виведення 150 грн на покупку 1500 грн становить 10% вартості. Об'єднання кількох угод в одне виведення або вибір мереж з нижчими комісіями, коли актив доступний у кількох ланцюгах, зменшує цю витрату."
+      ]
+     },
+     {
+      "h": "Вартість конвертації валюти: невидимий податок на неамериканські угоди",
+      "p": [
+       "Якщо ваша місцева валюта не є валютою котирування для торгової пари, ви платите двічі. Спочатку біржа конвертує ваш депозит з вашої валюти у валюту котирування — зазвичай USD, EUR або стейблкоїн — застосовуючи валютний спред або комісію за конвертацію 0,3–1%. Потім ви торгуєте цією валютою котирування на криптовалюту, знову платячи торгову комісію або спред.",
+       "Деякі платформи дозволяють вносити депозит у вашій місцевій валюті, але пропонують лише криптопари, котировані в USD або USDT. Інші пропонують прямі пари місцевої валюти, які пропускають одну конвертацію. Перевірте, чи підтримує платформа пряму пару, як-от BTC/UAH або ETH/UAH. Якщо ні, внесення стейблкоїна, який ви придбали в іншому місці за кращим курсом, може заощадити гроші, хоча це вводить додатковий етап переказу."
+      ]
+     },
+     {
+      "h": "Робочий приклад: реальна вартість купівлі Bitcoin на 3000 грн",
+      "p": [
+       "Ви вносите депозит 3000 грн дебетовою карткою. Платформа стягує 2,5%, тому 2925 грн надходять на ваш рахунок. Ви використовуєте миттєву купівлю, яка включає спред 1,5%. Ви отримуєте Bitcoin на суму 2881 грн за середньоринковими курсами. Пізніше ви виводите на свій гаманець, платячи 90 грн мережевої комісії. Ваш Bitcoin тепер коштує 2791 грн за ціною, за якою ви купили — загальна вартість 209 грн, або майже 7%, незважаючи на рекламу 'нульової комісії'.",
+       "Якщо натомість ви внесете депозит безкоштовним банківським переказом, дочекаєтесь його клірингу, розмістите лімітний ордер як мейкер, платячи 0,2%, і залишите Bitcoin на біржі, поки не накопичите більшу суму для виведення, ваша вартість зменшиться до 6 грн торгових комісій плюс евентуальна комісія за виведення 90 грн, розподілена на кілька покупок. На 15000 грн загалом у п'яти угодах це 120 грн загалом, або 0,8%."
+      ]
+     },
+     {
+      "h": "Послідовність операцій, яка мінімізує загальну вартість",
+      "p": [
+       "По-перше, вносьте депозит методом без комісії, навіть якщо потрібно чекати. По-друге, торгуйте в стакані ордерів, використовуючи лімітні ордери для оплати комісій мейкера, а не миттєву купівлю. По-третє, консолідуйте покупки перед виведенням — десять покупок по 1500 грн з оплатою однієї комісії за виведення 90 грн коштує менше, ніж десять окремих виведень. По-четверте, порівнюйте платформи: сайт з комісією мейкера 0,1% та виведенням 60 грн перемагає той, що має комісію 0,5% та виведення 150 грн, коли ваш розмір угоди перевищує кілька тисяч гривень.",
+       "По-п'яте, ретельно вибирайте мережу блокчейну. Якщо ви купуєте токен, доступний у Ethereum і Polygon, виведення через Polygon може коштувати 6 грн замість 300 грн, але перевірте, чи ваш гаманець призначення та будь-яка майбутня платформа, на яку ви відправляєте, підтримує цю мережу. Відправлення на неправильну мережу може призвести до безповоротної втрати."
+      ]
+     },
+     {
+      "h": "Податкова звітність та ведення обліку",
+      "p": [
+       "Кожна угода, виведення та конвертація можуть бути оподатковуваною подією залежно від вашої юрисдикції. Ведіть записи кожного кроку: позначки часу депозиту, ціни угод, сплачені комісії та адреси виведення. Багато країн оподатковують угоди криптовалюта-криптовалюта, а не лише виведення готівки, а комісії часто віднімаються або коригують вашу базу вартості. Правила сильно відрізняються і часто змінюються, тому це не податкова порада — проконсультуйтеся з місцевим професіоналом або використовуйте спеціалізоване програмне забезпечення для криптоподатків, яке імпортує історії транзакцій із бірж."
+      ]
+     }
+    ]
+   },
+   "ru": {
+    "title": "Комиссии на криптобиржах: куда на самом деле уходят ваши деньги при каждой сделке",
+    "excerpt": "Покупка криптовалюты включает пять уровней комиссий, которые могут съесть 3–7% даже небольшой сделки, когда платформа рекламирует нулевую комиссию. Вот как работает каждая стоимость и последовательность действий, которая снизит ваши общие расходы.",
+    "sections": [
+     {
+      "h": "Комиссии за депозит: стоимость внесения денег на платформу",
+      "p": [
+       "Большинство бирж не взимают плату за банковские переводы, но применяют комиссию, когда вы вносите депозит дебетовой или кредитной картой. Депозиты картой обычно стоят 1,5–3,9%, поскольку биржа платит комиссии эквайринга карточным сетям. Банковские переводы обычно бесплатны, но могут занимать от одного до трёх рабочих дней. Некоторые платформы взимают фиксированную комиссию за небольшие депозиты, что становится дорого на суммы до 7000 рублей.",
+       "Если вы планируете торговать регулярно, самый дешёвый путь — бесплатный банковский перевод, даже если придётся ждать. Разовые покупатели, платящие картой, должны учесть этот процент в общую стоимость перед сравнением цен платформ."
+      ]
+     },
+     {
+      "h": "Спред: наценка, скрытая в котируемой цене",
+      "p": [
+       "Когда вы нажимаете 'мгновенная покупка' или используете упрощённый интерфейс, вы видите одну цену без отдельной строки комиссии. Эта цена уже включает спред — разницу между рыночным курсом и тем, что вы платите. Наценки спреда обычно колеблются от 0,5% до 2%, и они выше для менее ликвидных криптовалют и меньших размеров сделок.",
+       "Платформа покупает из своего собственного стакана ордеров или у поставщика ликвидности по одной цене и продаёт вам по другой. Это не указывается как комиссия, поэтому обещание 'нулевой комиссии' всё ещё может быть точным. Чтобы увидеть спред, сравните цену мгновенной покупки со среднерыночной ценой, показанной в реальном стакане или агрегаторе. Разница — это ваша стоимость."
+      ]
+     },
+     {
+      "h": "Комиссии мейкера и тейкера: что вы платите в стакане ордеров",
+      "p": [
+       "Если вы размещаете ордер в стакане биржи вместо использования мгновенной покупки, вы платите торговую комиссию. Комиссия мейкера применяется, когда вы добавляете ликвидность — размещаете лимитный ордер, который ожидает совпадения в стакане. Комиссия тейкера применяется, когда вы забираете ликвидность — размещаете рыночный ордер или лимитный ордер, который совпадает мгновенно.",
+       "Комиссии мейкера ниже, часто 0,1–0,4%, тогда как комиссии тейкера колеблются от 0,15–0,6%. Трейдеры с большими объёмами и пользователи, держащие собственный токен платформы, часто получают скидки, снижая комиссии ниже 0,1% на сторону. Каждая биржа публикует график комиссий, обычно уровневый по 30-дневному объёму торговли. Торговля в стакане ордеров дешевле мгновенной покупки, но требует понимания типов ордеров и принятия того, что лимитные ордера могут не исполниться, если рынок двигается."
+      ]
+     },
+     {
+      "h": "Сетевые комиссии: стоимость вывода криптовалюты с биржи",
+      "p": [
+       "Когда вы выводите криптовалюту на свой собственный кошелёк, вы платите сетевую комиссию — иногда её называют комиссией майнера или комиссией газа. Эта комиссия компенсирует валидаторам или майнерам, которые обрабатывают транзакцию в блокчейне. Суммы комиссий различаются по сетям: вывод Bitcoin может стоить 100-500 рублей, Ethereum 200-2000 рублей в зависимости от загруженности, а сети вроде Solana или Polygon — менее 50 рублей.",
+       "Некоторые биржи взимают фиксированную комиссию за вывод, которая покрывает их оценку сетевой стоимости плюс маржу. Другие передают точную сетевую комиссию. Несколько платформ предлагают один бесплатный вывод в месяц. Если вы торгуете небольшими суммами, комиссия за вывод 500 рублей на покупку 5000 рублей составляет 10% стоимости. Объединение нескольких сделок в один вывод или выбор сетей с более низкими комиссиями, когда актив доступен в нескольких цепочках, уменьшает этот расход."
+      ]
+     },
+     {
+      "h": "Стоимость конвертации валюты: невидимый налог на нерублёвые сделки",
+      "p": [
+       "Если ваша местная валюта не является валютой котировки для торговой пары, вы платите дважды. Сначала биржа конвертирует ваш депозит из вашей валюты в валюту котировки — обычно USD, EUR или стейблкоин — применяя валютный спред или комиссию за конвертацию 0,3–1%. Затем вы торгуете этой валютой котировки на криптовалюту, снова платя торговую комиссию или спред.",
+       "Некоторые платформы позволяют вносить депозит в вашей местной валюте, но предлагают только криптопары, котируемые в USD или USDT. Другие предлагают прямые пары местной валюты, которые пропускают одну конвертацию. Проверьте, поддерживает ли платформа прямую пару, такую как BTC/RUB или ETH/RUB. Если нет, внесение стейблкоина, который вы приобрели в другом месте по лучшему курсу, может сэкономить деньги, хотя это вводит дополнительный этап перевода."
+      ]
+     },
+     {
+      "h": "Рабочий пример: реальная стоимость покупки Bitcoin на 10000 рублей",
+      "p": [
+       "Вы вносите депозит 10000 рублей дебетовой картой. Платформа взимает 2,5%, поэтому 9750 рублей поступают на ваш счёт. Вы используете мгновенную покупку, которая включает спред 1,5%. Вы получаете Bitcoin на сумму 9604 рубля по среднерыночным курсам. Позже вы выводите на свой кошелёк, платя 300 рублей сетевой комиссии. Ваш Bitcoin теперь стоит 9304 рубля по цене, по которой вы купили — общая стоимость 696 рублей, или почти 7%, несмотря на рекламу 'нулевой комиссии'.",
+       "Если вместо этого вы внесёте депозит бесплатным банковским переводом, дождётесь его клиринга, разместите лимитный ордер как мейкер, платя 0,2%, и оставите Bitcoin на бирже, пока не накопите бóльшую сумму для вывода, ваша стоимость уменьшится до 20 рублей торговых комиссий плюс евентуальная комиссия за вывод 300 рублей, распределённая на несколько покупок. На 50000 рублей всего в пяти сделках это 400 рублей всего, или 0,8%."
+      ]
+     },
+     {
+      "h": "Последовательность операций, которая минимизирует общую стоимость",
+      "p": [
+       "Во-первых, вносите депозит методом без комиссии, даже если нужно ждать. Во-вторых, торгуйте в стакане ордеров, используя лимитные ордера для оплаты комиссий мейкера, а не мгновенную покупку. В-третьих, консолидируйте покупки перед выводом — десять покупок по 5000 рублей с оплатой одной комиссии за вывод 300 рублей стоит меньше, чем десять отдельных выводов. В-четвёртых, сравнивайте платформы: сайт с комиссией мейкера 0,1% и выводом 200 рублей побеждает тот, что имеет комиссию 0,5% и вывод 500 рублей, когда ваш размер сделки превышает несколько десятков тысяч рублей.",
+       "В-пятых, тщательно выбирайте сеть блокчейна. Если вы покупаете токен, доступный в Ethereum и Polygon, вывод через Polygon может стоить 20 рублей вместо 1000 рублей, но проверьте, что ваш кошелёк назначения и любая будущая платформа, на которую вы отправляете, поддерживает эту сеть. Отправка на неправильную сеть может привести к безвозвратной потере."
+      ]
+     },
+     {
+      "h": "Налоговая отчётность и ведение учёта",
+      "p": [
+       "Каждая сделка, вывод и конвертация могут быть налогооблагаемым событием в зависимости от вашей юрисдикции. Ведите записи каждого шага: отметки времени депозита, цены сделок, уплаченные комиссии и адреса вывода. Многие страны облагают налогом сделки криптовалюта-криптовалюта, а не только вывод наличных, а комиссии часто вычитаются или корректируют вашу базу стоимости. Правила сильно отличаются и часто меняются, поэтому это не налоговый совет — проконсультируйтесь с местным профессионалом или используйте специализированное программное обеспечение для криптоналогов, которое импортирует истории транзакций с бирж."
+      ]
+     }
+    ]
+   }
+  }
  }
 ]
