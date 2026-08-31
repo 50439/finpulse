@@ -180,6 +180,24 @@ function buildCards(article, t, conf) {
   return cards;
 }
 
+// Подсветка ключевых цифр в заголовке. Разбор топ-аккаунтов ниши (31.08,
+// @cryptodailyfeed 1M подписчиков и поисковая выдача TikTok): у всех формула
+// «ALL CAPS + цифра цветом» — «BITCOIN JUST HIT $73,000», «CRASHED 70%».
+// Цифра — единственное, что зритель успевает прочесть за полсекунды.
+function emphasize(text) {
+  const RE = /\$[\d][\d.,]*(?:\s?(?:Million|Billion|Trillion|M|B|K))?|[\d][\d.,]*\s?%/gi;
+  const parts = [];
+  let last = 0, m;
+  const src = String(text);
+  while ((m = RE.exec(src))) {
+    parts.push(esc(src.slice(last, m.index)));
+    parts.push('<b class="em">' + esc(m[0]) + '</b>');
+    last = m.index + m[0].length;
+  }
+  parts.push(esc(src.slice(last)));
+  return parts.join('');
+}
+
 function cardHtml(card, i, total) {
   const isHook = card.kind === 'hook' || card.kind === 'lead';
   const isCta = card.kind === 'cta';
@@ -209,7 +227,8 @@ function cardHtml(card, i, total) {
 '.stake{font-size:38px;font-weight:700;line-height:1.3;color:#F7C948;max-width:760px}' +
 '.kicker{font-size:34px;font-weight:700;letter-spacing:5px;text-transform:uppercase;color:#3BE8B0}' +
 '.text{font-size:' + size + 'px;line-height:1.28;font-weight:' + (isHook ? 800 : 600) + ';' +
-'text-wrap:balance' + (isHook ? ';letter-spacing:-1px' : '') + '}' +
+'text-wrap:balance' + (isHook ? ';letter-spacing:-1px;text-transform:uppercase' : '') + '}' +
+'.em{color:#F7C948;font-style:normal;font-weight:inherit}' +
 '.cta .text{font-size:74px;font-weight:800}' +
 '.url{margin-top:40px;font-size:54px;font-weight:700;color:#3BE8B0}' +
 '.handle{font-size:40px;color:#8FA3C4;margin-top:16px}' +
@@ -225,7 +244,7 @@ function cardHtml(card, i, total) {
 '<main class="' + (isCta ? 'cta' : '') + '">' +
 (card.kicker ? '<div class="kicker">' + esc(card.kicker) + '</div>' : '') +
 (card.stake ? '<div class="stake">' + esc(card.stake) + '</div>' : '') +
-'<div class="text">' + esc(card.text) + '</div>' +
+'<div class="text">' + emphasize(card.text) + '</div>' +
 (isCta ? '<div><div class="url">' + esc(cfg.site) + '</div>' +
          '<div class="handle">' + esc(HANDLE) + '</div></div>' : '') +
 '</main>' +
@@ -343,15 +362,17 @@ const audioSeconds = f => Number(execFileSync('ffprobe',
 // ---------------------------------------------------------------- сборка
 
 function buildVideo(dir, cards, mp4) {
-  // Последний файл в списке повторяется: concat-демультиплексор ffmpeg
-  // игнорирует duration последней записи, и без дубля хвост ролика обрезается.
-  const list = cards.map(c => "file '" + c.png + "'\nduration " + c.seconds.toFixed(3)).join('\n') +
-    "\nfile '" + cards[cards.length - 1].png + "'\n";
-  const listFile = path.join(dir, 'concat.txt');
-  fs.writeFileSync(listFile, list);
+  // Сборка v2 (31.08). Раньше — один concat + общий медленный наезд: тот же
+  // тип движения все 30 секунд, между карточками жёсткая склейка. Три замера
+  // подряд показали уход в 0:01 при любом ТЕКСТЕ первого кадра — меняем
+  // единственное, что не меняли: движение.
+  //   кадр 1 — панч: резкий отъезд 1.30 -> 1.12 за ~0.3 с (движение с нулевого кадра),
+  //   дальше карточки чередуют наезд и отъезд,
+  //   между карточками свайп-переход (slideleft), как жест самого TikTok.
+  const T = 0.28; // длительность перехода, с
+  const n = cards.length;
 
   const withVoice = cards.some(c => c.mp3);
-  const args = ['-y', '-f', 'concat', '-safe', '0', '-i', listFile];
   if (withVoice) {
     // Молчащие карточки заменяем тишиной нужной длины, иначе голос уедет вперёд картинки.
     for (const c of cards) {
@@ -360,8 +381,7 @@ function buildVideo(dir, cards, mp4) {
       execFileSync('ffmpeg', ['-y', '-f', 'lavfi', '-i', 'anullsrc=r=44100:cl=mono',
         '-t', String(c.seconds), '-q:a', '9', c.mp3], { stdio: 'ignore' });
     }
-    // Паузу между карточками дописываем В АУДИО. Иначе видео длиннее звука на
-    // сумму пауз, -shortest режет хвост, а голос уезжает вперёд картинки.
+    // Пауза между карточками живёт В АУДИО — иначе -shortest режет хвост.
     for (const c of cards) {
       if (/-silence\.mp3$/.test(c.mp3)) continue;
       const padded = c.mp3.replace(/\.mp3$/, '-pad.mp3');
@@ -369,24 +389,59 @@ function buildVideo(dir, cards, mp4) {
         '-b:a', '128k', padded], { stdio: 'ignore' });
       c.mp3 = padded;
     }
+  }
+
+  const SRC_W = Math.round(W * 1.3 / 2) * 2, SRC_H = Math.round(H * 1.3 / 2) * 2;
+  // Каждая карточка кодируется отдельным клипом со своим движением. Клипы,
+  // кроме последнего, длиннее на T: xfade съедает T на наложение, и без запаса
+  // видео стало бы короче звука на T*(n-1) — голос уехал бы вперёд картинки.
+  cards.forEach((c, i) => {
+    const len = c.seconds + (i < n - 1 ? T : 0);
+    // Амплитуды считаны от отступов карточки: левый отступ 84 px, значит
+    // зум выше ~1.14 начинает срезать текст (z=1.30 в первой версии резал
+    // «BLOCKCHAIN» с обеих сторон). Панч 1.14 -> 1.04 за ~0.3 с, дрейф 1.00-1.10.
+    const zoom = i === 0
+      ? "max(1.04+0.0004*on\\,1.14-0.35*on/" + FPS + ")"
+      : (i % 2 ? "max(1.0\\,1.10-0.0005*on)" : "min(1.10\\,1.0+0.0005*on)");
+    c.clip = path.join(dir, path.basename(c.png, '.png') + '-clip.mp4');
+    execFileSync('ffmpeg', ['-y', '-loop', '1', '-framerate', String(FPS),
+      '-t', len.toFixed(3), '-i', c.png,
+      '-vf', 'scale=' + SRC_W + ':' + SRC_H + ':force_original_aspect_ratio=increase,' +
+        'crop=' + SRC_W + ':' + SRC_H + ',' +
+        "zoompan=z='" + zoom + "':d=1:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':" +
+        's=' + W + 'x' + H + ':fps=' + FPS,
+      '-c:v', 'libx264', '-preset', 'fast', '-crf', '18', '-pix_fmt', 'yuv420p', c.clip],
+      { stdio: ['ignore', 'ignore', 'pipe'] });
+  });
+
+  const args = ['-y'];
+  for (const c of cards) args.push('-i', c.clip);
+  if (withVoice) {
     const aList = path.join(dir, 'audio.txt');
     fs.writeFileSync(aList, cards.map(c => "file '" + c.mp3 + "'").join('\n') + '\n');
     args.push('-f', 'concat', '-safe', '0', '-i', aList);
   }
-  // Медленный наезд. Статичная картинка в ленте читается как пауза, и палец
-  // уходит: TikTok раздаёт по удержанию, а удержание начинается с движения.
-  // fps ДО zoompan обязателен: concat-демультиплексор отдаёт по одному кадру на
-  // картинку, а zoompan работает покадрово — без него из 33 секунд получилось 0,2.
-  const SRC_W = Math.round(W * 1.3 / 2) * 2, SRC_H = Math.round(H * 1.3 / 2) * 2;
-  args.push('-vf', 'fps=' + FPS + ',scale=' + SRC_W + ':' + SRC_H +
-      ':force_original_aspect_ratio=increase,crop=' + SRC_W + ':' + SRC_H + ',' +
-      "zoompan=z='min(zoom+0.0004,1.12)':d=1:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':" +
-      's=' + W + 'x' + H + ':fps=' + FPS,
-    '-c:v', 'libx264', '-preset', 'medium', '-crf', '20', '-pix_fmt', 'yuv420p',
-    '-profile:v', 'high', '-level', '4.1', '-movflags', '+faststart');
-  if (withVoice) args.push('-c:a', 'aac', '-b:a', '128k', '-shortest');
-  args.push(mp4);
+
+  if (n > 1) {
+    // Цепочка xfade. offset перехода k — момент, когда карточка k отговорила
+    // своё: сумма чистых длительностей карточек 0..k.
+    let chain = '', prev = '[0:v]', off = 0;
+    for (let k = 1; k < n; k++) {
+      off += cards[k - 1].seconds;
+      const out = k === n - 1 ? '[vout]' : '[x' + k + ']';
+      chain += prev + '[' + k + ':v]xfade=transition=slideleft:duration=' + T +
+        ':offset=' + off.toFixed(3) + out + ';';
+      prev = out;
+    }
+    args.push('-filter_complex', chain.slice(0, -1), '-map', '[vout]');
+  } else {
+    args.push('-map', '0:v');
+  }
+  if (withVoice) args.push('-map', n + ':a', '-c:a', 'aac', '-b:a', '128k', '-shortest');
+  args.push('-c:v', 'libx264', '-preset', 'medium', '-crf', '20', '-pix_fmt', 'yuv420p',
+    '-profile:v', 'high', '-level', '4.1', '-movflags', '+faststart', mp4);
   execFileSync('ffmpeg', args, { stdio: ['ignore', 'ignore', 'pipe'] });
+  for (const c of cards) { try { fs.unlinkSync(c.clip); } catch (e) {} }
 }
 
 // ---------------------------------------------------------------- главное
@@ -479,4 +534,4 @@ async function main() {
 
 if (require.main === module) main().catch(e => { console.error(e); process.exit(1); });
 
-module.exports = { sentences, bodyCards, fitSize, caption, cardDuration, cardHtml, ttsMode, hookSplit, kickerFor, buildCards, pickQueue };
+module.exports = { sentences, bodyCards, fitSize, caption, cardDuration, cardHtml, ttsMode, hookSplit, kickerFor, buildCards, pickQueue, emphasize };

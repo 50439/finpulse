@@ -8,7 +8,7 @@
  * а ломается на практике не они, а разбивка текста.
  */
 const assert = require('assert');
-const { sentences, bodyCards, fitSize, caption, cardDuration, ttsMode, hookSplit, kickerFor, buildCards, pickQueue } = require('./video.js');
+const { sentences, bodyCards, fitSize, caption, cardDuration, ttsMode, hookSplit, kickerFor, buildCards, pickQueue, emphasize } = require('./video.js');
 
 let n = 0;
 const t = (name, fn) => { fn(); n++; console.log('  ok  ' + name); };
@@ -224,6 +224,29 @@ t('свежие сортируются от новых к старым и реж
   ];
   const q = pickQueue(arts, [], { perRun: 2 }, now);
   assert.deepStrictEqual(q.map(a => a.slug), ['b', 'c']);
+});
+
+console.log('emphasize:');
+
+t('деньги и проценты подсвечиваются, обычные слова — нет', () => {
+  // Разбор топ-аккаунтов ниши (31.08, @cryptodailyfeed 1M, поисковая выдача):
+  // у всех заголовок — ALL CAPS, а ключевая цифра выделена цветом
+  // («BITCOIN JUST HIT $73,000», «DIAMONDS CRASHED 70%»). Цифра — это
+  // единственное, что зритель успевает прочесть за полсекунды.
+  const out = emphasize('Token Crashes 49% After $1.1 Million Hack');
+  assert.ok(out.includes('<b class="em">49%</b>'), '49% не подсвечен: ' + out);
+  assert.ok(out.includes('<b class="em">$1.1 Million</b>'), '$1.1 Million не подсвечен: ' + out);
+  assert.ok(!/class="em">Token/.test(out), 'обычное слово подсвечено');
+});
+
+t('HTML в тексте экранируется, а не исполняется', () => {
+  const out = emphasize('<script>alert(1)</script> costs $5');
+  assert.ok(!out.includes('<script>'), 'сырой HTML прошёл в карточку');
+  assert.ok(out.includes('<b class="em">$5</b>'));
+});
+
+t('текст без цифр возвращается просто экранированным', () => {
+  assert.strictEqual(emphasize('Cronos Blockchain Halted'), 'Cronos Blockchain Halted');
 });
 
 console.log('\nВсе ' + n + ' проверок прошли.');
