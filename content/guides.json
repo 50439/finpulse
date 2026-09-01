@@ -7423,5 +7423,747 @@
     ]
    }
   }
+ },
+ {
+  "slug": "crypto-wallet-vs-exchange",
+  "category": "guide",
+  "emoji": "🔐",
+  "langs": [
+   "en",
+   "de",
+   "fr",
+   "pl",
+   "pt",
+   "es",
+   "tr",
+   "id",
+   "vi",
+   "th",
+   "uk",
+   "ru"
+  ],
+  "updated": "2026-09-01T05:31:37.028Z",
+  "i18n": {
+   "en": {
+    "title": "Wallet or Exchange: Where Your Crypto Should Actually Sit",
+    "excerpt": "The choice between self-custody and leaving coins on an exchange determines who controls your assets and who bears the risk when things go wrong. Here's how to decide based on amounts, usage patterns, and your ability to secure a seed phrase.",
+    "sections": [
+     {
+      "h": "What custody means and what happens when an exchange fails",
+      "p": [
+       "When you hold cryptocurrency on an exchange, you do not own coins in the technical sense. The exchange controls the private keys, and you hold a claim against the exchange's internal ledger. If the exchange becomes insolvent, your coins are part of the bankruptcy estate. Creditors may recover a fraction of their holdings after months or years, or nothing at all. This has happened repeatedly: Mt. Gox users filed claims starting in 2014, and distributions began nearly a decade later. FTX, Celsius, Voyager, and dozens of smaller platforms have followed similar paths.",
+       "Self-custody means you control the private key or seed phrase that produces it. No third party can freeze, seize, or lose your funds through their own mismanagement. You also bear full responsibility: if you lose the key or send coins to the wrong address, no support team can reverse the transaction. The blockchain does not recognize excuses, only valid signatures."
+      ]
+     },
+     {
+      "h": "The convenience-versus-control trade-off",
+      "p": [
+       "Exchanges offer instant trading, fiat on-ramps and off-ramps, staking services, and customer support. You can buy and sell without waiting for blockchain confirmations or paying separate withdrawal fees. For active traders who move in and out of positions several times a week, self-custody would mean constant withdrawals and deposits, each incurring network fees and delays.",
+       "Self-custody wallets grant full control and privacy, but remove the convenience layer. You pay network transaction fees directly, manage your own backups, and take responsibility for operational security. There is no password reset and no fraud department. This suits holders who buy and wait months or years, or anyone unwilling to trust a third party with significant value."
+      ]
+     },
+     {
+      "h": "When leaving funds on an exchange makes sense",
+      "p": [
+       "If you trade frequently, hold small amounts, or are still learning, an exchange account is the pragmatic choice. For balances under the equivalent of 500 USD that you access weekly, withdrawal fees and the risk of mishandling a seed phrase often outweigh exchange risk. Regulated exchanges in jurisdictions with strong customer-asset segregation rules and regular audits add a layer of protection, though regulation is not a guarantee and rules vary widely by country.",
+       "Consider the proportion of your net worth at stake. Leaving one percent of your savings on an exchange to avoid friction is reasonable. Leaving fifty percent introduces catastrophic risk, no matter how reputable the platform appears. Exchanges are businesses with profit motives, opaque reserves, and exposure to hacks, regulatory seizures, and management failures."
+      ]
+     },
+     {
+      "h": "Hot wallets, hardware wallets, and paper backups",
+      "p": [
+       "A hot wallet is any software wallet connected to the internet: a mobile app, browser extension, or desktop program. Hot wallets are convenient for small amounts and regular transactions, but they are vulnerable to malware, phishing, and remote exploits. Treat them like the physical wallet in your pocket—carry enough for near-term needs, not your savings.",
+       "A hardware wallet is a dedicated device that stores private keys offline and signs transactions internally. When you approve a payment, the unsigned transaction moves to the device, the device signs it without exposing the key, and returns the signed result. Reputable models include Ledger, Trezor, BitBox, and Coldcard. Hardware wallets resist remote attacks but remain vulnerable if you enter your seed phrase into a fake device or phishing site.",
+       "A paper backup is exactly what it sounds like: your seed phrase written or printed on paper, stored somewhere safe. Paper is immune to hardware failure and hacking, but it burns, fades, and can be stolen or accidentally discarded. Many users combine methods, keeping a hardware wallet for active use and paper or metal backups in secure locations. Metal plates stamped or engraved with seed words resist fire and water damage."
+      ]
+     },
+     {
+      "h": "Seed-phrase handling that survives real life",
+      "p": [
+       "A seed phrase is usually twelve or twenty-four words from a fixed dictionary. Anyone with the phrase controls the funds, forever. Do not store it in email, cloud drives, password managers synced online, or photos on your phone. Do not share it with support staff, friends, or family unless you intend to give them full, irrevocable access.",
+       "Write the phrase on paper or stamp it into metal, and verify every word by restoring the wallet on the same or a second device before transferring large amounts. Store at least one copy in a location separate from your hardware wallet—a safe deposit box, a trusted relative's home, or a fireproof safe. If you keep the backup and the hardware wallet in the same house, a fire or burglary takes both. If you split the phrase using Shamir Secret Sharing or multisignature schemes, document the recovery process so your heirs or future self can reconstruct access.",
+       "Avoid overly elaborate security that you will not remember in five years. A seed phrase locked in a safe deposit box you visit twice a decade beats a twelve-step process you forget or a split scheme whose documentation disappeared with an old laptop. The most common loss scenario is not theft but the holder forgetting where or how they stored the backup."
+      ]
+     },
+     {
+      "h": "A rule of thumb by amount held",
+      "p": [
+       "Below the equivalent of 1,000 USD: an exchange or hot wallet is acceptable if you check in regularly and use a platform with a multi-year track record and two-factor authentication. The operational risk of managing your own keys may exceed the exchange risk at this level.",
+       "Between 1,000 and 10,000 USD equivalent: move funds to a hardware wallet unless you trade weekly. The cost of a hardware device is now a small fraction of the holdings, and the risk of exchange failure or account freeze becomes material.",
+       "Above 10,000 USD equivalent: self-custody is the baseline expectation. Use a hardware wallet, maintain offline backups in at least two physical locations, and test recovery while the amount is still modest. Consider multisignature setups or Shamir splits for amounts above six months of your income, understanding that complexity increases both security and the chance of self-inflicted lockout.",
+       "These thresholds are illustrative and depend on personal risk tolerance and technical confidence. Adjust downward if you live somewhere with unstable banking or frequent platform shutdowns, upward if your exchange operates under strict custody rules in a jurisdiction you trust. The key variable is consequence: how much pain would losing this amount cause, and can you bear full responsibility for its security?"
+      ]
+     },
+     {
+      "h": "Hybrid approaches and operational realities",
+      "p": [
+       "Many experienced users keep a small operational balance on one or two exchanges for trading or immediate liquidity, and move the majority to cold storage after accumulation. This limits exchange exposure while preserving the ability to act quickly. Set a threshold—such as any balance above 5,000 USD—and sweep excess to your hardware wallet monthly or quarterly.",
+       "Tax obligations exist regardless of custody method. Most countries treat cryptocurrency as property or a capital asset, and every trade, sale, or exchange is a taxable event. Moving coins from an exchange to your own wallet is not taxable, but selling, trading for another coin, or spending triggers reporting requirements. Rules differ significantly by jurisdiction and change regularly, so this is not tax advice—consult a professional familiar with your local laws.",
+       "Remember that self-custody is not all-or-nothing. Start small: withdraw a modest amount to a hot wallet, then upgrade to a hardware wallet as your confidence and holdings grow. The goal is not ideological purity but a rational match between the value at stake, your technical ability, and the risks you are willing to accept."
+      ]
+     }
+    ]
+   },
+   "de": {
+    "title": "Wallet oder Börse: Wo Ihre Kryptowährung tatsächlich liegen sollte",
+    "excerpt": "Die Wahl zwischen Selbstverwahrung und dem Belassen von Coins auf einer Börse bestimmt, wer Ihre Vermögenswerte kontrolliert und wer das Risiko trägt, wenn etwas schiefgeht. Hier erfahren Sie, wie Sie anhand von Beträgen, Nutzungsmustern und Ihrer Fähigkeit, eine Seed-Phrase zu sichern, entscheiden.",
+    "sections": [
+     {
+      "h": "Was Verwahrung bedeutet und was bei Börsenzusammenbrüchen passiert",
+      "p": [
+       "Wenn Sie Kryptowährung auf einer Börse halten, besitzen Sie die Coins technisch gesehen nicht. Die Börse kontrolliert die privaten Schlüssel, und Sie haben einen Anspruch gegenüber dem internen Kontobuch der Börse. Wird die Börse insolvent, sind Ihre Coins Teil der Konkursmasse. Gläubiger erhalten möglicherweise nach Monaten oder Jahren einen Bruchteil zurück oder gar nichts. Das ist wiederholt passiert: Mt.-Gox-Nutzer stellten ab 2014 Forderungen, und die Auszahlungen begannen fast ein Jahrzehnt später. FTX, Celsius, Voyager und Dutzende kleinerer Plattformen folgten ähnlichen Wegen.",
+       "Selbstverwahrung bedeutet, dass Sie den privaten Schlüssel oder die Seed-Phrase kontrollieren, die ihn erzeugt. Keine dritte Partei kann Ihre Gelder durch eigenes Missmanagement einfrieren, beschlagnahmen oder verlieren. Sie tragen aber auch die volle Verantwortung: Wenn Sie den Schlüssel verlieren oder Coins an die falsche Adresse senden, kann kein Support-Team die Transaktion rückgängig machen. Die Blockchain kennt keine Ausreden, nur gültige Signaturen."
+      ]
+     },
+     {
+      "h": "Der Kompromiss zwischen Komfort und Kontrolle",
+      "p": [
+       "Börsen bieten sofortigen Handel, Ein- und Auszahlungen in Fiatwährung, Staking-Dienste und Kundensupport. Sie können kaufen und verkaufen, ohne auf Blockchain-Bestätigungen zu warten oder separate Abhebungsgebühren zu zahlen. Für aktive Trader, die mehrmals wöchentlich Positionen eröffnen und schließen, würde Selbstverwahrung ständige Abhebungen und Einzahlungen bedeuten, die jeweils Netzwerkgebühren und Verzögerungen verursachen.",
+       "Selbstverwahrungs-Wallets gewähren volle Kontrolle und Privatsphäre, nehmen aber die Komfortebene weg. Sie zahlen Netzwerktransaktionsgebühren direkt, verwalten Ihre eigenen Backups und übernehmen Verantwortung für die Betriebssicherheit. Es gibt kein Passwort-Reset und keine Betrugsabteilung. Das passt zu Haltern, die kaufen und Monate oder Jahre warten, oder zu jedem, der einer dritten Partei keinen erheblichen Wert anvertrauen möchte."
+      ]
+     },
+     {
+      "h": "Wann das Belassen von Geldern auf einer Börse sinnvoll ist",
+      "p": [
+       "Wenn Sie häufig handeln, kleine Beträge halten oder noch lernen, ist ein Börsenkonto die pragmatische Wahl. Bei Guthaben unter dem Gegenwert von 500 Euro, auf die Sie wöchentlich zugreifen, überwiegen Abhebungsgebühren und das Risiko einer falschen Handhabung der Seed-Phrase oft das Börsenrisiko. Regulierte Börsen in Rechtsordnungen mit strengen Regeln zur Trennung von Kundengeldern und regelmäßigen Prüfungen bieten eine zusätzliche Schutzebene, obwohl Regulierung keine Garantie ist und die Regeln je nach Land stark variieren.",
+       "Berücksichtigen Sie den Anteil Ihres Nettovermögens, der auf dem Spiel steht. Ein Prozent Ihrer Ersparnisse auf einer Börse zu belassen, um Reibung zu vermeiden, ist vernünftig. Fünfzig Prozent zu belassen, birgt katastrophale Risiken, egal wie seriös die Plattform erscheint. Börsen sind Unternehmen mit Gewinnmotiven, undurchsichtigen Reserven und Exposition gegenüber Hacks, behördlichen Beschlagnahmungen und Managementfehlern."
+      ]
+     },
+     {
+      "h": "Hot Wallets, Hardware Wallets und Papier-Backups",
+      "p": [
+       "Ein Hot Wallet ist jede Software-Wallet, die mit dem Internet verbunden ist: eine mobile App, Browser-Erweiterung oder Desktop-Programm. Hot Wallets sind praktisch für kleine Beträge und regelmäßige Transaktionen, aber anfällig für Malware, Phishing und Remote-Exploits. Behandeln Sie sie wie die physische Geldbörse in Ihrer Tasche – tragen Sie genug für den kurzfristigen Bedarf, nicht Ihre Ersparnisse.",
+       "Ein Hardware Wallet ist ein dediziertes Gerät, das private Schlüssel offline speichert und Transaktionen intern signiert. Wenn Sie eine Zahlung genehmigen, wandert die unsignierte Transaktion zum Gerät, das Gerät signiert sie, ohne den Schlüssel preiszugeben, und gibt das signierte Ergebnis zurück. Seriöse Modelle sind Ledger, Trezor, BitBox und Coldcard. Hardware Wallets widerstehen Remote-Angriffen, bleiben aber anfällig, wenn Sie Ihre Seed-Phrase in ein gefälschtes Gerät oder eine Phishing-Site eingeben.",
+       "Ein Papier-Backup ist genau das: Ihre Seed-Phrase auf Papier geschrieben oder gedruckt, an einem sicheren Ort aufbewahrt. Papier ist immun gegen Hardware-Ausfälle und Hacking, verbrennt aber, verblasst und kann gestohlen oder versehentlich weggeworfen werden. Viele Nutzer kombinieren Methoden und halten ein Hardware Wallet für aktive Nutzung sowie Papier- oder Metall-Backups an sicheren Orten. Metallplatten, auf die Seed-Wörter gestempelt oder graviert werden, widerstehen Feuer- und Wasserschäden."
+      ]
+     },
+     {
+      "h": "Seed-Phrase-Handhabung, die das echte Leben übersteht",
+      "p": [
+       "Eine Seed-Phrase besteht normalerweise aus zwölf oder vierundzwanzig Wörtern aus einem festen Wörterbuch. Jeder, der die Phrase hat, kontrolliert die Gelder, für immer. Speichern Sie sie nicht in E-Mails, Cloud-Laufwerken, online synchronisierten Passwort-Managern oder Fotos auf Ihrem Telefon. Teilen Sie sie nicht mit Support-Mitarbeitern, Freunden oder Familie, es sei denn, Sie beabsichtigen, ihnen vollen, unwiderruflichen Zugang zu gewähren.",
+       "Schreiben Sie die Phrase auf Papier oder stanzen Sie sie in Metall, und überprüfen Sie jedes Wort, indem Sie die Wallet auf demselben oder einem zweiten Gerät wiederherstellen, bevor Sie große Beträge übertragen. Bewahren Sie mindestens eine Kopie an einem vom Hardware Wallet getrennten Ort auf – ein Bankschließfach, das Zuhause eines vertrauenswürdigen Verwandten oder ein feuerfester Safe. Wenn Sie das Backup und das Hardware Wallet im selben Haus aufbewahren, nimmt ein Feuer oder Einbruch beides. Wenn Sie die Phrase mit Shamir Secret Sharing oder Multisignatur-Schemata aufteilen, dokumentieren Sie den Wiederherstellungsprozess, damit Ihre Erben oder Ihr zukünftiges Ich den Zugang rekonstruieren können.",
+       "Vermeiden Sie übermäßig aufwendige Sicherheit, an die Sie sich in fünf Jahren nicht erinnern werden. Eine Seed-Phrase in einem Bankschließfach, das Sie zweimal pro Jahrzehnt besuchen, schlägt einen zwölfstufigen Prozess, den Sie vergessen, oder ein Split-Schema, dessen Dokumentation mit einem alten Laptop verschwunden ist. Das häufigste Verlustszenario ist nicht Diebstahl, sondern dass der Inhaber vergisst, wo oder wie er das Backup gespeichert hat."
+      ]
+     },
+     {
+      "h": "Eine Faustregel nach gehaltenem Betrag",
+      "p": [
+       "Unter dem Gegenwert von 1.000 Euro: Eine Börse oder ein Hot Wallet ist akzeptabel, wenn Sie regelmäßig nachsehen und eine Plattform mit mehrjähriger Erfolgsbilanz und Zwei-Faktor-Authentifizierung nutzen. Das operative Risiko der Verwaltung Ihrer eigenen Schlüssel kann das Börsenrisiko auf diesem Level übersteigen.",
+       "Zwischen 1.000 und 10.000 Euro Gegenwert: Verschieben Sie Gelder auf ein Hardware Wallet, es sei denn, Sie handeln wöchentlich. Die Kosten eines Hardware-Geräts sind nun ein kleiner Bruchteil der Bestände, und das Risiko eines Börsenzusammenbruchs oder Kontosperrung wird erheblich.",
+       "Über 10.000 Euro Gegenwert: Selbstverwahrung ist die Basiserwartung. Verwenden Sie ein Hardware Wallet, führen Sie Offline-Backups an mindestens zwei physischen Orten und testen Sie die Wiederherstellung, während der Betrag noch überschaubar ist. Erwägen Sie Multisignatur-Setups oder Shamir-Splits für Beträge über sechs Monatsgehältern, wobei Sie verstehen, dass Komplexität sowohl Sicherheit als auch die Chance auf selbstverschuldete Aussperrung erhöht.",
+       "Diese Schwellenwerte sind illustrativ und hängen von persönlicher Risikobereitschaft und technischer Zuversicht ab. Passen Sie sie nach unten an, wenn Sie an einem Ort mit instabilem Bankwesen oder häufigen Plattform-Stilllegungen leben, nach oben, wenn Ihre Börse unter strengen Verwahrungsregeln in einer Rechtsordnung operiert, der Sie vertrauen. Die Schlüsselvariable ist Konsequenz: Wie viel Schmerz würde der Verlust dieses Betrags verursachen, und können Sie die volle Verantwortung für seine Sicherheit tragen?"
+      ]
+     },
+     {
+      "h": "Hybride Ansätze und operative Realitäten",
+      "p": [
+       "Viele erfahrene Nutzer halten ein kleines Betriebsguthaben auf ein oder zwei Börsen für Handel oder sofortige Liquidität und verschieben die Mehrheit nach der Akkumulation in Cold Storage. Dies begrenzt das Börsenexposure, während die Fähigkeit zum schnellen Handeln erhalten bleibt. Setzen Sie eine Schwelle – etwa jedes Guthaben über 5.000 Euro – und überweisen Sie den Überschuss monatlich oder quartalsweise auf Ihr Hardware Wallet.",
+       "Steuerpflichten bestehen unabhängig von der Verwahrungsmethode. Die meisten Länder behandeln Kryptowährung als Eigentum oder Kapitalanlage, und jeder Handel, Verkauf oder Tausch ist ein steuerpflichtiges Ereignis. Das Verschieben von Coins von einer Börse in Ihre eigene Wallet ist nicht steuerpflichtig, aber Verkauf, Tausch gegen eine andere Coin oder Ausgeben löst Meldepflichten aus. Die Regeln unterscheiden sich erheblich je nach Rechtsordnung und ändern sich regelmäßig, daher ist dies keine Steuerberatung – konsultieren Sie einen Fachmann, der mit Ihren lokalen Gesetzen vertraut ist.",
+       "Denken Sie daran, dass Selbstverwahrung nicht alles oder nichts ist. Fangen Sie klein an: Heben Sie einen bescheidenen Betrag auf ein Hot Wallet ab, upgraden Sie dann zu einem Hardware Wallet, wenn Ihr Vertrauen und Ihre Bestände wachsen. Das Ziel ist nicht ideologische Reinheit, sondern eine rationale Übereinstimmung zwischen dem auf dem Spiel stehenden Wert, Ihrer technischen Fähigkeit und den Risiken, die Sie akzeptieren möchten."
+      ]
+     }
+    ]
+   },
+   "fr": {
+    "title": "Portefeuille ou plateforme d'échange : où vos cryptos devraient vraiment se trouver",
+    "excerpt": "Le choix entre l'auto-conservation et le maintien de vos cryptos sur une plateforme détermine qui contrôle vos actifs et qui supporte le risque en cas de problème. Voici comment décider en fonction des montants, des habitudes d'utilisation et de votre capacité à sécuriser une phrase de récupération.",
+    "sections": [
+     {
+      "h": "Ce que signifie la garde et ce qui se passe lors d'une faillite d'une plateforme",
+      "p": [
+       "Lorsque vous détenez de la cryptomonnaie sur une plateforme d'échange, vous ne possédez pas techniquement les pièces. La plateforme contrôle les clés privées, et vous détenez une créance sur le registre interne de la plateforme. Si la plateforme devient insolvable, vos pièces font partie de la masse de la faillite. Les créanciers peuvent récupérer une fraction de leurs avoirs après des mois ou des années, ou rien du tout. Cela s'est produit à plusieurs reprises : les utilisateurs de Mt. Gox ont déposé des réclamations à partir de 2014, et les distributions ont commencé près d'une décennie plus tard. FTX, Celsius, Voyager et des dizaines de plateformes plus petites ont suivi des chemins similaires.",
+       "L'auto-conservation signifie que vous contrôlez la clé privée ou la phrase de récupération qui la génère. Aucun tiers ne peut geler, saisir ou perdre vos fonds par sa propre mauvaise gestion. Vous assumez également l'entière responsabilité : si vous perdez la clé ou envoyez des pièces à la mauvaise adresse, aucune équipe d'assistance ne peut annuler la transaction. La blockchain ne reconnaît pas les excuses, seulement les signatures valides."
+      ]
+     },
+     {
+      "h": "Le compromis entre commodité et contrôle",
+      "p": [
+       "Les plateformes d'échange offrent des échanges instantanés, des rampes d'accès en monnaie fiduciaire, des services de staking et un support client. Vous pouvez acheter et vendre sans attendre les confirmations de la blockchain ou payer des frais de retrait séparés. Pour les traders actifs qui entrent et sortent de positions plusieurs fois par semaine, l'auto-conservation signifierait des retraits et dépôts constants, chacun entraînant des frais de réseau et des délais.",
+       "Les portefeuilles en auto-conservation accordent un contrôle total et la confidentialité, mais suppriment la couche de commodité. Vous payez directement les frais de transaction réseau, gérez vos propres sauvegardes et assumez la responsabilité de la sécurité opérationnelle. Il n'y a pas de réinitialisation de mot de passe ni de service anti-fraude. Cela convient aux détenteurs qui achètent et attendent des mois ou des années, ou à toute personne refusant de confier une valeur significative à un tiers."
+      ]
+     },
+     {
+      "h": "Quand laisser des fonds sur une plateforme a du sens",
+      "p": [
+       "Si vous tradez fréquemment, détenez de petits montants ou êtes encore en apprentissage, un compte sur une plateforme d'échange est le choix pragmatique. Pour des soldes inférieurs à l'équivalent de 500 euros auxquels vous accédez chaque semaine, les frais de retrait et le risque de mal gérer une phrase de récupération dépassent souvent le risque lié à la plateforme. Les plateformes régulées dans des juridictions avec des règles strictes de ségrégation des actifs clients et des audits réguliers ajoutent une couche de protection, bien que la régulation ne soit pas une garantie et que les règles varient considérablement selon les pays.",
+       "Considérez la proportion de votre patrimoine net en jeu. Laisser un pour cent de vos économies sur une plateforme pour éviter les frictions est raisonnable. En laisser cinquante pour cent introduit un risque catastrophique, quelle que soit la réputation apparente de la plateforme. Les plateformes sont des entreprises avec des motivations lucratives, des réserves opaques et une exposition aux piratages, aux saisies réglementaires et aux défaillances de gestion."
+      ]
+     },
+     {
+      "h": "Portefeuilles chauds, portefeuilles matériels et sauvegardes papier",
+      "p": [
+       "Un portefeuille chaud est tout portefeuille logiciel connecté à Internet : une application mobile, une extension de navigateur ou un programme de bureau. Les portefeuilles chauds sont pratiques pour de petits montants et des transactions régulières, mais ils sont vulnérables aux logiciels malveillants, au phishing et aux exploits à distance. Traitez-les comme le portefeuille physique dans votre poche – portez suffisamment pour les besoins à court terme, pas vos économies.",
+       "Un portefeuille matériel est un appareil dédié qui stocke les clés privées hors ligne et signe les transactions en interne. Lorsque vous approuvez un paiement, la transaction non signée se déplace vers l'appareil, l'appareil la signe sans exposer la clé et renvoie le résultat signé. Les modèles réputés incluent Ledger, Trezor, BitBox et Coldcard. Les portefeuilles matériels résistent aux attaques à distance mais restent vulnérables si vous entrez votre phrase de récupération dans un faux appareil ou un site de phishing.",
+       "Une sauvegarde papier est exactement ce que cela signifie : votre phrase de récupération écrite ou imprimée sur papier, stockée dans un endroit sûr. Le papier est immunisé contre les pannes matérielles et le piratage, mais il brûle, se décolore et peut être volé ou jeté accidentellement. De nombreux utilisateurs combinent les méthodes, en gardant un portefeuille matériel pour une utilisation active et des sauvegardes papier ou métal dans des endroits sécurisés. Les plaques métalliques estampées ou gravées avec des mots de récupération résistent aux dommages causés par le feu et l'eau."
+      ]
+     },
+     {
+      "h": "Gestion de la phrase de récupération qui survit à la vraie vie",
+      "p": [
+       "Une phrase de récupération est généralement composée de douze ou vingt-quatre mots d'un dictionnaire fixe. Quiconque possède la phrase contrôle les fonds, pour toujours. Ne la stockez pas dans des e-mails, des lecteurs cloud, des gestionnaires de mots de passe synchronisés en ligne ou des photos sur votre téléphone. Ne la partagez pas avec le personnel d'assistance, des amis ou de la famille à moins que vous n'ayez l'intention de leur donner un accès complet et irrévocable.",
+       "Écrivez la phrase sur papier ou tamponnez-la dans du métal, et vérifiez chaque mot en restaurant le portefeuille sur le même appareil ou un second avant de transférer de gros montants. Conservez au moins une copie dans un endroit séparé de votre portefeuille matériel – un coffre-fort bancaire, le domicile d'un parent de confiance ou un coffre-fort ignifuge. Si vous conservez la sauvegarde et le portefeuille matériel dans la même maison, un incendie ou un cambriolage prend les deux. Si vous divisez la phrase en utilisant Shamir Secret Sharing ou des schémas multisignature, documentez le processus de récupération afin que vos héritiers ou votre futur vous puissiez reconstruire l'accès.",
+       "Évitez une sécurité trop élaborée dont vous ne vous souviendrez pas dans cinq ans. Une phrase de récupération enfermée dans un coffre-fort bancaire que vous visitez deux fois par décennie bat un processus en douze étapes que vous oubliez ou un schéma de division dont la documentation a disparu avec un vieil ordinateur portable. Le scénario de perte le plus courant n'est pas le vol mais le détenteur oubliant où ou comment il a stocké la sauvegarde."
+      ]
+     },
+     {
+      "h": "Une règle empirique selon le montant détenu",
+      "p": [
+       "En dessous de l'équivalent de 1 000 euros : une plateforme d'échange ou un portefeuille chaud est acceptable si vous vérifiez régulièrement et utilisez une plateforme avec plusieurs années d'historique et une authentification à deux facteurs. Le risque opérationnel de gérer vos propres clés peut dépasser le risque de la plateforme à ce niveau.",
+       "Entre 1 000 et 10 000 euros équivalent : déplacez les fonds vers un portefeuille matériel sauf si vous tradez chaque semaine. Le coût d'un appareil matériel est désormais une petite fraction des avoirs, et le risque de faillite de la plateforme ou de gel de compte devient significatif.",
+       "Au-dessus de 10 000 euros équivalent : l'auto-conservation est l'attente de base. Utilisez un portefeuille matériel, maintenez des sauvegardes hors ligne dans au moins deux emplacements physiques et testez la récupération tant que le montant est encore modeste. Envisagez des configurations multisignature ou des divisions Shamir pour des montants supérieurs à six mois de vos revenus, en comprenant que la complexité augmente à la fois la sécurité et la chance d'auto-blocage.",
+       "Ces seuils sont illustratifs et dépendent de la tolérance au risque personnelle et de la confiance technique. Ajustez à la baisse si vous vivez dans un endroit avec un système bancaire instable ou des fermetures fréquentes de plateformes, à la hausse si votre plateforme opère sous des règles de garde strictes dans une juridiction en laquelle vous avez confiance. La variable clé est la conséquence : combien de douleur la perte de ce montant causerait-elle, et pouvez-vous assumer l'entière responsabilité de sa sécurité ?"
+      ]
+     },
+     {
+      "h": "Approches hybrides et réalités opérationnelles",
+      "p": [
+       "De nombreux utilisateurs expérimentés conservent un petit solde opérationnel sur une ou deux plateformes pour le trading ou la liquidité immédiate, et déplacent la majorité vers le stockage à froid après accumulation. Cela limite l'exposition à la plateforme tout en préservant la capacité d'agir rapidement. Fixez un seuil – comme tout solde supérieur à 5 000 euros – et transférez l'excédent vers votre portefeuille matériel mensuellement ou trimestriellement.",
+       "Les obligations fiscales existent quelle que soit la méthode de conservation. La plupart des pays traitent la cryptomonnaie comme une propriété ou un actif en capital, et chaque échange, vente ou transaction est un événement imposable. Déplacer des pièces d'une plateforme vers votre propre portefeuille n'est pas imposable, mais vendre, échanger contre une autre pièce ou dépenser déclenche des obligations de déclaration. Les règles diffèrent considérablement selon la juridiction et changent régulièrement, donc ceci n'est pas un conseil fiscal – consultez un professionnel familier avec vos lois locales.",
+       "Rappelez-vous que l'auto-conservation n'est pas tout ou rien. Commencez petit : retirez un montant modeste vers un portefeuille chaud, puis passez à un portefeuille matériel à mesure que votre confiance et vos avoirs augmentent. L'objectif n'est pas la pureté idéologique mais une correspondance rationnelle entre la valeur en jeu, votre capacité technique et les risques que vous êtes prêt à accepter."
+      ]
+     }
+    ]
+   },
+   "pl": {
+    "title": "Portfel czy giełda: gdzie faktycznie powinny leżeć Twoje kryptowaluty",
+    "excerpt": "Wybór między samodzielnym przechowywaniem a pozostawieniem monet na giełdzie określa, kto kontroluje Twoje aktywa i kto ponosi ryzyko, gdy coś pójdzie nie tak. Oto jak podjąć decyzję w oparciu o kwoty, wzorce użytkowania i Twoją zdolność do zabezpieczenia frazy seed.",
+    "sections": [
+     {
+      "h": "Co oznacza przechowywanie i co się dzieje, gdy giełda upada",
+      "p": [
+       "Gdy trzymasz kryptowaluty na giełdzie, nie jesteś właścicielem monet w sensie technicznym. Giełda kontroluje klucze prywatne, a Ty posiadasz roszczenie wobec wewnętrznej księgi giełdy. Jeśli giełda stanie się niewypłacalna, Twoje monety stają się częścią masy upadłościowej. Wierzyciele mogą odzyskać ułamek swoich środków po miesiącach lub latach, albo nic. Zdarzało się to wielokrotnie: użytkownicy Mt. Gox składali roszczenia od 2014 roku, a wypłaty rozpoczęły się prawie dekadę później. FTX, Celsius, Voyager i dziesiątki mniejszych platform poszły podobną drogą.",
+       "Samodzielne przechowywanie oznacza, że kontrolujesz klucz prywatny lub frazę seed, która go generuje. Żadna strona trzecia nie może zamrozić, przejąć ani stracić Twoich środków przez własne złe zarządzanie. Ponosisz też pełną odpowiedzialność: jeśli zgubisz klucz lub wyślesz monety na niewłaściwy adres, żaden zespół wsparcia nie może cofnąć transakcji. Blockchain nie uznaje wymówek, tylko prawidłowe podpisy."
+      ]
+     },
+     {
+      "h": "Kompromis między wygodą a kontrolą",
+      "p": [
+       "Giełdy oferują natychmiastowy handel, wejścia i wyjścia fiat, usługi stakingu oraz wsparcie klienta. Możesz kupować i sprzedawać bez czekania na potwierdzenia blockchain lub płacenia osobnych opłat za wypłatę. Dla aktywnych traderów, którzy zmieniają pozycje kilka razy w tygodniu, samodzielne przechowywanie oznaczałoby ciągłe wypłaty i wpłaty, każda z opłatami sieciowymi i opóźnieniami.",
+       "Portfele do samodzielnego przechowywania dają pełną kontrolę i prywatność, ale usuwają warstwę wygody. Płacisz bezpośrednio opłaty za transakcje sieciowe, zarządzasz własnymi kopiami zapasowymi i bierzesz odpowiedzialność za bezpieczeństwo operacyjne. Nie ma resetowania hasła ani działu ds. oszustw. To pasuje do holderów, którzy kupują i czekają miesiące lub lata, albo do każdego, kto nie chce powierzać znaczącej wartości stronie trzeciej."
+      ]
+     },
+     {
+      "h": "Kiedy pozostawienie środków na giełdzie ma sens",
+      "p": [
+       "Jeśli handlujesz często, trzymasz małe kwoty lub wciąż się uczysz, konto giełdowe jest pragmatycznym wyborem. Dla sald poniżej równowartości 2000 PLN, do których sięgasz co tydzień, opłaty za wypłatę i ryzyko niewłaściwego obchodzenia się z frazą seed często przewyższają ryzyko giełdowe. Regulowane giełdy w jurysdykcjach z silnymi zasadami segregacji aktywów klientów i regularnymi audytami dodają warstwę ochrony, choć regulacja nie jest gwarancją, a przepisy różnią się znacznie w zależności od kraju.",
+       "Rozważ proporcję Twojego majątku netto, który jest zagrożony. Pozostawienie jednego procenta oszczędności na giełdzie, aby uniknąć tarcia, jest rozsądne. Pozostawienie pięćdziesięciu procent wprowadza katastrofalne ryzyko, bez względu na to, jak renomowana wydaje się platforma. Giełdy to firmy z motywami zyskowymi, nieprzejrzystymi rezerwami i narażeniem na hacki, przejęcia regulacyjne oraz niepowodzenia zarządzania."
+      ]
+     },
+     {
+      "h": "Gorące portfele, portfele sprzętowe i kopie zapasowe na papierze",
+      "p": [
+       "Gorący portfel to każdy portfel programowy połączony z internetem: aplikacja mobilna, rozszerzenie przeglądarki lub program komputerowy. Gorące portfele są wygodne dla małych kwot i regularnych transakcji, ale są narażone na złośliwe oprogramowanie, phishing i zdalne exploity. Traktuj je jak fizyczny portfel w kieszeni — noś wystarczająco na bieżące potrzeby, nie swoje oszczędności.",
+       "Portfel sprzętowy to dedykowane urządzenie, które przechowuje klucze prywatne offline i podpisuje transakcje wewnętrznie. Gdy zatwierdzasz płatność, niepodpisana transakcja trafia do urządzenia, urządzenie podpisuje ją bez ujawniania klucza i zwraca podpisany wynik. Renomowane modele to Ledger, Trezor, BitBox i Coldcard. Portfele sprzętowe są odporne na zdalne ataki, ale pozostają narażone, jeśli wprowadzisz frazę seed do fałszywego urządzenia lub na stronę phishingową.",
+       "Kopia zapasowa na papierze to dokładnie to, na co to wygląda: Twoja fraza seed zapisana lub wydrukowana na papierze, przechowywana w bezpiecznym miejscu. Papier jest odporny na awarie sprzętu i hakowanie, ale się pali, blaknie i może zostać skradziony lub przypadkowo wyrzucony. Wielu użytkowników łączy metody, trzymając portfel sprzętowy do aktywnego użytku oraz kopie zapasowe na papierze lub metalu w bezpiecznych lokalizacjach. Metalowe płytki ze stemplowanymi lub wygrawerowanymi słowami seed są odporne na ogień i uszkodzenia wodne."
+      ]
+     },
+     {
+      "h": "Obchodzenie się z frazą seed, które przetrwa życie",
+      "p": [
+       "Fraza seed to zazwyczaj dwanaście lub dwadzieścia cztery słowa ze stałego słownika. Każdy, kto ma tę frazę, kontroluje środki na zawsze. Nie przechowuj jej w emailu, na dyskach chmurowych, menedżerach haseł synchronizowanych online ani w zdjęciach na telefonie. Nie dziel się nią z pracownikami wsparcia, przyjaciółmi ani rodziną, chyba że zamierzasz dać im pełny, nieodwołalny dostęp.",
+       "Zapisz frazę na papierze lub wygraweruj ją na metalu i zweryfikuj każde słowo, przywracając portfel na tym samym lub drugim urządzeniu przed przesłaniem dużych kwot. Przechowuj przynajmniej jedną kopię w miejscu oddzielonym od portfela sprzętowego — w sejfie bankowym, w domu zaufanego krewnego lub w ogniotrwałym sejfie. Jeśli trzymasz kopię zapasową i portfel sprzętowy w tym samym domu, pożar lub włamanie zabiera obie. Jeśli podzielisz frazę używając Shamir Secret Sharing lub schematów wielopodpisowych, udokumentuj proces odzyskiwania, aby Twoi spadkobiercy lub przyszłe Ty mogli odtworzyć dostęp.",
+       "Unikaj zbyt skomplikowanych zabezpieczeń, których nie zapamiętasz za pięć lat. Fraza seed zamknięta w sejfie bankowym, który odwiedzasz dwa razy na dekadę, bije dwunastostopniowy proces, który zapomnisz, lub schemat podziału, którego dokumentacja zniknęła ze starym laptopem. Najczęstszy scenariusz utraty to nie kradzież, ale posiadacz zapominający, gdzie lub jak przechowywał kopię zapasową."
+      ]
+     },
+     {
+      "h": "Zasada kciuka według trzymanej kwoty",
+      "p": [
+       "Poniżej równowartości 4000 PLN: giełda lub gorący portfel są akceptowalne, jeśli regularnie sprawdzasz i korzystasz z platformy z wieloletnią historią oraz dwuskładnikowym uwierzytelnianiem. Ryzyko operacyjne zarządzania własnymi kluczami może przewyższać ryzyko giełdowe na tym poziomie.",
+       "Między 4000 a 40 000 PLN równowartości: przenieś środki do portfela sprzętowego, chyba że handlujesz co tydzień. Koszt urządzenia sprzętowego jest teraz niewielkim ułamkiem zasobów, a ryzyko upadku giełdy lub zamrożenia konta staje się istotne.",
+       "Powyżej 40 000 PLN równowartości: samodzielne przechowywanie jest podstawowym oczekiwaniem. Użyj portfela sprzętowego, utrzymuj kopie zapasowe offline w co najmniej dwóch fizycznych lokalizacjach i przetestuj odzyskiwanie, gdy kwota jest jeszcze skromna. Rozważ konfiguracje wielopodpisowe lub podziały Shamir dla kwot powyżej sześciomiesięcznych dochodów, rozumiejąc, że złożoność zwiększa zarówno bezpieczeństwo, jak i szansę na samodzielne zablokowanie.",
+       "Te progi są ilustracyjne i zależą od osobistej tolerancji ryzyka i pewności technicznych. Dostosuj w dół, jeśli mieszkasz gdzieś z niestabilną bankowością lub częstymi zamknięciami platform, w górę, jeśli Twoja giełda działa zgodnie ze ścisłymi zasadami przechowywania w jurysdykcji, której ufasz. Kluczową zmienną jest konsekwencja: jak dużo bólu spowodowałaby utrata tej kwoty i czy możesz ponieść pełną odpowiedzialność za jej bezpieczeństwo?"
+      ]
+     },
+     {
+      "h": "Podejścia hybrydowe i rzeczywistość operacyjna",
+      "p": [
+       "Wielu doświadczonych użytkowników trzyma niewielkie saldo operacyjne na jednej lub dwóch giełdach do handlu lub natychmiastowej płynności i przenosi większość do zimnego przechowywania po akumulacji. To ogranicza ekspozycję giełdową, zachowując możliwość szybkiego działania. Ustaw próg — taki jak dowolne saldo powyżej 20 000 PLN — i przenoś nadwyżkę do portfela sprzętowego miesięcznie lub kwartalnie.",
+       "Obowiązki podatkowe istnieją niezależnie od metody przechowywania. Większość krajów traktuje kryptowaluty jako majątek lub aktywo kapitałowe, a każdy handel, sprzedaż lub wymiana to zdarzenie podatkowe. Przenoszenie monet z giełdy do własnego portfela nie jest opodatkowane, ale sprzedaż, handel na inną monetę lub wydawanie powoduje wymogi sprawozdawcze. Przepisy znacznie się różnią w zależności od jurysdykcji i regularnie się zmieniają, więc to nie jest porada podatkowa — skonsultuj się z profesjonalistą znającym lokalne przepisy.",
+       "Pamiętaj, że samodzielne przechowywanie to nie wszystko albo nic. Zacznij małymi krokami: wypłać skromną kwotę do gorącego portfela, a następnie przejdź na portfel sprzętowy, gdy rosną Twoja pewność i zasoby. Celem nie jest ideologiczna czystość, ale racjonalne dopasowanie między wartością zagrożoną, Twoją zdolnością techniczną a ryzykami, które jesteś gotów zaakceptować."
+      ]
+     }
+    ]
+   },
+   "pt": {
+    "title": "Carteira ou corretora: onde as suas criptomoedas devem realmente ficar",
+    "excerpt": "A escolha entre autocustódia e deixar moedas numa corretora determina quem controla os seus ativos e quem assume o risco quando algo corre mal. Veja como decidir com base nos valores, padrões de uso e na sua capacidade de proteger uma frase-semente.",
+    "sections": [
+     {
+      "h": "O que significa custódia e o que acontece quando uma corretora falha",
+      "p": [
+       "Quando detém criptomoedas numa corretora, não possui moedas no sentido técnico. A corretora controla as chaves privadas e você detém um crédito contra o livro-razão interno da corretora. Se a corretora se tornar insolvente, as suas moedas fazem parte da massa falida. Os credores podem recuperar uma fração dos seus ativos após meses ou anos, ou nada. Isto aconteceu repetidamente: utilizadores do Mt. Gox apresentaram reclamações a partir de 2014 e as distribuições começaram quase uma década depois. FTX, Celsius, Voyager e dezenas de plataformas menores seguiram caminhos semelhantes.",
+       "Autocustódia significa que controla a chave privada ou a frase-semente que a produz. Nenhum terceiro pode congelar, apreender ou perder os seus fundos por má gestão própria. Você também assume total responsabilidade: se perder a chave ou enviar moedas para o endereço errado, nenhuma equipa de apoio pode reverter a transação. A blockchain não reconhece desculpas, apenas assinaturas válidas."
+      ]
+     },
+     {
+      "h": "O equilíbrio entre conveniência e controlo",
+      "p": [
+       "As corretoras oferecem negociação instantânea, entradas e saídas de reais, serviços de staking e apoio ao cliente. Pode comprar e vender sem esperar por confirmações da blockchain ou pagar taxas de levantamento separadas. Para traders ativos que entram e saem de posições várias vezes por semana, a autocustódia significaria levantamentos e depósitos constantes, cada um incorrendo em taxas de rede e atrasos.",
+       "Carteiras de autocustódia concedem controlo total e privacidade, mas removem a camada de conveniência. Paga taxas de transação de rede diretamente, gere os seus próprios backups e assume responsabilidade pela segurança operacional. Não há redefinição de senha nem departamento de fraudes. Isto convém a holders que compram e esperam meses ou anos, ou qualquer pessoa não disposta a confiar numa terceira parte com valor significativo."
+      ]
+     },
+     {
+      "h": "Quando deixar fundos numa corretora faz sentido",
+      "p": [
+       "Se negoceia frequentemente, detém pequenas quantias ou ainda está a aprender, uma conta numa corretora é a escolha pragmática. Para saldos abaixo do equivalente a 2500 reais que acede semanalmente, as taxas de levantamento e o risco de má gestão de uma frase-semente frequentemente superam o risco da corretora. Corretoras reguladas em jurisdições com regras fortes de segregação de ativos de clientes e auditorias regulares adicionam uma camada de proteção, embora a regulação não seja garantia e as regras variem amplamente por país.",
+       "Considere a proporção do seu património líquido em risco. Deixar um por cento das suas poupanças numa corretora para evitar fricção é razoável. Deixar cinquenta por cento introduz risco catastrófico, não importa quão reputada a plataforma pareça. Corretoras são empresas com motivos lucrativos, reservas opacas e exposição a hacks, apreensões regulatórias e falhas de gestão."
+      ]
+     },
+     {
+      "h": "Carteiras quentes, carteiras de hardware e backups em papel",
+      "p": [
+       "Uma carteira quente é qualquer carteira de software conectada à internet: uma app móvel, extensão de navegador ou programa de desktop. Carteiras quentes são convenientes para pequenas quantias e transações regulares, mas são vulneráveis a malware, phishing e explorações remotas. Trate-as como a carteira física no seu bolso — carregue o suficiente para necessidades de curto prazo, não as suas poupanças.",
+       "Uma carteira de hardware é um dispositivo dedicado que armazena chaves privadas offline e assina transações internamente. Quando aprova um pagamento, a transação não assinada move-se para o dispositivo, o dispositivo assina-a sem expor a chave e retorna o resultado assinado. Modelos respeitáveis incluem Ledger, Trezor, BitBox e Coldcard. Carteiras de hardware resistem a ataques remotos mas permanecem vulneráveis se inserir a sua frase-semente num dispositivo falso ou site de phishing.",
+       "Um backup em papel é exatamente o que parece: a sua frase-semente escrita ou impressa em papel, armazenada num lugar seguro. O papel é imune a falhas de hardware e hacking, mas queima, desbota e pode ser roubado ou acidentalmente descartado. Muitos utilizadores combinam métodos, mantendo uma carteira de hardware para uso ativo e backups em papel ou metal em locais seguros. Placas de metal gravadas ou estampadas com palavras-semente resistem a danos por fogo e água."
+      ]
+     },
+     {
+      "h": "Gestão de frase-semente que sobrevive à vida real",
+      "p": [
+       "Uma frase-semente é normalmente doze ou vinte e quatro palavras de um dicionário fixo. Qualquer pessoa com a frase controla os fundos, para sempre. Não a armazene em email, drives na nuvem, gestores de senhas sincronizados online ou fotos no seu telemóvel. Não a partilhe com pessoal de apoio, amigos ou família a menos que pretenda dar-lhes acesso total e irrevogável.",
+       "Escreva a frase em papel ou estampe-a em metal e verifique cada palavra ao restaurar a carteira no mesmo ou num segundo dispositivo antes de transferir grandes quantias. Armazene pelo menos uma cópia num local separado da sua carteira de hardware — um cofre bancário, a casa de um familiar de confiança ou um cofre à prova de fogo. Se mantiver o backup e a carteira de hardware na mesma casa, um incêndio ou roubo leva ambos. Se dividir a frase usando Shamir Secret Sharing ou esquemas multisignature, documente o processo de recuperação para que os seus herdeiros ou eu futuro possam reconstruir o acesso.",
+       "Evite segurança excessivamente elaborada que não se lembrará em cinco anos. Uma frase-semente trancada num cofre bancário que visita duas vezes por década supera um processo de doze passos que esquece ou um esquema dividido cuja documentação desapareceu com um portátil antigo. O cenário de perda mais comum não é roubo, mas o detentor esquecer onde ou como armazenou o backup."
+      ]
+     },
+     {
+      "h": "Uma regra prática por valor detido",
+      "p": [
+       "Abaixo do equivalente a 5000 reais: uma corretora ou carteira quente é aceitável se verificar regularmente e usar uma plataforma com histórico de vários anos e autenticação de dois fatores. O risco operacional de gerir as suas próprias chaves pode exceder o risco da corretora neste nível.",
+       "Entre 5000 e 50 000 reais equivalentes: mova fundos para uma carteira de hardware a menos que negoceie semanalmente. O custo de um dispositivo de hardware é agora uma pequena fração dos ativos, e o risco de falha da corretora ou congelamento de conta torna-se material.",
+       "Acima de 50 000 reais equivalentes: autocustódia é a expectativa base. Use uma carteira de hardware, mantenha backups offline em pelo menos dois locais físicos e teste a recuperação enquanto o valor ainda é modesto. Considere configurações multisignature ou divisões Shamir para valores acima de seis meses dos seus rendimentos, compreendendo que a complexidade aumenta tanto a segurança quanto a chance de bloqueio autoinfligido.",
+       "Estes limiares são ilustrativos e dependem da tolerância pessoal ao risco e confiança técnica. Ajuste para baixo se viver algures com banca instável ou encerramentos frequentes de plataformas, para cima se a sua corretora opera sob regras estritas de custódia numa jurisdição em que confia. A variável-chave é consequência: quanta dor perderia este valor causar e pode assumir total responsabilidade pela sua segurança?"
+      ]
+     },
+     {
+      "h": "Abordagens híbridas e realidades operacionais",
+      "p": [
+       "Muitos utilizadores experientes mantêm um pequeno saldo operacional numa ou duas corretoras para negociação ou liquidez imediata e movem a maioria para armazenamento frio após acumulação. Isto limita a exposição à corretora enquanto preserva a capacidade de agir rapidamente. Defina um limite — como qualquer saldo acima de 25 000 reais — e transfira o excesso para a sua carteira de hardware mensal ou trimestralmente.",
+       "Obrigações fiscais existem independentemente do método de custódia. A maioria dos países trata criptomoedas como propriedade ou ativo de capital, e cada negociação, venda ou troca é um evento tributável. Mover moedas de uma corretora para a sua própria carteira não é tributável, mas vender, negociar por outra moeda ou gastar desencadeia requisitos de declaração. As regras diferem significativamente por jurisdição e mudam regularmente, portanto isto não é aconselhamento fiscal — consulte um profissional familiarizado com as leis locais.",
+       "Lembre-se que a autocustódia não é tudo ou nada. Comece pequeno: levante uma quantia modesta para uma carteira quente, depois atualize para uma carteira de hardware à medida que a sua confiança e ativos crescem. O objetivo não é pureza ideológica mas uma correspondência racional entre o valor em risco, a sua capacidade técnica e os riscos que está disposto a aceitar."
+      ]
+     }
+    ]
+   },
+   "es": {
+    "title": "Billetera o exchange: dónde deben estar realmente tus criptomonedas",
+    "excerpt": "La elección entre autocustodia y dejar monedas en un exchange determina quién controla tus activos y quién asume el riesgo cuando las cosas salen mal. Aquí te explicamos cómo decidir según las cantidades, patrones de uso y tu capacidad para proteger una frase semilla.",
+    "sections": [
+     {
+      "h": "Qué significa custodia y qué sucede cuando un exchange quiebra",
+      "p": [
+       "Cuando mantienes criptomonedas en un exchange, no posees monedas en el sentido técnico. El exchange controla las claves privadas y tú tienes un reclamo contra el libro mayor interno del exchange. Si el exchange se vuelve insolvente, tus monedas son parte de la masa concursal. Los acreedores pueden recuperar una fracción de sus tenencias después de meses o años, o nada en absoluto. Esto ha sucedido repetidamente: los usuarios de Mt. Gox presentaron reclamos desde 2014 y las distribuciones comenzaron casi una década después. FTX, Celsius, Voyager y docenas de plataformas más pequeñas han seguido caminos similares.",
+       "Autocustodia significa que controlas la clave privada o la frase semilla que la produce. Ningún tercero puede congelar, embargar o perder tus fondos por su propia mala gestión. También asumes toda la responsabilidad: si pierdes la clave o envías monedas a la dirección equivocada, ningún equipo de soporte puede revertir la transacción. La blockchain no reconoce excusas, solo firmas válidas."
+      ]
+     },
+     {
+      "h": "El equilibrio entre conveniencia y control",
+      "p": [
+       "Los exchanges ofrecen trading instantáneo, rampas de entrada y salida de pesos, servicios de staking y atención al cliente. Puedes comprar y vender sin esperar confirmaciones de blockchain ni pagar tarifas de retiro separadas. Para traders activos que entran y salen de posiciones varias veces por semana, la autocustodia significaría retiros y depósitos constantes, cada uno incurriendo en tarifas de red y demoras.",
+       "Las billeteras de autocustodia otorgan control total y privacidad, pero eliminan la capa de conveniencia. Pagas las tarifas de transacción de red directamente, administras tus propias copias de seguridad y asumes la responsabilidad de la seguridad operativa. No hay restablecimiento de contraseña ni departamento de fraude. Esto se adapta a holders que compran y esperan meses o años, o a cualquiera que no esté dispuesto a confiar en un tercero con un valor significativo."
+      ]
+     },
+     {
+      "h": "Cuándo tiene sentido dejar fondos en un exchange",
+      "p": [
+       "Si tradeas con frecuencia, mantienes cantidades pequeñas o todavía estás aprendiendo, una cuenta en un exchange es la elección pragmática. Para saldos por debajo del equivalente a 500 000 pesos que accedes semanalmente, las tarifas de retiro y el riesgo de manejar mal una frase semilla a menudo superan el riesgo del exchange. Los exchanges regulados en jurisdicciones con reglas sólidas de segregación de activos de clientes y auditorías regulares añaden una capa de protección, aunque la regulación no es garantía y las reglas varían ampliamente según el país.",
+       "Considera la proporción de tu patrimonio neto en juego. Dejar un uno por ciento de tus ahorros en un exchange para evitar fricciones es razonable. Dejar cincuenta por ciento introduce un riesgo catastrófico, sin importar cuán respetable parezca la plataforma. Los exchanges son negocios con motivos de lucro, reservas opacas y exposición a hackeos, embargos regulatorios y fallas de gestión."
+      ]
+     },
+     {
+      "h": "Billeteras calientes, billeteras de hardware y copias en papel",
+      "p": [
+       "Una billetera caliente es cualquier billetera de software conectada a internet: una app móvil, extensión de navegador o programa de escritorio. Las billeteras calientes son convenientes para cantidades pequeñas y transacciones regulares, pero son vulnerables a malware, phishing y exploits remotos. Trátalas como la billetera física en tu bolsillo: lleva suficiente para necesidades a corto plazo, no tus ahorros.",
+       "Una billetera de hardware es un dispositivo dedicado que almacena claves privadas sin conexión y firma transacciones internamente. Cuando apruebas un pago, la transacción sin firmar se mueve al dispositivo, el dispositivo la firma sin exponer la clave y devuelve el resultado firmado. Modelos de confianza incluyen Ledger, Trezor, BitBox y Coldcard. Las billeteras de hardware resisten ataques remotos pero permanecen vulnerables si ingresas tu frase semilla en un dispositivo falso o sitio de phishing.",
+       "Una copia en papel es exactamente lo que parece: tu frase semilla escrita o impresa en papel, almacenada en algún lugar seguro. El papel es inmune a fallas de hardware y hackeo, pero se quema, se desvanece y puede ser robado o descartado accidentalmente. Muchos usuarios combinan métodos, manteniendo una billetera de hardware para uso activo y copias en papel o metal en ubicaciones seguras. Las placas de metal estampadas o grabadas con palabras semilla resisten daños por fuego y agua."
+      ]
+     },
+     {
+      "h": "Manejo de frase semilla que sobrevive a la vida real",
+      "p": [
+       "Una frase semilla suele ser doce o veinticuatro palabras de un diccionario fijo. Cualquiera con la frase controla los fondos, para siempre. No la almacenes en correo electrónico, unidades en la nube, gestores de contraseñas sincronizados en línea o fotos en tu celular. No la compartas con personal de soporte, amigos o familia a menos que pretendas darles acceso total e irrevocable.",
+       "Escribe la frase en papel o estámpala en metal, y verifica cada palabra restaurando la billetera en el mismo o en un segundo dispositivo antes de transferir grandes cantidades. Almacena al menos una copia en una ubicación separada de tu billetera de hardware: una caja de seguridad bancaria, la casa de un familiar de confianza o una caja fuerte a prueba de fuego. Si mantienes la copia y la billetera de hardware en la misma casa, un incendio o robo se lleva ambas. Si divides la frase usando Shamir Secret Sharing o esquemas multifirma, documenta el proceso de recuperación para que tus herederos o tu yo futuro puedan reconstruir el acceso.",
+       "Evita una seguridad excesivamente elaborada que no recordarás en cinco años. Una frase semilla guardada en una caja de seguridad bancaria que visitas dos veces por década supera a un proceso de doce pasos que olvidas o un esquema dividido cuya documentación desapareció con una laptop vieja. El escenario de pérdida más común no es el robo sino que el titular olvida dónde o cómo almacenó la copia."
+      ]
+     },
+     {
+      "h": "Una regla general según la cantidad mantenida",
+      "p": [
+       "Por debajo del equivalente a 5000 pesos mexicanos: un exchange o billetera caliente es aceptable si verificas regularmente y usas una plataforma con un historial de varios años y autenticación de dos factores. El riesgo operativo de administrar tus propias claves puede exceder el riesgo del exchange en este nivel.",
+       "Entre 5000 y 50 000 pesos equivalentes: mueve los fondos a una billetera de hardware a menos que tradees semanalmente. El costo de un dispositivo de hardware ahora es una pequeña fracción de las tenencias, y el riesgo de quiebra del exchange o congelación de cuenta se vuelve material.",
+       "Por encima de 50 000 pesos equivalentes: la autocustodia es la expectativa base. Usa una billetera de hardware, mantén copias de seguridad sin conexión en al menos dos ubicaciones físicas y prueba la recuperación mientras la cantidad aún sea modesta. Considera configuraciones multifirma o divisiones Shamir para cantidades superiores a seis meses de tus ingresos, entendiendo que la complejidad aumenta tanto la seguridad como la posibilidad de bloqueo autoinfligido.",
+       "Estos umbrales son ilustrativos y dependen de la tolerancia personal al riesgo y la confianza técnica. Ajusta hacia abajo si vives en algún lugar con banca inestable o cierres frecuentes de plataformas, hacia arriba si tu exchange opera bajo reglas estrictas de custodia en una jurisdicción en la que confías. La variable clave es consecuencia: cuánto dolor causaría perder esta cantidad y puedes asumir la responsabilidad total de su seguridad?"
+      ]
+     },
+     {
+      "h": "Enfoques híbridos y realidades operativas",
+      "p": [
+       "Muchos usuarios experimentados mantienen un pequeño saldo operativo en uno o dos exchanges para trading o liquidez inmediata, y mueven la mayoría al almacenamiento en frío después de la acumulación. Esto limita la exposición al exchange mientras preserva la capacidad de actuar rápidamente. Establece un umbral, como cualquier saldo superior a 25 000 pesos, y transfiere el exceso a tu billetera de hardware mensual o trimestralmente.",
+       "Las obligaciones fiscales existen independientemente del método de custodia. La mayoría de los países tratan las criptomonedas como propiedad o activo de capital, y cada operación, venta o intercambio es un evento imponible. Mover monedas de un exchange a tu propia billetera no es imponible, pero vender, intercambiar por otra moneda o gastar activa requisitos de declaración. Las reglas difieren significativamente según la jurisdicción y cambian regularmente, así que esto no es asesoramiento fiscal: consulta con un profesional familiarizado con las leyes locales.",
+       "Recuerda que la autocustodia no es todo o nada. Empieza poco a poco: retira una cantidad modesta a una billetera caliente, luego actualiza a una billetera de hardware a medida que crecen tu confianza y tenencias. El objetivo no es la pureza ideológica sino una correspondencia racional entre el valor en riesgo, tu capacidad técnica y los riesgos que estás dispuesto a aceptar."
+      ]
+     }
+    ]
+   },
+   "tr": {
+    "title": "Cüzdan mı Borsa mı: Kripto Paranız Gerçekte Nerede Durmalı",
+    "excerpt": "Kendi kontrolünüz altında saklama ile borsada bırakma arasındaki seçim, varlıklarınızı kimin kontrol ettiğini ve işler ters gittiğinde kimin riski üstleneceğini belirler. Tutarlar, kullanım alışkanlıkları ve seed kelimelerini güvence altına alma becerinize göre nasıl karar vereceğiniz burada.",
+    "sections": [
+     {
+      "h": "Saklama ne demektir ve bir borsa battığında ne olur",
+      "p": [
+       "Kripto parayı bir borsada tuttuğunuzda, teknik anlamda coin sahibi değilsinizdir. Borsa özel anahtarları kontrol eder ve siz borsanın iç defterine karşı bir hak sahibisiniz. Borsa iflas ederse, coinleriniz iflas masasının bir parçasıdır. Alacaklılar, aylar veya yıllar sonra varlıklarının bir kısmını geri alabilir ya da hiçbir şey alamayabilir. Bu defalarca yaşandı: Mt. Gox kullanıcıları 2014'te taleplerini sundu ve dağıtımlar neredeyse on yıl sonra başladı. FTX, Celsius, Voyager ve düzinelerce küçük platform benzer yolları izledi.",
+       "Kendi saklama yöntemi, onu üreten özel anahtarı veya seed kelimelerini kontrol ettiğiniz anlamına gelir. Hiçbir üçüncü taraf, kendi yanlış yönetimleri nedeniyle fonlarınızı donduramaz, el koyamaz veya kaybedemez. Ayrıca tüm sorumluluğu siz taşırsınız: anahtarı kaybederseniz veya coinleri yanlış adrese gönderirseniz, hiçbir destek ekibi işlemi geri alamaz. Blokzincir mazeretleri tanımaz, yalnızca geçerli imzaları tanır."
+      ]
+     },
+     {
+      "h": "Kolaylık-kontrol dengesi",
+      "p": [
+       "Borsalar anlık işlem, TL giriş-çıkış noktaları, staking hizmetleri ve müşteri desteği sunar. Blokzincir onaylarını beklemeden veya ayrı çekim ücretleri ödemeden alım satım yapabilirsiniz. Haftada birkaç kez pozisyona girip çıkan aktif yatırımcılar için, kendi saklama yöntemi sürekli çekim ve yatırma anlamına gelir ve her biri ağ ücretlerine ve gecikmelere neden olur.",
+       "Kendi cüzdanlarınız tam kontrol ve gizlilik sağlar, ancak kolaylık katmanını kaldırır. Ağ işlem ücretlerini doğrudan ödersiniz, kendi yedeklerinizi yönetirsiniz ve operasyonel güvenlik sorumluluğunu üstlenirsiniz. Şifre sıfırlama yoktur ve dolandırıcılık departmanı yoktur. Bu, aylar veya yıllar bekleyerek satın alan yatırımcılara veya önemli değerde üçüncü bir tarafa güvenmek istemeyen herkese uygundur."
+      ]
+     },
+     {
+      "h": "Fonları borsada bırakmanın mantıklı olduğu durumlar",
+      "p": [
+       "Sık işlem yapıyorsanız, küçük miktarlar tutuyorsanız veya hâlâ öğreniyorsanız, borsa hesabı pragmatik seçimdir. Haftalık eriştiğiniz 500 USD karşılığının altındaki bakiyeler için, çekim ücretleri ve seed kelimelerini yanlış yönetme riski genellikle borsa riskinden ağır basar. Güçlü müşteri varlık ayrımı kuralları ve düzenli denetimler uygulayan yetki alanlarındaki düzenlenmiş borsalar bir koruma katmanı ekler, ancak düzenleme garanti değildir ve kurallar ülkelere göre büyük ölçüde değişir.",
+       "Riske atılan net değerinizin oranını göz önünde bulundurun. Sürtüşmeyi önlemek için tasarruflarınızın yüzde birini borsada bırakmak makuldür. Yüzde ellisini bırakmak, platform ne kadar itibarlı görünürse görünsün, felaket riski yaratır. Borsalar kâr amacı güden, rezervleri opak olan ve hacklere, düzenleyici el koymaya ve yönetim başarısızlıklarına maruz kalan işletmelerdir."
+      ]
+     },
+     {
+      "h": "Sıcak cüzdanlar, donanım cüzdanları ve kağıt yedekler",
+      "p": [
+       "Sıcak cüzdan, internete bağlı herhangi bir yazılım cüzdanıdır: mobil uygulama, tarayıcı eklentisi veya masaüstü programı. Sıcak cüzdanlar küçük miktarlar ve düzenli işlemler için uygundur, ancak kötü amaçlı yazılımlara, kimlik avına ve uzaktan istismara karşı savunmasızdır. Onları cebinizdeki fiziksel cüzdan gibi düşünün—yakın vadeli ihtiyaçlar için yeterince taşıyın, tasarruflarınızı değil.",
+       "Donanım cüzdanı, özel anahtarları çevrimdışı saklayan ve işlemleri dahili olarak imzalayan özel bir cihazdır. Bir ödemeyi onayladığınızda, imzasız işlem cihaza taşınır, cihaz anahtarı açığa çıkarmadan imzalar ve imzalanmış sonucu geri döndürür. Saygın modeller arasında Ledger, Trezor, BitBox ve Coldcard bulunur. Donanım cüzdanları uzaktan saldırılara karşı direnç gösterir, ancak seed kelimelerinizi sahte bir cihaza veya kimlik avı sitesine girerseniz savunmasız kalır.",
+       "Kağıt yedek tam olarak kulağa geldiği gibidir: seed kelimeleriniz kağıda yazılmış veya basılmış, güvenli bir yerde saklanmış. Kağıt donanım arızasına ve hacklenmeye karşı bağışıklıdır, ancak yanar, solar ve çalınabilir veya yanlışlıkla atılabilir. Birçok kullanıcı yöntemleri birleştirir, aktif kullanım için bir donanım cüzdanı ve güvenli konumlarda kağıt veya metal yedekler tutar. Seed kelimeleriyle damgalanmış veya kazınmış metal plakalar yangın ve su hasarına karşı dayanıklıdır."
+      ]
+     },
+     {
+      "h": "Gerçek hayatta hayatta kalan seed kelime yönetimi",
+      "p": [
+       "Bir seed kelime dizisi genellikle sabit bir sözlükten on iki veya yirmi dört kelimedir. Kelime dizisine sahip olan herkes, fonları sonsuza dek kontrol eder. E-postada, bulut sürücülerde, çevrimiçi senkronize edilen şifre yöneticilerinde veya telefonunuzdaki fotoğraflarda saklamayın. Tam, geri alınamaz erişim vermeyi amaçlamadığınız sürece destek personeliyle, arkadaşlarla veya aileyle paylaşmayın.",
+       "Kelime dizisini kağıda yazın veya metale damgalayın ve büyük miktarlar transfer etmeden önce cüzdanı aynı veya ikinci bir cihazda geri yükleyerek her kelimeyi doğrulayın. En az bir kopyayı donanım cüzdanınızdan ayrı bir konumda saklayın—kiralık kasa, güvenilir bir akrabanın evi veya yangına dayanıklı kasa. Yedeği ve donanım cüzdanını aynı evde tutarsanız, yangın veya hırsızlık ikisini de alır. Shamir Gizli Paylaşımı veya çoklu imza şemaları kullanarak kelime dizisini bölüyorsanız, mirasçılarınızın veya gelecekteki benliğinizin erişimi yeniden oluşturabilmesi için kurtarma sürecini belgeleyin.",
+       "Beş yıl içinde hatırlamayacağınız aşırı karmaşık güvenlikten kaçının. On yılda iki kez ziyaret ettiğiniz kiralık kasada kilitli bir seed kelime dizisi, unuttuğunuz on iki adımlı bir süreci veya belgeleri eski bir dizüstü bilgisayarla kaybolan bölünmüş bir şemayı geçer. En yaygın kayıp senaryosu hırsızlık değil, sahibinin yedeği nereye veya nasıl sakladığını unutmasıdır."
+      ]
+     },
+     {
+      "h": "Tutulan miktara göre pratik kural",
+      "p": [
+       "1.000 USD karşılığının altında: düzenli olarak kontrol ediyorsanız ve çok yıllı geçmişi olan ve iki faktörlü kimlik doğrulaması kullanan bir platform kullanıyorsanız borsa veya sıcak cüzdan kabul edilebilir. Kendi anahtarlarınızı yönetmenin operasyonel riski bu seviyede borsa riskini aşabilir.",
+       "1.000 ila 10.000 USD karşılığı arasında: haftalık işlem yapmıyorsanız fonları donanım cüzdanına taşıyın. Bir donanım cihazının maliyeti artık varlıkların küçük bir kısmıdır ve borsa başarısızlığı veya hesap dondurma riski önemli hale gelir.",
+       "10.000 USD karşılığının üzerinde: kendi saklama yöntemi temel beklentidir. Bir donanım cüzdanı kullanın, en az iki fiziksel konumda çevrimdışı yedekler tutun ve miktar henüz mütevazıyken kurtarmayı test edin. Altı aylık gelirinizin üzerindeki miktarlar için çoklu imza kurulumları veya Shamir bölünmeleri düşünün, karmaşıklığın hem güvenliği hem de kendi kendine kilitleme şansını artırdığını anlayarak.",
+       "Bu eşikler açıklayıcıdır ve kişisel risk toleransına ve teknik güvene bağlıdır. Bankacılığın istikrarsız olduğu veya sık platform kapanmalarının yaşandığı bir yerde yaşıyorsanız aşağı doğru, borsanız güvendiğiniz bir yargı alanında katı saklama kuralları altında faaliyet gösteriyorsa yukarı doğru ayarlayın. Anahtar değişken sonuçtur: bu miktarı kaybetmek ne kadar acı verir ve güvenliğinin tam sorumluluğunu üstlenebilir misiniz?"
+      ]
+     },
+     {
+      "h": "Hibrit yaklaşımlar ve operasyonel gerçekler",
+      "p": [
+       "Deneyimli birçok kullanıcı, işlem veya acil likidite için bir veya iki borsada küçük bir operasyonel bakiye tutar ve birikimden sonra çoğunluğu soğuk depolamaya taşır. Bu, hızlı hareket etme yeteneğini korurken borsa maruziyetini sınırlar. Bir eşik belirleyin—5.000 USD'nin üzerindeki herhangi bir bakiye gibi—ve fazlalığı aylık veya üç aylık olarak donanım cüzdanınıza aktarın.",
+       "Saklama yönteminden bağımsız olarak vergi yükümlülükleri vardır. Çoğu ülke kripto parayı mülk veya sermaye varlığı olarak ele alır ve her işlem, satış veya değişim vergiye tabi bir olaydır. Coinleri bir borsadan kendi cüzdanınıza taşımak vergiye tabi değildir, ancak satmak, başka bir coin ile takas etmek veya harcamak raporlama gereksinimleri tetikler. Kurallar yargı alanına göre önemli ölçüde farklılık gösterir ve düzenli olarak değişir, bu nedenle bu vergi tavsiyesi değildir—yerel yasalarınıza aşina bir profesyonele danışın.",
+       "Kendi saklama yönteminin hepsi ya da hiçbiri olmadığını unutmayın. Küçük başlayın: sıcak cüzdana mütevazı bir miktar çekin, ardından güveniniz ve varlıklarınız arttıkça donanım cüzdanına yükseltin. Amaç ideolojik saflık değil, risk altındaki değer, teknik yeteneğiniz ve kabul etmeye istekli olduğunuz riskler arasında rasyonel bir eşleşmedir."
+      ]
+     }
+    ]
+   },
+   "id": {
+    "title": "Dompet atau Exchange: Di Mana Seharusnya Kripto Anda Berada",
+    "excerpt": "Pilihan antara menyimpan sendiri dan meninggalkan koin di exchange menentukan siapa yang mengontrol aset Anda dan siapa yang menanggung risiko ketika terjadi masalah. Berikut cara memutuskan berdasarkan jumlah, pola penggunaan, dan kemampuan Anda mengamankan seed phrase.",
+    "sections": [
+     {
+      "h": "Apa arti custody dan apa yang terjadi ketika exchange bangkrut",
+      "p": [
+       "Ketika Anda menyimpan cryptocurrency di exchange, Anda tidak memiliki koin dalam arti teknis. Exchange mengontrol private key, dan Anda memegang klaim terhadap buku besar internal exchange. Jika exchange menjadi pailit, koin Anda adalah bagian dari harta pailit. Kreditor mungkin memulihkan sebagian dari kepemilikan mereka setelah berbulan-bulan atau bertahun-tahun, atau tidak sama sekali. Ini telah terjadi berulang kali: pengguna Mt. Gox mengajukan klaim dimulai pada 2014, dan distribusi dimulai hampir satu dekade kemudian. FTX, Celsius, Voyager, dan puluhan platform lebih kecil telah mengikuti jalur serupa.",
+       "Self-custody berarti Anda mengontrol private key atau seed phrase yang menghasilkannya. Tidak ada pihak ketiga yang dapat membekukan, menyita, atau kehilangan dana Anda melalui kesalahan manajemen mereka sendiri. Anda juga menanggung tanggung jawab penuh: jika Anda kehilangan key atau mengirim koin ke alamat yang salah, tidak ada tim dukungan yang dapat membalikkan transaksi. Blockchain tidak mengakui alasan, hanya tanda tangan yang valid."
+      ]
+     },
+     {
+      "h": "Trade-off antara kenyamanan dan kontrol",
+      "p": [
+       "Exchange menawarkan perdagangan instan, pintu masuk dan keluar fiat, layanan staking, dan dukungan pelanggan. Anda dapat membeli dan menjual tanpa menunggu konfirmasi blockchain atau membayar biaya penarikan terpisah. Untuk trader aktif yang masuk dan keluar posisi beberapa kali seminggu, self-custody akan berarti penarikan dan deposit konstan, masing-masing dikenakan biaya jaringan dan penundaan.",
+       "Dompet self-custody memberikan kontrol penuh dan privasi, tetapi menghilangkan lapisan kenyamanan. Anda membayar biaya transaksi jaringan secara langsung, mengelola backup Anda sendiri, dan bertanggung jawab atas keamanan operasional. Tidak ada reset password dan tidak ada departemen penipuan. Ini cocok untuk holder yang membeli dan menunggu berbulan-bulan atau bertahun-tahun, atau siapa pun yang tidak mau mempercayai pihak ketiga dengan nilai yang signifikan."
+      ]
+     },
+     {
+      "h": "Kapan meninggalkan dana di exchange masuk akal",
+      "p": [
+       "Jika Anda sering trading, memegang jumlah kecil, atau masih belajar, akun exchange adalah pilihan pragmatis. Untuk saldo di bawah setara 7 juta Rupiah yang Anda akses setiap minggu, biaya penarikan dan risiko salah menangani seed phrase sering kali melebihi risiko exchange. Exchange yang diatur di yurisdiksi dengan aturan segregasi aset pelanggan yang kuat dan audit rutin menambahkan lapisan perlindungan, meskipun regulasi bukan jaminan dan aturan sangat bervariasi menurut negara.",
+       "Pertimbangkan proporsi kekayaan bersih Anda yang dipertaruhkan. Meninggalkan satu persen dari tabungan Anda di exchange untuk menghindari gesekan adalah wajar. Meninggalkan lima puluh persen memperkenalkan risiko bencana, tidak peduli seberapa terkemuka platform tampaknya. Exchange adalah bisnis dengan motif keuntungan, cadangan yang tidak transparan, dan paparan terhadap peretasan, penyitaan regulasi, dan kegagalan manajemen."
+      ]
+     },
+     {
+      "h": "Hot wallet, hardware wallet, dan backup kertas",
+      "p": [
+       "Hot wallet adalah dompet perangkat lunak apa pun yang terhubung ke internet: aplikasi seluler, ekstensi browser, atau program desktop. Hot wallet nyaman untuk jumlah kecil dan transaksi reguler, tetapi rentan terhadap malware, phishing, dan eksploitasi jarak jauh. Perlakukan mereka seperti dompet fisik di saku Anda—bawa cukup untuk kebutuhan jangka pendek, bukan tabungan Anda.",
+       "Hardware wallet adalah perangkat khusus yang menyimpan private key secara offline dan menandatangani transaksi secara internal. Ketika Anda menyetujui pembayaran, transaksi yang belum ditandatangani pindah ke perangkat, perangkat menandatanganinya tanpa mengekspos key, dan mengembalikan hasil yang ditandatangani. Model terkemuka termasuk Ledger, Trezor, BitBox, dan Coldcard. Hardware wallet tahan terhadap serangan jarak jauh tetapi tetap rentan jika Anda memasukkan seed phrase Anda ke perangkat palsu atau situs phishing.",
+       "Backup kertas persis seperti yang terdengar: seed phrase Anda ditulis atau dicetak di kertas, disimpan di tempat yang aman. Kertas kebal terhadap kegagalan perangkat keras dan peretasan, tetapi terbakar, memudar, dan dapat dicuri atau dibuang secara tidak sengaja. Banyak pengguna menggabungkan metode, menyimpan hardware wallet untuk penggunaan aktif dan backup kertas atau logam di lokasi yang aman. Pelat logam yang dicap atau diukir dengan kata seed tahan terhadap kerusakan api dan air."
+      ]
+     },
+     {
+      "h": "Penanganan seed phrase yang bertahan dalam kehidupan nyata",
+      "p": [
+       "Seed phrase biasanya dua belas atau dua puluh empat kata dari kamus tetap. Siapa pun dengan phrase tersebut mengontrol dana, selamanya. Jangan simpan di email, cloud drive, pengelola password yang disinkronkan secara online, atau foto di ponsel Anda. Jangan bagikan dengan staf dukungan, teman, atau keluarga kecuali Anda bermaksud memberi mereka akses penuh yang tidak dapat dibatalkan.",
+       "Tulis phrase di kertas atau cap ke logam, dan verifikasi setiap kata dengan memulihkan dompet di perangkat yang sama atau kedua sebelum mentransfer jumlah besar. Simpan setidaknya satu salinan di lokasi terpisah dari hardware wallet Anda—safe deposit box, rumah kerabat yang dipercaya, atau brankas tahan api. Jika Anda menyimpan backup dan hardware wallet di rumah yang sama, kebakaran atau pencurian mengambil keduanya. Jika Anda membagi phrase menggunakan Shamir Secret Sharing atau skema multisignature, dokumentasikan proses pemulihan sehingga ahli waris atau diri Anda di masa depan dapat merekonstruksi akses.",
+       "Hindari keamanan yang terlalu rumit yang tidak akan Anda ingat dalam lima tahun. Seed phrase yang dikunci di safe deposit box yang Anda kunjungi dua kali dalam satu dekade mengalahkan proses dua belas langkah yang Anda lupakan atau skema terpisah yang dokumentasinya menghilang dengan laptop lama. Skenario kehilangan paling umum bukan pencurian tetapi pemegang lupa di mana atau bagaimana mereka menyimpan backup."
+      ]
+     },
+     {
+      "h": "Aturan praktis berdasarkan jumlah yang dipegang",
+      "p": [
+       "Di bawah setara 15 juta Rupiah: exchange atau hot wallet dapat diterima jika Anda memeriksa secara teratur dan menggunakan platform dengan track record multi-tahun dan autentikasi dua faktor. Risiko operasional mengelola key Anda sendiri mungkin melebihi risiko exchange pada tingkat ini.",
+       "Antara 15 juta dan 150 juta Rupiah setara: pindahkan dana ke hardware wallet kecuali Anda trading setiap minggu. Biaya perangkat hardware sekarang merupakan sebagian kecil dari kepemilikan, dan risiko kegagalan exchange atau pembekuan akun menjadi material.",
+       "Di atas 150 juta Rupiah setara: self-custody adalah harapan dasar. Gunakan hardware wallet, pertahankan backup offline di setidaknya dua lokasi fisik, dan uji pemulihan saat jumlahnya masih sederhana. Pertimbangkan pengaturan multisignature atau Shamir split untuk jumlah di atas pendapatan enam bulan Anda, memahami bahwa kompleksitas meningkatkan keamanan dan peluang penguncian yang ditimbulkan sendiri.",
+       "Ambang batas ini bersifat ilustratif dan tergantung pada toleransi risiko pribadi dan kepercayaan teknis. Sesuaikan ke bawah jika Anda tinggal di tempat dengan perbankan yang tidak stabil atau penutupan platform yang sering, ke atas jika exchange Anda beroperasi di bawah aturan custody yang ketat di yurisdiksi yang Anda percayai. Variabel kunci adalah konsekuensi: seberapa banyak rasa sakit yang akan ditimbulkan kehilangan jumlah ini, dan dapatkah Anda menanggung tanggung jawab penuh atas keamanannya?"
+      ]
+     },
+     {
+      "h": "Pendekatan hybrid dan realitas operasional",
+      "p": [
+       "Banyak pengguna berpengalaman menyimpan saldo operasional kecil di satu atau dua exchange untuk trading atau likuiditas langsung, dan memindahkan mayoritas ke cold storage setelah akumulasi. Ini membatasi paparan exchange sambil mempertahankan kemampuan untuk bertindak cepat. Tetapkan ambang batas—seperti saldo apa pun di atas 75 juta Rupiah—dan sapu kelebihan ke hardware wallet Anda bulanan atau triwulanan.",
+       "Kewajiban pajak ada terlepas dari metode custody. Sebagian besar negara memperlakukan cryptocurrency sebagai properti atau aset modal, dan setiap perdagangan, penjualan, atau pertukaran adalah peristiwa kena pajak. Memindahkan koin dari exchange ke dompet Anda sendiri tidak kena pajak, tetapi menjual, menukar dengan koin lain, atau membelanjakan memicu persyaratan pelaporan. Aturan berbeda secara signifikan menurut yurisdiksi dan berubah secara teratur, jadi ini bukan saran pajak—konsultasikan dengan profesional yang akrab dengan hukum lokal Anda.",
+       "Ingat bahwa self-custody bukan semua-atau-tidak sama sekali. Mulai kecil: tarik jumlah sederhana ke hot wallet, lalu tingkatkan ke hardware wallet seiring kepercayaan dan kepemilikan Anda tumbuh. Tujuannya bukan kemurnian ideologis tetapi kecocokan rasional antara nilai yang dipertaruhkan, kemampuan teknis Anda, dan risiko yang bersedia Anda terima."
+      ]
+     }
+    ]
+   },
+   "vi": {
+    "title": "Ví hay Sàn Giao Dịch: Nơi Tiền Mã Hóa Của Bạn Thực Sự Nên Ở",
+    "excerpt": "Sự lựa chọn giữa tự quản lý và để coin trên sàn giao dịch quyết định ai kiểm soát tài sản của bạn và ai chịu rủi ro khi có sự cố. Đây là cách quyết định dựa trên số lượng, mô hình sử dụng và khả năng bảo mật seed phrase của bạn.",
+    "sections": [
+     {
+      "h": "Quyền quản lý có nghĩa là gì và điều gì xảy ra khi sàn giao dịch sụp đổ",
+      "p": [
+       "Khi bạn giữ tiền mã hóa trên sàn giao dịch, bạn không sở hữu coin theo nghĩa kỹ thuật. Sàn giao dịch kiểm soát private key, và bạn nắm giữ quyền yêu cầu đối với sổ cái nội bộ của sàn. Nếu sàn giao dịch phá sản, coin của bạn là một phần của khối tài sản phá sản. Các chủ nợ có thể thu hồi một phần tài sản của họ sau nhiều tháng hoặc nhiều năm, hoặc không thu hồi được gì cả. Điều này đã xảy ra nhiều lần: người dùng Mt. Gox nộp đơn yêu cầu bắt đầu từ năm 2014, và việc phân phối bắt đầu gần một thập kỷ sau đó. FTX, Celsius, Voyager và hàng chục nền tảng nhỏ hơn đã đi theo con đường tương tự.",
+       "Tự quản lý có nghĩa là bạn kiểm soát private key hoặc seed phrase tạo ra nó. Không bên thứ ba nào có thể đóng băng, tịch thu hoặc làm mất tiền của bạn thông qua việc quản lý sai của chính họ. Bạn cũng chịu trách nhiệm đầy đủ: nếu bạn mất key hoặc gửi coin đến địa chỉ sai, không có đội hỗ trợ nào có thể đảo ngược giao dịch. Blockchain không công nhận lý do, chỉ công nhận chữ ký hợp lệ."
+      ]
+     },
+     {
+      "h": "Sự đánh đổi giữa tiện lợi và kiểm soát",
+      "p": [
+       "Sàn giao dịch cung cấp giao dịch tức thì, điểm vào và ra tiền pháp định, dịch vụ staking và hỗ trợ khách hàng. Bạn có thể mua và bán mà không cần chờ xác nhận blockchain hoặc trả phí rút tiền riêng. Đối với các trader tích cực vào và ra vị thế nhiều lần mỗi tuần, tự quản lý có nghĩa là liên tục rút và gửi, mỗi lần phát sinh phí mạng và chậm trễ.",
+       "Ví tự quản lý cấp quyền kiểm soát đầy đủ và quyền riêng tư, nhưng loại bỏ lớp tiện lợi. Bạn trả phí giao dịch mạng trực tiếp, quản lý sao lưu của riêng bạn và chịu trách nhiệm về bảo mật hoạt động. Không có đặt lại mật khẩu và không có phòng chống gian lận. Điều này phù hợp với những holder mua và chờ đợi hàng tháng hoặc hàng năm, hoặc bất kỳ ai không muốn tin tưởng bên thứ ba với giá trị đáng kể."
+      ]
+     },
+     {
+      "h": "Khi nào việc để tiền trên sàn giao dịch có ý nghĩa",
+      "p": [
+       "Nếu bạn giao dịch thường xuyên, giữ số lượng nhỏ hoặc vẫn đang học, tài khoản sàn giao dịch là lựa chọn thực tế. Đối với số dư dưới tương đương 12 triệu VND mà bạn truy cập hàng tuần, phí rút tiền và rủi ro xử lý sai seed phrase thường vượt quá rủi ro sàn giao dịch. Các sàn giao dịch được quản lý trong các khu vực pháp lý có quy tắc phân tách tài sản khách hàng mạnh mẽ và kiểm toán thường xuyên thêm một lớp bảo vệ, mặc dù quy định không phải là đảm bảo và quy tắc rất khác nhau theo quốc gia.",
+       "Xem xét tỷ lệ tài sản ròng của bạn đang bị đặt cược. Để một phần trăm tiết kiệm của bạn trên sàn giao dịch để tránh ma sát là hợp lý. Để năm mươi phần trăm tạo ra rủi ro thảm họa, bất kể nền tảng có vẻ uy tín như thế nào. Sàn giao dịch là doanh nghiệp với động cơ lợi nhuận, dự trữ mờ đục và phơi nhiễm với hack, tịch thu quy định và thất bại quản lý."
+      ]
+     },
+     {
+      "h": "Ví nóng, ví cứng và sao lưu giấy",
+      "p": [
+       "Ví nóng là bất kỳ ví phần mềm nào được kết nối với internet: ứng dụng di động, tiện ích mở rộng trình duyệt hoặc chương trình máy tính để bàn. Ví nóng thuận tiện cho số lượng nhỏ và giao dịch thường xuyên, nhưng chúng dễ bị tổn thương với phần mềm độc hại, lừa đảo và khai thác từ xa. Coi chúng như ví vật lý trong túi của bạn—mang đủ cho nhu cầu gần, không phải tiết kiệm của bạn.",
+       "Ví cứng là thiết bị chuyên dụng lưu trữ private key ngoại tuyến và ký giao dịch bên trong. Khi bạn phê duyệt thanh toán, giao dịch chưa ký chuyển đến thiết bị, thiết bị ký nó mà không để lộ key, và trả về kết quả đã ký. Các mô hình có uy tín bao gồm Ledger, Trezor, BitBox và Coldcard. Ví cứng chống lại các cuộc tấn công từ xa nhưng vẫn dễ bị tổn thương nếu bạn nhập seed phrase của bạn vào thiết bị giả hoặc trang web lừa đảo.",
+       "Sao lưu giấy chính xác như âm thanh của nó: seed phrase của bạn được viết hoặc in trên giấy, được lưu trữ ở nơi an toàn. Giấy miễn dịch với lỗi phần cứng và hack, nhưng nó cháy, phai màu và có thể bị đánh cắp hoặc vứt bỏ vô tình. Nhiều người dùng kết hợp các phương pháp, giữ ví cứng để sử dụng tích cực và sao lưu giấy hoặc kim loại ở các vị trí an toàn. Tấm kim loại được đóng dấu hoặc khắc với từ seed chống lại hỏa hoạn và hư hỏng do nước."
+      ]
+     },
+     {
+      "h": "Xử lý seed phrase tồn tại trong cuộc sống thực",
+      "p": [
+       "Seed phrase thường là mười hai hoặc hai mươi bốn từ từ từ điển cố định. Bất kỳ ai có phrase đều kiểm soát tiền, mãi mãi. Không lưu trữ nó trong email, ổ đĩa đám mây, trình quản lý mật khẩu được đồng bộ hóa trực tuyến hoặc ảnh trên điện thoại của bạn. Không chia sẻ nó với nhân viên hỗ trợ, bạn bè hoặc gia đình trừ khi bạn có ý định cấp cho họ quyền truy cập đầy đủ, không thể thu hồi.",
+       "Viết phrase trên giấy hoặc đóng dấu vào kim loại, và xác minh mọi từ bằng cách khôi phục ví trên cùng một hoặc thiết bị thứ hai trước khi chuyển số lượng lớn. Lưu trữ ít nhất một bản sao ở vị trí tách biệt với ví cứng của bạn—hộp ký gửi an toàn, nhà của người thân đáng tin cậy hoặc két sắt chống cháy. Nếu bạn giữ sao lưu và ví cứng trong cùng một ngôi nhà, hỏa hoạn hoặc trộm cắp lấy cả hai. Nếu bạn chia phrase bằng cách sử dụng Shamir Secret Sharing hoặc sơ đồ đa chữ ký, hãy ghi lại quy trình khôi phục để người thừa kế hoặc bản thân tương lai của bạn có thể tái tạo quyền truy cập.",
+       "Tránh bảo mật quá phức tạp mà bạn sẽ không nhớ trong năm năm. Một seed phrase bị khóa trong hộp ký gửi an toàn mà bạn ghé thăm hai lần trong một thập kỷ đánh bại một quy trình mười hai bước mà bạn quên hoặc một sơ đồ chia tách có tài liệu biến mất với máy tính xách tay cũ. Kịch bản mất phổ biến nhất không phải là trộm cắp mà là người giữ quên nơi hoặc cách họ lưu trữ sao lưu."
+      ]
+     },
+     {
+      "h": "Nguyên tắc chung theo số lượng nắm giữ",
+      "p": [
+       "Dưới tương đương 25 triệu VND: sàn giao dịch hoặc ví nóng là chấp nhận được nếu bạn kiểm tra thường xuyên và sử dụng nền tảng có hồ sơ theo dõi nhiều năm và xác thực hai yếu tố. Rủi ro hoạt động của việc quản lý key của riêng bạn có thể vượt quá rủi ro sàn giao dịch ở cấp độ này.",
+       "Giữa 25 triệu và 250 triệu VND tương đương: di chuyển tiền đến ví cứng trừ khi bạn giao dịch hàng tuần. Chi phí của thiết bị phần cứng hiện là một phần nhỏ của tài sản nắm giữ, và rủi ro thất bại sàn giao dịch hoặc đóng băng tài khoản trở nên quan trọng.",
+       "Trên 250 triệu VND tương đương: tự quản lý là kỳ vọng cơ bản. Sử dụng ví cứng, duy trì sao lưu ngoại tuyến ở ít nhất hai vị trí vật lý và kiểm tra khôi phục khi số lượng vẫn còn khiêm tốn. Xem xét thiết lập đa chữ ký hoặc Shamir split cho số lượng trên sáu tháng thu nhập của bạn, hiểu rằng sự phức tạp tăng cả bảo mật và khả năng tự khóa.",
+       "Các ngưỡng này mang tính minh họa và phụ thuộc vào khả năng chấp nhận rủi ro cá nhân và sự tự tin kỹ thuật. Điều chỉnh xuống nếu bạn sống ở nơi có ngân hàng không ổn định hoặc đóng cửa nền tảng thường xuyên, lên trên nếu sàn giao dịch của bạn hoạt động theo quy tắc quản lý nghiêm ngặt trong khu vực pháp lý mà bạn tin tưởng. Biến số chính là hậu quả: mất số tiền này sẽ gây ra bao nhiêu đau đớn, và bạn có thể chịu trách nhiệm đầy đủ cho an ninh của nó không?"
+      ]
+     },
+     {
+      "h": "Cách tiếp cận kết hợp và thực tế hoạt động",
+      "p": [
+       "Nhiều người dùng có kinh nghiệm giữ số dư hoạt động nhỏ trên một hoặc hai sàn giao dịch để giao dịch hoặc thanh khoản ngay lập tức, và chuyển phần lớn sang lưu trữ lạnh sau khi tích lũy. Điều này giới hạn phơi nhiễm sàn giao dịch trong khi bảo tồn khả năng hành động nhanh chóng. Đặt ngưỡng—chẳng hạn như bất kỳ số dư nào trên 125 triệu VND—và quét thừa vào ví cứng của bạn hàng tháng hoặc hàng quý.",
+       "Nghĩa vụ thuế tồn tại bất kể phương pháp quản lý. Hầu hết các quốc gia coi tiền mã hóa là tài sản hoặc tài sản vốn, và mọi giao dịch, bán hoặc trao đổi đều là sự kiện chịu thuế. Di chuyển coin từ sàn giao dịch đến ví của riêng bạn không phải chịu thuế, nhưng bán, giao dịch cho coin khác hoặc chi tiêu kích hoạt yêu cầu báo cáo. Quy tắc khác nhau đáng kể theo khu vực pháp lý và thay đổi thường xuyên, vì vậy đây không phải là lời khuyên về thuế—tham khảo ý kiến chuyên gia quen thuộc với luật pháp địa phương của bạn.",
+       "Nhớ rằng tự quản lý không phải là tất cả hoặc không có gì. Bắt đầu nhỏ: rút một số lượng khiêm tốn vào ví nóng, sau đó nâng cấp lên ví cứng khi sự tự tin và tài sản nắm giữ của bạn tăng lên. Mục tiêu không phải là sự thuần khiết về mặt tư tưởng mà là sự phù hợp hợp lý giữa giá trị bị đặt cược, khả năng kỹ thuật của bạn và rủi ro bạn sẵn sàng chấp nhận."
+      ]
+     }
+    ]
+   },
+   "th": {
+    "title": "กระเป๋าเงินหรือเทรดเดอร์: ที่ๆ คริปโตของคุณควรอยู่จริงๆ",
+    "excerpt": "การเลือกระหว่างการถือครอง​ด้วยตัวเองกับการฝากเหรียญไว้กับเทรดเดอร์ กำหนดว่าใครควบคุมสินทรัพย์ของคุณและใครต้องรับความเสี่ยงเมื่อเกิดปัญหา นี่คือวิธีตัดสินใจตามจำนวน รูปแบบการใช้งาน และความสามารถในการรักษาซีดเฟรส",
+    "sections": [
+     {
+      "h": "การถือครองหมายความว่าอย่างไร และเกิดอะไรขึ้นเมื่อเทรดเดอร์ล้มละลาย",
+      "p": [
+       "เมื่อคุณถือคริปโทเคอร์เรนซีไว้กับเทรดเดอร์ คุณไม่ได้เป็นเจ้าของเหรียญในความหมายทางเทคนิค เทรดเดอร์ควบคุมไพรเวทคีย์ และคุณมีเพียงสิทธิ์เรียกร้องจากบัญชีภายในของเทรดเดอร์ หากเทรดเดอร์ล้มละลาย เหรียญของคุณจะกลายเป็นส่วนหนึ่งของทรัพย์สินในคดีล้มละลาย เจ้าหนี้อาจได้คืนเพียงเศษเสี้ยวของที่ถือครองหลังจากผ่านไปหลายเดือนหรือหลายปี หรืออาจไม่ได้อะไรเลย สิ่งนี้เกิดขึ้นซ้ำแล้วซ้ำเล่า: ผู้ใช้ Mt. Gox ยื่นเรียกร้องตั้งแต่ปี 2557 และการจ่ายเงินคืนเริ่มขึ้นเกือบทศวรรษต่อมา FTX, Celsius, Voyager และแพลตฟอร์มขนาดเล็กอีกหลายสิบแห่งก็เดินตามเส้นทางเดียวกัน",
+       "การถือครองด้วยตัวเองหมายถึงคุณควบคุมไพรเวทคีย์หรือซีดเฟรสที่สร้างมันขึ้นมา ไม่มีบุคคลที่สามที่สามารถระงับ ยึด หรือทำเงินของคุณหายไปจากการบริหารงานที่ผิดพลาดของพวกเขา คุณต้องรับผิดชอบอย่างเต็มที่ด้วย: หากคุณทำคีย์หาย หรือส่งเหรียญไปยังแอดเดรสผิด จะไม่มีทีมซัพพอร์ตที่สามารถย้อนธุรกรรมกลับได้ บล็อกเชนไม่รับฟังข้ออ้าง รับรู้เพียงลายเซ็นที่ถูกต้องเท่านั้น"
+      ]
+     },
+     {
+      "h": "การแลกเปลี่ยนระหว่างความสะดวกกับการควบคุม",
+      "p": [
+       "เทรดเดอร์เสนอการเทรดทันที ทางเข้าออกเงินบาท บริการสเตกกิ้ง และการสนับสนุนลูกค้า คุณสามารถซื้อขายโดยไม่ต้องรอการยืนยันบล็อกเชนหรือจ่ายค่าธรรมเนียมถอนแยก สำหรับเทรดเดอร์ที่เคลื่อนไหวเข้าออกสถานะหลายครั้งต่อสัปดาห์ การถือครองด้วยตัวเองหมายถึงการถอนและฝากอย่างต่อเนื่อง แต่ละครั้งต้องเสียค่าธรรมเนียมเน็ตเวิร์กและมีความล่าช้า",
+       "กระเป๋าเงินแบบถือครองด้วยตัวเองให้การควบคุมและความเป็นส่วนตัวอย่างเต็มที่ แต่ลบชั้นความสะดวกออกไป คุณต้องจ่ายค่าธรรมเนียมธุรกรรมเน็ตเวิร์กโดยตรง จัดการการสำรองข้อมูลด้วยตัวเอง และรับผิดชอบความปลอดภัยในการดำเนินงาน ไม่มีการรีเซ็ตรหัสผ่านและไม่มีแผนกต่อต้านการฉ้อโกง เหมาะสำหรับผู้ถือที่ซื้อและรอหลายเดือนหรือหลายปี หรือทุกคนที่ไม่เต็มใจไว้วางใจบุคคลที่สามกับมูลค่าที่สำคัญ"
+      ]
+     },
+     {
+      "h": "เมื่อใดที่การฝากเงินไว้กับเทรดเดอร์สมเหตุสมผล",
+      "p": [
+       "หากคุณเทรดบ่อย ถือครองจำนวนเล็กน้อย หรือยังอยู่ในช่วงเรียนรู้ บัญชีเทรดเดอร์คือตัวเลือกที่เป็นจริง สำหรับยอดคงเหลือต่ำกว่า 15,000 บาทที่คุณเข้าใช้ทุกสัปดาห์ ค่าธรรมเนียมการถอนและความเสี่ยงจากการจัดการซีดเฟรสผิดพลาดมักจะมากกว่าความเสี่ยงจากเทรดเดอร์ เทรดเดอร์ที่ได้รับการควบคุมในเขตอำนาจศาลที่มีกฎการแยกสินทรัพย์ลูกค้าที่เข้มงวดและการตรวจสอบสม่ำเสมอเพิ่มชั้นของการปกป้อง แม้ว่าการควบคุมไม่ได้เป็นการรับประกันและกฎระเบียบจะแตกต่างกันอย่างมากในแต่ละประเทศ",
+       "พิจารณาสัดส่วนของมูลค่าสุทธิของคุณที่เสี่ยงอยู่ การฝากหนึ่งเปอร์เซ็นต์ของเงินออมของคุณกับเทรดเดอร์เพื่อหลีกเลี่ยงความยุ่งยากเป็นเรื่องสมเหตุสมผล การฝากห้าสิบเปอร์เซ็นต์ทำให้เกิดความเสี่ยงหายนะ ไม่ว่าแพลตฟอร์มจะดูน่าเชื่อถือเพียงใด เทรดเดอร์คือธุรกิจที่มีแรงจูงใจด้านกำไร สำรองที่ไม่โปร่งใส และมีความเสี่ยงต่อการแฮ็ก การยึดโดยหน่วยงานกำกับดูแล และความล้มเหลวในการบริหารจัดการ"
+      ]
+     },
+     {
+      "h": "กระเป๋าฮอตวอลเล็ต กระเป๋าฮาร์ดแวร์ และการสำรองข้อมูลแบบกระดาษ",
+      "p": [
+       "ฮอตวอลเล็ตคือกระเป๋าเงินซอฟต์แวร์ใดๆ ที่เชื่อมต่อกับอินเทอร์เน็ต: แอปมือถือ ส่วนขยายเบราว์เซอร์ หรือโปรแกรมเดสก์ท็อป ฮอตวอลเล็ตสะดวกสำหรับจำนวนเล็กน้อยและธุรกรรมปกติ แต่มีช่องโหว่ต่อมัลแวร์ ฟิชชิ่ง และการโจมตีระยะไกล ปฏิบัติต่อมันเหมือนกระเป๋าสตางค์จริงในกระเป๋าของคุณ—พกพาเพียงพอสำหรับความต้องการในอนาคตอันใกล้ ไม่ใช่เงินออมของคุณ",
+       "กระเป๋าฮาร์ดแวร์คืออุปกรณ์เฉพาะทางที่เก็บไพรเวทคีย์แบบออฟไลน์และเซ็นธุรกรรมภายใน เมื่อคุณอนุมัติการชำระเงิน ธุรกรรมที่ยังไม่ได้เซ็นจะถูกส่งไปยังอุปกรณ์ อุปกรณ์เซ็นโดยไม่เปิดเผยคีย์ และส่งผลลัพธ์ที่เซ็นแล้วกลับมา โมเดลที่มีชื่อเสียง ได้แก่ Ledger, Trezor, BitBox และ Coldcard กระเป๋าฮาร์ดแวร์ต้านทานการโจมตีระยะไกลแต่ยังคงมีช่องโหว่หากคุณป้อนซีดเฟรสของคุณเข้าไปในอุปกรณ์ปลอมหรือไซต์ฟิชชิ่ง",
+       "การสำรองแบบกระดาษคือสิ่งที่มันฟังดูเป็น: ซีดเฟรสของคุณที่เขียนหรือพิมพ์บนกระดาษ เก็บไว้ในที่ปลอดภัย กระดาษมีภูมิคุ้มกันต่อความล้มเหลวของฮาร์ดแวร์และการแฮ็ก แต่มันไหม้ได้ จางหายได้ และอาจถูกขโมยหรือทิ้งโดยไม่ตั้งใจ ผู้ใช้หลายคนรวมวิธีการ เก็บกระเป๋าฮาร์ดแวร์สำหรับการใช้งานจริงและการสำรองแบบกระดาษหรือโลหะในสถานที่ปลอดภัย แผ่นโลหะที่ประทับหรือแกะสลักคำซีดต้านทานไฟและความเสียหายจากน้ำ"
+      ]
+     },
+     {
+      "h": "การจัดการซีดเฟรสที่รอดชีวิตในชีวิตจริง",
+      "p": [
+       "ซีดเฟรสมักจะเป็นคำสิบสองหรือยี่สิบสี่คำจากพจนานุกรมคงที่ ใครก็ตามที่มีเฟรสนี้ควบคุมเงินได้ ตลอดไป อย่าเก็บมันในอีเมล คลาวด์ไดรฟ์ ตัวจัดการรหัสผ่านที่ซิงค์ออนไลน์ หรือรูปถ่ายในโทรศัพท์ของคุณ อย่าแชร์กับพนักงานซัพพอร์ต เพื่อน หรือครอบครัว เว้นแต่คุณตั้งใจจะให้การเข้าถึงอย่างเต็มที่และไม่สามารถเพิกถอนได้",
+       "เขียนเฟรสบนกระดาษหรือประทับลงบนโลหะ และตรวจสอบทุกคำโดยการกู้คืนกระเป๋าเงินบนอุปกรณ์เดียวกันหรืออุปกรณ์ที่สองก่อนโอนจำนวนมาก เก็บสำเนาอย่างน้อยหนึ่งฉบับในสถานที่แยกจากกระเป๋าฮาร์ดแวร์ของคุณ—ตู้นิรภัยของธนาคาร บ้านของญาติที่ไว้วางใจ หรือตู้เซฟป้องกันไฟ หากคุณเก็บการสำรองและกระเป๋าฮาร์ดแวร์ไว้ในบ้านเดียวกัน ไฟไหม้หรือการโจรกรรมจะเอาทั้งสองไป หากคุณแยกเฟรสโดยใช้ Shamir Secret Sharing หรือโครงร่างมัลติซิกเนเจอร์ จดบันทึกกระบวนการกู้คืนเพื่อให้ทายาทหรือตัวคุณในอนาคตสามารถสร้างการเข้าถึงใหม่ได้",
+       "หลีกเลี่ยงความปลอดภัยที่ซับซ้อนเกินไปที่คุณจะไม่จำได้ในห้าปี ซีดเฟรสที่ล็อกในตู้นิรภัยของธนาคารที่คุณไปเยี่ยมสองครั้งต่อทศวรรษดีกว่ากระบวนการสิบสองขั้นตอนที่คุณลืมหรือโครงร่างแยกที่เอกสารหายไปพร้อมกับแล็ปท็อปเครื่องเก่า สถานการณ์การสูญเสียที่พบบ่อยที่สุดไม่ใช่การโจรกรรมแต่คือเจ้าของที่ลืมว่าเก็บการสำรองไว้ที่ไหนหรืออย่างไร"
+      ]
+     },
+     {
+      "h": "กฎง่ายๆ ตามจำนวนที่ถือครอง",
+      "p": [
+       "ต่ำกว่า 30,000 บาท: เทรดเดอร์หรือฮอตวอลเล็ตเป็นที่ยอมรับได้หากคุณตรวจสอบเป็นประจำและใช้แพลตฟอร์มที่มีประวัติหลายปีและการยืนยันตัวตนสองขั้นตอน ความเสี่ยงในการดำเนินงานของการจัดการคีย์ด้วยตัวเองอาจเกินความเสี่ยงจากเทรดเดอร์ในระดับนี้",
+       "ระหว่าง 30,000 ถึง 300,000 บาท: ย้ายเงินไปยังกระเป๋าฮาร์ดแวร์เว้นแต่คุณเทรดทุกสัปดาห์ ต้นทุนของอุปกรณ์ฮาร์ดแวร์ตอนนี้เป็นเพียงเศษเสี้ยวเล็กน้อยของที่ถือครอง และความเสี่ยงของความล้มเหลวของเทรดเดอร์หรือการระงับบัญชีกลายเป็นสาระสำคัญ",
+       "สูงกว่า 300,000 บาท: การถือครองด้วยตัวเองคือความคาดหวังพื้นฐาน ใช้กระเป๋าฮาร์ดแวร์ รักษาการสำรองแบบออฟไลน์ในอย่างน้อยสองสถานที่ทางกายภาพ และทดสอบการกู้คืนในขณะที่จำนวนยังน้อยอยู่ พิจารณาการตั้งค่ามัลติซิกเนเจอร์หรือ Shamir splits สำหรับจำนวนเกินหกเดือนของรายได้ของคุณ โดยเข้าใจว่าความซับซ้อนเพิ่มทั้งความปลอดภัยและโอกาสของการล็อกตัวเองออก",
+       "เกณฑ์เหล่านี้เป็นตัวอย่างและขึ้นอยู่กับการยอมรับความเสี่ยงส่วนบุคคลและความมั่นใจทางเทคนิค ปรับลดลงหากคุณอาศัยอยู่ในที่ที่มีธนาคารไม่มั่นคงหรือแพลตฟอร์มปิดตัวบ่อย ปรับเพิ่มขึ้นหากเทรดเดอร์ของคุณดำเนินงานภายใต้กฎการถือครองที่เข้มงวดในเขตอำนาจที่คุณไว้วางใจ ตัวแปรหลักคือผลที่ตามมา: การสูญเสียจำนวนนี้จะทำให้เกิดความเจ็บปวดเท่าใด และคุณสามารถรับผิดชอบอย่างเต็มที่ต่อความปลอดภัยของมันได้หรือไม่?"
+      ]
+     },
+     {
+      "h": "แนวทางผสมผสานและความเป็นจริงในการดำเนินงาน",
+      "p": [
+       "ผู้ใช้ที่มีประสบการณ์หลายคนเก็บยอดคงเหลือสำหรับการดำเนินงานเล็กน้อยไว้กับเทรดเดอร์หนึ่งหรือสองแห่งสำหรับการเทรดหรือสภาพคล่องทันที และย้ายส่วนใหญ่ไปยังโคลด์สตอเรจหลังจากสะสม สิ่งนี้จำกัดการเปิดรับความเสี่ยงกับเทรดเดอร์ขณะรักษาความสามารถในการดำเนินการอย่างรวดเร็ว ตั้งเกณฑ์—เช่น ยอดคงเหลือใดๆ เกิน 150,000 บาท—และกวาดส่วนเกินไปยังกระเป๋าฮาร์ดแวร์ของคุณรายเดือนหรือรายไตรมาส",
+       "ภาระผูกพันด้านภาษีมีอยู่ไม่ว่าวิธีการถือครองใด ประเทศส่วนใหญ่ถือว่าคริปโทเคอร์เรนซีเป็นทรัพย์สินหรือสินทรัพย์ทุน และทุกการเทรด การขาย หรือการแลกเปลี่ยนเป็นเหตุการณ์ที่ต้องเสียภาษี การย้ายเหรียญจากเทรดเดอร์ไปยังกระเป๋าเงินของคุณเองไม่ต้องเสียภาษี แต่การขาย การเทรดเป็นเหรียญอื่น หรือการใช้จ่ายจะเรียกข้อกำหนดการรายงาน กฎแตกต่างกันอย่างมากตามเขตอำนาจและเปลี่ยนแปลงเป็นประจำ ดังนั้นนี่ไม่ใช่คำแนะนำด้านภาษี—ปรึกษาผู้เชี่ยวชาญที่คุ้นเคยกับกฎหมายท้องถิ่นของคุณ",
+       "จำไว้ว่าการถือครองด้วยตัวเองไม่ใช่ทั้งหมดหรือไม่มีเลย เริ่มต้นเล็กๆ: ถอนจำนวนปานกลางไปยังฮอตวอลเล็ต จากนั้นอัปเกรดเป็นกระเป๋าฮาร์ดแวร์เมื่อความมั่นใจและที่ถือครองของคุณเติบโต เป้าหมายไม่ใช่ความบริสุทธิ์ทางอุดมการณ์แต่เป็นการจับคู่ที่มีเหตุผลระหว่างมูลค่าที่เสี่ยง ความสามารถทางเทคนิคของคุณ และความเสี่ยงที่คุณเต็มใจยอมรับ"
+      ]
+     }
+    ]
+   },
+   "uk": {
+    "title": "Гаманець чи біржа: де насправді мають зберігатися ваші криптоактиви",
+    "excerpt": "Вибір між самостійним зберіганням і залишенням монет на біржі визначає, хто контролює ваші активи та хто несе ризик, коли щось йде не так. Ось як вирішити на основі сум, шаблонів використання та вашої здатності захистити сід-фразу.",
+    "sections": [
+     {
+      "h": "Що означає зберігання і що відбувається, коли біржа зазнає краху",
+      "p": [
+       "Коли ви тримаєте криптовалюту на біржі, ви не володієте монетами в технічному сенсі. Біржа контролює приватні ключі, а ви маєте претензію до внутрішнього реєстру біржі. Якщо біржа стає неплатоспроможною, ваші монети є частиною банкрутної маси. Кредитори можуть повернути частину своїх активів через місяці або роки, або взагалі нічого. Це відбувалося неодноразово: користувачі Mt. Gox подавали претензії починаючи з 2014 року, а виплати почалися майже десятиліття потому. FTX, Celsius, Voyager та десятки менших платформ пройшли подібними шляхами.",
+       "Самостійне зберігання означає, що ви контролюєте приватний ключ або сід-фразу, що його генерує. Жодна третя сторона не може заморозити, конфіскувати чи втратити ваші кошти через власне неналежне управління. Ви також несете повну відповідальність: якщо ви втратите ключ або надішлете монети на неправильну адресу, жодна служба підтримки не зможе скасувати транзакцію. Блокчейн не визнає виправдань, лише дійсні підписи."
+      ]
+     },
+     {
+      "h": "Компроміс між зручністю та контролем",
+      "p": [
+       "Біржі пропонують миттєву торгівлю, входи та виходи у фіат, послуги стейкінгу та підтримку клієнтів. Ви можете купувати та продавати без очікування підтверджень блокчейну чи сплати окремих комісій за виведення. Для активних трейдерів, які входять та виходять з позицій кілька разів на тиждень, самостійне зберігання означатиме постійні виведення та депозити, кожне з яких спричиняє комісії мережі та затримки.",
+       "Гаманці з самостійним зберіганням надають повний контроль і конфіденційність, але позбавляють рівня зручності. Ви платите комісії за транзакції мережі безпосередньо, керуєте власними резервними копіями та берете на себе відповідальність за операційну безпеку. Немає скидання пароля і немає відділу з боротьби з шахрайством. Це підходить власникам, які купують і чекають місяці або роки, або будь-кому, хто не бажає довіряти третій стороні значну вартість."
+      ]
+     },
+     {
+      "h": "Коли залишення коштів на біржі має сенс",
+      "p": [
+       "Якщо ви торгуєте часто, тримаєте невеликі суми або ще навчаєтесь, обліковий запис біржі є прагматичним вибором. Для балансів нижче еквівалента 15 000 грн, до яких ви звертаєтесь щотижня, комісії за виведення та ризик неправильного поводження з сід-фразою часто переважують ризик біржі. Регульовані біржі в юрисдикціях із суворими правилами відокремлення активів клієнтів і регулярними аудитами додають рівень захисту, хоча регулювання не є гарантією, а правила сильно відрізняються за країнами.",
+       "Розгляньте частку вашого чистого капіталу, що під ризиком. Залишення одного відсотка ваших заощаджень на біржі, щоб уникнути труднощів, є розумним. Залишення п'ятдесяти відсотків створює катастрофічний ризик, незалежно від того, наскільки авторитетною здається платформа. Біржі — це бізнеси з мотивами прибутку, непрозорими резервами та впливом хакерських атак, регуляторних конфіскацій і управлінських невдач."
+      ]
+     },
+     {
+      "h": "Гарячі гаманці, апаратні гаманці та паперові резервні копії",
+      "p": [
+       "Гарячий гаманець — це будь-який програмний гаманець, підключений до інтернету: мобільний додаток, розширення браузера або настільна програма. Гарячі гаманці зручні для невеликих сум і регулярних транзакцій, але вони вразливі до зловмисного ПЗ, фішингу та віддалених експлойтів. Ставтеся до них як до фізичного гаманця у вашій кишені — носіть достатньо для найближчих потреб, а не свої заощадження.",
+       "Апаратний гаманець — це спеціалізований пристрій, що зберігає приватні ключі офлайн і підписує транзакції всередині. Коли ви затверджуєте платіж, непідписана транзакція переміщується до пристрою, пристрій підписує її без розкриття ключа і повертає підписаний результат. Авторитетні моделі включають Ledger, Trezor, BitBox і Coldcard. Апаратні гаманці протистоять віддаленим атакам, але залишаються вразливими, якщо ви введете свою сід-фразу в підроблений пристрій або фішинговий сайт.",
+       "Паперова резервна копія — це саме те, як це звучить: ваша сід-фраза, написана або надрукована на папері, збережена в безпечному місці. Папір імунний до апаратних відмов і хакерства, але він горить, вицвітає і може бути вкраденим або випадково викинутим. Багато користувачів поєднують методи, зберігаючи апаратний гаманець для активного використання та паперові або металеві резервні копії в безпечних місцях. Металеві пластини, проштамповані або вигравірувані словами сіду, протистоять пожежі та пошкодженню водою."
+      ]
+     },
+     {
+      "h": "Поводження з сід-фразою, що витримує реальне життя",
+      "p": [
+       "Сід-фраза зазвичай складається з дванадцяти або двадцяти чотирьох слів із фіксованого словника. Будь-хто з цією фразою контролює кошти, назавжди. Не зберігайте її в електронній пошті, хмарних дисках, менеджерах паролів, синхронізованих онлайн, або фотографіях на вашому телефоні. Не діліться нею з працівниками підтримки, друзями чи родиною, якщо ви не маєте наміру надати їм повний, безвідкличний доступ.",
+       "Напишіть фразу на папері або проштампуйте її на металі, і перевірте кожне слово, відновивши гаманець на тому ж або другому пристрої перед переказом великих сум. Зберігайте принаймні одну копію в місці, відокремленому від вашого апаратного гаманця — в банківській скриньці, вдома у довіреної родини або у вогнетривкому сейфі. Якщо ви тримаєте резервну копію та апаратний гаманець в одному будинку, пожежа або крадіжка заберуть обидва. Якщо ви розділяєте фразу за допомогою Shamir Secret Sharing або мультипідписних схем, задокументуйте процес відновлення, щоб ваші спадкоємці або майбутнє «я» могли відновити доступ.",
+       "Уникайте надмірно складної безпеки, яку ви не пам'ятатимете через п'ять років. Сід-фраза, заблокована в банківській скриньці, яку ви відвідуєте двічі на десятиліття, перемагає дванадцятикроковий процес, який ви забуваєте, або розділену схему, документація якої зникла зі старим ноутбуком. Найпоширеніший сценарій втрати — це не крадіжка, а те, що власник забув, де або як він зберіг резервну копію."
+      ]
+     },
+     {
+      "h": "Практичне правило за сумою утримання",
+      "p": [
+       "Нижче еквівалента 30 000 грн: біржа або гарячий гаманець є прийнятними, якщо ви регулярно перевіряєте і використовуєте платформу з багаторічною історією та двофакторною автентифікацією. Операційний ризик керування власними ключами може перевищувати ризик біржі на цьому рівні.",
+       "Між 30 000 та 300 000 грн еквівалента: переводьте кошти на апаратний гаманець, якщо ви не торгуєте щотижня. Вартість апаратного пристрою тепер є невеликою часткою утримання, а ризик краху біржі або блокування облікового запису стає істотним.",
+       "Вище 300 000 грн еквівалента: самостійне зберігання є базовим очікуванням. Використовуйте апаратний гаманець, підтримуйте офлайн-резервні копії принаймні в двох фізичних місцях і тестуйте відновлення, поки сума ще скромна. Розгляньте налаштування мультипідпису або розділення Shamir для сум вище шести місяців вашого доходу, розуміючи, що складність збільшує як безпеку, так і ймовірність самозаблокування.",
+       "Ці пороги є ілюстративними і залежать від особистої толерантності до ризику та технічної впевненості. Коригуйте вниз, якщо ви живете десь із нестабільною банківською системою або частими закриттями платформ, вгору, якщо ваша біржа працює за суворими правилами зберігання в юрисдикції, якій ви довіряєте. Ключова змінна — це наслідки: скільки болю спричинить втрата цієї суми, і чи можете ви нести повну відповідальність за її безпеку?"
+      ]
+     },
+     {
+      "h": "Гібридні підходи та операційні реалії",
+      "p": [
+       "Багато досвідчених користувачів тримають невеликий операційний баланс на одній або двох біржах для торгівлі або негайної ліквідності, і переміщують більшість у холодне сховище після накопичення. Це обмежує вплив біржі, зберігаючи здатність діяти швидко. Встановіть поріг — наприклад, будь-який баланс вище 150 000 грн — і переводьте надлишок на свій апаратний гаманець щомісяця або щокварталу.",
+       "Податкові зобов'язання існують незалежно від методу зберігання. Більшість країн розглядають криптовалюту як майно або капітальний актив, і кожна торгівля, продаж або обмін є оподатковуваною подією. Переміщення монет з біржі на власний гаманець не оподатковується, але продаж, торгівля на іншу монету або витрати викликають вимоги до звітності. Правила значно відрізняються за юрисдикціями і регулярно змінюються, тому це не податкова консультація — проконсультуйтеся з професіоналом, знайомим з вашими місцевими законами.",
+       "Пам'ятайте, що самостійне зберігання — це не все-або-нічого. Почніть з малого: виведіть скромну суму на гарячий гаманець, потім оновіться до апаратного гаманця, коли ваша впевненість і утримання зростуть. Мета — не ідеологічна чистота, а раціональна відповідність між вартістю під ризиком, вашою технічною здатністю та ризиками, які ви готові прийняти."
+      ]
+     }
+    ]
+   },
+   "ru": {
+    "title": "Кошелёк или биржа: где на самом деле должна храниться ваша крипта",
+    "excerpt": "Выбор между самостоятельным хранением и оставлением монет на бирже определяет, кто контролирует ваши активы и кто несёт риск, когда что-то идёт не так. Вот как решить на основе сумм, паттернов использования и вашей способности защитить сид-фразу.",
+    "sections": [
+     {
+      "h": "Что означает хранение и что происходит, когда биржа терпит крах",
+      "p": [
+       "Когда вы держите криптовалюту на бирже, вы не владеете монетами в техническом смысле. Биржа контролирует приватные ключи, а у вас есть требование к внутреннему реестру биржи. Если биржа становится неплатёжеспособной, ваши монеты являются частью конкурсной массы. Кредиторы могут вернуть часть своих активов через месяцы или годы, или вообще ничего. Это происходило неоднократно: пользователи Mt. Gox подавали заявления начиная с 2014 года, а выплаты начались почти десятилетие спустя. FTX, Celsius, Voyager и десятки более мелких платформ прошли аналогичными путями.",
+       "Самостоятельное хранение означает, что вы контролируете приватный ключ или сид-фразу, которая его генерирует. Никакая третья сторона не может заморозить, конфисковать или потерять ваши средства из-за собственного ненадлежащего управления. Вы также несёте полную ответственность: если вы потеряете ключ или отправите монеты на неправильный адрес, никакая служба поддержки не сможет отменить транзакцию. Блокчейн не признаёт оправданий, только действительные подписи."
+      ]
+     },
+     {
+      "h": "Компромисс между удобством и контролем",
+      "p": [
+       "Биржи предлагают мгновенную торговлю, входы и выходы в рубли, услуги стейкинга и поддержку клиентов. Вы можете покупать и продавать без ожидания подтверждений блокчейна или оплаты отдельных комиссий за вывод. Для активных трейдеров, которые входят и выходят из позиций несколько раз в неделю, самостоятельное хранение будет означать постоянные выводы и депозиты, каждый из которых влечёт комиссии сети и задержки.",
+       "Кошельки с самостоятельным хранением предоставляют полный контроль и конфиденциальность, но убирают уровень удобства. Вы платите комиссии за транзакции сети напрямую, управляете собственными резервными копиями и берёте на себя ответственность за операционную безопасность. Нет сброса пароля и нет отдела по борьбе с мошенничеством. Это подходит держателям, которые покупают и ждут месяцы или годы, или кому-либо, кто не желает доверять третьей стороне значительную стоимость."
+      ]
+     },
+     {
+      "h": "Когда оставление средств на бирже имеет смысл",
+      "p": [
+       "Если вы торгуете часто, держите небольшие суммы или ещё учитесь, учётная запись биржи является прагматичным выбором. Для балансов ниже эквивалента 40 000 рублей, к которым вы обращаетесь еженедельно, комиссии за вывод и риск неправильного обращения с сид-фразой часто перевешивают риск биржи. Регулируемые биржи в юрисдикциях со строгими правилами разделения активов клиентов и регулярными аудитами добавляют уровень защиты, хотя регулирование не является гарантией, а правила сильно различаются по странам.",
+       "Рассмотрите долю вашего чистого капитала под риском. Оставление одного процента ваших сбережений на бирже, чтобы избежать трудностей, является разумным. Оставление пятидесяти процентов создаёт катастрофический риск, независимо от того, насколько авторитетной кажется платформа. Биржи — это бизнесы с мотивами прибыли, непрозрачными резервами и подверженностью хакерским атакам, регуляторным конфискациям и управленческим провалам."
+      ]
+     },
+     {
+      "h": "Горячие кошельки, аппаратные кошельки и бумажные резервные копии",
+      "p": [
+       "Горячий кошелёк — это любой программный кошелёк, подключённый к интернету: мобильное приложение, расширение браузера или настольная программа. Горячие кошельки удобны для небольших сумм и регулярных транзакций, но они уязвимы к вредоносному ПО, фишингу и удалённым эксплойтам. Относитесь к ним как к физическому кошельку в вашем кармане — носите достаточно для ближайших нужд, а не свои сбережения.",
+       "Аппаратный кошелёк — это специализированное устройство, которое хранит приватные ключи офлайн и подписывает транзакции внутри. Когда вы одобряете платёж, неподписанная транзакция перемещается к устройству, устройство подписывает её без раскрытия ключа и возвращает подписанный результат. Авторитетные модели включают Ledger, Trezor, BitBox и Coldcard. Аппаратные кошельки противостоят удалённым атакам, но остаются уязвимыми, если вы введёте свою сид-фразу в поддельное устройство или фишинговый сайт.",
+       "Бумажная резервная копия — это именно то, как это звучит: ваша сид-фраза, написанная или распечатанная на бумаге, сохранённая в безопасном месте. Бумага иммунна к аппаратным отказам и взлому, но она горит, выцветает и может быть украдена или случайно выброшена. Многие пользователи комбинируют методы, храня аппаратный кошелёк для активного использования и бумажные или металлические резервные копии в безопасных местах. Металлические пластины, проштампованные или выгравированные словами сида, противостоят огню и повреждению водой."
+      ]
+     },
+     {
+      "h": "Обращение с сид-фразой, которое выдерживает реальную жизнь",
+      "p": [
+       "Сид-фраза обычно состоит из двенадцати или двадцати четырёх слов из фиксированного словаря. Любой, у кого есть эта фраза, контролирует средства, навсегда. Не храните её в электронной почте, облачных дисках, менеджерах паролей, синхронизированных онлайн, или фотографиях на вашем телефоне. Не делитесь ею с сотрудниками поддержки, друзьями или семьёй, если вы не намерены предоставить им полный, безотзывный доступ.",
+       "Напишите фразу на бумаге или проштампуйте её на металле, и проверьте каждое слово, восстановив кошелёк на том же или втором устройстве перед переводом крупных сумм. Храните как минимум одну копию в месте, отдельном от вашего аппаратного кошелька — в банковской ячейке, дома у доверенного родственника или в огнеупорном сейфе. Если вы держите резервную копию и аппаратный кошелёк в одном доме, пожар или кража заберут оба. Если вы разделяете фразу с помощью Shamir Secret Sharing или мультиподписных схем, задокументируйте процесс восстановления, чтобы ваши наследники или будущее «я» могли восстановить доступ.",
+       "Избегайте чрезмерно сложной безопасности, которую вы не запомните через пять лет. Сид-фраза, заблокированная в банковской ячейке, которую вы посещаете дважды в десятилетие, превосходит двенадцатишаговый процесс, который вы забываете, или разделённую схему, документация которой исчезла со старым ноутбуком. Самый распространённый сценарий потери — это не кража, а то, что владелец забыл, где или как он сохранил резервную копию."
+      ]
+     },
+     {
+      "h": "Практическое правило по сумме хранения",
+      "p": [
+       "Ниже эквивалента 80 000 рублей: биржа или горячий кошелёк приемлемы, если вы регулярно проверяете и используете платформу с многолетней историей и двухфакторной аутентификацией. Операционный риск управления собственными ключами может превышать риск биржи на этом уровне.",
+       "Между 80 000 и 800 000 рублей эквивалента: переводите средства на аппаратный кошелёк, если вы не торгуете еженедельно. Стоимость аппаратного устройства теперь является небольшой долей хранения, а риск краха биржи или блокировки учётной записи становится существенным.",
+       "Выше 800 000 рублей эквивалента: самостоятельное хранение является базовым ожиданием. Используйте аппаратный кошелёк, поддерживайте офлайн-резервные копии как минимум в двух физических местах и тестируйте восстановление, пока сумма ещё скромна. Рассмотрите настройки мультиподписи или разделения Shamir для сумм выше шести месяцев вашего дохода, понимая, что сложность увеличивает как безопасность, так и вероятность самоблокировки.",
+       "Эти пороги являются иллюстративными и зависят от личной толерантности к риску и технической уверенности. Корректируйте вниз, если вы живёте где-то с нестабильной банковской системой или частыми закрытиями платформ, вверх, если ваша биржа работает по строгим правилам хранения в юрисдикции, которой вы доверяете. Ключевая переменная — это последствия: сколько боли причинит потеря этой суммы, и можете ли вы нести полную ответственность за её безопасность?"
+      ]
+     },
+     {
+      "h": "Гибридные подходы и операционные реалии",
+      "p": [
+       "Многие опытные пользователи держат небольшой операционный баланс на одной или двух биржах для торговли или немедленной ликвидности, и перемещают большинство в холодное хранилище после накопления. Это ограничивает влияние биржи, сохраняя способность действовать быстро. Установите порог — например, любой баланс выше 400 000 рублей — и переводите излишек на свой аппаратный кошелёк ежемесячно или ежеквартально.",
+       "Налоговые обязательства существуют независимо от метода хранения. Большинство стран рассматривают криптовалюту как имущество или капитальный актив, и каждая торговля, продажа или обмен является налогооблагаемым событием. Перемещение монет с биржи на собственный кошелёк не облагается налогом, но продажа, торговля на другую монету или расходы вызывают требования к отчётности. Правила значительно различаются по юрисдикциям и регулярно меняются, поэтому это не налоговая консультация — проконсультируйтесь с профессионалом, знакомым с вашими местными законами.",
+       "Помните, что самостоятельное хранение — это не всё-или-ничего. Начните с малого: выведите скромную сумму на горячий кошелёк, затем обновитесь до аппаратного кошелька, когда ваша уверенность и хранение вырастут. Цель — не идеологическая чистота, а рациональное соответствие между стоимостью под риском, вашей технической способностью и рисками, которые вы готовы принять."
+      ]
+     }
+    ]
+   }
+  }
  }
 ]
