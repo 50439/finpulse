@@ -264,6 +264,19 @@ function missingLangs(topic, entry) {
   return topic.langs.filter(l => !hasLang(entry.i18n, l));
 }
 
+// Сокращение партии первого запроса после провала. Первый запрос — самый
+// хрупкий: гайд на английском ПЛЮС несколько переводов, 25-35 тыс. знаков
+// одним JSON; на такой длине модель стабильно теряет запятую (01.09 гайд
+// crypto-wallet-vs-exchange упал так три раза подряд — 10 минут токенов
+// впустую). Повторять тот же гигантский запрос бессмысленно: при провале
+// режем партию вдвое, в пределе — чистый английский. null = резать некуда.
+function shrinkHead(head) {
+  if (head.length <= 1) return null;
+  const next = head.slice(0, Math.ceil(head.length / 2));
+  if (!next.includes('en')) next.unshift('en');
+  return next;
+}
+
 async function writeOne(topic, out, topics) {
   const idx = out.findIndex(g => g.slug === topic.slug);
   const prev = idx >= 0 && !process.env.REGENERATE ? out[idx] : null;
@@ -275,11 +288,24 @@ async function writeOne(topic, out, topics) {
   console.log('Пишу гайд: ' + topic.slug + ' (' + todo.join(', ') + (prev ? '; уже есть: ' + topic.langs.filter(l => hasLang(i18n, l)).join(', ') : '') + ')');
 
   if (!hasLang(i18n, 'en')) {
-    // Первый запрос: пишем сам гайд сразу на английском и первых нескольких языках.
-    const head = todo.slice(0, LANG_BATCH);
+    // Первый запрос: гайд на английском и первых нескольких языках. При провале
+    // разбора НЕ повторяем тот же гигантский запрос в третий раз, а сокращаем
+    // партию (см. shrinkHead): короткий ответ разбирается стабильно, а
+    // недостающие языки дописывает обычный переводной цикл ниже.
+    let head = todo.slice(0, LANG_BATCH);
     if (!head.includes('en')) head.unshift('en');
-    const first = await callClaudeRetry(buildPrompt({ ...topic, langs: head }));
-    Object.assign(i18n, first.i18n || first);
+    for (;;) {
+      try {
+        const first = await callClaudeRetry(buildPrompt({ ...topic, langs: head }), 2);
+        Object.assign(i18n, first.i18n || first);
+        break;
+      } catch (e) {
+        const next = isFatal(e) ? null : shrinkHead(head);
+        if (!next) throw e;
+        console.warn('  первый запрос (' + head.join(', ') + ') не дался — сокращаю партию до: ' + next.join(', '));
+        head = next;
+      }
+    }
     if (!hasLang(i18n, 'en')) {
       throw new Error('Модель не вернула английскую версию — переводить нечего');
     }
@@ -360,4 +386,4 @@ async function main() {
 }
 
 if (require.main === module) main().catch(e => { console.error(e); process.exit(1); });
-module.exports = { buildPrompt, LANG_NAMES, repairJson, stripFences, missingLangs, hasLang, isFatal };
+module.exports = { buildPrompt, LANG_NAMES, repairJson, stripFences, missingLangs, hasLang, isFatal, shrinkHead };

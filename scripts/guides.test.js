@@ -12,7 +12,7 @@
  *     обязан снова попадать в очередь, а не считаться готовым.
  */
 const assert = require('assert');
-const { repairJson, missingLangs, hasLang, isFatal } = require('./guides.js');
+const { repairJson, missingLangs, hasLang, isFatal, shrinkHead } = require('./guides.js');
 
 let n = 0;
 const t = (name, fn) => { fn(); n++; console.log('  ok  ' + name); };
@@ -109,6 +109,22 @@ t('кривой JSON — повторять СТОИТ', () => {
 
 t('перегрузка API — повторять СТОИТ', () => {
   assert.strictEqual(isFatal(new Error('Anthropic API 529: overloaded_error')), false);
+});
+
+console.log('shrinkHead:');
+
+t('провал первого запроса сокращает партию вдвое, английский не выпадает', () => {
+  // Гайд crypto-wallet-vs-exchange трижды подряд упал 01.09 на первом запросе:
+  // английский текст ПЛЮС три перевода — 26-33 тыс. знаков одним JSON, и на
+  // такой длине модель стабильно теряет запятую. Повторять тот же гигантский
+  // запрос бессмысленно (три попытки — три одинаковых провала, 10 минут токенов
+  // впустую). Правильный повтор — меньшей партией, в пределе чистый английский.
+  assert.deepStrictEqual(shrinkHead(['en', 'de', 'fr', 'pl']), ['en', 'de']);
+  assert.deepStrictEqual(shrinkHead(['en', 'de']), ['en']);
+});
+
+t('дальше английского сокращать некуда', () => {
+  assert.strictEqual(shrinkHead(['en']), null);
 });
 
 console.log('\nВсе ' + n + ' проверок прошли.');
