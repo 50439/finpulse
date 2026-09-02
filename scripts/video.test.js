@@ -8,7 +8,7 @@
  * а ломается на практике не они, а разбивка текста.
  */
 const assert = require('assert');
-const { sentences, bodyCards, fitSize, caption, cardDuration, ttsMode, hookSplit, kickerFor, buildCards, pickQueue, emphasize } = require('./video.js');
+const { sentences, bodyCards, fitSize, caption, cardHtml, cardDuration, ttsMode, hookSplit, kickerFor, buildCards, pickQueue, emphasize } = require('./video.js');
 
 let n = 0;
 const t = (name, fn) => { fn(); n++; console.log('  ok  ' + name); };
@@ -247,6 +247,34 @@ t('HTML в тексте экранируется, а не исполняется
 
 t('текст без цифр возвращается просто экранированным', () => {
   assert.strictEqual(emphasize('Cronos Blockchain Halted'), 'Cronos Blockchain Halted');
+});
+
+console.log('follow-плашка:');
+
+t('плашка Follow появляется со второй карточки и не звучит в озвучке', () => {
+  // Замеры: среднее время просмотра 1,6 с из 28 — до финального «Follow»
+  // доживают единицы, призыв в конце почти никто не видит. Голосом на 5-й
+  // секунде звать «подпишись» нельзя — перебивает новость в момент решения.
+  // Ответ: ВИЗУАЛЬНАЯ плашка со второй карточки; первый кадр остаётся чистым,
+  // озвучка не трогается.
+  const cards = buildCards(artFixture, trFixture, { maxBodyCards: 2, handle: '@finpulse24_en' });
+  assert.ok(!cards[0].follow, 'плашка на первом кадре — он должен оставаться чистым');
+  const middle = cards.slice(1, -1);
+  assert.ok(middle.length > 0 && middle.every(c => c.follow), 'плашки нет на средних карточках');
+  assert.ok(!cards[cards.length - 1].follow, 'на финальном кадре свой CTA, плашка дублирует');
+  assert.ok(middle.every(c => !/follow/i.test(c.spoken)), 'плашка попала в озвучку');
+  const html = cardHtml(middle[0], 1, cards.length);
+  assert.ok(html.includes('<div class="follow-pill">'), 'cardHtml не рисует плашку');
+  assert.ok(html.includes('@finpulse24_en'), 'в плашке нет хэндла');
+  const hookHtml = cardHtml(cards[0], 0, cards.length);
+  assert.ok(!hookHtml.includes('<div class="follow-pill">'), 'плашка просочилась на первый кадр');
+});
+
+t('финальный кадр говорит «не упусти главное»', () => {
+  const cards = buildCards(artFixture, trFixture, { maxBodyCards: 2 });
+  const cta = cards[cards.length - 1];
+  assert.ok(/don't miss/i.test(cta.text), 'в финале нет «Don\'t miss»: ' + cta.text);
+  assert.ok(/follow/i.test(cta.spoken), 'финальная озвучка потеряла призыв подписаться');
 });
 
 console.log('\nВсе ' + n + ' проверок прошли.');

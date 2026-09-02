@@ -168,13 +168,19 @@ function buildCards(article, t, conf) {
   const first = { kind: 'hook', text: hook, kicker: kickerFor(article.date), tag, note: site };
   if (stake) { first.stake = stake; first.spoken = stake + ' ' + hook; }
 
+  // Плашка «Follow @…» на средних карточках (со ~2-й карточки, т.е. с ~5-й
+  // секунды). Замеры: среднее время просмотра 1,6 с из 28 — финальный CTA
+  // почти никто не видит. Голосом звать «подпишись» посреди новости нельзя —
+  // перебивает в момент решения; плашка видна и не мешает. Первый кадр
+  // остаётся чистым, финальный несёт собственный CTA.
+  const handle = String(conf.handle || '').trim();
   const cards = [
     first,
-    ...(rest ? [{ kind: 'lead', text: rest, tag, note: site }] : []),
-    ...body.map((text, i) => ({ kind: 'body', text, tag, note: (i + 1) + ' / ' + body.length })),
-    { kind: 'cta', text: 'Daily crypto news, 17 languages', tag,
+    ...(rest ? [{ kind: 'lead', text: rest, tag, note: site, follow: handle }] : []),
+    ...body.map((text, i) => ({ kind: 'body', text, tag, note: (i + 1) + ' / ' + body.length, follow: handle })),
+    { kind: 'cta', text: "Don't miss what matters in crypto", tag,
       note: 'Follow for daily updates',
-      spoken: 'Full story on Fin Pulse. Follow for daily crypto news.' }
+      spoken: "Don't miss what matters. Follow Fin Pulse for daily crypto news." }
   ];
   for (const c of cards) if (!c.spoken) c.spoken = c.text;
   return cards;
@@ -237,6 +243,9 @@ function cardHtml(card, i, total) {
 '.bar b{display:block;height:100%;width:' + progress + '%;' +
 'background:linear-gradient(90deg,#19C79A,#3BE8B0 60%,#F7C948)}' +
 '.note{font-size:28px;color:#6F82A3;letter-spacing:1px}' +
+'.follow-pill{position:absolute;right:0;top:-96px;display:inline-flex;align-items:center;gap:14px;' +
+'background:#12233F;border:2px solid #3BE8B0;border-radius:48px;padding:16px 34px;' +
+'font-size:32px;font-weight:700;color:#3BE8B0}' +
 '</style>' +
 '<div class="rings"><i class="r1"></i><i class="r2"></i></div>' +
 '<div class="top"><div class="mark"></div><div class="brand">FinPulse</div>' +
@@ -248,7 +257,9 @@ function cardHtml(card, i, total) {
 (isCta ? '<div><div class="url">' + esc(cfg.site) + '</div>' +
          '<div class="handle">' + esc(HANDLE) + '</div></div>' : '') +
 '</main>' +
-'<div class="foot"><div class="bar"><b></b></div>' +
+'<div class="foot">' +
+(card.follow ? '<div class="follow-pill">+ Follow ' + esc(card.follow) + '</div>' : '') +
+'<div class="bar"><b></b></div>' +
 '<div class="note">' + esc(card.note || '') + '</div></div>';
 }
 
