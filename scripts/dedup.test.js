@@ -1,4 +1,4 @@
-const { titleSimilarity, slugBase, DUP_THRESHOLD, feedStall, quotaFull } = require('./generate.js');
+const { titleSimilarity, slugBase, DUP_THRESHOLD, feedStall, quotaFull, parseModelReply } = require('./generate.js');
 
 // Пары, которые РЕАЛЬНО были опубликованы дважды (взяты из прода)
 const MUST_CATCH = [
@@ -95,6 +95,27 @@ console.log('\n--- окно лимита не дрейфует ---');
     if (!ok) fail++;
     console.log((ok ? '  OK  ' : '  FAIL') + ' ' + name + '  ->  ' + got);
   }
+}
+
+// --- Ремонт JSON от модели ---------------------------------------------
+// 02.09, прогон #105: модель вернула выпуск на 55 707 знаков с одной
+// потерянной запятой (позиция 30 398) — и generate.js выбросил ВСЮ статью,
+// день остался без новости. У guides.js эта болезнь вылечена repairJson ещё
+// 24.08; новостной генератор обязан пользоваться той же аптечкой.
+console.log('\n--- кривой JSON чинится, а не выбрасывает выпуск ---');
+{
+  const broken = '```json\n[{"slug":"a","i18n":{"en":{"title":"T","body":["p1"]}}}\n{"slug":"b"}]\n```';
+  let got = null, err = null;
+  try { got = parseModelReply(broken); } catch (e) { err = e; }
+  const ok1 = !err && Array.isArray(got) && got.length === 2;
+  if (!ok1) fail++;
+  console.log((ok1 ? '  OK  ' : '  FAIL') + ' пропущенная запятая между объектами массива чинится' + (err ? ' -> ' + err.message : ''));
+
+  let err2 = null;
+  try { parseModelReply('[{"slug":"a","i18n":{"en":{"title":"T'); } catch (e) { err2 = e; }
+  const ok2 = !!err2;
+  if (!ok2) fail++;
+  console.log((ok2 ? '  OK  ' : '  FAIL') + ' обрезанный ответ честно падает, а не чинится молча');
 }
 
 console.log('\n' + (fail ? 'ПРОВАЛЕНО проверок: ' + fail : 'ВСЕ ПРОВЕРКИ ПРОЙДЕНЫ'));

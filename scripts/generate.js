@@ -127,6 +127,25 @@ async function fetchFeeds() {
   return all;
 }
 
+// Разбор ответа модели. 02.09, прогон #105: выпуск на 55 707 знаков с одной
+// потерянной запятой (позиция 30 398) выбросил ВСЮ статью — день без новости
+// и токены впустую. У guides.js эта болезнь вылечена ещё 24.08 (repairJson);
+// генератор новостей пользуется той же аптечкой: снять ограды, попробовать
+// как есть, при провале — локальный бесплатный ремонт. Обрезанный ответ
+// сознательно НЕ чинится — половина статьи хуже честного провала.
+const { repairWalk } = require('./guides.js');
+
+function parseModelReply(text) {
+  // Обрезка своя, не guides.stripFences: тот заточен под объект {...}
+  // и срезал бы скобки у нашего массива статей.
+  let raw = String(text).replace(/^\uFEFF/, '').trim()
+    .replace(/^```json?\s*/i, '').replace(/```\s*$/, '').trim();
+  const a = raw.indexOf('['), b = raw.lastIndexOf(']');
+  if (a >= 0 && b > a) raw = raw.slice(a, b + 1);
+  try { return JSON.parse(raw); }
+  catch (e) { return JSON.parse(repairWalk(raw)); }
+}
+
 async function callClaude(headlines) {
   const existing = JSON.parse(fs.readFileSync(path.join(ROOT, 'content/articles.json'), 'utf8'));
   const recentTitles = existing.slice(0, 30).map(a => a.i18n.en.title);
@@ -177,8 +196,7 @@ async function callClaude(headlines) {
     }
   }
   console.log('Received ' + text.length + ' chars from Claude');
-  text = text.replace(/^```json?\s*/i, '').replace(/```\s*$/, '').trim();
-  return JSON.parse(text);
+  return parseModelReply(text);
 }
 
 async function main() {
@@ -280,4 +298,4 @@ if (require.main === module) {
   main().catch(e => { console.error(e); process.exit(1); });
 }
 
-module.exports = { keywords, titleSimilarity, slugBase, DUP_THRESHOLD, feedStall, quotaFull };
+module.exports = { keywords, titleSimilarity, slugBase, DUP_THRESHOLD, feedStall, quotaFull, parseModelReply };

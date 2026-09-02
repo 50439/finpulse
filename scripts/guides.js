@@ -126,10 +126,10 @@ function stripFences(raw) {
   return s;
 }
 
-function repairJson(raw) {
-  const s = stripFences(raw);
-  try { return JSON.parse(s); } catch (e) { /* чиним ниже */ }
-
+// Чистый посимвольный ремонт (без обрезки и без разбора) — им пользуется и
+// repairJson здесь, и parseModelReply в generate.js: stripFences заточен под
+// объект гайда {...} и срезал бы скобки у массива статей.
+function repairWalk(s) {
   let out = '', inStr = false, esc = false, lastSig = '';
   const needsComma = c => c === '"' || c === '}' || c === ']' || /[0-9a-z]/i.test(c);
   for (let i = 0; i < s.length; i++) {
@@ -152,7 +152,13 @@ function repairJson(raw) {
     out += c; lastSig = c;
   }
   out = out.replace(/,(\s*[}\]])/g, '$1');
-  return JSON.parse(out);
+  return out;
+}
+
+function repairJson(raw) {
+  const s = stripFences(raw);
+  try { return JSON.parse(s); } catch (e) { /* чиним ниже */ }
+  return JSON.parse(repairWalk(s));
 }
 
 // Пауза в стриме: абсолютный таймаут рубит и честную долгую генерацию,
@@ -386,4 +392,4 @@ async function main() {
 }
 
 if (require.main === module) main().catch(e => { console.error(e); process.exit(1); });
-module.exports = { buildPrompt, LANG_NAMES, repairJson, stripFences, missingLangs, hasLang, isFatal, shrinkHead };
+module.exports = { buildPrompt, LANG_NAMES, repairJson, repairWalk, stripFences, missingLangs, hasLang, isFatal, shrinkHead };
