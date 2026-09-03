@@ -204,6 +204,13 @@ function emphasize(text) {
   return parts.join('');
 }
 
+// v3: сцены (картинки фона) раздаются карточкам по кругу: 4 сцены на 5 карточек —
+// пятая получит первую. Нет сцен — карточка рисуется на градиенте, как в v2.
+function sceneFor(scenes, i) {
+  if (!Array.isArray(scenes) || !scenes.length) return undefined;
+  return scenes[i % scenes.length];
+}
+
 function cardHtml(card, i, total) {
   const isHook = card.kind === 'hook' || card.kind === 'lead';
   const isCta = card.kind === 'cta';
@@ -215,7 +222,13 @@ function cardHtml(card, i, total) {
 // где body чуть ниже вьюпорта — на видео это выглядит как брак печати.
 'html{width:' + W + 'px;height:' + H + 'px;overflow:hidden;background:#070E1A}' +
 'body{width:' + W + 'px;height:' + H + 'px;overflow:hidden}' +
-'body{background:radial-gradient(120% 90% at 32% 22%,#16294A 0%,#0E1B30 55%,#070E1A 100%);' +
+// v3: если у карточки есть сцена (card.bg — путь к картинке от ChatGPT/генератора),
+// она ложится фоном на всю карточку, а поверх — тёмный градиент, чтобы титры читались.
+// Кольца в этом режиме не рисуем: поверх фотографии они выглядят мусором.
+(card.bg
+  ? 'body{background:linear-gradient(180deg,rgba(7,14,26,.42) 0%,rgba(7,14,26,.08) 35%,' +
+    'rgba(7,14,26,.45) 70%,rgba(7,14,26,.90) 100%),url("file://' + card.bg + '") center/cover no-repeat;'
+  : 'body{background:radial-gradient(120% 90% at 32% 22%,#16294A 0%,#0E1B30 55%,#070E1A 100%);') +
 'color:#E8ECF4;font-family:"DejaVu Sans","Noto Sans","Liberation Sans",sans-serif;' +
 // Нижние ~340 px в TikTok закрыты описанием и кнопками, правые ~180 px — иконками.
 // Всё значимое держим выше и левее, иначе интерфейс приложения съест текст.
@@ -233,6 +246,7 @@ function cardHtml(card, i, total) {
 '.stake{font-size:38px;font-weight:700;line-height:1.3;color:#F7C948;max-width:760px}' +
 '.kicker{font-size:34px;font-weight:700;letter-spacing:5px;text-transform:uppercase;color:#3BE8B0}' +
 '.text{font-size:' + size + 'px;line-height:1.28;font-weight:' + (isHook ? 800 : 600) + ';' +
+(card.bg ? 'text-shadow:0 4px 24px rgba(0,0,0,.85),0 0 2px rgba(0,0,0,.9);' : '') +
 'text-wrap:balance' + (isHook ? ';letter-spacing:-1px;text-transform:uppercase' : '') + '}' +
 '.em{color:#F7C948;font-style:normal;font-weight:inherit}' +
 '.cta .text{font-size:74px;font-weight:800}' +
@@ -247,7 +261,7 @@ function cardHtml(card, i, total) {
 'background:#12233F;border:2px solid #3BE8B0;border-radius:48px;padding:16px 34px;' +
 'font-size:32px;font-weight:700;color:#3BE8B0}' +
 '</style>' +
-'<div class="rings"><i class="r1"></i><i class="r2"></i></div>' +
+(card.bg ? '' : '<div class="rings"><i class="r1"></i><i class="r2"></i></div>') +
 '<div class="top"><div class="mark"></div><div class="brand">FinPulse</div>' +
 '<div class="tag">' + esc(card.tag || 'crypto') + '</div></div>' +
 '<main class="' + (isCta ? 'cta' : '') + '">' +
@@ -467,7 +481,18 @@ async function makeOne(article) {
 
   const cards = buildCards(article, t, cfg);
 
+  // v3: сцены — картинки в out/scenes/<slug>/ (или каталог из env SCENES),
+  // отсортированные по имени. Их рисует ChatGPT/генератор по промпту из
+  // data/chatgpt-video-prompt.md; конвейер кладёт их фоном под свои титры.
+  const scenesDir = process.env.SCENES || path.join(OUT, '..', 'scenes', article.slug);
+  const scenes = fs.existsSync(scenesDir)
+    ? fs.readdirSync(scenesDir).filter(f => /\.(jpe?g|png|webp)$/i.test(f)).sort()
+        .map(f => path.resolve(scenesDir, f))
+    : [];
+  if (scenes.length) console.log('  сцен: ' + scenes.length + ' из ' + scenesDir);
+
   cards.forEach((c, i) => {
+    c.bg = sceneFor(scenes, i);
     const stem = path.join(dir, String(i).padStart(2, '0'));
     c.png = stem + '.png';
     c.audioPath = stem + '.mp3';
@@ -545,4 +570,4 @@ async function main() {
 
 if (require.main === module) main().catch(e => { console.error(e); process.exit(1); });
 
-module.exports = { sentences, bodyCards, fitSize, caption, cardDuration, cardHtml, ttsMode, hookSplit, kickerFor, buildCards, pickQueue, emphasize };
+module.exports = { sentences, bodyCards, fitSize, caption, cardDuration, cardHtml, ttsMode, hookSplit, kickerFor, buildCards, pickQueue, emphasize, sceneFor };

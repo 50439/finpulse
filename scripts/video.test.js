@@ -8,7 +8,7 @@
  * а ломается на практике не они, а разбивка текста.
  */
 const assert = require('assert');
-const { sentences, bodyCards, fitSize, caption, cardHtml, cardDuration, ttsMode, hookSplit, kickerFor, buildCards, pickQueue, emphasize } = require('./video.js');
+const { sentences, bodyCards, fitSize, caption, cardHtml, cardDuration, ttsMode, hookSplit, kickerFor, buildCards, pickQueue, emphasize, sceneFor } = require('./video.js');
 
 let n = 0;
 const t = (name, fn) => { fn(); n++; console.log('  ok  ' + name); };
@@ -275,6 +275,23 @@ t('финальный кадр говорит «не упусти главное
   const cta = cards[cards.length - 1];
   assert.ok(/don't miss/i.test(cta.text), 'в финале нет «Don\'t miss»: ' + cta.text);
   assert.ok(/follow/i.test(cta.spoken), 'финальная озвучка потеряла призыв подписаться');
+});
+
+console.log('\nсцены (v3):');
+
+t('карточка с фоном рисует картинку сцены вместо колец', () => {
+  const card = { kind: 'hook', text: 'A GLOBAL BANK JUST WENT CRYPTO', spoken: 'x', bg: '/tmp/scene0.jpg' };
+  const html = cardHtml(card, 0, 4);
+  assert.ok(html.includes('url("file:///tmp/scene0.jpg")'), 'нет фоновой картинки');
+  assert.ok(!html.includes('class="rings"'), 'кольца поверх фото — мусор');
+});
+
+t('sceneFor раздаёт сцены карточкам по кругу, без сцен — ничего', () => {
+  const scenes = ['/s/0.jpg', '/s/1.jpg', '/s/2.jpg'];
+  assert.deepStrictEqual([0, 1, 2, 3, 4].map(i => sceneFor(scenes, i)),
+    ['/s/0.jpg', '/s/1.jpg', '/s/2.jpg', '/s/0.jpg', '/s/1.jpg']);
+  assert.strictEqual(sceneFor([], 0), undefined);
+  assert.strictEqual(sceneFor(undefined, 2), undefined);
 });
 
 console.log('\nВсе ' + n + ' проверок прошли.');
