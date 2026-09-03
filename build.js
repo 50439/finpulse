@@ -690,6 +690,13 @@ console.log('Built ' + (urls.length + slowUrls.length) + ' pages for ' + LANGS.l
 // IndexNow key file
 fs.writeFileSync(path.join(DIST, 'ee221c0a3d35f01be5577688fa06a50a.txt'), 'ee221c0a3d35f01be5577688fa06a50a');
 
+// media/ -> dist/media/ (ролики для TikTok: Studio берёт их fetch'ем со страницы)
+const MEDIA = path.join(__dirname, 'media');
+if (fs.existsSync(MEDIA)) {
+  fs.mkdirSync(path.join(DIST, 'media'), { recursive: true });
+  for (const f of fs.readdirSync(MEDIA)) fs.copyFileSync(path.join(MEDIA, f), path.join(DIST, 'media', f));
+}
+
 // Brand assets -> dist
 for (const f of ['og.png','favicon-32.png','favicon-192.png','apple-touch-icon.png','logo-512.png','logo-text-512.png','logo-animated.svg']) {
   const src = path.join(__dirname, 'brand', f);

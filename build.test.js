@@ -454,4 +454,13 @@ function walk(dir, acc) {
 if (incompleteGuides.length) {
   console.log('guides: \u043d\u0435\u0434\u043e\u043f\u0438\u0441\u0430\u043d\u043e ' + incompleteGuides.length + ' \u2014 ' + incompleteGuides.join('; ') + ' (\u0441\u043b\u0435\u0434\u0443\u044e\u0449\u0438\u0439 \u043f\u0440\u043e\u0433\u043e\u043d \u0434\u043e\u043f\u0438\u0448\u0435\u0442)');
 }
+// media/ -> dist/media/: ролики для TikTok выкладываем на сайт, чтобы Studio
+// брал их как настоящий Blob со страницы (расширение подсовывает файл криво).
+const MEDIA = path.join(__dirname, 'media');
+if (fs.existsSync(MEDIA)) {
+  for (const f of fs.readdirSync(MEDIA)) {
+    check(fs.existsSync(path.join(DIST, 'media', f)), 'media/' + f + ' не попал в dist/media');
+  }
+}
+
 if (fails){console.error(fails+' failures');process.exit(1);} console.log('OK - all checks passed');
