@@ -1,4 +1,4 @@
-const { titleSimilarity, slugBase, DUP_THRESHOLD, feedStall, quotaFull, parseModelReply } = require('./generate.js');
+const { titleSimilarity, slugBase, DUP_THRESHOLD, feedStall, quotaFull, tooSoon, parseModelReply } = require('./generate.js');
 
 // Пары, которые РЕАЛЬНО были опубликованы дважды (взяты из прода)
 const MUST_CATCH = [
@@ -94,6 +94,28 @@ console.log('\n--- окно лимита не дрейфует ---');
     const ok = got === want || (cfg && cfg.newsPerDay === 0 && got === false);
     if (!ok) fail++;
     console.log((ok ? '  OK  ' : '  FAIL') + ' ' + name + '  ->  ' + got);
+  }
+}
+
+// --- Минимальный интервал между статьями (2 в день: утро и вечер) ----------
+// 04.09: с newsPerDay=2 два прогона GitHub с разной задержкой могли выдать
+// обе статьи за 3 часа. newsMinGapHours держит вторую до вечера.
+console.log('\n--- tooSoon: вторая статья не раньше чем через newsMinGapHours ---');
+{
+  const now = Date.parse('2026-09-04T15:30:00Z');
+  const got = tooSoon([{ date: '2026-09-04T12:00:00Z' }], { newsMinGapHours: 4 }, now);
+  const ok = got === true;
+  if (!ok) fail++;
+  console.log((ok ? '  OK  ' : '  FAIL') + ' статья 3.5 ч назад при gap=4 — рано  ->  ' + got);
+  const cases = [
+    [[{ date: '2026-09-04T09:00:00Z' }], { newsMinGapHours: 4 }, false, 'статья 6.5 ч назад — можно'],
+    [[{ date: '2026-09-04T12:00:00Z' }], { newsMinGapHours: 0 }, false, 'gap=0 выключает проверку'],
+    [[], { newsMinGapHours: 4 }, false, 'пустая лента — можно']
+  ];
+  for (const [arts, cfg, want, name] of cases) {
+    const g = tooSoon(arts, cfg, now);
+    const k = g === want; if (!k) fail++;
+    console.log((k ? '  OK  ' : '  FAIL') + ' ' + name + '  ->  ' + g);
   }
 }
 

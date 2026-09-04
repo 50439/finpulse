@@ -90,6 +90,16 @@ function quotaFull(existing, cfg, now) {
   return existing.filter(x => Date.parse(x.date) >= since).length >= perDay;
 }
 
+// Минимальный интервал между статьями. Нужен при newsPerDay >= 2: два
+// прогона GitHub-cron с разной задержкой (2-5 ч) могут сойтись за 3 часа —
+// тогда «утро + вечер» превращаются в «две подряд». 0 = выключено.
+function tooSoon(existing, cfg, now) {
+  const gapH = Number((cfg || {}).newsMinGapHours || 0);
+  if (!gapH || !existing || !existing.length) return false;
+  const last = Math.max(...existing.map(a => Date.parse(a.date) || 0));
+  return (now || Date.now()) - last < gapH * 3600000;
+}
+
 function feedStall(existing, now) {
   now = now || Date.now();
   if (!existing || !existing.length) return 'лента пуста: не опубликовано ни одной статьи';
@@ -216,6 +226,11 @@ async function main() {
         ' статей (data/site.json) — прогон пропускаю, модель не вызываю.');
       return;
     }
+    if (tooSoon(_existing, cfg)) {
+      console.log('Интервал: последняя статья моложе newsMinGapHours=' + cfg.newsMinGapHours +
+        ' ч — второй выпуск дня ждёт вечернего прогона, модель не вызываю.');
+      return;
+    }
   }
 
   const fresh = await callClaude(headlines);
@@ -298,4 +313,4 @@ if (require.main === module) {
   main().catch(e => { console.error(e); process.exit(1); });
 }
 
-module.exports = { keywords, titleSimilarity, slugBase, DUP_THRESHOLD, feedStall, quotaFull, parseModelReply };
+module.exports = { keywords, titleSimilarity, slugBase, DUP_THRESHOLD, feedStall, quotaFull, tooSoon, parseModelReply };
