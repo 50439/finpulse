@@ -167,7 +167,13 @@ function buildCards(article, t, conf) {
 
   // Первый кадр — 2-4 слова огромным кеглем. Он должен читаться быстрее, чем
   // палец успевает смахнуть: замер показал уход «в 0:01» на полном заголовке.
-  const [hook, rest] = hookSplit(t.title);
+  // Крючок можно задать вручную (conf.hook / env HOOK). Механическая нарезка
+  // заголовка даёт «Standard Chartered» — название компании вместо причины
+  // смотреть; замер 05.09: удержание 1,55 с из 30, уход в 0:01. Когда крючок
+  // написан руками («ТВОИ ДЕНЬГИ…»), заголовок целиком уходит вторым кадром,
+  // чтобы новость не потерялась.
+  const manual = String(conf.hook || '').trim();
+  const [hook, rest] = manual ? [manual, t.title] : hookSplit(t.title);
 
   // Ставка для зрителя («тебя это касается, если…»). Живёт НА кадре с крючком
   // мелкой строкой сверху и произносится ПЕРВОЙ. Отдельным кадром её ставить
@@ -195,9 +201,15 @@ function buildCards(article, t, conf) {
     first,
     ...(rest ? [{ kind: 'lead', text: rest, tag, note: site, follow: handle }] : []),
     ...body.map((text, i) => ({ kind: 'body', text, tag, note: (i + 1) + ' / ' + body.length, follow: handle })),
-    { kind: 'cta', text: "Don't miss what matters in crypto", tag,
-      note: 'Follow for daily updates',
-      spoken: "Don't miss what matters. Follow Fin Pulse for daily crypto news." }
+    // Финальный CTA держится темы статьи: «what matters in crypto» на новости
+    // про валютные резервы Индии — обещание не про этот ролик (05.09).
+    (article.category === 'crypto'
+      ? { kind: 'cta', text: "Don't miss what matters in crypto", tag,
+          note: 'Follow for daily updates',
+          spoken: "Don't miss what matters. Follow Fin Pulse for daily crypto news." }
+      : { kind: 'cta', text: "Don't miss what moves your money", tag,
+          note: 'Follow for daily updates',
+          spoken: "Don't miss what moves your money. Follow Fin Pulse for daily finance news." })
   ];
   for (const c of cards) if (!c.spoken) c.spoken = c.text;
   return cards;
@@ -503,7 +515,9 @@ async function makeOne(article) {
   fs.mkdirSync(dir, { recursive: true });
   console.log('Ролик: ' + article.slug);
 
-  const cards = buildCards(article, t, cfg);
+  // env HOOK — крючок, написанный руками под конкретную новость (тест
+  // контент-угла: «что это значит для твоих денег» вместо названия компании).
+  const cards = buildCards(article, t, process.env.HOOK ? { ...cfg, hook: process.env.HOOK } : cfg);
 
   // v3: сцены — картинки в out/scenes/<slug>/ (или каталог из env SCENES),
   // отсортированные по имени. Их рисует ChatGPT/генератор по промпту из

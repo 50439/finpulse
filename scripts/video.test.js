@@ -350,4 +350,33 @@ t('ставка про крипту не лезет на некриптовую 
   assert.ok(!/hold crypto/i.test(String(forexCards[0].spoken || '')), 'криптоставка звучит в озвучке forex-ролика');
 });
 
+console.log('\nручной крючок (тест контент-угла с 05.09):');
+
+t('conf.hook заменяет крючок, а заголовок уходит на второй кадр', () => {
+  // Заголовки новостей институциональные («X получил лицензию»), и механическая
+  // нарезка даёт крючок вроде «Standard Chartered» — название компании вместо
+  // причины смотреть. Агент пишет крючок сам («ТВОИ ДЕНЬГИ»), а новость целиком
+  // показывается вторым кадром, чтобы факт не потерялся.
+  const cards = buildCards(artFixture, trFixture, { maxBodyCards: 2, hook: 'YOUR BANK JUST BLINKED' });
+  assert.strictEqual(cards[0].text, 'YOUR BANK JUST BLINKED');
+  assert.strictEqual(cards[1].kind, 'lead');
+  assert.strictEqual(cards[1].text, trFixture.title, 'заголовок потерялся: ' + cards[1].text);
+});
+
+t('без conf.hook всё работает по-старому', () => {
+  const cards = buildCards(artFixture, trFixture, { maxBodyCards: 2 });
+  const [hook, rest] = hookSplit(trFixture.title);
+  assert.strictEqual(cards[0].text, hook);
+  assert.strictEqual(cards[1].text, rest);
+});
+
+t('финальный кадр не обещает крипту на некриптовой новости', () => {
+  const forex = buildCards({ ...artFixture, category: 'forex' }, trFixture, { maxBodyCards: 2 });
+  const cta = forex[forex.length - 1];
+  assert.ok(!/crypto/i.test(cta.text), 'CTA обещает крипту на forex-новости: ' + cta.text);
+  assert.ok(!/crypto/i.test(cta.spoken), 'озвучка CTA обещает крипту: ' + cta.spoken);
+  const crypto = buildCards({ ...artFixture, category: 'crypto' }, trFixture, { maxBodyCards: 2 });
+  assert.ok(/crypto/i.test(crypto[crypto.length - 1].text), 'на криптоновости CTA потерял тему');
+});
+
 console.log('\nВсе ' + n + ' проверок прошли.');
