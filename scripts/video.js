@@ -81,6 +81,16 @@ function hookSplit(title) {
   return [words.slice(0, n).join(' '), words.slice(n).join(' ')];
 }
 
+// Кегль крючка. Полезная ширина кадра — 1080 - 84 (левое поле) - 190 (правое,
+// под иконки TikTok) = 806 px; в DejaVu Sans Bold прописная буква занимает
+// ~0,66 кегля. Значит самое длинное слово диктует потолок: при фиксированных
+// 168 px «INDIA'S FOREX RESERVES» обрезало «RESERVES» краем кадра (05.09).
+const HOOK_W = 806, CHAR_W = 0.66, HOOK_MAX = 168, HOOK_MIN = 96;
+function hookSize(text) {
+  const longest = String(text).trim().split(/\s+/).reduce((m, w) => Math.max(m, w.length), 1);
+  return Math.max(HOOK_MIN, Math.min(HOOK_MAX, Math.floor(HOOK_W / (CHAR_W * longest))));
+}
+
 // Кегль от длины текста. Заголовок («крючок») крупнее обычной карточки:
 // первые две секунды решают, останется зритель или пролистнёт.
 const fitSize = (text, big) => {
@@ -163,10 +173,17 @@ function buildCards(article, t, conf) {
   // мелкой строкой сверху и произносится ПЕРВОЙ. Отдельным кадром её ставить
   // нельзя: это отодвинуло бы новость ровно на ту секунду, в которой зритель
   // и уходит. Пустая строка в data/video.json полностью выключает механику.
-  const stake = String(conf.openingLine || '').trim();
+  // Ставка звучит только там, где она правдива. 05.09: «If you hold crypto…»
+  // стояло на новости про валютные резервы Индии (forex) — обещание не про эту
+  // новость, а несоответствие зритель ловит в первую же секунду.
+  const rawStake = String(conf.openingLine || '').trim();
+  const stake = (!/crypto|bitcoin|btc/i.test(rawStake) || article.category === 'crypto') ? rawStake : '';
 
   const first = { kind: 'hook', text: hook, kicker: kickerFor(article.date), tag, note: site };
-  if (stake) { first.stake = stake; first.spoken = stake + ' ' + hook; }
+  // Порядок озвучки: СНАЧАЛА новость, потом ставка. До 05.09 первым звучал
+  // слоган («If you hold crypto…») — зритель слышал рекламную интонацию
+  // в ту самую секунду, в которой уходит. Ставка остаётся, но второй.
+  if (stake) { first.stake = stake; first.spoken = hook + '. ' + stake; }
 
   // Плашка «Follow @…» на средних карточках (со ~2-й карточки, т.е. с ~5-й
   // секунды). Замеры: среднее время просмотра 1,6 с из 28 — финальный CTA
@@ -214,7 +231,11 @@ function sceneFor(scenes, i) {
 function cardHtml(card, i, total) {
   const isHook = card.kind === 'hook' || card.kind === 'lead';
   const isCta = card.kind === 'cta';
-  const size = card.kind === 'hook' ? 132 : fitSize(card.text, isHook);
+  // 05.09: замер v3 — среднее время просмотра 1,55 с из 30, «большинство
+  // зрителей перестали смотреть в 0:01», досмотр 0,6 %. Первый кадр не
+  // успевает прочитаться и выглядит рекламой. Крючок крупнее, а бренд и
+  // ярлык с него убраны совсем (см. ниже): первая секунда — только новость.
+  const size = card.kind === 'hook' ? hookSize(card.text) : fitSize(card.text, isHook);
   const progress = total > 1 ? Math.round(((i + 1) / total) * 100) : 100;
   return '<!doctype html><meta charset="utf-8"><style>' +
 '*{margin:0;padding:0;box-sizing:border-box}' +
@@ -262,10 +283,13 @@ function cardHtml(card, i, total) {
 'font-size:32px;font-weight:700;color:#3BE8B0}' +
 '</style>' +
 (card.bg ? '' : '<div class="rings"><i class="r1"></i><i class="r2"></i></div>') +
-'<div class="top"><div class="mark"></div><div class="brand">FinPulse</div>' +
-'<div class="tag">' + esc(card.tag || 'crypto') + '</div></div>' +
+// Брендовая плашка — со ВТОРОЙ карточки. На первом кадре логотип и ярлык
+// читаются как «это реклама» раньше, чем сама новость, и палец уходит.
+(card.kind === 'hook' ? '<div></div>' :
+  '<div class="top"><div class="mark"></div><div class="brand">FinPulse</div>' +
+  '<div class="tag">' + esc(card.tag || 'crypto') + '</div></div>') +
 '<main class="' + (isCta ? 'cta' : '') + '">' +
-(card.kicker ? '<div class="kicker">' + esc(card.kicker) + '</div>' : '') +
+(card.kicker && card.kind !== 'hook' ? '<div class="kicker">' + esc(card.kicker) + '</div>' : '') +
 (card.stake ? '<div class="stake">' + esc(card.stake) + '</div>' : '') +
 '<div class="text">' + emphasize(card.text) + '</div>' +
 (isCta ? '<div><div class="url">' + esc(cfg.site) + '</div>' +
@@ -570,4 +594,4 @@ async function main() {
 
 if (require.main === module) main().catch(e => { console.error(e); process.exit(1); });
 
-module.exports = { sentences, bodyCards, fitSize, caption, cardDuration, cardHtml, ttsMode, hookSplit, kickerFor, buildCards, pickQueue, emphasize, sceneFor };
+module.exports = { sentences, bodyCards, fitSize, caption, cardDuration, cardHtml, ttsMode, hookSplit, hookSize, kickerFor, buildCards, pickQueue, emphasize, sceneFor };

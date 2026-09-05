@@ -165,16 +165,19 @@ const trFixture = {
 t('ставка для зрителя живёт НА кадре с крючком, а не перед ним', () => {
   // Соблазн — поставить «не пропусти важное» отдельным кадром. Но замер обоих
   // роликов: уход в 0:01. Отдельный кадр отодвигает новость на полторы секунды
-  // ИМЕННО в ту секунду, когда зритель решает. Ставка идёт первой в озвучке,
-  // но крючок при этом на экране с нулевого кадра.
+  // ИМЕННО в ту секунду, когда зритель решает. Ставка живёт НА кадре с крючком.
+  // 05.09: порядок озвучки перевёрнут — слоган первым звучал как реклама
+  // (удержание 1,55 с из 30), теперь первой звучит новость, ставка — за ней.
   const withLine = buildCards(artFixture, trFixture, { maxBodyCards: 2, openingLine: 'Hold crypto? This one matters.' });
   const without  = buildCards(artFixture, trFixture, { maxBodyCards: 2 });
   assert.strictEqual(withLine.length, without.length, 'ставка добавила лишний кадр — крючок отодвинулся');
   assert.strictEqual(withLine[0].kind, 'hook');
   assert.strictEqual(withLine[0].text, without[0].text, 'текст крючка изменился');
   assert.strictEqual(withLine[0].stake, 'Hold crypto? This one matters.');
-  assert.ok(withLine[0].spoken.startsWith('Hold crypto? This one matters.'),
-    'озвучка не начинается со ставки: ' + withLine[0].spoken);
+  assert.ok(withLine[0].spoken.startsWith(withLine[0].text),
+    'озвучка не начинается с крючка: ' + withLine[0].spoken);
+  assert.ok(withLine[0].spoken.includes('Hold crypto? This one matters.'),
+    'ставка потерялась из озвучки: ' + withLine[0].spoken);
   assert.ok(withLine[0].spoken.includes(without[0].text), 'крючок пропал из озвучки');
 });
 
@@ -292,6 +295,59 @@ t('sceneFor раздаёт сцены карточкам по кругу, без
     ['/s/0.jpg', '/s/1.jpg', '/s/2.jpg', '/s/0.jpg', '/s/1.jpg']);
   assert.strictEqual(sceneFor([], 0), undefined);
   assert.strictEqual(sceneFor(undefined, 2), undefined);
+});
+
+console.log('\nhook-first (05.09: удержание 1,55 с из 30, уход в 0:01):');
+
+t('первый кадр без брендовой плашки и без ярлыка — только крючок', () => {
+  const cards = buildCards(artFixture, trFixture, { maxBodyCards: 2 });
+  const hookHtml = cardHtml(cards[0], 0, cards.length);
+  assert.ok(!hookHtml.includes('class="top"'), 'плашка FinPulse/CRYPTO на первом кадре — это реклама, зритель уходит');
+  assert.ok(!hookHtml.includes('class="kicker"'), 'ярлык BREAKING/CRYPTO на первом кадре');
+  const second = cardHtml(cards[1], 1, cards.length);
+  assert.ok(second.includes('class="top"'), 'бренд должен появляться со второй карточки');
+});
+
+t('крючок на первом кадре крупнее прежних 132 px', () => {
+  const cards = buildCards(artFixture, trFixture, { maxBodyCards: 2 });
+  const hookHtml = cardHtml(cards[0], 0, cards.length);
+  const m = hookHtml.match(/\.text\{font-size:(\d+)px/);
+  assert.ok(m && Number(m[1]) > 132, 'кегль крючка не вырос: ' + (m && m[1]));
+  // Короткий крючок должен добирать до потолка, иначе смысл роста теряется.
+  const big = cardHtml({ kind: 'hook', text: 'CRYPTO BANK', spoken: 'x' }, 0, 4);
+  assert.ok(Number(big.match(/\.text\{font-size:(\d+)px/)[1]) >= 168, 'короткий крючок не во всю ширину');
+});
+
+t('озвучка первого кадра начинается с новости, а не со слогана', () => {
+  const cards = buildCards(artFixture, trFixture, { maxBodyCards: 2, openingLine: 'If you hold crypto, this one matters.' });
+  const spoken = String(cards[0].spoken || cards[0].text);
+  assert.ok(spoken.toLowerCase().startsWith(cards[0].text.toLowerCase().slice(0, 8)),
+    'первым звучит слоган, а не крючок: ' + spoken);
+  assert.ok(/this one matters/i.test(spoken), 'ставка потерялась из озвучки: ' + spoken);
+});
+
+t('крючок не вылезает за поля: кегль подстраивается под самое длинное слово', () => {
+  // 05.09: при фиксированных 168 px «INDIA'S FOREX RESERVES» обрезало
+  // «RESERVES» правым краем. Полезная ширина кадра — 1080-84-190 = 806 px.
+  const wide = cardHtml({ kind: 'hook', text: "INDIA'S FOREX RESERVES", spoken: 'x' }, 0, 4);
+  const w = Number(wide.match(/\.text\{font-size:(\d+)px/)[1]);
+  assert.ok(w * 0.66 * 8 <= 806, 'длинное слово не влезает по ширине: кегль ' + w);
+  const short = cardHtml({ kind: 'hook', text: 'A CRYPTO BANK', spoken: 'x' }, 0, 4);
+  const sh = Number(short.match(/\.text\{font-size:(\d+)px/)[1]);
+  assert.ok(sh >= 150, 'короткий крючок незаслуженно уменьшен: ' + sh);
+  assert.ok(sh > w, 'кегль не зависит от длины слова');
+});
+
+t('ставка про крипту не лезет на некриптовую новость', () => {
+  // 05.09: на статье про валютные резервы Индии (категория forex) первым
+  // кадром стояло «If you hold crypto, this one matters» — обещание не про эту
+  // новость. Зритель ловит несоответствие ровно в ту секунду, когда решает.
+  const opts = { maxBodyCards: 2, openingLine: 'If you hold crypto, this one matters.' };
+  const cryptoCards = buildCards({ ...artFixture, category: 'crypto' }, trFixture, opts);
+  assert.strictEqual(cryptoCards[0].stake, 'If you hold crypto, this one matters.');
+  const forexCards = buildCards({ ...artFixture, category: 'forex' }, trFixture, opts);
+  assert.ok(!forexCards[0].stake, 'криптоставка попала на forex-новость: ' + forexCards[0].stake);
+  assert.ok(!/hold crypto/i.test(String(forexCards[0].spoken || '')), 'криптоставка звучит в озвучке forex-ролика');
 });
 
 console.log('\nВсе ' + n + ' проверок прошли.');
