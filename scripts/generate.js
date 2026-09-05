@@ -209,6 +209,23 @@ async function callClaude(headlines) {
   return parseModelReply(text);
 }
 
+// 05.09, прогон #116: ответ на 56 588 знаков с ошибкой JSON, которую repairWalk
+// не вылечил, — утро без статьи. Повторный запрос почти всегда валиден, поэтому
+// ошибка РАЗБОРА (SyntaxError) даёт ещё одну попытку; ошибки API/сети — нет:
+// там повтор не поможет, а токены и время сожжёт.
+async function withRetry(fn, tries, isRetryable) {
+  let last;
+  for (let i = 1; i <= tries; i++) {
+    try { return await fn(); }
+    catch (e) {
+      last = e;
+      if (!isRetryable(e) || i === tries) throw e;
+      console.warn('Попытка ' + i + '/' + tries + ' провалилась (' + e.message.slice(0, 80) + ') — повторяю запрос к модели.');
+    }
+  }
+  throw last;
+}
+
 async function main() {
   if (!API_KEY) { console.error('ANTHROPIC_API_KEY is not set'); process.exit(1); }
   const headlines = await fetchFeeds();
@@ -233,7 +250,7 @@ async function main() {
     }
   }
 
-  const fresh = await callClaude(headlines);
+  const fresh = await withRetry(() => callClaude(headlines), 2, e => e instanceof SyntaxError);
 
   const file = path.join(ROOT, 'content/articles.json');
   const existing = JSON.parse(fs.readFileSync(file, 'utf8'));
@@ -313,4 +330,4 @@ if (require.main === module) {
   main().catch(e => { console.error(e); process.exit(1); });
 }
 
-module.exports = { keywords, titleSimilarity, slugBase, DUP_THRESHOLD, feedStall, quotaFull, tooSoon, parseModelReply };
+module.exports = { keywords, titleSimilarity, slugBase, DUP_THRESHOLD, feedStall, quotaFull, tooSoon, parseModelReply, withRetry };

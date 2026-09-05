@@ -1,4 +1,4 @@
-const { titleSimilarity, slugBase, DUP_THRESHOLD, feedStall, quotaFull, tooSoon, parseModelReply } = require('./generate.js');
+const { titleSimilarity, slugBase, DUP_THRESHOLD, feedStall, quotaFull, tooSoon, parseModelReply, withRetry } = require('./generate.js');
 
 // Пары, которые РЕАЛЬНО были опубликованы дважды (взяты из прода)
 const MUST_CATCH = [
@@ -140,5 +140,31 @@ console.log('\n--- кривой JSON чинится, а не выбрасыва�
   console.log((ok2 ? '  OK  ' : '  FAIL') + ' обрезанный ответ честно падает, а не чинится молча');
 }
 
-console.log('\n' + (fail ? 'ПРОВАЛЕНО проверок: ' + fail : 'ВСЕ ПРОВЕРКИ ПРОЙДЕНЫ'));
-process.exit(fail ? 1 : 0);
+
+// 05.09, прогон #116: модель вернула 56 588 знаков с одной ошибкой JSON,
+// которую repairWalk не вылечил — утро без статьи. Второй запрос к модели
+// почти всегда даёт валидный JSON; один повтор дешевле потерянного выпуска.
+console.log('\n--- withRetry: ошибка разбора JSON -> повторный запрос ---');
+(async () => {
+  let calls = 0;
+  const flaky = async () => { calls++; if (calls === 1) throw new SyntaxError('Expected , at 30236'); return ['ok']; };
+  const got = await withRetry(flaky, 2, e => e instanceof SyntaxError);
+  const ok1 = calls === 2 && Array.isArray(got) && got[0] === 'ok';
+  if (!ok1) fail++;
+  console.log((ok1 ? '  OK  ' : '  FAIL') + ' первый провал разбора -> второй вызов -> результат (вызовов: ' + calls + ')');
+
+  let calls2 = 0, err2 = null;
+  try { await withRetry(async () => { calls2++; throw new Error('Anthropic API 401'); }, 2, e => e instanceof SyntaxError); } catch (e) { err2 = e; }
+  const ok2 = calls2 === 1 && err2 && /401/.test(err2.message);
+  if (!ok2) fail++;
+  console.log((ok2 ? '  OK  ' : '  FAIL') + ' не-JSON ошибка (ключ/сеть) не повторяется, летит сразу');
+
+  let calls3 = 0, err3 = null;
+  try { await withRetry(async () => { calls3++; throw new SyntaxError('again'); }, 2, e => e instanceof SyntaxError); } catch (e) { err3 = e; }
+  const ok3 = calls3 === 2 && err3 instanceof SyntaxError;
+  if (!ok3) fail++;
+  console.log((ok3 ? '  OK  ' : '  FAIL') + ' два провала подряд -> честная ошибка после 2 попыток (вызовов: ' + calls3 + ')');
+
+  console.log('\n' + (fail ? 'ПРОВАЛЕНО проверок: ' + fail : 'ВСЕ ПРОВЕРКИ ПРОЙДЕНЫ'));
+  process.exit(fail ? 1 : 0);
+})();
