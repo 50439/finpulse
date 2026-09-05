@@ -168,6 +168,7 @@ async function callClaude(headlines) {
 'DEPTH MATTERS MORE THAN SPEED. Our earlier articles averaged only ~190 words and read as thin rewrites of a headline — that is exactly what search engines discard. Each article must add something a reader cannot get from the headline alone: what actually happened, the concrete numbers, why it matters, who is affected, what it changes for an ordinary investor, and what to watch next. Explain mechanisms, not just events. No filler sentences, no restating the title, no empty hedging.\n\n' +
 'Then translate title, excerpt and body into ALL of: en, uk, ru, es, pt, de, fr, ar, zh, hi, id, vi, tr, ja, ko, pl, th. Native-quality natural translations — a native reader must not be able to tell it was translated.\n\n' +
 'Category must be one of: crypto, stocks, forex, world, ukraine. Pick a fitting emoji for each article.\n\n' +
+'Inside JSON strings never use unescaped double quotes — for quotations use single quotes or « ». (Three runs on 2026-09-05 were lost to one raw quote inside a translation.)\n\n' +
 'Respond with ONLY valid JSON (no markdown fences), an array of 0 to ' + ARTICLES_PER_RUN + ' objects (empty array [] is a valid and welcome answer):\n' +
 '[{"slug":"kebab-case-slug","category":"crypto","emoji":"X","i18n":{"en":{"title":"...","excerpt":"...","body":["p1","p2","p3","p4","p5","p6"]}, ...all 17 langs}}]\n\n' +
 'HEADLINES:\n' + JSON.stringify(headlines.slice(0, 40), null, 1);

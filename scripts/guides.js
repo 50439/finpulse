@@ -137,7 +137,15 @@ function repairWalk(s) {
     if (inStr) {
       if (esc) { out += c; esc = false; continue; }
       if (c === '\\') { out += c; esc = true; continue; }
-      if (c === '"') { inStr = false; out += c; lastSig = '"'; continue; }
+      if (c === '"') {
+        // 05.09: неэкранированная кавычка внутри текста. Закрывающая кавычка
+        // может стоять только перед , } ] : или другой строкой (пропущенная запятая);
+        // всё остальное — цитата внутри строки, её экранируем и идём дальше.
+        const rest = s.slice(i + 1).match(/^\s*(.)/);
+        const closes = !rest || /[,}\]:"]/.test(rest[1]); // " — пропущенная запятая между строками
+        if (!closes) { out += '\\"'; continue; }
+        inStr = false; out += c; lastSig = '"'; continue;
+      }
       if (c === '\n') { out += '\\n'; continue; }
       if (c === '\r') { out += '\\r'; continue; }
       if (c === '\t') { out += '\\t'; continue; }
