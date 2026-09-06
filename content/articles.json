@@ -1,5 +1,235 @@
 [
  {
+  "slug": "tether-backed-orionx-shuts-down-7-million-custody-gap-g8fn",
+  "category": "crypto",
+  "emoji": "🔒",
+  "i18n": {
+   "en": {
+    "title": "Tether-Backed Orionx Exchange to Shut Down After Audit Reveals $7 Million Custody Gap",
+    "excerpt": "Chilean cryptocurrency exchange Orionx is permanently closing operations after an independent audit discovered more than $7 million in customer assets had been moved to wallets outside the platform's custody.",
+    "body": [
+     "Orionx, a Chilean cryptocurrency exchange backed by stablecoin giant Tether, announced it will permanently cease operations following the discovery of a significant custody shortfall. An independent audit revealed that more than $7 million in customer assets had been transferred to wallets outside the exchange's control, raising serious questions about the platform's internal controls and asset management practices.",
+     "The closure marks a significant setback for cryptocurrency adoption in Latin America, where Orionx had positioned itself as a regulated and trustworthy platform. Tether's backing had lent credibility to the exchange, making the custody breach particularly damaging to investor confidence in the region's digital asset infrastructure.",
+     "According to the audit findings, customer funds were moved without proper authorization or transparency, though the exact timeline and mechanism of the transfers remain unclear. The exchange has not disclosed whether the missing assets represent theft, mismanagement, or unauthorized loans to affiliated parties—a practice that has plagued several failed crypto platforms.",
+     "Orionx's shutdown adds to a growing list of regional exchange failures that have eroded trust in Latin American crypto markets. The platform had served thousands of users across Chile and neighboring countries, offering trading pairs in local currencies and positioning itself as a bridge between traditional finance and digital assets.",
+     "Customers now face an uncertain path to recovery. The exchange has not detailed a specific timeline or mechanism for returning remaining funds, and the $7 million shortfall suggests some users will suffer losses. Chilean financial regulators have yet to comment on whether they will pursue enforcement action or assist in asset recovery efforts.",
+     "For ordinary investors, the incident underscores the critical importance of custody verification and the risks of keeping significant funds on centralized exchanges. Despite regulatory registration and high-profile backing, Orionx failed basic custody standards that should protect customer assets from unauthorized movement.",
+     "The closure also raises questions about Tether's due diligence processes when partnering with regional exchanges. As the issuer of the world's largest stablecoin, Tether's association with platforms that experience custody failures can undermine confidence in the broader ecosystem it seeks to support."
+    ]
+   },
+   "uk": {
+    "title": "Біржа Orionx за підтримки Tether закривається після виявлення розриву в $7 мільйонів",
+    "excerpt": "Чилійська криптовалютна біржа Orionx назавжди припиняє роботу після того, як незалежний аудит виявив, що понад $7 мільйонів активів клієнтів було переміщено до гаманців поза контролем платформи.",
+    "body": [
+     "Orionx, чилійська криптовалютна біржа за підтримки гіганта стейблкоїнів Tether, оголосила про постійне припинення операцій після виявлення значного дефіциту зберігання. Незалежний аудит виявив, що понад $7 мільйонів активів клієнтів було переведено до гаманців поза контролем біржі, що викликає серйозні питання щодо внутрішнього контролю та практики управління активами платформи.",
+     "Закриття є значним ударом для впровадження криптовалют у Латинській Америці, де Orionx позиціонувала себе як регульовану та надійну платформу. Підтримка Tether надала біржі авторитетності, що робить порушення зберігання особливо шкідливим для довіри інвесторів до інфраструктури цифрових активів регіону.",
+     "Згідно з висновками аудиту, кошти клієнтів були переміщені без належної авторизації чи прозорості, хоча точний графік та механізм переказів залишаються неясними. Біржа не розкрила, чи являють собою відсутні активи крадіжку, неналежне управління чи несанкціоновані позики афілійованим сторонам—практику, яка переслідувала кілька збанкрутілих крипто-платформ.",
+     "Закриття Orionx додається до зростаючого списку регіональних бірж, які зазнали невдач та підірвали довіру до латиноамериканських крипто-ринків. Платформа обслуговувала тисячі користувачів у Чилі та сусідніх країнах, пропонуючи торгові пари в місцевих валютах і позиціонуючи себе як міст між традиційними фінансами та цифровими активами.",
+     "Клієнти тепер стикаються з невизначеним шляхом відновлення коштів. Біржа не надала конкретного графіка чи механізму повернення залишків коштів, а дефіцит у $7 мільйонів свідчить про те, що деякі користувачі зазнають збитків. Чилійські фінансові регулятори ще не прокоментували, чи будуть вони вживати заходів щодо примусового виконання або допомагати у відновленні активів.",
+     "Для звичайних інвесторів інцидент підкреслює критичну важливість перевірки зберігання та ризики зберігання значних коштів на централізованих біржах. Незважаючи на регуляторну реєстрацію та високопрофільну підтримку, Orionx не відповідала базовим стандартам зберігання, які повинні захищати активи клієнтів від несанкціонованого переміщення.",
+     "Закриття також викликає питання щодо процесів належної перевірки Tether при партнерстві з регіональними біржами. Як емітент найбільшого стейблкоїну у світі, асоціація Tether з платформами, які зазнають невдач у зберіганні, може підірвати довіру до ширшої екосистеми, яку вона прагне підтримувати."
+    ]
+   },
+   "ru": {
+    "title": "Биржа Orionx при поддержке Tether закрывается после обнаружения разрыва в $7 миллионов",
+    "excerpt": "Чилийская криптовалютная биржа Orionx навсегда прекращает работу после того, как независимый аудит обнаружил, что более $7 миллионов активов клиентов были перемещены в кошельки вне контроля платформы.",
+    "body": [
+     "Orionx, чилийская криптовалютная биржа при поддержке гиганта стейблкоинов Tether, объявила о постоянном прекращении операций после обнаружения значительного дефицита хранения. Независимый аудит выявил, что более $7 миллионов активов клиентов были переведены в кошельки вне контроля биржи, что вызывает серьезные вопросы относительно внутреннего контроля и практики управления активами платформы.",
+     "Закрытие является значительным ударом для внедрения криптовалют в Латинской Америке, где Orionx позиционировала себя как регулируемую и надежную платформу. Поддержка Tether придала бирже авторитетность, что делает нарушение хранения особенно вредным для доверия инвесторов к инфраструктуре цифровых активов региона.",
+     "Согласно выводам аудита, средства клиентов были перемещены без надлежащей авторизации или прозрачности, хотя точный график и механизм переводов остаются неясными. Биржа не раскрыла, представляют ли отсутствующие активы кражу, ненадлежащее управление или несанкционированные займы аффилированным сторонам—практику, которая преследовала несколько обанкротившихся крипто-платформ.",
+     "Закрытие Orionx добавляется к растущему списку региональных бирж, которые потерпели неудачу и подорвали доверие к латиноамериканским крипто-рынкам. Платформа обслуживала тысячи пользователей в Чили и соседних странах, предлагая торговые пары в местных валютах и позиционируя себя как мост между традиционными финансами и цифровыми активами.",
+     "Клиенты теперь сталкиваются с неопределенным путем возврата средств. Биржа не предоставила конкретного графика или механизма возврата оставшихся средств, а дефицит в $7 миллионов свидетельствует о том, что некоторые пользователи понесут убытки. Чилийские финансовые регуляторы пока не прокомментировали, будут ли они принимать меры принудительного исполнения или помогать в возврате активов.",
+     "Для обычных инвесторов инцидент подчеркивает критическую важность проверки хранения и риски хранения значительных средств на централизованных биржах. Несмотря на регуляторную регистрацию и высокопрофильную поддержку, Orionx не соответствовала базовым стандартам хранения, которые должны защищать активы клиентов от несанкционированного перемещения.",
+     "Закрытие также вызывает вопросы относительно процессов должной проверки Tether при партнерстве с региональными биржами. Как эмитент крупнейшего стейблкоина в мире, ассоциация Tether с платформами, которые испытывают сбои в хранении, может подорвать доверие к более широкой экосистеме, которую она стремится поддерживать."
+    ]
+   },
+   "es": {
+    "title": "El exchange Orionx respaldado por Tether cierra tras descubrir brecha de custodia de $7 millones",
+    "excerpt": "El exchange de criptomonedas chileno Orionx cierra permanentemente sus operaciones después de que una auditoría independiente descubriera que más de $7 millones en activos de clientes fueron trasladados a billeteras fuera del control de la plataforma.",
+    "body": [
+     "Orionx, un exchange de criptomonedas chileno respaldado por el gigante de stablecoins Tether, anunció que cesará permanentemente sus operaciones tras el descubrimiento de un déficit significativo de custodia. Una auditoría independiente reveló que más de $7 millones en activos de clientes habían sido transferidos a billeteras fuera del control del exchange, planteando serias preguntas sobre los controles internos y las prácticas de gestión de activos de la plataforma.",
+     "El cierre marca un revés significativo para la adopción de criptomonedas en América Latina, donde Orionx se había posicionado como una plataforma regulada y confiable. El respaldo de Tether había otorgado credibilidad al exchange, haciendo que la brecha de custodia sea particularmente perjudicial para la confianza de los inversores en la infraestructura de activos digitales de la región.",
+     "Según los hallazgos de la auditoría, los fondos de los clientes fueron trasladados sin autorización o transparencia adecuadas, aunque el cronograma exacto y el mecanismo de las transferencias permanecen poco claros. El exchange no ha revelado si los activos faltantes representan robo, mala gestión o préstamos no autorizados a partes afiliadas—una práctica que ha afectado a varias plataformas cripto fallidas.",
+     "El cierre de Orionx se suma a una lista creciente de quiebras de exchanges regionales que han erosionado la confianza en los mercados cripto latinoamericanos. La plataforma había servido a miles de usuarios en Chile y países vecinos, ofreciendo pares de negociación en monedas locales y posicionándose como un puente entre las finanzas tradicionales y los activos digitales.",
+     "Los clientes ahora enfrentan un camino incierto hacia la recuperación. El exchange no ha detallado un cronograma o mecanismo específico para devolver los fondos restantes, y el déficit de $7 millones sugiere que algunos usuarios sufrirán pérdidas. Los reguladores financieros chilenos aún no han comentado si emprenderán acciones de cumplimiento o asistirán en los esfuerzos de recuperación de activos.",
+     "Para los inversores ordinarios, el incidente subraya la importancia crítica de la verificación de custodia y los riesgos de mantener fondos significativos en exchanges centralizados. A pesar del registro regulatorio y el respaldo de alto perfil, Orionx no cumplió con los estándares básicos de custodia que deberían proteger los activos de los clientes del movimiento no autorizado.",
+     "El cierre también plantea preguntas sobre los procesos de debida diligencia de Tether al asociarse con exchanges regionales. Como emisor de la stablecoin más grande del mundo, la asociación de Tether con plataformas que experimentan fallas de custodia puede socavar la confianza en el ecosistema más amplio que busca apoyar."
+    ]
+   },
+   "pt": {
+    "title": "Exchange Orionx apoiada pela Tether encerra após auditoria revelar lacuna de custódia de $7 milhões",
+    "excerpt": "A exchange de criptomoedas chilena Orionx está encerrando permanentemente suas operações após uma auditoria independente descobrir que mais de $7 milhões em ativos de clientes foram movidos para carteiras fora do controle da plataforma.",
+    "body": [
+     "A Orionx, uma exchange de criptomoedas chilena apoiada pela gigante de stablecoins Tether, anunciou que cessará permanentemente suas operações após a descoberta de um déficit significativo de custódia. Uma auditoria independente revelou que mais de $7 milhões em ativos de clientes haviam sido transferidos para carteiras fora do controle da exchange, levantando questões sérias sobre os controles internos e as práticas de gestão de ativos da plataforma.",
+     "O encerramento marca um revés significativo para a adoção de criptomoedas na América Latina, onde a Orionx se posicionava como uma plataforma regulamentada e confiável. O apoio da Tether havia emprestado credibilidade à exchange, tornando a violação de custódia particularmente prejudicial para a confiança dos investidores na infraestrutura de ativos digitais da região.",
+     "De acordo com as conclusões da auditoria, os fundos dos clientes foram movidos sem autorização ou transparência adequadas, embora o cronograma exato e o mecanismo das transferências permaneçam obscuros. A exchange não revelou se os ativos ausentes representam roubo, má gestão ou empréstimos não autorizados a partes afiliadas—uma prática que afligiu várias plataformas cripto falidas.",
+     "O encerramento da Orionx se soma a uma lista crescente de falhas de exchanges regionais que corroeram a confiança nos mercados cripto latino-americanos. A plataforma havia servido milhares de usuários no Chile e países vizinhos, oferecendo pares de negociação em moedas locais e se posicionando como uma ponte entre finanças tradicionais e ativos digitais.",
+     "Os clientes agora enfrentam um caminho incerto para recuperação. A exchange não detalhou um cronograma ou mecanismo específico para devolver os fundos restantes, e o déficit de $7 milhões sugere que alguns usuários sofrerão perdas. Os reguladores financeiros chilenos ainda não comentaram se buscarão ação de execução ou assistirão nos esforços de recuperação de ativos.",
+     "Para investidores comuns, o incidente ressalta a importância crítica da verificação de custódia e os riscos de manter fundos significativos em exchanges centralizadas. Apesar do registro regulatório e do apoio de alto perfil, a Orionx falhou em padrões básicos de custódia que deveriam proteger os ativos dos clientes de movimentação não autorizada.",
+     "O encerramento também levanta questões sobre os processos de due diligence da Tether ao fazer parceria com exchanges regionais. Como emissora da maior stablecoin do mundo, a associação da Tether com plataformas que experimentam falhas de custódia pode minar a confiança no ecossistema mais amplo que busca apoiar."
+    ]
+   },
+   "de": {
+    "title": "Von Tether unterstützte Börse Orionx schließt nach Feststellung einer Verwahrungslücke von 7 Millionen Dollar",
+    "excerpt": "Die chilenische Kryptowährungsbörse Orionx schließt dauerhaft nach einer unabhängigen Prüfung, die ergab, dass mehr als 7 Millionen Dollar an Kundenvermögen in Wallets außerhalb der Kontrolle der Plattform verschoben wurden.",
+    "body": [
+     "Orionx, eine chilenische Kryptowährungsbörse, die vom Stablecoin-Riesen Tether unterstützt wird, kündigte die dauerhafte Einstellung des Betriebs nach der Entdeckung eines erheblichen Verwahrungsdefizits an. Eine unabhängige Prüfung ergab, dass mehr als 7 Millionen Dollar an Kundenvermögen in Wallets außerhalb der Kontrolle der Börse überwiesen wurden, was ernsthafte Fragen zu den internen Kontrollen und Asset-Management-Praktiken der Plattform aufwirft.",
+     "Die Schließung markiert einen erheblichen Rückschlag für die Einführung von Kryptowährungen in Lateinamerika, wo sich Orionx als regulierte und vertrauenswürdige Plattform positioniert hatte. Die Unterstützung durch Tether hatte der Börse Glaubwürdigkeit verliehen, was den Verwahrungsbruch besonders schädlich für das Vertrauen der Anleger in die digitale Asset-Infrastruktur der Region macht.",
+     "Laut den Prüfungsergebnissen wurden Kundengelder ohne ordnungsgemäße Autorisierung oder Transparenz verschoben, obwohl der genaue Zeitplan und Mechanismus der Überweisungen unklar bleiben. Die Börse hat nicht offengelegt, ob die fehlenden Vermögenswerte Diebstahl, Missmanagement oder unautorisierte Kredite an verbundene Parteien darstellen—eine Praxis, die mehrere gescheiterte Krypto-Plattformen geplagt hat.",
+     "Die Schließung von Orionx reiht sich in eine wachsende Liste regionaler Börsenpleiten ein, die das Vertrauen in lateinamerikanische Krypto-Märkte untergraben haben. Die Plattform hatte Tausende von Nutzern in Chile und Nachbarländern bedient, Handelspaare in lokalen Währungen angeboten und sich als Brücke zwischen traditionellen Finanzen und digitalen Assets positioniert.",
+     "Kunden sehen sich nun einem unsicheren Weg zur Rückforderung gegenüber. Die Börse hat keinen spezifischen Zeitplan oder Mechanismus für die Rückgabe verbleibender Gelder dargelegt, und das Defizit von 7 Millionen Dollar deutet darauf hin, dass einige Nutzer Verluste erleiden werden. Chilenische Finanzaufsichtsbehörden haben sich noch nicht dazu geäußert, ob sie Durchsetzungsmaßnahmen ergreifen oder bei der Wiederherstellung von Vermögenswerten helfen werden.",
+     "Für gewöhnliche Anleger unterstreicht der Vorfall die kritische Bedeutung der Verwahrungsüberprüfung und die Risiken, erhebliche Mittel auf zentralisierten Börsen zu halten. Trotz behördlicher Registrierung und hochkarätiger Unterstützung erfüllte Orionx keine grundlegenden Verwahrungsstandards, die Kundenvermögen vor unbefugter Bewegung schützen sollten.",
+     "Die Schließung wirft auch Fragen zu den Due-Diligence-Prozessen von Tether bei der Partnerschaft mit regionalen Börsen auf. Als Emittent des weltweit größten Stablecoins kann die Verbindung von Tether mit Plattformen, die Verwahrungsausfälle erleben, das Vertrauen in das breitere Ökosystem untergraben, das sie zu unterstützen versucht."
+    ]
+   },
+   "fr": {
+    "title": "L'exchange Orionx soutenu par Tether ferme après la découverte d'un écart de garde de 7 millions de dollars",
+    "excerpt": "L'exchange de cryptomonnaies chilien Orionx ferme définitivement ses portes après qu'un audit indépendant ait révélé que plus de 7 millions de dollars d'actifs clients avaient été transférés vers des portefeuilles hors du contrôle de la plateforme.",
+    "body": [
+     "Orionx, un exchange de cryptomonnaies chilien soutenu par le géant des stablecoins Tether, a annoncé qu'il cesserait définitivement ses opérations suite à la découverte d'un déficit de garde important. Un audit indépendant a révélé que plus de 7 millions de dollars d'actifs clients avaient été transférés vers des portefeuilles hors du contrôle de l'exchange, soulevant de sérieuses questions sur les contrôles internes et les pratiques de gestion d'actifs de la plateforme.",
+     "La fermeture marque un revers significatif pour l'adoption des cryptomonnaies en Amérique latine, où Orionx s'était positionné comme une plateforme réglementée et digne de confiance. Le soutien de Tether avait conféré de la crédibilité à l'exchange, rendant la violation de garde particulièrement préjudiciable à la confiance des investisseurs dans l'infrastructure des actifs numériques de la région.",
+     "Selon les conclusions de l'audit, les fonds des clients ont été déplacés sans autorisation ou transparence appropriées, bien que le calendrier exact et le mécanisme des transferts demeurent flous. L'exchange n'a pas révélé si les actifs manquants représentent un vol, une mauvaise gestion ou des prêts non autorisés à des parties affiliées—une pratique qui a affligé plusieurs plateformes crypto défaillantes.",
+     "La fermeture d'Orionx s'ajoute à une liste croissante de faillites d'exchanges régionaux qui ont érodé la confiance dans les marchés crypto latino-américains. La plateforme avait servi des milliers d'utilisateurs au Chili et dans les pays voisins, offrant des paires de trading en monnaies locales et se positionnant comme un pont entre la finance traditionnelle et les actifs numériques.",
+     "Les clients font maintenant face à un chemin incertain vers la récupération. L'exchange n'a pas détaillé de calendrier ou de mécanisme spécifique pour restituer les fonds restants, et le déficit de 7 millions de dollars suggère que certains utilisateurs subiront des pertes. Les régulateurs financiers chiliens n'ont pas encore commenté s'ils poursuivront des actions d'application ou aideront dans les efforts de récupération d'actifs.",
+     "Pour les investisseurs ordinaires, l'incident souligne l'importance critique de la vérification de garde et les risques de conserver des fonds importants sur des exchanges centralisés. Malgré l'enregistrement réglementaire et le soutien de haut niveau, Orionx n'a pas respecté les normes de garde de base qui devraient protéger les actifs des clients contre les mouvements non autorisés.",
+     "La fermeture soulève également des questions sur les processus de diligence raisonnable de Tether lors de partenariats avec des exchanges régionaux. En tant qu'émetteur du plus grand stablecoin au monde, l'association de Tether avec des plateformes qui connaissent des défaillances de garde peut saper la confiance dans l'écosystème plus large qu'elle cherche à soutenir."
+    ]
+   },
+   "ar": {
+    "title": "بورصة Orionx المدعومة من Tether تغلق بعد اكتشاف فجوة حفظ بقيمة 7 ملايين دولار",
+    "excerpt": "تغلق بورصة العملات المشفرة التشيلية Orionx عملياتها بشكل دائم بعد أن كشف تدقيق مستقل أن أكثر من 7 ملايين دولار من أصول العملاء تم نقلها إلى محافظ خارج سيطرة المنصة.",
+    "body": [
+     "أعلنت Orionx، بورصة العملات المشفرة التشيلية المدعومة من عملاق العملات المستقرة Tether، أنها ستوقف عملياتها بشكل دائم بعد اكتشاف عجز كبير في الحفظ. كشف تدقيق مستقل أن أكثر من 7 ملايين دولار من أصول العملاء تم تحويلها إلى محافظ خارج سيطرة البورصة، مما يثير أسئلة جدية حول الضوابط الداخلية وممارسات إدارة الأصول للمنصة.",
+     "يمثل الإغلاق نكسة كبيرة لاعتماد العملات المشفرة في أمريكا اللاتينية، حيث كانت Orionx قد وضعت نفسها كمنصة منظمة وجديرة بالثقة. لقد منح دعم Tether مصداقية للبورصة، مما يجعل خرق الحفظ ضارًا بشكل خاص لثقة المستثمرين في البنية التحتية للأصول الرقمية في المنطقة.",
+     "وفقًا لنتائج التدقيق، تم نقل أموال العملاء دون تفويض أو شفافية مناسبة، على الرغم من أن الجدول الزمني الدقيق وآلية التحويلات لا تزال غير واضحة. لم تكشف البورصة عما إذا كانت الأصول المفقودة تمثل سرقة أو سوء إدارة أو قروض غير مصرح بها لأطراف منتسبة—ممارسة ابتليت بها العديد من منصات التشفير الفاشلة.",
+     "يضاف إغلاق Orionx إلى قائمة متزايدة من حالات فشل البورصات الإقليمية التي أضعفت الثقة في أسواق التشفير في أمريكا اللاتينية. كانت المنصة قد خدمت آلاف المستخدمين في تشيلي والدول المجاورة، حيث قدمت أزواج تداول بالعملات المحلية ووضعت نفسها كجسر بين التمويل التقليدي والأصول الرقمية.",
+     "يواجه العملاء الآن مسارًا غير مؤكد للاسترداد. لم تفصل البورصة جدولًا زمنيًا أو آلية محددة لإعادة الأموال المتبقية، والعجز البالغ 7 ملايين دولار يشير إلى أن بعض المستخدمين سيتكبدون خسائر. لم يعلق المنظمون الماليون التشيليون بعد على ما إذا كانوا سيتابعون إجراءات تنفيذ أو يساعدون في جهود استرداد الأصول.",
+     "بالنسبة للمستثمرين العاديين، يؤكد الحادث على الأهمية الحاسمة للتحقق من الحفظ ومخاطر الاحتفاظ بأموال كبيرة في البورصات المركزية. على الرغم من التسجيل التنظيمي والدعم البارز، فشلت Orionx في معايير الحفظ الأساسية التي يجب أن تحمي أصول العملاء من الحركة غير المصرح بها.",
+     "يثير الإغلاق أيضًا أسئلة حول عمليات العناية الواجبة لـ Tether عند الشراكة مع البورصات الإقليمية. كمُصدر لأكبر عملة مستقرة في العالم، يمكن أن يؤدي ارتباط Tether مع المنصات التي تواجه إخفاقات في الحفظ إلى تقويض الثقة في النظام البيئي الأوسع الذي تسعى لدعمه."
+    ]
+   },
+   "zh": {
+    "title": "Tether支持的Orionx交易所因审计发现700万美元托管缺口而关闭",
+    "excerpt": "智利加密货币交易所Orionx在独立审计发现超过700万美元的客户资产被转移到平台控制之外的钱包后，宣布永久关闭运营。",
+    "body": [
+     "Orionx是一家由稳定币巨头Tether支持的智利加密货币交易所，在发现重大托管缺口后宣布将永久停止运营。一项独立审计显示，超过700万美元的客户资产被转移到交易所控制之外的钱包中，这引发了对该平台内部控制和资产管理实践的严重质疑。",
+     "这次关闭标志着拉丁美洲加密货币采用的重大挫折，Orionx曾将自己定位为一个受监管且值得信赖的平台。Tether的支持为该交易所提供了信誉，这使得托管漏洞对该地区数字资产基础设施的投资者信心造成了特别大的损害。",
+     "根据审计结果，客户资金在没有适当授权或透明度的情况下被转移，尽管转账的确切时间表和机制仍不清楚。交易所没有披露缺失的资产是代表盗窃、管理不善还是向关联方提供的未经授权贷款——这种做法困扰了几个失败的加密平台。",
+     "Orionx的关闭增加了一长串导致拉丁美洲加密市场信任度下降的区域交易所失败案例。该平台曾为智利和邻国的数千名用户提供服务，提供本地货币交易对，并将自己定位为传统金融与数字资产之间的桥梁。",
+     "客户现在面临不确定的追回途径。交易所没有详细说明返还剩余资金的具体时间表或机制，700万美元的缺口表明一些用户将遭受损失。智利金融监管机构尚未就是否会采取执法行动或协助资产追回工作发表评论。",
+     "对于普通投资者来说，这一事件强调了托管验证的关键重要性，以及在中心化交易所持有大量资金的风险。尽管有监管注册和知名支持，Orionx未能达到应该保护客户资产免受未经授权转移的基本托管标准。",
+     "这次关闭还引发了关于Tether在与区域交易所合作时的尽职调查流程的问题。作为世界上最大稳定币的发行者，Tether与经历托管失败的平台的关联可能会损害它试图支持的更广泛生态系统的信心。"
+    ]
+   },
+   "hi": {
+    "title": "Tether समर्थित Orionx एक्सचेंज $7 मिलियन की कस्टडी कमी के बाद बंद हो रहा है",
+    "excerpt": "चिली की क्रिप्टोकरेंसी एक्सचेंज Orionx स्थायी रूप से बंद हो रही है क्योंकि एक स्वतंत्र ऑडिट में पता चला कि $7 मिलियन से अधिक ग्राहक संपत्ति प्लेटफॉर्म के नियंत्रण के बाहर वॉलेट में स्थानांतरित की गई थी।",
+    "body": [
+     "Orionx, एक चिली की क्रिप्टोकरेंसी एक्सचेंज जो स्टेबलकॉइन दिग्गज Tether द्वारा समर्थित है, ने एक महत्वपूर्ण कस्टडी कमी की खोज के बाद स्थायी रूप से संचालन बंद करने की घोषणा की। एक स्वतंत्र ऑडिट में पता चला कि $7 मिलियन से अधिक ग्राहक संपत्ति एक्सचेंज के नियंत्रण के बाहर वॉलेट में स्थानांतरित की गई थी, जिससे प्लेटफॉर्म के आंतरिक नियंत्रण और परिसंपत्ति प्रबंधन प्रथाओं के बारे में गंभीर सवाल उठते हैं।",
+     "यह बंद लैटिन अमेरिका में क्रिप्टोकरेंसी अपनाने के लिए एक महत्वपूर्ण झटका है, जहां Orionx ने खुद को एक विनियमित और भरोसेमंद प्लेटफॉर्म के रूप में स्थापित किया था। Tether के समर्थन ने एक्सचेंज को विश्वसनीयता प्रदान की थी, जिससे कस्टडी उल्लंघन क्षेत्र के डिजिटल संपत्ति बुनियादी ढांचे में निवेशक विश्वास के लिए विशेष रूप से हानिकारक हो गया।",
+     "ऑडिट के निष्कर्षों के अनुसार, ग्राहक फंड बिना उचित प्राधिकरण या पारदर्शिता के स्थानांतरित किए गए, हालांकि स्थानांतरण की सटीक समय-सीमा और तंत्र अस्पष्ट रहते हैं। एक्सचेंज ने यह खुलासा नहीं किया है कि क्या गायब संपत्ति चोरी, कुप्रबंधन या सहयोगी पक्षों को अनधिकृत ऋण का प्रतिनिधित्व करती है—एक ऐसी प्रथा जिसने कई असफल क्रिप्टो प्लेटफॉर्मों को परेशान किया है।",
+     "Orionx का बंद होना क्षेत्रीय एक्सचेंज विफलताओं की बढ़ती सूची में जोड़ता है जिसने लैटिन अमेरिकी क्रिप्टो बाजारों में विश्वास को कम किया है। प्लेटफॉर्म ने चिली और पड़ोसी देशों में हजारों उपयोगकर्ताओं की सेवा की थी, स्थानीय मुद्राओं में ट्रेडिंग जोड़ियों की पेशकश की और खुद को पारंपरिक वित्त और डिजिटल संपत्ति के बीच एक पुल के रूप में स्थापित किया।",
+     "ग्राहक अब रिकवरी के लिए एक अनिश्चित रास्ते का सामना कर रहे हैं। एक्सचेंज ने शेष फंड वापस करने के लिए एक विशिष्ट समय-सीमा या तंत्र का विवरण नहीं दिया है, और $7 मिलियन की कमी बताती है कि कुछ उपयोगकर्ताओं को नुकसान उठाना होगा। चिली के वित्तीय नियामकों ने अभी तक यह टिप्पणी नहीं की है कि क्या वे प्रवर्तन कार्रवाई करेंगे या परिसंपत्ति रिकवरी प्रयासों में सहायता करेंगे।",
+     "साधारण निवेशकों के लिए, यह घटना कस्टडी सत्यापन के महत्वपूर्ण महत्व और केंद्रीकृत एक्सचेंजों पर महत्वपूर्ण धन रखने के जोखिमों को रेखांकित करती है। नियामक पंजीकरण और उच्च-प्रोफ़ाइल समर्थन के बावजूद, Orionx बुनियादी कस्टडी मानकों को पूरा करने में विफल रहा जो ग्राहक संपत्ति को अनधिकृत आंदोलन से बचाना चाहिए था।",
+     "बंद होना Tether की उचित परिश्रम प्रक्रियाओं के बारे में भी सवाल उठाता है जब क्षेत्रीय एक्सचेंजों के साथ साझेदारी होती है। दुनिया के सबसे बड़े स्टेबलकॉइन के जारीकर्ता के रूप में, कस्टडी विफलताओं का अनुभव करने वाले प्लेटफार्मों के साथ Tether का जुड़ाव उस व्यापक पारिस्थितिकी तंत्र में विश्वास को कम कर सकता है जिसे वह समर्थन देने की कोशिश करता है।"
+    ]
+   },
+   "id": {
+    "title": "Bursa Orionx yang Didukung Tether Tutup Setelah Audit Ungkap Kesenjangan Kustodi $7 Juta",
+    "excerpt": "Bursa cryptocurrency Chile, Orionx, menutup operasi secara permanen setelah audit independen menemukan lebih dari $7 juta aset pelanggan telah dipindahkan ke dompet di luar kendali platform.",
+    "body": [
+     "Orionx, bursa cryptocurrency Chile yang didukung oleh raksasa stablecoin Tether, mengumumkan akan menghentikan operasi secara permanen setelah penemuan defisit kustodi yang signifikan. Audit independen mengungkapkan bahwa lebih dari $7 juta aset pelanggan telah ditransfer ke dompet di luar kendali bursa, menimbulkan pertanyaan serius tentang kontrol internal dan praktik manajemen aset platform.",
+     "Penutupan ini menandai kemunduran signifikan bagi adopsi cryptocurrency di Amerika Latin, di mana Orionx telah memposisikan dirinya sebagai platform yang diatur dan dapat dipercaya. Dukungan Tether telah memberikan kredibilitas kepada bursa, membuat pelanggaran kustodi menjadi sangat merugikan kepercayaan investor dalam infrastruktur aset digital wilayah tersebut.",
+     "Menurut temuan audit, dana pelanggan dipindahkan tanpa otorisasi atau transparansi yang tepat, meskipun timeline pasti dan mekanisme transfer tetap tidak jelas. Bursa belum mengungkapkan apakah aset yang hilang mewakili pencurian, salah kelola, atau pinjaman tidak sah kepada pihak afiliasi—praktik yang telah menimpa beberapa platform kripto yang gagal.",
+     "Penutupan Orionx menambah daftar yang terus bertambah dari kegagalan bursa regional yang telah mengikis kepercayaan pada pasar kripto Amerika Latin. Platform ini telah melayani ribuan pengguna di Chile dan negara-negara tetangga, menawarkan pasangan perdagangan dalam mata uang lokal dan memposisikan diri sebagai jembatan antara keuangan tradisional dan aset digital.",
+     "Pelanggan kini menghadapi jalur pemulihan yang tidak pasti. Bursa belum merinci timeline atau mekanisme spesifik untuk mengembalikan dana yang tersisa, dan defisit $7 juta menunjukkan bahwa beberapa pengguna akan mengalami kerugian. Regulator keuangan Chile belum berkomentar apakah mereka akan mengejar tindakan penegakan atau membantu dalam upaya pemulihan aset.",
+     "Bagi investor biasa, insiden ini menggarisbawahi pentingnya verifikasi kustodi yang kritis dan risiko menyimpan dana signifikan di bursa terpusat. Meskipun ada registrasi regulasi dan dukungan profil tinggi, Orionx gagal memenuhi standar kustodi dasar yang seharusnya melindungi aset pelanggan dari perpindahan tidak sah.",
+     "Penutupan ini juga menimbulkan pertanyaan tentang proses uji tuntas Tether ketika bermitra dengan bursa regional. Sebagai penerbit stablecoin terbesar di dunia, asosiasi Tether dengan platform yang mengalami kegagalan kustodi dapat merusak kepercayaan pada ekosistem yang lebih luas yang ingin didukungnya."
+    ]
+   },
+   "vi": {
+    "title": "Sàn Orionx được Tether hỗ trợ đóng cửa sau khi phát hiện khoảng trống lưu ký 7 triệu USD",
+    "excerpt": "Sàn giao dịch tiền điện tử Chile Orionx đang đóng cửa vĩnh viễn sau khi một cuộc kiểm toán độc lập phát hiện hơn 7 triệu USD tài sản khách hàng đã được chuyển đến các ví ngoài tầm kiểm soát của nền tảng.",
+    "body": [
+     "Orionx, một sàn giao dịch tiền điện tử Chile được hỗ trợ bởi gã khổng lồ stablecoin Tether, đã thông báo sẽ ngừng hoạt động vĩnh viễn sau khi phát hiện một khoản thiếu hụt lưu ký đáng kể. Một cuộc kiểm toán độc lập cho thấy hơn 7 triệu USD tài sản khách hàng đã được chuyển đến các ví ngoài tầm kiểm soát của sàn giao dịch, đặt ra những câu hỏi nghiêm túc về kiểm soát nội bộ và thực hành quản lý tài sản của nền tảng.",
+     "Việc đóng cửa đánh dấu một thất bại đáng kể đối với việc áp dụng tiền điện tử ở Mỹ Latin, nơi Orionx đã định vị mình như một nền tảng được quy định và đáng tin cậy. Sự hỗ trợ của Tether đã mang lại uy tín cho sàn giao dịch, khiến vi phạm lưu ký đặc biệt gây thiệt hại cho niềm tin của nhà đầu tư vào cơ sở hạ tầng tài sản kỹ thuật số của khu vực.",
+     "Theo kết quả kiểm toán, quỹ khách hàng đã được chuyển mà không có sự cho phép hoặc minh bạch thích hợp, mặc dù thời gian chính xác và cơ chế chuyển khoản vẫn chưa rõ ràng. Sàn giao dịch chưa tiết lộ liệu các tài sản bị mất đại diện cho hành vi trộm cắp, quản lý sai hay cho vay trái phép cho các bên liên kết—một thực hành đã gây khó khăn cho nhiều nền tảng crypto thất bại.",
+     "Việc đóng cửa của Orionx được thêm vào danh sách ngày càng tăng các sàn giao dịch khu vực thất bại đã làm xói mòn niềm tin vào thị trường crypto Mỹ Latin. Nền tảng đã phục vụ hàng nghìn người dùng ở Chile và các nước láng giềng, cung cấp các cặp giao dịch bằng tiền tệ địa phương và định vị mình như một cây cầu giữa tài chính truyền thống và tài sản kỹ thuật số.",
+     "Khách hàng hiện đối mặt với con đường phục hồi không chắc chắn. Sàn giao dịch chưa nêu chi tiết lịch trình hoặc cơ chế cụ thể để hoàn trả các khoản tiền còn lại, và khoản thiếu hụt 7 triệu USD cho thấy một số người dùng sẽ phải chịu thua lỗ. Các cơ quan quản lý tài chính Chile chưa bình luận về việc họ có thực hiện hành động thực thi hay hỗ trợ trong nỗ lực thu hồi tài sản hay không.",
+     "Đối với các nhà đầu tư thông thường, sự cố này nhấn mạnh tầm quan trọng thiết yếu của việc xác minh lưu ký và rủi ro khi giữ số tiền đáng kể trên các sàn giao dịch tập trung. Mặc dù có đăng ký quy định và sự hỗ trợ nổi bật, Orionx đã không đáp ứng các tiêu chuẩn lưu ký cơ bản mà lẽ ra phải bảo vệ tài sản khách hàng khỏi sự di chuyển trái phép.",
+     "Việc đóng cửa cũng đặt ra câu hỏi về quy trình thẩm định của Tether khi hợp tác với các sàn giao dịch khu vực. Với tư cách là nhà phát hành stablecoin lớn nhất thế giới, sự liên kết của Tether với các nền tảng gặp phải thất bại về lưu ký có thể làm suy yếu niềm tin vào hệ sinh thái rộng lớn hơn mà nó tìm cách hỗ trợ."
+    ]
+   },
+   "tr": {
+    "title": "Tether Destekli Orionx Borsası 7 Milyon Dolarlık Saklama Açığının Ardından Kapanıyor",
+    "excerpt": "Şili kripto para borsası Orionx, bağımsız bir denetimde 7 milyon doların üzerinde müşteri varlığının platform kontrolü dışındaki cüzdanlara taşındığının ortaya çıkmasının ardından kalıcı olarak faaliyetlerini durduruyor.",
+    "body": [
+     "Stablecoin devi Tether tarafından desteklenen Şili kripto para borsası Orionx, önemli bir saklama açığının keşfinin ardından faaliyetlerini kalıcı olarak durduracağını duyurdu. Bağımsız bir denetim, 7 milyon doların üzerinde müşteri varlığının borsa kontrolü dışındaki cüzdanlara aktarıldığını ortaya çıkararak platformun iç kontrolleri ve varlık yönetimi uygulamaları hakkında ciddi sorular gündeme getirdi.",
+     "Kapanış, Orionx'un kendini düzenlenmiş ve güvenilir bir platform olarak konumlandırdığı Latin Amerika'da kripto para benimsenmesi için önemli bir gerilemeyi işaret ediyor. Tether'ın desteği borsaya güvenilirlik kazandırmıştı, bu da saklama ihlalini bölgenin dijital varlık altyapısına yatırımcı güveni için özellikle zarar verici hale getiriyor.",
+     "Denetim bulgularına göre, müşteri fonları uygun yetkilendirme veya şeffaflık olmadan taşındı, ancak transferlerin tam zaman çizelgesi ve mecanizması belirsiz kalıyor. Borsa, eksik varlıkların hırsızlık, kötü yönetim veya bağlı taraflara yetkisiz krediler mi temsil ettiğini açıklamadı—birkaç başarısız kripto platformunu rahatsız eden bir uygulama.",
+     "Orionx'un kapanması, Latin Amerika kripto piyasalarına olan güveni aşındıran bölgesel borsa başarısızlıklarının artan listesine ekleniyor. Platform, Şili ve komşu ülkelerdeki binlerce kullanıcıya hizmet vermiş, yerel para birimlerinde işlem çiftleri sunmuş ve kendini geleneksel finans ile dijital varlıklar arasında bir köprü olarak konumlandırmıştı.",
+     "Müşteriler şimdi belirsiz bir geri kazanım yoluyla karşı karşıya. Borsa, kalan fonları iade etmek için belirli bir zaman çizelgesi veya mekanizma detaylandırmadı ve 7 milyon dolarlık açık, bazı kullanıcıların kayıplar yaşayacağını gösteriyor. Şili mali düzenleyicileri, uygulama önlemi alıp almayacakları veya varlık kurtarma çabalarına yardımcı olup olmayacakları konusunda henüz yorum yapmadı.",
+     "Sıradan yatırımcılar için olay, saklama doğrulamasının kritik önemini ve merkezi borsalarda önemli fonlar tutmanın risklerini vurguluyor. Düzenleyici kayıt ve yüksek profilli desteğe rağmen, Orionx müşteri varlıklarını yetkisiz hareketten koruması gereken temel saklama standartlarını karşılamadı.",
+     "Kapanış ayrıca Tether'ın bölgesel borsalarla ortaklık kurarken gerekli özeni gösterme süreçleri hakkında sorular ortaya çıkarıyor. Dünyanın en büyük stablecoin'inin ihraççısı olarak, Tether'ın saklama başarısızlıkları yaşayan platformlarla ilişkisi, desteklemeye çalıştığı daha geniş ekosisteme olan güveni zedeleyebilir."
+    ]
+   },
+   "ja": {
+    "title": "Tether支援のOrionx取引所、700万ドルのカストディギャップ発覚後に閉鎖",
+    "excerpt": "チリの仮想通貨取引所Orionxは、独立監査により700万ドルを超える顧客資産がプラットフォームの管理外のウォレットに移動されていたことが判明したため、永久に閉鎖される。",
+    "body": [
+     "ステーブルコイン大手Tetherに支援されたチリの仮想通貨取引所Orionxは、重大なカストディ不足の発見を受けて、事業を永久に停止すると発表した。独立監査により、700万ドルを超える顧客資産が取引所の管理外のウォレットに移動されていたことが明らかになり、プラットフォームの内部統制と資産管理慣行について深刻な疑問が投げかけられている。",
+     "この閉鎖は、Orionxが規制された信頼できるプラットフォームとして位置づけていたラテンアメリカにおける仮想通貨採用の大きな後退を示している。Tetherの支援は取引所に信頼性を与えていたため、カストディ違反は地域のデジタル資産インフラに対する投資家の信頼に特に有害である。",
+     "監査結果によると、顧客資金は適切な承認や透明性なしに移動されたが、送金の正確なタイムラインとメカニズムは不明のままである。取引所は、不足している資産が盗難、管理ミス、関連当事者への無許可融資のいずれを表すかを明らかにしていない。これは、いくつかの失敗した仮想通貨プラットフォームを悩ませてきた慣行である。",
+     "Orionxの閉鎖は、ラテンアメリカの仮想通貨市場への信頼を損なってきた地域取引所の失敗の増加リストに追加される。このプラットフォームは、チリと近隣諸国の数千人のユーザーにサービスを提供し、現地通貨での取引ペアを提供し、伝統的な金融とデジタル資産の架け橋として位置づけていた。",
+     "顧客は今、不確実な回復への道に直面している。取引所は、残りの資金を返還するための具体的なタイムラインやメカニズムを詳述しておらず、700万ドルの不足は一部のユーザーが損失を被ることを示唆している。チリの金融規制当局は、執行措置を追求するか、資産回収努力を支援するかについてまだコメントしていない。",
+     "一般投資家にとって、この事件はカストディ検証の重要性と、集中型取引所に多額の資金を保管するリスクを強調している。規制当局への登録と著名な支援にもかかわらず、Orionxは顧客資産を不正な移動から保護すべき基本的なカストディ基準を満たしていなかった。",
+     "この閉鎖は、Tetherが地域取引所と提携する際のデューデリジェンスプロセスについても疑問を提起している。世界最大のステーブルコインの発行者として、カストディの失敗を経験するプラットフォームとのTetherの関連は、それが支援しようとしているより広範なエコシステムへの信頼を損なう可能性がある。"
+    ]
+   },
+   "ko": {
+    "title": "Tether 지원 Orionx 거래소, 700만 달러 보관 격차 발견 후 폐쇄",
+    "excerpt": "칠레 암호화폐 거래소 Orionx가 독립 감사를 통해 700만 달러 이상의 고객 자산이 플랫폼 통제 밖의 지갑으로 이동된 것으로 밝혀진 후 영구적으로 운영을 중단한다.",
+    "body": [
+     "스테이블코인 거대 기업 Tether의 지원을 받는 칠레 암호화폐 거래소 Orionx가 상당한 보관 부족 발견 후 영구적으로 운영을 중단한다고 발표했다. 독립 감사에서 700만 달러 이상의 고객 자산이 거래소 통제 밖의 지갑으로 이동된 것으로 밝혀져 플랫폼의 내부 통제 및 자산 관리 관행에 대한 심각한 의문이 제기되고 있다.",
+     "이번 폐쇄는 Orionx가 규제되고 신뢰할 수 있는 플랫폼으로 자리매김했던 라틴 아메리카의 암호화폐 채택에 대한 중대한 후퇴를 의미한다. Tether의 지원은 거래소에 신뢰성을 부여했으며, 이는 보관 위반이 지역 디지털 자산 인프라에 대한 투자자 신뢰에 특히 해로운 영향을 미치게 한다.",
+     "감사 결과에 따르면, 고객 자금은 적절한 승인이나 투명성 없이 이동되었지만 송금의 정확한 일정과 메커니즘은 불분명한 상태다. 거래소는 누락된 자산이 도난, 부실 관리, 계열사에 대한 무단 대출 중 무엇을 나타내는지 밝히지 않았다. 이는 여러 실패한 암호화폐 플랫폼을 괴롭혀온 관행이다.",
+     "Orionx의 폐쇄는 라틴 아메리카 암호화폐 시장에 대한 신뢰를 잠식해온 지역 거래소 실패의 증가하는 목록에 추가된다. 이 플랫폼은 칠레와 인접 국가의 수천 명의 사용자에게 서비스를 제공하며 현지 통화로 거래 쌍을 제공하고 전통적인 금융과 디지털 자산 사이의 다리로 자리매김했다.",
+     "고객들은 이제 불확실한 회수 경로에 직면해 있다. 거래소는 남은 자금을 반환하기 위한 구체적인 일정이나 메커니즘을 상세히 밝히지 않았으며, 700만 달러의 부족액은 일부 사용자가 손실을 입을 것임을 시사한다. 칠레 금융 규제 당국은 집행 조치를 추진하거나 자산 회수 노력을 지원할지에 대해 아직 언급하지 않았다.",
+     "일반 투자자에게 이 사건은 보관 검증의 중요성과 중앙화된 거래소에 상당한 자금을 보관하는 위험을 강조한다. 규제 등록 및 유명 지원에도 불구하고 Orionx는 고객 자산을 무단 이동으로부터 보호해야 하는 기본 보관 기준을 충족하지 못했다.",
+     "이번 폐쇄는 또한 Tether가 지역 거래소와 파트너십을 맺을 때의 실사 프로세스에 대한 의문을 제기한다. 세계 최대 스테이블코인의 발행자로서, 보관 실패를 경험하는 플랫폼과 Tether의 연관은 지원하려는 더 넓은 생태계에 대한 신뢰를 약화시킬 수 있다."
+    ]
+   },
+   "pl": {
+    "title": "Giełda Orionx wspierana przez Tether zamyka się po wykryciu luki w przechowywaniu o wartości 7 mln USD",
+    "excerpt": "Chilijska giełda kryptowalut Orionx trwale kończy działalność po tym, jak niezależny audyt ujawnił, że ponad 7 milionów dolarów aktywów klientów zostało przeniesionych do portfeli poza kontrolą platformy.",
+    "body": [
+     "Orionx, chilijska giełda kryptowalut wspierana przez giganta stablecoinów Tether, ogłosiła, że trwale zakończy działalność po odkryciu znacznego niedoboru w przechowywaniu. Niezależny audyt ujawnił, że ponad 7 milionów dolarów aktywów klientów zostało przeniesionych do portfeli poza kontrolą giełdy, co wywołuje poważne pytania dotyczące wewnętrznych kontroli i praktyk zarządzania aktywami platformy.",
+     "Zamknięcie stanowi znaczący cofnięcie dla adopcji kryptowalut w Ameryce Łacińskiej, gdzie Orionx pozycjonował się jako regulowana i godna zaufania platforma. Wsparcie Tethera nadało giełdzie wiarygodność, co sprawia, że naruszenie przechowywania jest szczególnie szkodliwe dla zaufania inwestorów do infrastruktury aktywów cyfrowych regionu.",
+     "Zgodnie z ustaleniami audytu, środki klientów zostały przeniesione bez odpowiedniego upoważnienia lub przejrzystości, chociaż dokładny harmonogram i mechanizm transferów pozostają niejasne. Giełda nie ujawniła, czy brakujące aktywa reprezentują kradzież, złe zarządzanie czy nieuprawnione pożyczki dla podmiotów powiązanych—praktykę, która nękała kilka nieudanych platform kryptowalutowych.",
+     "Zamknięcie Orionx dodaje się do rosnącej listy niepowodzeń giełd regionalnych, które podważyły zaufanie do rynków kryptowalutowych Ameryki Łacińskiej. Platforma obsługiwała tysiące użytkowników w Chile i sąsiednich krajach, oferując pary handlowe w lokalnych walutach i pozycjonując się jako pomost między tradycyjnymi finansami a aktywami cyfrowymi.",
+     "Klienci stoją teraz przed niepewną ścieżką odzyskania środków. Giełda nie przedstawiła szczegółowego harmonogramu ani mechanizmu zwrotu pozostałych środków, a niedobór 7 milionów dolarów sugeruje, że niektórzy użytkownicy poniosą straty. Chilijskie organy nadzoru finansowego nie skomentowały jeszcze, czy będą dążyć do działań egzekucyjnych czy pomogą w wysiłkach odzyskania aktywów.",
+     "Dla zwykłych inwestorów incydent podkreśla kluczowe znaczenie weryfikacji przechowywania i ryzyka przechowywania znacznych środków na scentralizowanych giełdach. Pomimo rejestracji regulacyjnej i wsparcia z wysokiego szczebla, Orionx nie spełnił podstawowych standardów przechowywania, które powinny chronić aktywa klientów przed nieautoryzowanym przemieszczeniem.",
+     "Zamknięcie wywołuje również pytania dotyczące procesów należytej staranności Tethera podczas partnerstwa z giełdami regionalnymi. Jako emitent największego stablecoina na świecie, powiązanie Tethera z platformami doświadczającymi niepowodzeń w przechowywaniu może podważyć zaufanie do szerszego ekosystemu, który stara się wspierać."
+    ]
+   },
+   "th": {
+    "title": "เหรียญเทเธอร์ที่สนับสนุน Orionx ปิดตัวหลังพบช่องว่างการเก็บรักษา 7 ล้านดอลลาร์",
+    "excerpt": "ตลาดซื้อขายคริปโตสกุลเงินชิลี Orionx กำลังปิดการดำเนินงานอย่างถาวรหลังจากการตรวจสอบอิสระพบว่ามีสินทรัพย์ของลูกค้ามากกว่า 7 ล้านดอลลาร์ถูกย้ายไปยังกระเป๋าเงินนอกเหนือการควบคุมของแพลตฟอร์ม",
+    "body": [
+     "Orionx ตลาดซื้อขายคริปโตสกุลเงินชิลีที่ได้รับการสนับสนุนจากยักษ์ใหญ่ stablecoin Tether ได้ประกาศว่าจะหยุดการดำเนินงานอย่างถาวรหลังจากพบการขาดดุลการเก็บรักษาที่สำคัญ การตรวจสอบอิสระเผยให้เห็นว่าสินทรัพย์ของลูกค้ามากกว่า 7 ล้านดอลลาร์ถูกโอนไปยังกระเป๋าเงินนอกเหนือการควบคุมของตลาด ทำให้เกิดคำถามร้ายแรงเกี่ยวกับการควบคุมภายในและแนวปฏิบัติในการจัดการสินทรัพย์ของแพลตฟอร์ม",
+     "การปิดตัวนี้เป็นการถอยหลังที่สำคัญสำหรับการนำคริปโตสกุลเงินมาใช้ในละตินอเมริกา ซึ่ง Orionx ได้วางตำแหน่งตัวเองเป็นแพลตฟอร์มที่ได้รับการควบคุมและน่าเชื่อถือ การสนับสนุนจาก Tether ได้ให้ความน่าเชื่อถือแก่ตลาด ทำให้การละเมิดการเก็บรักษาเป็นอันตรายอย่างยิ่งต่อความเชื่อมั่นของนักลงทุนในโครงสร้างพื้นฐานสินทรัพย์ดิจิทัลของภูมิภาค",
+     "ตามผลการตรวจสอบ เงินทุนของลูกค้าถูกย้ายโดยไม่มีการอนุมัติหรือความโปร่งใสที่เหมาะสม แม้ว่าไทม์ไลน์ที่แน่นอนและกลไกของการโอนยังคงไม่ชัดเจน ตลาดไม่ได้เปิดเผยว่าสินทรัพย์ที่หายไปเป็นตัวแทนของการขโมย การจัดการที่ไม่ดี หรือการให้กู้ยืมที่ไม่ได้รับอนุญาตแก่ฝ่ายที่เกี่ยวข้อง—การปฏิบัติที่ได้รบกวนแพลตฟอร์มคริปโตหลายแห่งที่ล้มเหลว",
+     "การปิดตัวของ Orionx เพิ่มเข้าไปในรายการที่เพิ่มขึ้นของความล้มเหลวของตลาดภูมิภาคที่ได้กัดกร่อนความเชื่อมั่นในตลาดคริปโตลาตินอเมริกา แพลตฟอร์มได้ให้บริการผู้ใช้หลายพันคนในชิลีและประเทศเพื่อนบ้าน เสนอคู่การซื้อขายในสกุลเงินท้องถิ่น และวางตำแหน่งตัวเองเป็นสะพานเชื่อมระหว่างการเงินแบบดั้งเดิมและสินทรัพย์ดิจิทัล",
+     "ลูกค้าขณะนี้เผชิญกับเส้นทางการกู้คืนที่ไม่แน่นอน ตลาดไม่ได้ระบุรายละเอียดไทม์ไลน์หรือกลไกเฉพาะสำหรับการคืนเงินทุนที่เหลืออยู่ และการขาดดุล 7 ล้านดอลลาร์แสดงให้เห็นว่าผู้ใช้บางรายจะต้องประสบกับความสูญเสีย หน่วยงานกำกับดูแลการเงินของชิลียังไม่ได้แสดงความคิดเห็นว่าพวกเขาจะดำเนินการบังคับใช้หรือช่วยเหลือในความพยายามกู้คืนสินทรัพย์หรือไม่",
+     "สำหรับนักลงทุนทั่วไป เหตุการณ์นี้เน้นย้ำถึงความสำคัญที่สำคัญของการตรวจสอบการเก็บรักษาและความเสี่ยงของการเก็บเงินทุนจำนวนมากไว้ในตลาดแบบรวมศูนย์ แม้จะมีการลงทะเบียนกำกับดูแลและการสนับสนุนระดับสูง Orionx ก็ล้มเหลวในมาตรฐานการเก็บรักษาพื้นฐานที่ควรปกป้องสินทรัพย์ของลูกค้าจากการเคลื่อนย้ายที่ไม่ได้รับอนุญาต",
+     "การปิดตัวยังทำให้เกิดคำถามเกี่ยวกับกระบวนการตรวจสอบสถานะที่เหมาะสมของ Tether เมื่อเป็นพันธมิตรกับตลาดภูมิภาค ในฐานะผู้ออก stablecoin ที่ใหญ่ที่สุดในโลก ความเชื่อมโยงของ Tether กับแพลตฟอร์มที่ประสบความล้มเหลวในการเก็บรักษาสามารถทำลายความเชื่อมั่นในระบบนิเวศที่กว้างขึ้นที่พยายามสนับสนุน"
+    ]
+   }
+  },
+  "date": "2026-09-06T10:37:00.466Z",
+  "gradient": "linear-gradient(135deg,#f7931a33,#0b0e1400)"
+ },
+ {
   "slug": "dollar-stablecoins-devalue-local-currencies-bank-korea-study-h6i3",
   "category": "crypto",
   "emoji": "📉",
