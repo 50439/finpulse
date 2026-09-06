@@ -82,12 +82,16 @@ const STALL_HOURS = Number(process.env.STALL_HOURS || 30);
 // завтрашний прогон 05:44 (ей 23,4 ч) — публикация уезжала на 13:44 и дальше
 // по кругу. Фактический каденс был 29-32 ч: «1 в сутки» тихо стала «5 в
 // неделю». Окно 20 ч < 24 - 8/2 гарантирует, что тот же слот назавтра проходит.
+// Квота считается по КАЛЕНДАРНЫМ суткам UTC. Скользящее окно (было до 06.09)
+// дрейфует: вчерашние статьи, вышедшие поздно из-за задержек GitHub-cron,
+// «переносятся» на сегодня и съедают утренний слот, из-за чего каждый выпуск
+// уезжает всё позже. Сутки обнуляют счётчик в 00:00 UTC, а «две подряд»
+// удерживает отдельная проверка newsMinGapHours.
 function quotaFull(existing, cfg, now) {
   const perDay = Number((cfg || {}).newsPerDay || 0);
   if (!perDay) return false;
-  const windowH = Number((cfg || {}).newsWindowHours || 20);
-  const since = (now || Date.now()) - windowH * 3600000;
-  return existing.filter(x => Date.parse(x.date) >= since).length >= perDay;
+  const today = new Date(now || Date.now()).toISOString().slice(0, 10);
+  return existing.filter(x => String(x.date || '').slice(0, 10) === today).length >= perDay;
 }
 
 // Минимальный интервал между статьями. Нужен при newsPerDay >= 2: два
@@ -240,7 +244,7 @@ async function main() {
     const cfgFile = path.join(ROOT, 'data/site.json');
     const cfg = fs.existsSync(cfgFile) ? JSON.parse(fs.readFileSync(cfgFile, 'utf8')) : {};
     if (quotaFull(_existing, cfg)) {
-      console.log('Лимит: за окно newsWindowHours уже опубликовано >= ' + (cfg.newsPerDay || 0) +
+      console.log('Лимит: за сегодняшние сутки UTC уже опубликовано >= ' + (cfg.newsPerDay || 0) +
         ' статей (data/site.json) — прогон пропускаю, модель не вызываю.');
       return;
     }
