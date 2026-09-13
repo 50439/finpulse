@@ -22,6 +22,9 @@ on:
         description: 'Сколько роликов сделать'
         required: false
         default: '1'
+      hook:
+        description: 'Крючок первого кадра руками (пусто — из article.video.hook или из заголовка)'
+        required: false
 
 permissions:
   contents: write
@@ -58,6 +61,7 @@ jobs:
       - name: Render videos
         env:
           SLUG: ${{ inputs.slug }}
+          HOOK: ${{ inputs.hook }}
           CHROME_BIN: /usr/bin/google-chrome
           # Озвучка по умолчанию локальная и бесплатная (Kokoro). Ключи нужны,
           # только если в data/tts.json переключить provider на openai/elevenlabs.
@@ -84,6 +88,33 @@ jobs:
           path: out/video
           retention-days: 30
           if-no-files-found: warn
+
+      # Готовый ролик кладём в релиз с плавающим тегом video-latest. Артефакт
+      # Actions скачивается только браузером с логином GitHub — сессия Claude,
+      # которая публикует в TikTok, до него не дотягивается (на этом встал цикл
+      # 12.09). Ссылка на ассет релиза публичная и качается обычным curl:
+      # https://github.com/50439/finpulse/releases/download/video-latest/<slug>.mp4
+      # Рядом latest.json — какой слаг только что отрендерен и когда.
+      - name: Publish video to release video-latest
+        if: hashFiles('out/video/*.mp4') != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          node -e "
+            const fs=require('fs');
+            const mp4=fs.readdirSync('out/video').filter(f=>f.endsWith('.mp4')).sort((a,b)=>fs.statSync('out/video/'+b).mtimeMs-fs.statSync('out/video/'+a).mtimeMs);
+            const slug=mp4[0].replace(/\.mp4$/,'');
+            const txt=fs.existsSync('out/video/'+slug+'.txt')?fs.readFileSync('out/video/'+slug+'.txt','utf8'):'';
+            fs.writeFileSync('out/video/latest.json',JSON.stringify({slug,rendered:new Date().toISOString(),mp4:slug+'.mp4',caption:txt},null,1));
+            console.log('latest:',slug);
+          "
+          gh release view video-latest >/dev/null 2>&1 || \
+            gh release create video-latest --title "Latest TikTok video (rolling)" --notes "Обновляется каждым прогоном video.yml. Свежий ролик — см. latest.json." --latest=false
+          gh release upload video-latest out/video/*.mp4 out/video/*.txt out/video/latest.json --clobber
+          # В релизе держим только последние 5 роликов, чтобы он не разрастался.
+          gh release view video-latest --json assets -q '.assets[].name' | grep '\.mp4$' | sort | head -n -5 | while read a; do
+            gh release delete-asset video-latest "$a" -y; gh release delete-asset video-latest "${a%.mp4}.txt" -y || true
+          done
 
       # Отметка «этот слаг уже снят» должна пережить прогон, иначе завтра
       # сделается ролик про ту же новость.
