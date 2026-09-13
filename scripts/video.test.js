@@ -89,6 +89,21 @@ t('в описании нет кликабельной ссылки, но ест
   assert.ok(/link in bio/i.test(c), 'нет отсылки к ссылке в профиле');
 });
 
+t('блок video из генератора: lead первой строкой, вопрос в конце, заголовок остаётся', () => {
+  // Замер 13.09: первая фраза описания как последствие для зрителя держит
+  // дольше заголовка; вопрос в конце — единственный дешёвый источник комментариев.
+  const c = caption(tr, { video: { lead: 'Your exchange can lend your coins out.', question: 'Would you still hold it?' } });
+  assert.ok(c.startsWith('Your exchange can lend your coins out.'), 'lead не первой строкой: ' + c);
+  assert.ok(c.includes('Bitcoin hits new high'), 'заголовок потерялся');
+  assert.ok(c.indexOf('Would you still hold it?') < c.indexOf('Full story'), 'вопрос должен стоять до ссылки');
+  assert.ok(!c.includes('Institutional demand'), 'при lead выдержка не нужна — описание раздувается');
+});
+
+t('без блока video описание собирается по-старому', () => {
+  assert.strictEqual(caption(tr), caption(tr, {}));
+  assert.ok(caption(tr).includes('Institutional demand'));
+});
+
 console.log('cardDuration:');
 
 t('с озвучкой длительность идёт от реального аудио, а не от настройки', () => {
@@ -361,6 +376,15 @@ t('conf.hook заменяет крючок, а заголовок уходит �
   assert.strictEqual(cards[0].text, 'YOUR BANK JUST BLINKED');
   assert.strictEqual(cards[1].kind, 'lead');
   assert.strictEqual(cards[1].text, trFixture.title, 'заголовок потерялся: ' + cards[1].text);
+});
+
+t('article.video.hook от генератора работает как ручной крючок, env HOOK его перебивает', () => {
+  const art = { ...artFixture, video: { hook: 'YOUR DOLLARS NOW SIT IN HONG KONG' } };
+  const auto = buildCards(art, trFixture, { maxBodyCards: 2 });
+  assert.strictEqual(auto[0].text, 'YOUR DOLLARS NOW SIT IN HONG KONG');
+  assert.strictEqual(auto[1].text, trFixture.title, 'при крючке заголовок целиком уходит вторым кадром');
+  const manual = buildCards(art, trFixture, { maxBodyCards: 2, hook: 'HAND WRITTEN HOOK' });
+  assert.strictEqual(manual[0].text, 'HAND WRITTEN HOOK');
 });
 
 t('без conf.hook всё работает по-старому', () => {

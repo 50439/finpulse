@@ -101,9 +101,19 @@ const fitSize = (text, big) => {
 
 // Описание под роликом. URL в текст НЕ кладём: TikTok ссылки в описании не
 // кликает, они только съедают место и читаются как спам. Работает ссылка в профиле.
-function caption(t) {
+// Описание под роликом. Если генератор статей дал блок video (lead — первая
+// фраза как последствие для зрителя, question — вопрос под комментарии),
+// первой строкой идёт lead: заголовок первой строкой — это анонс, а не причина
+// остаться. Вопрос в конце — единственный дешёвый способ получить комментарии,
+// а комментарии на новостном аккаунте с 2 подписчиками — это весь сигнал
+// для раздачи. Без блока video описание собирается по-старому.
+function caption(t, article) {
+  const v = (article && article.video) || {};
   const tags = ['FinPulse', ...(cfg.hashtags || [])].map(h => '#' + h).join(' ');
-  return t.title + '\n\n' + (t.excerpt || '') +
+  const lead = String(v.lead || '').trim();
+  const q = String(v.question || '').trim();
+  const head = lead ? lead + '\n\n' + t.title : t.title + '\n\n' + (t.excerpt || '');
+  return head + (q ? '\n\n' + q : '') +
     '\n\nFull story: ' + cfg.site + ' (link in bio)\n\n' + tags + '\n';
 }
 
@@ -172,7 +182,10 @@ function buildCards(article, t, conf) {
   // смотреть; замер 05.09: удержание 1,55 с из 30, уход в 0:01. Когда крючок
   // написан руками («ТВОИ ДЕНЬГИ…»), заголовок целиком уходит вторым кадром,
   // чтобы новость не потерялась.
-  const manual = String(conf.hook || '').trim();
+  // Приоритет: ручной крючок (env HOOK / conf.hook) → крючок, написанный
+  // генератором статей в article.video.hook (формат «последствие для денег
+  // зрителя», замер 13.09) → механическая нарезка заголовка.
+  const manual = String(conf.hook || (article.video && article.video.hook) || '').trim();
   const [hook, rest] = manual ? [manual, t.title] : hookSplit(t.title);
 
   // Ставка для зрителя («тебя это касается, если…»). Живёт НА кадре с крючком
@@ -553,7 +566,7 @@ async function makeOne(article) {
 
   const mp4 = path.join(OUT, article.slug + '.mp4');
   buildVideo(dir, cards, mp4);
-  fs.writeFileSync(path.join(OUT, article.slug + '.txt'), caption(t));
+  fs.writeFileSync(path.join(OUT, article.slug + '.txt'), caption(t, article));
 
   const total = cards.reduce((n, c) => n + c.seconds, 0);
   console.log('  ' + cards.length + ' карточек, ' + total.toFixed(1) + ' с, ' +
