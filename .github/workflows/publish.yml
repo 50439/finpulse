@@ -125,3 +125,32 @@ jobs:
         env:
           SITE_URL: ${{ vars.SITE_URL || 'https://finpulse24.com' }}
         run: node scripts/indexnow.js || echo "::warning::indexnow failed"
+
+  # ------------------------------------------------------------- алерт о сбое
+  # 13-24.09 пайплайн падал 30 прогонов подряд на ПЕРВОМ ЖЕ шаге (опечатка
+  # в generate.js ломала require из dedup.test.js) — и этого не заметили
+  # 11 дней: письма GitHub о failed run владелец не читает. Теперь о провале
+  # кричит тот же Telegram, куда идут новости: туда он смотрит каждый день.
+  # Job намеренно отдельный и без зависимостей от secrets контента — он должен
+  # выживать ровно тогда, когда всё остальное сломано.
+  alert:
+    needs: [content, deploy]
+    if: always() && (needs.content.result == 'failure' || needs.deploy.result == 'failure')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Telegram alert
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          CONTENT_RESULT: ${{ needs.content.result }}
+          DEPLOY_RESULT: ${{ needs.deploy.result }}
+        run: |
+          TEXT="FinPulse: publish.yml упал.
+          content: $CONTENT_RESULT | deploy: $DEPLOY_RESULT
+          Пока это не починено, сайт новых статей не выпускает.
+          $RUN_URL"
+          curl -sS -X POST "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" \
+            -d chat_id="$TELEGRAM_CHAT_ID" \
+            -d disable_web_page_preview=true \
+            --data-urlencode "text=$TEXT"
