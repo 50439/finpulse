@@ -1,5 +1,240 @@
 [
  {
+  "slug": "bitcoin-etf-flows-turn-positive-for-2026-after-five-billion--uz07",
+  "category": "crypto",
+  "emoji": "📈",
+  "video": {
+   "hook": "YOUR BITCOIN ETF IS FINALLY WINNING",
+   "lead": "After losing $5.8 billion in seven months, spot Bitcoin ETFs just flipped to positive for the year.",
+   "question": "Are you buying more now?"
+  },
+  "i18n": {
+   "en": {
+    "title": "Bitcoin ETF Flows Turn Positive for 2026 After $5.8 Billion Deficit Reversal",
+    "excerpt": "Spot Bitcoin ETFs have erased a $5.8 billion outflow deficit that peaked in July, posting $800 million in net inflows for the year as institutional appetite returns.",
+    "body": [
+     "U.S. spot Bitcoin exchange-traded funds have completed a dramatic turnaround, swinging from a cumulative $5.8 billion net outflow deficit in July to $800 million in net inflows for 2026 as of late September. The reversal marks one of the sharpest sentiment shifts in the brief history of these products, which launched in January 2024.",
+     "The turnaround accelerated in recent weeks as Bitcoin's price stabilized near $84,000 and institutional investors returned to the market. Daily inflows have consistently outpaced outflows since late August, with several days seeing net purchases exceeding $300 million across the suite of ten spot Bitcoin ETF products.",
+     "The July low point came during a broader risk-off period when Bitcoin fell below $60,000 and investors pulled capital from equity and crypto markets amid recession fears. At that time, cumulative net outflows since the funds' January 2024 launch reached $5.8 billion, raising questions about whether institutional demand for Bitcoin exposure through regulated products had been overstated.",
+     "The $6.6 billion swing from trough to current levels represents a validation of the ETF structure for Bitcoin investing, according to market analysts. Unlike direct Bitcoin purchases, ETFs allow institutional investors to gain exposure without managing custody or dealing with crypto-native infrastructure, lowering operational and compliance barriers.",
+     "BlackRock's IBIT and Fidelity's FBTC have led the recent inflows, together accounting for more than 60% of net positive flows since August. Grayscale's GBTC, which converted from a trust structure to an ETF in January 2024, continues to see modest outflows as legacy holders exit, but at a significantly slower pace than earlier in the year.",
+     "The positive flow trend comes as Bitcoin volatility has compressed to its lowest levels since early 2024, with options markets pricing in subdued near-term price swings. This combination of lower volatility and positive momentum has historically attracted risk-averse institutional allocators who prefer stable entry points.",
+     "With net inflows now positive and Bitcoin consolidating near recent highs, the ETF market has effectively reset its narrative from 'failed experiment' to 'maturing allocation vehicle.' The next test will be whether flows can remain positive through the typically volatile fourth quarter, when year-end portfolio rebalancing often triggers sharp moves in both directions."
+    ]
+   },
+   "uk": {
+    "title": "Потоки в Bitcoin-ETF стали позитивними у 2026 році після розвороту дефіциту на $5,8 млрд",
+    "excerpt": "Спотові Bitcoin-ETF ліквідували дефіцит відтоку в $5,8 млрд, що досяг піку в липні, зафіксувавши $800 млн чистого притоку за рік на тлі повернення інституційного інтересу.",
+    "body": [
+     "Американські спотові біржові фонди на Bitcoin завершили драматичний розворот, перейшовши від сукупного дефіциту чистого відтоку в $5,8 млрд у липні до $800 млн чистого притоку за 2026 рік станом на кінець вересня. Цей розворот є однією з найрізкіших змін настроїв у короткій історії цих продуктів, які стартували в січні 2024 року.",
+     "Розворот прискорився в останні тижні, коли ціна Bitcoin стабілізувалася біля позначки $84 000, а інституційні інвестори повернулися на ринок. Щоденні притоки стабільно перевищують відтоки з кінця серпня, причому кілька днів показали чисті покупки понад $300 млн по всьому набору з десяти спотових Bitcoin-ETF.",
+     "Липнева низька точка припала на більш широкий період відмови від ризику, коли Bitcoin впав нижче $60 000, а інвестори виводили капітал з ринків акцій та крипти на тлі страхів рецесії. На той момент сукупний чистий відтік з моменту запуску фондів у січні 2024 року досяг $5,8 млрд, викликавши питання про те, чи не був переоцінений інституційний попит на експозицію до Bitcoin через регульовані продукти.",
+     "Коливання на $6,6 млрд від низини до поточних рівнів представляє підтвердження ETF-структури для інвестування в Bitcoin, за словами ринкових аналітиків. На відміну від прямої покупки Bitcoin, ETF дозволяють інституційним інвесторам отримати експозицію без управління зберіганням або роботи з крипто-нативною інфраструктурою, знижуючи операційні та комплаєнс-бар'єри.",
+     "IBIT від BlackRock та FBTC від Fidelity очолили останні притоки, разом складаючи понад 60% чистих позитивних потоків з серпня. GBTC від Grayscale, який перетворився зі структури трасту в ETF у січні 2024 року, продовжує демонструвати помірні відтоки, оскільки власники спадщини виходять, але значно повільніше, ніж раніше цього року.",
+     "Тренд позитивних потоків приходить на тлі того, що волатильність Bitcoin стиснулася до найнижчих рівнів з початку 2024 року, а опційні ринки закладають стримані короткострокові цінові коливання. Ця комбінація нижчої волатильності та позитивного моментуму історично приваблювала несхильних до ризику інституційних алокаторів, які віддають перевагу стабільним точкам входу.",
+     "З чистими притоками, які тепер є позитивними, і Bitcoin, що консолідується біля недавніх максимумів, ринок ETF фактично перезавантажив свій наратив від «провального експерименту» до «дозріваючого інструменту алокації». Наступне випробування покаже, чи зможуть потоки залишатися позитивними впродовж типово волатильного четвертого кварталу, коли ребалансування портфелів наприкінці року часто викликає різкі рухи в обох напрямках."
+    ]
+   },
+   "ru": {
+    "title": "Потоки в Bitcoin-ETF стали положительными в 2026 году после разворота дефицита в $5,8 млрд",
+    "excerpt": "Спотовые Bitcoin-ETF ликвидировали дефицит оттока в $5,8 млрд, достигший пика в июле, зафиксировав $800 млн чистого притока за год на фоне возвращения институционального интереса.",
+    "body": [
+     "Американские спотовые биржевые фонды на Bitcoin завершили драматический разворот, перейдя от совокупного дефицита чистого оттока в $5,8 млрд в июле к $800 млн чистого притока за 2026 год по состоянию на конец сентября. Этот разворот является одним из самых резких изменений настроений в короткой истории этих продуктов, стартовавших в январе 2024 года.",
+     "Разворот ускорился в последние недели, когда цена Bitcoin стабилизировалась около отметки $84 000, а институциональные инвесторы вернулись на рынок. Ежедневные притоки стабильно превышают оттоки с конца августа, причём несколько дней показали чистые покупки более $300 млн по всему набору из десяти спотовых Bitcoin-ETF.",
+     "Июльская низкая точка пришлась на более широкий период отказа от риска, когда Bitcoin упал ниже $60 000, а инвесторы выводили капитал с рынков акций и крипты на фоне страхов рецессии. На тот момент совокупный чистый отток с момента запуска фондов в январе 2024 года достиг $5,8 млрд, вызвав вопросы о том, не был ли переоценён институциональный спрос на экспозицию к Bitcoin через регулируемые продукты.",
+     "Колебание на $6,6 млрд от низины до текущих уровней представляет собой подтверждение ETF-структуры для инвестирования в Bitcoin, по словам рыночных аналитиков. В отличие от прямой покупки Bitcoin, ETF позволяют институциональным инвесторам получить экспозицию без управления хранением или работы с крипто-нативной инфраструктурой, снижая операционные и комплаенс-барьеры.",
+     "IBIT от BlackRock и FBTC от Fidelity возглавили последние притоки, вместе составляя более 60% чистых положительных потоков с августа. GBTC от Grayscale, который преобразовался из структуры траста в ETF в январе 2024 года, продолжает демонстрировать умеренные оттоки, поскольку владельцы наследия выходят, но значительно медленнее, чем ранее в этом году.",
+     "Тренд положительных потоков приходит на фоне того, что волатильность Bitcoin сжалась до самых низких уровней с начала 2024 года, а опционные рынки закладывают сдержанные краткосрочные ценовые колебания. Эта комбинация более низкой волатильности и положительного моментума исторически привлекала несклонных к риску институциональных аллокаторов, предпочитающих стабильные точки входа.",
+     "С чистыми притоками, которые теперь являются положительными, и Bitcoin, консолидирующимся около недавних максимумов, рынок ETF фактически перезагрузил свой нарратив от «провального эксперимента» к «созревающему инструменту аллокации». Следующее испытание покажет, смогут ли потоки оставаться положительными в течение типично волатильного четвёртого квартала, когда ребалансировка портфелей в конце года часто вызывает резкие движения в обоих направлениях."
+    ]
+   },
+   "es": {
+    "title": "Los Flujos de ETF de Bitcoin Se Vuelven Positivos en 2026 Tras Revertir Déficit de $5.8 Mil Millones",
+    "excerpt": "Los ETF spot de Bitcoin han borrado un déficit de salida de $5.8 mil millones que alcanzó su punto máximo en julio, registrando $800 millones en entradas netas para el año a medida que el apetito institucional regresa.",
+    "body": [
+     "Los fondos cotizados en bolsa spot de Bitcoin de EE. UU. han completado un giro dramático, pasando de un déficit acumulado de salida neta de $5.8 mil millones en julio a $800 millones en entradas netas para 2026 a finales de septiembre. La reversión marca uno de los cambios de sentimiento más agudos en la breve historia de estos productos, que se lanzaron en enero de 2024.",
+     "El giro se aceleró en las últimas semanas a medida que el precio de Bitcoin se estabilizó cerca de $84,000 y los inversores institucionales regresaron al mercado. Las entradas diarias han superado consistentemente a las salidas desde finales de agosto, con varios días mostrando compras netas que superan los $300 millones en el conjunto de diez productos ETF spot de Bitcoin.",
+     "El punto bajo de julio se produjo durante un período más amplio de aversión al riesgo cuando Bitcoin cayó por debajo de $60,000 y los inversores retiraron capital de los mercados de acciones y criptomonedas en medio de temores de recesión. En ese momento, las salidas netas acumuladas desde el lanzamiento de los fondos en enero de 2024 alcanzaron $5.8 mil millones, planteando preguntas sobre si la demanda institucional de exposición a Bitcoin a través de productos regulados había sido sobrestimada.",
+     "El cambio de $6.6 mil millones desde el mínimo hasta los niveles actuales representa una validación de la estructura ETF para invertir en Bitcoin, según analistas del mercado. A diferencia de las compras directas de Bitcoin, los ETF permiten a los inversores institucionales obtener exposición sin gestionar la custodia ni lidiar con infraestructura nativa de criptomonedas, reduciendo las barreras operativas y de cumplimiento.",
+     "El IBIT de BlackRock y el FBTC de Fidelity han liderado las entradas recientes, representando juntos más del 60% de los flujos netos positivos desde agosto. El GBTC de Grayscale, que se convirtió de una estructura de fideicomiso a un ETF en enero de 2024, continúa viendo salidas modestas a medida que los tenedores heredados salen, pero a un ritmo significativamente más lento que a principios de año.",
+     "La tendencia de flujo positivo se produce cuando la volatilidad de Bitcoin se ha comprimido a sus niveles más bajos desde principios de 2024, con los mercados de opciones valorando oscilaciones de precios a corto plazo moderadas. Esta combinación de menor volatilidad e impulso positivo ha atraído históricamente a asignadores institucionales reacios al riesgo que prefieren puntos de entrada estables.",
+     "Con las entradas netas ahora positivas y Bitcoin consolidándose cerca de máximos recientes, el mercado de ETF ha restablecido efectivamente su narrativa de 'experimento fallido' a 'vehículo de asignación en maduración'. La próxima prueba será si los flujos pueden permanecer positivos durante el típicamente volátil cuarto trimestre, cuando el reequilibrio de cartera de fin de año a menudo desencadena movimientos bruscos en ambas direcciones."
+    ]
+   },
+   "pt": {
+    "title": "Fluxos de ETF de Bitcoin Tornam-se Positivos em 2026 Após Reversão de Déficit de US$ 5,8 Bilhões",
+    "excerpt": "ETFs spot de Bitcoin eliminaram um déficit de saída de US$ 5,8 bilhões que atingiu o pico em julho, registrando US$ 800 milhões em entradas líquidas no ano com o retorno do apetite institucional.",
+    "body": [
+     "Os fundos negociados em bolsa spot de Bitcoin dos EUA completaram uma reviravolta dramática, passando de um déficit acumulado de saída líquida de US$ 5,8 bilhões em julho para US$ 800 milhões em entradas líquidas em 2026 no final de setembro. A reversão marca uma das mudanças de sentimento mais acentuadas na breve história desses produtos, lançados em janeiro de 2024.",
+     "A reviravolta acelerou nas últimas semanas à medida que o preço do Bitcoin se estabilizou perto de US$ 84.000 e investidores institucionais retornaram ao mercado. As entradas diárias superaram consistentemente as saídas desde o final de agosto, com vários dias mostrando compras líquidas superiores a US$ 300 milhões no conjunto de dez produtos ETF spot de Bitcoin.",
+     "O ponto mais baixo de julho ocorreu durante um período mais amplo de aversão ao risco, quando o Bitcoin caiu abaixo de US$ 60.000 e investidores retiraram capital dos mercados de ações e criptomoedas em meio a temores de recessão. Naquele momento, as saídas líquidas acumuladas desde o lançamento dos fundos em janeiro de 2024 atingiram US$ 5,8 bilhões, levantando questões sobre se a demanda institucional por exposição ao Bitcoin através de produtos regulamentados havia sido superestimada.",
+     "A oscilação de US$ 6,6 bilhões do ponto mais baixo aos níveis atuais representa uma validação da estrutura ETF para investir em Bitcoin, segundo analistas de mercado. Diferentemente das compras diretas de Bitcoin, os ETFs permitem que investidores institucionais obtenham exposição sem gerenciar custódia ou lidar com infraestrutura nativa de criptomoedas, reduzindo barreiras operacionais e de conformidade.",
+     "O IBIT da BlackRock e o FBTC da Fidelity lideraram as entradas recentes, representando juntos mais de 60% dos fluxos líquidos positivos desde agosto. O GBTC da Grayscale, que converteu de uma estrutura de trust para ETF em janeiro de 2024, continua a ver saídas modestas à medida que detentores legados saem, mas a um ritmo significativamente mais lento do que no início do ano.",
+     "A tendência de fluxo positivo ocorre quando a volatilidade do Bitcoin se comprimiu aos níveis mais baixos desde o início de 2024, com mercados de opções precificando oscilações de preço de curto prazo moderadas. Esta combinação de menor volatilidade e momento positivo historicamente atraiu alocadores institucionais avessos ao risco que preferem pontos de entrada estáveis.",
+     "Com as entradas líquidas agora positivas e o Bitcoin se consolidando perto de máximas recentes, o mercado de ETF efetivamente redefiniu sua narrativa de 'experimento fracassado' para 'veículo de alocação em amadurecimento'. O próximo teste será se os fluxos podem permanecer positivos durante o tipicamente volátil quarto trimestre, quando o rebalanceamento de portfólio de fim de ano frequentemente desencadeia movimentos bruscos em ambas as direções."
+    ]
+   },
+   "de": {
+    "title": "Bitcoin-ETF-Zuflüsse Werden 2026 Positiv Nach Umkehr von 5,8 Milliarden Dollar Defizit",
+    "excerpt": "Spot-Bitcoin-ETFs haben ein Abfluss-Defizit von 5,8 Milliarden Dollar, das im Juli seinen Höhepunkt erreichte, ausgelöscht und verzeichnen 800 Millionen Dollar Nettozuflüsse für das Jahr, da das institutionelle Interesse zurückkehrt.",
+    "body": [
+     "US-amerikanische Spot-Bitcoin-Börsenfonds haben eine dramatische Wende vollzogen und sind von einem kumulierten Nettoabfluss-Defizit von 5,8 Milliarden Dollar im Juli auf 800 Millionen Dollar Nettozuflüsse für 2026 Ende September geschwenkt. Die Umkehr markiert eine der schärfsten Stimmungsänderungen in der kurzen Geschichte dieser Produkte, die im Januar 2024 gestartet wurden.",
+     "Die Wende beschleunigte sich in den letzten Wochen, als sich der Bitcoin-Preis bei etwa 84.000 Dollar stabilisierte und institutionelle Investoren auf den Markt zurückkehrten. Die täglichen Zuflüsse haben seit Ende August konstant die Abflüsse übertroffen, wobei an mehreren Tagen Nettokäufe von über 300 Millionen Dollar über die Palette der zehn Spot-Bitcoin-ETF-Produkte verzeichnet wurden.",
+     "Der Juli-Tiefpunkt kam während einer breiteren risikoaversen Phase, als Bitcoin unter 60.000 Dollar fiel und Investoren Kapital aus Aktien- und Kryptomärkten abzogen inmitten von Rezessionsängsten. Zu diesem Zeitpunkt erreichten die kumulierten Nettoabflüsse seit dem Start der Fonds im Januar 2024 5,8 Milliarden Dollar, was Fragen aufwarf, ob die institutionelle Nachfrage nach Bitcoin-Engagement über regulierte Produkte überbewertet worden war.",
+     "Die Schwankung von 6,6 Milliarden Dollar vom Tiefpunkt zu den aktuellen Niveaus stellt eine Bestätigung der ETF-Struktur für Bitcoin-Investitionen dar, laut Marktanalysten. Im Gegensatz zu direkten Bitcoin-Käufen ermöglichen ETFs institutionellen Investoren Engagement zu erhalten, ohne Verwahrung zu verwalten oder mit kryptonnativer Infrastruktur umzugehen, wodurch operative und Compliance-Hürden gesenkt werden.",
+     "BlackRocks IBIT und Fidelitys FBTC haben die jüngsten Zuflüsse angeführt und zusammen mehr als 60% der netto positiven Flüsse seit August ausgemacht. Grayscales GBTC, das im Januar 2024 von einer Trust-Struktur in einen ETF umgewandelt wurde, verzeichnet weiterhin moderate Abflüsse, da Legacy-Inhaber aussteigen, jedoch in einem deutlich langsameren Tempo als früher im Jahr.",
+     "Der positive Flusstrend kommt, während die Bitcoin-Volatilität auf ihre niedrigsten Niveaus seit Anfang 2024 gesunken ist, wobei Optionsmärkte gedämpfte kurzfristige Preisschwankungen einpreisen. Diese Kombination aus geringerer Volatilität und positivem Momentum hat historisch risikoaverse institutionelle Allokatoren angezogen, die stabile Einstiegspunkte bevorzugen.",
+     "Mit nun positiven Nettozuflüssen und Bitcoin, das sich in der Nähe jüngster Höchststände konsolidiert, hat der ETF-Markt seine Erzählung effektiv von 'gescheitertem Experiment' zu 'reifendem Allokationsvehikel' zurückgesetzt. Der nächste Test wird sein, ob die Flüsse während des typischerweise volatilen vierten Quartals positiv bleiben können, wenn Jahresend-Portfolioumschichtungen oft scharfe Bewegungen in beide Richtungen auslösen."
+    ]
+   },
+   "fr": {
+    "title": "Les Flux d'ETF Bitcoin Deviennent Positifs en 2026 Après L'inversion d'un Déficit de 5,8 Milliards de Dollars",
+    "excerpt": "Les ETF Bitcoin au comptant ont effacé un déficit de sorties de 5,8 milliards de dollars qui a culminé en juillet, enregistrant 800 millions de dollars d'entrées nettes pour l'année alors que l'appétit institutionnel revient.",
+    "body": [
+     "Les fonds négociés en bourse Bitcoin au comptant américains ont réalisé un retournement spectaculaire, passant d'un déficit cumulé de sorties nettes de 5,8 milliards de dollars en juillet à 800 millions de dollars d'entrées nettes pour 2026 fin septembre. Le renversement marque l'un des changements de sentiment les plus marqués dans la brève histoire de ces produits, lancés en janvier 2024.",
+     "Le retournement s'est accéléré ces dernières semaines alors que le prix du Bitcoin se stabilisait près de 84 000 dollars et que les investisseurs institutionnels revenaient sur le marché. Les entrées quotidiennes ont constamment dépassé les sorties depuis fin août, avec plusieurs jours affichant des achats nets supérieurs à 300 millions de dollars sur l'ensemble des dix produits ETF Bitcoin au comptant.",
+     "Le point bas de juillet est survenu pendant une période plus large d'aversion au risque lorsque Bitcoin est tombé sous les 60 000 dollars et que les investisseurs ont retiré des capitaux des marchés actions et crypto dans un contexte de craintes de récession. À ce moment-là, les sorties nettes cumulées depuis le lancement des fonds en janvier 2024 avaient atteint 5,8 milliards de dollars, soulevant des questions sur la surestimation de la demande institutionnelle d'exposition au Bitcoin via des produits réglementés.",
+     "L'oscillation de 6,6 milliards de dollars du creux aux niveaux actuels représente une validation de la structure ETF pour l'investissement dans Bitcoin, selon les analystes du marché. Contrairement aux achats directs de Bitcoin, les ETF permettent aux investisseurs institutionnels d'obtenir une exposition sans gérer la garde ni traiter avec l'infrastructure native crypto, abaissant les barrières opérationnelles et de conformité.",
+     "L'IBIT de BlackRock et le FBTC de Fidelity ont mené les entrées récentes, représentant ensemble plus de 60% des flux nets positifs depuis août. Le GBTC de Grayscale, converti d'une structure de trust en ETF en janvier 2024, continue de voir des sorties modestes alors que les détenteurs historiques sortent, mais à un rythme nettement plus lent qu'en début d'année.",
+     "La tendance positive des flux survient alors que la volatilité du Bitcoin s'est comprimée à ses niveaux les plus bas depuis début 2024, les marchés d'options tarifant des fluctuations de prix à court terme modérées. Cette combinaison de volatilité plus faible et de momentum positif a historiquement attiré les allocateurs institutionnels réticents au risque qui préfèrent des points d'entrée stables.",
+     "Avec des entrées nettes désormais positives et Bitcoin se consolidant près des sommets récents, le marché des ETF a effectivement réinitialisé son récit d''expérience ratée' à 'véhicule d'allocation en maturation'. Le prochain test sera de savoir si les flux peuvent rester positifs pendant le quatrième trimestre typiquement volatil, lorsque le rééquilibrage de portefeuille de fin d'année déclenche souvent des mouvements brusques dans les deux directions."
+    ]
+   },
+   "ar": {
+    "title": "تدفقات صناديق بيتكوين المتداولة تتحول إلى إيجابية في 2026 بعد عكس عجز 5.8 مليار دولار",
+    "excerpt": "محت صناديق بيتكوين الفورية المتداولة عجز تدفقات خارجة بقيمة 5.8 مليار دولار بلغ ذروته في يوليو، مسجلة 800 مليون دولار من التدفقات الصافية الداخلة للعام مع عودة الشهية المؤسسية.",
+    "body": [
+     "أكملت صناديق بيتكوين المتداولة الفورية الأمريكية تحولاً دراماتيكياً، متحولة من عجز تدفقات صافية خارجة تراكمي قدره 5.8 مليار دولار في يوليو إلى 800 مليون دولار من التدفقات الصافية الداخلة لعام 2026 في أواخر سبتمبر. يمثل الانعكاس أحد أحد تحولات المعنويات الأكثر حدة في التاريخ القصير لهذه المنتجات التي أُطلقت في يناير 2024.",
+     "تسارع التحول في الأسابيع الأخيرة مع استقرار سعر بيتكوين قرب 84,000 دولار وعودة المستثمرين المؤسسيين إلى السوق. تجاوزت التدفقات اليومية الداخلة التدفقات الخارجة باستمرار منذ أواخر أغسطس، حيث شهدت عدة أيام مشتريات صافية تتجاوز 300 مليون دولار عبر مجموعة منتجات صناديق بيتكوين الفورية العشرة.",
+     "جاءت نقطة الانخفاض في يوليو خلال فترة أوسع من تجنب المخاطر عندما انخفض بيتكوين دون 60,000 دولار وسحب المستثمرون رأس المال من أسواق الأسهم والعملات المشفرة وسط مخاوف الركود. في ذلك الوقت، بلغت التدفقات الصافية الخارجة التراكمية منذ إطلاق الصناديق في يناير 2024 مبلغ 5.8 مليار دولار، مثيرة تساؤلات حول ما إذا كان الطلب المؤسسي على التعرض لبيتكوين عبر منتجات منظمة قد تم المبالغة فيه.",
+     "يمثل التأرجح البالغ 6.6 مليار دولار من الحضيض إلى المستويات الحالية تأكيداً لهيكل صناديق الاستثمار المتداولة للاستثمار في بيتكوين، وفقاً لمحللي السوق. على عكس مشتريات بيتكوين المباشرة، تسمح صناديق الاستثمار المتداولة للمستثمرين المؤسسيين بالحصول على التعرض دون إدارة الحفظ أو التعامل مع البنية التحتية المشفرة الأصلية، مما يخفض الحواجز التشغيلية والامتثال.",
+     "قاد IBIT من بلاك روك وFBTC من فيديليتي التدفقات الداخلة الأخيرة، حيث شكلا معاً أكثر من 60٪ من التدفقات الصافية الإيجابية منذ أغسطس. يواصل GBTC من جرايسكيل، الذي تحول من هيكل ائتماني إلى صندوق متداول في يناير 2024، تسجيل تدفقات خارجة متواضعة مع خروج الملاك التراثيين، لكن بوتيرة أبطأ بكثير من وقت سابق من العام.",
+     "يأتي اتجاه التدفق الإيجابي بينما انضغطت تقلبات بيتكوين إلى أدنى مستوياتها منذ أوائل 2024، حيث تسعّر أسواق الخيارات تقلبات سعرية قصيرة الأجل معتدلة. جذبت هذه المجموعة من التقلبات الأقل والزخم الإيجابي تاريخياً مخصصي مؤسسات متحفظي المخاطر يفضلون نقاط دخول مستقرة.",
+     "مع التدفقات الصافية الداخلة الآن إيجابية وبيتكوين يتماسك قرب الارتفاعات الأخيرة، أعاد سوق صناديق الاستثمار المتداولة فعلياً ضبط سرديته من 'تجربة فاشلة' إلى 'أداة تخصيص ناضجة'. سيكون الاختبار التالي ما إذا كانت التدفقات يمكن أن تبقى إيجابية خلال الربع الرابع المتقلب عادةً، عندما تؤدي إعادة التوازن للمحافظ في نهاية العام غالباً إلى تحركات حادة في كلا الاتجاهين."
+    ]
+   },
+   "zh": {
+    "title": "比特币ETF资金流在2026年扭转58亿美元赤字后转为正值",
+    "excerpt": "现货比特币ETF已消除7月达到峰值的58亿美元流出赤字,随着机构需求回归,今年净流入达8亿美元。",
+    "body": [
+     "美国现货比特币交易所交易基金完成了戏剧性的逆转,从7月58亿美元的累计净流出赤字转为截至9月下旬2026年8亿美元的净流入。这一逆转标志着这些于2024年1月推出的产品短暂历史中最急剧的情绪转变之一。",
+     "随着比特币价格稳定在84,000美元附近,机构投资者重返市场,逆转在最近几周加速。自8月下旬以来,每日流入持续超过流出,其中几天在十只现货比特币ETF产品套件中显示出超过3亿美元的净购买。",
+     "7月低点出现在更广泛的风险规避期间,当时比特币跌破60,000美元,投资者在经济衰退担忧中从股票和加密市场撤出资本。当时,自2024年1月基金推出以来的累计净流出达到58亿美元,引发了关于通过受监管产品对比特币的机构需求是否被高估的质疑。",
+     "从低谷到当前水平66亿美元的波动代表了对比特币投资ETF结构的验证,据市场分析师称。与直接购买比特币不同,ETF允许机构投资者在不管理托管或处理加密原生基础设施的情况下获得敞口,降低了运营和合规障碍。",
+     "贝莱德的IBIT和富达的FBTC领导了最近的流入,两者合计占8月以来净正流入的60%以上。灰度的GBTC于2024年1月从信托结构转换为ETF,继续看到适度的流出,因为传统持有人退出,但速度明显慢于今年早些时候。",
+     "正流入趋势出现之际,比特币波动性已压缩至2024年初以来的最低水平,期权市场定价温和的短期价格波动。这种较低波动性和正动量的组合历来吸引了规避风险的机构配置者,他们偏好稳定的入场点。",
+     "随着净流入现在为正值,比特币在近期高点附近盘整,ETF市场实际上已将其叙事从'失败实验'重置为'成熟配置工具'。下一个考验将是流入是否能在通常波动的第四季度保持正值,届时年终投资组合再平衡通常会触发双向剧烈波动。"
+    ]
+   },
+   "hi": {
+    "title": "बिटकॉइन ETF प्रवाह 2026 में $5.8 बिलियन घाटे के उलटने के बाद सकारात्मक हो गया",
+    "excerpt": "स्पॉट बिटकॉइन ETF ने $5.8 बिलियन के बहिर्वाह घाटे को मिटा दिया है जो जुलाई में चरम पर पहुंच गया था, संस्थागत भूख लौटने के साथ वर्ष के लिए $800 मिलियन का शुद्ध प्रवाह दर्ज किया।",
+    "body": [
+     "अमेरिकी स्पॉट बिटकॉइन एक्सचेंज-ट्रेडेड फंड्स ने एक नाटकीय उलटफेर पूरा किया है, जुलाई में $5.8 बिलियन के संचयी शुद्ध बहिर्वाह घाटे से सितंबर के अंत तक 2026 के लिए $800 मिलियन के शुद्ध प्रवाह में बदल गया। यह उलटफेर इन उत्पादों के संक्षिप्त इतिहास में सबसे तीव्र भावना परिवर्तनों में से एक है, जो जनवरी 2024 में लॉन्च हुए थे।",
+     "पिछले हफ्तों में उलटफेर तेज हो गया क्योंकि बिटकॉइन की कीमत $84,000 के पास स्थिर हो गई और संस्थागत निवेशक बाजार में वापस आ गए। अगस्त के अंत से दैनिक प्रवाह लगातार बहिर्वाह से अधिक रहे हैं, कई दिनों में दस स्पॉट बिटकॉइन ETF उत्पादों में $300 मिलियन से अधिक की शुद्ध खरीदारी दिखाई दे रही है।",
+     "जुलाई का निचला बिंदु एक व्यापक जोखिम-विमुख अवधि के दौरान आया जब बिटकॉइन $60,000 से नीचे गिर गया और मंदी की आशंकाओं के बीच निवेशकों ने स्टॉक और क्रिप्टो बाजारों से पूंजी निकाली। उस समय, जनवरी 2024 में फंड के लॉन्च के बाद से संचयी शुद्ध बहिर्वाह $5.8 बिलियन तक पहुंच गया, जिससे सवाल उठे कि क्या विनियमित उत्पादों के माध्यम से बिटकॉइन एक्सपोजर की संस्थागत मांग को अधिक आंका गया था।",
+     "निचले स्तर से वर्तमान स्तरों तक $6.6 बिलियन का उतार-चढ़ाव बिटकॉइन निवेश के लिए ETF संरचना का सत्यापन दर्शाता है, बाजार विश्लेषकों के अनुसार। सीधे बिटकॉइन खरीद के विपरीत, ETF संस्थागत निवेशकों को कस्टडी प्रबंधित किए बिना या क्रिप्टो-नेटिव इन्फ्रास्ट्रक्चर से निपटे बिना एक्सपोजर प्राप्त करने की अनुमति देते हैं, जिससे परिचालन और अनुपालन बाधाएं कम होती हैं।",
+     "ब्लैकरॉक के IBIT और फिडेलिटी के FBTC ने हालिया प्रवाहों का नेतृत्व किया है, अगस्त के बाद से शुद्ध सकारात्मक प्रवाहों का 60% से अधिक एक साथ जिम्मेदार हैं। ग्रेस्केल का GBTC, जो जनवरी 2024 में ट्रस्ट संरचना से ETF में परिवर्तित हुआ, लीगेसी धारकों के बाहर निकलने के साथ मामूली बहिर्वाह देखना जारी रखता है, लेकिन वर्ष की शुरुआत की तुलना में काफी धीमी गति से।",
+     "सकारात्मक प्रवाह प्रवृत्ति तब आती है जब बिटकॉइन अस्थिरता 2024 की शुरुआत के बाद से अपने सबसे निचले स्तर तक संकुचित हो गई है, विकल्प बाजार मध्यम निकट-अवधि मूल्य झूलों का मूल्य निर्धारण कर रहे हैं। कम अस्थिरता और सकारात्मक गति का यह संयोजन ऐतिहासिक रूप से जोखिम-विमुख संस्थागत आवंटकों को आकर्षित करता है जो स्थिर प्रवेश बिंदुओं को पसंद करते हैं।",
+     "शुद्ध प्रवाह अब सकारात्मक होने और बिटकॉइन हाल के उच्च स्तरों के पास समेकित होने के साथ, ETF बाजार ने प्रभावी रूप से अपनी कथा को 'विफल प्रयोग' से 'परिपक्व आवंटन वाहन' में रीसेट कर दिया है। अगला परीक्षण यह होगा कि क्या आमतौर पर अस्थिर चौथी तिमाही के दौरान प्रवाह सकारात्मक रह सकते हैं, जब वर्ष के अंत में पोर्टफोलियो पुनर्संतुलन अक्सर दोनों दिशाओं में तीव्र चालें ट्रिगर करता है।"
+    ]
+   },
+   "id": {
+    "title": "Arus ETF Bitcoin Menjadi Positif di 2026 Setelah Pembalikan Defisit $5,8 Miliar",
+    "excerpt": "ETF Bitcoin spot telah menghapus defisit arus keluar $5,8 miliar yang memuncak pada Juli, mencatat $800 juta arus masuk bersih untuk tahun ini seiring kembalinya selera institusional.",
+    "body": [
+     "Dana yang diperdagangkan di bursa Bitcoin spot AS telah menyelesaikan pembalikan dramatis, beralih dari defisit arus keluar bersih kumulatif $5,8 miliar pada Juli menjadi $800 juta arus masuk bersih untuk 2026 pada akhir September. Pembalikan ini menandai salah satu pergeseran sentimen paling tajam dalam sejarah singkat produk-produk ini, yang diluncurkan pada Januari 2024.",
+     "Pembalikan dipercepat dalam beberapa minggu terakhir karena harga Bitcoin stabil mendekati $84.000 dan investor institusional kembali ke pasar. Arus masuk harian secara konsisten melampaui arus keluar sejak akhir Agustus, dengan beberapa hari menunjukkan pembelian bersih melebihi $300 juta di seluruh rangkaian sepuluh produk ETF Bitcoin spot.",
+     "Titik terendah Juli terjadi selama periode penghindaran risiko yang lebih luas ketika Bitcoin jatuh di bawah $60.000 dan investor menarik modal dari pasar saham dan kripto di tengah ketakutan resesi. Pada saat itu, arus keluar bersih kumulatif sejak peluncuran dana pada Januari 2024 mencapai $5,8 miliar, menimbulkan pertanyaan apakah permintaan institusional untuk eksposur Bitcoin melalui produk yang diatur telah dilebih-lebihkan.",
+     "Ayunan $6,6 miliar dari titik terendah ke level saat ini mewakili validasi struktur ETF untuk berinvestasi Bitcoin, menurut analis pasar. Berbeda dengan pembelian Bitcoin langsung, ETF memungkinkan investor institusional mendapatkan eksposur tanpa mengelola kustodi atau berurusan dengan infrastruktur kripto asli, menurunkan hambatan operasional dan kepatuhan.",
+     "IBIT BlackRock dan FBTC Fidelity memimpin arus masuk baru-baru ini, bersama-sama menyumbang lebih dari 60% arus positif bersih sejak Agustus. GBTC Grayscale, yang dikonversi dari struktur trust menjadi ETF pada Januari 2024, terus melihat arus keluar sedang karena pemegang warisan keluar, tetapi pada tingkat yang jauh lebih lambat dibandingkan awal tahun.",
+     "Tren arus positif datang ketika volatilitas Bitcoin telah terkompresi ke level terendah sejak awal 2024, dengan pasar opsi memperhitungkan ayunan harga jangka pendek yang diredam. Kombinasi volatilitas lebih rendah dan momentum positif ini secara historis telah menarik alokator institusional yang menghindari risiko yang lebih menyukai titik masuk yang stabil.",
+     "Dengan arus masuk bersih sekarang positif dan Bitcoin berkonsolidasi mendekati tertinggi baru-baru ini, pasar ETF secara efektif telah mereset narasinya dari 'eksperimen gagal' menjadi 'kendaraan alokasi yang matang'. Ujian berikutnya adalah apakah arus dapat tetap positif melalui kuartal keempat yang biasanya volatil, ketika rebalancing portofolio akhir tahun sering memicu pergerakan tajam di kedua arah."
+    ]
+   },
+   "vi": {
+    "title": "Dòng Vốn ETF Bitcoin Chuyển Sang Tích Cực Năm 2026 Sau Khi Đảo Ngược Thành Thâm Hụt 5,8 Tỷ USD",
+    "excerpt": "Các ETF Bitcoin giao ngay đã xóa thâm hụt dòng vốn rút ra 5,8 tỷ USD đạt đỉnh vào tháng 7, ghi nhận 800 triệu USD dòng vốn ròng trong năm khi khẩu vị tổ chức trở lại.",
+    "body": [
+     "Các quỹ giao dịch trao đổi Bitcoin giao ngay của Mỹ đã hoàn thành một sự đảo chiều đầy kịch tính, chuyển từ thâm hụt dòng vốn rút ròng tích lũy 5,8 tỷ USD vào tháng 7 sang 800 triệu USD dòng vốn ròng cho năm 2026 vào cuối tháng 9. Sự đảo ngược này đánh dấu một trong những thay đổi tâm lý mạnh nhất trong lịch sử ngắn ngủi của các sản phẩm này, được ra mắt vào tháng 1 năm 2024.",
+     "Sự đảo chiều tăng tốc trong những tuần gần đây khi giá Bitcoin ổn định gần 84.000 USD và các nhà đầu tư tổ chức quay trở lại thị trường. Dòng vốn hàng ngày liên tục vượt dòng vốn rút ra kể từ cuối tháng 8, với một số ngày cho thấy mua ròng vượt quá 300 triệu USD trên toàn bộ bộ mười sản phẩm ETF Bitcoin giao ngay.",
+     "Điểm thấp nhất vào tháng 7 xảy ra trong giai đoạn tránh rủi ro rộng hơn khi Bitcoin giảm xuống dưới 60.000 USD và các nhà đầu tư rút vốn khỏi thị trường chứng khoán và tiền điện tử giữa những lo ngại suy thoái. Vào thời điểm đó, dòng vốn rút ròng tích lũy kể từ khi ra mắt quỹ vào tháng 1 năm 2024 đạt 5,8 tỷ USD, đặt ra câu hỏi liệu nhu cầu tổ chức về tiếp xúc Bitcoin thông qua các sản phẩm được quy định có bị đánh giá quá cao hay không.",
+     "Biến động 6,6 tỷ USD từ đáy lên mức hiện tại đại diện cho sự xác nhận cấu trúc ETF để đầu tư Bitcoin, theo các nhà phân tích thị trường. Không giống như mua Bitcoin trực tiếp, các ETF cho phép các nhà đầu tư tổ chức có được tiếp xúc mà không cần quản lý lưu ký hoặc xử lý cơ sở hạ tầng gốc tiền điện tử, giảm rào cản vận hành và tuân thủ.",
+     "IBIT của BlackRock và FBTC của Fidelity đã dẫn đầu dòng vốn gần đây, cùng nhau chiếm hơn 60% dòng vốn ròng tích cực kể từ tháng 8. GBTC của Grayscale, chuyển đổi từ cấu trúc ủy thác sang ETF vào tháng 1 năm 2024, tiếp tục thấy dòng vốn rút ra khiêm tốn khi các chủ sở hữu kế thừa thoát ra, nhưng với tốc độ chậm hơn đáng kể so với đầu năm.",
+     "Xu hướng dòng vốn tích cực đến khi biến động Bitcoin đã nén xuống mức thấp nhất kể từ đầu năm 2024, với thị trường quyền chọn định giá biến động giá ngắn hạn được điều hòa. Sự kết hợp giữa biến động thấp hơn và động lực tích cực này trong lịch sử đã thu hút các nhà phân bổ tổ chức không thích rủi ro ưu tiên các điểm vào ổn định.",
+     "Với dòng vốn ròng hiện tại tích cực và Bitcoin củng cố gần đỉnh gần đây, thị trường ETF đã hiệu quả đặt lại câu chuyện của mình từ 'thí nghiệm thất bại' sang 'phương tiện phân bổ đang trưởng thành'. Bài kiểm tra tiếp theo sẽ là liệu dòng vốn có thể duy trì tích cực trong quý thứ tư thường biến động, khi tái cân bằng danh mục đầu tư cuối năm thường kích hoạt các chuyển động mạnh theo cả hai hướng."
+    ]
+   },
+   "tr": {
+    "title": "Bitcoin ETF Akışları 2026'da 5,8 Milyar Dolarlık Açığı Tersine Çevirdikten Sonra Pozitife Döndü",
+    "excerpt": "Spot Bitcoin ETF'leri Temmuz'da zirve yapan 5,8 milyar dolarlık çıkış açığını sildi ve kurumsal iştahın geri dönmesiyle yıl için 800 milyon dolar net giriş kaydetti.",
+    "body": [
+     "ABD spot Bitcoin borsada işlem gören fonları dramatik bir geri dönüş tamamladı, Temmuz'daki 5,8 milyar dolarlık kümülatif net çıkış açığından Eylül sonu itibariyle 2026 için 800 milyon dolarlık net girişe döndü. Bu tersine dönüş, Ocak 2024'te başlatılan bu ürünlerin kısa tarihindeki en keskin duyarlılık değişimlerinden birini işaret ediyor.",
+     "Bitcoin fiyatı 84.000 dolar civarında stabilize olup kurumsal yatırımcılar piyasaya geri döndükçe tersine dönüş son haftalarda hızlandı. Günlük girişler Ağustos sonu itibariyle sürekli olarak çıkışları aştı, on spot Bitcoin ETF ürününün tamamında birkaç gün 300 milyon doları aşan net alımlar gösterdi.",
+     "Temmuz düşük noktası, Bitcoin'in 60.000 doların altına düştüğü ve yatırımcıların resesyon korkuları arasında hisse senedi ve kripto piyasalarından sermaye çektiği daha geniş bir riskten kaçınma döneminde geldi. O zaman, fonların Ocak 2024'teki lansmanından bu yana kümülatif net çıkışlar 5,8 milyar dolara ulaştı ve düzenlenmiş ürünler aracılığıyla Bitcoin maruziyetine yönelik kurumsal talebin abartılıp abartılmadığına dair sorular ortaya çıkardı.",
+     "Dipten mevcut seviyelere 6,6 milyar dolarlık dalgalanma, piyasa analistlerine göre Bitcoin yatırımı için ETF yapısının bir doğrulamasını temsil ediyor. Doğrudan Bitcoin alımlarının aksine, ETF'ler kurumsal yatırımcıların saklama yönetimi veya kripto-yerel altyapı ile uğraşmadan maruziyete sahip olmalarını sağlayarak operasyonel ve uyumluluk engellerini düşürüyor.",
+     "BlackRock'un IBIT'si ve Fidelity'nin FBTC'si son girişlere öncülük etti ve birlikte Ağustos'tan bu yana net pozitif akışların %60'ından fazlasını oluşturdu. Ocak 2024'te güven yapısından ETF'ye dönüşen Grayscale'in GBTC'si, eski sahiplerin çıkmasıyla mütevazı çıkışlar görmeye devam ediyor, ancak yılın başına göre önemli ölçüde daha yavaş bir hızda.",
+     "Pozitif akış trendi, Bitcoin volatilitesinin 2024 başından bu yana en düşük seviyelerine sıkışmasıyla ve opsiyon piyasalarının ılımlı yakın dönem fiyat dalgalanmalarını fiyatlamasıyla geliyor. Daha düşük volatilite ve pozitif momentum kombinasyonu tarihsel olarak istikrarlı giriş noktalarını tercih eden riskten kaçınan kurumsal tahsiscileri çekti.",
+     "Net girişler artık pozitif ve Bitcoin son zirvelerin yakınında konsolidasyona girerken, ETF piyasası anlatısını etkili bir şekilde 'başarısız deney'den 'olgunlaşan tahsis aracı'na sıfırladı. Bir sonraki test, yıl sonu portföy yeniden dengelemesinin genellikle her iki yönde de keskin hareketleri tetiklediği tipik olarak değişken dördüncü çeyrekte akışların pozitif kalıp kalamayacağı olacak."
+    ]
+   },
+   "ja": {
+    "title": "ビットコインETFフローが2026年に58億ドルの赤字反転後プラスに転換",
+    "excerpt": "スポットビットコインETFは7月にピークに達した58億ドルの流出赤字を消去し、機関投資家の需要が戻る中、年間で8億ドルの純流入を記録した。",
+    "body": [
+     "米国のスポットビットコイン上場投資信託は劇的な反転を完了し、7月の累積純流出赤字58億ドルから9月末時点の2026年の純流入8億ドルに転換した。この反転は、2024年1月に開始されたこれらの製品の短い歴史の中で最も急激なセンチメント変化の1つを示している。",
+     "ビットコイン価格が84,000ドル付近で安定し、機関投資家が市場に戻ったことで、反転は最近数週間で加速した。8月下旬以降、毎日の流入は継続的に流出を上回り、10のスポットビットコインETF製品全体で数日間が3億ドルを超える純購入を示した。",
+     "7月の底は、ビットコインが60,000ドルを下回り、景気後退懸念の中で投資家が株式市場と暗号市場から資本を引き出したより広範なリスクオフ期間中に起こった。当時、2024年1月のファンド開始以来の累積純流出は58億ドルに達し、規制された製品を通じたビットコインエクスポージャーへの機関投資家需要が過大評価されていたのではないかという疑問が生じた。",
+     "底から現在のレベルまでの66億ドルの変動は、市場アナリストによると、ビットコイン投資のためのETF構造の検証を表している。直接のビットコイン購入とは異なり、ETFは機関投資家が保管を管理したり暗号ネイティブインフラストラクチャを扱ったりせずにエクスポージャーを得ることを可能にし、運用およびコンプライアンスの障壁を低減する。",
+     "ブラックロックのIBITとフィデリティのFBTCが最近の流入を主導し、8月以降の純ポジティブフローの60%以上を合わせて占めている。2024年1月に信託構造からETFに転換したグレイスケールのGBTCは、レガシー保有者が退出するにつれて控えめな流出を続けているが、年初よりも大幅に遅いペースとなっている。",
+     "ビットコインのボラティリティが2024年初頭以来最低レベルに圧縮され、オプション市場が抑えられた短期的な価格変動を織り込んでいる中で、ポジティブなフロートレンドが到来している。この低いボラティリティとポジティブなモメンタムの組み合わせは、歴史的に安定したエントリーポイントを好むリスク回避的な機関投資家アロケーターを引き付けてきた。",
+     "純流入が現在プラスとなり、ビットコインが最近の高値付近で統合されている中で、ETF市場は事実上そのナラティブを「失敗した実験」から「成熟する配分ビークル」にリセットした。次のテストは、年末のポートフォリオリバランスがしばしば両方向への急激な動きを引き起こす典型的に変動性の高い第4四半期を通じてフローがプラスを維持できるかどうかである。"
+    ]
+   },
+   "ko": {
+    "title": "비트코인 ETF 자금 흐름이 2026년에 58억 달러 적자 반전 후 플러스로 전환",
+    "excerpt": "현물 비트코인 ETF는 7월에 정점을 찍은 58억 달러의 유출 적자를 소거하고 기관 투자 수요가 회복되면서 연간 8억 달러의 순유입을 기록했다.",
+    "body": [
+     "미국 현물 비트코인 상장지수펀드가 극적인 반전을 완료하여 7월의 누적 순유출 적자 58억 달러에서 9월 말 기준 2026년 순유입 8억 달러로 전환했다. 이 반전은 2024년 1월에 출시된 이러한 제품의 짧은 역사에서 가장 급격한 심리 변화 중 하나를 나타낸다.",
+     "비트코인 가격이 84,000달러 근처에서 안정되고 기관 투자자들이 시장으로 돌아오면서 최근 몇 주 동안 반전이 가속화되었다. 일일 유입은 8월 말 이후 지속적으로 유출을 초과했으며, 10개 현물 비트코인 ETF 제품 전체에서 여러 날 3억 달러를 초과하는 순매수를 보였다.",
+     "7월 저점은 비트코인이 60,000달러 이하로 떨어지고 투자자들이 경기 침체 우려 속에서 주식 및 암호화폐 시장에서 자본을 인출한 더 광범위한 위험 회피 기간 동안 발생했다. 당시 2024년 1월 펀드 출시 이후 누적 순유출은 58억 달러에 달해 규제된 제품을 통한 비트코인 노출에 대한 기관 수요가 과대평가되었는지에 대한 의문이 제기되었다.",
+     "저점에서 현재 수준까지 66억 달러의 변동은 시장 분석가들에 따르면 비트코인 투자를 위한 ETF 구조의 검증을 나타낸다. 직접 비트코인 구매와 달리 ETF는 기관 투자자들이 보관을 관리하거나 암호화폐 네이티브 인프라를 다루지 않고도 노출을 얻을 수 있게 하여 운영 및 컴플라이언스 장벽을 낮춘다.",
+     "블랙록의 IBIT와 피델리티의 FBTC가 최근 유입을 주도하여 8월 이후 순 긍정 흐름의 60% 이상을 함께 차지하고 있다. 2024년 1월에 신탁 구조에서 ETF로 전환된 그레이스케일의 GBTC는 레거시 보유자들이 빠져나가면서 완만한 유출을 계속 보고 있지만 연초보다 훨씬 느린 속도로 진행되고 있다.",
+     "비트코인 변동성이 2024년 초 이후 최저 수준으로 압축되고 옵션 시장이 완화된 단기 가격 변동을 책정하면서 긍정적인 흐름 추세가 나타나고 있다. 낮은 변동성과 긍정적인 모멘텀의 이러한 조합은 역사적으로 안정적인 진입점을 선호하는 위험 회피 기관 배분자들을 끌어들였다.",
+     "순유입이 현재 플러스이고 비트코인이 최근 고점 근처에서 통합되는 가운데, ETF 시장은 실질적으로 그 이야기를 '실패한 실험'에서 '성숙하는 배분 수단'으로 재설정했다. 다음 테스트는 연말 포트폴리오 재조정이 종종 양방향으로 급격한 움직임을 촉발하는 일반적으로 변동성이 큰 4분기 동안 흐름이 긍정적으로 유지될 수 있는지 여부가 될 것이다."
+    ]
+   },
+   "pl": {
+    "title": "Przepływy ETF Bitcoin Stają Się Pozytywne w 2026 Roku Po Odwróceniu Deficytu 5,8 Mld USD",
+    "excerpt": "Spotowe ETF-y Bitcoin wymazały deficyt wypływów o wartości 5,8 mld USD, który osiągnął szczyt w lipcu, odnotowując 800 mln USD napływów netto w roku wraz z powrotem apetytu instytucjonalnego.",
+    "body": [
+     "Amerykańskie spotowe fundusze giełdowe Bitcoin zakończyły dramatyczny zwrot, przechodząc od skumulowanego deficytu wypływów netto w wysokości 5,8 mld USD w lipcu do 800 mln USD napływów netto za 2026 rok na koniec września. Odwrócenie to oznacza jedną z najostrzejszych zmian sentymentu w krótkiej historii tych produktów, które zostały uruchomione w styczniu 2024 roku.",
+     "Zwrot przyspieszył w ostatnich tygodniach, gdy cena Bitcoin ustabilizowała się blisko 84 000 USD, a inwestorzy instytucjonalni wrócili na rynek. Dzienne napływy konsekwentnie przewyższają wypływy od końca sierpnia, przy czym kilka dni pokazało zakupy netto przekraczające 300 mln USD w całym zestawie dziesięciu produktów ETF Bitcoin spot.",
+     "Lipcowy dołek nastąpił podczas szerszego okresu unikania ryzyka, gdy Bitcoin spadł poniżej 60 000 USD, a inwestorzy wycofywali kapitał z rynków akcji i kryptowalut pośród obaw o recesję. W tym czasie skumulowane wypływy netto od uruchomienia funduszy w styczniu 2024 roku osiągnęły 5,8 mld USD, co wzbudziło pytania, czy popyt instytucjonalny na ekspozycję na Bitcoin poprzez regulowane produkty został przeceniony.",
+     "Wahania o wartości 6,6 mld USD od dołka do obecnych poziomów reprezentują walidację struktury ETF dla inwestowania w Bitcoin, według analityków rynkowych. W przeciwieństwie do bezpośrednich zakupów Bitcoin, ETF-y pozwalają inwestorom instytucjonalnym uzyskać ekspozycję bez zarządzania przechowywaniem lub radzenia sobie z infrastrukturą natywną dla kryptowalut, obniżając bariery operacyjne i zgodności.",
+     "IBIT BlackRock i FBTC Fidelity przewodziły ostatnim napływom, łącznie odpowiadając za ponad 60% przepływów netto dodatnich od sierpnia. GBTC Grayscale, który przekształcił się ze struktury trustu w ETF w styczniu 2024 roku, nadal odnotowuje umiarkowane wypływy, gdy dotychczasowi posiadacze wychodzą, ale w znacznie wolniejszym tempie niż na początku roku.",
+     "Trend pozytywnych przepływów następuje, gdy zmienność Bitcoin skurczyła się do najniższych poziomów od początku 2024 roku, a rynki opcji wyceniają stonowane krótkoterminowe wahania cen. Ta kombinacja niższej zmienności i pozytywnego momentum historycznie przyciągała niechętnych do ryzyka alokatorów instytucjonalnych, którzy preferują stabilne punkty wejścia.",
+     "Z przepływami netto teraz pozytywnymi i Bitcoin konsolidującym się w pobliżu ostatnich szczytów, rynek ETF skutecznie zresetował swoją narrację z 'nieudanego eksperymentu' na 'dojrzewający pojazd alokacyjny'. Kolejnym testem będzie, czy przepływy mogą pozostać pozytywne przez typowo zmienny czwarty kwartał, gdy rebalansowanie portfela na koniec roku często wywołuje ostre ruchy w obu kierunkach."
+    ]
+   },
+   "th": {
+    "title": "กระแสเงินทุน ETF บิทคอยน์เปลี่ยนเป็นบวกในปี 2026 หลังจากย้อนกลับขาดดุล 5.8 พันล้านดอลลาร์",
+    "excerpt": "ETF บิทคอยน์แบบสปอตได้ลบล้างขาดดุลกระแสเงินออก 5.8 พันล้านดอลลาร์ที่สูงสุดในเดือนกรกฎาคม โดยบันทึกกระแสเงินเข้าสุทธิ 800 ล้านดอลลาร์สำหรับปีนี้เมื่อความต้องการจากสถาบันกลับมา",
+    "body": [
+     "กองทุนซื้อขายแลกเปลี่ยนบิทคอยน์แบบสปอตของสหรัฐฯ ได้ทำการพลิกกลับอย่างมาก โดยเปลี่ยนจากขาดดุลกระแสเงินออกสุทธิสะสม 5.8 พันล้านดอลลาร์ในเดือนกรกฎาคมเป็นกระแสเงินเข้าสุทธิ 800 ล้านดอลลาร์สำหรับปี 2026 ณ สิ้นเดือนกันยายน การกลับตัวนี้เป็นหนึ่งในการเปลี่ยนแปลงความเชื่อมั่นที่รุนแรงที่สุดในประวัติศาสตร์อันสั้นของผลิตภัณฑ์เหล่านี้ซึ่งเปิดตัวในเดือนมกราคม 2024",
+     "การกลับตัวเร่งตัวขึ้นในหลายสัปดาห์ที่ผ่านมาเมื่อราคาบิทคอยน์คงที่ใกล้ 84,000 ดอลลาร์และนักลงทุนสถาบันกลับมาสู่ตลาด กระแสเงินเข้ารายวันเกินกระแสเงินออกอย่างต่อเนื่องตั้งแต่ปลายเดือนสิงหาคม โดยหลายวันแสดงการซื้อสุทธิเกิน 300 ล้านดอลลาร์ในทั้งสิบผลิตภัณฑ์ ETF บิทคอยน์แบบสปอต",
+     "จุดต่ำสุดในเดือนกรกฎาคมเกิดขึ้นในช่วงที่หลีกเลี่ยงความเสี่ยงในวงกว้างเมื่อบิทคอยน์ตกต่ำกว่า 60,000 ดอลลาร์และนักลงทุนถอนเงินทุนออกจากตลาดหุ้นและคริปโตท่ามกลางความกลัวเรื่องภาวะเศรษฐกิจถดถอย ในขณะนั้น กระแสเงินออกสุทธิสะสมตั้งแต่การเปิดตัวกองทุนในเดือนมกราคม 2024 ถึง 5.8 พันล้านดอลลาร์ ทำให้เกิดคำถามว่าอุปสงค์จากสถาบันสำหรับการเข้าถึงบิทคอยน์ผ่านผลิตภัณฑ์ที่มีการควบคุมนั้นถูกประเมินสูงเกินไปหรือไม่",
+     "การแกว่งตัว 6.6 พันล้านดอลลาร์จากจุดต่ำสุดไปยังระดับปัจจุบันแสดงถึงการตรวจสอบโครงสร้าง ETF สำหรับการลงทุนในบิทคอยน์ตามนักวิเคราะห์ตลาด แตกต่างจากการซื้อบิทคอยน์โดยตรง ETF ช่วยให้นักลงทุนสถาบันได้รับการเข้าถึงโดยไม่ต้องจัดการการเก็บรักษาหรือจัดการกับโครงสร้างพื้นฐานดั้งเดิมของคริปโต ลดอุปสรรคด้านการดำเนินงานและการปฏิบัติตาม",
+     "IBIT ของ BlackRock และ FBTC ของ Fidelity นำกระแสเงินเข้าล่าสุด โดยรวมกันคิดเป็นมากกว่า 60% ของกระแสเงินบวกสุทธิตั้งแต่เดือนสิงหาคม GBTC ของ Grayscale ซึ่งเปลี่ยนจากโครงสร้างทรัสต์เป็น ETF ในเดือนมกราคม 2024 ยังคงเห็นกระแสเงินออกเล็กน้อยเมื่อผู้ถือครองแบบเดิมออกไป แต่ช้ากว่าช่วงต้นปีอย่างมาก",
+     "แนวโน้มกระแสเงินบวกมาพร้อมกับความผันผวนของบิทคอยน์ที่หดตัวลงสู่ระดับต่ำสุดตั้งแต่ต้นปี 2024 โดยตลาดออปชั่นกำหนดราคาการแกว่งตัวของราคาระยะสั้นที่อ่อนลง การผสมผสานของความผันผวนที่ต่ำลงและโมเมนตัมเชิงบวกนี้ในอดีตดึงดูดผู้จัดสรรสถาบันที่หลีกเลี่ยงความเสี่ยงที่ชอบจุดเข้าที่มั่นคง",
+     "ด้วยกระแสเงินเข้าสุทธิที่เป็นบวกในขณะนี้และบิทคอยน์รวมตัวใกล้ระดับสูงสุดล่าสุด ตลาด ETF ได้รีเซ็ตเรื่องเล่าของตนอย่างมีประสิทธิภาพจาก 'การทดลองที่ล้มเหลว' เป็น 'ยานพาหนะจัดสรรที่กำลังเติบโต' การทดสอบครั้งต่อไปจะเป็นว่ากระแสเงินสามารถคงอยู่เชิงบวกผ่านไตรมาสที่สี่ที่มักผันผวน เมื่อการปรับสมดุลพอร์ตการลงทุนในช่วงสิ้นปีมักจะกระตุ้นการเคลื่อนไหวรุนแรงในทั้งสองทิศทาง"
+    ]
+   }
+  },
+  "date": "2026-09-25T17:38:07.157Z",
+  "gradient": "linear-gradient(135deg,#f7931a33,#0b0e1400)"
+ },
+ {
   "slug": "kelpdao-sues-layerzero-292-million-bridge-exploit-cypv",
   "category": "crypto",
   "emoji": "⚖️",
