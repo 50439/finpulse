@@ -1,5 +1,223 @@
 [
  {
+  "slug": "metamask-security-incident-forces-ethereum-staking-exits-vp9v",
+  "category": "crypto",
+  "emoji": "🔐",
+  "video": {
+   "hook": "YOUR METAMASK STAKING JUST LEAKED REWARDS",
+   "lead": "A security incident forced MetaMask to exit hundreds of thousands of ETH from staking validators as a precaution.",
+   "question": "Do you stake through MetaMask?"
+  },
+  "i18n": {
+   "en": {
+    "title": "MetaMask Security Incident Forces Ethereum Staking Exits, No Funds at Risk",
+    "excerpt": "A security breach diverted a small amount of ETH staking rewards, prompting MetaMask to exit validators holding roughly 523,000 ETH as a precautionary measure.",
+    "body": [
+     "MetaMask has initiated mass exits from Ethereum staking validators following a security incident that compromised a small portion of staking rewards, though the company insists user principal deposits remain safe. An Ethereum security researcher estimates approximately 0.36 ETH in rewards was diverted during the breach, a relatively minor sum compared to the scale of the response.",
+     "The wallet provider's precautionary measure covers validators holding roughly 523,000 ETH, worth approximately $44 million at current prices. The decision to exit such a substantial amount of staked Ethereum underscores the seriousness with which MetaMask is treating the incident, even though the actual losses appear minimal.",
+     "MetaMask has not disclosed the exact nature of the vulnerability that allowed rewards to be redirected, but the incident highlights ongoing security challenges in the liquid staking infrastructure that has become central to Ethereum's proof-of-stake model. Staking rewards are typically distributed to validator operators before being passed to users, creating potential points of vulnerability.",
+     "The forced exits will require affected users to wait through Ethereum's validator withdrawal queue, which can take days or weeks depending on network congestion. During this period, stakers will not earn rewards and their ETH remains locked in the protocol, though they retain full ownership of their principal.",
+     "For MetaMask users who stake through the wallet's native interface, the incident serves as a reminder that convenience often comes with custodial or semi-custodial risk. While MetaMask itself is a self-custody wallet, its staking service relies on third-party infrastructure that introduces additional attack surfaces.",
+     "The timing is particularly awkward as Ethereum staking has grown increasingly competitive, with yields already under pressure from the sheer volume of ETH locked in validators. Any disruption to staking services can push users toward alternative platforms or liquid staking tokens, fragmenting the ecosystem further. MetaMask has not yet provided a timeline for when affected validators will be restored or what compensatory measures, if any, will be offered to users who lose rewards during the exit period."
+    ]
+   },
+   "uk": {
+    "title": "Інцидент безпеки MetaMask призвів до виходу зі стейкінгу Ethereum, кошти не постраждали",
+    "excerpt": "Порушення безпеки призвело до перенаправлення невеликої суми винагород за стейкінг ETH, що змусило MetaMask вивести валідатори, які утримують близько 523,000 ETH, як запобіжний захід.",
+    "body": [
+     "MetaMask ініціював масовий вихід з валідаторів стейкінгу Ethereum після інциденту безпеки, який скомпрометував невелику частину винагород за стейкінг, хоча компанія наполягає, що основні депозити користувачів залишаються в безпеці. Дослідник безпеки Ethereum оцінює, що приблизно 0.36 ETH винагород було перенаправлено під час порушення — відносно незначна сума порівняно з масштабом реакції.",
+     "Запобіжний захід провайдера гаманців охоплює валідатори, які утримують приблизно 523,000 ETH, вартістю близько $44 мільйонів за поточними цінами. Рішення вивести таку значну кількість застейканого Ethereum підкреслює серйозність, з якою MetaMask ставиться до інциденту, навіть попри те, що фактичні збитки виглядають мінімальними.",
+     "MetaMask не розкрив точної природи вразливості, яка дозволила перенаправити винагороди, але інцидент підкреслює поточні проблеми безпеки в інфраструктурі ліквідного стейкінгу, яка стала центральною для моделі proof-of-stake Ethereum. Винагороди за стейкінг зазвичай розподіляються операторам валідаторів перед передачею користувачам, створюючи потенційні точки вразливості.",
+     "Примусові виходи вимагатимуть від постраждалих користувачів очікування в черзі виведення валідаторів Ethereum, що може зайняти дні або тижні залежно від завантаженості мережі. Протягом цього періоду стейкери не отримуватимуть винагород, а їхній ETH залишатиметься заблокованим у протоколі, хоча вони зберігають повне володіння своїм основним депозитом.",
+     "Для користувачів MetaMask, які стейкають через нативний інтерфейс гаманця, інцидент нагадує, що зручність часто супроводжується кастодіальним або напівкастодіальним ризиком. Хоча сам MetaMask є гаманцем із самостійним зберіганням, його сервіс стейкінгу покладається на сторонню інфраструктуру, яка вносить додаткові вектори атак.",
+     "Час особливо невдалий, оскільки стейкінг Ethereum стає все більш конкурентним, а прибутковість вже під тиском через величезний обсяг ETH, заблокованого у валідаторах. Будь-яке порушення в роботі сервісів стейкінгу може штовхнути користувачів до альтернативних платформ або токенів ліквідного стейкінгу, додатково фрагментуючи екосистему. MetaMask поки не надав графіка відновлення постраждалих валідаторів або компенсаційних заходів для користувачів, які втратять винагороди під час періоду виходу."
+    ]
+   },
+   "ru": {
+    "title": "Инцидент безопасности MetaMask вызвал выход из стейкинга Ethereum, средства не пострадали",
+    "excerpt": "Нарушение безопасности привело к перенаправлению небольшой суммы наград за стейкинг ETH, что заставило MetaMask вывести валидаторы, содержащие около 523,000 ETH, в качестве меры предосторожности.",
+    "body": [
+     "MetaMask инициировал массовый выход из валидаторов стейкинга Ethereum после инцидента безопасности, который скомпрометировал небольшую часть наград за стейкинг, хотя компания настаивает, что основные депозиты пользователей остаются в безопасности. Исследователь безопасности Ethereum оценивает, что примерно 0.36 ETH наград было перенаправлено во время нарушения — относительно незначительная сумма по сравнению с масштабом реакции.",
+     "Предупредительная мера провайдера кошельков охватывает валидаторы, содержащие примерно 523,000 ETH, стоимостью около $44 миллионов по текущим ценам. Решение вывести такое значительное количество застейканного Ethereum подчеркивает серьезность, с которой MetaMask относится к инциденту, даже несмотря на то, что фактические потери кажутся минимальными.",
+     "MetaMask не раскрыл точную природу уязвимости, которая позволила перенаправить награды, но инцидент подчеркивает текущие проблемы безопасности в инфраструктуре ликвидного стейкинга, которая стала центральной для модели proof-of-stake Ethereum. Награды за стейкинг обычно распределяются операторам валидаторов перед передачей пользователям, создавая потенциальные точки уязвимости.",
+     "Принудительные выходы потребуют от пострадавших пользователей ожидания в очереди вывода валидаторов Ethereum, что может занять дни или недели в зависимости от загруженности сети. В течение этого периода стейкеры не будут получать награды, а их ETH останется заблокированным в протоколе, хотя они сохраняют полное владение своим основным депозитом.",
+     "Для пользователей MetaMask, которые стейкают через нативный интерфейс кошелька, инцидент напоминает, что удобство часто сопровождается кастодиальным или полукастодиальным риском. Хотя сам MetaMask является кошельком с самостоятельным хранением, его сервис стейкинга полагается на стороннюю инфраструктуру, которая вносит дополнительные векторы атак.",
+     "Время особенно неудачное, поскольку стейкинг Ethereum становится все более конкурентным, а доходность уже под давлением из-за огромного объема ETH, заблокированного в валидаторах. Любое нарушение в работе сервисов стейкинга может подтолкнуть пользователей к альтернативным платформам или токенам ликвидного стейкинга, дополнительно фрагментируя экосистему. MetaMask пока не предоставил график восстановления пострадавших валидаторов или компенсационных мер для пользователей, которые потеряют награды в период выхода."
+    ]
+   },
+   "es": {
+    "title": "Incidente de seguridad en MetaMask obliga a salir del staking de Ethereum, fondos no están en riesgo",
+    "excerpt": "Una brecha de seguridad desvió una pequeña cantidad de recompensas de staking de ETH, lo que llevó a MetaMask a retirar validadores que contienen aproximadamente 523,000 ETH como medida de precaución.",
+    "body": [
+     "MetaMask ha iniciado salidas masivas de validadores de staking de Ethereum tras un incidente de seguridad que comprometió una pequeña parte de las recompensas de staking, aunque la compañía insiste en que los depósitos principales de los usuarios permanecen seguros. Un investigador de seguridad de Ethereum estima que aproximadamente 0.36 ETH en recompensas fueron desviadas durante la brecha, una suma relativamente menor comparada con la escala de la respuesta.",
+     "La medida de precaución del proveedor de billeteras cubre validadores que contienen aproximadamente 523,000 ETH, con un valor de aproximadamente $44 millones a precios actuales. La decisión de retirar una cantidad tan sustancial de Ethereum en staking subraya la seriedad con la que MetaMask está tratando el incidente, incluso aunque las pérdidas reales parecen mínimas.",
+     "MetaMask no ha revelado la naturaleza exacta de la vulnerabilidad que permitió redirigir las recompensas, pero el incidente destaca los desafíos de seguridad continuos en la infraestructura de staking líquido que se ha vuelto central para el modelo proof-of-stake de Ethereum. Las recompensas de staking se distribuyen típicamente a los operadores de validadores antes de pasarse a los usuarios, creando puntos potenciales de vulnerabilidad.",
+     "Las salidas forzadas requerirán que los usuarios afectados esperen en la cola de retiro de validadores de Ethereum, lo que puede tomar días o semanas dependiendo de la congestión de la red. Durante este período, los stakers no ganarán recompensas y su ETH permanecerá bloqueado en el protocolo, aunque retienen la propiedad total de su capital principal.",
+     "Para los usuarios de MetaMask que hacen staking a través de la interfaz nativa de la billetera, el incidente sirve como recordatorio de que la conveniencia a menudo viene con riesgo custodial o semi-custodial. Aunque MetaMask en sí es una billetera de autocustodia, su servicio de staking depende de infraestructura de terceros que introduce superficies de ataque adicionales.",
+     "El momento es particularmente incómodo ya que el staking de Ethereum se ha vuelto cada vez más competitivo, con rendimientos ya bajo presión debido al gran volumen de ETH bloqueado en validadores. Cualquier interrupción en los servicios de staking puede empujar a los usuarios hacia plataformas alternativas o tokens de staking líquido, fragmentando aún más el ecosistema. MetaMask aún no ha proporcionado un cronograma para cuándo se restaurarán los validadores afectados o qué medidas compensatorias, si las hay, se ofrecerán a los usuarios que pierdan recompensas durante el período de salida."
+    ]
+   },
+   "pt": {
+    "title": "Incidente de segurança no MetaMask força saídas de staking do Ethereum, fundos não estão em risco",
+    "excerpt": "Uma violação de segurança desviou uma pequena quantidade de recompensas de staking de ETH, levando o MetaMask a retirar validadores contendo aproximadamente 523.000 ETH como medida de precaução.",
+    "body": [
+     "O MetaMask iniciou saídas em massa de validadores de staking do Ethereum após um incidente de segurança que comprometeu uma pequena parte das recompensas de staking, embora a empresa insista que os depósitos principais dos usuários permanecem seguros. Um pesquisador de segurança do Ethereum estima que aproximadamente 0,36 ETH em recompensas foram desviadas durante a violação, uma quantia relativamente pequena comparada à escala da resposta.",
+     "A medida de precaução do provedor de carteiras cobre validadores contendo aproximadamente 523.000 ETH, no valor de aproximadamente $44 milhões aos preços atuais. A decisão de retirar uma quantidade tão substancial de Ethereum em staking ressalta a seriedade com que o MetaMask está tratando o incidente, mesmo que as perdas reais pareçam mínimas.",
+     "O MetaMask não divulgou a natureza exata da vulnerabilidade que permitiu o redirecionamento das recompensas, mas o incidente destaca os desafios contínuos de segurança na infraestrutura de staking líquido que se tornou central para o modelo proof-of-stake do Ethereum. As recompensas de staking são tipicamente distribuídas aos operadores de validadores antes de serem repassadas aos usuários, criando pontos potenciais de vulnerabilidade.",
+     "As saídas forçadas exigirão que os usuários afetados aguardem na fila de retirada de validadores do Ethereum, o que pode levar dias ou semanas dependendo do congestionamento da rede. Durante este período, os stakers não ganharão recompensas e seu ETH permanecerá bloqueado no protocolo, embora mantenham propriedade total de seu capital principal.",
+     "Para usuários do MetaMask que fazem staking através da interface nativa da carteira, o incidente serve como lembrete de que a conveniência muitas vezes vem com risco custodial ou semi-custodial. Embora o próprio MetaMask seja uma carteira de autocustódia, seu serviço de staking depende de infraestrutura de terceiros que introduz superfícies de ataque adicionais.",
+     "O momento é particularmente desconfortável, já que o staking do Ethereum se tornou cada vez mais competitivo, com rendimentos já sob pressão devido ao grande volume de ETH bloqueado em validadores. Qualquer interrupção nos serviços de staking pode empurrar os usuários para plataformas alternativas ou tokens de staking líquido, fragmentando ainda mais o ecossistema. O MetaMask ainda não forneceu um cronograma para quando os validadores afetados serão restaurados ou quais medidas compensatórias, se houver, serão oferecidas aos usuários que perderem recompensas durante o período de saída."
+    ]
+   },
+   "de": {
+    "title": "MetaMask-Sicherheitsvorfall erzwingt Ethereum-Staking-Ausstiege, keine Gelder gefährdet",
+    "excerpt": "Eine Sicherheitsverletzung leitete eine kleine Menge an ETH-Staking-Belohnungen um, was MetaMask veranlasste, Validatoren mit etwa 523.000 ETH als Vorsichtsmaßnahme auszutreten.",
+    "body": [
+     "MetaMask hat Massenausstiege aus Ethereum-Staking-Validatoren eingeleitet, nachdem ein Sicherheitsvorfall einen kleinen Teil der Staking-Belohnungen kompromittiert hat, obwohl das Unternehmen darauf besteht, dass die Haupteinlagen der Nutzer sicher bleiben. Ein Ethereum-Sicherheitsforscher schätzt, dass etwa 0,36 ETH an Belohnungen während des Verstoßes umgeleitet wurden, eine relativ geringe Summe im Vergleich zum Umfang der Reaktion.",
+     "Die Vorsichtsmaßnahme des Wallet-Anbieters betrifft Validatoren, die etwa 523.000 ETH halten, im Wert von etwa $44 Millionen zu aktuellen Preisen. Die Entscheidung, eine so beträchtliche Menge an gestaktem Ethereum auszutreten, unterstreicht die Ernsthaftigkeit, mit der MetaMask den Vorfall behandelt, auch wenn die tatsächlichen Verluste minimal erscheinen.",
+     "MetaMask hat die genaue Art der Schwachstelle, die die Umleitung von Belohnungen ermöglichte, nicht offengelegt, aber der Vorfall verdeutlicht fortlaufende Sicherheitsherausforderungen in der Liquid-Staking-Infrastruktur, die zentral für Ethereums Proof-of-Stake-Modell geworden ist. Staking-Belohnungen werden typischerweise an Validatorbetreiber verteilt, bevor sie an Nutzer weitergegeben werden, was potenzielle Schwachstellen schafft.",
+     "Die erzwungenen Ausstiege erfordern, dass betroffene Nutzer in der Ethereum-Validator-Abhebungswarteschlange warten, was je nach Netzwerkauslastung Tage oder Wochen dauern kann. Während dieser Zeit verdienen Staker keine Belohnungen und ihr ETH bleibt im Protokoll gesperrt, obwohl sie das volle Eigentum an ihrem Hauptkapital behalten.",
+     "Für MetaMask-Nutzer, die über die native Schnittstelle der Wallet staken, dient der Vorfall als Erinnerung daran, dass Bequemlichkeit oft mit Verwahrungsrisiko oder halbem Verwahrungsrisiko einhergeht. Während MetaMask selbst eine Self-Custody-Wallet ist, verlässt sich ihr Staking-Dienst auf Drittanbieter-Infrastruktur, die zusätzliche Angriffsflächen einführt.",
+     "Das Timing ist besonders ungünstig, da Ethereum-Staking zunehmend wettbewerbsintensiv geworden ist, wobei die Renditen bereits unter Druck stehen aufgrund des schieren Volumens an ETH, das in Validatoren gesperrt ist. Jede Störung der Staking-Dienste kann Nutzer zu alternativen Plattformen oder Liquid-Staking-Token treiben und das Ökosystem weiter fragmentieren. MetaMask hat noch keinen Zeitplan bereitgestellt, wann betroffene Validatoren wiederhergestellt werden oder welche Ausgleichsmaßnahmen, falls vorhanden, Nutzern angeboten werden, die während der Ausstiegsperiode Belohnungen verlieren."
+    ]
+   },
+   "fr": {
+    "title": "Un incident de sécurité MetaMask force des sorties de staking Ethereum, aucun fonds en danger",
+    "excerpt": "Une violation de sécurité a détourné une petite quantité de récompenses de staking ETH, incitant MetaMask à retirer des validateurs détenant environ 523 000 ETH par mesure de précaution.",
+    "body": [
+     "MetaMask a initié des sorties massives de validateurs de staking Ethereum suite à un incident de sécurité qui a compromis une petite partie des récompenses de staking, bien que l'entreprise insiste sur le fait que les dépôts principaux des utilisateurs restent en sécurité. Un chercheur en sécurité Ethereum estime qu'environ 0,36 ETH de récompenses ont été détournées lors de la violation, une somme relativement mineure par rapport à l'ampleur de la réponse.",
+     "La mesure de précaution du fournisseur de portefeuille couvre des validateurs détenant environ 523 000 ETH, d'une valeur d'environ 44 millions de dollars aux prix actuels. La décision de retirer une quantité aussi substantielle d'Ethereum staké souligne le sérieux avec lequel MetaMask traite l'incident, même si les pertes réelles semblent minimes.",
+     "MetaMask n'a pas divulgué la nature exacte de la vulnérabilité qui a permis de rediriger les récompenses, mais l'incident met en évidence les défis de sécurité continus dans l'infrastructure de staking liquide qui est devenue centrale au modèle proof-of-stake d'Ethereum. Les récompenses de staking sont généralement distribuées aux opérateurs de validateurs avant d'être transmises aux utilisateurs, créant des points de vulnérabilité potentiels.",
+     "Les sorties forcées obligeront les utilisateurs affectés à attendre dans la file d'attente de retrait des validateurs Ethereum, ce qui peut prendre des jours ou des semaines selon la congestion du réseau. Pendant cette période, les stakers ne gagneront pas de récompenses et leur ETH restera verrouillé dans le protocole, bien qu'ils conservent la pleine propriété de leur capital principal.",
+     "Pour les utilisateurs de MetaMask qui stakent via l'interface native du portefeuille, l'incident rappelle que la commodité s'accompagne souvent d'un risque de garde ou semi-garde. Bien que MetaMask lui-même soit un portefeuille en auto-conservation, son service de staking repose sur une infrastructure tierce qui introduit des surfaces d'attaque supplémentaires.",
+     "Le timing est particulièrement embarrassant alors que le staking Ethereum est devenu de plus en plus compétitif, avec des rendements déjà sous pression en raison du volume considérable d'ETH verrouillé dans les validateurs. Toute perturbation des services de staking peut pousser les utilisateurs vers des plateformes alternatives ou des jetons de staking liquide, fragmentant davantage l'écosystème. MetaMask n'a pas encore fourni de calendrier pour la restauration des validateurs affectés ni les mesures compensatoires, le cas échéant, qui seront offertes aux utilisateurs qui perdent des récompenses pendant la période de sortie."
+    ]
+   },
+   "ar": {
+    "title": "حادث أمني في MetaMask يجبر على الخروج من ستاكينغ إيثريوم، لا توجد أموال في خطر",
+    "excerpt": "أدى خرق أمني إلى تحويل كمية صغيرة من مكافآت ستاكينغ ETH، مما دفع MetaMask إلى سحب مدققين يحتفظون بحوالي 523,000 ETH كإجراء احترازي.",
+    "body": [
+     "بدأت MetaMask عمليات خروج جماعية من مدققي ستاكينغ إيثريوم بعد حادث أمني عرض جزءاً صغيراً من مكافآت الستاكينغ للخطر، رغم إصرار الشركة على أن ودائع المستخدمين الرئيسية تبقى آمنة. يقدر باحث أمني في إيثريوم أن حوالي 0.36 ETH من المكافآت تم تحويلها خلال الخرق، وهي مبلغ صغير نسبياً مقارنة بحجم الاستجابة.",
+     "يغطي الإجراء الاحترازي لمزود المحفظة مدققين يحتفظون بحوالي 523,000 ETH، بقيمة تقارب 44 مليون دولار بالأسعار الحالية. يؤكد قرار سحب كمية كبيرة من إيثريوم المستثمر في الستاكينغ على جدية تعامل MetaMask مع الحادث، حتى لو بدت الخسائر الفعلية ضئيلة.",
+     "لم تكشف MetaMask عن الطبيعة الدقيقة للثغرة التي سمحت بإعادة توجيه المكافآت، لكن الحادث يسلط الضوء على التحديات الأمنية المستمرة في البنية التحتية للستاكينغ السائل التي أصبحت محورية لنموذج إثبات الحصة في إيثريوم. عادةً ما توزع مكافآت الستاكينغ على مشغلي المدققين قبل نقلها إلى المستخدمين، مما يخلق نقاط ضعف محتملة.",
+     "ستتطلب عمليات الخروج القسرية من المستخدمين المتضررين الانتظار في قائمة انتظار سحب مدققي إيثريوم، والتي قد تستغرق أياماً أو أسابيع حسب ازدحام الشبكة. خلال هذه الفترة، لن يكسب المستثمرون في الستاكينغ مكافآت وسيبقى ETH الخاص بهم مقفلاً في البروتوكول، رغم احتفاظهم بالملكية الكاملة لرأس مالهم الأساسي.",
+     "بالنسبة لمستخدمي MetaMask الذين يقومون بالستاكينغ عبر واجهة المحفظة الأصلية، يعمل الحادث كتذكير بأن الراحة غالباً ما تأتي مع مخاطر حفظ أو شبه حفظ. بينما MetaMask نفسها محفظة ذاتية الحفظ، فإن خدمة الستاكينغ الخاصة بها تعتمد على بنية تحتية تابعة لطرف ثالث تقدم أسطح هجوم إضافية.",
+     "التوقيت محرج بشكل خاص حيث أصبح ستاكينغ إيثريوم تنافسياً بشكل متزايد، مع عوائد تحت الضغط بالفعل بسبب الحجم الهائل من ETH المقفل في المدققين. يمكن لأي انقطاع في خدمات الستاكينغ أن يدفع المستخدمين نحو منصات بديلة أو رموز ستاكينغ سائلة، مما يجزئ النظام البيئي أكثر. لم توفر MetaMask بعد جدولاً زمنياً لموعد استعادة المدققين المتضررين أو أي تدابير تعويضية ستُقدم للمستخدمين الذين يفقدون مكافآت خلال فترة الخروج."
+    ]
+   },
+   "zh": {
+    "title": "MetaMask安全事件迫使以太坊质押退出，资金无风险",
+    "excerpt": "一次安全漏洞转移了少量ETH质押奖励，促使MetaMask作为预防措施退出持有约523,000 ETH的验证器。",
+    "body": [
+     "MetaMask在一次安全事件导致少量质押奖励受损后，已启动以太坊质押验证器的大规模退出，尽管公司坚称用户本金存款仍然安全。一位以太坊安全研究人员估计，在此次漏洞中约有0.36 ETH的奖励被转移，相对于响应规模而言这是一个相对较小的数额。",
+     "钱包提供商的预防措施涵盖持有约523,000 ETH的验证器，按当前价格计算价值约4400万美元。决定退出如此大量的质押以太坊，凸显了MetaMask对待此事件的严肃性，即使实际损失似乎微不足道。",
+     "MetaMask尚未披露允许奖励被重定向的漏洞的确切性质，但该事件突显了流动性质押基础设施中持续存在的安全挑战，该基础设施已成为以太坊权益证明模型的核心。质押奖励通常在传递给用户之前分配给验证器运营商，从而创建潜在的漏洞点。",
+     "强制退出将要求受影响的用户在以太坊验证器提取队列中等待，根据网络拥堵情况可能需要数天或数周。在此期间，质押者将不会获得奖励，他们的ETH将保持锁定在协议中，尽管他们保留对本金的完全所有权。",
+     "对于通过钱包原生界面进行质押的MetaMask用户，该事件提醒人们便利性往往伴随着托管或半托管风险。虽然MetaMask本身是一个自我托管钱包，但其质押服务依赖于第三方基础设施，这会引入额外的攻击面。",
+     "时机特别尴尬，因为以太坊质押变得越来越具有竞争性，收益率已经因锁定在验证器中的ETH数量巨大而承压。质押服务的任何中断都可能推动用户转向替代平台或流动性质押代币，进一步分散生态系统。MetaMask尚未提供何时恢复受影响验证器的时间表，也未说明将向在退出期间损失奖励的用户提供哪些补偿措施（如果有的话）。"
+    ]
+   },
+   "hi": {
+    "title": "MetaMask सुरक्षा घटना ने Ethereum स्टेकिंग से बाहर निकलने को मजबूर किया, फंड जोखिम में नहीं",
+    "excerpt": "एक सुरक्षा उल्लंघन ने ETH स्टेकिंग पुरस्कारों की एक छोटी राशि को डायवर्ट कर दिया, जिससे MetaMask ने लगभग 523,000 ETH रखने वाले वैलिडेटर्स को सावधानी के तौर पर बाहर निकाला।",
+    "body": [
+     "MetaMask ने एक सुरक्षा घटना के बाद Ethereum स्टेकिंग वैलिडेटर्स से बड़े पैमाने पर बाहर निकलना शुरू कर दिया है, जिसने स्टेकिंग पुरस्कारों के एक छोटे हिस्से से समझौता किया, हालांकि कंपनी जोर देती है कि उपयोगकर्ता प्रिंसिपल डिपॉजिट सुरक्षित रहते हैं। एक Ethereum सुरक्षा शोधकर्ता का अनुमान है कि उल्लंघन के दौरान लगभग 0.36 ETH पुरस्कार डायवर्ट किए गए, जो प्रतिक्रिया के पैमाने की तुलना में अपेक्षाकृत मामूली राशि है।",
+     "वॉलेट प्रदाता का सावधानी उपाय लगभग 523,000 ETH रखने वाले वैलिडेटर्स को कवर करता है, जिनकी वर्तमान कीमतों पर लगभग $44 मिलियन की कीमत है। इतनी बड़ी मात्रा में स्टेक्ड Ethereum को बाहर निकालने का निर्णय उस गंभीरता को रेखांकित करता है जिसके साथ MetaMask घटना का इलाज कर रहा है, भले ही वास्तविक नुकसान न्यूनतम दिखाई देते हों।",
+     "MetaMask ने उस कमजोरी की सटीक प्रकृति का खुलासा नहीं किया है जिसने पुरस्कारों को पुनर्निर्देशित करने की अनुमति दी, लेकिन घटना तरल स्टेकिंग बुनियादी ढांचे में चल रही सुरक्षा चुनौतियों को उजागर करती है जो Ethereum के proof-of-stake मॉडल के लिए केंद्रीय बन गई है। स्टेकिंग पुरस्कारों को आमतौर पर उपयोगकर्ताओं को पास करने से पहले वैलिडेटर ऑपरेटरों को वितरित किया जाता है, जो संभावित कमजोरी बिंदु बनाता है।",
+     "मजबूर निकास प्रभावित उपयोगकर्ताओं को Ethereum वैलिडेटर निकासी कतार के माध्यम से इंतजार करने की आवश्यकता होगी, जो नेटवर्क भीड़ के आधार पर दिन या सप्ताह लग सकते हैं। इस अवधि के दौरान, स्टेकर्स पुरस्कार नहीं कमाएंगे और उनका ETH प्रोटोकॉल में लॉक रहेगा, हालांकि वे अपने प्रिंसिपल की पूर्ण स्वामित्व बनाए रखते हैं।",
+     "MetaMask उपयोगकर्ताओं के लिए जो वॉलेट के मूल इंटरफेस के माध्यम से स्टेक करते हैं, घटना एक अनुस्मारक के रूप में कार्य करती है कि सुविधा अक्सर कस्टोडियल या अर्ध-कस्टोडियल जोखिम के साथ आती है। जबकि MetaMask स्वयं एक सेल्फ-कस्टडी वॉलेट है, इसकी स्टेकिंग सेवा तृतीय-पक्ष बुनियादी ढांचे पर निर्भर करती है जो अतिरिक्त हमले की सतहों को पेश करती है।",
+     "समय विशेष रूप से अजीब है क्योंकि Ethereum स्टेकिंग तेजी से प्रतिस्पर्धी हो गई है, वैलिडेटर्स में लॉक ETH की विशाल मात्रा से पहले से ही दबाव में यील्ड के साथ। स्टेकिंग सेवाओं में कोई भी व्यवधान उपयोगकर्ताओं को वैकल्पिक प्लेटफार्मों या लिक्विड स्टेकिंग टोकन की ओर धकेल सकता है, पारिस्थितिकी तंत्र को और अधिक खंडित कर सकता है। MetaMask ने अभी तक यह समयरेखा प्रदान नहीं की है कि प्रभावित वैलिडेटर्स कब बहाल किए जाएंगे या क्या मुआवजा उपाय, यदि कोई हो, उन उपयोगकर्ताओं को पेश किए जाएंगे जो निकास अवधि के दौरान पुरस्कार खो देते हैं।"
+    ]
+   },
+   "id": {
+    "title": "Insiden Keamanan MetaMask Memaksa Keluar dari Staking Ethereum, Dana Tidak Berisiko",
+    "excerpt": "Pelanggaran keamanan mengalihkan sejumlah kecil hadiah staking ETH, mendorong MetaMask untuk menarik validator yang memegang sekitar 523.000 ETH sebagai tindakan pencegahan.",
+    "body": [
+     "MetaMask telah memulai penarikan massal dari validator staking Ethereum menyusul insiden keamanan yang mengkompromikan sebagian kecil hadiah staking, meskipun perusahaan bersikeras deposit pokok pengguna tetap aman. Seorang peneliti keamanan Ethereum memperkirakan sekitar 0,36 ETH dalam hadiah dialihkan selama pelanggaran, jumlah yang relatif kecil dibandingkan dengan skala respons.",
+     "Tindakan pencegahan penyedia dompet mencakup validator yang memegang sekitar 523.000 ETH, senilai sekitar $44 juta pada harga saat ini. Keputusan untuk menarik jumlah Ethereum yang di-staking begitu besar menggarisbawahi keseriusan MetaMask dalam memperlakukan insiden tersebut, meskipun kerugian aktual tampak minimal.",
+     "MetaMask belum mengungkapkan sifat pasti dari kerentanan yang memungkinkan hadiah dialihkan, tetapi insiden tersebut menyoroti tantangan keamanan berkelanjutan dalam infrastruktur staking likuid yang telah menjadi sentral bagi model proof-of-stake Ethereum. Hadiah staking biasanya didistribusikan ke operator validator sebelum diteruskan ke pengguna, menciptakan titik kerentanan potensial.",
+     "Penarikan paksa akan mengharuskan pengguna yang terkena dampak untuk menunggu melalui antrian penarikan validator Ethereum, yang dapat memakan waktu berhari-hari atau berminggu-minggu tergantung pada kemacetan jaringan. Selama periode ini, staker tidak akan mendapatkan hadiah dan ETH mereka tetap terkunci dalam protokol, meskipun mereka mempertahankan kepemilikan penuh atas pokok mereka.",
+     "Bagi pengguna MetaMask yang melakukan staking melalui antarmuka asli dompet, insiden ini berfungsi sebagai pengingat bahwa kenyamanan sering kali datang dengan risiko kustodian atau semi-kustodian. Meskipun MetaMask sendiri adalah dompet penyimpanan mandiri, layanan staking-nya bergantung pada infrastruktur pihak ketiga yang memperkenalkan permukaan serangan tambahan.",
+     "Waktunya sangat canggung karena staking Ethereum telah menjadi semakin kompetitif, dengan imbal hasil sudah dalam tekanan dari volume besar ETH yang terkunci dalam validator. Gangguan apa pun pada layanan staking dapat mendorong pengguna ke platform alternatif atau token staking likuid, memfragmentasi ekosistem lebih lanjut. MetaMask belum memberikan jadwal kapan validator yang terkena dampak akan dipulihkan atau langkah kompensasi apa pun, jika ada, yang akan ditawarkan kepada pengguna yang kehilangan hadiah selama periode penarikan."
+    ]
+   },
+   "vi": {
+    "title": "Sự cố bảo mật MetaMask buộc phải thoát khỏi staking Ethereum, tiền không gặp rủi ro",
+    "excerpt": "Một vi phạm bảo mật đã chuyển hướng một lượng nhỏ phần thưởng staking ETH, khiến MetaMask phải rút các validator nắm giữ khoảng 523.000 ETH như một biện pháp phòng ngừa.",
+    "body": [
+     "MetaMask đã bắt đầu các đợt thoát hàng loạt khỏi các validator staking Ethereum sau một sự cố bảo mật làm tổn hại một phần nhỏ phần thưởng staking, mặc dù công ty khẳng định các khoản tiền gửi chính của người dùng vẫn an toàn. Một nhà nghiên cứu bảo mật Ethereum ước tính khoảng 0,36 ETH phần thưởng đã bị chuyển hướng trong vi phạm, một số tiền tương đối nhỏ so với quy mô phản ứng.",
+     "Biện pháp phòng ngừa của nhà cung cấp ví bao gồm các validator nắm giữ khoảng 523.000 ETH, trị giá khoảng 44 triệu đô la theo giá hiện tại. Quyết định rút một lượng Ethereum được stake đáng kể như vậy nhấn mạnh sự nghiêm trọng mà MetaMask đang đối xử với sự cố, ngay cả khi các khoản lỗ thực tế có vẻ tối thiểu.",
+     "MetaMask chưa tiết lộ bản chất chính xác của lỗ hổng cho phép phần thưởng bị chuyển hướng, nhưng sự cố này làm nổi bật các thách thức bảo mật đang diễn ra trong cơ sở hạ tầng staking thanh khoản đã trở thành trung tâm cho mô hình proof-of-stake của Ethereum. Phần thưởng staking thường được phân phối cho các nhà điều hành validator trước khi được chuyển cho người dùng, tạo ra các điểm dễ bị tổn thương tiềm ẩn.",
+     "Các đợt thoát bắt buộc sẽ yêu cầu người dùng bị ảnh hưởng phải chờ đợi qua hàng đợi rút validator Ethereum, có thể mất vài ngày hoặc vài tuần tùy thuộc vào tắc nghẽn mạng. Trong thời gian này, các staker sẽ không kiếm được phần thưởng và ETH của họ vẫn bị khóa trong giao thức, mặc dù họ giữ quyền sở hữu đầy đủ đối với khoản tiền gốc của mình.",
+     "Đối với người dùng MetaMask đang stake thông qua giao diện gốc của ví, sự cố này đóng vai trò như một lời nhắc nhở rằng sự tiện lợi thường đi kèm với rủi ro giám sát hoặc bán giám sát. Mặc dù bản thân MetaMask là một ví tự quản lý, dịch vụ staking của nó dựa vào cơ sở hạ tầng của bên thứ ba giới thiệu các bề mặt tấn công bổ sung.",
+     "Thời điểm đặc biệt khó xử vì staking Ethereum đã trở nên cạnh tranh hơn bao giờ hết, với lợi suất đã chịu áp lực từ khối lượng lớn ETH bị khóa trong các validator. Bất kỳ sự gián đoạn nào đối với các dịch vụ staking có thể đẩy người dùng đến các nền tảng thay thế hoặc token staking thanh khoản, phân mảnh hơn nữa hệ sinh thái. MetaMask chưa cung cấp lịch trình khi nào các validator bị ảnh hưởng sẽ được khôi phục hoặc các biện pháp bù đắp nào, nếu có, sẽ được cung cấp cho người dùng mất phần thưởng trong thời gian thoát."
+    ]
+   },
+   "tr": {
+    "title": "MetaMask Güvenlik Olayı Ethereum Stake Çıkışlarını Zorladı, Fonlar Risk Altında Değil",
+    "excerpt": "Bir güvenlik ihlali küçük miktarda ETH stake ödülünü yönlendirdi ve MetaMask'ı önlem olarak yaklaşık 523.000 ETH tutan doğrulayıcıları çıkarmaya sevk etti.",
+    "body": [
+     "MetaMask, stake ödüllerinin küçük bir kısmını tehlikeye atan bir güvenlik olayının ardından Ethereum stake doğrulayıcılarından toplu çıkışlar başlattı, ancak şirket kullanıcı ana depozitolarının güvende kaldığında ısrar ediyor. Bir Ethereum güvenlik araştırmacısı, ihlal sırasında yaklaşık 0,36 ETH ödülün yönlendirildiğini tahmin ediyor; yanıtın ölçeğine kıyasla nispeten küçük bir miktar.",
+     "Cüzdan sağlayıcısının önlem tedbiri, mevcut fiyatlarla yaklaşık 44 milyon dolar değerinde olan yaklaşık 523.000 ETH tutan doğrulayıcıları kapsıyor. Bu kadar önemli miktarda stake edilmiş Ethereum'u çıkarma kararı, gerçek kayıplar minimum görünse bile MetaMask'ın olaya ciddiyetle yaklaştığını vurguluyor.",
+     "MetaMask, ödüllerin yönlendirilmesine izin veren güvenlik açığının tam doğasını açıklamadı, ancak olay, Ethereum'un proof-of-stake modeli için merkezi hale gelen likit stake altyapısındaki devam eden güvenlik zorluklarını vurguluyor. Stake ödülleri tipik olarak kullanıcılara aktarılmadan önce doğrulayıcı operatörlerine dağıtılır ve potansiyel güvenlik açığı noktaları yaratır.",
+     "Zorla çıkışlar, etkilenen kullanıcıların ağ yoğunluğuna bağlı olarak günler veya haftalar sürebilecek Ethereum doğrulayıcı çekme kuyruğunda beklemelerini gerektirecek. Bu süre zarfında, stake edenler ödül kazanmayacak ve ETH'leri protokolde kilitli kalacak, ancak ana sermayelerinin tam sahipliğini koruyacaklar.",
+     "Cüzdanın yerel arayüzü üzerinden stake eden MetaMask kullanıcıları için, olay rahatlığın genellikle saklama veya yarı saklama riskiyle geldiğini hatırlatıyor. MetaMask'ın kendisi kendi saklama cüzdanı olsa da, stake hizmeti ek saldırı yüzeyleri getiren üçüncü taraf altyapısına dayanıyor.",
+     "Zamanlama özellikle garip çünkü Ethereum stake'i giderek daha rekabetçi hale geldi ve getiriler zaten doğrulayıcılarda kilitli ETH'nin büyük hacmi nedeniyle baskı altında. Stake hizmetlerindeki herhangi bir kesinti, kullanıcıları alternatif platformlara veya likit stake tokenlarına itebilir ve ekosistemi daha da parçalayabilir. MetaMask henüz etkilenen doğrulayıcıların ne zaman geri yükleneceğine dair bir zaman çizelgesi veya çıkış döneminde ödül kaybeden kullanıcılara varsa hangi telafi önlemlerinin sunulacağını sağlamadı."
+    ]
+   },
+   "ja": {
+    "title": "MetaMaskセキュリティインシデントがEthereumステーキング撤退を強制、資金リスクなし",
+    "excerpt": "セキュリティ侵害により少量のETHステーキング報酬が転用され、MetaMaskは予防措置として約523,000 ETHを保有するバリデーターを撤退させた。",
+    "body": [
+     "MetaMaskは、ステーキング報酬の一部を危険にさらしたセキュリティインシデントの後、Ethereumステーキングバリデーターからの大量撤退を開始しましたが、同社はユーザーの元本預金は安全であると主張しています。Ethereumセキュリティ研究者は、侵害中に約0.36 ETHの報酬が転用されたと推定しており、対応の規模と比較すると比較的小さな金額です。",
+     "ウォレットプロバイダーの予防措置は、現在の価格で約4,400万ドル相当の約523,000 ETHを保有するバリデーターをカバーしています。このような大量のステーキングされたEthereumを撤退させる決定は、実際の損失が最小限に見えても、MetaMaskがインシデントをどれほど真剣に扱っているかを強調しています。",
+     "MetaMaskは報酬のリダイレクトを許可した脆弱性の正確な性質を明らかにしていませんが、このインシデントは、Ethereumのプルーフ・オブ・ステークモデルの中心となったリキッドステーキングインフラストラクチャーにおける継続的なセキュリティ課題を浮き彫りにしています。ステーキング報酬は通常、ユーザーに渡される前にバリデーター運営者に配分され、潜在的な脆弱性ポイントを作成します。",
+     "強制撤退により、影響を受けたユーザーはネットワークの混雑状況に応じて数日または数週間かかる可能性があるEthereumバリデーター引き出しキューで待つ必要があります。この期間中、ステーカーは報酬を獲得せず、ETHはプロトコルにロックされたままですが、元本の完全な所有権は保持されます。",
+     "ウォレットのネイティブインターフェースを介してステーキングするMetaMaskユーザーにとって、このインシデントは、便利さがしばしばカストディアルまたはセミカストディアルリスクを伴うことを思い出させます。MetaMask自体は自己管理ウォレットですが、そのステーキングサービスは追加の攻撃面を導入するサードパーティインフラストラクチャーに依存しています。",
+     "Ethereumステーキングがますます競争的になり、バリデーターにロックされたETHの膨大な量から利回りがすでに圧迫されているため、タイミングは特に不都合です。ステーキングサービスの中断は、ユーザーを代替プラットフォームやリキッドステーキングトークンに押しやり、エコシステムをさらに断片化する可能性があります。MetaMaskは、影響を受けたバリデーターがいつ復元されるか、または撤退期間中に報酬を失うユーザーにどのような補償措置が提供されるかについてのスケジュールをまだ提供していません。"
+    ]
+   },
+   "ko": {
+    "title": "MetaMask 보안 사고로 이더리움 스테이킹 탈퇴 강제, 자금 위험 없음",
+    "excerpt": "보안 침해로 소량의 ETH 스테이킹 보상이 전용되어 MetaMask가 예방 조치로 약 523,000 ETH를 보유한 검증자를 철수시켰습니다.",
+    "body": [
+     "MetaMask는 스테이킹 보상의 작은 부분을 손상시킨 보안 사고 후 이더리움 스테이킹 검증자로부터 대량 탈퇴를 시작했지만, 회사는 사용자 원금 예금이 안전하다고 주장합니다. 이더리움 보안 연구원은 침해 중 약 0.36 ETH의 보상이 전용되었다고 추정하며, 이는 대응 규모에 비해 상대적으로 작은 금액입니다.",
+     "지갑 제공업체의 예방 조치는 현재 가격으로 약 4,400만 달러 상당의 약 523,000 ETH를 보유한 검증자를 포함합니다. 이렇게 상당한 양의 스테이킹된 이더리움을 철수하기로 한 결정은 실제 손실이 미미해 보이더라도 MetaMask가 사고를 얼마나 심각하게 다루고 있는지를 강조합니다.",
+     "MetaMask는 보상 리디렉션을 허용한 취약점의 정확한 성격을 공개하지 않았지만, 이 사고는 이더리움의 지분 증명 모델의 중심이 된 유동성 스테이킹 인프라에서 진행 중인 보안 과제를 부각시킵니다. 스테이킹 보상은 일반적으로 사용자에게 전달되기 전에 검증자 운영자에게 배포되어 잠재적인 취약점을 만듭니다.",
+     "강제 탈퇴로 인해 영향을 받은 사용자는 네트워크 혼잡에 따라 며칠 또는 몇 주가 걸릴 수 있는 이더리움 검증자 인출 대기열에서 기다려야 합니다. 이 기간 동안 스테이커는 보상을 받지 못하고 ETH는 프로토콜에 잠겨 있지만 원금에 대한 완전한 소유권은 유지됩니다.",
+     "지갑의 네이티브 인터페이스를 통해 스테이킹하는 MetaMask 사용자에게 이 사고는 편의성이 종종 보관 또는 반보관 위험을 수반한다는 것을 상기시킵니다. MetaMask 자체는 자체 보관 지갑이지만 스테이킹 서비스는 추가 공격 표면을 도입하는 제3자 인프라에 의존합니다.",
+     "이더리움 스테이킹이 점점 더 경쟁적이 되고 있으며 검증자에 잠긴 ETH의 엄청난 양으로 인해 수익률이 이미 압박을 받고 있기 때문에 타이밍이 특히 어색합니다. 스테이킹 서비스의 중단은 사용자를 대체 플랫폼이나 유동성 스테이킹 토큰으로 밀어내고 생태계를 더욱 단편화할 수 있습니다. MetaMask는 아직 영향을 받은 검증자가 언제 복원될지 또는 탈퇴 기간 동안 보상을 잃은 사용자에게 어떤 보상 조치가 제공될지에 대한 일정을 제공하지 않았습니다."
+    ]
+   },
+   "pl": {
+    "title": "Incydent bezpieczeństwa MetaMask wymusza wyjścia ze stakingu Ethereum, brak zagrożenia dla funduszy",
+    "excerpt": "Naruszenie bezpieczeństwa przekierowało niewielką kwotę nagród za staking ETH, co skłoniło MetaMask do wycofania walidatorów posiadających około 523 000 ETH jako środek ostrożności.",
+    "body": [
+     "MetaMask zainicjował masowe wyjścia z walidatorów stakingu Ethereum po incydencie bezpieczeństwa, który skompromitował niewielką część nagród za staking, choć firma zapewnia, że główne depozyty użytkowników pozostają bezpieczne. Badacz bezpieczeństwa Ethereum szacuje, że podczas naruszenia przekierowano około 0,36 ETH w nagrodach, co jest stosunkowo niewielką sumą w porównaniu ze skalą reakcji.",
+     "Środek ostrożności dostawcy portfela obejmuje walidatory posiadające około 523 000 ETH, o wartości około 44 milionów dolarów przy obecnych cenach. Decyzja o wycofaniu tak znacznej ilości zestakowanego Ethereum podkreśla powagę, z jaką MetaMask traktuje incydent, nawet jeśli rzeczywiste straty wydają się minimalne.",
+     "MetaMask nie ujawnił dokładnej natury luki, która pozwoliła na przekierowanie nagród, ale incydent podkreśla trwające wyzwania bezpieczeństwa w infrastrukturze płynnego stakingu, która stała się centralna dla modelu proof-of-stake Ethereum. Nagrody za staking są zwykle dystrybuowane do operatorów walidatorów przed przekazaniem ich użytkownikom, tworząc potencjalne punkty podatności.",
+     "Wymuszone wyjścia będą wymagały od dotkniętych użytkowników oczekiwania w kolejce do wypłaty walidatorów Ethereum, co może potrwać dni lub tygodnie w zależności od przeciążenia sieci. W tym okresie stakerzy nie będą zarabiać nagród, a ich ETH pozostanie zablokowane w protokole, choć zachowają pełną własność swojego kapitału głównego.",
+     "Dla użytkowników MetaMask, którzy stakują przez natywny interfejs portfela, incydent przypomina, że wygoda często wiąże się z ryzykiem powierniczym lub częściowo powierniczym. Chociaż sam MetaMask jest portfelem samoobsługowym, jego usługa stakingu opiera się na infrastrukturze stron trzecich, która wprowadza dodatkowe powierzchnie ataku.",
+     "Timing jest szczególnie niezręczny, ponieważ staking Ethereum stał się coraz bardziej konkurencyjny, a rentowność jest już pod presją z powodu ogromnej ilości ETH zablokowanego w walidatorach. Każda przerwa w usługach stakingu może popchnąć użytkowników w stronę alternatywnych platform lub tokenów płynnego stakingu, dalej fragmentując ekosystem. MetaMask nie przedstawił jeszcze harmonogramu, kiedy zostaną przywrócone dotknięte walidatory ani jakie środki kompensacyjne, jeśli w ogóle, zostaną zaoferowane użytkownikom, którzy stracą nagrody w okresie wyjścia."
+    ]
+   },
+   "th": {
+    "title": "เหตุการณ์ด้านความปลอดภัย MetaMask บังคับให้ออกจากสเตคกิ้ง Ethereum เงินไม่มีความเสี่ยง",
+    "excerpt": "การละเมิดความปลอดภัยทำให้รางวัลสเตคกิ้ง ETH จำนวนเล็กน้อยถูกเบี่ยงเบน กระตุ้นให้ MetaMask ถอนตัวตรวจสอบที่ถือประมาณ 523,000 ETH เป็นมาตรการป้องกัน",
+    "body": [
+     "MetaMask ได้เริ่มการออกจากตัวตรวจสอบสเตคกิ้ง Ethereum จำนวนมากหลังจากเหตุการณ์ด้านความปลอดภัยที่ทำให้รางวัลสเตคกิ้งส่วนเล็ก ๆ ถูกบุกรุก แม้ว่าบริษัทยืนยันว่าเงินฝากหลักของผู้ใช้ยังคงปลอดภัย นักวิจัยด้านความปลอดภัย Ethereum ประมาณการว่ารางวัลประมาณ 0.36 ETH ถูกเบี่ยงเบนในระหว่างการละเมิด ซึ่งเป็นจำนวนที่ค่อนข้างเล็กเมื่อเทียบกับขนาดของการตอบสนอง",
+     "มาตรการป้องกันของผู้ให้บริการกระเป๋าเงินครอบคลุมตัวตรวจสอบที่ถือประมาณ 523,000 ETH มีมูลค่าประมาณ 44 ล้านดอลลาร์ที่ราคาปัจจุบัน การตัดสินใจที่จะถอน Ethereum ที่ถูกสเตคในจำนวนมากเช่นนี้เน้นย้ำถึงความจริงจังที่ MetaMask กำลังจัดการกับเหตุการณ์ แม้ว่าการสูญเสียที่แท้จริงดูเหมือนจะน้อยที่สุด",
+     "MetaMask ยังไม่ได้เปิดเผยลักษณะที่แน่นอนของช่องโหว่ที่อนุญาตให้รางวัลถูกเปลี่ยนเส้นทาง แต่เหตุการณ์นี้เน้นถึงความท้าทายด้านความปลอดภัยที่กำลังดำเนินอยู่ในโครงสร้างพื้นฐานสเตคกิ้งสภาพคล่องที่กลายเป็นศูนย์กลางสำหรับโมเดล proof-of-stake ของ Ethereum รางวัลสเตคกิ้งมักจะถูกแจกจ่ายให้กับผู้ดำเนินการตัวตรวจสอบก่อนที่จะถูกส่งต่อไปยังผู้ใช้ สร้างจุดอ่อนที่อาจเกิดขึ้น",
+     "การออกโดยบังคับจะต้องการให้ผู้ใช้ที่ได้รับผลกระทบรอในคิวการถอนตัวตรวจสอบ Ethereum ซึ่งอาจใช้เวลาหลายวันหรือหลายสัปดาห์ขึ้นอยู่กับความแออัดของเครือข่าย ในช่วงเวลานี้ ผู้สเตคจะไม่ได้รับรางวัลและ ETH ของพวกเขาจะยังคงถูกล็อคในโปรโตคอล แม้ว่าพวกเขาจะรักษาความเป็นเจ้าของทั้งหมดของเงินต้น",
+     "สำหรับผู้ใช้ MetaMask ที่ทำสเตคผ่านอินเทอร์เฟซดั้งเดิมของกระเป๋าเงิน เหตุการณ์นี้เป็นเครื่องเตือนใจว่าความสะดวกสบายมักมาพร้อมกับความเสี่ยงแบบเก็บรักษาหรือกึ่งเก็บรักษา แม้ว่า MetaMask เองจะเป็นกระเป๋าเงินแบบเก็บรักษาตนเอง แต่บริการสเตคกิ้งของมันอาศัยโครงสร้างพื้นฐานบุคคลที่สามที่นำเสนอพื้นผิวการโจมตีเพิ่มเติม",
+     "จังหวะเวลานี้น่าอึดอัดใจเป็นพิเศษเนื่องจากสเตคกิ้ง Ethereum กลายเป็นการแข่งขันมากขึ้น โดยผลตอบแทนอยู่ภายใต้แรงกดดันจากปริมาณ ETH ที่ถูกล็อคในตัวตรวจสอบจำนวนมาก การหยุดชะงักใด ๆ ของบริการสเตคกิ้งสามารถผลักดันผู้ใช้ไปยังแพลตฟอร์มทางเลือกหรือโทเค็นสเตคกิ้งสภาพคล่อง ทำให้ระบบนิเวศแตกแยกมากขึ้น MetaMask ยังไม่ได้ให้กำหนดเวลาว่าเมื่อใดตัวตรวจสอบที่ได้รับผลกระทบจะถูกกู้คืนหรือมาตรการชดเชยใด ๆ หากมี ที่จะเสนอให้กับผู้ใช้ที่สูญเสียรางวัลในช่วงเวลาออก"
+    ]
+   }
+  },
+  "date": "2026-10-01T11:16:47.922Z",
+  "gradient": "linear-gradient(135deg,#f7931a33,#0b0e1400)"
+ },
+ {
   "slug": "open-usd-launches-partner-owned-stablecoin-model-to-rival-te-cw2w",
   "category": "crypto",
   "emoji": "🔄",
