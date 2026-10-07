@@ -1,5 +1,240 @@
 [
  {
+  "slug": "arbitrum-joins-paxos-usdg-stablecoin-alliance-reserve-income-vym8",
+  "category": "crypto",
+  "emoji": "🤝",
+  "video": {
+   "hook": "YOUR STABLECOIN EARNS THEM BILLIONS",
+   "lead": "Arbitrum just joined a stablecoin group where networks get paid from the reserves backing your dollars.",
+   "question": "Should your network share in stablecoin profits?"
+  },
+  "i18n": {
+   "en": {
+    "title": "Arbitrum Joins Paxos Stablecoin Alliance to Earn Share of Reserve Income",
+    "excerpt": "The Ethereum layer-2 network is backing Paxos-issued USDG to capture a portion of reserve yields, as new stablecoin alliances compete for distribution and economics.",
+    "body": [
+     "Arbitrum has joined Global Dollar, a Paxos-led stablecoin consortium that shares reserve income with participating blockchain networks, marking a strategic shift in how layer-2 platforms monetize stablecoin activity on their chains.",
+     "The partnership gives Arbitrum a stake in the economics of USDG, a dollar-pegged stablecoin issued by regulated custodian Paxos. Unlike traditional stablecoins where issuers keep all interest earned on reserves, Global Dollar distributes a portion of that yield to networks that promote adoption and provide liquidity for the token.",
+     "Stablecoin reserves, typically held in short-term U.S. Treasuries and similar instruments, generate substantial returns in today's interest rate environment. Tether's USDT and Circle's USDC have generated billions in profit for their issuers from reserve yields alone, while the blockchains hosting trillions in stablecoin transfers received nothing.",
+     "The Global Dollar model attempts to realign those incentives. By offering networks a revenue share, Paxos aims to secure deeper integration, native support, and promotional efforts from layer-1 and layer-2 platforms that have historically served as unpaid infrastructure for other companies' stablecoins.",
+     "Arbitrum processes billions of dollars in stablecoin volume monthly, primarily USDT and USDC. The addition of USDG gives the network an economic stake in stablecoin growth for the first time, potentially funding ecosystem grants, validator rewards, or protocol development without diluting the native ARB token.",
+     "The move comes as stablecoin competition intensifies. Coinbase-backed USDC recently signed a five-year distribution deal with Binance, while new entrants like Open USD are launching partner-owned models. Each alliance is racing to lock in distribution channels and capture market share in what has become a $200 billion industry.",
+     "For Arbitrum users, the partnership could mean tighter USDG liquidity, lower trading fees for the token, and potential incentives for holding or transacting in USDG rather than competing stablecoins. Whether that is enough to challenge the entrenched dominance of USDT and USDC remains an open question, as network effects and existing liquidity still favor the incumbents."
+    ]
+   },
+   "uk": {
+    "title": "Arbitrum приєднується до альянсу стейблкоїнів Paxos, щоб отримувати частку доходу від резервів",
+    "excerpt": "Мережа другого рівня Ethereum підтримує USDG від Paxos, щоб отримувати частину прибутку від резервів, оскільки нові альянси стейблкоїнів конкурують за розподіл та економіку.",
+    "body": [
+     "Arbitrum приєднався до Global Dollar, консорціуму стейблкоїнів на чолі з Paxos, який ділиться доходом від резервів з блокчейн-мережами-учасниками, що знаменує стратегічний зсув у тому, як платформи другого рівня монетизують активність стейблкоїнів у своїх мережах.",
+     "Партнерство дає Arbitrum частку в економіці USDG, стейблкоїна, прив'язаного до долара, який випускає регульований кастодіан Paxos. На відміну від традиційних стейблкоїнів, де емітенти зберігають весь відсоток, зароблений на резервах, Global Dollar розподіляє частину цього доходу між мережами, які сприяють прийняттю та забезпечують ліквідність токена.",
+     "Резерви стейблкоїнів, зазвичай утримувані в короткострокових казначейських облігаціях США та подібних інструментах, генерують значну прибутковість у нинішньому середовищі процентних ставок. USDT Tether та USDC Circle принесли мільярди прибутку своїм емітентам лише від доходу резервів, тоді як блокчейни, що обробляють трильйони переказів стейблкоїнів, не отримали нічого.",
+     "Модель Global Dollar намагається перевстановити ці стимули. Пропонуючи мережам частку доходу, Paxos прагне забезпечити глибшу інтеграцію, нативну підтримку та просування з боку платформ першого та другого рівня, які історично служили неоплачуваною інфраструктурою для стейблкоїнів інших компаній.",
+     "Arbitrum обробляє мільярди доларів обсягу стейблкоїнів щомісяця, переважно USDT та USDC. Додавання USDG дає мережі економічну участь у зростанні стейблкоїнів вперше, потенційно фінансуючи гранти екосистеми, винагороди валідаторів або розробку протоколу без розмивання нативного токена ARB.",
+     "Цей крок відбувається на тлі посилення конкуренції стейблкоїнів. USDC за підтримки Coinbase нещодавно підписав п'ятирічну угоду про розповсюдження з Binance, тоді як нові учасники, як-от Open USD, запускають моделі, що належать партнерам. Кожен альянс поспішає закріпити канали розповсюдження та захопити частку ринку в тому, що стало індустрією на $200 мільярдів.",
+     "Для користувачів Arbitrum партнерство може означати кращу ліквідність USDG, нижчі комісії за торгівлю токеном та потенційні стимули для утримання або транзакцій у USDG замість конкуруючих стейблкоїнів. Чи буде цього достатньо, щоб кинути виклик укоріненому домінуванню USDT та USDC, залишається відкритим питанням, оскільки мережеві ефекти та існуюча ліквідність все ще віддають перевагу лідерам."
+    ]
+   },
+   "ru": {
+    "title": "Arbitrum присоединяется к альянсу стейблкоинов Paxos для получения доли дохода от резервов",
+    "excerpt": "Сеть второго уровня Ethereum поддерживает USDG от Paxos, чтобы получать часть доходности резервов, поскольку новые альянсы стейблкоинов конкурируют за распределение и экономику.",
+    "body": [
+     "Arbitrum присоединился к Global Dollar, консорциуму стейблкоинов под руководством Paxos, который делится доходом от резервов с участвующими блокчейн-сетями, что знаменует стратегический сдвиг в том, как платформы второго уровня монетизируют активность стейблкоинов в своих сетях.",
+     "Партнерство дает Arbitrum долю в экономике USDG, стейблкоина, привязанного к доллару, который выпускает регулируемый кастодиан Paxos. В отличие от традиционных стейблкоинов, где эмитенты сохраняют весь процент, заработанный на резервах, Global Dollar распределяет часть этой доходности между сетями, которые способствуют принятию и обеспечивают ликвидность токена.",
+     "Резервы стейблкоинов, обычно хранящиеся в краткосрочных казначейских облигациях США и аналогичных инструментах, генерируют существенную доходность в текущей среде процентных ставок. USDT Tether и USDC Circle принесли миллиарды прибыли своим эмитентам только от доходности резервов, в то время как блокчейны, обрабатывающие триллионы переводов стейблкоинов, не получили ничего.",
+     "Модель Global Dollar пытается перестроить эти стимулы. Предлагая сетям долю дохода, Paxos стремится обеспечить более глубокую интеграцию, нативную поддержку и продвижение со стороны платформ первого и второго уровня, которые исторически служили неоплачиваемой инфраструктурой для стейблкоинов других компаний.",
+     "Arbitrum обрабатывает миллиарды долларов объема стейблкоинов ежемесячно, в основном USDT и USDC. Добавление USDG дает сети экономическую долю в росте стейблкоинов впервые, потенциально финансируя гранты экосистемы, вознаграждения валидаторов или разработку протокола без размывания нативного токена ARB.",
+     "Этот шаг происходит на фоне усиления конкуренции стейблкоинов. USDC при поддержке Coinbase недавно подписал пятилетнее соглашение о распространении с Binance, в то время как новые участники, такие как Open USD, запускают модели, принадлежащие партнерам. Каждый альянс спешит закрепить каналы распространения и захватить долю рынка в том, что стало индустрией на $200 миллиардов.",
+     "Для пользователей Arbitrum партнерство может означать более тесную ликвидность USDG, более низкие торговые комиссии для токена и потенциальные стимулы для хранения или транзакций в USDG вместо конкурирующих стейблкоинов. Будет ли этого достаточно, чтобы бросить вызов укоренившемуся доминированию USDT и USDC, остается открытым вопросом, поскольку сетевые эффекты и существующая ликвидность все еще благоприятствуют лидерам."
+    ]
+   },
+   "es": {
+    "title": "Arbitrum se une a la alianza de stablecoins de Paxos para obtener parte de los ingresos de las reservas",
+    "excerpt": "La red de capa 2 de Ethereum respalda USDG emitido por Paxos para capturar una porción de los rendimientos de las reservas, mientras las nuevas alianzas de stablecoins compiten por distribución y economía.",
+    "body": [
+     "Arbitrum se ha unido a Global Dollar, un consorcio de stablecoins liderado por Paxos que comparte los ingresos de las reservas con las redes blockchain participantes, marcando un cambio estratégico en cómo las plataformas de capa 2 monetizan la actividad de stablecoins en sus cadenas.",
+     "La asociación otorga a Arbitrum una participación en la economía de USDG, una stablecoin vinculada al dólar emitida por el custodio regulado Paxos. A diferencia de las stablecoins tradicionales donde los emisores retienen todos los intereses ganados en las reservas, Global Dollar distribuye una porción de ese rendimiento a las redes que promueven la adopción y proporcionan liquidez para el token.",
+     "Las reservas de stablecoins, típicamente mantenidas en bonos del Tesoro de EE.UU. a corto plazo e instrumentos similares, generan retornos sustanciales en el entorno actual de tasas de interés. USDT de Tether y USDC de Circle han generado miles de millones en ganancias para sus emisores solo por los rendimientos de las reservas, mientras que las blockchains que procesan billones en transferencias de stablecoins no recibieron nada.",
+     "El modelo Global Dollar intenta realinear esos incentivos. Al ofrecer a las redes una participación en los ingresos, Paxos busca asegurar una integración más profunda, soporte nativo y esfuerzos promocionales de plataformas de capa 1 y capa 2 que históricamente han servido como infraestructura no remunerada para las stablecoins de otras compañías.",
+     "Arbitrum procesa miles de millones de dólares en volumen de stablecoins mensualmente, principalmente USDT y USDC. La adición de USDG otorga a la red una participación económica en el crecimiento de stablecoins por primera vez, potencialmente financiando subvenciones del ecosistema, recompensas de validadores o desarrollo del protocolo sin diluir el token nativo ARB.",
+     "El movimiento ocurre mientras se intensifica la competencia de stablecoins. USDC respaldado por Coinbase recientemente firmó un acuerdo de distribución de cinco años con Binance, mientras que nuevos participantes como Open USD están lanzando modelos propiedad de socios. Cada alianza compite por asegurar canales de distribución y capturar cuota de mercado en lo que se ha convertido en una industria de $200 mil millones.",
+     "Para los usuarios de Arbitrum, la asociación podría significar mayor liquidez de USDG, tarifas de negociación más bajas para el token e incentivos potenciales por mantener o realizar transacciones en USDG en lugar de stablecoins competidoras. Si eso es suficiente para desafiar el dominio arraigado de USDT y USDC sigue siendo una pregunta abierta, ya que los efectos de red y la liquidez existente aún favorecen a los incumbentes."
+    ]
+   },
+   "pt": {
+    "title": "Arbitrum adere à aliança de stablecoins da Paxos para obter parte da receita das reservas",
+    "excerpt": "A rede de camada 2 do Ethereum apoia a USDG emitida pela Paxos para capturar uma parte dos rendimentos das reservas, enquanto novas alianças de stablecoins competem por distribuição e economia.",
+    "body": [
+     "O Arbitrum aderiu ao Global Dollar, um consórcio de stablecoins liderado pela Paxos que compartilha receita de reservas com redes blockchain participantes, marcando uma mudança estratégica em como plataformas de camada 2 monetizam a atividade de stablecoins em suas cadeias.",
+     "A parceria dá ao Arbitrum uma participação na economia da USDG, uma stablecoin atrelada ao dólar emitida pelo custodiante regulamentado Paxos. Ao contrário de stablecoins tradicionais onde emissores mantêm todos os juros ganhos nas reservas, o Global Dollar distribui uma porção desse rendimento para redes que promovem adoção e fornecem liquidez para o token.",
+     "As reservas de stablecoins, normalmente mantidas em títulos do Tesouro dos EUA de curto prazo e instrumentos similares, geram retornos substanciais no ambiente atual de taxas de juros. O USDT da Tether e o USDC da Circle geraram bilhões em lucros para seus emissores apenas com rendimentos de reservas, enquanto as blockchains que processam trilhões em transferências de stablecoins não receberam nada.",
+     "O modelo Global Dollar tenta realinhar esses incentivos. Ao oferecer às redes uma participação na receita, a Paxos visa garantir integração mais profunda, suporte nativo e esforços promocionais de plataformas de camada 1 e camada 2 que historicamente serviram como infraestrutura não remunerada para stablecoins de outras empresas.",
+     "O Arbitrum processa bilhões de dólares em volume de stablecoins mensalmente, principalmente USDT e USDC. A adição da USDG dá à rede uma participação econômica no crescimento de stablecoins pela primeira vez, potencialmente financiando doações ao ecossistema, recompensas de validadores ou desenvolvimento de protocolo sem diluir o token nativo ARB.",
+     "O movimento ocorre enquanto a competição de stablecoins se intensifica. O USDC apoiado pela Coinbase recentemente assinou um acordo de distribuição de cinco anos com a Binance, enquanto novos participantes como o Open USD estão lançando modelos de propriedade de parceiros. Cada aliança está competindo para garantir canais de distribuição e capturar participação de mercado no que se tornou uma indústria de $200 bilhões.",
+     "Para usuários do Arbitrum, a parceria pode significar liquidez mais apertada da USDG, taxas de negociação mais baixas para o token e incentivos potenciais para manter ou transacionar em USDG em vez de stablecoins concorrentes. Se isso é suficiente para desafiar o domínio arraigado do USDT e USDC permanece uma questão em aberto, já que efeitos de rede e liquidez existente ainda favorecem os incumbentes."
+    ]
+   },
+   "de": {
+    "title": "Arbitrum tritt Paxos-Stablecoin-Allianz bei, um Anteil an Reserveeinnahmen zu erhalten",
+    "excerpt": "Das Ethereum-Layer-2-Netzwerk unterstützt den von Paxos ausgegebenen USDG, um einen Teil der Reserverenditen zu erfassen, während neue Stablecoin-Allianzen um Vertrieb und Wirtschaftlichkeit konkurrieren.",
+    "body": [
+     "Arbitrum ist Global Dollar beigetreten, einem von Paxos geführten Stablecoin-Konsortium, das Reserveeinnahmen mit teilnehmenden Blockchain-Netzwerken teilt, was eine strategische Verschiebung markiert, wie Layer-2-Plattformen Stablecoin-Aktivitäten auf ihren Ketten monetarisieren.",
+     "Die Partnerschaft gibt Arbitrum einen Anteil an der Wirtschaftlichkeit von USDG, einem an den Dollar gekoppelten Stablecoin, der vom regulierten Verwahrer Paxos ausgegeben wird. Im Gegensatz zu traditionellen Stablecoins, bei denen Emittenten alle auf Reserven verdienten Zinsen behalten, verteilt Global Dollar einen Teil dieser Rendite an Netzwerke, die Akzeptanz fördern und Liquidität für den Token bereitstellen.",
+     "Stablecoin-Reserven, die typischerweise in kurzfristigen US-Staatsanleihen und ähnlichen Instrumenten gehalten werden, generieren im aktuellen Zinsumfeld erhebliche Renditen. Tethers USDT und Circles USDC haben Milliarden an Gewinn für ihre Emittenten allein aus Reserverenditen generiert, während die Blockchains, die Billionen an Stablecoin-Überweisungen verarbeiten, nichts erhielten.",
+     "Das Global-Dollar-Modell versucht, diese Anreize neu auszurichten. Durch das Angebot eines Umsatzanteils an Netzwerke zielt Paxos darauf ab, tiefere Integration, native Unterstützung und Werbemaßnahmen von Layer-1- und Layer-2-Plattformen zu sichern, die historisch als unbezahlte Infrastruktur für Stablecoins anderer Unternehmen dienten.",
+     "Arbitrum verarbeitet monatlich Milliarden Dollar an Stablecoin-Volumen, hauptsächlich USDT und USDC. Die Hinzufügung von USDG gibt dem Netzwerk erstmals eine wirtschaftliche Beteiligung am Stablecoin-Wachstum und finanziert möglicherweise Ökosystem-Zuschüsse, Validator-Belohnungen oder Protokollentwicklung, ohne den nativen ARB-Token zu verwässern.",
+     "Der Schritt erfolgt, während sich der Stablecoin-Wettbewerb intensiviert. Das von Coinbase unterstützte USDC hat kürzlich einen fünfjährigen Vertriebsvertrag mit Binance unterzeichnet, während neue Teilnehmer wie Open USD partnerschaftlich geführte Modelle starten. Jede Allianz wetteifert darum, Vertriebskanäle zu sichern und Marktanteile in einer Branche zu erobern, die zu einer $200-Milliarden-Industrie geworden ist.",
+     "Für Arbitrum-Nutzer könnte die Partnerschaft engere USDG-Liquidität, niedrigere Handelsgebühren für den Token und potenzielle Anreize für das Halten oder Handeln in USDG anstelle konkurrierender Stablecoins bedeuten. Ob das ausreicht, um die etablierte Dominanz von USDT und USDC herauszufordern, bleibt eine offene Frage, da Netzwerkeffekte und bestehende Liquidität immer noch die Amtsinhaber begünstigen."
+    ]
+   },
+   "fr": {
+    "title": "Arbitrum rejoint l'alliance de stablecoins Paxos pour obtenir une part des revenus des réserves",
+    "excerpt": "Le réseau de couche 2 d'Ethereum soutient l'USDG émis par Paxos pour capturer une partie des rendements des réserves, alors que de nouvelles alliances de stablecoins se disputent la distribution et l'économie.",
+    "body": [
+     "Arbitrum a rejoint Global Dollar, un consortium de stablecoins dirigé par Paxos qui partage les revenus des réserves avec les réseaux blockchain participants, marquant un changement stratégique dans la façon dont les plateformes de couche 2 monétisent l'activité des stablecoins sur leurs chaînes.",
+     "Le partenariat donne à Arbitrum une participation dans l'économie de l'USDG, un stablecoin indexé sur le dollar émis par le dépositaire réglementé Paxos. Contrairement aux stablecoins traditionnels où les émetteurs conservent tous les intérêts gagnés sur les réserves, Global Dollar distribue une partie de ce rendement aux réseaux qui favorisent l'adoption et fournissent de la liquidité pour le token.",
+     "Les réserves de stablecoins, généralement détenues en bons du Trésor américain à court terme et instruments similaires, génèrent des rendements substantiels dans l'environnement actuel des taux d'intérêt. L'USDT de Tether et l'USDC de Circle ont généré des milliards de bénéfices pour leurs émetteurs uniquement grâce aux rendements des réserves, tandis que les blockchains traitant des billions de transferts de stablecoins n'ont rien reçu.",
+     "Le modèle Global Dollar tente de réaligner ces incitations. En offrant aux réseaux une part des revenus, Paxos vise à garantir une intégration plus profonde, un soutien natif et des efforts promotionnels de la part des plateformes de couche 1 et couche 2 qui ont historiquement servi d'infrastructure non rémunérée pour les stablecoins d'autres sociétés.",
+     "Arbitrum traite des milliards de dollars de volume de stablecoins mensuellement, principalement USDT et USDC. L'ajout de l'USDG donne au réseau une participation économique dans la croissance des stablecoins pour la première fois, finançant potentiellement des subventions écosystémiques, des récompenses de validateurs ou le développement de protocoles sans diluer le token natif ARB.",
+     "Cette initiative intervient alors que la concurrence des stablecoins s'intensifie. L'USDC soutenu par Coinbase a récemment signé un accord de distribution de cinq ans avec Binance, tandis que de nouveaux entrants comme Open USD lancent des modèles détenus par des partenaires. Chaque alliance se précipite pour sécuriser des canaux de distribution et capturer des parts de marché dans ce qui est devenu une industrie de 200 milliards de dollars.",
+     "Pour les utilisateurs d'Arbitrum, le partenariat pourrait signifier une liquidité plus serrée de l'USDG, des frais de négociation plus bas pour le token et des incitations potentielles à détenir ou effectuer des transactions en USDG plutôt que dans des stablecoins concurrents. Reste à savoir si cela suffira à défier la domination enracinée de l'USDT et de l'USDC, car les effets de réseau et la liquidité existante favorisent toujours les acteurs en place."
+    ]
+   },
+   "ar": {
+    "title": "آربيتروم تنضم لتحالف العملات المستقرة من باكسوس للحصول على حصة من عوائد الاحتياطيات",
+    "excerpt": "شبكة الطبقة الثانية من إيثيريوم تدعم USDG الصادرة عن باكسوس للحصول على جزء من عوائد الاحتياطيات، بينما تتنافس تحالفات العملات المستقرة الجديدة على التوزيع والاقتصاديات.",
+    "body": [
+     "انضمت آربيتروم إلى Global Dollar، وهو اتحاد للعملات المستقرة بقيادة باكسوس يشارك إيرادات الاحتياطيات مع شبكات البلوكشين المشاركة، مما يمثل تحولاً استراتيجياً في كيفية تحقيق منصات الطبقة الثانية للدخل من نشاط العملات المستقرة على سلاسلها.",
+     "تمنح الشراكة آربيتروم حصة في اقتصاديات USDG، وهي عملة مستقرة مربوطة بالدولار صادرة عن الوصي المنظم باكسوس. على عكس العملات المستقرة التقليدية حيث يحتفظ المصدرون بكل الفائدة المكتسبة على الاحتياطيات، يوزع Global Dollar جزءاً من هذا العائد على الشبكات التي تعزز التبني وتوفر السيولة للرمز.",
+     "احتياطيات العملات المستقرة، المحتفظ بها عادة في سندات الخزانة الأمريكية قصيرة الأجل وأدوات مماثلة، تولد عوائد كبيرة في بيئة أسعار الفائدة الحالية. حققت USDT من تيثر و USDC من سيركل مليارات الأرباح لمصدريها من عوائد الاحتياطيات وحدها، بينما لم تحصل سلاسل البلوكشين التي تعالج تريليونات من تحويلات العملات المستقرة على شيء.",
+     "يحاول نموذج Global Dollar إعادة ترتيب هذه الحوافز. من خلال تقديم حصة من الإيرادات للشبكات، تهدف باكسوس لتأمين تكامل أعمق ودعم أصلي وجهود ترويجية من منصات الطبقة الأولى والثانية التي خدمت تاريخياً كبنية تحتية غير مدفوعة لعملات مستقرة لشركات أخرى.",
+     "تعالج آربيتروم مليارات الدولارات من حجم العملات المستقرة شهرياً، بشكل أساسي USDT و USDC. تمنح إضافة USDG الشبكة حصة اقتصادية في نمو العملات المستقرة للمرة الأولى، مما قد يمول منحاً للنظام البيئي أو مكافآت للمدققين أو تطوير البروتوكول دون تخفيف الرمز الأصلي ARB.",
+     "تأتي هذه الخطوة بينما تشتد المنافسة على العملات المستقرة. وقعت USDC المدعومة من كوين بيس مؤخراً صفقة توزيع لخمس سنوات مع بينانس، بينما يطلق الوافدون الجدد مثل Open USD نماذج مملوكة للشركاء. يتسابق كل تحالف لتأمين قنوات التوزيع والحصول على حصة سوقية في ما أصبح صناعة بقيمة 200 مليار دولار.",
+     "بالنسبة لمستخدمي آربيتروم، قد تعني الشراكة سيولة أفضل لـ USDG، ورسوم تداول أقل للرمز، وحوافز محتملة لحيازة أو التعامل بـ USDG بدلاً من العملات المستقرة المنافسة. ما إذا كان ذلك كافياً لتحدي الهيمنة الراسخة لـ USDT و USDC يبقى سؤالاً مفتوحاً، حيث لا تزال تأثيرات الشبكة والسيولة الموجودة تفضل الجهات الحالية."
+    ]
+   },
+   "zh": {
+    "title": "Arbitrum加入Paxos稳定币联盟以获得储备收益分成",
+    "excerpt": "以太坊二层网络支持Paxos发行的USDG以获取储备收益的一部分，随着新的稳定币联盟竞争分销和经济模式。",
+    "body": [
+     "Arbitrum已加入Global Dollar，这是一个由Paxos领导的稳定币联盟，与参与的区块链网络分享储备收入，标志着二层平台如何将其链上稳定币活动货币化的战略转变。",
+     "该合作关系使Arbitrum在USDG的经济模式中获得一席之地，USDG是由受监管托管机构Paxos发行的美元挂钩稳定币。与发行方保留储备所赚取所有利息的传统稳定币不同，Global Dollar将部分收益分配给促进采用并为代币提供流动性的网络。",
+     "稳定币储备通常持有短期美国国债和类似工具，在当前利率环境下产生可观回报。Tether的USDT和Circle的USDC仅从储备收益就为其发行方创造了数十亿美元的利润，而处理数万亿稳定币转账的区块链却一无所获。",
+     "Global Dollar模式试图重新调整这些激励机制。通过向网络提供收入分成，Paxos旨在确保更深入的整合、原生支持以及来自一层和二层平台的推广努力，这些平台历来作为其他公司稳定币的无偿基础设施。",
+     "Arbitrum每月处理数十亿美元的稳定币交易量，主要是USDT和USDC。USDG的加入使该网络首次在稳定币增长中获得经济份额，可能为生态系统资助、验证者奖励或协议开发提供资金，而不会稀释原生ARB代币。",
+     "此举正值稳定币竞争加剧之际。Coinbase支持的USDC最近与币安签署了为期五年的分销协议，而Open USD等新进入者正在推出合作伙伴所有的模式。每个联盟都在竞相锁定分销渠道并争夺市场份额，这已成为一个价值2000亿美元的行业。",
+     "对于Arbitrum用户而言，该合作关系可能意味着更紧密的USDG流动性、更低的代币交易费用，以及持有或使用USDG而非竞争稳定币的潜在激励。这是否足以挑战USDT和USDC根深蒂固的主导地位仍是一个悬而未决的问题，因为网络效应和现有流动性仍然有利于现有参与者。"
+    ]
+   },
+   "hi": {
+    "title": "Arbitrum रिज़र्व आय में हिस्सेदारी पाने के लिए Paxos स्टेबलकॉइन गठबंधन में शामिल",
+    "excerpt": "एथेरियम लेयर-2 नेटवर्क Paxos द्वारा जारी USDG का समर्थन कर रहा है ताकि रिज़र्व प्रतिफल का एक हिस्सा प्राप्त कर सके, क्योंकि नए स्टेबलकॉइन गठबंधन वितरण और अर्थशास्त्र के लिए प्रतिस्पर्धा कर रहे हैं।",
+    "body": [
+     "Arbitrum ग्लोबल डॉलर में शामिल हो गया है, जो Paxos के नेतृत्व वाला एक स्टेबलकॉइन संघ है जो भाग लेने वाले ब्लॉकचेन नेटवर्क के साथ रिज़र्व आय साझा करता है, जो इस बात में एक रणनीतिक बदलाव को चिह्नित करता है कि लेयर-2 प्लेटफॉर्म अपनी चेन पर स्टेबलकॉइन गतिविधि का मुद्रीकरण कैसे करते हैं।",
+     "यह साझेदारी Arbitrum को USDG की अर्थव्यवस्था में हिस्सेदारी देती है, जो एक डॉलर-पेग्ड स्टेबलकॉइन है जिसे विनियमित कस्टोडियन Paxos द्वारा जारी किया गया है। पारंपरिक स्टेबलकॉइन के विपरीत जहां जारीकर्ता रिज़र्व पर अर्जित सभी ब्याज रखते हैं, ग्लोबल डॉलर उस प्रतिफल का एक हिस्सा उन नेटवर्क को वितरित करता है जो टोकन के लिए अपनाने और तरलता प्रदान करते हैं।",
+     "स्टेबलकॉइन रिज़र्व, जो आमतौर पर अल्पकालिक अमेरिकी ट्रेजरी और समान उपकरणों में रखे जाते हैं, वर्तमान ब्याज दर वातावरण में पर्याप्त रिटर्न उत्पन्न करते हैं। Tether के USDT और Circle के USDC ने अकेले रिज़र्व प्रतिफल से अपने जारीकर्ताओं के लिए अरबों में लाभ उत्पन्न किया है, जबकि स्टेबलकॉइन हस्तांतरण में खरबों को संसाधित करने वाली ब्लॉकचेन को कुछ नहीं मिला।",
+     "ग्लोबल डॉलर मॉडल उन प्रोत्साहनों को पुनर्संरेखित करने का प्रयास करता है। नेटवर्क को राजस्व हिस्सेदारी की पेशकश करके, Paxos का लक्ष्य लेयर-1 और लेयर-2 प्लेटफॉर्म से गहरा एकीकरण, मूल समर्थन और प्रचार प्रयासों को सुरक्षित करना है, जो ऐतिहासिक रूप से अन्य कंपनियों के स्टेबलकॉइन के लिए बिना भुगतान के बुनियादी ढांचे के रूप में काम करते हैं।",
+     "Arbitrum मासिक रूप से अरबों डॉलर की स्टेबलकॉइन मात्रा को संसाधित करता है, मुख्य रूप से USDT और USDC। USDG के जुड़ने से नेटवर्क को पहली बार स्टेबलकॉइन वृद्धि में आर्थिक हिस्सेदारी मिलती है, जो संभावित रूप से पारिस्थितिकी तंत्र अनुदान, सत्यापनकर्ता पुरस्कार या प्रोटोकॉल विकास को वित्तपोषित करती है बिना मूल ARB टोकन को पतला किए।",
+     "यह कदम तब आया है जब स्टेबलकॉइन प्रतिस्पर्धा तेज हो रही है। Coinbase-समर्थित USDC ने हाल ही में Binance के साथ पांच साल के वितरण सौदे पर हस्ताक्षर किए हैं, जबकि Open USD जैसे नए प्रतिभागी साझेदार-स्वामित्व वाले मॉडल लॉन्च कर रहे हैं। प्रत्येक गठबंधन वितरण चैनलों को सुरक्षित करने और बाजार हिस्सेदारी हासिल करने के लिए दौड़ रहा है जो $200 बिलियन के उद्योग में बदल गया है।",
+     "Arbitrum उपयोगकर्ताओं के लिए, साझेदारी का मतलब सख्त USDG तरलता, टोकन के लिए कम ट्रेडिंग शुल्क और प्रतिस्पर्धी स्टेबलकॉइन के बजाय USDG में रखने या लेनदेन के लिए संभावित प्रोत्साहन हो सकता है। क्या यह USDT और USDC के निहित प्रभुत्व को चुनौती देने के लिए पर्याप्त है, एक खुला प्रश्न बना हुआ है, क्योंकि नेटवर्क प्रभाव और मौजूदा तरलता अभी भी मौजूदा खिलाड़ियों के पक्ष में है।"
+    ]
+   },
+   "id": {
+    "title": "Arbitrum Bergabung dengan Aliansi Stablecoin Paxos untuk Mendapat Bagian Pendapatan Cadangan",
+    "excerpt": "Jaringan layer-2 Ethereum mendukung USDG yang diterbitkan Paxos untuk menangkap sebagian hasil cadangan, saat aliansi stablecoin baru bersaing untuk distribusi dan ekonomi.",
+    "body": [
+     "Arbitrum telah bergabung dengan Global Dollar, konsorsium stablecoin yang dipimpin Paxos yang berbagi pendapatan cadangan dengan jaringan blockchain yang berpartisipasi, menandai pergeseran strategis dalam cara platform layer-2 memonetisasi aktivitas stablecoin di chain mereka.",
+     "Kemitraan ini memberi Arbitrum saham dalam ekonomi USDG, stablecoin yang dipatok pada dolar yang diterbitkan oleh kustodian teregulasi Paxos. Tidak seperti stablecoin tradisional di mana penerbit menyimpan semua bunga yang diperoleh dari cadangan, Global Dollar mendistribusikan sebagian hasil tersebut ke jaringan yang mempromosikan adopsi dan menyediakan likuiditas untuk token.",
+     "Cadangan stablecoin, yang biasanya disimpan dalam obligasi Treasury AS jangka pendek dan instrumen serupa, menghasilkan pengembalian substansial dalam lingkungan suku bunga saat ini. USDT Tether dan USDC Circle telah menghasilkan miliaran keuntungan bagi penerbitnya hanya dari hasil cadangan, sementara blockchain yang memproses triliunan transfer stablecoin tidak menerima apa-apa.",
+     "Model Global Dollar mencoba menyelaraskan kembali insentif tersebut. Dengan menawarkan jaringan bagian pendapatan, Paxos bertujuan untuk mengamankan integrasi yang lebih dalam, dukungan asli, dan upaya promosi dari platform layer-1 dan layer-2 yang secara historis telah berfungsi sebagai infrastruktur yang tidak dibayar untuk stablecoin perusahaan lain.",
+     "Arbitrum memproses miliaran dolar volume stablecoin setiap bulan, terutama USDT dan USDC. Penambahan USDG memberi jaringan saham ekonomi dalam pertumbuhan stablecoin untuk pertama kalinya, berpotensi mendanai hibah ekosistem, hadiah validator, atau pengembangan protokol tanpa mengencerkan token asli ARB.",
+     "Langkah ini terjadi saat persaingan stablecoin semakin intensif. USDC yang didukung Coinbase baru-baru ini menandatangani kesepakatan distribusi lima tahun dengan Binance, sementara pendatang baru seperti Open USD meluncurkan model milik mitra. Setiap aliansi berlomba untuk mengamankan saluran distribusi dan merebut pangsa pasar dalam apa yang telah menjadi industri $200 miliar.",
+     "Untuk pengguna Arbitrum, kemitraan ini bisa berarti likuiditas USDG yang lebih ketat, biaya trading yang lebih rendah untuk token, dan insentif potensial untuk memegang atau bertransaksi dalam USDG daripada stablecoin pesaing. Apakah itu cukup untuk menantang dominasi yang tertanam dari USDT dan USDC tetap menjadi pertanyaan terbuka, karena efek jaringan dan likuiditas yang ada masih menguntungkan incumbent."
+    ]
+   },
+   "vi": {
+    "title": "Arbitrum Tham Gia Liên Minh Stablecoin Paxos Để Nhận Phần Thu Nhập Dự Trữ",
+    "excerpt": "Mạng layer-2 Ethereum đang ủng hộ USDG do Paxos phát hành để thu được một phần lợi suất dự trữ, khi các liên minh stablecoin mới cạnh tranh về phân phối và kinh tế.",
+    "body": [
+     "Arbitrum đã tham gia Global Dollar, một tập đoàn stablecoin do Paxos lãnh đạo chia sẻ thu nhập dự trữ với các mạng blockchain tham gia, đánh dấu sự chuyển đổi chiến lược trong cách các nền tảng layer-2 kiếm tiền từ hoạt động stablecoin trên chuỗi của họ.",
+     "Quan hệ đối tác mang lại cho Arbitrum một cổ phần trong nền kinh tế của USDG, một stablecoin neo với đô la do người giám hộ được quản lý Paxos phát hành. Không giống như stablecoin truyền thống, nơi các nhà phát hành giữ toàn bộ lãi kiếm được từ dự trữ, Global Dollar phân phối một phần lợi suất đó cho các mạng thúc đẩy áp dụng và cung cấp thanh khoản cho token.",
+     "Dự trữ stablecoin, thường được giữ trong trái phiếu kho bạc Mỹ ngắn hạn và các công cụ tương tự, tạo ra lợi nhuận đáng kể trong môi trường lãi suất hiện tại. USDT của Tether và USDC của Circle đã tạo ra hàng tỷ lợi nhuận cho các nhà phát hành chỉ từ lợi suất dự trữ, trong khi các blockchain xử lý hàng nghìn tỷ giao dịch stablecoin không nhận được gì.",
+     "Mô hình Global Dollar cố gắng sắp xếp lại các ưu đãi đó. Bằng cách cung cấp cho các mạng một phần doanh thu, Paxos hướng tới việc đảm bảo tích hợp sâu hơn, hỗ trợ gốc và nỗ lực quảng cáo từ các nền tảng layer-1 và layer-2 đã từng phục vụ như cơ sở hạ tầng không được trả công cho stablecoin của các công ty khác.",
+     "Arbitrum xử lý hàng tỷ đô la khối lượng stablecoin hàng tháng, chủ yếu là USDT và USDC. Việc bổ sung USDG mang lại cho mạng một cổ phần kinh tế trong sự tăng trưởng stablecoin lần đầu tiên, có khả năng tài trợ cho các khoản trợ cấp hệ sinh thái, phần thưởng validator hoặc phát triển giao thức mà không làm loãng token ARB gốc.",
+     "Động thái này diễn ra khi cạnh tranh stablecoin ngày càng gay gắt. USDC được hỗ trợ bởi Coinbase gần đây đã ký thỏa thuận phân phối năm năm với Binance, trong khi những người mới tham gia như Open USD đang ra mắt các mô hình thuộc sở hữu đối tác. Mỗi liên minh đang chạy đua để đảm bảo các kênh phân phối và chiếm thị phần trong ngành công nghiệp trị giá 200 tỷ đô la.",
+     "Đối với người dùng Arbitrum, quan hệ đối tác có thể có nghĩa là thanh khoản USDG chặt chẽ hơn, phí giao dịch thấp hơn cho token và các ưu đãi tiềm năng để giữ hoặc giao dịch bằng USDG thay vì stablecoin cạnh tranh. Liệu điều đó có đủ để thách thức sự thống trị đã ăn sâu của USDT và USDC vẫn là một câu hỏi mở, vì hiệu ứng mạng và thanh khoản hiện có vẫn ủng hộ những người đương nhiệm."
+    ]
+   },
+   "tr": {
+    "title": "Arbitrum Rezerv Geliri Payı Almak İçin Paxos Stablecoin İttifakına Katıldı",
+    "excerpt": "Ethereum katman-2 ağı, yeni stablecoin ittifakları dağıtım ve ekonomi için rekabet ederken rezerv getirilerinin bir kısmını elde etmek için Paxos tarafından ihraç edilen USDG'yi destekliyor.",
+    "body": [
+     "Arbitrum, katılımcı blockchain ağlarıyla rezerv gelirini paylaşan Paxos liderliğindeki bir stablecoin konsorsiyumu olan Global Dollar'a katıldı ve bu, katman-2 platformlarının zincirlerindeki stablecoin faaliyetlerini nasıl para kazanmaya dönüştürdüklerine dair stratejik bir değişimi işaret ediyor.",
+     "Ortaklık, Arbitrum'a düzenlenmiş saklama kuruluşu Paxos tarafından ihraç edilen dolara sabitlenmiş bir stablecoin olan USDG'nin ekonomisinde pay veriyor. İhraççıların rezervlerde kazanılan tüm faizi tuttuğu geleneksel stablecoin'lerin aksine, Global Dollar bu getirinin bir kısmını benimsemeyi teşvik eden ve token için likidite sağlayan ağlara dağıtıyor.",
+     "Tipik olarak kısa vadeli ABD Hazine bonoları ve benzer araçlarda tutulan stablecoin rezervleri, mevcut faiz oranı ortamında önemli getiriler sağlıyor. Tether'ın USDT'si ve Circle'ın USDC'si, yalnızca rezerv getirilerinden ihraççıları için milyarlarca kâr sağlarken, trilyonlarca stablecoin transferini işleyen blockchain'ler hiçbir şey almadı.",
+     "Global Dollar modeli bu teşvikleri yeniden hizalamaya çalışıyor. Ağlara gelir payı sunarak Paxos, tarihsel olarak diğer şirketlerin stablecoin'leri için ücretsiz altyapı olarak hizmet veren katman-1 ve katman-2 platformlarından daha derin entegrasyon, yerel destek ve tanıtım çabalarını güvence altına almayı hedefliyor.",
+     "Arbitrum, aylık olarak milyarlarca dolar stablecoin hacmini, esas olarak USDT ve USDC'yi işliyor. USDG'nin eklenmesi, ağa ilk kez stablecoin büyümesinde ekonomik bir pay vererek, yerel ARB tokenini sulandırmadan ekosistem hibeleri, doğrulayıcı ödülleri veya protokol geliştirmesini potansiyel olarak finanse ediyor.",
+     "Hamle, stablecoin rekabeti yoğunlaşırken geliyor. Coinbase destekli USDC yakın zamanda Binance ile beş yıllık bir dağıtım anlaşması imzalarken, Open USD gibi yeni girişimciler ortak sahipliğinde modeller başlatıyor. Her ittifak, 200 milyar dolarlık bir endüstri haline gelen sektörde dağıtım kanallarını güvence altına almak ve pazar payı elde etmek için yarışıyor.",
+     "Arbitrum kullanıcıları için ortaklık, daha sıkı USDG likiditesi, token için daha düşük işlem ücretleri ve rakip stablecoin'ler yerine USDG'de tutma veya işlem yapma için potansiyel teşvikler anlamına gelebilir. Bunun USDT ve USDC'nin yerleşik hakimiyetine meydan okumak için yeterli olup olmadığı açık bir soru olmaya devam ediyor, çünkü ağ etkileri ve mevcut likidite hala mevcut oyuncuların lehine."
+    ]
+   },
+   "ja": {
+    "title": "Arbitrum、準備金収益の分配を受けるためPaxosのステーブルコイン連合に参加",
+    "excerpt": "イーサリアムレイヤー2ネットワークは、新しいステーブルコイン連合が流通と経済性を競う中、Paxosが発行するUSDGを支援して準備金利回りの一部を獲得します。",
+    "body": [
+     "Arbitrumは、参加するブロックチェーンネットワークと準備金収益を共有するPaxos主導のステーブルコインコンソーシアムであるGlobal Dollarに参加し、レイヤー2プラットフォームがチェーン上のステーブルコイン活動を収益化する方法における戦略的転換を示しています。",
+     "このパートナーシップにより、Arbitrumは規制された保管業者Paxosが発行するドルペッグステーブルコインであるUSDGの経済に株式を持つことになります。発行者が準備金で得られたすべての利息を保持する従来のステーブルコインとは異なり、Global Dollarはその利回りの一部を採用を促進しトークンの流動性を提供するネットワークに分配します。",
+     "通常、短期米国債および類似の金融商品で保有されるステーブルコイン準備金は、現在の金利環境において実質的なリターンを生み出します。TetherのUSDTとCircleのUSDCは準備金利回りだけで発行者に数十億の利益をもたらしましたが、何兆ものステーブルコイン送金を処理するブロックチェーンは何も受け取りませんでした。",
+     "Global Dollarモデルはこれらのインセンティブを再調整しようとします。ネットワークに収益配分を提供することで、Paxosは他の企業のステーブルコインのために無償のインフラストラクチャとして機能してきたレイヤー1およびレイヤー2プラットフォームからのより深い統合、ネイティブサポート、プロモーション活動を確保することを目指しています。",
+     "Arbitrumは月に数十億ドルのステーブルコイン取引量、主にUSDTとUSDCを処理しています。USDGの追加により、ネットワークは初めてステーブルコインの成長における経済的株式を獲得し、ネイティブARBトークンを希薄化することなくエコシステム助成金、バリデーター報酬、またはプロトコル開発に資金を提供する可能性があります。",
+     "この動きは、ステーブルコイン競争が激化する中で行われます。Coinbaseが支援するUSDCは最近Binanceと5年間の流通契約を締結し、Open USDなどの新規参入者はパートナー所有モデルを立ち上げています。各連合は、2000億ドル産業となったセクターで流通チャネルを確保し市場シェアを獲得するために競争しています。",
+     "Arbitrumユーザーにとって、このパートナーシップはより密接なUSDG流動性、トークンの低い取引手数料、競合するステーブルコインではなくUSDGを保有または取引するための潜在的なインセンティブを意味する可能性があります。これがUSDTとUSDCの定着した支配に挑戦するのに十分かどうかは未解決の問題であり、ネットワーク効果と既存の流動性が依然として既存企業に有利です。"
+    ]
+   },
+   "ko": {
+    "title": "Arbitrum, 준비금 수익 배분을 위해 Paxos 스테이블코인 연합에 가입",
+    "excerpt": "이더리움 레이어-2 네트워크는 새로운 스테이블코인 연합들이 유통과 경제성을 두고 경쟁하는 가운데, Paxos가 발행한 USDG를 지원하여 준비금 수익률의 일부를 확보합니다.",
+    "body": [
+     "Arbitrum은 참여하는 블록체인 네트워크와 준비금 수익을 공유하는 Paxos 주도의 스테이블코인 컨소시엄인 Global Dollar에 가입하여, 레이어-2 플랫폼이 체인의 스테이블코인 활동을 수익화하는 방식에서 전략적 전환을 보여줍니다.",
+     "이 파트너십은 Arbitrum에게 규제받는 수탁기관 Paxos가 발행한 달러 페그 스테이블코인인 USDG의 경제에서 지분을 제공합니다. 발행자가 준비금에서 얻은 모든 이자를 보유하는 전통적인 스테이블코인과 달리, Global Dollar는 그 수익률의 일부를 채택을 촉진하고 토큰에 유동성을 제공하는 네트워크에 분배합니다.",
+     "일반적으로 단기 미국 재무부 채권 및 유사한 금융상품에 보유되는 스테이블코인 준비금은 현재 금리 환경에서 상당한 수익을 창출합니다. Tether의 USDT와 Circle의 USDC는 준비금 수익률만으로 발행자에게 수십억 달러의 이익을 창출했지만, 수조 달러의 스테이블코인 전송을 처리하는 블록체인은 아무것도 받지 못했습니다.",
+     "Global Dollar 모델은 이러한 인센티브를 재조정하려고 시도합니다. 네트워크에 수익 배분을 제공함으로써, Paxos는 역사적으로 다른 회사의 스테이블코인을 위한 무급 인프라로 기능해온 레이어-1 및 레이어-2 플랫폼으로부터 더 깊은 통합, 네이티브 지원 및 홍보 노력을 확보하는 것을 목표로 합니다.",
+     "Arbitrum은 매월 수십억 달러의 스테이블코인 거래량, 주로 USDT와 USDC를 처리합니다. USDG의 추가는 네트워크에 스테이블코인 성장에서 처음으로 경제적 지분을 제공하며, 네이티브 ARB 토큰을 희석하지 않고 생태계 보조금, 검증자 보상 또는 프로토콜 개발에 자금을 지원할 수 있습니다.",
+     "이 움직임은 스테이블코인 경쟁이 심화되는 가운데 이루어졌습니다. Coinbase가 지원하는 USDC는 최근 Binance와 5년간의 유통 계약을 체결했으며, Open USD와 같은 신규 진입자들은 파트너 소유 모델을 출시하고 있습니다. 각 연합은 2000억 달러 산업이 된 분야에서 유통 채널을 확보하고 시장 점유율을 차지하기 위해 경쟁하고 있습니다.",
+     "Arbitrum 사용자에게 이 파트너십은 더 긴밀한 USDG 유동성, 토큰에 대한 낮은 거래 수수료, 경쟁 스테이블코인 대신 USDG를 보유하거나 거래하는 데 대한 잠재적 인센티브를 의미할 수 있습니다. 이것이 USDT와 USDC의 확고한 지배력에 도전하기에 충분한지 여부는 여전히 미해결 질문으로 남아 있으며, 네트워크 효과와 기존 유동성은 여전히 기존 업체에게 유리합니다."
+    ]
+   },
+   "pl": {
+    "title": "Arbitrum dołącza do sojuszu stablecoinów Paxos, aby uzyskać udział w przychodach z rezerw",
+    "excerpt": "Sieć drugiej warstwy Ethereum wspiera USDG wydawany przez Paxos, aby zdobyć część zysków z rezerw, podczas gdy nowe sojusze stablecoinów konkurują o dystrybucję i ekonomię.",
+    "body": [
+     "Arbitrum dołączył do Global Dollar, konsorcjum stablecoinów kierowanego przez Paxos, które dzieli przychody z rezerw z uczestniczącymi sieciami blockchain, co oznacza strategiczną zmianę w sposobie, w jaki platformy drugiej warstwy monetyzują działalność stablecoinów w swoich łańcuchach.",
+     "Partnerstwo daje Arbitrum udział w ekonomii USDG, stablecoina powiązanego z dolarem wydawanego przez regulowanego depozytariusza Paxos. W przeciwieństwie do tradycyjnych stablecoinów, gdzie emitenci zatrzymują wszystkie odsetki zarobione na rezerwach, Global Dollar dystrybuuje część tego zysku do sieci, które promują przyjęcie i zapewniają płynność dla tokena.",
+     "Rezerwy stablecoinów, zwykle przechowywane w krótkoterminowych obligacjach skarbowych USA i podobnych instrumentach, generują znaczne zwroty w obecnym środowisku stóp procentowych. USDT Tethera i USDC Circle wygenerowały miliardy zysków dla swoich emitentów tylko z zysków z rezerw, podczas gdy blockchainy przetwarzające biliony transferów stablecoinów nie otrzymały nic.",
+     "Model Global Dollar próbuje ponownie dostosować te zachęty. Oferując sieciom udział w przychodach, Paxos dąży do zapewnienia głębszej integracji, natywnego wsparcia i działań promocyjnych z platform pierwszej i drugiej warstwy, które historycznie służyły jako nieopłacana infrastruktura dla stablecoinów innych firm.",
+     "Arbitrum przetwarza miliardy dolarów wolumenu stablecoinów miesięcznie, głównie USDT i USDC. Dodanie USDG daje sieci po raz pierwszy ekonomiczny udział we wzroście stablecoinów, potencjalnie finansując dotacje ekosystemowe, nagrody walidatorów lub rozwój protokołu bez rozmywania natywnego tokena ARB.",
+     "Ruch następuje w miarę intensyfikacji konkurencji stablecoinów. USDC wspierany przez Coinbase niedawno podpisał pięcioletnią umowę dystrybucyjną z Binance, podczas gdy nowi uczestnicy, tacy jak Open USD, uruchamiają modele będące własnością partnerów. Każdy sojusz ściga się, aby zabezpieczyć kanały dystrybucji i zdobyć udział w rynku w tym, co stało się przemysłem wartym 200 miliardów dolarów.",
+     "Dla użytkowników Arbitrum partnerstwo może oznaczać ściślejszą płynność USDG, niższe opłaty handlowe dla tokena i potencjalne zachęty do trzymania lub transakcji w USDG zamiast konkurencyjnych stablecoinów. Czy to wystarczy, aby rzucić wyzwanie ugruntowanej dominacji USDT i USDC, pozostaje otwartym pytaniem, ponieważ efekty sieciowe i istniejąca płynność nadal faworyzują obecnych graczy."
+    ]
+   },
+   "th": {
+    "title": "Arbitrum เข้าร่วมพันธมิตรสเตเบิลคอยน์ Paxos เพื่อรับส่วนแบ่งรายได้จากเงินสำรอง",
+    "excerpt": "เครือข่ายเลเยอร์ 2 ของ Ethereum สนับสนุน USDG ที่ออกโดย Paxos เพื่อจับส่วนหนึ่งของผลตอบแทนเงินสำรอง ขณะที่พันธมิตรสเตเบิลคอยน์ใหม่แข่งขันกันเพื่อการจัดจำหน่ายและเศรษฐศาสตร์",
+    "body": [
+     "Arbitrum ได้เข้าร่วม Global Dollar ซึ่งเป็นคอนซอร์เที่ยมสเตเบิลคอยน์ที่นำโดย Paxos ที่แบ่งปันรายได้จากเงินสำรองกับเครือข่ายบล็อกเชนที่เข้าร่วม นับเป็นการเปลี่ยนแปลงเชิงกลยุทธ์ในวิธีที่แพลตฟอร์มเลเยอร์ 2 สร้างรายได้จากกิจกรรมสเตเบิลคอยน์บนเชนของตน",
+     "ความร่วมมือนี้ให้ Arbitrum มีส่วนแบ่งในเศรษฐกิจของ USDG ซึ่งเป็นสเตเบิลคอยน์ที่ผูกกับดอลลาร์ที่ออกโดยผู้ดูแลที่ได้รับการควบคุม Paxos ต่างจากสเตเบิลคอยน์แบบดั้งเดิมที่ผู้ออกเก็บดอกเบี้ยทั้งหมดที่ได้จากเงินสำรอง Global Dollar กระจายส่วนหนึ่งของผลตอบแทนนั้นให้กับเครือข่ายที่ส่งเสริมการรับเลี้ยงและให้สภาพคล่องสำหรับโทเค็น",
+     "เงินสำรองสเตเบิลคอยน์ซึ่งโดยทั่วไปถือครองในพันธบัตรรัฐบาลสหรัฐระยะสั้นและตราสารคล้ายกัน สร้างผลตอบแทนที่สำคัญในสภาพแวดล้อมอัตราดอกเบี้ยปัจจุบัน USDT ของ Tether และ USDC ของ Circle สร้างกำไรหลายพันล้านให้กับผู้ออกจากผลตอบแทนเงินสำรองเพียงอย่างเดียว ในขณะที่บล็อกเชนที่ประมวลผลการโอนสเตเบิลคอยน์หลายล้านล้านไม่ได้รับอะไรเลย",
+     "โมเดล Global Dollar พยายามปรับสิ่งจูงใจเหล่านั้นใหม่ ด้วยการเสนอส่วนแบ่งรายได้ให้กับเครือข่าย Paxos มุ่งหวังที่จะรักษาการรวมที่ลึกขึ้น การสนับสนุนดั้งเดิม และความพยายามในการส่งเสริมจากแพลตฟอร์มเลเยอร์ 1 และเลเยอร์ 2 ที่ในอดีตทำหน้าที่เป็นโครงสร้างพื้นฐานที่ไม่ได้รับค่าตอบแทนสำหรับสเตเบิลคอยน์ของบริษัทอื่น",
+     "Arbitrum ประมวลผลปริมาณสเตเบิลคอยน์หลายพันล้านดอลลาร์ต่อเดือน ส่วนใหญ่เป็น USDT และ USDC การเพิ่ม USDG ให้เครือข่ายมีส่วนแบ่งทางเศรษฐกิจในการเติบโตของสเตเบิลคอยน์เป็นครั้งแรก อาจให้ทุนแก่ทุนสนับสนุนระบบนิเวศ รางวัลผู้ตรวจสอบ หรือการพัฒนาโปรโตคอลโดยไม่ทำให้โทเค็น ARB ดั้งเดิมเจือจาง",
+     "การเคลื่อนไหวนี้เกิดขึ้นขณะที่การแข่งขันสเตเบิลคอยน์รุนแรงขึ้น USDC ที่ได้รับการสนับสนุนจาก Coinbase เพิ่งลงนามในข้อตกลงจัดจำหน่ายห้าปีกับ Binance ในขณะที่ผู้เข้าร่วมใหม่เช่น Open USD กำลังเปิดตัวโมเดลที่เป็นเจ้าของร่วมกัน แต่ละพันธมิตรกำลังแข่งขันเพื่อรักษาช่องทางการจัดจำหน่ายและยึดส่วนแบ่งตลาดในสิ่งที่กลายเป็นอุตสาหกรรม 200 พันล้านดอลลาร์",
+     "สำหรับผู้ใช้ Arbitrum ความร่วมมืออาจหมายถึงสภาพคล่อง USDG ที่แน่นกว่า ค่าธรรมเนียมการซื้อขายที่ต่ำกว่าสำหรับโทเค็น และแรงจูงใจที่อาจเกิดขึ้นสำหรับการถือครองหรือทำธุรกรรมใน USDG แทนสเตเบิลคอยน์ที่แข่งขันกัน ไม่ว่าจะเพียงพอที่จะท้าทายการครอบงำที่หยั่งรากลึกของ USDT และ USDC หรือไม่ยังคงเป็นคำถามที่เปิดกว้าง เนื่องจากผลกระทบของเครือข่ายและสภาพคล่องที่มีอยู่ยังคงสนับสนุนผู้ครอบครองตำแหน่ง"
+    ]
+   }
+  },
+  "date": "2026-10-07T00:15:10.589Z",
+  "gradient": "linear-gradient(135deg,#f7931a33,#0b0e1400)"
+ },
+ {
   "slug": "okx-attracts-investment-from-standard-chartered-circle-rippl-2ipz",
   "category": "crypto",
   "emoji": "🏦",
