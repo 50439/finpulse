@@ -1,5 +1,223 @@
 [
  {
+  "slug": "latvia-crypto-tax-payments-2027-parliament-overhaul-zlob",
+  "category": "crypto",
+  "emoji": "🇱🇻",
+  "video": {
+   "hook": "YOUR CRYPTO TAXES JUST CHANGED",
+   "lead": "Latvia just rewrote how you pay taxes on crypto and you might be able to settle your bill in Bitcoin starting 2027.",
+   "question": "Would you pay taxes in crypto?"
+  },
+  "i18n": {
+   "en": {
+    "title": "Latvia Rewrites Crypto Tax Rules and Eyes Bitcoin Tax Payments by 2027",
+    "excerpt": "Parliament passed a law taxing crypto withdrawals above deposits rather than individual trades, featuring a one-time declaration mechanism and the possibility of paying taxes in digital assets.",
+    "body": [
+     "Latvia's parliament has approved a sweeping overhaul of cryptocurrency taxation that shifts the burden from tracking every trade to a simpler withdrawal-based system, while simultaneously exploring the acceptance of crypto for tax payments as early as 2027. The new framework taxes only the net gain when users convert crypto to fiat or spend it, calculated as the difference between withdrawal amounts and total deposits over time.",
+     "The reform includes a one-time declaration mechanism that allows holders to register their existing crypto positions, establishing a cost basis for future tax calculations. This amnesty-style provision is designed to bring long-term holders into compliance without penalizing early adopters who acquired assets before clear tax guidance existed. Taxpayers will declare their holdings once, locking in a baseline that future withdrawals will be measured against.",
+     "Latvian officials indicated that the tax authority is evaluating technical infrastructure to accept cryptocurrency directly for tax settlements starting in 2027. If implemented, Latvia would join a small group of jurisdictions allowing citizens to discharge government obligations in digital assets rather than euros. The move reflects confidence in stablecoin payment rails and marks a significant departure from the traditional fiat-only approach to public revenue collection.",
+     "The withdrawal-based model eliminates the need to report gains and losses on every trade, a burden that has deterred retail participation in countries with per-transaction taxation. Instead, taxable events occur only when value leaves the crypto ecosystem—either as a bank transfer, a purchase of goods, or a conversion to another fiat currency. Trades between cryptocurrencies remain untaxed until withdrawal, simplifying compliance for active traders.",
+     "The legislation arrives as the European Union finalizes its Markets in Crypto-Assets regulation, which harmonizes some rules but leaves tax policy to member states. Latvia's approach contrasts with higher-friction regimes in France and Germany, where each trade can trigger a taxable event. Tax professionals expect the simpler Latvian model to attract crypto businesses seeking a base inside the EU's single market.",
+     "For investors, the key change is record-keeping: instead of tracking the cost basis of every coin sold, they need only demonstrate total deposits and total withdrawals. This reduces administrative overhead and aligns crypto taxation more closely with traditional brokerage account treatment. The 2027 target for crypto tax payments hinges on integration with stablecoin settlement networks and the development of real-time conversion protocols that protect the government from volatility between payment and receipt."
+    ]
+   },
+   "uk": {
+    "title": "Латвія переписує правила оподаткування крипти й розглядає сплату податків у біткоїнах до 2027 року",
+    "excerpt": "Парламент ухвалив закон, що оподатковує виведення криптовалюти понад депозити, а не окремі угоди, із механізмом одноразової декларації та можливістю сплати податків у цифрових активах.",
+    "body": [
+     "Парламент Латвії схвалив масштабну реформу оподаткування криптовалюти, яка переносить тягар з відстеження кожної угоди на простішу систему на основі виведень, одночасно вивчаючи прийняття крипти для сплати податків уже з 2027 року. Нова структура оподатковує лише чистий прибуток, коли користувачі конвертують крипту у фіат або витрачають її, розрахований як різниця між сумами виведень і загальними депозитами.",
+     "Реформа включає механізм одноразової декларації, що дозволяє власникам зареєструвати свої наявні крипто-позиції, встановлюючи базу витрат для майбутніх податкових розрахунків. Це положення в стилі амністії призначене для приведення довгострокових власників у відповідність без покарання ранніх учасників, які придбали активи до появи чіткого податкового керівництва.",
+     "Латвійські чиновники повідомили, що податкове відомство оцінює технічну інфраструктуру для прийому криптовалюти безпосередньо для розрахунків за податками з 2027 року. Якщо це буде реалізовано, Латвія приєднається до невеликої групи юрисдикцій, що дозволяють громадянам виконувати державні зобов'язання в цифрових активах, а не в євро.",
+     "Модель на основі виведень усуває потребу звітувати про прибутки та збитки з кожної угоди, тягар, який стримував роздрібну участь у країнах із оподаткуванням кожної транзакції. Натомість оподатковувані події виникають лише тоді, коли вартість залишає криптоекосистему — як банківський переказ, покупка товарів або конвертація в іншу фіатну валюту.",
+     "Законодавство з'являється, коли Європейський Союз завершує регулювання Markets in Crypto-Assets, яке гармонізує деякі правила, але залишає податкову політику державам-членам. Підхід Латвії контрастує з режимами вищого тертя у Франції та Німеччині, де кожна угода може спричинити оподатковувану подію.",
+     "Для інвесторів ключова зміна — це ведення записів: замість відстеження базової вартості кожної проданої монети, їм потрібно лише продемонструвати загальні депозити та загальні виведення. Цільова дата 2027 року для криптоплатежів податків залежить від інтеграції з мережами розрахунків стейблкоїнів."
+    ]
+   },
+   "ru": {
+    "title": "Латвия переписывает правила налогообложения крипты и рассматривает оплату налогов биткоином к 2027 году",
+    "excerpt": "Парламент принял закон, облагающий налогом вывод криптовалюты сверх депозитов, а не отдельные сделки, с механизмом однократной декларации и возможностью уплаты налогов в цифровых активах.",
+    "body": [
+     "Парламент Латвии одобрил масштабную реформу налогообложения криптовалюты, которая переносит бремя с отслеживания каждой сделки на более простую систему на основе выводов, одновременно изучая принятие крипты для уплаты налогов уже с 2027 года. Новая структура облагает налогом только чистую прибыль, когда пользователи конвертируют крипту в фиат или тратят её, рассчитанную как разницу между суммами выводов и общими депозитами.",
+     "Реформа включает механизм однократной декларации, позволяющий владельцам зарегистрировать свои существующие криптопозиции, устанавливая базу затрат для будущих налоговых расчётов. Это положение в стиле амнистии предназначено для приведения долгосрочных владельцев в соответствие без наказания ранних участников, которые приобрели активы до появления чёткого налогового руководства.",
+     "Латвийские чиновники указали, что налоговое ведомство оценивает техническую инфраструктуру для приёма криптовалюты непосредственно для расчётов по налогам с 2027 года. Если это будет реализовано, Латвия присоединится к небольшой группе юрисдикций, позволяющих гражданам выполнять государственные обязательства в цифровых активах, а не в евро.",
+     "Модель на основе выводов устраняет необходимость отчитываться о прибылях и убытках по каждой сделке, бремя, которое сдерживало розничное участие в странах с налогообложением каждой транзакции. Вместо этого налогооблагаемые события возникают только тогда, когда стоимость покидает криптоэкосистему — как банковский перевод, покупка товаров или конвертация в другую фиатную валюту.",
+     "Законодательство появляется, когда Европейский Союз завершает регулирование Markets in Crypto-Assets, которое гармонизирует некоторые правила, но оставляет налоговую политику государствам-членам. Подход Латвии контрастирует с режимами более высокого трения во Франции и Германии, где каждая сделка может вызвать налогооблагаемое событие.",
+     "Для инвесторов ключевое изменение — это ведение записей: вместо отслеживания базовой стоимости каждой проданной монеты им нужно только продемонстрировать общие депозиты и общие выводы. Целевая дата 2027 года для криптоплатежей налогов зависит от интеграции с сетями расчётов стейблкоинов."
+    ]
+   },
+   "es": {
+    "title": "Letonia reescribe las reglas fiscales cripto y considera pagos de impuestos en Bitcoin para 2027",
+    "excerpt": "El parlamento aprobó una ley que grava los retiros de criptomonedas por encima de los depósitos en lugar de operaciones individuales, con un mecanismo de declaración única y la posibilidad de pagar impuestos en activos digitales.",
+    "body": [
+     "El parlamento de Letonia ha aprobado una reforma integral de la tributación de criptomonedas que traslada la carga de rastrear cada operación a un sistema más simple basado en retiros, mientras explora simultáneamente la aceptación de cripto para pagos de impuestos desde 2027. El nuevo marco grava solo la ganancia neta cuando los usuarios convierten cripto a fiat o la gastan, calculada como la diferencia entre montos de retiro y depósitos totales.",
+     "La reforma incluye un mecanismo de declaración única que permite a los tenedores registrar sus posiciones cripto existentes, estableciendo una base de costos para cálculos fiscales futuros. Esta disposición estilo amnistía está diseñada para traer a los tenedores de largo plazo al cumplimiento sin penalizar a los adoptantes tempranos que adquirieron activos antes de que existiera orientación fiscal clara.",
+     "Los funcionarios letones indicaron que la autoridad tributaria está evaluando infraestructura técnica para aceptar criptomonedas directamente para liquidaciones fiscales a partir de 2027. Si se implementa, Letonia se uniría a un pequeño grupo de jurisdicciones que permiten a los ciudadanos cumplir obligaciones gubernamentales en activos digitales en lugar de euros.",
+     "El modelo basado en retiros elimina la necesidad de reportar ganancias y pérdidas en cada operación, una carga que ha disuadido la participación minorista en países con tributación por transacción. En cambio, los eventos imponibles ocurren solo cuando el valor sale del ecosistema cripto, ya sea como transferencia bancaria, compra de bienes o conversión a otra moneda fiat.",
+     "La legislación llega cuando la Unión Europea finaliza su regulación Markets in Crypto-Assets, que armoniza algunas reglas pero deja la política fiscal a los estados miembros. El enfoque letón contrasta con regímenes de mayor fricción en Francia y Alemania, donde cada operación puede desencadenar un evento imponible.",
+     "Para los inversores, el cambio clave es el mantenimiento de registros: en lugar de rastrear la base de costos de cada moneda vendida, solo necesitan demostrar depósitos totales y retiros totales. El objetivo de 2027 para pagos fiscales en cripto depende de la integración con redes de liquidación de stablecoins."
+    ]
+   },
+   "pt": {
+    "title": "Letónia reescreve regras fiscais cripto e considera pagamentos de impostos em Bitcoin até 2027",
+    "excerpt": "O parlamento aprovou uma lei que tributa levantamentos de criptomoedas acima dos depósitos em vez de negociações individuais, com mecanismo de declaração única e possibilidade de pagar impostos em ativos digitais.",
+    "body": [
+     "O parlamento da Letónia aprovou uma reforma abrangente da tributação de criptomoedas que transfere o ónus de rastrear cada negociação para um sistema mais simples baseado em levantamentos, enquanto explora simultaneamente a aceitação de cripto para pagamentos de impostos a partir de 2027. A nova estrutura tributa apenas o ganho líquido quando os utilizadores convertem cripto em fiat ou a gastam, calculado como a diferença entre montantes de levantamento e depósitos totais.",
+     "A reforma inclui um mecanismo de declaração única que permite aos detentores registar as suas posições cripto existentes, estabelecendo uma base de custos para cálculos fiscais futuros. Esta disposição estilo amnistia foi concebida para trazer detentores de longo prazo à conformidade sem penalizar os primeiros adotantes que adquiriram ativos antes de existir orientação fiscal clara.",
+     "Os funcionários letões indicaram que a autoridade fiscal está a avaliar infraestrutura técnica para aceitar criptomoedas diretamente para liquidações fiscais a partir de 2027. Se implementado, a Letónia juntar-se-ia a um pequeno grupo de jurisdições que permitem aos cidadãos cumprir obrigações governamentais em ativos digitais em vez de euros.",
+     "O modelo baseado em levantamentos elimina a necessidade de reportar ganhos e perdas em cada negociação, um ónus que tem dissuadido a participação retalhista em países com tributação por transação. Em vez disso, os eventos tributáveis ocorrem apenas quando o valor sai do ecossistema cripto — seja como transferência bancária, compra de bens ou conversão para outra moeda fiat.",
+     "A legislação chega quando a União Europeia finaliza o seu regulamento Markets in Crypto-Assets, que harmoniza algumas regras mas deixa a política fiscal aos estados-membros. A abordagem letã contrasta com regimes de maior atrito em França e Alemanha, onde cada negociação pode desencadear um evento tributável.",
+     "Para os investidores, a mudança chave é o registo: em vez de rastrear a base de custos de cada moeda vendida, precisam apenas demonstrar depósitos totais e levantamentos totais. O objetivo de 2027 para pagamentos fiscais em cripto depende da integração com redes de liquidação de stablecoins."
+    ]
+   },
+   "de": {
+    "title": "Lettland schreibt Krypto-Steuerregeln um und erwägt Bitcoin-Steuerzahlungen bis 2027",
+    "excerpt": "Das Parlament verabschiedete ein Gesetz, das Krypto-Abhebungen über Einlagen hinaus besteuert statt einzelner Trades, mit einem einmaligen Deklarationsmechanismus und der Möglichkeit, Steuern in digitalen Vermögenswerten zu zahlen.",
+    "body": [
+     "Das lettische Parlament hat eine umfassende Überarbeitung der Kryptowährungsbesteuerung genehmigt, die die Last von der Verfolgung jedes Trades auf ein einfacheres abhebungsbasiertes System verlagert, während gleichzeitig die Annahme von Krypto für Steuerzahlungen ab 2027 geprüft wird. Der neue Rahmen besteuert nur den Nettogewinn, wenn Nutzer Krypto in Fiat umwandeln oder ausgeben, berechnet als Differenz zwischen Abhebungsbeträgen und Gesamteinlagen.",
+     "Die Reform umfasst einen einmaligen Deklarationsmechanismus, der es Inhabern ermöglicht, ihre bestehenden Krypto-Positionen zu registrieren und eine Kostenbasis für zukünftige Steuerberechnungen festzulegen. Diese amnestieähnliche Bestimmung soll langfristige Inhaber zur Compliance bringen, ohne frühe Anwender zu bestrafen, die Vermögenswerte erworben haben, bevor klare Steuerrichtlinien existierten.",
+     "Lettische Beamte gaben an, dass die Steuerbehörde technische Infrastruktur evaluiert, um Kryptowährungen ab 2027 direkt für Steuerabwicklungen zu akzeptieren. Falls umgesetzt, würde Lettland sich einer kleinen Gruppe von Rechtsordnungen anschließen, die es Bürgern ermöglichen, staatliche Verpflichtungen in digitalen Vermögenswerten statt in Euro zu erfüllen.",
+     "Das abhebungsbasierte Modell beseitigt die Notwendigkeit, Gewinne und Verluste bei jedem Trade zu melden, eine Last, die die Einzelhandelsbeteiligung in Ländern mit transaktionsbasierter Besteuerung abgeschreckt hat. Stattdessen treten steuerpflichtige Ereignisse nur auf, wenn Wert das Krypto-Ökosystem verlässt — entweder als Banküberweisung, Warenkauf oder Umwandlung in eine andere Fiat-Währung.",
+     "Die Gesetzgebung kommt, während die Europäische Union ihre Markets in Crypto-Assets-Verordnung finalisiert, die einige Regeln harmonisiert, aber die Steuerpolitik den Mitgliedstaaten überlässt. Der lettische Ansatz kontrastiert mit reibungsreicheren Regimen in Frankreich und Deutschland, wo jeder Trade ein steuerpflichtiges Ereignis auslösen kann.",
+     "Für Investoren ist die wichtigste Änderung die Aufzeichnung: Statt die Kostenbasis jeder verkauften Münze zu verfolgen, müssen sie nur Gesamteinlagen und Gesamtabhebungen nachweisen. Das Ziel 2027 für Krypto-Steuerzahlungen hängt von der Integration mit Stablecoin-Abwicklungsnetzwerken ab."
+    ]
+   },
+   "fr": {
+    "title": "La Lettonie réécrit les règles fiscales crypto et envisage les paiements d'impôts en Bitcoin d'ici 2027",
+    "excerpt": "Le parlement a adopté une loi taxant les retraits crypto au-dessus des dépôts plutôt que les transactions individuelles, avec un mécanisme de déclaration unique et la possibilité de payer des impôts en actifs numériques.",
+    "body": [
+     "Le parlement letton a approuvé une refonte complète de la fiscalité des cryptomonnaies qui déplace la charge du suivi de chaque transaction vers un système plus simple basé sur les retraits, tout en explorant simultanément l'acceptation de crypto pour les paiements d'impôts dès 2027. Le nouveau cadre taxe uniquement le gain net lorsque les utilisateurs convertissent la crypto en fiat ou la dépensent, calculé comme la différence entre les montants de retrait et les dépôts totaux.",
+     "La réforme comprend un mécanisme de déclaration unique permettant aux détenteurs d'enregistrer leurs positions crypto existantes, établissant une base de coûts pour les calculs fiscaux futurs. Cette disposition de type amnistie vise à mettre les détenteurs à long terme en conformité sans pénaliser les premiers adoptants qui ont acquis des actifs avant l'existence de directives fiscales claires.",
+     "Les responsables lettons ont indiqué que l'autorité fiscale évalue l'infrastructure technique pour accepter les cryptomonnaies directement pour les règlements fiscaux à partir de 2027. Si cela est mis en œuvre, la Lettonie rejoindrait un petit groupe de juridictions permettant aux citoyens de s'acquitter d'obligations gouvernementales en actifs numériques plutôt qu'en euros.",
+     "Le modèle basé sur les retraits élimine la nécessité de déclarer les gains et pertes sur chaque transaction, un fardeau qui a dissuadé la participation de détail dans les pays avec taxation par transaction. Au lieu de cela, les événements imposables se produisent uniquement lorsque la valeur quitte l'écosystème crypto — soit comme virement bancaire, achat de biens ou conversion vers une autre devise fiat.",
+     "La législation arrive alors que l'Union européenne finalise son règlement Markets in Crypto-Assets, qui harmonise certaines règles mais laisse la politique fiscale aux États membres. L'approche lettonne contraste avec des régimes à friction plus élevée en France et en Allemagne, où chaque transaction peut déclencher un événement imposable.",
+     "Pour les investisseurs, le changement clé concerne la tenue de registres : au lieu de suivre la base de coûts de chaque pièce vendue, ils doivent seulement démontrer les dépôts totaux et les retraits totaux. L'objectif 2027 pour les paiements fiscaux en crypto dépend de l'intégration avec les réseaux de règlement de stablecoins."
+    ]
+   },
+   "ar": {
+    "title": "لاتفيا تعيد كتابة قواعد ضرائب العملات المشفرة وتدرس دفع الضرائب بالبيتكوين بحلول 2027",
+    "excerpt": "أقر البرلمان قانوناً يفرض ضرائب على سحوبات العملات المشفرة التي تتجاوز الودائع بدلاً من الصفقات الفردية، مع آلية إعلان لمرة واحدة وإمكانية دفع الضرائب بالأصول الرقمية.",
+    "body": [
+     "وافق البرلمان اللاتفي على إصلاح شامل لضرائب العملات المشفرة ينقل العبء من تتبع كل صفقة إلى نظام أبسط قائم على السحوبات، مع استكشاف قبول العملات المشفرة لدفع الضرائب اعتباراً من 2027. يفرض الإطار الجديد ضرائب على صافي الربح فقط عندما يقوم المستخدمون بتحويل العملات المشفرة إلى عملات ورقية أو إنفاقها، محسوباً كالفرق بين مبالغ السحب والودائع الإجمالية.",
+     "يتضمن الإصلاح آلية إعلان لمرة واحدة تسمح للحائزين بتسجيل مراكزهم الحالية في العملات المشفرة، وإنشاء أساس تكلفة للحسابات الضريبية المستقبلية. هذا الحكم على غرار العفو مصمم لجلب الحائزين طويلي الأجل إلى الامتثال دون معاقبة المتبنين الأوائل الذين حصلوا على أصول قبل وجود إرشادات ضريبية واضحة.",
+     "أشار المسؤولون اللاتفيون إلى أن السلطة الضريبية تقيّم البنية التحتية التقنية لقبول العملات المشفرة مباشرة لتسويات الضرائب اعتباراً من 2027. إذا تم التنفيذ، ستنضم لاتفيا إلى مجموعة صغيرة من الولايات القضائية التي تسمح للمواطنين بالوفاء بالالتزامات الحكومية بالأصول الرقمية بدلاً من اليورو.",
+     "يلغي النموذج القائم على السحوبات الحاجة إلى الإبلاغ عن المكاسب والخسائر في كل صفقة، وهو عبء ثبط المشاركة بالتجزئة في البلدان التي تفرض ضرائب على كل معاملة. بدلاً من ذلك، تحدث الأحداث الخاضعة للضريبة فقط عندما تغادر القيمة النظام البيئي للعملات المشفرة — إما كتحويل مصرفي أو شراء سلع أو تحويل إلى عملة ورقية أخرى.",
+     "يأتي التشريع بينما يضع الاتحاد الأوروبي اللمسات الأخيرة على تنظيمه Markets in Crypto-Assets، الذي يوحد بعض القواعد لكنه يترك السياسة الضريبية للدول الأعضاء. يتناقض النهج اللاتفي مع الأنظمة ذات الاحتكاك الأعلى في فرنسا وألمانيا، حيث يمكن أن تؤدي كل صفقة إلى حدث خاضع للضريبة.",
+     "بالنسبة للمستثمرين، التغيير الرئيسي هو حفظ السجلات: بدلاً من تتبع أساس تكلفة كل عملة مباعة، يحتاجون فقط لإثبات إجمالي الودائع وإجمالي السحوبات. يعتمد هدف 2027 لمدفوعات الضرائب بالعملات المشفرة على التكامل مع شبكات تسوية العملات المستقرة."
+    ]
+   },
+   "zh": {
+    "title": "拉脱维亚重写加密税收规则并考虑在2027年前接受比特币纳税",
+    "excerpt": "议会通过了一项法律，对超出存款的加密货币提款征税，而非对单笔交易征税，包含一次性申报机制和以数字资产缴税的可能性。",
+    "body": [
+     "拉脱维亚议会批准了一项全面的加密货币税收改革，将负担从追踪每笔交易转移到基于提款的更简单系统，同时探索从2027年开始接受加密货币纳税。新框架仅对用户将加密货币转换为法币或消费时的净收益征税，计算方式为提款金额与总存款之间的差额。",
+     "改革包括一次性申报机制，允许持有者登记其现有加密货币头寸，为未来税务计算建立成本基础。这一类似特赦的条款旨在让长期持有者合规，而不惩罚在明确税务指导出现之前获得资产的早期采用者。",
+     "拉脱维亚官员表示，税务机关正在评估技术基础设施，以便从2027年开始直接接受加密货币进行税务结算。如果实施，拉脱维亚将加入少数允许公民用数字资产而非欧元履行政府义务的司法管辖区。",
+     "基于提款的模式消除了报告每笔交易收益和损失的需求，这一负担在按交易征税的国家阻碍了散户参与。相反，应税事件仅在价值离开加密生态系统时发生——作为银行转账、商品购买或转换为另一种法币。",
+     "该立法出台之际，欧盟正在敲定其加密资产市场法规，该法规统一了一些规则，但将税收政策留给成员国。拉脱维亚的做法与法国和德国更高摩擦的制度形成对比，在那里每笔交易都可能触发应税事件。",
+     "对投资者而言，关键变化在于记录保存：无需追踪每个出售币种的成本基础，只需证明总存款和总提款。2027年加密纳税目标取决于与稳定币结算网络的整合。"
+    ]
+   },
+   "hi": {
+    "title": "लातविया ने क्रिप्टो टैक्स नियम फिर से लिखे और 2027 तक बिटकॉइन में टैक्स भुगतान पर विचार कर रहा है",
+    "excerpt": "संसद ने एक कानून पारित किया जो व्यक्तिगत ट्रेडों के बजाय जमा से अधिक क्रिप्टो निकासी पर कर लगाता है, जिसमें एकबारगी घोषणा तंत्र और डिजिटल परिसंपत्तियों में कर भुगतान की संभावना है।",
+    "body": [
+     "लातविया की संसद ने क्रिप्टोकरेंसी कराधान के एक व्यापक सुधार को मंजूरी दी है जो हर ट्रेड को ट्रैक करने के बोझ को निकासी-आधारित सरल प्रणाली में स्थानांतरित करता है, जबकि 2027 से कर भुगतान के लिए क्रिप्टो स्वीकृति की भी खोज कर रहा है। नया ढांचा केवल शुद्ध लाभ पर कर लगाता है जब उपयोगकर्ता क्रिप्टो को फिएट में बदलते हैं या खर्च करते हैं, जिसकी गणना निकासी राशि और कुल जमा के बीच के अंतर के रूप में की जाती है।",
+     "सुधार में एकबारगी घोषणा तंत्र शामिल है जो धारकों को अपनी मौजूदा क्रिप्टो स्थितियों को पंजीकृत करने की अनुमति देता है, भविष्य की कर गणना के लिए लागत आधार स्थापित करता है। यह माफी-शैली का प्रावधान दीर्घकालिक धारकों को अनुपालन में लाने के लिए डिज़ाइन किया गया है बिना उन शुरुआती अपनाने वालों को दंडित किए जिन्होंने स्पष्ट कर मार्गदर्शन मौजूद होने से पहले परिसंपत्तियां हासिल की थीं।",
+     "लातवियाई अधिकारियों ने संकेत दिया कि कर प्राधिकरण 2027 से कर निपटान के लिए सीधे क्रिप्टोकरेंसी स्वीकार करने के लिए तकनीकी बुनियादी ढांचे का मूल्यांकन कर रहा है। यदि लागू किया जाता है, तो लातविया उन न्यायालयों के एक छोटे समूह में शामिल हो जाएगा जो नागरिकों को यूरो के बजाय डिजिटल परिसंपत्तियों में सरकारी दायित्वों को पूरा करने की अनुमति देते हैं।",
+     "निकासी-आधारित मॉडल हर ट्रेड पर लाभ और हानि की रिपोर्ट करने की आवश्यकता को समाप्त करता है, एक बोझ जिसने प्रति-लेनदेन कराधान वाले देशों में खुदरा भागीदारी को हतोत्साहित किया है। इसके बजाय, कर योग्य घटनाएं केवल तभी होती हैं जब मूल्य क्रिप्टो पारिस्थितिकी तंत्र छोड़ता है — बैंक हस्तांतरण, वस्तुओं की खरीद, या किसी अन्य फिएट मुद्रा में रूपांतरण के रूप में।",
+     "यह कानून तब आया है जब यूरोपीय संघ अपने Markets in Crypto-Assets विनियमन को अंतिम रूप दे रहा है, जो कुछ नियमों को सामंजस्यपूर्ण बनाता है लेकिन कर नीति सदस्य राज्यों पर छोड़ देता है। लातविया का दृष्टिकोण फ्रांस और जर्मनी में उच्च घर्षण व्यवस्थाओं के विपरीत है, जहां हर ट्रेड कर योग्य घटना को ट्रिगर कर सकती है।",
+     "निवेशकों के लिए, मुख्य परिवर्तन रिकॉर्ड-कीपिंग है: बेचे गए प्रत्येक सिक्के की लागत आधार को ट्रैक करने के बजाय, उन्हें केवल कुल जमा और कुल निकासी प्रदर्शित करने की आवश्यकता है। क्रिप्टो कर भुगतान के लिए 2027 का लक्ष्य स्टेबलकॉइन निपटान नेटवर्क के साथ एकीकरण पर निर्भर करता है।"
+    ]
+   },
+   "id": {
+    "title": "Latvia Menulis Ulang Aturan Pajak Kripto dan Pertimbangkan Pembayaran Pajak Bitcoin pada 2027",
+    "excerpt": "Parlemen mengesahkan undang-undang yang mengenakan pajak penarikan kripto di atas deposit daripada perdagangan individual, dengan mekanisme deklarasi satu kali dan kemungkinan membayar pajak dalam aset digital.",
+    "body": [
+     "Parlemen Latvia telah menyetujui reformasi menyeluruh perpajakan mata uang kripto yang mengalihkan beban dari pelacakan setiap perdagangan ke sistem berbasis penarikan yang lebih sederhana, sambil secara bersamaan mengeksplorasi penerimaan kripto untuk pembayaran pajak mulai 2027. Kerangka kerja baru hanya mengenakan pajak pada keuntungan bersih ketika pengguna mengonversi kripto ke fiat atau membelanjakannya, dihitung sebagai selisih antara jumlah penarikan dan total deposit.",
+     "Reformasi ini mencakup mekanisme deklarasi satu kali yang memungkinkan pemegang untuk mendaftarkan posisi kripto mereka yang ada, menetapkan basis biaya untuk perhitungan pajak di masa depan. Ketentuan bergaya amnesti ini dirancang untuk membawa pemegang jangka panjang ke dalam kepatuhan tanpa menghukum pengguna awal yang memperoleh aset sebelum panduan pajak yang jelas ada.",
+     "Pejabat Latvia mengindikasikan bahwa otoritas pajak sedang mengevaluasi infrastruktur teknis untuk menerima mata uang kripto secara langsung untuk penyelesaian pajak mulai 2027. Jika diterapkan, Latvia akan bergabung dengan sekelompok kecil yurisdiksi yang memungkinkan warga negara untuk memenuhi kewajiban pemerintah dalam aset digital daripada euro.",
+     "Model berbasis penarikan menghilangkan kebutuhan untuk melaporkan keuntungan dan kerugian pada setiap perdagangan, beban yang telah menghalangi partisipasi ritel di negara-negara dengan perpajakan per transaksi. Sebaliknya, peristiwa kena pajak hanya terjadi ketika nilai meninggalkan ekosistem kripto — baik sebagai transfer bank, pembelian barang, atau konversi ke mata uang fiat lainnya.",
+     "Legislasi ini muncul saat Uni Eropa menyelesaikan regulasi Markets in Crypto-Assets-nya, yang menyelaraskan beberapa aturan tetapi menyerahkan kebijakan pajak kepada negara-negara anggota. Pendekatan Latvia berbeda dengan rezim gesekan lebih tinggi di Prancis dan Jerman, di mana setiap perdagangan dapat memicu peristiwa kena pajak.",
+     "Bagi investor, perubahan kunci adalah pencatatan: alih-alih melacak basis biaya setiap koin yang dijual, mereka hanya perlu menunjukkan total deposit dan total penarikan. Target 2027 untuk pembayaran pajak kripto bergantung pada integrasi dengan jaringan penyelesaian stablecoin."
+    ]
+   },
+   "vi": {
+    "title": "Latvia viết lại quy tắc thuế tiền mã hóa và cân nhắc thanh toán thuế bằng Bitcoin vào năm 2027",
+    "excerpt": "Quốc hội đã thông qua luật đánh thuế rút tiền mã hóa vượt quá tiền gửi thay vì các giao dịch riêng lẻ, với cơ chế khai báo một lần và khả năng trả thuế bằng tài sản kỹ thuật số.",
+    "body": [
+     "Quốc hội Latvia đã phê duyệt một cuộc đại tu toàn diện về thuế tiền mã hóa, chuyển gánh nặng từ theo dõi mọi giao dịch sang hệ thống đơn giản hơn dựa trên rút tiền, đồng thời khám phá việc chấp nhận tiền mã hóa để thanh toán thuế từ năm 2027. Khung mới chỉ đánh thuế lợi nhuận ròng khi người dùng chuyển đổi tiền mã hóa sang tiền pháp định hoặc chi tiêu, được tính là chênh lệch giữa số tiền rút và tổng tiền gửi.",
+     "Cải cách bao gồm cơ chế khai báo một lần cho phép người nắm giữ đăng ký vị thế tiền mã hóa hiện tại của họ, thiết lập cơ sở chi phí cho các tính toán thuế trong tương lai. Điều khoản kiểu ân xá này được thiết kế để đưa người nắm giữ dài hạn vào tuân thủ mà không trừng phạt những người áp dụng sớm đã mua tài sản trước khi có hướng dẫn thuế rõ ràng.",
+     "Các quan chức Latvia chỉ ra rằng cơ quan thuế đang đánh giá cơ sở hạ tầng kỹ thuật để chấp nhận tiền mã hóa trực tiếp cho việc thanh toán thuế bắt đầu từ năm 2027. Nếu được thực hiện, Latvia sẽ tham gia một nhóm nhỏ các khu vực pháp lý cho phép công dân thực hiện nghĩa vụ chính phủ bằng tài sản kỹ thuật số thay vì euro.",
+     "Mô hình dựa trên rút tiền loại bỏ nhu cầu báo cáo lãi và lỗ trên mỗi giao dịch, một gánh nặng đã ngăn cản sự tham gia bán lẻ ở các quốc gia có đánh thuế theo từng giao dịch. Thay vào đó, các sự kiện chịu thuế chỉ xảy ra khi giá trị rời khỏi hệ sinh thái tiền mã hóa — dưới dạng chuyển khoản ngân hàng, mua hàng hóa hoặc chuyển đổi sang tiền pháp định khác.",
+     "Luật này xuất hiện khi Liên minh Châu Âu hoàn thiện quy định Markets in Crypto-Assets, điều hòa một số quy tắc nhưng để chính sách thuế cho các quốc gia thành viên. Cách tiếp cận của Latvia trái ngược với các chế độ ma sát cao hơn ở Pháp và Đức, nơi mỗi giao dịch có thể kích hoạt sự kiện chịu thuế.",
+     "Đối với nhà đầu tư, thay đổi chính là ghi sổ: thay vì theo dõi cơ sở chi phí của mỗi đồng tiền bán ra, họ chỉ cần chứng minh tổng tiền gửi và tổng rút tiền. Mục tiêu 2027 cho thanh toán thuế bằng tiền mã hóa phụ thuộc vào tích hợp với mạng thanh toán stablecoin."
+    ]
+   },
+   "tr": {
+    "title": "Letonya kripto vergi kurallarını yeniden yazıyor ve 2027'ye kadar Bitcoin ile vergi ödemesini değerlendiriyor",
+    "excerpt": "Parlamento, bireysel işlemler yerine mevduatların üzerindeki kripto çekimlerine vergi koyan, tek seferlik beyan mekanizması ve dijital varlıklarla vergi ödeme olasılığı içeren bir yasa çıkardı.",
+    "body": [
+     "Letonya parlamentosu, her işlemi takip etme yükünü çekimlere dayalı daha basit bir sisteme aktaran, aynı zamanda 2027'den itibaren vergi ödemeleri için kripto kabulünü araştıran kapsamlı bir kripto para vergisi reformunu onayladı. Yeni çerçeve, yalnızca kullanıcılar kripto parayı itibari paraya dönüştürdüğünde veya harcadığında net kazancı vergilendirir ve bu, çekim tutarları ile toplam mevduat arasındaki fark olarak hesaplanır.",
+     "Reform, sahiplerin mevcut kripto pozisyonlarını kaydetmelerine olanak tanıyan, gelecekteki vergi hesaplamaları için bir maliyet temeli oluşturan tek seferlik bir beyan mekanizması içerir. Af tarzındaki bu hüküm, net vergi rehberliği ortaya çıkmadan önce varlık edinen erken benimseyenleri cezalandırmadan uzun vadeli sahipleri uyumluluğa getirmek için tasarlanmıştır.",
+     "Letonyalı yetkililer, vergi otoritesinin 2027'den başlayarak vergi ödemeleri için doğrudan kripto para kabul etmek üzere teknik altyapıyı değerlendirdiğini belirtti. Uygulanırsa, Letonya vatandaşların euro yerine dijital varlıklarla hükümet yükümlülüklerini yerine getirmelerine izin veren küçük bir yargı grubu grubuna katılacak.",
+     "Çekime dayalı model, her işlemde kazanç ve kayıpları raporlama ihtiyacını ortadan kaldırır; bu, işlem başına vergilendirme olan ülkelerde perakende katılımını caydıran bir yüktü. Bunun yerine, vergiye tabi olaylar yalnızca değer kripto ekosisteminden ayrıldığında gerçekleşir — banka transferi, mal satın alma veya başka bir itibari para birimine dönüştürme olarak.",
+     "Mevzuat, bazı kuralları uyumlu hale getiren ancak vergi politikasını üye devletlere bırakan Markets in Crypto-Assets düzenlemesini sonuçlandırırken Avrupa Birliği'nden geliyor. Letonya'nın yaklaşımı, her işlemin vergiye tabi bir olayı tetikleyebileceği Fransa ve Almanya'daki daha yüksek sürtünme rejimleriyle tezat oluşturuyor.",
+     "Yatırımcılar için önemli değişiklik kayıt tuturmadır: satılan her madalyonun maliyet temelini takip etmek yerine, yalnızca toplam mevduat ve toplam çekimleri göstermeleri gerekir. Kripto vergi ödemeleri için 2027 hedefi, stablecoin ödeme ağlarıyla entegrasyona bağlıdır."
+    ]
+   },
+   "ja": {
+    "title": "ラトビアが暗号税規則を書き直し、2027年までにビットコインでの納税を検討",
+    "excerpt": "議会は個別取引ではなく預金を超える暗号引き出しに課税する法律を可決し、一度限りの申告メカニズムとデジタル資産での納税の可能性を含んでいます。",
+    "body": [
+     "ラトビア議会は、すべての取引を追跡する負担を引き出しベースのより簡単なシステムに移行する包括的な暗号通貨課税改革を承認し、同時に2027年から税金支払いのための暗号受け入れを検討しています。新しい枠組みは、ユーザーが暗号を法定通貨に変換または支出する際の純利益のみに課税し、引き出し額と総預金の差額として計算されます。",
+     "改革には、保有者が既存の暗号ポジションを登録し、将来の税計算のためのコストベースを確立できる一度限りの申告メカニズムが含まれています。この恩赦スタイルの規定は、明確な税ガイダンスが存在する前に資産を取得した早期採用者を罰することなく、長期保有者をコンプライアンスに導くように設計されています。",
+     "ラトビア当局は、税務当局が2027年から税決済のために暗号通貨を直接受け入れるための技術インフラを評価していることを示しました。実施されれば、ラトビアは市民がユーロではなくデジタル資産で政府義務を履行できる少数の管轄区域のグループに加わることになります。",
+     "引き出しベースのモデルは、取引ごとに利益と損失を報告する必要を排除し、これは取引ごとの課税がある国で小売参加を抑止していた負担でした。代わりに、課税対象イベントは、価値が暗号エコシステムを離れるときにのみ発生します — 銀行振込、商品の購入、または別の法定通貨への換算として。",
+     "この法律は、欧州連合がいくつかのルールを調和させるが税政策は加盟国に任せるMarkets in Crypto-Assets規制を最終化している中で登場しています。ラトビアのアプローチは、すべての取引が課税イベントを引き起こす可能性があるフランスとドイツのより高い摩擦体制とは対照的です。",
+     "投資家にとって、重要な変更は記録保持です：販売されたすべてのコインのコストベースを追跡する代わりに、総預金と総引き出しを示すだけで済みます。暗号税支払いの2027年目標は、ステーブルコイン決済ネットワークとの統合に依存しています。"
+    ]
+   },
+   "ko": {
+    "title": "라트비아, 암호화폐 세금 규칙 재작성하며 2027년까지 비트코인 납세 검토",
+    "excerpt": "의회는 개별 거래가 아닌 예금을 초과하는 암호화폐 인출에 세금을 부과하는 법안을 통과시켰으며, 일회성 신고 메커니즘과 디지털 자산으로 세금을 납부할 가능성이 포함되어 있습니다.",
+    "body": [
+     "라트비아 의회는 모든 거래를 추적하는 부담을 인출 기반의 더 간단한 시스템으로 전환하는 포괄적인 암호화폐 과세 개혁을 승인했으며, 동시에 2027년부터 세금 납부를 위한 암호화폐 수용을 모색하고 있습니다. 새로운 프레임워크는 사용자가 암호화폐를 법정화폐로 전환하거나 지출할 때 순이익에만 세금을 부과하며, 이는 인출 금액과 총 예금 간의 차이로 계산됩니다.",
+     "개혁에는 보유자가 기존 암호화폐 포지션을 등록하여 향후 세금 계산을 위한 비용 기준을 설정할 수 있는 일회성 신고 메커니즘이 포함되어 있습니다. 이 사면 스타일 조항은 명확한 세금 지침이 존재하기 전에 자산을 취득한 조기 채택자를 처벌하지 않고 장기 보유자를 규정 준수로 이끌도록 설계되었습니다.",
+     "라트비아 관리들은 세무 당국이 2027년부터 세금 결제를 위해 암호화폐를 직접 수용하기 위한 기술 인프라를 평가하고 있다고 밝혔습니다. 시행되면 라트비아는 시민들이 유로가 아닌 디지털 자산으로 정부 의무를 이행할 수 있도록 허용하는 소수의 관할 구역 그룹에 합류하게 됩니다.",
+     "인출 기반 모델은 모든 거래에서 이익과 손실을 보고할 필요를 없애며, 이는 거래당 과세가 있는 국가에서 소매 참여를 억제했던 부담이었습니다. 대신 과세 대상 이벤트는 가치가 암호화폐 생태계를 떠날 때만 발생합니다 — 은행 송금, 상품 구매 또는 다른 법정 통화로의 전환으로.",
+     "이 법안은 유럽연합이 일부 규칙을 조화시키지만 세금 정책은 회원국에 맡기는 Markets in Crypto-Assets 규정을 마무리하는 가운데 등장했습니다. 라트비아의 접근 방식은 모든 거래가 과세 이벤트를 유발할 수 있는 프랑스와 독일의 더 높은 마찰 체제와 대조됩니다.",
+     "투자자들에게 주요 변화는 기록 보관입니다: 판매된 모든 코인의 비용 기준을 추적하는 대신 총 예금과 총 인출만 증명하면 됩니다. 암호화폐 세금 납부의 2027년 목표는 스테이블코인 결제 네트워크와의 통합에 달려 있습니다."
+    ]
+   },
+   "pl": {
+    "title": "Łotwa przepisuje zasady podatkowe dotyczące kryptowalut i rozważa płatności podatkowe w Bitcoinie do 2027 roku",
+    "excerpt": "Parlament uchwalił prawo opodatkowujące wypłaty kryptowalut powyżej depozytów zamiast poszczególnych transakcji, z mechanizmem jednorazowej deklaracji i możliwością płacenia podatków w aktywach cyfrowych.",
+    "body": [
+     "Parlament Łotwy zatwierdził kompleksową reformę opodatkowania kryptowalut, która przenosi ciężar ze śledzenia każdej transakcji na prostszy system oparty na wypłatach, jednocześnie badając akceptację kryptowalut do płatności podatkowych od 2027 roku. Nowe ramy opodatkowują jedynie zysk netto, gdy użytkownicy konwertują kryptowaluty na waluty fiducjarne lub je wydają, obliczany jako różnica między kwotami wypłat a całkowitymi depozytami.",
+     "Reforma obejmuje mechanizm jednorazowej deklaracji, który pozwala posiadaczom zarejestrować swoje istniejące pozycje kryptowalutowe, ustanawiając podstawę kosztów dla przyszłych obliczeń podatkowych. Ten przepis w stylu amnestii został zaprojektowany, aby doprowadzić długoterminowych posiadaczy do zgodności bez karania wczesnych użytkowników, którzy nabyli aktywa przed istnieniem jasnych wytycznych podatkowych.",
+     "Urzędnicy łotewscy wskazali, że organ podatkowy ocenia infrastrukturę techniczną do akceptowania kryptowalut bezpośrednio do rozliczeń podatkowych od 2027 roku. Jeśli zostanie wdrożony, Łotwa dołączy do małej grupy jurysdykcji pozwalających obywatelom wypełniać zobowiązania rządowe w aktywach cyfrowych zamiast w euro.",
+     "Model oparty na wypłatach eliminuje potrzebę zgłaszania zysków i strat z każdej transakcji, ciężar, który zniechęcał do detalicznego uczestnictwa w krajach z opodatkowaniem per transakcja. Zamiast tego zdarzenia podatkowe występują tylko wtedy, gdy wartość opuszcza ekosystem kryptowalutowy — jako przelew bankowy, zakup towarów lub konwersja na inną walutę fiducjarną.",
+     "Ustawodawstwo pojawia się, gdy Unia Europejska finalizuje swoje rozporządzenie Markets in Crypto-Assets, które harmonizuje niektóre zasady, ale pozostawia politykę podatkową państwom członkowskim. Podejście Łotwy kontrastuje z reżimami wyższego tarcia we Francji i Niemczech, gdzie każda transakcja może wywołać zdarzenie podatkowe.",
+     "Dla inwestorów kluczową zmianą jest prowadzenie rejestrów: zamiast śledzić podstawę kosztów każdej sprzedanej monety, muszą jedynie wykazać całkowite depozyty i całkowite wypłaty. Cel 2027 dla płatności podatkowych w kryptowalutach zależy od integracji z sieciami rozliczeniowymi stablecoinów."
+    ]
+   },
+   "th": {
+    "title": "ลัตเวียเขียนกฎภาษีคริปโตใหม่และพิจารณาชำระภาษีด้วยบิตคอยน์ภายในปี 2027",
+    "excerpt": "รัฐสภาผ่านกฎหมายจัดเก็บภาษีการถอนคริปโตที่เกินเงินฝากแทนการซื้อขายแต่ละครั้ง พร้อมกลไกการแจ้งครั้งเดียวและความเป็นไปได้ที่จะชำระภาษีด้วยสินทรัพย์ดิจิทัล",
+    "body": [
+     "รัฐสภาลัตเวียอนุมัติการปฏิรูปภาษีคริปโตสกุลเงินอย่างครอบคลุมที่เปลี่ยนภาระจากการติดตามทุกการซื้อขายเป็นระบบที่เรียบง่ายกว่าโดยอิงจากการถอน ขณะเดียวกันก็สำรวจการยอมรับคริปโตสำหรับการชำระภาษีตั้งแต่ปี 2027 กรอบใหม่เก็บภาษีเฉพาะกำไรสุทธิเมื่อผู้ใช้แปลงคริปโตเป็นเงินเฟียตหรือใช้จ่าย คำนวณเป็นความแตกต่างระหว่างจำนวนการถอนและเงินฝากรวม",
+     "การปฏิรูปรวมถึงกลไกการแจ้งครั้งเดียวที่อนุญาตให้ผู้ถือลงทะเบียนตำแหน่งคริปโตที่มีอยู่ สร้างฐานต้นทุนสำหรับการคำนวณภาษีในอนาคต บทบัญญัติสไตล์นิรโทษกรรมนี้ออกแบบมาเพื่อนำผู้ถือระยะยาวมาสู่การปฏิบัติตามโดยไม่ลงโทษผู้ใช้ต้นที่ได้รับสินทรัพย์ก่อนมีคำแนะนำภาษีที่ชัดเจน",
+     "เจ้าหน้าที่ลัตเวียระบุว่าหน่วยงานภาษีกำลังประเมินโครงสร้างพื้นฐานทางเทคนิคเพื่อยอมรับสกุลเงินดิจิทัลโดยตรงสำหรับการชำระภาษีตั้งแต่ปี 2027 หากดำเนินการ ลัตเวียจะเข้าร่วมกลุ่มเขตอำนาจศาลขนาดเล็กที่อนุญาตให้พลเมืองปฏิบัติตามภาระผูกพันของรัฐบาลในสินทรัพย์ดิจิทัลแทนยูโร",
+     "แบบจำลองที่อิงจากการถอนขจัดความจำเป็นในการรายงานกำไรและขาดทุนในทุกการซื้อขาย ซึ่งเป็นภาระที่ทำให้การมีส่วนร่วมของผู้ค้าปลีกลดลงในประเทศที่มีการจัดเก็บภาษีต่อธุรกรรม แทนที่จะเป็นเหตุการณ์ที่ต้องเสียภาษีเกิดขึ้นเฉพาะเมื่อมูลค่าออกจากระบบนิเวศคริปโต — เป็นการโอนเงินผ่านธนาคาร การซื้อสินค้า หรือการแปลงเป็นสกุลเงินเฟียตอื่น",
+     "กฎหมายมาถึงขณะที่สหภาพยุโรปกำลังจัดทำข้อบังคับ Markets in Crypto-Assets ให้เสร็จสมบูรณ์ ซึ่งประสานกฎบางอย่างแต่ทิ้งนโยบายภาษีให้กับประเทศสมาชิก แนวทางของลัตเวียตัดกันกับระบอบแรงเสียดทานที่สูงกว่าในฝรั่งเศสและเยอรมนี ซึ่งทุกการซื้อขายสามารถกระตุ้นเหตุการณ์ที่ต้องเสียภาษี",
+     "สำหรับนักลงทุน การเปลี่ยนแปลงที่สำคัญคือการเก็บบันทึก: แทนที่จะติดตามฐานต้นทุนของทุกเหรียญที่ขาย พวกเขาต้องแสดงเงินฝากรวมและการถอนรวมเท่านั้น เป้าหมาย 2027 สำหรับการชำระภาษีคริปโตขึ้นอยู่กับการบูรณาการกับเครือข่ายการชำระเงิน stablecoin"
+    ]
+   }
+  },
+  "date": "2026-10-18T16:14:10.041Z",
+  "gradient": "linear-gradient(135deg,#f7931a33,#0b0e1400)"
+ },
+ {
   "slug": "banks-could-slow-stablecoin-growth-by-paying-savers-more-bis-yoac",
   "category": "crypto",
   "emoji": "🏦",
