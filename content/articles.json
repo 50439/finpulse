@@ -1,5 +1,240 @@
 [
  {
+  "slug": "jpmorgan-expands-jpm-coin-to-ethereum-for-institutional-paym-vmdp",
+  "category": "crypto",
+  "emoji": "🏦",
+  "video": {
+   "hook": "YOUR BANK TOKEN HITS ETHEREUM",
+   "lead": "JPMorgan is putting its dollar deposit token on Ethereum, opening institutional payments to the public blockchain.",
+   "question": "Does this make you trust stablecoins more?"
+  },
+  "i18n": {
+   "en": {
+    "title": "JPMorgan Expands JPM Coin to Ethereum for Institutional Payments",
+    "excerpt": "The largest U.S. bank is bringing its dollar deposit token to Ethereum, opening institutional payment rails to the public blockchain and expanding beyond its private network.",
+    "body": [
+     "JPMorgan Chase is expanding JPM Coin, its dollar deposit token, to the Ethereum blockchain as it seeks to serve a broader range of institutional clients, according to a Bloomberg report. The move marks a significant shift for the bank's digital currency, which has until now operated exclusively on its private Onyx network.",
+     "JPM Coin represents dollar deposits held at the bank and allows institutional clients to make instant payments and settle transactions around the clock. Since its launch in 2019, the token has processed over $1 trillion in transactions, but only among clients connected to JPMorgan's permissioned network. By moving to Ethereum, the bank opens the door to clients who use other custodians and platforms.",
+     "The expansion reflects growing demand from institutions that want to settle tokenized securities and cross-border payments on public blockchains. JPMorgan has been a pioneer in blockchain adoption among traditional banks, but its private network limited interoperability with the broader digital asset ecosystem. Ethereum integration removes that friction.",
+     "For everyday investors, the development signals that major banks are no longer treating public blockchains as experimental. JPMorgan's decision validates Ethereum as infrastructure capable of handling institutional-grade finance. It also introduces competition for existing stablecoins like USDC and USDT, though JPM Coin remains available only to institutional clients, not retail users.",
+     "The move comes as banks worldwide race to integrate stablecoin and tokenized deposit systems. Mastercard recently launched stablecoin banking integration, while Kraken's parent company acquired an EU bank to offer deposits and lending. Deutsche Bank is preparing to launch crypto custody services in Germany with plans to expand to Asia in 2027.",
+     "JPMorgan has not disclosed a timeline for the Ethereum rollout or which tokenized assets it plans to support. The bank's Onyx unit will manage the technical integration, and clients will still need to maintain deposit accounts with JPMorgan to hold JPM Coin. The token is not a stablecoin in the regulatory sense, as it represents a claim on deposits rather than a standalone asset backed by reserves.",
+     "Watch whether other major banks follow JPMorgan onto Ethereum, and whether regulators treat bank deposit tokens differently from stablecoins issued by crypto-native firms. The distinction could determine whether JPM Coin faces the same scrutiny as Circle's USDC or Tether's USDT, especially if it begins to settle large volumes of cross-border payments."
+    ]
+   },
+   "uk": {
+    "title": "JPMorgan розширює JPM Coin на Ethereum для інституційних платежів",
+    "excerpt": "Найбільший банк США переносить свій токен долярових депозитів на Ethereum, відкриваючи інституційні платіжні рейки для публічного блокчейну та виходячи за межі своєї приватної мережі.",
+    "body": [
+     "JPMorgan Chase розширює JPM Coin, свій токен долярових депозитів, на блокчейн Ethereum, прагнучи обслуговувати ширше коло інституційних клієнтів, повідомляє Bloomberg. Цей крок є значним зрушенням для цифрової валюти банку, яка досі працювала виключно в його приватній мережі Onyx.",
+     "JPM Coin представляє долярові депозити, що зберігаються в банку, і дозволяє інституційним клієнтам здійснювати миттєві платежі та розрахунки цілодобово. З моменту запуску в 2019 році токен обробив понад 1 трильйон доларів транзакцій, але лише серед клієнтів, підключених до дозволеної мережі JPMorgan. Перехід на Ethereum відкриває двері клієнтам, які користуються іншими кастодіанами та платформами.",
+     "Розширення відображає зростаючий попит з боку інституцій, які хочуть розраховуватися токенізованими цінними паперами та здійснювати транскордонні платежі на публічних блокчейнах. JPMorgan був піонером у впровадженні блокчейну серед традиційних банків, але його приватна мережа обмежувала сумісність з ширшою екосистемою цифрових активів. Інтеграція Ethereum усуває це тертя.",
+     "Для звичайних інвесторів цей розвиток сигналізує, що великі банки більше не розглядають публічні блокчейни як експериментальні. Рішення JPMorgan підтверджує Ethereum як інфраструктуру, здатну обробляти фінанси інституційного рівня. Це також створює конкуренцію для існуючих стейблкоїнів, таких як USDC і USDT, хоча JPM Coin залишається доступним лише для інституційних клієнтів, а не роздрібних користувачів.",
+     "Цей крок відбувається на тлі того, як банки по всьому світу намагаються інтегрувати системи стейблкоїнів і токенізованих депозитів. Mastercard нещодавно запустила інтеграцію банківських стейблкоїнів, тоді як материнська компанія Kraken придбала банк ЄС для надання депозитів і кредитування. Deutsche Bank готується запустити послуги криптокастодії в Німеччині з планами розширення в Азію в 2027 році.",
+     "JPMorgan не розкрив терміни запуску Ethereum або які токенізовані активи він планує підтримувати. Підрозділ банку Onyx керуватиме технічною інтеграцією, і клієнтам все одно потрібно буде мати депозитні рахунки в JPMorgan для зберігання JPM Coin. Токен не є стейблкоїном у регуляторному сенсі, оскільки він представляє вимогу на депозити, а не самостійний актив, забезпечений резервами.",
+     "Стежте, чи інші великі банки підуть за JPMorgan на Ethereum, і чи будуть регулятори ставитися до токенів банківських депозитів інакше, ніж до стейблкоїнів, випущених криптонативними фірмами. Ця відмінність може визначити, чи стикнеться JPM Coin з таким самим контролем, як USDC від Circle або USDT від Tether, особливо якщо він почне обробляти великі обсяги транскордонних платежів."
+    ]
+   },
+   "ru": {
+    "title": "JPMorgan расширяет JPM Coin на Ethereum для институциональных платежей",
+    "excerpt": "Крупнейший банк США переносит свой токен долларовых депозитов на Ethereum, открывая институциональные платёжные рельсы для публичного блокчейна и выходя за пределы своей частной сети.",
+    "body": [
+     "JPMorgan Chase расширяет JPM Coin, свой токен долларовых депозитов, на блокчейн Ethereum, стремясь обслуживать более широкий круг институциональных клиентов, сообщает Bloomberg. Этот шаг знаменует значительный сдвиг для цифровой валюты банка, которая до сих пор работала исключительно в его частной сети Onyx.",
+     "JPM Coin представляет долларовые депозиты, хранящиеся в банке, и позволяет институциональным клиентам совершать мгновенные платежи и расчёты круглосуточно. С момента запуска в 2019 году токен обработал более 1 триллиона долларов транзакций, но только среди клиентов, подключённых к разрешённой сети JPMorgan. Переход на Ethereum открывает двери клиентам, которые используют других кастодианов и платформы.",
+     "Расширение отражает растущий спрос со стороны институтов, которые хотят рассчитываться токенизированными ценными бумагами и осуществлять трансграничные платежи на публичных блокчейнах. JPMorgan был пионером во внедрении блокчейна среди традиционных банков, но его частная сеть ограничивала совместимость с более широкой экосистемой цифровых активов. Интеграция Ethereum устраняет это трение.",
+     "Для обычных инвесторов это развитие сигнализирует, что крупные банки больше не рассматривают публичные блокчейны как экспериментальные. Решение JPMorgan подтверждает Ethereum как инфраструктуру, способную обрабатывать финансы институционального уровня. Это также создаёт конкуренцию существующим стейблкоинам, таким как USDC и USDT, хотя JPM Coin остаётся доступным только для институциональных клиентов, а не розничных пользователей.",
+     "Этот шаг происходит на фоне того, как банки по всему миру стремятся интегрировать системы стейблкоинов и токенизированных депозитов. Mastercard недавно запустила интеграцию банковских стейблкоинов, в то время как материнская компания Kraken приобрела банк ЕС для предоставления депозитов и кредитования. Deutsche Bank готовится запустить услуги криптокастодии в Германии с планами расширения в Азию в 2027 году.",
+     "JPMorgan не раскрыл сроки запуска Ethereum или какие токенизированные активы он планирует поддерживать. Подразделение банка Onyx будет управлять технической интеграцией, и клиентам всё равно нужно будет иметь депозитные счета в JPMorgan для хранения JPM Coin. Токен не является стейблкоином в регуляторном смысле, поскольку он представляет требование на депозиты, а не самостоятельный актив, обеспеченный резервами.",
+     "Следите, пойдут ли другие крупные банки за JPMorgan на Ethereum, и будут ли регуляторы относиться к токенам банковских депозитов иначе, чем к стейблкоинам, выпущенным криптонативными фирмами. Это различие может определить, столкнётся ли JPM Coin с таким же контролем, как USDC от Circle или USDT от Tether, особенно если он начнёт обрабатывать большие объёмы трансграничных платежей."
+    ]
+   },
+   "es": {
+    "title": "JPMorgan expande JPM Coin a Ethereum para pagos institucionales",
+    "excerpt": "El mayor banco de EE.UU. lleva su token de depósitos en dólares a Ethereum, abriendo los rieles de pago institucionales a la cadena de bloques pública y expandiéndose más allá de su red privada.",
+    "body": [
+     "JPMorgan Chase está expandiendo JPM Coin, su token de depósitos en dólares, a la cadena de bloques Ethereum mientras busca servir a una gama más amplia de clientes institucionales, según un informe de Bloomberg. El movimiento marca un cambio significativo para la moneda digital del banco, que hasta ahora ha operado exclusivamente en su red privada Onyx.",
+     "JPM Coin representa depósitos en dólares mantenidos en el banco y permite a los clientes institucionales realizar pagos instantáneos y liquidar transacciones las 24 horas del día. Desde su lanzamiento en 2019, el token ha procesado más de 1 billón de dólares en transacciones, pero solo entre clientes conectados a la red autorizada de JPMorgan. Al mudarse a Ethereum, el banco abre la puerta a clientes que usan otros custodios y plataformas.",
+     "La expansión refleja la creciente demanda de instituciones que quieren liquidar valores tokenizados y pagos transfronterizos en cadenas de bloques públicas. JPMorgan ha sido pionero en la adopción de blockchain entre los bancos tradicionales, pero su red privada limitó la interoperabilidad con el ecosistema más amplio de activos digitales. La integración de Ethereum elimina esa fricción.",
+     "Para los inversores cotidianos, el desarrollo señala que los grandes bancos ya no tratan las cadenas de bloques públicas como experimentales. La decisión de JPMorgan valida a Ethereum como infraestructura capaz de manejar finanzas de grado institucional. También introduce competencia para las monedas estables existentes como USDC y USDT, aunque JPM Coin permanece disponible solo para clientes institucionales, no usuarios minoristas.",
+     "El movimiento se produce mientras los bancos de todo el mundo compiten por integrar sistemas de monedas estables y depósitos tokenizados. Mastercard lanzó recientemente la integración bancaria de monedas estables, mientras que la empresa matriz de Kraken adquirió un banco de la UE para ofrecer depósitos y préstamos. Deutsche Bank se prepara para lanzar servicios de custodia de criptomonedas en Alemania con planes de expandirse a Asia en 2027.",
+     "JPMorgan no ha revelado un cronograma para el lanzamiento de Ethereum o qué activos tokenizados planea soportar. La unidad Onyx del banco gestionará la integración técnica, y los clientes aún necesitarán mantener cuentas de depósito con JPMorgan para mantener JPM Coin. El token no es una moneda estable en el sentido regulatorio, ya que representa un reclamo sobre depósitos en lugar de un activo independiente respaldado por reservas.",
+     "Observe si otros grandes bancos siguen a JPMorgan a Ethereum, y si los reguladores tratan los tokens de depósitos bancarios de manera diferente a las monedas estables emitidas por empresas nativas de cripto. La distinción podría determinar si JPM Coin enfrenta el mismo escrutinio que USDC de Circle o USDT de Tether, especialmente si comienza a liquidar grandes volúmenes de pagos transfronterizos."
+    ]
+   },
+   "pt": {
+    "title": "JPMorgan expande JPM Coin para Ethereum para pagamentos institucionais",
+    "excerpt": "O maior banco dos EUA está trazendo seu token de depósitos em dólar para o Ethereum, abrindo trilhos de pagamento institucionais para a blockchain pública e expandindo além de sua rede privada.",
+    "body": [
+     "O JPMorgan Chase está expandindo o JPM Coin, seu token de depósitos em dólar, para a blockchain Ethereum enquanto busca atender uma gama mais ampla de clientes institucionais, segundo relatório da Bloomberg. O movimento marca uma mudança significativa para a moeda digital do banco, que até agora operava exclusivamente em sua rede privada Onyx.",
+     "O JPM Coin representa depósitos em dólar mantidos no banco e permite que clientes institucionais façam pagamentos instantâneos e liquidem transações 24 horas por dia. Desde seu lançamento em 2019, o token processou mais de US$ 1 trilhão em transações, mas apenas entre clientes conectados à rede autorizada do JPMorgan. Ao migrar para o Ethereum, o banco abre portas para clientes que usam outros custodiantes e plataformas.",
+     "A expansão reflete a crescente demanda de instituições que querem liquidar títulos tokenizados e pagamentos transfronteiriços em blockchains públicas. O JPMorgan tem sido pioneiro na adoção de blockchain entre bancos tradicionais, mas sua rede privada limitou a interoperabilidade com o ecossistema mais amplo de ativos digitais. A integração com Ethereum remove esse atrito.",
+     "Para investidores comuns, o desenvolvimento sinaliza que grandes bancos não estão mais tratando blockchains públicas como experimentais. A decisão do JPMorgan valida o Ethereum como infraestrutura capaz de lidar com finanças de nível institucional. Também introduz concorrência para stablecoins existentes como USDC e USDT, embora o JPM Coin permaneça disponível apenas para clientes institucionais, não usuários de varejo.",
+     "O movimento ocorre enquanto bancos em todo o mundo competem para integrar sistemas de stablecoins e depósitos tokenizados. A Mastercard lançou recentemente integração bancária de stablecoins, enquanto a empresa-mãe da Kraken adquiriu um banco da UE para oferecer depósitos e empréstimos. O Deutsche Bank está se preparando para lançar serviços de custódia de cripto na Alemanha com planos de expandir para a Ásia em 2027.",
+     "O JPMorgan não divulgou um cronograma para o lançamento no Ethereum ou quais ativos tokenizados planeja suportar. A unidade Onyx do banco gerenciará a integração técnica, e os clientes ainda precisarão manter contas de depósito no JPMorgan para manter o JPM Coin. O token não é uma stablecoin no sentido regulatório, pois representa uma reivindicação sobre depósitos em vez de um ativo independente lastreado por reservas.",
+     "Observe se outros grandes bancos seguem o JPMorgan para o Ethereum, e se os reguladores tratam tokens de depósitos bancários de forma diferente das stablecoins emitidas por empresas nativas de cripto. A distinção pode determinar se o JPM Coin enfrenta o mesmo escrutínio que o USDC da Circle ou o USDT da Tether, especialmente se começar a liquidar grandes volumes de pagamentos transfronteiriços."
+    ]
+   },
+   "de": {
+    "title": "JPMorgan erweitert JPM Coin auf Ethereum für institutionelle Zahlungen",
+    "excerpt": "Die größte US-Bank bringt ihren Dollar-Einlagen-Token auf Ethereum und öffnet institutionelle Zahlungsschienen für die öffentliche Blockchain, während sie über ihr privates Netzwerk hinauswächst.",
+    "body": [
+     "JPMorgan Chase erweitert JPM Coin, seinen Dollar-Einlagen-Token, auf die Ethereum-Blockchain, da die Bank eine breitere Palette institutioneller Kunden bedienen möchte, so ein Bloomberg-Bericht. Der Schritt markiert eine bedeutende Verschiebung für die digitale Währung der Bank, die bisher ausschließlich in ihrem privaten Onyx-Netzwerk operierte.",
+     "JPM Coin repräsentiert Dollar-Einlagen bei der Bank und ermöglicht institutionellen Kunden sofortige Zahlungen und Transaktionsabwicklungen rund um die Uhr. Seit der Einführung 2019 hat der Token über 1 Billion Dollar an Transaktionen verarbeitet, jedoch nur unter Kunden, die mit JPMorgans genehmigtem Netzwerk verbunden sind. Durch den Wechsel zu Ethereum öffnet die Bank die Tür für Kunden, die andere Verwahrer und Plattformen nutzen.",
+     "Die Expansion spiegelt die wachsende Nachfrage von Institutionen wider, die tokenisierte Wertpapiere und grenzüberschreitende Zahlungen auf öffentlichen Blockchains abwickeln möchten. JPMorgan war ein Pionier bei der Blockchain-Einführung unter traditionellen Banken, aber sein privates Netzwerk begrenzte die Interoperabilität mit dem breiteren digitalen Asset-Ökosystem. Die Ethereum-Integration beseitigt diese Reibung.",
+     "Für normale Anleger signalisiert die Entwicklung, dass große Banken öffentliche Blockchains nicht mehr als experimentell behandeln. JPMorgans Entscheidung bestätigt Ethereum als Infrastruktur, die in der Lage ist, institutionelle Finanzgeschäfte abzuwickeln. Sie führt auch Wettbewerb für bestehende Stablecoins wie USDC und USDT ein, obwohl JPM Coin nur für institutionelle Kunden verfügbar bleibt, nicht für Privatanleger.",
+     "Der Schritt erfolgt, während Banken weltweit um die Integration von Stablecoin- und tokenisierten Einlagensystemen konkurrieren. Mastercard hat kürzlich die Stablecoin-Banking-Integration gestartet, während Krakens Muttergesellschaft eine EU-Bank erwarb, um Einlagen und Kredite anzubieten. Die Deutsche Bank bereitet den Start von Krypto-Verwahrungsdiensten in Deutschland vor und plant eine Expansion nach Asien im Jahr 2027.",
+     "JPMorgan hat keinen Zeitplan für den Ethereum-Rollout oder welche tokenisierten Vermögenswerte unterstützt werden sollen, bekannt gegeben. Die Onyx-Einheit der Bank wird die technische Integration verwalten, und Kunden müssen weiterhin Einlagenkonten bei JPMorgan unterhalten, um JPM Coin zu halten. Der Token ist kein Stablecoin im regulatorischen Sinne, da er einen Anspruch auf Einlagen darstellt und kein eigenständiger, durch Reserven besicherter Vermögenswert ist.",
+     "Beobachten Sie, ob andere große Banken JPMorgan auf Ethereum folgen und ob Regulierungsbehörden Bank-Einlagen-Token anders behandeln als Stablecoins, die von kryptonativen Firmen ausgegeben werden. Die Unterscheidung könnte bestimmen, ob JPM Coin derselben Prüfung ausgesetzt ist wie Circles USDC oder Tethers USDT, insbesondere wenn große Volumina grenzüberschreitender Zahlungen abgewickelt werden."
+    ]
+   },
+   "fr": {
+    "title": "JPMorgan étend JPM Coin à Ethereum pour les paiements institutionnels",
+    "excerpt": "La plus grande banque américaine apporte son jeton de dépôts en dollars sur Ethereum, ouvrant les rails de paiement institutionnels à la blockchain publique et s'étendant au-delà de son réseau privé.",
+    "body": [
+     "JPMorgan Chase étend JPM Coin, son jeton de dépôts en dollars, à la blockchain Ethereum alors qu'elle cherche à servir une gamme plus large de clients institutionnels, selon un rapport Bloomberg. Ce mouvement marque un changement significatif pour la monnaie numérique de la banque, qui jusqu'à présent fonctionnait exclusivement sur son réseau privé Onyx.",
+     "JPM Coin représente des dépôts en dollars détenus à la banque et permet aux clients institutionnels d'effectuer des paiements instantanés et de régler des transactions 24 heures sur 24. Depuis son lancement en 2019, le jeton a traité plus de 1 000 milliards de dollars de transactions, mais uniquement parmi les clients connectés au réseau autorisé de JPMorgan. En migrant vers Ethereum, la banque ouvre la porte aux clients qui utilisent d'autres dépositaires et plateformes.",
+     "L'expansion reflète une demande croissante des institutions qui souhaitent régler des titres tokenisés et des paiements transfrontaliers sur des blockchains publiques. JPMorgan a été pionnier dans l'adoption de la blockchain parmi les banques traditionnelles, mais son réseau privé limitait l'interopérabilité avec l'écosystème plus large des actifs numériques. L'intégration d'Ethereum supprime cette friction.",
+     "Pour les investisseurs ordinaires, ce développement signale que les grandes banques ne traitent plus les blockchains publiques comme expérimentales. La décision de JPMorgan valide Ethereum comme une infrastructure capable de gérer des finances de niveau institutionnel. Elle introduit également une concurrence pour les stablecoins existants comme USDC et USDT, bien que JPM Coin reste disponible uniquement pour les clients institutionnels, et non les utilisateurs particuliers.",
+     "Ce mouvement intervient alors que les banques du monde entier rivalisent pour intégrer des systèmes de stablecoins et de dépôts tokenisés. Mastercard a récemment lancé l'intégration bancaire des stablecoins, tandis que la société mère de Kraken a acquis une banque de l'UE pour offrir des dépôts et des prêts. Deutsche Bank se prépare à lancer des services de conservation de cryptomonnaies en Allemagne avec des plans d'expansion en Asie en 2027.",
+     "JPMorgan n'a pas divulgué de calendrier pour le déploiement Ethereum ni quels actifs tokenisés il prévoit de prendre en charge. L'unité Onyx de la banque gérera l'intégration technique, et les clients devront toujours maintenir des comptes de dépôt auprès de JPMorgan pour détenir JPM Coin. Le jeton n'est pas un stablecoin au sens réglementaire, car il représente une créance sur des dépôts plutôt qu'un actif autonome adossé à des réserves.",
+     "Surveillez si d'autres grandes banques suivent JPMorgan sur Ethereum, et si les régulateurs traitent les jetons de dépôts bancaires différemment des stablecoins émis par des entreprises natives de la crypto. La distinction pourrait déterminer si JPM Coin fait face au même examen que l'USDC de Circle ou l'USDT de Tether, surtout s'il commence à régler de gros volumes de paiements transfrontaliers."
+    ]
+   },
+   "ar": {
+    "title": "جي بي مورغان توسع JPM Coin إلى إيثيريوم للمدفوعات المؤسسية",
+    "excerpt": "أكبر بنك أمريكي ينقل رمز الودائع بالدولار إلى إيثيريوم، مما يفتح قنوات الدفع المؤسسية لسلسلة الكتل العامة ويتوسع خارج شبكته الخاصة.",
+    "body": [
+     "يقوم جي بي مورغان تشيس بتوسيع JPM Coin، رمز الودائع بالدولار الخاص به، إلى سلسلة كتل إيثيريوم حيث يسعى لخدمة مجموعة أوسع من العملاء المؤسسيين، وفقًا لتقرير بلومبرغ. تمثل هذه الخطوة تحولاً كبيراً للعملة الرقمية للبنك، والتي عملت حتى الآن حصرياً على شبكة Onyx الخاصة به.",
+     "يمثل JPM Coin ودائع بالدولار محفوظة في البنك ويسمح للعملاء المؤسسيين بإجراء مدفوعات فورية وتسوية المعاملات على مدار الساعة. منذ إطلاقه في 2019، عالج الرمز أكثر من تريليون دولار من المعاملات، ولكن فقط بين العملاء المتصلين بشبكة جي بي مورغان المصرح بها. من خلال الانتقال إلى إيثيريوم، يفتح البنك الباب للعملاء الذين يستخدمون أمناء حفظ ومنصات أخرى.",
+     "يعكس التوسع الطلب المتزايد من المؤسسات التي ترغب في تسوية الأوراق المالية المرمزة والمدفوعات عبر الحدود على سلاسل الكتل العامة. كان جي بي مورغان رائداً في اعتماد تقنية البلوكتشين بين البنوك التقليدية، لكن شبكته الخاصة حدت من قابلية التشغيل البيني مع النظام البيئي الأوسع للأصول الرقمية. تزيل تكامل إيثيريوم هذا الاحتكاك.",
+     "بالنسبة للمستثمرين العاديين، يشير التطور إلى أن البنوك الكبرى لم تعد تعامل سلاسل الكتل العامة على أنها تجريبية. يؤكد قرار جي بي مورغان أن إيثيريوم بنية تحتية قادرة على التعامل مع التمويل من المستوى المؤسسي. كما يقدم منافسة للعملات المستقرة الموجودة مثل USDC وUSDT، على الرغم من أن JPM Coin يبقى متاحاً فقط للعملاء المؤسسيين، وليس المستخدمين الأفراد.",
+     "تأتي هذه الخطوة بينما تتسابق البنوك في جميع أنحاء العالم لدمج أنظمة العملات المستقرة والودائع المرمزة. أطلقت ماستركارد مؤخراً تكامل العملات المستقرة المصرفية، بينما استحوذت الشركة الأم لـ Kraken على بنك في الاتحاد الأوروبي لتقديم الودائع والإقراض. يستعد دويتشه بنك لإطلاق خدمات حفظ العملات المشفرة في ألمانيا مع خطط للتوسع في آسيا في 2027.",
+     "لم يكشف جي بي مورغان عن جدول زمني لإطلاق إيثيريوم أو الأصول المرمزة التي يخطط لدعمها. ستدير وحدة Onyx التابعة للبنك التكامل التقني، وسيحتاج العملاء إلى الحفاظ على حسابات إيداع مع جي بي مورغان للاحتفاظ بـ JPM Coin. الرمز ليس عملة مستقرة بالمعنى التنظيمي، لأنه يمثل مطالبة بالودائع بدلاً من أصل مستقل مدعوم بالاحتياطيات.",
+     "راقب ما إذا كانت البنوك الكبرى الأخرى ستتبع جي بي مورغان إلى إيثيريوم، وما إذا كان المنظمون يعاملون رموز الودائع المصرفية بشكل مختلف عن العملات المستقرة الصادرة عن شركات أصلية للعملات المشفرة. يمكن أن يحدد التمييز ما إذا كان JPM Coin سيواجه نفس التدقيق الذي تواجهه USDC من Circle أو USDT من Tether، خاصة إذا بدأ في تسوية أحجام كبيرة من المدفوعات عبر الحدود."
+    ]
+   },
+   "zh": {
+    "title": "摩根大通将JPM Coin扩展至以太坊用于机构支付",
+    "excerpt": "美国最大银行将其美元存款代币引入以太坊，为公共区块链开放机构支付轨道，并扩展到其私有网络之外。",
+    "body": [
+     "据彭博社报道，摩根大通正在将其美元存款代币JPM Coin扩展到以太坊区块链，以服务更广泛的机构客户。此举标志着该银行数字货币的重大转变，此前该货币仅在其私有Onyx网络上运营。",
+     "JPM Coin代表银行持有的美元存款，允许机构客户进行即时支付并全天候结算交易。自2019年推出以来，该代币已处理超过1万亿美元的交易，但仅限于连接到摩根大通许可网络的客户。通过转移到以太坊，该银行为使用其他托管人和平台的客户打开了大门。",
+     "这一扩展反映了机构日益增长的需求，它们希望在公共区块链上结算代币化证券和跨境支付。摩根大通一直是传统银行中区块链采用的先驱，但其私有网络限制了与更广泛的数字资产生态系统的互操作性。以太坊集成消除了这种摩擦。",
+     "对于普通投资者来说，这一发展表明主要银行不再将公共区块链视为实验性的。摩根大通的决定验证了以太坊作为能够处理机构级金融的基础设施。它还为现有的稳定币（如USDC和USDT）带来了竞争，尽管JPM Coin仅对机构客户可用，而非零售用户。",
+     "这一举措发生在全球银行竞相整合稳定币和代币化存款系统之际。万事达卡最近推出了稳定币银行集成，而Kraken的母公司收购了一家欧盟银行以提供存款和贷款。德意志银行正准备在德国推出加密托管服务，并计划在2027年扩展到亚洲。",
+     "摩根大通尚未透露以太坊推出的时间表或计划支持哪些代币化资产。该银行的Onyx部门将管理技术集成，客户仍需在摩根大通维持存款账户才能持有JPM Coin。该代币在监管意义上不是稳定币，因为它代表对存款的索赔，而不是由储备支持的独立资产。",
+     "关注其他大型银行是否会跟随摩根大通进入以太坊，以及监管机构是否会以不同方式对待银行存款代币和由加密原生公司发行的稳定币。这种区别可能决定JPM Coin是否会面临与Circle的USDC或Tether的USDT相同的审查，特别是如果它开始结算大量跨境支付。"
+    ]
+   },
+   "hi": {
+    "title": "JPMorgan संस्थागत भुगतान के लिए JPM Coin को Ethereum पर विस्तारित कर रहा है",
+    "excerpt": "अमेरिका का सबसे बड़ा बैंक अपने डॉलर जमा टोकन को Ethereum पर ला रहा है, सार्वजनिक ब्लॉकचेन के लिए संस्थागत भुगतान रेल खोल रहा है और अपने निजी नेटवर्क से परे विस्तार कर रहा है।",
+    "body": [
+     "ब्लूमबर्ग की एक रिपोर्ट के अनुसार, JPMorgan Chase अपने डॉलर जमा टोकन JPM Coin को Ethereum ब्लॉकचेन पर विस्तारित कर रहा है क्योंकि यह संस्थागत ग्राहकों की व्यापक श्रेणी की सेवा करना चाहता है। यह कदम बैंक की डिजिटल मुद्रा के लिए एक महत्वपूर्ण बदलाव है, जो अब तक विशेष रूप से अपने निजी Onyx नेटवर्क पर संचालित होती थी।",
+     "JPM Coin बैंक में रखी गई डॉलर जमा राशि का प्रतिनिधित्व करता है और संस्थागत ग्राहकों को तत्काल भुगतान करने और चौबीसों घंटे लेनदेन का निपटान करने की अनुमति देता है। 2019 में लॉन्च होने के बाद से, टोकन ने 1 ट्रिलियन डॉलर से अधिक के लेनदेन संसाधित किए हैं, लेकिन केवल JPMorgan के अनुमत नेटवर्क से जुड़े ग्राहकों के बीच। Ethereum पर जाकर, बैंक उन ग्राहकों के लिए द्वार खोलता है जो अन्य संरक्षक और प्लेटफार्मों का उपयोग करते हैं।",
+     "विस्तार उन संस्थानों की बढ़ती मांग को दर्शाता है जो सार्वजनिक ब्लॉकचेन पर टोकनाइज्ड प्रतिभूतियों और सीमा पार भुगतान का निपटान करना चाहते हैं। JPMorgan पारंपरिक बैंकों के बीच ब्लॉकचेन अपनाने में अग्रणी रहा है, लेकिन इसके निजी नेटवर्क ने व्यापक डिजिटल संपत्ति पारिस्थितिकी तंत्र के साथ अंतरसंचालनीयता को सीमित कर दिया। Ethereum एकीकरण उस घर्षण को हटा देता है।",
+     "रोजमर्रा के निवेशकों के लिए, विकास संकेत देता है कि प्रमुख बैंक अब सार्वजनिक ब्लॉकचेन को प्रयोगात्मक के रूप में नहीं मान रहे हैं। JPMorgan का निर्णय Ethereum को संस्थागत-ग्रेड वित्त संभालने में सक्षम बुनियादी ढांचे के रूप में मान्य करता है। यह मौजूदा स्थिर मुद्राओं जैसे USDC और USDT के लिए प्रतिस्पर्धा भी पेश करता है, हालांकि JPM Coin केवल संस्थागत ग्राहकों के लिए उपलब्ध रहता है, खुदरा उपयोगकर्ताओं के लिए नहीं।",
+     "यह कदम तब आया है जब दुनिया भर के बैंक स्थिर मुद्रा और टोकनाइज्ड जमा प्रणालियों को एकीकृत करने की होड़ में हैं। मास्टरकार्ड ने हाल ही में स्थिर मुद्रा बैंकिंग एकीकरण लॉन्च किया, जबकि Kraken की मूल कंपनी ने जमा और उधार देने की पेशकश करने के लिए एक EU बैंक का अधिग्रहण किया। Deutsche Bank 2027 में एशिया में विस्तार की योजना के साथ जर्मनी में क्रिप्टो हिरासत सेवाओं को लॉन्च करने की तैयारी कर रहा है।",
+     "JPMorgan ने Ethereum रोलआउट के लिए समयरेखा या वह कौन से टोकनाइज्ड संपत्तियों का समर्थन करने की योजना बना रहा है, का खुलासा नहीं किया है। बैंक की Onyx इकाई तकनीकी एकीकरण का प्रबंधन करेगी, और ग्राहकों को JPM Coin रखने के लिए अभी भी JPMorgan के साथ जमा खाते बनाए रखने की आवश्यकता होगी। टोकन नियामक अर्थों में एक स्थिर मुद्रा नहीं है, क्योंकि यह भंडार द्वारा समर्थित स्टैंडअलोन संपत्ति के बजाय जमा पर दावे का प्रतिनिधित्व करता है।",
+     "देखें कि क्या अन्य प्रमुख बैंक JPMorgan का अनुसरण Ethereum पर करते हैं, और क्या नियामक बैंक जमा टोकन को क्रिप्टो-मूल फर्मों द्वारा जारी स्थिर मुद्राओं से अलग तरीके से व्यवहार करते हैं। यह अंतर निर्धारित कर सकता है कि क्या JPM Coin को Circle के USDC या Tether के USDT के समान जांच का सामना करना पड़ता है, खासकर यदि यह बड़ी मात्रा में सीमा पार भुगतान का निपटान करना शुरू कर दे।"
+    ]
+   },
+   "id": {
+    "title": "JPMorgan Memperluas JPM Coin ke Ethereum untuk Pembayaran Institusional",
+    "excerpt": "Bank terbesar AS membawa token deposit dolarnya ke Ethereum, membuka jalur pembayaran institusional untuk blockchain publik dan berkembang melampaui jaringan pribadinya.",
+    "body": [
+     "JPMorgan Chase memperluas JPM Coin, token deposit dolarnya, ke blockchain Ethereum karena berusaha melayani lebih banyak klien institusional, menurut laporan Bloomberg. Langkah ini menandai perubahan signifikan untuk mata uang digital bank, yang hingga kini beroperasi secara eksklusif di jaringan pribadi Onyx-nya.",
+     "JPM Coin mewakili deposit dolar yang disimpan di bank dan memungkinkan klien institusional melakukan pembayaran instan dan menyelesaikan transaksi sepanjang waktu. Sejak diluncurkan pada 2019, token telah memproses lebih dari $1 triliun transaksi, tetapi hanya di antara klien yang terhubung ke jaringan berizin JPMorgan. Dengan pindah ke Ethereum, bank membuka pintu bagi klien yang menggunakan kustodian dan platform lain.",
+     "Ekspansi mencerminkan permintaan yang meningkat dari institusi yang ingin menyelesaikan sekuritas yang ditokenisasi dan pembayaran lintas batas di blockchain publik. JPMorgan telah menjadi pelopor dalam adopsi blockchain di antara bank tradisional, tetapi jaringan pribadinya membatasi interoperabilitas dengan ekosistem aset digital yang lebih luas. Integrasi Ethereum menghilangkan gesekan itu.",
+     "Bagi investor biasa, perkembangan ini menandakan bahwa bank besar tidak lagi memperlakukan blockchain publik sebagai eksperimental. Keputusan JPMorgan memvalidasi Ethereum sebagai infrastruktur yang mampu menangani keuangan tingkat institusional. Ini juga memperkenalkan persaingan untuk stablecoin yang ada seperti USDC dan USDT, meskipun JPM Coin tetap hanya tersedia untuk klien institusional, bukan pengguna ritel.",
+     "Langkah ini datang saat bank di seluruh dunia berlomba mengintegrasikan sistem stablecoin dan deposit yang ditokenisasi. Mastercard baru-baru ini meluncurkan integrasi perbankan stablecoin, sementara perusahaan induk Kraken mengakuisisi bank UE untuk menawarkan deposit dan pinjaman. Deutsche Bank sedang mempersiapkan peluncuran layanan kustodi kripto di Jerman dengan rencana ekspansi ke Asia pada 2027.",
+     "JPMorgan belum mengungkapkan jadwal untuk peluncuran Ethereum atau aset yang ditokenisasi mana yang akan didukung. Unit Onyx bank akan mengelola integrasi teknis, dan klien masih perlu mempertahankan rekening deposit dengan JPMorgan untuk memegang JPM Coin. Token ini bukan stablecoin dalam pengertian regulasi, karena mewakili klaim atas deposit daripada aset mandiri yang didukung oleh cadangan.",
+     "Perhatikan apakah bank besar lain mengikuti JPMorgan ke Ethereum, dan apakah regulator memperlakukan token deposit bank secara berbeda dari stablecoin yang dikeluarkan oleh perusahaan asli kripto. Perbedaan ini dapat menentukan apakah JPM Coin menghadapi pengawasan yang sama dengan USDC Circle atau USDT Tether, terutama jika mulai menyelesaikan volume besar pembayaran lintas batas."
+    ]
+   },
+   "vi": {
+    "title": "JPMorgan Mở Rộng JPM Coin sang Ethereum cho Thanh Toán Tổ Chức",
+    "excerpt": "Ngân hàng lớn nhất Hoa Kỳ đang đưa token tiền gửi đô la của mình lên Ethereum, mở rộng đường ray thanh toán tổ chức cho blockchain công khai và mở rộng ra ngoài mạng riêng của mình.",
+    "body": [
+     "JPMorgan Chase đang mở rộng JPM Coin, token tiền gửi đô la của mình, lên blockchain Ethereum khi tìm cách phục vụ nhiều khách hàng tổ chức hơn, theo báo cáo của Bloomberg. Động thái này đánh dấu sự thay đổi đáng kể cho đồng tiền kỹ thuật số của ngân hàng, vốn cho đến nay chỉ hoạt động trên mạng riêng Onyx của mình.",
+     "JPM Coin đại diện cho tiền gửi đô la được giữ tại ngân hàng và cho phép khách hàng tổ chức thực hiện thanh toán tức thì và giải quyết giao dịch suốt ngày đêm. Kể từ khi ra mắt vào năm 2019, token đã xử lý hơn 1 nghìn tỷ đô la giao dịch, nhưng chỉ giữa các khách hàng được kết nối với mạng được cấp phép của JPMorgan. Bằng cách chuyển sang Ethereum, ngân hàng mở cửa cho các khách hàng sử dụng người giám sát và nền tảng khác.",
+     "Sự mở rộng phản ánh nhu cầu ngày càng tăng từ các tổ chức muốn giải quyết chứng khoán được token hóa và thanh toán xuyên biên giới trên blockchain công khai. JPMorgan đã tiên phong trong việc áp dụng blockchain trong số các ngân hàng truyền thống, nhưng mạng riêng của nó hạn chế khả năng tương tác với hệ sinh thái tài sản kỹ thuật số rộng hơn. Tích hợp Ethereum loại bỏ ma sát đó.",
+     "Đối với các nhà đầu tư thông thường, sự phát triển này báo hiệu rằng các ngân hàng lớn không còn coi blockchain công khai là thử nghiệm. Quyết định của JPMorgan xác nhận Ethereum là cơ sở hạ tầng có khả năng xử lý tài chính cấp tổ chức. Nó cũng giới thiệu cạnh tranh cho các stablecoin hiện có như USDC và USDT, mặc dù JPM Coin vẫn chỉ có sẵn cho khách hàng tổ chức, không phải người dùng bán lẻ.",
+     "Động thái này diễn ra khi các ngân hàng trên toàn thế giới đua nhau tích hợp hệ thống stablecoin và tiền gửi token hóa. Mastercard gần đây đã ra mắt tích hợp ngân hàng stablecoin, trong khi công ty mẹ của Kraken đã mua lại một ngân hàng EU để cung cấp tiền gửi và cho vay. Deutsche Bank đang chuẩn bị ra mắt dịch vụ bảo quản tiền điện tử ở Đức với kế hoạch mở rộng sang châu Á vào năm 2027.",
+     "JPMorgan chưa tiết lộ thời gian cho việc triển khai Ethereum hoặc những tài sản token hóa nào nó dự định hỗ trợ. Đơn vị Onyx của ngân hàng sẽ quản lý tích hợp kỹ thuật, và khách hàng vẫn cần duy trì tài khoản tiền gửi với JPMorgan để giữ JPM Coin. Token không phải là stablecoin theo nghĩa quy định, vì nó đại diện cho một yêu cầu về tiền gửi thay vì một tài sản độc lập được hỗ trợ bởi dự trữ.",
+     "Theo dõi xem các ngân hàng lớn khác có theo JPMorgan lên Ethereum hay không, và liệu các cơ quan quản lý có đối xử với token tiền gửi ngân hàng khác với stablecoin do các công ty gốc crypto phát hành hay không. Sự phân biệt này có thể xác định liệu JPM Coin có phải đối mặt với sự giám sát giống như USDC của Circle hoặc USDT của Tether hay không, đặc biệt nếu nó bắt đầu giải quyết khối lượng lớn thanh toán xuyên biên giới."
+    ]
+   },
+   "tr": {
+    "title": "JPMorgan Kurumsal Ödemeler için JPM Coin'i Ethereum'a Genişletiyor",
+    "excerpt": "ABD'nin en büyük bankası, dolar mevduat tokenini Ethereum'a getirerek kurumsal ödeme raylarını halka açık blockchain'e açıyor ve özel ağının ötesine genişliyor.",
+    "body": [
+     "Bloomberg raporuna göre JPMorgan Chase, daha geniş bir kurumsal müşteri yelpazesine hizmet etmek amacıyla dolar mevduat tokeni JPM Coin'i Ethereum blockchain'ine genişletiyor. Bu hamle, şimdiye kadar yalnızca özel Onyx ağında faaliyet gösteren bankanın dijital para birimi için önemli bir değişimi işaret ediyor.",
+     "JPM Coin, bankada tutulan dolar mevduatlarını temsil ediyor ve kurumsal müşterilerin anlık ödeme yapmasına ve işlemleri günün her saati kapatmasına olanak tanıyor. 2019'daki lansmanından bu yana token, 1 trilyon doları aşkın işlem gerçekleştirdi, ancak yalnızca JPMorgan'ın izinli ağına bağlı müşteriler arasında. Ethereum'a geçerek banka, diğer saklayıcıları ve platformları kullanan müşterilere kapı açıyor.",
+     "Genişleme, halka açık blockchain'lerde tokenize menkul kıymetler ve sınır ötesi ödemeleri kapatmak isteyen kurumlardan gelen artan talebi yansıtıyor. JPMorgan, geleneksel bankalar arasında blockchain benimsemesinde öncü oldu, ancak özel ağı daha geniş dijital varlık ekosistemiyle birlikte çalışabilirliği sınırladı. Ethereum entegrasyonu bu sürtüşmeyi ortadan kaldırıyor.",
+     "Sıradan yatırımcılar için gelişme, büyük bankaların artık halka açık blockchain'leri deneysel olarak görmediğini gösteriyor. JPMorgan'ın kararı, Ethereum'u kurumsal düzeyde finansı ele alabilen altyapı olarak doğruluyor. Ayrıca USDC ve USDT gibi mevcut stablecoin'ler için rekabet getiriyor, ancak JPM Coin yalnızca kurumsal müşteriler için kullanılabilir durumda, perakende kullanıcılar için değil.",
+     "Hamle, dünya çapındaki bankaların stablecoin ve tokenize mevduat sistemlerini entegre etme yarışı içindeyken geliyor. Mastercard yakın zamanda stablecoin bankacılık entegrasyonunu başlattı, Kraken'in ana şirketi ise mevduat ve kredi sunmak için bir AB bankası satın aldı. Deutsche Bank, 2027'de Asya'ya genişleme planlarıyla Almanya'da kripto saklama hizmetlerini başlatmaya hazırlanıyor.",
+     "JPMorgan, Ethereum lansmanı için bir zaman çizelgesi veya hangi tokenize varlıkları desteklemeyi planladığını açıklamadı. Bankanın Onyx birimi teknik entegrasyonu yönetecek ve müşterilerin JPM Coin tutmak için hala JPMorgan'da mevduat hesapları tutması gerekecek. Token düzenleyici anlamda bir stablecoin değil, çünkü rezervlerle desteklenen bağımsız bir varlık yerine mevduatlar üzerinde bir talebi temsil ediyor.",
+     "Diğer büyük bankaların JPMorgan'ı Ethereum'a takip edip etmeyeceğini ve düzenleyicilerin banka mevduat tokenlerini kripto-yerel firmalar tarafından verilen stablecoin'lerden farklı şekilde ele alıp almayacağını izleyin. Bu ayrım, özellikle büyük hacimli sınır ötesi ödemeleri kapatmaya başlarsa JPM Coin'in Circle'ın USDC'si veya Tether'ın USDT'si ile aynı incelemeyle karşılaşıp karşılaşmayacağını belirleyebilir."
+    ]
+   },
+   "ja": {
+    "title": "JPMorganが機関投資家向け決済のためJPM CoinをEthereumに拡大",
+    "excerpt": "米国最大の銀行がドル預金トークンをEthereumに導入し、機関投資家向け決済レールをパブリックブロックチェーンに開放し、プライベートネットワークを超えて拡大しています。",
+    "body": [
+     "Bloombergの報道によると、JPMorgan Chaseはより幅広い機関投資家顧客にサービスを提供するため、ドル預金トークンJPM CoinをEthereumブロックチェーンに拡大しています。この動きは、これまでプライベートOnyxネットワークでのみ運営されていた銀行のデジタル通貨にとって大きな転換点となります。",
+     "JPM Coinは銀行に保有されているドル預金を表し、機関投資家顧客が24時間体制で即座に決済し取引を清算することを可能にします。2019年のローンチ以来、トークンは1兆ドルを超える取引を処理してきましたが、JPMorganの許可されたネットワークに接続されたクライアント間のみでした。Ethereumへの移行により、銀行は他のカストディアンやプラットフォームを使用する顧客に門戸を開きます。",
+     "この拡大は、パブリックブロックチェーン上でトークン化された証券とクロスボーダー決済を清算したいと考える機関からの需要の高まりを反映しています。JPMorganは伝統的銀行の中でブロックチェーン採用の先駆者でしたが、プライベートネットワークはより広範なデジタル資産エコシステムとの相互運用性を制限していました。Ethereum統合はその摩擦を取り除きます。",
+     "一般投資家にとって、この展開は主要銀行がもはやパブリックブロックチェーンを実験的なものとして扱っていないことを示しています。JPMorganの決定は、Ethereumを機関グレードの金融を処理できるインフラとして検証しています。また、USDCやUSDTなどの既存のステーブルコインに競争をもたらしますが、JPM Coinは機関投資家顧客のみが利用可能であり、小売ユーザーは利用できません。",
+     "この動きは、世界中の銀行がステーブルコインとトークン化された預金システムの統合を競っている最中に起こっています。Mastercardは最近ステーブルコイン銀行統合を開始し、Krakenの親会社は預金と貸付を提供するためにEU銀行を買収しました。Deutsche Bankは2027年にアジアへの拡大を計画してドイツで暗号カストディサービスを開始する準備をしています。",
+     "JPMorganはEthereumのロールアウトのタイムラインやサポートする予定のトークン化資産を明らかにしていません。銀行のOnyx部門が技術統合を管理し、顧客はJPM Coinを保有するためにJPMorganに預金口座を維持する必要があります。トークンは規制上の意味でのステーブルコインではありません。準備金に裏付けられた独立資産ではなく、預金に対する請求権を表しているためです。",
+     "他の主要銀行がJPMorganに続いてEthereumに参入するかどうか、そして規制当局が銀行預金トークンを暗号ネイティブ企業が発行するステーブルコインとは異なる方法で扱うかどうかを注視してください。特にクロスボーダー決済の大量処理を開始した場合、この区別がJPM CoinがCircleのUSDCやTetherのUSDTと同じ精査に直面するかどうかを決定する可能性があります。"
+    ]
+   },
+   "ko": {
+    "title": "JPMorgan, 기관 결제를 위해 JPM Coin을 Ethereum으로 확장",
+    "excerpt": "미국 최대 은행이 달러 예금 토큰을 Ethereum으로 가져와 기관 결제 레일을 퍼블릭 블록체인에 개방하고 프라이빗 네트워크를 넘어 확장하고 있습니다.",
+    "body": [
+     "Bloomberg 보도에 따르면 JPMorgan Chase는 더 광범위한 기관 고객에게 서비스를 제공하기 위해 달러 예금 토큰 JPM Coin을 Ethereum 블록체인으로 확장하고 있습니다. 이러한 움직임은 지금까지 프라이빗 Onyx 네트워크에서만 운영되어 온 은행의 디지털 화폐에 중요한 변화를 의미합니다.",
+     "JPM Coin은 은행에 보유된 달러 예금을 나타내며 기관 고객이 즉시 결제하고 24시간 거래를 정산할 수 있게 합니다. 2019년 출시 이후 토큰은 1조 달러 이상의 거래를 처리했지만 JPMorgan의 허가된 네트워크에 연결된 고객 간에만 이루어졌습니다. Ethereum으로 이동함으로써 은행은 다른 보관인과 플랫폼을 사용하는 고객에게 문을 엽니다.",
+     "이러한 확장은 퍼블릭 블록체인에서 토큰화된 증권과 국경 간 결제를 정산하려는 기관의 수요 증가를 반영합니다. JPMorgan은 전통적인 은행 중 블록체인 채택의 선구자였지만 프라이빗 네트워크는 더 광범위한 디지털 자산 생태계와의 상호 운용성을 제한했습니다. Ethereum 통합은 이러한 마찰을 제거합니다.",
+     "일반 투자자에게 이러한 발전은 주요 은행들이 더 이상 퍼블릭 블록체인을 실험적인 것으로 취급하지 않는다는 신호입니다. JPMorgan의 결정은 Ethereum을 기관급 금융을 처리할 수 있는 인프라로 검증합니다. 또한 USDC와 USDT와 같은 기존 스테이블코인에 경쟁을 도입하지만 JPM Coin은 소매 사용자가 아닌 기관 고객만 사용할 수 있습니다.",
+     "이러한 움직임은 전 세계 은행들이 스테이블코인과 토큰화된 예금 시스템을 통합하기 위해 경쟁하는 가운데 나왔습니다. Mastercard는 최근 스테이블코인 뱅킹 통합을 시작했고 Kraken의 모회사는 예금과 대출을 제공하기 위해 EU 은행을 인수했습니다. Deutsche Bank는 2027년 아시아 확장 계획과 함께 독일에서 암호화폐 보관 서비스를 시작할 준비를 하고 있습니다.",
+     "JPMorgan은 Ethereum 출시 일정이나 지원할 토큰화된 자산을 공개하지 않았습니다. 은행의 Onyx 부서가 기술 통합을 관리하며 고객은 JPM Coin을 보유하기 위해 여전히 JPMorgan에 예금 계좌를 유지해야 합니다. 토큰은 규제적 의미에서 스테이블코인이 아닙니다. 준비금으로 뒷받침되는 독립적인 자산이 아니라 예금에 대한 청구권을 나타내기 때문입니다.",
+     "다른 주요 은행들이 JPMorgan을 따라 Ethereum으로 이동하는지, 그리고 규제 당국이 은행 예금 토큰을 암호화폐 네이티브 회사가 발행하는 스테이블코인과 다르게 취급하는지 관찰하세요. 이러한 구분은 특히 대량의 국경 간 결제를 정산하기 시작할 경우 JPM Coin이 Circle의 USDC나 Tether의 USDT와 동일한 감시에 직면하는지 여부를 결정할 수 있습니다."
+    ]
+   },
+   "pl": {
+    "title": "JPMorgan rozszerza JPM Coin na Ethereum dla płatności instytucjonalnych",
+    "excerpt": "Największy amerykański bank przenosi swój token depozytów dolarowych na Ethereum, otwierając instytucjonalne szyny płatnicze dla publicznego blockchaina i rozszerzając się poza swoją prywatną sieć.",
+    "body": [
+     "JPMorgan Chase rozszerza JPM Coin, swój token depozytów dolarowych, na blockchain Ethereum, dążąc do obsługi szerszej gamy klientów instytucjonalnych, według raportu Bloomberg. Posunięcie to oznacza znaczącą zmianę dla waluty cyfrowej banku, która do tej pory działała wyłącznie w jego prywatnej sieci Onyx.",
+     "JPM Coin reprezentuje depozyty dolarowe przechowywane w banku i pozwala klientom instytucjonalnym na natychmiastowe płatności i rozliczanie transakcji przez całą dobę. Od momentu uruchomienia w 2019 roku token przetworzył ponad bilion dolarów transakcji, ale tylko wśród klientów połączonych z dozwoloną siecią JPMorgan. Przechodząc na Ethereum, bank otwiera drzwi dla klientów korzystających z innych depozytariuszy i platform.",
+     "Ekspansja odzwierciedla rosnący popyt ze strony instytucji, które chcą rozliczać tokenizowane papiery wartościowe i płatności transgraniczne na publicznych blockchainach. JPMorgan był pionierem w adopcji blockchainu wśród tradycyjnych banków, ale jego prywatna sieć ograniczała interoperacyjność z szerszym ekosystemem aktywów cyfrowych. Integracja Ethereum usuwa to tarcie.",
+     "Dla zwykłych inwestorów rozwój ten sygnalizuje, że wielkie banki nie traktują już publicznych blockchainów jako eksperymentalnych. Decyzja JPMorgan potwierdza Ethereum jako infrastrukturę zdolną do obsługi finansów na poziomie instytucjonalnym. Wprowadza także konkurencję dla istniejących stablecoinów, takich jak USDC i USDT, chociaż JPM Coin pozostaje dostępny tylko dla klientów instytucjonalnych, a nie użytkowników detalicznych.",
+     "Posunięcie to następuje, gdy banki na całym świecie konkurują o integrację systemów stablecoinów i tokenizowanych depozytów. Mastercard niedawno uruchomił integrację bankową stablecoinów, podczas gdy spółka matka Kraken przejęła bank UE, aby oferować depozyty i kredyty. Deutsche Bank przygotowuje się do uruchomienia usług przechowywania kryptowalut w Niemczech z planami ekspansji do Azji w 2027 roku.",
+     "JPMorgan nie ujawnił harmonogramu wdrożenia Ethereum ani tego, jakie tokenizowane aktywa planuje obsługiwać. Jednostka Onyx banku będzie zarządzać integracją techniczną, a klienci nadal będą musieli utrzymywać rachunki depozytowe w JPMorgan, aby posiadać JPM Coin. Token nie jest stablecoinem w sensie regulacyjnym, ponieważ reprezentuje roszczenie do depozytów, a nie samodzielny aktywo zabezpieczony rezerwami.",
+     "Obserwuj, czy inne wielkie banki pójdą za JPMorgan na Ethereum i czy regulatorzy będą traktować tokeny depozytów bankowych inaczej niż stablecoiny emitowane przez firmy natywne dla krypto. To rozróżnienie może określić, czy JPM Coin spotka się z taką samą kontrolą jak USDC Circle lub USDT Tether, szczególnie jeśli zacznie rozliczać duże wolumeny płatności transgranicznych."
+    ]
+   },
+   "th": {
+    "title": "JPMorgan ขยาย JPM Coin ไปยัง Ethereum สำหรับการชำระเงินสถาบัน",
+    "excerpt": "ธนาคารที่ใหญ่ที่สุดในสหรัฐฯ กำลังนำโทเค็นเงินฝากดอลลาร์ไปสู่ Ethereum เปิดช่องทางการชำระเงินสถาบันสู่บล็อกเชนสาธารณะและขยายเกินเครือข่ายส่วนตัว",
+    "body": [
+     "JPMorgan Chase กำลังขยาย JPM Coin โทเค็นเงินฝากดอลลาร์ของธนาคารไปยังบล็อกเชน Ethereum เนื่องจากต้องการให้บริการลูกค้าสถาบันที่หลากหลายมากขึ้น ตามรายงานของ Bloomberg การเคลื่อนไหวนี้แสดงถึงการเปลี่ยนแปลงที่สำคัญสำหรับสกุลเงินดิจิทัลของธนาคาร ซึ่งจนถึงตอนนี้ทำงานบนเครือข่าย Onyx ส่วนตัวเท่านั้น",
+     "JPM Coin แสดงถึงเงินฝากดอลลาร์ที่เก็บไว้ในธนาคารและอนุญาตให้ลูกค้าสถาบันทำการชำระเงินทันทีและชำระบัญชีตลอด 24 ชั่วโมง ตั้งแต่เปิดตัวในปี 2019 โทเค็นได้ประมวลผลธุรกรรมมากกว่า 1 ล้านล้านดอลลาร์ แต่เฉพาะระหว่างลูกค้าที่เชื่อมต่อกับเครือข่ายที่ได้รับอนุญาตของ JPMorgan เท่านั้น ด้วยการย้ายไปยัง Ethereum ธนาคารเปิดประตูสู่ลูกค้าที่ใช้ผู้ดูแลและแพลตฟอร์มอื่น",
+     "การขยายตัวสะท้อนความต้องการที่เพิ่มขึ้นจากสถาบันที่ต้องการชำระบัญชีหลักทรัพย์โทเค็นและการชำระเงินข้ามพรมแดนบนบล็อกเชนสาธารณะ JPMorgan เป็นผู้บุกเบิกในการนำบล็อกเชนมาใช้ในหมู่ธนาคารแบบดั้งเดิม แต่เครือข่ายส่วนตัวของธนาคารจำกัดความสามารถในการทำงานร่วมกันกับระบบนิเวศสินทรัพย์ดิจิทัลที่กว้างขึ้น การรวม Ethereum ขจัดแรงเสียดทานนั้น",
+     "สำหรับนักลงทุนทั่วไป การพัฒนานี้บ่งชี้ว่าธนาคารใหญ่ไม่ถือว่าบล็อกเชนสาธารณะเป็นการทดลองอีกต่อไป การตัดสินใจของ JPMorgan ยืนยัน Ethereum เป็นโครงสร้างพื้นฐานที่สามารถจัดการการเงินระดับสถาบันได้ นอกจากนี้ยังแนะนำการแข่งขันสำหรับ stablecoin ที่มีอยู่เช่น USDC และ USDT แม้ว่า JPM Coin จะยังคงมีให้เฉพาะลูกค้าสถาบันเท่านั้น ไม่ใช่ผู้ใช้รายย่อย",
+     "การเคลื่อนไหวนี้เกิดขึ้นในขณะที่ธนาคารทั่วโลกแข่งขันกันรวมระบบ stablecoin และเงินฝากโทเค็น Mastercard เพิ่งเปิดตัวการรวมธนาคาร stablecoin ในขณะที่บริษัทแม่ของ Kraken ซื้อธนาคาร EU เพื่อเสนอเงินฝากและสินเชื่อ Deutsche Bank กำลังเตรียมเปิดตัวบริการดูแลคริปโตในเยอรมนีพร้อมแผนขยายไปยังเอเชียในปี 2027",
+     "JPMorgan ไม่ได้เปิดเผยกำหนดการสำหรับการเปิดตัว Ethereum หรือสินทรัพย์โทเค็นใดที่วางแผนจะสนับสนุน หน่วย Onyx ของธนาคารจะจัดการการรวมทางเทคนิคและลูกค้ายังคงต้องมีบัญชีเงินฝากกับ JPMorgan เพื่อถือ JPM Coin โทเค็นไม่ใช่ stablecoin ในความหมายกำกับดูแลเพราะมันแสดงถึงการเรียกร้องเงินฝากแทนที่จะเป็นสินทรัพย์อิสระที่สำรองหนุนหลัง",
+     "สังเกตว่าธนาคารใหญ่อื่นๆ จะตาม JPMorgan ไปยัง Ethereum หรือไม่ และหน่วยงานกำกับดูแลจะปฏิบัติต่อโทเค็นเงินฝากธนาคารแตกต่างจาก stablecoin ที่ออกโดยบริษัทพื้นเมืองคริปโตหรือไม่ ความแตกต่างนี้อาจกำหนดว่า JPM Coin จะต้องเผชิญการตรวจสอบเหมือนกับ USDC ของ Circle หรือ USDT ของ Tether หรือไม่ โดยเฉพาะอย่างยิ่งหากเริ่มชำระบัญชีปริมาณมากของการชำระเงินข้ามพรมแดน"
+    ]
+   }
+  },
+  "date": "2026-10-19T10:22:49.355Z",
+  "gradient": "linear-gradient(135deg,#f7931a33,#0b0e1400)"
+ },
+ {
   "slug": "latvia-crypto-tax-payments-2027-parliament-overhaul-zlob",
   "category": "crypto",
   "emoji": "🇱🇻",
