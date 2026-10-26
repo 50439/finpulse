@@ -1,5 +1,240 @@
 [
  {
+  "slug": "canada-draft-stablecoin-rules-ban-yields-one-to-one-reserves-ddd4",
+  "category": "crypto",
+  "emoji": "🇨🇦",
+  "video": {
+   "hook": "YOUR STABLECOIN CANNOT PAY INTEREST",
+   "lead": "Canada's draft rules ban yields on stablecoins and force issuers to hold full reserves at Canadian banks.",
+   "question": "Would you hold a stablecoin that pays nothing?"
+  },
+  "i18n": {
+   "en": {
+    "title": "Canada Opens Consultation on Draft Stablecoin Rules, Maintains Ban on Yields",
+    "excerpt": "Under the draft rules, non-bank stablecoin issuers must back tokens 1:1 with reserves held at qualified Canadian institutions and settle redemptions within three business days.",
+    "body": [
+     "Canada has released draft stablecoin regulations for public consultation, laying out strict reserve requirements and maintaining a firm ban on interest-bearing tokens. The rules require non-bank issuers to hold reserves equal to 100% of outstanding tokens at qualified Canadian financial institutions, while redemptions must be settled within three business days.",
+     "The draft framework arrives as stablecoins increasingly compete with traditional banking deposits. By prohibiting yields, Canadian regulators are drawing a clear line between stablecoins and deposit products, ensuring these digital tokens remain purely transactional rather than savings vehicles.",
+     "For issuers, the 1:1 reserve requirement means every dollar of stablecoin in circulation must be backed by a dollar sitting in a Canadian bank or other qualified institution. This contrasts with some offshore arrangements where reserves may be held in multiple jurisdictions or partially invested in short-term securities that generate returns passed to token holders.",
+     "The three-day redemption window is designed to balance consumer protection with operational realities. Users who want to convert stablecoins back to Canadian dollars will have a guaranteed timeframe, preventing indefinite delays that have plagued some international platforms during periods of stress.",
+     "The yield ban directly impacts products like those offered by some U.S. platforms, where stablecoin holders earn interest on their balances. Canadian residents using such platforms would either see those features disabled or face regulatory uncertainty about whether their holdings comply with domestic law.",
+     "Industry observers note the rules favor established financial institutions that already operate deposit-taking businesses. Smaller fintech startups hoping to issue stablecoins will need to secure banking relationships and meet capitalization standards typically reserved for regulated entities, raising barriers to entry.",
+     "The consultation period allows industry participants to comment on whether the reserve and redemption requirements are feasible and whether the yield ban might push Canadian users toward unregulated offshore alternatives. Regulators will weigh these inputs before finalizing the framework, likely in early 2027."
+    ]
+   },
+   "uk": {
+    "title": "Канада відкриває консультації щодо проєкту правил для стейблкоїнів, зберігаючи заборону на дохідність",
+    "excerpt": "Згідно з проєктом правил, емітенти стейблкоїнів, що не є банками, повинні забезпечувати токени резервами 1:1, розміщеними в кваліфікованих канадських установах, та здійснювати погашення протягом трьох робочих днів.",
+    "body": [
+     "Канада оприлюднила проєкт регулювання стейблкоїнів для публічного обговорення, встановлюючи жорсткі вимоги до резервів і зберігаючи тверду заборону на токени з процентним доходом. Правила вимагають від емітентів, що не є банками, тримати резерви у розмірі 100% від обсягу випущених токенів у кваліфікованих канадських фінансових установах, а погашення має відбуватися протягом трьох робочих днів.",
+     "Проєкт структури з'являється, коли стейблкоїни дедалі більше конкурують з традиційними банківськими депозитами. Забороняючи дохідність, канадські регулятори проводять чітку межу між стейблкоїнами та депозитними продуктами, забезпечуючи, щоб ці цифрові токени залишалися суто транзакційними, а не заощаджувальними інструментами.",
+     "Для емітентів вимога резервів 1:1 означає, що кожен долар стейблкоїна в обігу повинен бути забезпечений доларом, розміщеним у канадському банку або іншій кваліфікованій установі. Це контрастує з деякими офшорними схемами, де резерви можуть зберігатися в кількох юрисдикціях або частково інвестуватися в короткострокові цінні папери, що генерують прибуток для власників токенів.",
+     "Триденне вікно погашення покликане збалансувати захист споживачів з операційними реаліями. Користувачі, які хочуть конвертувати стейблкоїни назад у канадські долари, матимуть гарантовані терміни, запобігаючи невизначеним затримкам, які переслідували деякі міжнародні платформи в періоди напруги.",
+     "Заборона на дохідність безпосередньо впливає на продукти, подібні до тих, що пропонують деякі американські платформи, де власники стейблкоїнів заробляють відсотки на своїх балансах. Канадські резиденти, які користуються такими платформами, або побачать ці функції вимкненими, або зіткнуться з регуляторною невизначеністю щодо відповідності їхніх активів внутрішньому законодавству.",
+     "Спостерігачі галузі зазначають, що правила сприяють встановленим фінансовим установам, які вже здійснюють депозитну діяльність. Менші фінтех-стартапи, що сподіваються випускати стейблкоїни, повинні будуть налагодити банківські зв'язки та відповідати стандартам капіталізації, зазвичай призначеним для регульованих суб'єктів, що підвищує бар'єри для входу.",
+     "Період консультацій дозволяє учасникам галузі коментувати, чи є вимоги до резервів та погашення виконуваними та чи може заборона на дохідність підштовхнути канадських користувачів до нерегульованих офшорних альтернатив. Регулятори зважать ці відгуки перед остаточним затвердженням структури, ймовірно, на початку 2027 року."
+    ]
+   },
+   "ru": {
+    "title": "Канада открывает консультации по проекту правил для стейблкоинов, сохраняя запрет на доходность",
+    "excerpt": "Согласно проекту правил, эмитенты стейблкоинов, не являющиеся банками, должны обеспечивать токены резервами 1:1, размещёнными в квалифицированных канадских учреждениях, и осуществлять погашение в течение трёх рабочих дней.",
+    "body": [
+     "Канада опубликовала проект регулирования стейблкоинов для публичного обсуждения, устанавливая строгие требования к резервам и сохраняя твёрдый запрет на процентные токены. Правила требуют от эмитентов, не являющихся банками, держать резервы в размере 100% от объёма выпущенных токенов в квалифицированных канадских финансовых учреждениях, а погашение должно происходить в течение трёх рабочих дней.",
+     "Проект структуры появляется, когда стейблкоины всё больше конкурируют с традиционными банковскими депозитами. Запрещая доходность, канадские регуляторы проводят чёткую границу между стейблкоинами и депозитными продуктами, обеспечивая, чтобы эти цифровые токены оставались чисто транзакционными, а не сберегательными инструментами.",
+     "Для эмитентов требование резервов 1:1 означает, что каждый доллар стейблкоина в обращении должен быть обеспечен долларом, размещённым в канадском банке или другом квалифицированном учреждении. Это контрастирует с некоторыми оффшорными схемами, где резервы могут храниться в нескольких юрисдикциях или частично инвестироваться в краткосрочные ценные бумаги, генерирующие доход для держателей токенов.",
+     "Трёхдневное окно погашения призвано сбалансировать защиту потребителей с операционными реалиями. Пользователи, желающие конвертировать стейблкоины обратно в канадские доллары, получат гарантированные сроки, предотвращая неопределённые задержки, преследовавшие некоторые международные платформы в периоды напряжения.",
+     "Запрет на доходность напрямую влияет на продукты, подобные тем, что предлагают некоторые американские платформы, где держатели стейблкоинов зарабатывают проценты на своих балансах. Канадские резиденты, использующие такие платформы, либо увидят эти функции отключёнными, либо столкнутся с регуляторной неопределённостью относительно соответствия их активов внутреннему законодательству.",
+     "Наблюдатели отрасли отмечают, что правила благоприятствуют устоявшимся финансовым учреждениям, уже осуществляющим депозитную деятельность. Меньшие финтех-стартапы, надеющиеся выпускать стейблкоины, должны будут наладить банковские связи и соответствовать стандартам капитализации, обычно предназначенным для регулируемых субъектов, что повышает барьеры для входа.",
+     "Период консультаций позволяет участникам отрасли комментировать, выполнимы ли требования к резервам и погашению и может ли запрет на доходность подтолкнуть канадских пользователей к нерегулируемым оффшорным альтернативам. Регуляторы взвесят эти отзывы перед окончательным утверждением структуры, вероятно, в начале 2027 года."
+    ]
+   },
+   "es": {
+    "title": "Canadá abre consulta sobre proyecto de normas para stablecoins, mantiene prohibición de rendimientos",
+    "excerpt": "Según el proyecto de normas, los emisores de stablecoins que no sean bancos deben respaldar los tokens 1:1 con reservas mantenidas en instituciones canadienses calificadas y liquidar los reembolsos dentro de tres días hábiles.",
+    "body": [
+     "Canadá ha publicado un proyecto de regulación de stablecoins para consulta pública, estableciendo estrictos requisitos de reservas y manteniendo una prohibición firme sobre tokens que generen intereses. Las normas requieren que los emisores que no sean bancos mantengan reservas equivalentes al 100% de los tokens en circulación en instituciones financieras canadienses calificadas, mientras que los reembolsos deben liquidarse en tres días hábiles.",
+     "El proyecto de marco llega cuando las stablecoins compiten cada vez más con los depósitos bancarios tradicionales. Al prohibir los rendimientos, los reguladores canadienses trazan una línea clara entre stablecoins y productos de depósito, asegurando que estos tokens digitales permanezcan puramente transaccionales en lugar de vehículos de ahorro.",
+     "Para los emisores, el requisito de reserva 1:1 significa que cada dólar de stablecoin en circulación debe estar respaldado por un dólar depositado en un banco canadiense u otra institución calificada. Esto contrasta con algunos acuerdos extraterritoriales donde las reservas pueden mantenerse en múltiples jurisdicciones o invertirse parcialmente en valores a corto plazo que generan rendimientos transferidos a los tenedores de tokens.",
+     "La ventana de reembolso de tres días está diseñada para equilibrar la protección del consumidor con las realidades operativas. Los usuarios que deseen convertir stablecoins de vuelta a dólares canadienses tendrán un plazo garantizado, evitando demoras indefinidas que han afectado a algunas plataformas internacionales durante períodos de tensión.",
+     "La prohibición de rendimientos impacta directamente en productos como los ofrecidos por algunas plataformas estadounidenses, donde los tenedores de stablecoins obtienen intereses sobre sus saldos. Los residentes canadienses que usen tales plataformas verán esas funciones deshabilitadas o enfrentarán incertidumbre regulatoria sobre si sus tenencias cumplen con la ley nacional.",
+     "Los observadores de la industria señalan que las normas favorecen a instituciones financieras establecidas que ya operan negocios de captación de depósitos. Las startups fintech más pequeñas que esperan emitir stablecoins necesitarán asegurar relaciones bancarias y cumplir con estándares de capitalización típicamente reservados para entidades reguladas, elevando barreras de entrada.",
+     "El período de consulta permite a los participantes de la industria comentar sobre si los requisitos de reservas y reembolso son factibles y si la prohibición de rendimientos podría empujar a los usuarios canadienses hacia alternativas extraterritoriales no reguladas. Los reguladores sopesarán estos aportes antes de finalizar el marco, probablemente a principios de 2027."
+    ]
+   },
+   "pt": {
+    "title": "Canadá abre consulta sobre projeto de regras para stablecoins, mantém proibição de rendimentos",
+    "excerpt": "Sob as regras propostas, emissores de stablecoins que não sejam bancos devem garantir tokens 1:1 com reservas mantidas em instituições canadenses qualificadas e liquidar resgates dentro de três dias úteis.",
+    "body": [
+     "O Canadá divulgou um projeto de regulamentação de stablecoins para consulta pública, estabelecendo requisitos estritos de reservas e mantendo uma proibição firme sobre tokens que geram juros. As regras exigem que emissores que não sejam bancos mantenham reservas equivalentes a 100% dos tokens em circulação em instituições financeiras canadenses qualificadas, enquanto os resgates devem ser liquidados em três dias úteis.",
+     "O projeto de estrutura surge quando as stablecoins competem cada vez mais com depósitos bancários tradicionais. Ao proibir rendimentos, os reguladores canadenses traçam uma linha clara entre stablecoins e produtos de depósito, garantindo que esses tokens digitais permaneçam puramente transacionais em vez de veículos de poupança.",
+     "Para emissores, o requisito de reserva 1:1 significa que cada dólar de stablecoin em circulação deve ser garantido por um dólar depositado em um banco canadense ou outra instituição qualificada. Isso contrasta com alguns arranjos offshore onde reservas podem ser mantidas em múltiplas jurisdições ou parcialmente investidas em títulos de curto prazo que geram retornos repassados aos detentores de tokens.",
+     "A janela de resgate de três dias é projetada para equilibrar proteção ao consumidor com realidades operacionais. Usuários que desejarem converter stablecoins de volta para dólares canadenses terão um prazo garantido, evitando atrasos indefinidos que afligiram algumas plataformas internacionais durante períodos de estresse.",
+     "A proibição de rendimentos impacta diretamente produtos como os oferecidos por algumas plataformas americanas, onde detentores de stablecoins ganham juros sobre seus saldos. Residentes canadenses usando tais plataformas verão esses recursos desabilitados ou enfrentarão incerteza regulatória sobre se suas participações cumprem a lei nacional.",
+     "Observadores da indústria notam que as regras favorecem instituições financeiras estabelecidas que já operam negócios de captação de depósitos. Startups fintech menores esperando emitir stablecoins precisarão garantir relacionamentos bancários e atender padrões de capitalização tipicamente reservados para entidades reguladas, elevando barreiras à entrada.",
+     "O período de consulta permite que participantes da indústria comentem sobre se os requisitos de reservas e resgate são viáveis e se a proibição de rendimentos pode empurrar usuários canadenses para alternativas offshore não reguladas. Reguladores pesarão esses insumos antes de finalizar a estrutura, provavelmente no início de 2027."
+    ]
+   },
+   "de": {
+    "title": "Kanada eröffnet Konsultation zu Stablecoin-Regelentwurf, behält Rendite-Verbot bei",
+    "excerpt": "Nach den Regelentwürfen müssen Nicht-Bank-Stablecoin-Emittenten Token 1:1 mit Reserven bei qualifizierten kanadischen Institutionen decken und Rücknahmen innerhalb von drei Werktagen abwickeln.",
+    "body": [
+     "Kanada hat einen Stablecoin-Regulierungsentwurf zur öffentlichen Konsultation veröffentlicht, der strenge Reserveanforderungen festlegt und ein festes Verbot zinstragender Token beibehält. Die Regeln verlangen von Nicht-Bank-Emittenten, Reserven in Höhe von 100% der ausstehenden Token bei qualifizierten kanadischen Finanzinstituten zu halten, während Rücknahmen innerhalb von drei Werktagen abgewickelt werden müssen.",
+     "Der Rahmenwerkentwurf kommt, während Stablecoins zunehmend mit traditionellen Bankeinlagen konkurrieren. Durch das Verbot von Renditen ziehen kanadische Regulierungsbehörden eine klare Linie zwischen Stablecoins und Einlagenprodukten und stellen sicher, dass diese digitalen Token rein transaktional bleiben und keine Sparinstrumente sind.",
+     "Für Emittenten bedeutet die 1:1-Reserveanforderung, dass jeder Dollar an Stablecoins im Umlauf durch einen Dollar gedeckt sein muss, der bei einer kanadischen Bank oder einer anderen qualifizierten Institution liegt. Dies steht im Kontrast zu einigen Offshore-Vereinbarungen, bei denen Reserven in mehreren Jurisdiktionen gehalten oder teilweise in kurzfristige Wertpapiere investiert werden, die Erträge generieren, die an Token-Inhaber weitergegeben werden.",
+     "Das dreitägige Rücknahmefenster soll Verbraucherschutz mit operativen Realitäten in Einklang bringen. Nutzer, die Stablecoins zurück in kanadische Dollar umwandeln möchten, erhalten einen garantierten Zeitrahmen und vermeiden unbestimmte Verzögerungen, die einige internationale Plattformen in Stressphasen geplagt haben.",
+     "Das Rendite-Verbot wirkt sich direkt auf Produkte aus, wie sie von einigen US-Plattformen angeboten werden, bei denen Stablecoin-Inhaber Zinsen auf ihre Guthaben verdienen. Kanadische Einwohner, die solche Plattformen nutzen, werden diese Funktionen entweder deaktiviert sehen oder mit regulatorischer Unsicherheit konfrontiert, ob ihre Bestände dem nationalen Recht entsprechen.",
+     "Branchenbeobachter bemerken, dass die Regeln etablierte Finanzinstitute begünstigen, die bereits Einlagengeschäfte betreiben. Kleinere Fintech-Startups, die Stablecoins ausgeben möchten, müssen Bankbeziehungen sichern und Kapitalisierungsstandards erfüllen, die typischerweise regulierten Einheiten vorbehalten sind, was Eintrittsbarrieren erhöht.",
+     "Die Konsultationsperiode ermöglicht es Branchenteilnehmern, zu kommentieren, ob die Reserve- und Rücknahmeanforderungen machbar sind und ob das Rendite-Verbot kanadische Nutzer zu unregulierten Offshore-Alternativen drängen könnte. Regulierungsbehörden werden diese Inputs abwägen, bevor sie den Rahmen voraussichtlich Anfang 2027 finalisieren."
+    ]
+   },
+   "fr": {
+    "title": "Le Canada ouvre une consultation sur le projet de règles pour les stablecoins, maintient l'interdiction des rendements",
+    "excerpt": "Selon le projet de règles, les émetteurs de stablecoins non bancaires doivent garantir les jetons 1:1 avec des réserves détenues dans des institutions canadiennes qualifiées et régler les rachats sous trois jours ouvrables.",
+    "body": [
+     "Le Canada a publié un projet de réglementation des stablecoins pour consultation publique, établissant des exigences de réserves strictes et maintenant une interdiction ferme sur les jetons portant intérêt. Les règles exigent que les émetteurs non bancaires détiennent des réserves équivalentes à 100% des jetons en circulation dans des institutions financières canadiennes qualifiées, tandis que les rachats doivent être réglés sous trois jours ouvrables.",
+     "Le projet de cadre arrive alors que les stablecoins concurrencent de plus en plus les dépôts bancaires traditionnels. En interdisant les rendements, les régulateurs canadiens tracent une ligne claire entre stablecoins et produits de dépôt, garantissant que ces jetons numériques restent purement transactionnels plutôt que des véhicules d'épargne.",
+     "Pour les émetteurs, l'exigence de réserve 1:1 signifie que chaque dollar de stablecoin en circulation doit être adossé à un dollar déposé dans une banque canadienne ou une autre institution qualifiée. Cela contraste avec certains arrangements offshore où les réserves peuvent être détenues dans plusieurs juridictions ou partiellement investies dans des titres à court terme générant des rendements transmis aux détenteurs de jetons.",
+     "La fenêtre de rachat de trois jours est conçue pour équilibrer la protection des consommateurs avec les réalités opérationnelles. Les utilisateurs souhaitant convertir des stablecoins en dollars canadiens auront un délai garanti, évitant les retards indéfinis qui ont affecté certaines plateformes internationales pendant les périodes de tension.",
+     "L'interdiction de rendement impacte directement des produits comme ceux offerts par certaines plateformes américaines, où les détenteurs de stablecoins gagnent des intérêts sur leurs soldes. Les résidents canadiens utilisant de telles plateformes verront ces fonctionnalités désactivées ou feront face à une incertitude réglementaire quant à la conformité de leurs avoirs avec la loi nationale.",
+     "Les observateurs de l'industrie notent que les règles favorisent les institutions financières établies qui opèrent déjà des activités de dépôt. Les petites startups fintech espérant émettre des stablecoins devront sécuriser des relations bancaires et respecter des normes de capitalisation généralement réservées aux entités réglementées, augmentant les barrières à l'entrée.",
+     "La période de consultation permet aux participants de l'industrie de commenter si les exigences de réserves et de rachat sont réalisables et si l'interdiction de rendement pourrait pousser les utilisateurs canadiens vers des alternatives offshore non réglementées. Les régulateurs pèseront ces contributions avant de finaliser le cadre, probablement début 2027."
+    ]
+   },
+   "ar": {
+    "title": "كندا تفتح استشارات حول مسودة قواعد العملات المستقرة، تحافظ على حظر العوائد",
+    "excerpt": "بموجب مسودة القواعد، يجب على مصدري العملات المستقرة من غير البنوك دعم الرموز 1:1 باحتياطيات محتفظ بها في مؤسسات كندية مؤهلة وتسوية الاستردادات خلال ثلاثة أيام عمل.",
+    "body": [
+     "أصدرت كندا مسودة لوائح العملات المستقرة للاستشارة العامة، تضع متطلبات احتياطية صارمة وتحافظ على حظر صارم على الرموز التي تدر فوائد. تتطلب القواعد من المصدرين من غير البنوك الاحتفاظ باحتياطيات تعادل 100% من الرموز المتداولة في مؤسسات مالية كندية مؤهلة، بينما يجب تسوية الاستردادات خلال ثلاثة أيام عمل.",
+     "يأتي مشروع الإطار بينما تتنافس العملات المستقرة بشكل متزايد مع الودائع المصرفية التقليدية. بحظر العوائد، يرسم المنظمون الكنديون خطاً واضحاً بين العملات المستقرة ومنتجات الودائع، مما يضمن أن هذه الرموز الرقمية تبقى تعاملية بحتة بدلاً من أدوات ادخار.",
+     "بالنسبة للمصدرين، يعني شرط الاحتياطي 1:1 أن كل دولار من العملة المستقرة المتداولة يجب أن يكون مدعوماً بدولار موجود في بنك كندي أو مؤسسة مؤهلة أخرى. هذا يتناقض مع بعض الترتيبات الخارجية حيث قد تحتفظ الاحتياطيات في ولايات قضائية متعددة أو تستثمر جزئياً في أوراق مالية قصيرة الأجل تولد عوائد تمرر إلى حاملي الرموز.",
+     "نافذة الاستردادات لمدة ثلاثة أيام مصممة لتحقيق التوازن بين حماية المستهلك والواقع التشغيلي. سيكون لدى المستخدمين الذين يرغبون في تحويل العملات المستقرة مرة أخرى إلى دولارات كندية إطار زمني مضمون، مما يمنع التأخيرات غير المحددة التي ابتليت بها بعض المنصات الدولية خلال فترات الضغط.",
+     "يؤثر حظر العوائد مباشرة على منتجات مثل تلك التي تقدمها بعض المنصات الأمريكية، حيث يكسب حاملو العملات المستقرة فوائد على أرصدتهم. سيرى المقيمون الكنديون الذين يستخدمون هذه المنصات إما تعطيل هذه الميزات أو مواجهة عدم يقين تنظيمي بشأن ما إذا كانت ممتلكاتهم تمتثل للقانون المحلي.",
+     "يلاحظ مراقبو الصناعة أن القواعد تفضل المؤسسات المالية القائمة التي تدير بالفعل أعمال قبول الودائع. ستحتاج الشركات الناشئة الأصغر في مجال التكنولوجيا المالية التي تأمل في إصدار عملات مستقرة إلى تأمين علاقات مصرفية والوفاء بمعايير رأس المال المخصصة عادة للكيانات المنظمة، مما يرفع حواجز الدخول.",
+     "تتيح فترة الاستشارة لمشاركي الصناعة التعليق على ما إذا كانت متطلبات الاحتياطي والاسترداد قابلة للتطبيق وما إذا كان حظر العوائد قد يدفع المستخدمين الكنديين نحو بدائل خارجية غير منظمة. سيزن المنظمون هذه المدخلات قبل الانتهاء من الإطار، المرجح في أوائل 2027."
+    ]
+   },
+   "zh": {
+    "title": "加拿大就稳定币规则草案展开咨询，维持收益禁令",
+    "excerpt": "根据规则草案，非银行稳定币发行方必须以存放在合格加拿大机构的1:1储备支持代币，并在三个工作日内结算赎回。",
+    "body": [
+     "加拿大发布了稳定币监管草案进行公众咨询，制定了严格的储备要求，并维持对计息代币的严格禁令。规则要求非银行发行方持有相当于流通代币100%的储备金，存放在合格的加拿大金融机构，而赎回必须在三个工作日内结算。",
+     "草案框架出台之际，稳定币正日益与传统银行存款竞争。通过禁止收益，加拿大监管机构在稳定币和存款产品之间划出明确界限，确保这些数字代币保持纯粹的交易性质，而不是储蓄工具。",
+     "对于发行方而言，1:1储备要求意味着流通中的每一美元稳定币都必须由存放在加拿大银行或其他合格机构的一美元支持。这与一些离岸安排形成对比，后者的储备可能存放在多个司法管辖区，或部分投资于产生回报并转给代币持有者的短期证券。",
+     "三天赎回窗口旨在平衡消费者保护与运营现实。希望将稳定币转换回加拿大元的用户将获得有保障的时间框架，避免了一些国际平台在压力时期遇到的无限期延迟。",
+     "收益禁令直接影响某些美国平台提供的产品，这些平台的稳定币持有者可以从余额中赚取利息。使用此类平台的加拿大居民将看到这些功能被禁用，或面临其持有的资产是否符合国内法律的监管不确定性。",
+     "行业观察人士指出，这些规则有利于已经从事存款业务的成熟金融机构。希望发行稳定币的小型金融科技初创公司需要建立银行关系，并满足通常为受监管实体保留的资本化标准，从而提高了进入门槛。",
+     "咨询期允许行业参与者评论储备和赎回要求是否可行，以及收益禁令是否可能将加拿大用户推向不受监管的离岸替代方案。监管机构将权衡这些意见，然后可能在2027年初最终确定框架。"
+    ]
+   },
+   "hi": {
+    "title": "कनाडा ने स्टेबलकॉइन नियम मसौदे पर परामर्श खोला, प्रतिफल पर प्रतिबंध बरकरार रखा",
+    "excerpt": "मसौदा नियमों के तहत, गैर-बैंक स्टेबलकॉइन जारीकर्ताओं को योग्य कैनेडियाई संस्थानों में रखे गए 1:1 भंडार के साथ टोकन का समर्थन करना होगा और तीन व्यावसायिक दिनों के भीतर मोचन का निपटान करना होगा।",
+    "body": [
+     "कनाडा ने सार्वजनिक परामर्श के लिए स्टेबलकॉइन विनियमन का मसौदा जारी किया है, जो सख्त रिजर्व आवश्यकताओं को निर्धारित करता है और ब्याज देने वाले टोकन पर दृढ़ प्रतिबंध बनाए रखता है। नियमों के तहत गैर-बैंक जारीकर्ताओं को योग्य कैनेडियाई वित्तीय संस्थानों में प्रचलन में टोकन के 100% के बराबर रिजर्व रखना होगा, जबकि मोचन को तीन व्यावसायिक दिनों के भीतर निपटाया जाना चाहिए।",
+     "मसौदा ढांचा तब आता है जब स्टेबलकॉइन तेजी से पारंपरिक बैंक जमा के साथ प्रतिस्पर्धा कर रहे हैं। प्रतिफल पर प्रतिबंध लगाकर, कैनेडियाई नियामक स्टेबलकॉइन और जमा उत्पादों के बीच एक स्पष्ट रेखा खींच रहे हैं, यह सुनिश्चित करते हुए कि ये डिजिटल टोकन बचत वाहनों के बजाय विशुद्ध रूप से लेनदेन बने रहें।",
+     "जारीकर्ताओं के लिए, 1:1 रिजर्व आवश्यकता का मतलब है कि प्रचलन में स्टेबलकॉइन की प्रत्येक डॉलर को कैनेडियाई बैंक या अन्य योग्य संस्थान में जमा डॉलर द्वारा समर्थित होना चाहिए। यह कुछ अपतटीय व्यवस्थाओं के विपरीत है जहां रिजर्व कई अधिकार क्षेत्रों में रखे जा सकते हैं या आंशिक रूप से अल्पकालिक प्रतिभूतियों में निवेश किए जा सकते हैं जो टोकन धारकों को दिए जाने वाले रिटर्न उत्पन्न करते हैं।",
+     "तीन दिन की मोचन खिड़की उपभोक्ता संरक्षण को परिचालन वास्तविकताओं के साथ संतुलित करने के लिए डिज़ाइन की गई है। जो उपयोगकर्ता स्टेबलकॉइन को कैनेडियाई डॉलर में वापस बदलना चाहते हैं, उनके पास एक गारंटीकृत समयसीमा होगी, जो अनिश्चित देरी को रोकेगी जिसने तनाव के दौरान कुछ अंतरराष्ट्रीय प्लेटफॉर्मों को प्रभावित किया है।",
+     "प्रतिफल प्रतिबंध सीधे उन उत्पादों को प्रभावित करता है जैसे कि कुछ अमेरिकी प्लेटफॉर्मों द्वारा पेश किए गए, जहां स्टेबलकॉइन धारक अपने शेष राशि पर ब्याज कमाते हैं। ऐसे प्लेटफॉर्मों का उपयोग करने वाले कैनेडियाई निवासी या तो उन सुविधाओं को अक्षम देखेंगे या नियामक अनिश्चितता का सामना करेंगे कि उनकी होल्डिंग घरेलू कानून का अनुपालन करती है या नहीं।",
+     "उद्योग पर्यवेक्षक ध्यान देते हैं कि नियम स्थापित वित्तीय संस्थानों का पक्ष लेते हैं जो पहले से ही जमा लेने वाले व्यवसाय संचालित करते हैं। छोटे फिनटेक स्टार्टअप जो स्टेबलकॉइन जारी करने की उम्मीद कर रहे हैं, उन्हें बैंकिंग संबंध सुरक्षित करने और पूंजीकरण मानकों को पूरा करने की आवश्यकता होगी जो आमतौर पर नियमित संस्थाओं के लिए आरक्षित होते हैं, जिससे प्रवेश बाधाएं बढ़ती हैं।",
+     "परामर्श अवधि उद्योग प्रतिभागियों को यह टिप्पणी करने की अनुमति देती है कि क्या रिजर्व और मोचन आवश्यकताएं व्यवहार्य हैं और क्या प्रतिफल प्रतिबंध कैनेडियाई उपयोगकर्ताओं को अनियमित अपतटीय विकल्पों की ओर धकेल सकता है। नियामक इन इनपुट को तौलेंगे, संभवतः 2027 की शुरुआत में ढांचे को अंतिम रूप देने से पहले।"
+    ]
+   },
+   "id": {
+    "title": "Kanada Membuka Konsultasi tentang Draf Aturan Stablecoin, Mempertahankan Larangan Imbal Hasil",
+    "excerpt": "Berdasarkan draf aturan, penerbit stablecoin non-bank harus mendukung token 1:1 dengan cadangan yang disimpan di lembaga Kanada yang memenuhi syarat dan menyelesaikan penebusan dalam tiga hari kerja.",
+    "body": [
+     "Kanada telah merilis draf regulasi stablecoin untuk konsultasi publik, menetapkan persyaratan cadangan yang ketat dan mempertahankan larangan tegas terhadap token berbunga. Aturan tersebut mengharuskan penerbit non-bank untuk menyimpan cadangan setara dengan 100% token yang beredar di lembaga keuangan Kanada yang memenuhi syarat, sementara penebusan harus diselesaikan dalam tiga hari kerja.",
+     "Draf kerangka kerja muncul ketika stablecoin semakin bersaing dengan simpanan bank tradisional. Dengan melarang imbal hasil, regulator Kanada menarik garis tegas antara stablecoin dan produk simpanan, memastikan bahwa token digital ini tetap murni transaksional daripada kendaraan tabungan.",
+     "Bagi penerbit, persyaratan cadangan 1:1 berarti setiap dolar stablecoin yang beredar harus didukung oleh dolar yang disimpan di bank Kanada atau lembaga memenuhi syarat lainnya. Ini berbeda dengan beberapa pengaturan luar negeri di mana cadangan dapat disimpan di beberapa yurisdiksi atau sebagian diinvestasikan dalam sekuritas jangka pendek yang menghasilkan keuntungan yang diteruskan kepada pemegang token.",
+     "Jendela penebusan tiga hari dirancang untuk menyeimbangkan perlindungan konsumen dengan realitas operasional. Pengguna yang ingin mengonversi stablecoin kembali ke dolar Kanada akan memiliki jangka waktu yang dijamin, mencegah penundaan tanpa batas yang mengganggu beberapa platform internasional selama periode tekanan.",
+     "Larangan imbal hasil secara langsung berdampak pada produk seperti yang ditawarkan beberapa platform AS, di mana pemegang stablecoin mendapatkan bunga atas saldo mereka. Warga Kanada yang menggunakan platform semacam itu akan melihat fitur tersebut dinonaktifkan atau menghadapi ketidakpastian regulasi tentang apakah kepemilikan mereka mematuhi hukum domestik.",
+     "Pengamat industri mencatat bahwa aturan tersebut menguntungkan lembaga keuangan mapan yang sudah mengoperasikan bisnis penerimaan simpanan. Startup fintech kecil yang berharap menerbitkan stablecoin perlu mengamankan hubungan perbankan dan memenuhi standar kapitalisasi yang biasanya dicadangkan untuk entitas yang diatur, meningkatkan hambatan masuk.",
+     "Periode konsultasi memungkinkan peserta industri untuk memberikan komentar tentang apakah persyaratan cadangan dan penebusan dapat dilaksanakan dan apakah larangan imbal hasil dapat mendorong pengguna Kanada menuju alternatif luar negeri yang tidak diatur. Regulator akan mempertimbangkan masukan ini sebelum menyelesaikan kerangka kerja, kemungkinan pada awal 2027."
+    ]
+   },
+   "vi": {
+    "title": "Canada Mở Tham Vấn về Dự Thảo Quy Định Stablecoin, Duy Trì Lệnh Cấm Lợi Suất",
+    "excerpt": "Theo dự thảo quy định, các nhà phát hành stablecoin không phải ngân hàng phải hỗ trợ token 1:1 bằng dự trữ được giữ tại các tổ chức Canada đủ điều kiện và thanh toán mua lại trong ba ngày làm việc.",
+    "body": [
+     "Canada đã công bố dự thảo quy định stablecoin để tham vấn công chúng, đặt ra các yêu cầu dự trữ nghiêm ngặt và duy trì lệnh cấm chặt chẽ đối với các token sinh lãi. Quy định yêu cầu các nhà phát hành không phải ngân hàng giữ dự trữ tương đương 100% token đang lưu hành tại các tổ chức tài chính Canada đủ điều kiện, trong khi việc mua lại phải được thanh toán trong ba ngày làm việc.",
+     "Dự thảo khung được đưa ra khi stablecoin ngày càng cạnh tranh với tiền gửi ngân hàng truyền thống. Bằng cách cấm lợi suất, các cơ quan quản lý Canada đang vẽ một ranh giới rõ ràng giữa stablecoin và sản phẩm tiền gửi, đảm bảo rằng các token kỹ thuật số này vẫn hoàn toàn là giao dịch thay vì phương tiện tiết kiệm.",
+     "Đối với các nhà phát hành, yêu cầu dự trữ 1:1 có nghĩa là mỗi đô la stablecoin đang lưu hành phải được hỗ trợ bởi một đô la gửi trong ngân hàng Canada hoặc tổ chức đủ điều kiện khác. Điều này trái ngược với một số thỏa thuận ngoài khơi nơi dự trữ có thể được giữ ở nhiều khu vực pháp lý hoặc được đầu tư một phần vào chứng khoán ngắn hạn tạo ra lợi nhuận chuyển cho người nắm giữ token.",
+     "Cửa sổ mua lại ba ngày được thiết kế để cân bằng bảo vệ người tiêu dùng với thực tế hoạt động. Người dùng muốn chuyển đổi stablecoin trở lại đô la Canada sẽ có khung thời gian được đảm bảo, ngăn chặn sự chậm trễ không xác định đã làm phiền một số nền tảng quốc tế trong các giai đoạn căng thẳng.",
+     "Lệnh cấm lợi suất ảnh hưởng trực tiếp đến các sản phẩm như những sản phẩm được cung cấp bởi một số nền tảng Mỹ, nơi người nắm giữ stablecoin kiếm lãi suất trên số dư của họ. Cư dân Canada sử dụng các nền tảng như vậy sẽ thấy các tính năng đó bị vô hiệu hóa hoặc đối mặt với sự không chắc chắn về quy định liệu tài sản của họ có tuân thủ luật trong nước hay không.",
+     "Các nhà quan sát ngành lưu ý rằng các quy định có lợi cho các tổ chức tài chính đã thành lập đang vận hành các doanh nghiệp nhận tiền gửi. Các startup fintech nhỏ hơn hy vọng phát hành stablecoin sẽ cần bảo đảm các mối quan hệ ngân hàng và đáp ứng các tiêu chuẩn vốn hóa thường được dành riêng cho các thực thể được quản lý, nâng cao rào cản gia nhập.",
+     "Thời gian tham vấn cho phép những người tham gia ngành nhận xét liệu các yêu cầu dự trữ và mua lại có khả thi hay không và liệu lệnh cấm lợi suất có thể đẩy người dùng Canada hướng tới các phương án ngoài khơi không được quản lý hay không. Các cơ quan quản lý sẽ cân nhắc những đầu vào này trước khi hoàn thiện khung, có khả năng vào đầu năm 2027."
+    ]
+   },
+   "tr": {
+    "title": "Kanada Stablecoin Kuralları Taslağı Hakkında Danışma Açtı, Getiri Yasağını Korudu",
+    "excerpt": "Taslak kurallara göre, banka olmayan stablecoin ihraççıları, tokenleri nitelikli Kanada kurumlarında tutulan 1:1 rezervlerle desteklemeli ve itfaları üç iş günü içinde sonuçlandırmalıdır.",
+    "body": [
+     "Kanada, kamuya danışma için stablecoin düzenleme taslağını yayınladı, katı rezerv gereksinimleri belirliyor ve faiz getiren tokenlara yönelik kesin yasağı sürdürüyor. Kurallar, banka olmayan ihraççıların dolaşımdaki tokenlerin %100'üne eşit rezervleri nitelikli Kanada finans kurumlarında tutmasını gerektirirken, itfaların üç iş günü içinde sonuçlandırılması gerekiyor.",
+     "Taslak çerçeve, stablecoinler geleneksel banka mevduatlarıyla giderek daha fazla rekabet ederken ortaya çıkıyor. Getiri yasağıyla Kanada düzenleyicileri, stablecoinler ile mevduat ürünleri arasında net bir çizgi çizerek, bu dijital tokenlerin tasarruf araçları yerine tamamen işlemsel kalmasını sağlıyor.",
+     "İhraççılar için 1:1 rezerv gerekliliği, dolaşımdaki her stablecoin dolarının Kanada bankasında veya başka bir nitelikli kurumda duran bir dolarla desteklenmesi gerektiği anlamına gelir. Bu, rezervlerin birden fazla yargı bölgesinde tutulabileceği veya token sahiplerine aktarılan getiri üreten kısa vadeli menkul kıymetlere kısmen yatırılabileceği bazı offshore düzenlemelerle çelişir.",
+     "Üç günlük itfa penceresi, tüketici korumasını operasyonel gerçeklerle dengelemek için tasarlandı. Stablecoinleri Kanada dolarına geri çevirmek isteyen kullanıcılar, bazı uluslararası platformları stres dönemlerinde rahatsız eden belirsiz gecikmeleri önleyerek garantili bir zaman çerçevesine sahip olacak.",
+     "Getiri yasağı, bazı ABD platformları tarafından sunulanlar gibi ürünleri doğrudan etkiliyor; bu platformlarda stablecoin sahipleri bakiyelerinden faiz kazanıyor. Bu tür platformları kullanan Kanada sakinleri ya bu özelliklerin devre dışı bırakıldığını görecek ya da varlıklarının yerel yasalara uyup uymadığı konusunda düzenleyici belirsizlikle karşılaşacak.",
+     "Sektör gözlemcileri, kuralların zaten mevduat kabul eden işletmeleri işleten yerleşik finans kurumlarını tercih ettiğini belirtiyor. Stablecoin çıkarmayı uman daha küçük fintech girişimlerinin bankacılık ilişkileri güvence altına alması ve genellikle düzenlenmiş kuruluşlar için ayrılmış kapitalizasyon standartlarını karşılaması gerekecek, bu da giriş engellerini yükseltiyor.",
+     "Danışma süreci, sektör katılımcılarının rezerv ve itfa gereksinimlerinin uygulanabilir olup olmadığını ve getiri yasağının Kanadalı kullanıcıları düzenlenmemiş offshore alternatiflere itip itemeyeceğini yorumlamalarına olanak tanıyor. Düzenleyiciler, muhtemelen 2027 başında çerçeveyi kesinleştirmeden önce bu girdileri tartacak."
+    ]
+   },
+   "ja": {
+    "title": "カナダがステーブルコイン規則案の協議を開始、利回り禁止を維持",
+    "excerpt": "規則案によれば、非銀行系ステーブルコイン発行者は、適格なカナダの機関に保有される1:1の準備金でトークンを裏付け、3営業日以内に償還を決済する必要があります。",
+    "body": [
+     "カナダは公開協議のためにステーブルコイン規制案を発表し、厳格な準備金要件を設定し、利息を生むトークンに対する厳格な禁止を維持しています。規則では、非銀行系発行者が流通しているトークンの100%に相当する準備金を適格なカナダの金融機関に保有することを求めており、償還は3営業日以内に決済される必要があります。",
+     "ステーブルコインが従来の銀行預金とますます競争する中で、枠組み案が登場しています。利回りを禁止することにより、カナダの規制当局はステーブルコインと預金商品の間に明確な線を引き、これらのデジタルトークンが貯蓄手段ではなく純粋に取引用であることを保証しています。",
+     "発行者にとって、1:1準備金要件は、流通している各ステーブルコインドルがカナダの銀行または他の適格機関に預けられたドルで裏付けられなければならないことを意味します。これは、準備金が複数の管轄区域に保有されたり、トークン保有者に渡される利益を生む短期証券に部分的に投資されたりする一部のオフショア取り決めとは対照的です。",
+     "3日間の償還ウィンドウは、消費者保護と運用上の現実のバランスを取るように設計されています。ステーブルコインをカナダドルに戻したいユーザーには保証された時間枠があり、ストレス期間中に一部の国際プラットフォームを悩ませた不確定な遅延を防ぎます。",
+     "利回り禁止は、一部の米国プラットフォームが提供する製品のように、ステーブルコイン保有者が残高に対して利息を得る製品に直接影響します。そのようなプラットフォームを使用するカナダ居住者は、これらの機能が無効化されるか、保有資産が国内法に準拠しているかどうかについて規制上の不確実性に直面します。",
+     "業界オブザーバーは、規則がすでに預金受入業務を運営している既存の金融機関を優遇していると指摘しています。ステーブルコインの発行を望む小規模なフィンテックスタートアップは、銀行関係を確保し、通常規制対象事業体に留保される資本化基準を満たす必要があり、参入障壁が高まります。",
+     "協議期間により、業界参加者は準備金と償還要件が実行可能かどうか、利回り禁止がカナダのユーザーを規制されていないオフショア代替案に押しやる可能性があるかどうかについてコメントできます。規制当局は、おそらく2027年初頭に枠組みを最終決定する前に、これらの意見を検討します。"
+    ]
+   },
+   "ko": {
+    "title": "캐나다, 스테이블코인 규칙 초안에 대한 협의 개시, 수익률 금지 유지",
+    "excerpt": "초안 규칙에 따르면 비은행 스테이블코인 발행자는 자격을 갖춘 캐나다 기관에 보유된 1:1 준비금으로 토큰을 뒷받침하고 3영업일 이내에 상환을 결제해야 합니다.",
+    "body": [
+     "캐나다는 공개 협의를 위해 스테이블코인 규제 초안을 발표하여 엄격한 준비금 요건을 설정하고 이자를 지급하는 토큰에 대한 확고한 금지를 유지하고 있습니다. 규칙은 비은행 발행자가 유통 중인 토큰의 100%에 해당하는 준비금을 자격을 갖춘 캐나다 금융 기관에 보유하도록 요구하며, 상환은 3영업일 이내에 결제되어야 합니다.",
+     "스테이블코인이 전통적인 은행 예금과 점점 더 경쟁함에 따라 초안 프레임워크가 등장합니다. 수익률을 금지함으로써 캐나다 규제 당국은 스테이블코인과 예금 상품 사이에 명확한 선을 그어 이러한 디지털 토큰이 저축 수단이 아닌 순수하게 거래용으로 유지되도록 보장하고 있습니다.",
+     "발행자에게 1:1 준비금 요건은 유통 중인 각 스테이블코인 달러가 캐나다 은행 또는 기타 자격을 갖춘 기관에 예치된 달러로 뒷받침되어야 함을 의미합니다. 이는 준비금이 여러 관할 구역에 보유되거나 토큰 보유자에게 전달되는 수익을 생성하는 단기 증권에 부분적으로 투자될 수 있는 일부 역외 계약과 대조됩니다.",
+     "3일 상환 기간은 소비자 보호와 운영 현실의 균형을 맞추도록 설계되었습니다. 스테이블코인을 캐나다 달러로 되돌리려는 사용자는 보장된 기간을 갖게 되어 스트레스 기간 동안 일부 국제 플랫폼을 괴롭힌 무기한 지연을 방지합니다.",
+     "수익률 금지는 스테이블코인 보유자가 잔액에 대해 이자를 얻는 일부 미국 플랫폼이 제공하는 제품과 같은 제품에 직접 영향을 미칩니다. 그러한 플랫폼을 사용하는 캐나다 거주자는 해당 기능이 비활성화되거나 보유 자산이 국내법을 준수하는지 여부에 대한 규제 불확실성에 직면하게 됩니다.",
+     "업계 관찰자들은 규칙이 이미 예금 수취 사업을 운영하는 기존 금융 기관을 선호한다고 지적합니다. 스테이블코인 발행을 희망하는 소규모 핀테크 스타트업은 은행 관계를 확보하고 일반적으로 규제 대상 기업을 위해 예약된 자본화 기준을 충족해야 하므로 진입 장벽이 높아집니다.",
+     "협의 기간을 통해 업계 참가자는 준비금 및 상환 요건이 실행 가능한지, 수익률 금지가 캐나다 사용자를 규제되지 않은 역외 대안으로 밀어낼 수 있는지에 대해 의견을 제시할 수 있습니다. 규제 당국은 아마도 2027년 초에 프레임워크를 최종 확정하기 전에 이러한 의견을 검토할 것입니다."
+    ]
+   },
+   "pl": {
+    "title": "Kanada Otwiera Konsultacje w Sprawie Projektu Zasad dla Stablecoinów, Utrzymuje Zakaz Zysków",
+    "excerpt": "Zgodnie z projektem zasad, emitenci stablecoinów niebędący bankami muszą zabezpieczać tokeny 1:1 rezerwami utrzymywanymi w kwalifikowanych kanadyjskich instytucjach i rozliczać umorzenia w ciągu trzech dni roboczych.",
+    "body": [
+     "Kanada opublikowała projekt regulacji stablecoinów do konsultacji publicznych, ustanawiając rygorystyczne wymogi dotyczące rezerw i utrzymując stanowczy zakaz tokenów oprocentowanych. Przepisy wymagają od emitentów niebędących bankami utrzymywania rezerw równych 100% tokenów w obiegu w kwalifikowanych kanadyjskich instytucjach finansowych, podczas gdy umorzenia muszą być rozliczane w ciągu trzech dni roboczych.",
+     "Projekt ram pojawia się, gdy stablecoiny coraz bardziej konkurują z tradycyjnymi depozytami bankowymi. Zakazując zysków, kanadyjscy regulatorzy wyznaczają wyraźną granicę między stablecoinami a produktami depozytowymi, zapewniając, że te cyfrowe tokeny pozostają czysto transakcyjne, a nie narzędziami oszczędnościowymi.",
+     "Dla emitentów wymóg rezerwy 1:1 oznacza, że każdy dolar stablecoina w obiegu musi być zabezpieczony dolarem znajdującym się w kanadyjskim banku lub innej kwalifikowanej instytucji. Kontrastuje to z niektórymi rozwiązaniami offshore, gdzie rezerwy mogą być utrzymywane w wielu jurysdykcjach lub częściowo inwestowane w krótkoterminowe papiery wartościowe generujące zwroty przekazywane posiadaczom tokenów.",
+     "Trzydniowe okno umorzenia zostało zaprojektowane w celu zrównoważenia ochrony konsumentów z realiami operacyjnymi. Użytkownicy, którzy chcą zamienić stablecoiny z powrotem na dolary kanadyjskie, będą mieli gwarantowane ramy czasowe, unikając nieokreślonych opóźnień, które nękały niektóre międzynarodowe platformy w okresach napięć.",
+     "Zakaz zysków bezpośrednio wpływa na produkty, takie jak te oferowane przez niektóre amerykańskie platformy, gdzie posiadacze stablecoinów zarabiają odsetki od swoich sald. Mieszkańcy Kanady korzystający z takich platform zobaczą wyłączone te funkcje lub będą borykać się z niepewnością regulacyjną, czy ich posiadłości są zgodne z prawem krajowym.",
+     "Obserwatorzy branży zauważają, że zasady faworyzują ugruntowane instytucje finansowe, które już prowadzą działalność przyjmowania depozytów. Mniejsze startupy fintech, które mają nadzieję na emisję stablecoinów, będą musiały zabezpieczyć relacje bankowe i spełnić standardy kapitalizacji zazwyczaj zarezerwowane dla podmiotów regulowanych, podnosząc bariery wejścia.",
+     "Okres konsultacji pozwala uczestnikom branży komentować, czy wymogi dotyczące rezerw i umorzeń są wykonalne i czy zakaz zysków może popchnąć kanadyjskich użytkowników w stronę nieregulowanych alternatyw offshore. Regulatorzy rozważą te opinie przed sfinalizowaniem ram, prawdopodobnie na początku 2027 roku."
+    ]
+   },
+   "th": {
+    "title": "แคนาดาเปิดให้ปรึกษาหารือเกี่ยวกับร่างกฎ Stablecoin คงไว้ซึ่งการห้ามผลตอบแทน",
+    "excerpt": "ภายใต้ร่างกฎ ผู้ออก stablecoin ที่ไม่ใช่ธนาคารต้องสำรองโทเคน 1:1 ด้วยเงินสำรองที่เก็บไว้ในสถาบันแคนาดาที่มีคุณสมบัติและชำระการไถ่ถอนภายในสามวันทำการ",
+    "body": [
+     "แคนาดาได้เผยแพร่ร่างข้อบังคับ stablecoin เพื่อรับฟังความคิดเห็นสาธารณะ โดยกำหนดข้อกำหนดสำรองที่เข้มงวดและรักษาการห้ามที่เข้มงวดต่อโทเคนที่จ่ายดอกเบี้ย กฎกำหนดให้ผู้ออกที่ไม่ใช่ธนาคารเก็บสำรองเท่ากับ 100% ของโทเคนที่ออกในสถาบันการเงินแคนาดาที่มีคุณสมบัติ ในขณะที่การไถ่ถอนต้องชำระภายในสามวันทำการ",
+     "ร่างกรอบปรากฏขึ้นในขณะที่ stablecoin แข่งขันกับเงินฝากธนาคารแบบดั้งเดิมมากขึ้นเรื่อยๆ ด้วยการห้ามผลตอบแทน หน่วยงานกำกับดูแลแคนาดากำลังวาดเส้นชัดเจนระหว่าง stablecoin และผลิตภัณฑ์เงินฝาก เพื่อให้แน่ใจว่าโทเคนดิจิทัลเหล่านี้ยังคงเป็นเพียงการทำธุรกรรมแทนที่จะเป็นเครื่องมือออม",
+     "สำหรับผู้ออก ข้อกำหนดสำรอง 1:1 หมายความว่า stablecoin แต่ละดอลลาร์ที่หมุนเวียนต้องได้รับการสนับสนุนโดยดอลลาร์ที่ฝากไว้ในธนาคารแคนาดาหรือสถาบันที่มีคุณสมบัติอื่น ๆ นี่ตรงกันข้ามกับการจัดการนอกชายฝั่งบางแห่งที่สำรองอาจถูกเก็บไว้ในหลายเขตอำนาจหรือลงทุนบางส่วนในหลักทรัพย์ระยะสั้นที่สร้างผลตอบแทนส่งต่อให้ผู้ถือโทเคน",
+     "หน้าต่างไถ่ถอนสามวันได้รับการออกแบบมาเพื่อสร้างสมดุลระหว่างการปกป้องผู้บริโภคกับความเป็นจริงในการดำเนินงาน ผู้ใช้ที่ต้องการแปลง stablecoin กลับเป็นดอลลาร์แคนาดาจะมีกรอบเวลาที่รับประกัน ป้องกันความล่าช้าที่ไม่แน่นอนที่รบกวนแพลตฟอร์มระหว่างประเทศบางแห่งในช่วงเวลาเครียด",
+     "การห้ามผลตอบแทนส่งผลกระทบโดยตรงต่อผลิตภัณฑ์เช่นที่เสนอโดยแพลตฟอร์มสหรัฐฯ บางแห่ง ซึ่งผู้ถือ stablecoin ได้รับดอกเบี้ยจากยอดเงินของพวกเขา ผู้อยู่อาศัยในแคนาดาที่ใช้แพลตฟอร์มดังกล่าวจะเห็นคุณสมบัติเหล่านั้นถูกปิดใช้งานหรือเผชิญกับความไม่แน่นอนด้านกฎระเบียบว่าการถือครองของพวกเขาเป็นไปตามกฎหมายในประเทศหรือไม่",
+     "ผู้สังเกตการณ์อุตสาหกรรมสังเกตว่ากฎเอื้อประโยชน์ต่อสถาบันการเงินที่จัดตั้งขึ้นซึ่งดำเนินธุรกิจรับฝากเงินอยู่แล้ว สตาร์ทอัพฟินเทคขนาดเล็กที่หวังจะออก stablecoin จะต้องรักษาความสัมพันธ์กับธนาคารและปฏิบัติตามมาตรฐานการระดมทุนที่มักจะสงวนไว้สำหรับหน่วยงานที่ได้รับการควบคุม ซึ่งเพิ่มอุปสรรคในการเข้า",
+     "ช่วงเวลาปรึกษาหารืออนุญาตให้ผู้เข้าร่วมในอุตสาหกรรมแสดงความคิดเห็นว่าข้อกำหนดสำรองและการไถ่ถอนเป็นไปได้หรือไม่และการห้ามผลตอบแทนอาจผลักดันผู้ใช้แคนาดาไปสู่ทางเลือกนอกชายฝั่งที่ไม่ได้รับการควบคุมหรือไม่ หน่วยงานกำกับดูแลจะชั่งน้ำหนักข้อมูลเหล่านี้ก่อนที่จะสรุปกรอบ น่าจะเป็นต้นปี 2027"
+    ]
+   }
+  },
+  "date": "2026-10-26T18:58:12.326Z",
+  "gradient": "linear-gradient(135deg,#f7931a33,#0b0e1400)"
+ },
+ {
   "slug": "india-largest-crypto-exchange-absorbs-16-million-dollar-loss-ip1d",
   "category": "crypto",
   "emoji": "🇮🇳",
